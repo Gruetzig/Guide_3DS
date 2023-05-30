@@ -86,7 +86,7 @@ function can_safecerthax(major, minor, native, region, model) {
 }
 
 // super-skaterhax
-// EUR/JPN: 11.17 only, USA has no working otherapp on 11.17
+// EUR/JPN/USA: 11.17 only
 // KOR: 11.16 only, KOR does not have 11.17
 // CHN/TWN has no N3DS
 function can_superskaterhax(major, minor, native, region, model) {
@@ -95,7 +95,7 @@ function can_superskaterhax(major, minor, native, region, model) {
     // N3DS only
     if(model == 1) {
         if (major == 11) {
-            if (["E", "J"].includes(region)) {
+            if (["E", "J", "U"].includes(region)) {
                 if (minor == 17) do_redirect = true;
                 // Since this exploit works on latest,
                 // if no other exploit exists for that version, update
@@ -197,8 +197,8 @@ function can_seedminer(major, minor, native, region, model) {
         - Not implemented in this guide
     - 11.16 (KOR is O3DS only):
         - Seedminer
-    - KOR N3DS 11.16, N3DS & 11.17 (EUR / JPN):
-        - super-skaterhax (currently not working on USA)
+    - KOR N3DS 11.16, N3DS & 11.17 (EUR / JPN / USA):
+        - super-skaterhax
     - O3DS & 11.17:
         - Unhackable
 */
