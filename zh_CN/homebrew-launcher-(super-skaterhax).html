@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/zh_CN/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/zh_CN/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/zh_CN/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/zh_CN/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/zh_CN/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/zh_CN/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/zh_CN/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/zh_CN/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_CN/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/zh_CN/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -455,10 +479,9 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#兼容性注意" id="markdown-toc-兼容性注意">兼容性注意</a></li>
   <li><a href="#你需要准备点啥" id="markdown-toc-你需要准备点啥">你需要准备点啥？</a>    <ul>
-      <li><a href="#section-i---updating-the-system" id="markdown-toc-section-i---updating-the-system">Section I - Updating the System</a></li>
-      <li><a href="#第二步--准备工作" id="markdown-toc-第二步--准备工作">第二步 – 准备工作</a></li>
-      <li><a href="#section-iii---super-skaterhax" id="markdown-toc-section-iii---super-skaterhax">Section III - super-skaterhax</a></li>
-      <li><a href="#section-iv---hardware-button-check" id="markdown-toc-section-iv---hardware-button-check">Section IV - Hardware Button Check</a></li>
+      <li><a href="#第一步--准备工作" id="markdown-toc-第一步--准备工作">第一步 – 准备工作</a></li>
+      <li><a href="#section-ii---super-skaterhax" id="markdown-toc-section-ii---super-skaterhax">Section II - super-skaterhax</a></li>
+      <li><a href="#section-iii---hardware-button-check" id="markdown-toc-section-iii---hardware-button-check">Section III - Hardware Button Check</a></li>
     </ul>
   </li>
   <li><a href="#next-step-choose-an-exploit" id="markdown-toc-next-step-choose-an-exploit">Next step: Choose an exploit</a></li>
@@ -475,7 +498,7 @@ window.cookieconsent.initialise({
 
 <h3 id="兼容性注意">兼容性注意</h3>
 
-<p>Super-skaterhax (when used to launch the Homebrew Launcher) is compatible with New models on version 11.16.0 in all regions except TWN/CHN.</p>
+<p>Super-skaterhax (when used to launch the Homebrew Launcher) is compatible with New models on version 11.16.0 in all regions, and 11.17.0 in the EUR and JPN regions.</p>
 
 <p class="notice--warning">The instructions provided only apply to the New 3DS, New 3DS XL, and New 2DS XL. Please ensure that the device you are modding is a New 3DS, New 3DS XL, or New 2DS XL before continuing.</p>
 
@@ -486,18 +509,7 @@ window.cookieconsent.initialise({
   <li>The latest release of <a href="https://github.com/zoogie/super-skaterhax/releases">super-skaterhax</a> (the release <code class="language-plaintext highlighter-rouge">.zip</code> file)</li>
 </ul>
 
-<h4 id="section-i---updating-the-system">Section I - Updating the System</h4>
-
-<ol>
-  <li>进入 “系统设置(System Settings)”，接着点击“其他设置(Other Settings)”，然后移动到最右边，点击“系统升级(System Update)”来升级你的主机
-    <ul>
-      <li>更新程序可能会提示“你的系统已经是最新了”而不会继续更新 This is normal if you are already up to date; continue to the next section</li>
-      <li>If this gives you an error, set both your DNS settings and Proxy settings to “Auto”</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="第二步--准备工作">第二步 – 准备工作</h4>
+<h4 id="第一步--准备工作">第一步 – 准备工作</h4>
 
 <p>In this section, you will copy the files needed to trigger both super-skaterhax and the Homebrew Launcher.</p>
 
@@ -516,7 +528,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/skater-root-layout.png" alt="" /></p>
 
-<h4 id="section-iii---super-skaterhax">Section III - super-skaterhax</h4>
+<h4 id="section-ii---super-skaterhax">Section II - super-skaterhax</h4>
 
 <p>In this section, you will visit the browser exploit webpage, which will launch the Homebrew Launcher.</p>
 
@@ -553,39 +565,37 @@ window.cookieconsent.initialise({
     <ul>
       <li>If any prompts appear, approve all of them</li>
       <li>If your device freezes on a yellow screen, hold the POWER button until it turns off, then retry this section</li>
-      <li>If your device freezes on a red screen, hold the POWER button until it turns off, redo step Step 3 of Section II, then retry this section</li>
-      <li>If you get another error, <a href="troubleshooting#homebrew-launcher-super-skaterhax">follow this troubleshooting guide</a></li>
+      <li>If your device freezes on a red screen, hold the POWER button until it turns off, redo step 3 of Section II, then retry this section</li>
+      <li>If you get another error, try again up to 5 times, and if it still doesn’t work, <a href="troubleshooting#homebrew-launcher-super-skaterhax">follow this troubleshooting guide</a></li>
     </ul>
   </li>
   <li>If the exploit was successful, your device will have booted into the Homebrew Launcher</li>
   <li>将主机关机</li>
 </ol>
 
-<h4 id="section-iv---hardware-button-check">Section IV - Hardware Button Check</h4>
+<h4 id="section-iii---hardware-button-check">Section III - Hardware Button Check</h4>
+
+<p>In this section, you will see whether your shoulder buttons are working on your device. This will determine which method you will follow on the next page.</p>
 
 <ol>
-  <li>将你的主机置于关机状态，按住 L + R + ↑ + A 四个按键，然后按下电源键
+  <li>启动你的主机</li>
+  <li>Once you see the HOME Menu, press the (Left Shoulder) and (Right Shoulder) buttons at the same time
     <ul>
-      <li>Keep holding the buttons until the device boots to a system update screen (this is Safe Mode)</li>
+      <li>The camera applet should appear</li>
     </ul>
   </li>
-  <li>If you see the system update screen, press Cancel
-    <ul>
-      <li>主机将关机</li>
-      <li>如果主机启动到了主菜单，则请关机</li>
-    </ul>
-  </li>
+  <li>将主机关机</li>
 </ol>
 
 <hr />
 
 <h3 id="next-step-choose-an-exploit">Next step: Choose an exploit</h3>
 
-<p>If you saw the system update screen in the previous section, Safe Mode is working on your device.</p>
+<p>If the camera appeared in the previous section, Safe Mode is likely to be working on your device.</p>
 
-<p class="notice--primary">If your device booted into Safe Mode, continue to <a href="installing-boot9strap-(hbl-usm)">Installing boot9strap (HBL-USM)</a></p>
+<p class="notice--primary">If the camera appeared, continue to <a href="installing-boot9strap-(hbl-usm)">Installing boot9strap (HBL-USM)</a></p>
 
-<p class="notice--info">If your device did NOT boot into Safe Mode, continue to <a href="dumping-movable-(nimhax)">Dumping Movable (nimhax)</a></p>
+<p class="notice--info">If the camera did NOT appear, continue to <a href="dumping-movable-(nimhax)">Dumping Movable (nimhax)</a></p>
 
         
       </section>

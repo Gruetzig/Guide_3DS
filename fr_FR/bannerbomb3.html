@@ -314,11 +314,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/fr_FR/updating-firmware-(new-3ds)'>Mise à jour du logiciel système (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/fr_FR/updating-firmware-(kor)'>Mise à jour du logiciel système (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/fr_FR/updating-firmware-(twn)'>Mise à jour du logiciel système (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/fr_FR/ntrboot'>ntrboot</a></li>
           
         
           
             <li style="display: none;" data-name="seedminer"><a href='/fr_FR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/fr_FR/seedminer-(mii)'>Seedminer (Mii)</a></li>
           
         
           
@@ -330,6 +346,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/fr_FR/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/fr_FR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
@@ -338,23 +358,23 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(Choix multiple)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(Options multiples)</i></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flashage de ntrboot (une seule 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flash de ntrboot (une seule 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flashage de ntrboot (plusieurs 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flash de ntrboot (plusieurs 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flashage de ntrboot (DSi)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flash de ntrboot (DSi)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flashage de ntrboot (NDS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flash de ntrboot (NDS)</a></li>
           
         
           
@@ -390,6 +410,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/fr_FR/installing-boot9strap-(fredtool-legacy)'>Installation de boot9strap (Fredtool, Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(usm)"><a href='/fr_FR/installing-boot9strap-(usm)'>Installation de boot9strap (USM)</a></li>
           
         
@@ -402,7 +426,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de la configuration</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de l'installation</a></li>
           
         
       </ol>
@@ -500,7 +524,7 @@ window.cookieconsent.initialise({
       <li>Ceci va télécharger un exploit DSiWare appelé <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> et un payload appelé <code class="language-plaintext highlighter-rouge">bb3.bin</code> à l’intérieur d’une archive zip (<code class="language-plaintext highlighter-rouge">DSIWARE_EXPLOIT.zip</code>)</li>
     </ul>
   </li>
-  <li>Copiez <code class="language-plaintext highlighter-rouge">bb3.bin</code> de <code class="language-plaintext highlighter-rouge">DSIWARE_EXPLOIT.zip</code> à la racine de votre carte SD
+  <li>Copiez <code class="language-plaintext highlighter-rouge">bb3.bin</code> depuis l’archive <code class="language-plaintext highlighter-rouge">DSIWARE_EXPLOIT.zip</code> vers la racine de votre carte SD
     <ul>
       <li>La racine de la carte SD représente le répertoire initial de la carte SD où vous pouvez voir le dossier Nintendo 3DS, mais ce n’est pas à l’intérieur de ce dernier</li>
       <li>Ce fichier n’a pas besoin d’être ouvert ou extrait
@@ -517,7 +541,7 @@ window.cookieconsent.initialise({
   </li>
   <li>Créez un dossier nommé <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> à l’intérieur de <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code>
     <ul>
-      <li>Si vous aviez déjà le dossier <em>et</em> qu’il y a des fichiers de sauvegarde DSiWare existants (<code class="language-plaintext highlighter-rouge">&lt;8-character-id&gt;.bin</code>) à l’intérieur, copiez-les sur votre PC et retirez-les de votre carte SD</li>
+      <li>Si vous aviez déjà le dossier <em>et</em> qu’il y a des fichiers de sauvegarde DSiWare existants (<code class="language-plaintext highlighter-rouge">&lt;8-character-id&gt;. in</code>) à l’intérieur, copiez-les sur votre PC et retirez-les de votre carte SD</li>
     </ul>
   </li>
   <li>Copiez le fichier <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> depuis <code class="language-plaintext highlighter-rouge">DSIWARE_EXPLOIT.zip</code> vers le dossier <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
@@ -527,33 +551,27 @@ window.cookieconsent.initialise({
 
 <h4 id="section-ii---contrôle-du-bon-fonctionnement-des-boutons">Section II - Contrôle du bon fonctionnement des boutons</h4>
 
-<p>Dans cette section, vous verrez si vous pouvez accéder au mode sans échec sur votre console. Cela déterminera la méthode que vous allez suivre sur la page suivante.</p>
-
-<p>Votre carte SD doit rester dans votre ordinateur pendant que vous effectuez cette vérification.</p>
+<p>Dans cette section, vous verrez si les boutons (L) et (R) de votre console fonctionnent correctement. Cela déterminera la méthode que vous allez suivre sur la page suivante.</p>
 
 <ol>
-  <li>Lorsque votre console encore éteinte, maintenez enfoncés les boutons suivants : (L) + (R) + (Haut sur la croix directionnelle) + (A), et tout en maintenant ces boutons enfoncés, allumez votre console
+  <li>Allumez votre console</li>
+  <li>Une fois arrivé sur le Menu HOME, appuyez sur les boutons (L) et (R) en même temps
     <ul>
-      <li>Maintenez les boutons enfoncés jusqu’à ce que la console démarre sur un écran de mise à jour de la console (c’est le mode sans échec)</li>
+      <li>L’applet de l’appareil photo numérique devrait apparaître</li>
     </ul>
   </li>
-  <li>Si vous voyez l’écran de mise à jour de la console, appuyez sur Annuler
-    <ul>
-      <li>Votre console va s’éteindre</li>
-      <li>Si la console démarre à partir du menu HOME, éteignez simplement votre console</li>
-    </ul>
-  </li>
+  <li>Éteignez votre console</li>
 </ol>
 
 <hr />
 
 <h3 id="étape-suivante--choisissez-un-exploit">Étape suivante : Choisissez un exploit</h3>
 
-<p>Si vous avez vu l’écran de mise à jour de la console dans la section précédente, le mode sans échec fonctionne sur votre console.</p>
+<p>Si l’appareil photo numérique est apparu dans la section précédente, le mode sans échec devrait fonctionner sur votre console.</p>
 
-<p class="notice--primary">Si votre console a démarré en mode sans échec, continuez vers <a href="installing-boot9strap-(usm)">Installer boot9strap (USM)</a></p>
+<p class="notice--primary">Si l’appareil photo numérique est apparu, continuez vers <a href="installing-boot9strap-(usm)">Installation de boot9strap (USM)</a></p>
 
-<p class="notice--info">Si votre console n’a PAS démarré en mode sans échec, continuez vers <a href="installing-boot9strap-(fredtool)">Installer boot9strap (Fredtool)</a></p>
+<p class="notice--info">Si l’appareil photo numérique n’est PAS apparu, continuez vers <a href="installing-boot9strap-(fredtool)">Installation de boot9strap (Fredtool)</a></p>
 
         
       </section>

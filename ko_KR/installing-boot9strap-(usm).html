@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/ko_KR/updating-firmware-(new-3ds)'>펌웨어 업데이트 (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/ko_KR/updating-firmware-(kor)'>펌웨어 업데이트 (한글판)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/ko_KR/updating-firmware-(twn)'>펌웨어 업데이트 (타이완)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ko_KR/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/ko_KR/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/ko_KR/seedminer-(twn)'>Seedminer (타이완)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/ko_KR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/ko_KR/bannerbomb3-(legacy)'>BannerBomb3 (레거시)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
           
         
           
@@ -529,7 +553,7 @@ window.cookieconsent.initialise({
   <li><code class="language-plaintext highlighter-rouge">데이터 관리</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">SD 카드</code>로 들어가주세요 (<a href="/images/screenshots/bb3/dsiware-management.png">사진</a>)
     <ul>
       <li>기기는 BB3 multihax 메뉴를 표시할 겁니다</li>
-      <li>이 과정에서 기기가 갑자기 꺼진다면, <a href="troubleshooting#bannerbomb3">이 문제 해결 가이드</a>를 참고해 주세요.</li>
+      <li>If the BB3 multihax menu doesn’t open, <a href="troubleshooting#bannerbomb3">follow this troubleshooting guide</a></li>
       <li>만약 BB3 multihax 메뉴에서 “cfw installed already”를 표시한다면, 해당 기기는 이미 커스텀 펌웨어가 설치되어 있다는 뜻으로 <a href="checking-for-cfw">여기</a>로 계속해야 합니다</li>
     </ul>
   </li>
@@ -538,6 +562,16 @@ window.cookieconsent.initialise({
       <li>기기가 자동으로 종료될 겁니다</li>
     </ul>
   </li>
+  <li>기기를 시작해 주세요</li>
+  <li>기기에서 본체 설정을 열어 주세요</li>
+  <li><code class="language-plaintext highlighter-rouge">인터넷 설정</code> -&gt; <code class="language-plaintext highlighter-rouge">인터넷 접속 설정</code>으로 이동해 주세요</li>
+  <li>Ensure that all three connections are named “Haaaaaaaxxxxxxxxx…”
+    <ul>
+      <li>Do NOT change these settings!</li>
+      <li>If all three connections are NOT all named “Haaaaaaaxxxxxxxxx…”, STOP! Something went wrong in this section and MUST be fixed before you can continue</li>
+    </ul>
+  </li>
+  <li>기기를 종료해 주세요</li>
 </ol>
 
 <h4 id="섹션-iii---unsafe_mode">섹션 III - unSAFE_MODE</h4>
@@ -563,6 +597,7 @@ window.cookieconsent.initialise({
     <ul>
       <li>만약 기기에 하얀 화면이 표시되면, 전원 버튼을 길게 눌러 기기를 종료하고, 이 섹션을 다시 시도해 주세요</li>
       <li>만약 기기에 붉은 화면이 표시되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">usm.bin</code>이 존재하지 않습니다</li>
+      <li>다른 오류가 발생하면 이 <a href="troubleshooting#installing-boot9strap-usm">문제 해결 가이드</a> 를 참고해 주세요</li>
     </ul>
   </li>
 </ol>
@@ -572,7 +607,11 @@ window.cookieconsent.initialise({
 <p>이 섹션에서는, 커스텀 펌웨어를 설치할 것입니다.</p>
 
 <ol>
-  <li>메시지가 나타나면, boot9strap을 설치하기 위하여 화면에 주어진 키 조합을 입력해 주세요</li>
+  <li>메시지가 나타나면, boot9strap을 설치하기 위하여 화면에 주어진 키 조합을 입력해 주세요
+    <ul>
+      <li>아래 화면의 단계가 붉은 텍스트로 표시되고 키 콤보 입력을 요구하지 않는다면, <a href="troubleshooting#issues-with-safeb9sinstaller">이 문제 해결 가이드</a>를 참고해 주세요</li>
+    </ul>
+  </li>
   <li>작업이 완료되면, (A) 를 눌려 기기를 재부팅해 주세요</li>
   <li>기기는 Luma3DS 구성 메뉴로 부팅되었을 겁니다
     <ul>

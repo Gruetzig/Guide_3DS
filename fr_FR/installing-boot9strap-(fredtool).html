@@ -314,11 +314,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/fr_FR/updating-firmware-(new-3ds)'>Mise à jour du logiciel système (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/fr_FR/updating-firmware-(kor)'>Mise à jour du logiciel système (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/fr_FR/updating-firmware-(twn)'>Mise à jour du logiciel système (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/fr_FR/ntrboot'>ntrboot</a></li>
           
         
           
             <li style="display: none;" data-name="seedminer"><a href='/fr_FR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/fr_FR/seedminer-(mii)'>Seedminer (Mii)</a></li>
           
         
           
@@ -330,6 +346,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/fr_FR/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/fr_FR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
@@ -338,23 +358,23 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(Choix multiple)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(Options multiples)</i></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flashage de ntrboot (une seule 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flash de ntrboot (une seule 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flashage de ntrboot (plusieurs 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flash de ntrboot (plusieurs 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flashage de ntrboot (DSi)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flash de ntrboot (DSi)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flashage de ntrboot (NDS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flash de ntrboot (NDS)</a></li>
           
         
           
@@ -390,6 +410,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/fr_FR/installing-boot9strap-(fredtool-legacy)'>Installation de boot9strap (Fredtool, Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(usm)"><a href='/fr_FR/installing-boot9strap-(usm)'>Installation de boot9strap (USM)</a></li>
           
         
@@ -402,7 +426,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de la configuration</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de l'installation</a></li>
           
         
       </ol>
@@ -477,12 +501,14 @@ window.cookieconsent.initialise({
 
 </details>
 
+<p class="notice--warning">You should only be able to get to this page if you are running version 11.16.0. If you are on any firmware other than 11.17.0 or 11.16.0, STOP as these instructions WILL LEAD TO A BRICK on other firmwares!!</p>
+
 <h2 id="ce-dont-vous-avez-besoin">Ce dont vous avez besoin</h2>
 
 <ul>
   <li>Votre fichier <code class="language-plaintext highlighter-rouge">movable.sed</code> obtenu grâce à <a href="seedminer">Seedminer</a></li>
   <li>La dernière version de <a href="https://github.com/zoogie/Frogminer/releases/latest">Frogminer_save</a> (<code class="language-plaintext highlighter-rouge">Frogminer_save.zip</code>)</li>
-  <li>La dernière version de <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (téléchargement direct)</li>
+  <li><strong>11.16.0 or 11.17.0 users</strong>: The v6.1.1 release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (direct download)</li>
   <li>La dernière version de <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (le fichier `.zip’ de Luma3DS)</li>
 </ul>
 
@@ -491,11 +517,11 @@ window.cookieconsent.initialise({
 <p>Comme mesure de sécurité supplémentaire, nous effectuerons une vérification supplémentaire de la présence d’un custom firmware. Ceci est dû au fait que l’utilisation de cette méthode lorsqu’un custom firmware est déjà installé à un risque de bricker la console (ce qui la rendrait inutilisable sans méthodes de récupération comme <a href="ntrboot">ntrboot</a>).</p>
 
 <ol>
-  <li>Éteignez votre 3DS</li>
+  <li>Éteignez votre console</li>
   <li>Maintenez le bouton (Select) enfoncé</li>
   <li>Allumez votre console tout en maintenant le bouton (Select) enfoncé</li>
   <li>Si la vérification a réussi, vous démarrerez sur le menu HOME et vous pourrez continuer avec ce guide</li>
-  <li>Éteignez votre 3DS</li>
+  <li>Éteignez votre console</li>
 </ol>
 
 <p class="notice--danger">Si vous voyez un menu de configuration ou si la console s’éteint immédiatement, vous avez déjà CFW, et continuer avec ces instructions peut BRICKER votre console ! Suivez <a href="checking-for-cfw">Vérification de la présence d’un CFW</a> pour mettre à jour votre CFW existant.</p>
@@ -505,7 +531,7 @@ window.cookieconsent.initialise({
 <p>Dans cette section, vous allez déclencher l’exploit BannerBomb3 à l’aide du menu de Gestion des Nintendo DSiWare et copier le fichier dumpé sur votre ordinateur afin de pouvoir l’utiliser dans la section suivante.</p>
 
 <ol>
-  <li>Retirez la carte SD de votre ordinateur et réinsérez-là dans votre 3DS</li>
+  <li>Retirez la carte SD de votre ordinateur et réinsérez-la dans votre console</li>
   <li>Allumez votre console</li>
   <li>Lancez les Paramètres de la console</li>
   <li>Naviguez vers <code class="language-plaintext highlighter-rouge">Gestion des données</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code>-&gt; <code class="language-plaintext highlighter-rouge">Carte SD</code> (<a href="/images/screenshots/bb3/dsiware-management.png">image</a>)
@@ -530,7 +556,7 @@ window.cookieconsent.initialise({
   <li>Insérez votre carte SD dans votre ordinateur</li>
   <li>Ouvrez le site Web <a href="https://jenkins.nelthorya.net/job/DSIHaxInjector_new/build?delay=0sec">DSIHaxInjector_new</a> sur votre ordinateur</li>
   <li>Dans le champ “Username”, entrez n’importe quel nom alphanumérique (sans espaces ni caractères spéciaux)</li>
-  <li>Dans le champ “DSiBin”, téléchargez votre fichier <code class="language-plaintext highlighter-rouge">42383841.bin</code> depuis la racine de votre carte SD en utilisant la première option “Choisir un fichier”</li>
+  <li>Dans le champ “DSiBin”, téléchargez votre fichier DSiWare (par exemple 42383841.bin) depuis la racine de votre carte SD en utilisant la première option “Choisir un fichier”</li>
   <li>Sous le champ “MovableSed”, uploadez votre fichier <code class="language-plaintext highlighter-rouge">movable.sed</code> en utilisant la deuxième option “Choisir un fichier”</li>
   <li>Dans le champ “InjectionTarget”, définissez la cible d’injection à <code class="language-plaintext highlighter-rouge">DSinternet</code> (PAS memorypit)</li>
   <li>Cliquez sur “Build”
@@ -552,7 +578,7 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Supprimez <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> de votre dossier Nintendo DSiWare</li>
-  <li>Copiez le fichier <code class="language-plaintext highlighter-rouge">42383841.bin</code> du dossier <code class="language-plaintext highlighter-rouge">hax</code> de l’archive DSiWare téléchargée (output_(name).zip) vers le dossier <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code>
+  <li>Copiez le fichier <code class="language-plaintext highlighter-rouge">42383841.bin</code> depuis le dossier <code class="language-plaintext highlighter-rouge">hax</code> de l’archive DSiWare téléchargée (output_(name).zip) vers le dossier <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code>
   <img src="https://3ds.hacks.guide/images/screenshots/bb3/dsiware-location-4.png" alt="" class="notice--info" /></li>
   <li>Copiez <code class="language-plaintext highlighter-rouge">boot.firm</code> et <code class="language-plaintext highlighter-rouge">boot.3dsx</code> depuis Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code>vers la racine de votre carte SD
     <ul>
@@ -561,7 +587,7 @@ window.cookieconsent.initialise({
   </li>
   <li>Copiez <code class="language-plaintext highlighter-rouge">boot.nds</code> (B9STool) de l’archive <code class="language-plaintext highlighter-rouge">.zip</code> à la racine de votre carte SD</li>
   <li>Copiez le dossier <code class="language-plaintext highlighter-rouge">private</code> du fichier <code class="language-plaintext highlighter-rouge">.zip</code> de Frogminer_save vers la racine de votre carte SD</li>
-  <li>Retirez la carte SD de votre ordinateur et réinsérez-là dans votre 3DS</li>
+  <li>Retirez la carte SD de votre ordinateur et réinsérez-la dans votre console</li>
   <li>
     <p>Allumez votre console</p>
 
@@ -576,23 +602,32 @@ window.cookieconsent.initialise({
 <ol>
   <li>Lancez les Paramètres de la console</li>
   <li>Naviguez vers <code class="language-plaintext highlighter-rouge">Gestion des données</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code>-&gt; <code class="language-plaintext highlighter-rouge">Carte SD</code> (<a href="/images/screenshots/bb3/dsiware-management.png">image</a>)</li>
-  <li>Sélectionnez le titre “Haxxxxxxxxx!”</li>
+  <li>Sélectionnez le titre “Haxxxxxxxxx!”
+    <ul>
+      <li>Si vous ne parvenez pas à sélectionner le titre “Haxxxxxxxxx”, <a href="troubleshooting#installing-boot9strap-fredtool">suivez ce guide de dépannage</a></li>
+    </ul>
+  </li>
   <li>Sélectionnez “Copier”, puis sélectionnez “OK”</li>
   <li>Retournez au menu principal des Paramètres de la console</li>
   <li>Naviguez vers <code class="language-plaintext highlighter-rouge">Paramètres Internet</code> -&gt; <code class="language-plaintext highlighter-rouge">Connexions Nintendo DS</code>, puis sélectionnez “OK” (<a href="/images/screenshots/fredtool/dsconnection.png">image</a>)</li>
-  <li>Si l’exploit a réussi, votre console devrait avoir démarré la version japonaise de Flipnote Studio</li>
+  <li>Si l’exploit a réussi, votre console devrait avoir démarré la version japonaise de Flipnote Studio
+    <ul>
+      <li>Si votre console ne charge pas la version JPN de Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool">suivez ce guide de dépannage</a></li>
+    </ul>
+  </li>
 </ol>
 
 <h4 id="section-v---exploit-flipnote">Section V - Exploit Flipnote</h4>
 
 <p class="notice--info">Si vous préférez un guide visuel pour cette section, un tel guide est disponible <a href="https://zoogie.github.io/web/flipnote_directions/">ici</a>.</p>
 
-<p>Dans cette section, vous allez effectuer une série d’étapes très spécifiques dans Flipnote Studio qui, une fois effectuées correctement, déclencheront le lancement l’installateur de boot9strap (custom firmware).</p>
+<p>Dans cette section, vous allez effectuer une série d’étapes très spécifiques dans Flipnote Studio qui, une fois effectuées correctement, déclencheront le lancement de b9sTool, l’installateur de boot9strap (custom firmware).</p>
 
 <ol>
   <li>Terminez le processus de configuration initial de Flipnote Studio jusqu’à ce que vous atteigniez le menu principal
     <ul>
       <li>Sélectionnez l’option de gauche chaque fois que vous y êtes invité durant le processus de configuration</li>
+      <li>Si vous rencontrez un problème pendant que vous faites cette section, <a href="troubleshooting#installing-boot9strap-fredtool">consultez ce guide de dépannage</a></li>
     </ul>
   </li>
   <li>En utilisant l’écran tactile, sélectionnez la grande case à gauche, puis sélectionnez la boîte avec une icône de carte SD</li>
@@ -641,12 +676,12 @@ window.cookieconsent.initialise({
 
 <h4 id="section-vii---restauration-des-paramètres-de-connexions-nintendo-ds">Section VII - Restauration des paramètres de Connexions Nintendo DS</h4>
 
-<p>Dans cette section, vous allez restaurer Connexions Nintendo DS comme il était avant d’être remplacé temporairement par Flipnote Studio dans Section IV.</p>
+<p>Dans cette section, vous allez restaurer Connexions Nintendo DS comme il était avant d’être remplacé temporairement par Flipnote Studio dans une section précédente.</p>
 
 <ol>
   <li>Naviguez vers <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> sur votre carte SD</li>
-  <li>Copiez le fichier <code class="language-plaintext highlighter-rouge">42383841.bin</code> du dossier <code class="language-plaintext highlighter-rouge">clean</code> de l’archive DSiWare téléchargée (output_(nom).zip) dans le dossier <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
-  <li>Retirez la carte SD de votre ordinateur et réinsérez-là dans votre 3DS</li>
+  <li>Copiez le fichier <code class="language-plaintext highlighter-rouge">42383841.bin</code> depuis le dossier <code class="language-plaintext highlighter-rouge">clean</code> de l’archive DSiWare téléchargée (output_(nom).zip) dans le dossier <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
+  <li>Retirez la carte SD de votre ordinateur et réinsérez-la dans votre console</li>
   <li>Allumez votre console</li>
   <li>Lancez les Paramètres de la console</li>
   <li>Naviguez vers <code class="language-plaintext highlighter-rouge">Gestion des données</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code>-&gt; <code class="language-plaintext highlighter-rouge">Carte SD</code> (<a href="/images/screenshots/bb3/dsiware-management.png">image</a>)</li>

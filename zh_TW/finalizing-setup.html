@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/zh_TW/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/zh_TW/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/zh_TW/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/zh_TW/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/zh_TW/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/zh_TW/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/zh_TW/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/zh_TW/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_TW/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/zh_TW/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -457,13 +481,14 @@ window.cookieconsent.initialise({
   <li><a href="#必備項目" id="markdown-toc-必備項目">必備項目</a></li>
   <li><a href="#操作說明" id="markdown-toc-操作說明">操作說明</a>    <ul>
       <li><a href="#第一節--準備工作" id="markdown-toc-第一節--準備工作">第一節 — 準備工作</a></li>
-      <li><a href="#第二節--更新系統" id="markdown-toc-第二節--更新系統">第二節 — 更新系統</a></li>
-      <li><a href="#第三節--homebrew-launcher" id="markdown-toc-第三節--homebrew-launcher">第三節 — Homebrew Launcher</a></li>
-      <li><a href="#第四節--設定內部時間-rtc-及-dsp" id="markdown-toc-第四節--設定內部時間-rtc-及-dsp">第四節 — 設定內部時間 (RTC) 及 DSP</a></li>
-      <li><a href="#第五節--安裝-cia-檔案" id="markdown-toc-第五節--安裝-cia-檔案">第五節 — 安裝 CIA 檔案</a></li>
-      <li><a href="#第六節--安裝-luma3ds-至-ctrnand" id="markdown-toc-第六節--安裝-luma3ds-至-ctrnand">第六節 — 安裝 Luma3DS 至 CTRNAND</a></li>
-      <li><a href="#第七節--清理-sd-卡" id="markdown-toc-第七節--清理-sd-卡">第七節 — 清理 SD 卡</a></li>
-      <li><a href="#第八節--備份重要檔案" id="markdown-toc-第八節--備份重要檔案">第八節 — 備份重要檔案</a></li>
+      <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
+      <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
+      <li><a href="#section-iv---homebrew-launcher" id="markdown-toc-section-iv---homebrew-launcher">Section IV - Homebrew Launcher</a></li>
+      <li><a href="#section-v---rtc-and-dsp-setup" id="markdown-toc-section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</a></li>
+      <li><a href="#section-vi---installing-cias" id="markdown-toc-section-vi---installing-cias">Section VI - Installing CIAs</a></li>
+      <li><a href="#section-vii---ctrnand-luma3ds" id="markdown-toc-section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</a></li>
+      <li><a href="#section-viii---cleanup-sd-card" id="markdown-toc-section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</a></li>
+      <li><a href="#section-ix---backup-essential-files" id="markdown-toc-section-ix---backup-essential-files">Section IX - Backup Essential Files</a></li>
     </ul>
   </li>
   <li><a href="#information-and-notes" id="markdown-toc-information-and-notes">Information and Notes</a></li>
@@ -536,7 +561,22 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/godmode9-location.png" alt="" /></p>
 
-<h4 id="第二節--更新系統">第二節 — 更新系統</h4>
+<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
+
+<p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
+
+<ol>
+  <li>關閉您的主機</li>
+  <li>按住「Select」鍵</li>
+  <li>在開機時按住「Select」鍵</li>
+  <li>If the check was successful, your device should have booted into the Luma3DS configuration menu</li>
+  <li>按『Start』鍵以存檔並重新啟動系統</li>
+  <li>關閉您的主機</li>
+</ol>
+
+<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your device. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
+
+<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
 
 <p>In this section, you will update your system to the latest version, which is safe to do with custom firmware.</p>
 
@@ -551,7 +591,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="第三節--homebrew-launcher">第三節 — Homebrew Launcher</h4>
+<h4 id="section-iv---homebrew-launcher">Section IV - Homebrew Launcher</h4>
 
 <p>In this section, you will temporarily replace Download Play with Homebrew Launcher (which we need to launch FBI). Download Play will automatically go back to normal once you reboot your device.</p>
 
@@ -574,7 +614,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="第四節--設定內部時間-rtc-及-dsp">第四節 — 設定內部時間 (RTC) 及 DSP</h4>
+<h4 id="section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</h4>
 
 <p>In this section, you will sync your 3DS internal clock with the actual time and dump the sound firmware (which is necesssary for some homebrew software to use sound properly).</p>
 
@@ -589,7 +629,7 @@ window.cookieconsent.initialise({
   <li>按『B』退出 Rosalina 選單</li>
 </ol>
 
-<h4 id="第五節--安裝-cia-檔案">第五節 — 安裝 CIA 檔案</h4>
+<h4 id="section-vi---installing-cias">Section VI - Installing CIAs</h4>
 
 <p>In this section, you will install several useful homebrew applications to HOME Menu.</p>
 
@@ -601,7 +641,7 @@ window.cookieconsent.initialise({
   <li>按『Home』鍵，並關閉『下載通信 (Download Play)』程式</li>
 </ol>
 
-<h4 id="第六節--安裝-luma3ds-至-ctrnand">第六節 — 安裝 Luma3DS 至 CTRNAND</h4>
+<h4 id="section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</h4>
 
 <p>In this section, you will use a script to copy some of Luma3DS’s files to internal memory so that they can be accessed, even without an SD card inserted.</p>
 
@@ -624,7 +664,7 @@ window.cookieconsent.initialise({
   <li>按『A』 繼續</li>
 </ol>
 
-<h4 id="第七節--清理-sd-卡">第七節 — 清理 SD 卡</h4>
+<h4 id="section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</h4>
 
 <p>In this section, you will use a script to remove some unnecessary files from your SD card.</p>
 
@@ -635,7 +675,7 @@ window.cookieconsent.initialise({
   <li>按『B』回到主選單</li>
 </ol>
 
-<h4 id="第八節--備份重要檔案">第八節 — 備份重要檔案</h4>
+<h4 id="section-ix---backup-essential-files">Section IX - Backup Essential Files</h4>
 
 <p>In this section, you will make backups of files that can be used to recover from software bricks or to recover data.</p>
 
@@ -682,8 +722,6 @@ window.cookieconsent.initialise({
 <hr />
 
 <p class="notice--success">大功告成！ 您的主機現在已完成安裝自製韌體以及其設定。</p>
-
-<p class="notice--info">Hello! We’re looking for feedback on the overall experience of following our guide. If you’d like to help out, check out the survey <a href="https://forms.gle/vZNoc4QLCz5MEXCK7">here</a> (only available in English). Thanks!</p>
 
 <h3 id="information-and-notes">Information and Notes</h3>
 

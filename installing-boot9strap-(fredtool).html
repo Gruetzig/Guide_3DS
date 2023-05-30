@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -477,12 +501,14 @@ window.cookieconsent.initialise({
 
 </details>
 
+<p class="notice--warning">You should only be able to get to this page if you are running version 11.16.0. If you are on any firmware other than 11.17.0 or 11.16.0, STOP as these instructions WILL LEAD TO A BRICK on other firmwares!!</p>
+
 <h3 id="what-you-need">What You Need</h3>
 
 <ul>
   <li>Your <code class="language-plaintext highlighter-rouge">movable.sed</code> file from completing <a href="seedminer">Seedminer</a></li>
   <li>The latest release of <a href="https://github.com/zoogie/Frogminer/releases/latest">Frogminer_save</a> (<code class="language-plaintext highlighter-rouge">Frogminer_save.zip</code>)</li>
-  <li>The latest release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (direct download)</li>
+  <li><strong>11.16.0 or 11.17.0 users</strong>: The v6.1.1 release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (direct download)</li>
   <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> file)</li>
 </ul>
 
@@ -530,7 +556,7 @@ window.cookieconsent.initialise({
   <li>Insert your SD card into your computer</li>
   <li>Open the <a href="https://jenkins.nelthorya.net/job/DSIHaxInjector_new/build?delay=0sec">DSIHaxInjector_new</a> website on your computer</li>
   <li>Under the “Username” field, enter any alphanumeric name (no spaces or special characters)</li>
-  <li>Under the “DSiBin” field, upload your <code class="language-plaintext highlighter-rouge">42383841.bin</code> file from the root of your SD card using the first “Browse…” option</li>
+  <li>Under the “DSiBin” field, upload your DSiWare backup file (e.g. 42383841.bin) from the root of your SD card using the first “Browse…” option</li>
   <li>Under the “MovableSed” field, upload your <code class="language-plaintext highlighter-rouge">movable.sed</code> file using the second “Browse…” option</li>
   <li>Under the “InjectionTarget” field, set the injection target to <code class="language-plaintext highlighter-rouge">DSinternet</code> (NOT memorypit)</li>
   <li>Click “Build”
@@ -650,7 +676,7 @@ window.cookieconsent.initialise({
 
 <h4 id="section-vii---restoring-ds-connection-settings">Section VII - Restoring DS Connection Settings</h4>
 
-<p>In this section, you will restore DS Connection Settings to the way it was before it was temporarily replaced with Flipnote Studio in Section IV.</p>
+<p>In this section, you will restore DS Connection Settings to the way it was before it was temporarily replaced with Flipnote Studio in an earlier section.</p>
 
 <ol>
   <li>Navigate to <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> on your SD card</li>

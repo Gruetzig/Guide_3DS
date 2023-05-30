@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/hu_HU/updating-firmware-(new-3ds)'>Firmware frissítése (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/hu_HU/updating-firmware-(kor)'>Firmware frissítése (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/hu_HU/updating-firmware-(twn)'>Firmware frissítése (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/hu_HU/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/hu_HU/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/hu_HU/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/hu_HU/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/hu_HU/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -370,11 +390,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>boot9strap telepítése (Soundhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>Boot9strap telepítése (Soundhax)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/hu_HU/installing-boot9strap-(fredtool)'>Boot9strap telepítése (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, Legacy)</a></li>
           
         
           
@@ -477,12 +501,14 @@ window.cookieconsent.initialise({
 
 </details>
 
+<p class="notice--warning">Csak akkor szabad erre az oldalra jutnod, ha 11.16.0 verziót futtatsz. Ha más firmware-en vagy mint 11.17.0 vagy 11.16.0, akkor ÁLLJ MEG, ez az útmutató BRICKELNI FOG más firmware-en!!</p>
+
 <h3 id="amire-szükséged-lesz">Amire szükséged lesz</h3>
 
 <ul>
   <li>A <code class="language-plaintext highlighter-rouge">movable.sed</code> fájlodra a <a href="seedminer">Seedminer</a>-ből</li>
   <li>A [Frogminer_save] legújabb kiadása (https://github.com/zoogie/Frogminer/releases/latest) (<code class="language-plaintext highlighter-rouge">Frogminer_save.zip</code>)</li>
-  <li>A <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> legfrissebb verziója (közvetlen letöltés)</li>
+  <li><strong>11.16.0 vagy 11.17.0 használók</strong>: A <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> v6.1.1 verziója (közvetlen letöltés)</li>
   <li>A <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> legújabb kiadása (a Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> fájl)</li>
 </ul>
 
@@ -530,7 +556,7 @@ window.cookieconsent.initialise({
   <li>Helyezd az SD kártyád a számítógépbe</li>
   <li>Nyisd meg a <a href="https://jenkins.nelthorya.net/job/DSIHaxInjector_new/build?delay=0sec/">DSIHaxInjector_new</a> oldalt a számítógépeden</li>
   <li>A “Username” mező alatt adj meg egy tetszőleges alfanumerikus nevet (nem lehet benne szóköz vagy speciális karakter)</li>
-  <li>A “DSiBin” mező alatt töltsd fel a <code class="language-plaintext highlighter-rouge">42383841.bin</code> fájlodat az SD kártyád gyökeréről az első “Browse…” opció használatával</li>
+  <li>A “DSiBin” mező alatt töltsd fel a DSiWare mentés fájlodat (pl.: 42383841.bin) az SD kártyád gyökeréről az első “Browse…” opció használatával</li>
   <li>A “MovableSed” mező alatt töltsd fel a <code class="language-plaintext highlighter-rouge">movable.sed</code> fájlod a második “Browse…” opció használatával</li>
   <li>Az “InjectionTarget” mező alatt válaszd ki az injection target-et <code class="language-plaintext highlighter-rouge">DSinternet</code>-re (NEM memorypit)</li>
   <li>Kattints a “Build”-re
@@ -576,11 +602,19 @@ window.cookieconsent.initialise({
 <ol>
   <li>Lépj be a System Settings-be a készülékeden</li>
   <li>Navigálj ide: <code class="language-plaintext highlighter-rouge">Data Management</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">SD Card</code> (<a href="/images/screenshots/bb3/dsiware-management.png">kép</a>)</li>
-  <li>Válaszd a “Haxxxxxxxxx!” címet</li>
+  <li>Válaszd a “Haxxxxxxxxx!” címet
+    <ul>
+      <li>Ha nem tudod kiválasztani a “Haxxxxxxxxx” címet, <a href="troubleshooting#installing-boot9strap-fredtool">kövesd ezt a hibaelhárítási útmutatót</a></li>
+    </ul>
+  </li>
   <li>Válaszd a “Copy”-t, majd az “OK”-t</li>
   <li>Térj vissza a System Settings főmenüjébe</li>
   <li>Navigálj az <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DS Connections</code> opcióhoz, majd válaszd az “OK”-t (<a href="/images/screenshots/fredtool/dsconnection.png">kép</a>)</li>
-  <li>Ha az exploit sikeres volt, a készülékednek ezt követően be kell töltenie a JPN verzióját a Flipnote Studio-nak</li>
+  <li>Ha az exploit sikeres volt, a készülékednek ezt követően be kell töltenie a JPN verzióját a Flipnote Studio-nak
+    <ul>
+      <li>Ha az eszközöd nem tölti be a Flipnote Studio JPN verzióját, <a href="troubleshooting#installing-boot9strap-fredtool">kövesd ezt a hibaelhárítási útmutatót</a></li>
+    </ul>
+  </li>
 </ol>
 
 <h4 id="v-rész---flipnote-exploit">V. rész - Flipnote Exploit</h4>
@@ -593,6 +627,7 @@ window.cookieconsent.initialise({
   <li>Fejezd be a kezdeti telepítését az elindított játéknak, amíg el nem éri a fő menüt
     <ul>
       <li>Válaszd a bal opciót, ha kérdezi a telepítési folyamat során</li>
+      <li>Ha problémába futsz ebben a fejezetben, <a href="troubleshooting#installing-boot9strap-fredtool">kövesd ezt a hibaelhárítási útmutatót</a> a problémáddal</li>
     </ul>
   </li>
   <li>Az érintőképernyőt használva válaszd ki a bal nagy dobozt, majd válaszd a dobozt az SD kártya ikonnal</li>
@@ -641,7 +676,7 @@ window.cookieconsent.initialise({
 
 <h4 id="vii-rész---a-ds-connection-settings-visszaállítása">VII. rész - A DS Connection Settings visszaállítása</h4>
 
-<p>Ebben a fejezetben vissza fogod állítano a DS Connection Settings-et az az előtti állapotára, mielőtt lecserélésre került a Flipnote Studio-ra a IV. részben.</p>
+<p>Ebben a fejezetben vissza fogod állítano a DS Connection Settings-et az az előtti állapotára, mielőtt lecserélésre került a Flipnote Studio-ra egy korábbi szakaszban.</p>
 
 <ol>
   <li>Navigálj a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> mappába az SD kártyán</li>

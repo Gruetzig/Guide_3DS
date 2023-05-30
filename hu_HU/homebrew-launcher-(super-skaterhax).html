@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/hu_HU/updating-firmware-(new-3ds)'>Firmware frissítése (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/hu_HU/updating-firmware-(kor)'>Firmware frissítése (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/hu_HU/updating-firmware-(twn)'>Firmware frissítése (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/hu_HU/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/hu_HU/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/hu_HU/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/hu_HU/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/hu_HU/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -370,11 +390,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>boot9strap telepítése (Soundhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>Boot9strap telepítése (Soundhax)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/hu_HU/installing-boot9strap-(fredtool)'>Boot9strap telepítése (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, Legacy)</a></li>
           
         
           
@@ -454,10 +478,9 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#kompatibilitási-megjegyzések" id="markdown-toc-kompatibilitási-megjegyzések">Kompatibilitási megjegyzések</a></li>
   <li><a href="#amire-szükséged-lesz" id="markdown-toc-amire-szükséged-lesz">Amire szükséged lesz</a>    <ul>
-      <li><a href="#i-rész---a-rendszer-frissítése" id="markdown-toc-i-rész---a-rendszer-frissítése">I. rész - A rendszer frissítése</a></li>
-      <li><a href="#ii-rész---előkészületek" id="markdown-toc-ii-rész---előkészületek">II. rész - Előkészületek</a></li>
-      <li><a href="#iii-rész---super-skaterhax" id="markdown-toc-iii-rész---super-skaterhax">III. rész - super-skaterhax</a></li>
-      <li><a href="#iv-rész---fizikai-gombok-ellenőrzése" id="markdown-toc-iv-rész---fizikai-gombok-ellenőrzése">IV. rész - Fizikai gombok ellenőrzése</a></li>
+      <li><a href="#i-rész---előkészületek" id="markdown-toc-i-rész---előkészületek">I. rész - Előkészületek</a></li>
+      <li><a href="#ii-rész---super-skaterhax" id="markdown-toc-ii-rész---super-skaterhax">II. rész - super-skaterhax</a></li>
+      <li><a href="#iii-rész---fizikai-gombok-ellenőrzése" id="markdown-toc-iii-rész---fizikai-gombok-ellenőrzése">III. rész - Fizikai gombok ellenőrzése</a></li>
     </ul>
   </li>
   <li><a href="#következő-lépés-válassz-egy-exploit-ot" id="markdown-toc-következő-lépés-válassz-egy-exploit-ot">Következő lépés: Válassz egy exploit-ot</a></li>
@@ -474,7 +497,7 @@ window.cookieconsent.initialise({
 
 <h3 id="kompatibilitási-megjegyzések">Kompatibilitási megjegyzések</h3>
 
-<p>A super-skaterhax (ami a Homebrew Launcher indítására használt) kompatibilis a 11.16.0 verziós New modellekkel minden régióban a TWN/CHN-t kivéve.</p>
+<p>A super-skaterhax (ami a Homebrew Launcher indítására használt) kompatibilis a 11.16.0 verziós New modellekkel minden régióban és 11.17.0 verziós EUR és JPN régiós konzolokon.</p>
 
 <p class="notice--warning">A megadott lépések csak a New 3DS, New 3DS XL és New 2DS XL típusokra vonatkoznak. Mielőtt folytatnád, kérjük ellenőrizd, hogy a moddolandó eszközöd New 3DS, New 3DS XL, vagy New 2DS XL.</p>
 
@@ -485,18 +508,7 @@ window.cookieconsent.initialise({
   <li>A <a href="https://github.com/zoogie/super-skaterhax/releases">super-skaterhax</a> legújabb kiadása (a kiadás<code class="language-plaintext highlighter-rouge">.zip</code> fájl)</li>
 </ul>
 
-<h4 id="i-rész---a-rendszer-frissítése">I. rész - A rendszer frissítése</h4>
-
-<ol>
-  <li>Frissítsd az eszközödet következőképp. Lépj be a System Settings-be, majd az “Other settings”-be, ahol addig lépkedj jobbra, amíg a végére nem érsz. Itt válaszd a “System Update” opciót.
-    <ul>
-      <li>A frissítő elképzelhető, hogy megjeleníti a “Your system is up to date” üzenetet a frissítés helyett. Ez normális, ha már frissítettél; folytasd a következő szakasszal</li>
-      <li>Ha ez hibát ad, akkor állítsd a DNS és Proxy beállításodat egyaránt “Auto”-ra</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="ii-rész---előkészületek">II. rész - Előkészületek</h4>
+<h4 id="i-rész---előkészületek">I. rész - Előkészületek</h4>
 
 <p>Ebben a fejezetben fel fogod másolni a fájlokat, amik a super-skaterhax és a Homebrew Launcher triggereléshez szükségesek.</p>
 
@@ -515,7 +527,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/skater-root-layout.png" alt="" /></p>
 
-<h4 id="iii-rész---super-skaterhax">III. rész - super-skaterhax</h4>
+<h4 id="ii-rész---super-skaterhax">II. rész - super-skaterhax</h4>
 
 <p>Ebben a fejezetben meg fogod látogatni a browser exploit weboldalt, ami elindítja a Homebrew Launcher-t.</p>
 
@@ -553,38 +565,36 @@ window.cookieconsent.initialise({
       <li>Ha bármilyen kérdés előjön, fogadd el mind</li>
       <li>Ha az eszközöd lefagy egy sárga képernyőn, tartsd nyomva a POWER gombot, amíg ki nem kapcsol, és próbáld újra ezt a részt</li>
       <li>Ha az eszközöd lefagy egy piros képernyőn, tartsd nyomva a POWER gombot, amíg ki nem kapcsol, csináld újra a 3. lépést a II. részben, majd próbáld újra ezt a részt</li>
-      <li>Ha más hibát kapsz, <a href="troubleshooting#homebrew-launcher-super-skaterhax">kövesd ezt a hibaelhárítási útmutatót</a></li>
+      <li>Ha más hibát kapsz, próbáld meg 5x, és ha még minden nem megy <a href="troubleshooting#homebrew-launcher-super-skaterhax">kövesd ezt a hibaelhárítási útmutatót</a></li>
     </ul>
   </li>
   <li>Ha az exploit sikeres volt, a készülékének ezt követően be kell bootolnia a Homebrew Launcherbe</li>
   <li>Kapcsold ki a készüléked</li>
 </ol>
 
-<h4 id="iv-rész---fizikai-gombok-ellenőrzése">IV. rész - Fizikai gombok ellenőrzése</h4>
+<h4 id="iii-rész---fizikai-gombok-ellenőrzése">III. rész - Fizikai gombok ellenőrzése</h4>
+
+<p>Ebben a fejezetben tesztelni fogod azt, hogy működnek-e a váll gombok az eszközödön. Ez meghatározza, hogy melyik metódust kell követned a következő oldalon.</p>
 
 <ol>
-  <li>Az eszközöd kikapcsolt állapotában tartsd nyomva a következő gombokat: (Bal Váll) + (Jobb Váll) + (D-Pad Fel) + (A), majd ezen gombok nyomva tartása mellett kapcsold be az eszközöd
+  <li>Kapcsold be a készülékedet</li>
+  <li>Mikor meglátod a Home menüt, nyomd meg az (Bal váll) és (Jobb váll) gombokat egyszerre
     <ul>
-      <li>Tartsd nyomva a gombokat, amíg a konzolod be nem bootol a rendszer frissítés képernyőre (ez a Safe Mode)</li>
+      <li>A kamera applettnek kell megjelennie</li>
     </ul>
   </li>
-  <li>Ha a rendszer frissítés képernyőt látod, nyomj Cancel-t
-    <ul>
-      <li>Az eszközöd ki fog kapcsolni</li>
-      <li>Ha az eszközöd a HOME menübe bootol, csak kapcsold ki az eszközöd</li>
-    </ul>
-  </li>
+  <li>Kapcsold ki a készüléked</li>
 </ol>
 
 <hr />
 
 <h3 id="következő-lépés-válassz-egy-exploit-ot">Következő lépés: Válassz egy exploit-ot</h3>
 
-<p>Ha láttad a rendszer frissítés képernyőt az előző részben, a Safe Mode működik az eszközödön.</p>
+<p>Ha a kamera megjelent az előző szakaszban, a Safe Mode valószínűleg működik az eszközödön.</p>
 
-<p class="notice--primary">Ha az eszközöd a Safe Mode-ba bootol, folytasd a <a href="installing-boot9strap-(hbl-usm)">boot9strap (HBL-USM) telepítésével</a></p>
+<p class="notice--primary">Ha a kamera megjelent, folytasd a <a href="installing-boot9strap-(hbl-usm)">boot9strap telepítésével (HBL-USM)</a></p>
 
-<p class="notice--info">Ha az eszközöd NEM bootol Safe Mode-ba, folytasd a <a href="dumping-movable-(nimhax)">Movable dumpolásával (nimhax)</a></p>
+<p class="notice--info">Ha a kamera NEM jelent meg, folytasd a <a href="dumping-movable-(nimhax)">Movable dumpolásával (nimhax)</a></p>
 
         
       </section>

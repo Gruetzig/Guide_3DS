@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/nl_NL/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/nl_NL/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/nl_NL/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/nl_NL/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/nl_NL/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/nl_NL/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/nl_NL/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/nl_NL/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/nl_NL/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/nl_NL/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -477,12 +501,14 @@ window.cookieconsent.initialise({
 
 </details>
 
+<p class="notice--warning">You should only be able to get to this page if you are running version 11.16.0. If you are on any firmware other than 11.17.0 or 11.16.0, STOP as these instructions WILL LEAD TO A BRICK on other firmwares!!</p>
+
 <h3 id="wat-je-nodig-hebt">Wat je nodig hebt</h3>
 
 <ul>
   <li>je <code class="language-plaintext highlighter-rouge">movable.sed</code> bestand van het voltooien van <a href="seedminer">Seedminer</a></li>
   <li>De nieuwste versie van <a href="https://github.com/zoogie/Frogminer/releases/latest">Frogminer_save</a> (<code class="language-plaintext highlighter-rouge">Frogminer_save.zip</code>)</li>
-  <li>The latest release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (direct download)</li>
+  <li><strong>11.16.0 or 11.17.0 users</strong>: The v6.1.1 release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (direct download)</li>
   <li>De nieuwste versie van <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (het Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> bestand)</li>
 </ul>
 
@@ -530,7 +556,7 @@ window.cookieconsent.initialise({
   <li>Plaats je SD kaart in je computer</li>
   <li>Open de <a href="https://jenkins.nelthorya.net/job/DSIHaxInjector_new/build?delay=0sec">DSIHaxInjector_new</a> website op je computer</li>
   <li>Voer een alfanumerieke naam in onder het “Username” veld (geen spaties of speciale tekens)</li>
-  <li>Under the “DSiBin” field, upload your <code class="language-plaintext highlighter-rouge">42383841.bin</code> file from the root of your SD card using the first “Browse…” option</li>
+  <li>Under the “DSiBin” field, upload your DSiWare backup file (e.g. 42383841.bin) from the root of your SD card using the first “Browse…” option</li>
   <li>Onder het veld “MovableSed”, upload je <code class="language-plaintext highlighter-rouge">movable.sed</code> bestand met behulp van de tweede “Browse…” optie</li>
   <li>Under the “InjectionTarget” field, set the injection target to <code class="language-plaintext highlighter-rouge">DSinternet</code> (NOT memorypit)</li>
   <li>Klik op “Build”
@@ -576,23 +602,32 @@ window.cookieconsent.initialise({
 <ol>
   <li>Open System Settings op je apparaat</li>
   <li>Navigate to <code class="language-plaintext highlighter-rouge">Data Management</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code>-&gt; <code class="language-plaintext highlighter-rouge">SD Card</code> (<a href="/images/screenshots/bb3/dsiware-management.png">image</a>)</li>
-  <li>Select the “Haxxxxxxxxx!” title</li>
+  <li>Select the “Haxxxxxxxxx!” title
+    <ul>
+      <li>If you are unable to select the “Haxxxxxxxxx” title, <a href="troubleshooting#installing-boot9strap-fredtool">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
   <li>Selecteer “Copy” en selecteer dan “OK”</li>
   <li>Ga terug naar het hoofdmenu van System Settings</li>
   <li>Navigate to <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DS Connections</code>, then select “OK” (<a href="/images/screenshots/fredtool/dsconnection.png">image</a>)</li>
-  <li>Als de exploit successful was, zal jouw 3DS de JPN versie van Flipnote Studio hebben opgestart</li>
+  <li>Als de exploit successful was, zal jouw 3DS de JPN versie van Flipnote Studio hebben opgestart
+    <ul>
+      <li>If your device does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
 </ol>
 
 <h4 id="deel-v---flipnote-exploit">Deel V - Flipnote Exploit</h4>
 
 <p class="notice--info">If you would prefer a visual guide to this section, one is available <a href="https://zoogie.github.io/web/flipnote_directions/">here</a>.</p>
 
-<p>In this section, you will perform a series of very specific steps within Flipnote Studio that, when performed correctly, will launch the boot9strap (custom firmware) installer.</p>
+<p>In this section, you will perform a series of very specific steps within Flipnote Studio that, when performed correctly, will launch b9sTool, the boot9strap (custom firmware) installer.</p>
 
 <ol>
   <li>Complete the initial setup process for the launched game until you reach the main menu
     <ul>
       <li>Select the left option whenever prompted during the setup process</li>
+      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool">check this troubleshooting guide</a> for your issue</li>
     </ul>
   </li>
   <li>Using the touch-screen, select the large left box, then select the box with an SD card icon</li>
@@ -641,7 +676,7 @@ window.cookieconsent.initialise({
 
 <h4 id="section-vii---restoring-ds-connection-settings">Section VII - Restoring DS Connection Settings</h4>
 
-<p>In this section, you will restore DS Connection Settings to the way it was before it was temporarily replaced with Flipnote Studio in Section IV.</p>
+<p>In this section, you will restore DS Connection Settings to the way it was before it was temporarily replaced with Flipnote Studio in an earlier section.</p>
 
 <ol>
   <li>Navigeer naar <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> op je SD-kaart</li>

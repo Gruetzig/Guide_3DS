@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/es_ES/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/es_ES/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/es_ES/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/es_ES/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/es_ES/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/es_ES/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/es_ES/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/es_ES/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/es_ES/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/es_ES/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -493,21 +517,19 @@ window.cookieconsent.initialise({
 
 <h4 id="section-i---hardware-button-check">Section I - Hardware Button Check</h4>
 
+<p>In this section, you will see whether your shoulder buttons are working on your device. This will determine which method you will follow on the next page.</p>
+
 <ol>
-  <li>With your device still powered off, hold the following buttons: (Left Shoulder) + (Right Shoulder) + (D-Pad Up) + (A), and while holding these buttons together, power on your device
+  <li>Enciende tu consola</li>
+  <li>Once you see the HOME Menu, press the (Left Shoulder) and (Right Shoulder) buttons at the same time
     <ul>
-      <li>Keep holding the buttons until the device boots to a system update screen (this is Safe Mode)</li>
+      <li>The camera applet should appear</li>
     </ul>
   </li>
-  <li>If you see the system update screen, press Cancel
-    <ul>
-      <li>Your device will power off</li>
-      <li>If the device boots to the HOME Menu, just power off your device</li>
-    </ul>
-  </li>
+  <li>Apaga tu consola</li>
 </ol>
 
-<p class="notice--warning">If you do not boot into Safe Mode, the system update menu after multiple attempts, you cannot follow this method. If this is the case, use <a href="seedminer">Seedminer</a> instead.</p>
+<p class="notice--warning">If the camera did NOT appear, you cannot follow this method. If this is the case, use <a href="seedminer">Seedminer</a> instead.</p>
 
 <h4 id="sección-ii---preparativos">Sección II - Preparativos</h4>
 
@@ -538,7 +560,7 @@ window.cookieconsent.initialise({
   <li>Navigate to <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Connection Settings</code></li>
   <li>Click on your network connection slot and navigate to <code class="language-plaintext highlighter-rouge">Change Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Next Page (right arrow)</code> -&gt; <code class="language-plaintext highlighter-rouge">Proxy Settings</code></li>
   <li>Set “Proxy Settings” to “Yes”, then click <code class="language-plaintext highlighter-rouge">Detailed Setup</code></li>
-  <li>Set the Proxy Server to <code class="language-plaintext highlighter-rouge">192.9.234.11</code>, and the Port to <code class="language-plaintext highlighter-rouge">8080</code></li>
+  <li>Set the Proxy Server to <code class="language-plaintext highlighter-rouge">ssloth.nintendohomebrew.com</code>, and the Port to <code class="language-plaintext highlighter-rouge">8080</code></li>
   <li>Click OK, then click Save</li>
   <li>When prompted, click “Test” to perform the connection test
     <ul>
@@ -581,7 +603,11 @@ window.cookieconsent.initialise({
 <p>In this section, you will install custom firmware onto your device.</p>
 
 <ol>
-  <li>When prompted, input the key combo given on the top screen to install boot9strap</li>
+  <li>When prompted, input the key combo given on the top screen to install boot9strap
+    <ul>
+      <li>If a step on the lower screen has red-colored text, and you are not prompted to input a key combo, <a href="troubleshooting#issues-with-safeb9sinstaller">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
   <li>Once it is complete, press (A) to reboot your device</li>
   <li>Your device should have booted into the Luma3DS configuration menu
     <ul>

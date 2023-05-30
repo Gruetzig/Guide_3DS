@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/hu_HU/updating-firmware-(new-3ds)'>Firmware frissítése (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/hu_HU/updating-firmware-(kor)'>Firmware frissítése (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/hu_HU/updating-firmware-(twn)'>Firmware frissítése (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/hu_HU/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/hu_HU/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/hu_HU/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/hu_HU/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/hu_HU/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -370,11 +390,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>boot9strap telepítése (Soundhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>Boot9strap telepítése (Soundhax)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/hu_HU/installing-boot9strap-(fredtool)'>Boot9strap telepítése (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, Legacy)</a></li>
           
         
           
@@ -460,23 +484,28 @@ window.cookieconsent.initialise({
   </nav>
 </aside>
 
-<p class="notice--info"><strong>Igen</strong>, továbbra is tudsz telepíteni egyedi firmware-t a 3DS-edre, az eShop bezárása után is.</p>
-
-<div class="notice--info">
-<p><strong>A legutolsó 3DS firmware a 11.16.0</strong>. Amit érdemes tudnod:</p>
+<div class="notice--danger">
+<p><strong>3DS firmware 11.17.0 nemrég került kiadásra</strong>. Amit érdemes tudnod:</p>
 
 <ul>
-  <li>Ha az eszközöd <em>Luma 11.0</em> -et vagy újabbat futtat, <em>100% biztonságos</em> a frissítés. Ellenőrizheted a Luma verziódat a (Select) lenyomva tartásával az eszközöd elindítása közben.</li>
-  <li>Ha az eszközöd régebbi Luma verziót futtat, <a href="checking-for-cfw">frissítened kell a Luma-t</a> mielőtt az eszközöd 11.16.0 verzióra frissíted.</li>
+  <li>Ha az eszközöd <em>Luma 10.2.1</em> -et vagy újabbat futtat, <em>100% biztonságos</em> a frissítés. Ellenőrizheted a Luma verziódat a (Select) lenyomva tartásával az eszközöd elindítása közben.</li>
+  <li>Ha az eszközöd régebbi Luma verziót futtat, <a href="checking-for-cfw">frissítened kell a Luma-t</a> mielőtt az eszközöd 11.17.0 verzióra frissíted.</li>
+  <li>Ha az eszközöd nem rendelkezik még egyedi firmware-rel, <strong>NE frissítsd a legutolsó verzióra</strong>, mert a telepítési metódusok nehezek lehetnek.</li>
+  <li>Ha a módosítatlan eszközöd MÁR 11.17.0 verzióval fut, használdhatod <a href="https://troubleshoot.uwuu.ca/seventeen/">ezt az oldalt</a> annak megállapításához, hogy a készüléked van e elérhető módszer.</li>
+  <li>Az információk 11.17.0 firmware-ről gyorsan változnak. A legfrissebb információkért (angol nyelven), csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord szerverhez</a>.</li>
 </ul>
+
 </div>
+
+<p class="notice--info"><strong>Igen</strong>, továbbra is tudsz telepíteni egyedi firmware-t a 3DS-edre, az eShop bezárása után is.</p>
 
 <h2 id="telepítés-előtti-gyik">Telepítés előtti GYIK</h2>
 
 <details>
-<summary><u>A legújabb verziójú rendszeren vagyok. Hackelhető a rendszerem külső hardver nélkül?</u></summary>
+<summary><u>A legújabb verziójú rendszeren vagyok. Feltörhető a készülékem külső hardver vagy előfeltételek használata nélkül?</u></summary>
 
-<p>Igen! Az utolsó firmware (11.16.0) rendelkezik ingyenes metódussal a CFW beszerzéséhez, amit <a href="seedminer">Seedminer</a>-nek hívnak.</p>
+<p>A válasz a konzol típusától függően változik. Jelenleg a New 3DS / New 3DS XL / New 2DS XL moddolható a 11.17.0 verzión előfeltételek nélkül (pl. eShop címek, fizikai tételek), míg a 3DS / 3DS XL / 2DS nem.</p>
+
 </details>
 
 <details>

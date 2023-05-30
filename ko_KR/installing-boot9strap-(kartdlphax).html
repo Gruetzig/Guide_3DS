@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/ko_KR/updating-firmware-(new-3ds)'>펌웨어 업데이트 (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/ko_KR/updating-firmware-(kor)'>펌웨어 업데이트 (한글판)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/ko_KR/updating-firmware-(twn)'>펌웨어 업데이트 (타이완)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ko_KR/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/ko_KR/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/ko_KR/seedminer-(twn)'>Seedminer (타이완)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/ko_KR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/ko_KR/bannerbomb3-(legacy)'>BannerBomb3 (레거시)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
           
         
           
@@ -518,21 +542,19 @@ window.cookieconsent.initialise({
 
 <h4 id="섹션-i---하드웨어-버튼-작동-확인-타겟-3ds">섹션 I - 하드웨어 버튼 작동 확인 (타겟 3DS)</h4>
 
+<p>이 섹션에서는 기기의 좌/우 어깨 버튼 (L, R 버튼)이 정상적으로 동작하는지 확인합니다. 이 테스트를 통해, 다음 페이지에서 어떤 방법을 취해야 할지 결정할 수 있습니다.</p>
+
 <ol>
-  <li>전원이 꺼져 있는 상태에서 (L 어깨) + (R 어깨) + (십자 Up) + (A) 를 길게 눌르고, 누르는 상태에서 전원을 켜 주세요
+  <li>기기를 시작해 주세요</li>
+  <li>HOME 메뉴가 보이면, (L 버튼)과 (R 버튼)을 동시에 눌러주세요
     <ul>
-      <li>본체 업데이트 화면으로 부팅 될 때 까지 버튼들을 눌러 주세요 (이것이 안전 모드 입니다)</li>
+      <li>카메라 앱이 실행되어야 합니다</li>
     </ul>
   </li>
-  <li>만약 업데이트 메세지가 표시되면, 그만두기 버튼을 눌러 주세요
-    <ul>
-      <li>기기가 종료될 겁니다</li>
-      <li>만약 기기가 HOME 메뉴로 부팅 한다면, 그냥 기기를 종료해 주세요</li>
-    </ul>
-  </li>
+  <li>기기를 종료해 주세요</li>
 </ol>
 
-<p class="notice--warning">만약, 여러번 시도했음에도 불구하고 시스템 업데이트 (안전 모드) 화면이 나오지 않는다면, 이 방법을 사용하실 수 없습니다. 이 경우, <a href="https://discord.gg.MWxPgEp">Nintendo Homebrew Discord 서버</a>에 오셔서 도움을 요청하세요.</p>
+<p class="notice--warning">If the camera does not open, you cannot follow this method. 이 경우, <a href="https://discord.gg.MWxPgEp">Nintendo Homebrew Discord 서버</a>에 오셔서 도움을 요청하세요.</p>
 
 <h4 id="섹션-ii---준비-작업-소스-3ds">섹션 II - 준비 작업 (소스 3DS)</h4>
 
@@ -597,7 +619,12 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li><strong>타겟 3DS</strong>의 장치 종류를 선택해 주세요 (<code class="language-plaintext highlighter-rouge">Old 3DS family</code> 또는 <code class="language-plaintext highlighter-rouge">New 3DS family</code>)</li>
-  <li>Exploit type <code class="language-plaintext highlighter-rouge">3DS ROP xPloit Injector</code>를 선택해 주세요</li>
+  <li>Select the following exploit type depending on your system version:
+    <ul>
+      <li>11.16.0: select <code class="language-plaintext highlighter-rouge">xPloitInjector (11.16)</code></li>
+      <li>11.17.0: select <code class="language-plaintext highlighter-rouge">xPloitInjector (11.17)</code></li>
+    </ul>
+  </li>
   <li>확인 메뉴가 표시됩니다. 설정이 맞다면, <code class="language-plaintext highlighter-rouge">Use settings</code>를 선택해 주세요
     <ul>
       <li>표시된 설정이 맞지 않다면, <code class="language-plaintext highlighter-rouge">Change settings</code>를 눌러 알맞게 조정해 주세요</li>
@@ -656,6 +683,7 @@ window.cookieconsent.initialise({
     <ul>
       <li>만약 기기에 하얀 화면이 표시되면, 전원 버튼을 길게 눌러 기기를 종료하고, 이 섹션을 다시 시도해 주세요</li>
       <li>만약 기기에 붉은 화면이 표시되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">usm.bin</code>이 존재하지 않습니다</li>
+      <li>다른 오류가 발생하면 이 <a href="troubleshooting#installing-boot9strap-usm">문제 해결 가이드</a> 를 참고해 주세요</li>
     </ul>
   </li>
 </ol>
@@ -665,7 +693,11 @@ window.cookieconsent.initialise({
 <p>이 섹션에서는, 커스텀 펌웨어를 설치할 것입니다.</p>
 
 <ol>
-  <li>메시지가 나타나면, boot9strap을 설치하기 위하여 화면에 주어진 키 조합을 입력해 주세요</li>
+  <li>메시지가 나타나면, boot9strap을 설치하기 위하여 화면에 주어진 키 조합을 입력해 주세요
+    <ul>
+      <li>아래 화면의 단계가 붉은 텍스트로 표시되고 키 콤보 입력을 요구하지 않는다면, <a href="troubleshooting#issues-with-safeb9sinstaller">이 문제 해결 가이드</a>를 참고해 주세요</li>
+    </ul>
+  </li>
   <li>작업이 완료되면, (A) 를 눌려 기기를 재부팅해 주세요</li>
   <li>기기는 Luma3DS 구성 메뉴로 부팅되었을 겁니다
     <ul>

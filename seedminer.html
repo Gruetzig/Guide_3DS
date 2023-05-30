@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -452,9 +476,8 @@ window.cookieconsent.initialise({
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Table of Contents</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#section-i---updating-the-system" id="markdown-toc-section-i---updating-the-system">Section I - Updating the System</a></li>
-  <li><a href="#section-ii---prep-work" id="markdown-toc-section-ii---prep-work">Section II - Prep Work</a></li>
-  <li><a href="#section-iii---seedminer" id="markdown-toc-section-iii---seedminer">Section III - Seedminer</a></li>
+  <li><a href="#section-i---prep-work" id="markdown-toc-section-i---prep-work">Section I - Prep Work</a></li>
+  <li><a href="#section-ii---seedminer" id="markdown-toc-section-ii---seedminer">Section II - Seedminer</a></li>
   <li><a href="#next-step-bannerbomb3" id="markdown-toc-next-step-bannerbomb3">Next step: BannerBomb3</a></li>
 </ul>
 
@@ -472,28 +495,17 @@ window.cookieconsent.initialise({
 
 </details>
 
-<h3 id="section-i---updating-the-system">Section I - Updating the System</h3>
-
-<p>In this section, you will update your system to the latest version, which is necessary for Seedminer.</p>
-
-<ol>
-  <li>Update your device by going to System Settings, then “Other Settings”, then going all the way to the right and using “System Update”
-    <ul>
-      <li>The updater may display a message saying “Your system is up to date” instead of updating. This is normal if you are already up to date; continue to the next section</li>
-      <li>If this gives you an error, set both your DNS settings and Proxy settings to “Auto”</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="section-ii---prep-work">Section II - Prep Work</h3>
+<h3 id="section-i---prep-work">Section I - Prep Work</h3>
 
 <p>In this section, you will get the necessary details from your 3DS that are required to figure out your device’s encryption key.</p>
 
+<div class="notice--info">
 <p>Before following this section:</p>
-<ul class="notice--info">
+<ul>
   <li>Ensure that you have turned on your console with the SD card inserted at least once to generate the necessary data</li>
   <li>Ensure that your console is connected to the Internet (you should see a blue “Internet” indicator on the top-left corner of the HOME screen)</li>
 </ul>
+</div>
 
 <ol>
   <li>Power off your device</li>
@@ -526,7 +538,7 @@ window.cookieconsent.initialise({
   <li>Find your Mii profile, then find the “Friend Code” field on the top screen</li>
 </ol>
 
-<h3 id="section-iii---seedminer">Section III - Seedminer</h3>
+<h3 id="section-ii---seedminer">Section II - Seedminer</h3>
 
 <p>In this section, you will use the Bruteforce Movable website to retrieve your device’s encryption key in the form of <code class="language-plaintext highlighter-rouge">movable.sed</code>.</p>
 

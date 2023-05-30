@@ -314,11 +314,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/pt_BR/updating-firmware-(new-3ds)'>Atualizando o Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/pt_BR/updating-firmware-(kor)'>Atualizando o Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/pt_BR/updating-firmware-(twn)'>Atualizando o Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/pt_BR/ntrboot'>ntrboot</a></li>
           
         
           
             <li style="display: none;" data-name="seedminer"><a href='/pt_BR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/pt_BR/seedminer-(mii)'>Seedminer (Mii)</a></li>
           
         
           
@@ -330,11 +346,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/pt_BR/bannerbomb3-(legacy)'>BannerBomb3 (Legado)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/pt_BR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dump do Movable (nimhax)</a></li>
+            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dump da Movable (nimhax)</a></li>
           
         
           
@@ -342,19 +362,19 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Injetando ntrboot (Único 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Flashing ntrboot (Único 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Injetando ntrboot (Múltiplos 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (Múltiplos 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/pt_BR/flashing-ntrboot-(dsi)'>Injetando ntrboot (DSi)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/pt_BR/flashing-ntrboot-(dsi)'>Flashing ntrboot (DSi)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/pt_BR/flashing-ntrboot-(nds)'>Injetando ntrboot (NDS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/pt_BR/flashing-ntrboot-(nds)'>Flashing ntrboot (NDS)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/pt_BR/installing-boot9strap-(fredtool)'>Instalando boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/pt_BR/installing-boot9strap-(fredtool-legacy)'>Instalando boot9strap (Fredtool, Legado)</a></li>
           
         
           
@@ -548,7 +572,11 @@ window.cookieconsent.initialise({
 <p>Nesta seção, você instalará custom firmware no seu dispositivo.</p>
 
 <ol>
-  <li>Quando solicitado, aperte a sequência de botões fornecida na tela superior para instalar o boot9strap</li>
+  <li>Quando solicitado, aperte a sequência de botões fornecida na tela superior para instalar o boot9strap
+    <ul>
+      <li>Se um passo na tela inferior tiver texto de cor vermelha e você não for solicitado a introduzir um combo de botões, <a href="troubleshooting#issues-with-safeb9sinstaller">siga este guia de solução de problemas</a></li>
+    </ul>
+  </li>
   <li>Quando concluído, force o seu dispositivo a desligar segurando o botão POWER
     <ul>
       <li>O seu dispositivo somente irá ligar na tela do SafeB9SInstaller quando a próxima seção estiver completa</li>
@@ -599,8 +627,8 @@ window.cookieconsent.initialise({
   <li>A versão mais recente do <a href="https://github.com/ntrteam/ntrboot_flasher/releases/latest">ntrboot_flasher</a> (<code class="language-plaintext highlighter-rouge">ntrboot_flasher.firm</code>)</li>
   <li>O backup de flashrom correspondente ao seu flashcart
     <ul>
-      <li>Note que se você seguiu <a href="flashing-ntrboot-(3ds-multi-system)">Executar Flash no ntrboot(vários sistemas 3DS)</a>, o backup de flashrom já existe no local correto e não precisa ser baixado</li>
-      <li>Note que se você seguiu <a href="flashing-ntrboot-(3ds-single-system)">Executar flash no ntrboot (único sistema 3DS)</a> ou <a href="flashing-ntrboot-(nds)">Executar flash no ntrboot (NDS)</a>, o backup de flashrom já existe no cartão SD de seu flashcart e deve ser copiado para o local especificado abaixo</li>
+      <li>Note que se você seguiu <a href="flashing-ntrboot-(3ds-multi-system)">Flashing ntrboot(Múltiplos 3DS)</a>, o backup de flashrom já existe no local correto e não precisa ser baixado</li>
+      <li>Note que se você seguiu <a href="flashing-ntrboot-(3ds-single-system)">Flashing ntrboot (Único 3DS)</a> ou <a href="flashing-ntrboot-(nds)">Flashing ntrboot (NDS)</a>, o backup de flashrom já existe no cartão SD de seu flashcart e deve ser copiado para o local especificado abaixo</li>
       <li>Se você não sabe qual revisão de HW, tente cada um para seu flashcart deles. Somente o correto permitirá que seu flashcart seja executado corretamente a partir do Menu HOME, mas executar o flash errado não irá causar um brick no flashcart</li>
     </ul>
   </li>

@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/ko_KR/updating-firmware-(new-3ds)'>펌웨어 업데이트 (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/ko_KR/updating-firmware-(kor)'>펌웨어 업데이트 (한글판)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/ko_KR/updating-firmware-(twn)'>펌웨어 업데이트 (타이완)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ko_KR/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/ko_KR/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/ko_KR/seedminer-(twn)'>Seedminer (타이완)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/ko_KR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/ko_KR/bannerbomb3-(legacy)'>BannerBomb3 (레거시)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
           
         
           
@@ -460,6 +484,19 @@ window.cookieconsent.initialise({
   </nav>
 </aside>
 
+<div class="notice--danger">
+<p><strong>3DS 펌웨어 11.17.0이 최근 출시되었습니다</strong>. 다음 사항을 참고해 주세요.</p>
+
+<ul>
+  <li>만약 기기가 <em>Luma 10.2.1 이상일 경우</em>, 업데이트해도 <em>100%</em> 안전합니다. 기기를 부팅할 때 (Select) 버튼을 누르고 있으면 Luma의 버전을 확인할 수 있습니다.</li>
+  <li>만약 기기가 오래된 Luma를 사용하고 있다면, 기기를 11.17.0으로 업데이트하기 전에 <a href="restoring-updating-cfw">CFW 복구 / 업데이트</a>를 해야 합니다.</li>
+  <li>만약 기기에 커스텀 펌웨어가 설치되어 있지 않다면, <strong>최신 버전으로 업데이트하지 마세요.</strong> 기존 버전보다 설치 방법이 복잡해질 수 있습니다.</li>
+  <li>커펌되지 않은 기기가 이미 11.17.0으로 업데이트되었다면, <a href="https://troubleshoot.uwuu.ca/seventeen/">이 페이지(영문)</a>를 방문해 기기에 맞는 방법이 있는지 확인해주세요.</li>
+  <li>펌웨어 11.17.0에 대한 정보가 빠르게 갱신되고 있습니다. 최신 정보를 확인하고 싶으시다면, <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord 서버</a>를 방문해주세요.</li>
+</ul>
+
+</div>
+
 <p class="notice--info">만약 이번이 3DS를 처음으로 모딩하는 것 (혹은 모딩에 익숙하지 않다면) 이라면, 계속 정독하세요! 반면, 사전에 모딩을 해봤거나 할 줄 안다면, <a href="get-started">시작하기</a> 페이지로 계속하세요.</p>
 
 <p>이 페이지는 일부 컴퓨터 용어를 다루고, 이 가이드를 따르기 전에 당신이 알아야 할 3DS의 특정한 정보가 담겨있습니다.</p>
@@ -487,7 +524,7 @@ window.cookieconsent.initialise({
 
 <p>3DS 모델에 따라 SD카드 슬롯의 위치나 호환되는 종류가 다릅니다. 자세한 정보는 <a href="https://www.nintendo.co.kr/3DS/customer/qna.php">닌텐도 공식 지원</a> 에서 찾아볼 수 있습니다.</p>
 
-<p>3DS는 어떤 용량의 SD 카드 (32GB보다 커도 가능)도 사용할 수 있지만, 그 카드는 무조건 FAT32로 포맷되어 있어야합니다. (exFAT이나 NTFS <strong>는 불가능</strong>). SD 카드를 포맷하기 위해 자신의 OS에 해당하는 프로그램을 사용할 수 있습니다: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>. SD cards larger than <strong>128GB</strong> are not recommended due to known issues with custom themes and GBA/DS graphics.</p>
+<p>3DS는 어떤 용량의 SD 카드 (32GB보다 커도 가능)도 사용할 수 있지만, 그 카드는 무조건 FAT32로 포맷되어 있어야합니다. (exFAT이나 NTFS <strong>는 불가능</strong>). SD 카드를 포맷하기 위해 자신의 OS에 해당하는 프로그램을 사용할 수 있습니다: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>. GBA/DS 그래픽과 커스텀 테마 문제 때문에 128GB를 넘기는 SD 카드를 사용하는 것은 권장하지 않습니다.</p>
 
 <p class="notice--warning">이 가이드를 따르려면, 적어도 <strong>2GB</strong>용량의 SD 카드를 사용해야 합니다.</p>
 

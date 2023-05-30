@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/hu_HU/updating-firmware-(new-3ds)'>Firmware frissítése (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/hu_HU/updating-firmware-(kor)'>Firmware frissítése (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/hu_HU/updating-firmware-(twn)'>Firmware frissítése (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/hu_HU/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/hu_HU/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/hu_HU/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/hu_HU/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/hu_HU/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -370,11 +390,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>boot9strap telepítése (Soundhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>Boot9strap telepítése (Soundhax)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/hu_HU/installing-boot9strap-(fredtool)'>Boot9strap telepítése (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, Legacy)</a></li>
           
         
           
@@ -518,21 +542,19 @@ window.cookieconsent.initialise({
 
 <h4 id="i-rész---fizikai-gombok-ellenőrzése-cél-3ds">I. rész - Fizikai gombok ellenőrzése (cél 3DS)</h4>
 
+<p>Ebben a fejezetben tesztelni fogod azt, hogy működnek-e a váll gombok az eszközödön. Ez meghatározza, hogy melyik metódust kell követned a következő oldalon.</p>
+
 <ol>
-  <li>Az eszközöd kikapcsolt állapotában tartsd nyomva a következő gombokat: (Bal Váll) + (Jobb Váll) + (D-Pad Fel) + (A), majd ezen gombok nyomva tartása mellett kapcsold be az eszközöd
+  <li>Kapcsold be a készülékedet</li>
+  <li>Mikor meglátod a Home menüt, nyomd meg az (Bal váll) és (Jobb váll) gombokat egyszerre
     <ul>
-      <li>Tartsd nyomva a gombokat, amíg a konzolod be nem bootol a rendszer frissítés képernyőre (ez a Safe Mode)</li>
+      <li>A kamera applettnek kell megjelennie</li>
     </ul>
   </li>
-  <li>Ha a rendszer frissítés képernyőt látod, nyomj Cancel-t
-    <ul>
-      <li>Az eszközöd ki fog kapcsolni</li>
-      <li>Ha az eszközöd a HOME menübe bootol, csak kapcsold ki az eszközöd</li>
-    </ul>
-  </li>
+  <li>Kapcsold ki a készüléked</li>
 </ol>
 
-<p class="notice--warning">Ha nem sikerül Safe Mode-ba bootolni több próbálkozás ellenére sem, akkor nem tudod követni ezt a metódust. Ebben az esetben csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz Discord-on</a> és kérj, támogatást angolul.</p>
+<p class="notice--warning">Ha a kamera nem nyílik meg, nem tudod követni ezt a metódust. Ebben az esetben csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz Discord-on</a> és kérj, támogatást angolul.</p>
 
 <h4 id="ii-rész---előkészületi-munka-forrás-3ds">II. rész - Előkészületi munka (forrás 3DS)</h4>
 
@@ -597,7 +619,12 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Válaszd ki a <strong>cél 3DS</strong> eszköz típusát (Old 3DS family vagy New 3DS family)</li>
-  <li>Válaszd a <code class="language-plaintext highlighter-rouge">3DS ROP xPloit Injector</code> exploit típust</li>
+  <li>Válaszd a következő exploit típusok közül a rendszer verziódnak megfelelően:
+    <ul>
+      <li>11.16.0: válaszd a <code class="language-plaintext highlighter-rouge">xPloitInjector (11.16)</code> opciót</li>
+      <li>11.17.0: válaszd a <code class="language-plaintext highlighter-rouge">xPloitInjector (11.17)</code> opciót</li>
+    </ul>
+  </li>
   <li>Egy megerősítő menü fog megjelenni. Ha a felső képernyőn megjelenő beállítások helyesek, válaszd a <code class="language-plaintext highlighter-rouge">Use settings</code> opciót
   Ha a beállítások nem helyesek válaszd a <code class="language-plaintext highlighter-rouge">Change settings</code> opciót, majd módosítsd őket megfelelően</li>
   <li>Válaszd a <code class="language-plaintext highlighter-rouge">Create Group</code> opciót
@@ -653,6 +680,7 @@ window.cookieconsent.initialise({
     <ul>
       <li>Ha az eszközöd lefagy egy fehér képernyőn, tartsd nyomva a PWER gombot, amíg ki nem kapcsol, és próbáld újra ezt a részt</li>
       <li>Ha az eszközöd e helyett egy piros képernyőn fagy le, akkor hiányzik az <code class="language-plaintext highlighter-rouge">usm.bin</code> az SD kártya gyökerébőln</li>
+      <li>Ha másik ihbát kapsz, <a href="troubleshooting#installing-boot9strap-usm">kövesd ezt a hibaelhárítási útmutatót</a></li>
     </ul>
   </li>
 </ol>
@@ -662,7 +690,11 @@ window.cookieconsent.initialise({
 <p>Ebben a fejezetben egyedi firmware-t fogsz telepíteni az eszközödre.</p>
 
 <ol>
-  <li>Ha kéri, akkor nyomd meg a gombokat egyszerre, amiket kijelez a felső képernyőn, hogy telepíthesd a boot9strap-et</li>
+  <li>Ha kéri, akkor nyomd meg a gombokat egyszerre, amiket kijelez a felső képernyőn, hogy telepíthesd a boot9strap-et
+    <ul>
+      <li>Ha egy lépés az alsó képernyőn piros színű szöveget eredményez, és nem kér a rendszer tőled egy gomb-kombinációt, akkor <a href="troubleshooting#issues-with-safeb9sinstaller">kövesd ezt a hibaelhárítási útmutatót</a></li>
+    </ul>
+  </li>
   <li>Ha ez elkészült, nyomd meg az (A) gombot az eszközöd újraindításához</li>
   <li>A készülékednek az előzőekben a Luma3DS-be kellett bootolnia
     <ul>

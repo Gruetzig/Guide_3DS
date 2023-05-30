@@ -314,11 +314,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/fr_FR/updating-firmware-(new-3ds)'>Mise à jour du logiciel système (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/fr_FR/updating-firmware-(kor)'>Mise à jour du logiciel système (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/fr_FR/updating-firmware-(twn)'>Mise à jour du logiciel système (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/fr_FR/ntrboot'>ntrboot</a></li>
           
         
           
             <li style="display: none;" data-name="seedminer"><a href='/fr_FR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/fr_FR/seedminer-(mii)'>Seedminer (Mii)</a></li>
           
         
           
@@ -330,6 +346,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/fr_FR/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/fr_FR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
@@ -338,23 +358,23 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(Choix multiple)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(Options multiples)</i></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flashage de ntrboot (une seule 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flash de ntrboot (une seule 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flashage de ntrboot (plusieurs 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flash de ntrboot (plusieurs 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flashage de ntrboot (DSi)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flash de ntrboot (DSi)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flashage de ntrboot (NDS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flash de ntrboot (NDS)</a></li>
           
         
           
@@ -390,6 +410,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/fr_FR/installing-boot9strap-(fredtool-legacy)'>Installation de boot9strap (Fredtool, Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(usm)"><a href='/fr_FR/installing-boot9strap-(usm)'>Installation de boot9strap (USM)</a></li>
           
         
@@ -402,7 +426,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de la configuration</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de l'installation</a></li>
           
         
       </ol>
@@ -490,11 +514,11 @@ Si vous ne pouvez pas en installer un, suivez <a href="bannerbomb3">Bannerbomb3<
 <p>Comme mesure de sécurité supplémentaire, nous effectuerons une vérification supplémentaire de la présence d’un custom firmware. Ceci est dû au fait que l’utilisation de cette méthode lorsqu’un custom firmware est déjà installé à un risque de bricker la console (ce qui la rendrait inutilisable sans méthodes de récupération comme <a href="ntrboot">ntrboot</a>).</p>
 
 <ol>
-  <li>Éteignez votre 3DS</li>
+  <li>Éteignez votre console</li>
   <li>Maintenez le bouton (Select) enfoncé</li>
   <li>Allumez votre console tout en maintenant le bouton (Select) enfoncé</li>
   <li>Si la vérification a réussi, vous démarrerez sur le menu HOME et vous pourrez continuer avec ce guide</li>
-  <li>Éteignez votre 3DS</li>
+  <li>Éteignez votre console</li>
 </ol>
 
 <p class="notice--danger">Si vous voyez un menu de configuration ou si la console s’éteint immédiatement, vous avez déjà CFW, et continuer avec ces instructions peut BRICKER votre console ! Suivez <a href="checking-for-cfw">Vérification de la présence d’un CFW</a> pour mettre à jour votre CFW existant.</p>
@@ -508,7 +532,7 @@ Si vous ne pouvez pas en installer un, suivez <a href="bannerbomb3">Bannerbomb3<
   <li>Copiez <code class="language-plaintext highlighter-rouge">boot.nds</code> (b9sTool) depuis le fichier <code class="language-plaintext highlighter-rouge">.zip</code> de b9sTool vers la racine de votre carte SD</li>
   <li>Copiez <code class="language-plaintext highlighter-rouge">Frogtool.3dsx</code> dans le dossier <code class="language-plaintext highlighter-rouge">/3ds/</code> de votre carte SD</li>
   <li>Copiez <code class="language-plaintext highlighter-rouge">frogcert.bin</code> à la racine de votre carte SD</li>
-  <li>Retirez la carte SD de votre ordinateur et réinsérez-là dans votre 3DS</li>
+  <li>Retirez la carte SD de votre ordinateur et réinsérez-la dans votre console</li>
   <li>Allumez votre console</li>
 </ol>
 
@@ -532,12 +556,13 @@ Si vous ne pouvez pas en installer un, suivez <a href="bannerbomb3">Bannerbomb3<
 
 <p class="notice--info">Si vous préférez un guide visuel pour cette section, un tel guide est disponible <a href="https://zoogie.github.io/web/flipnote_directions/">ici</a>.</p>
 
-<p>Dans cette section, vous allez effectuer une série d’étapes très spécifiques dans Flipnote Studio qui, une fois effectuées correctement, déclencheront le lancement l’installateur de boot9strap (custom firmware).</p>
+<p>Dans cette section, vous allez effectuer une série d’étapes très spécifiques dans Flipnote Studio qui, une fois effectuées correctement, déclencheront le lancement de b9sTool, l’installateur de boot9strap (custom firmware).</p>
 
 <ol>
   <li>Terminez le processus de configuration initial de Flipnote Studio jusqu’à ce que vous atteigniez le menu principal
     <ul>
       <li>Sélectionnez l’option de gauche chaque fois que vous y êtes invité durant le processus de configuration</li>
+      <li>Si vous rencontrez un problème pendant que vous faites cette section, <a href="troubleshooting#installing-boot9strap-fredtool">consultez ce guide de dépannage</a></li>
     </ul>
   </li>
   <li>En utilisant l’écran tactile, sélectionnez la grande case à gauche, puis sélectionnez la boîte avec une icône de carte SD</li>

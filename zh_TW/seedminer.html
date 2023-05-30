@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/zh_TW/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/zh_TW/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/zh_TW/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/zh_TW/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/zh_TW/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/zh_TW/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/zh_TW/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/zh_TW/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_TW/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/zh_TW/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -452,9 +476,8 @@ window.cookieconsent.initialise({
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 條目內容</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#第一節--更新系統" id="markdown-toc-第一節--更新系統">第一節 — 更新系統</a></li>
-  <li><a href="#第二節--準備工作" id="markdown-toc-第二節--準備工作">第二節 — 準備工作</a></li>
-  <li><a href="#第三節--seedminer" id="markdown-toc-第三節--seedminer">第三節 — Seedminer</a></li>
+  <li><a href="#section-i---prep-work" id="markdown-toc-section-i---prep-work">Section I - Prep Work</a></li>
+  <li><a href="#section-ii---seedminer" id="markdown-toc-section-ii---seedminer">Section II - Seedminer</a></li>
   <li><a href="#next-step-bannerbomb3" id="markdown-toc-next-step-bannerbomb3">Next step: BannerBomb3</a></li>
 </ul>
 
@@ -472,28 +495,17 @@ window.cookieconsent.initialise({
 
 </details>
 
-<h3 id="第一節--更新系統">第一節 — 更新系統</h3>
-
-<p>In this section, you will update your system to the latest version, which is necessary for Seedminer.</p>
-
-<ol>
-  <li>到主機主選單中更新您的主機，到『系統設置 (System Settings)』、『其他設置 (Other Settings)』底下選擇『系統更新 (System Update)』
-    <ul>
-      <li>升級程式可能會告訴你『你的主機已經是最新系统了』而不是繼續升級 This is normal if you are already up to date; continue to the next section</li>
-      <li>If this gives you an error, set both your DNS settings and Proxy settings to “Auto”</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="第二節--準備工作">第二節 — 準備工作</h3>
+<h3 id="section-i---prep-work">Section I - Prep Work</h3>
 
 <p>In this section, you will get the necessary details from your 3DS that are required to figure out your device’s encryption key.</p>
 
+<div class="notice--info">
 <p>Before following this section:</p>
-<ul class="notice--info">
+<ul>
   <li>Ensure that you have turned on your console with the SD card inserted at least once to generate the necessary data</li>
   <li>Ensure that your console is connected to the Internet (you should see a blue “Internet” indicator on the top-left corner of the HOME screen)</li>
 </ul>
+</div>
 
 <ol>
   <li>關閉您的主機</li>
@@ -526,7 +538,7 @@ window.cookieconsent.initialise({
   <li>選擇您的 Mii 個人檔案，並找尋您的好友代碼</li>
 </ol>
 
-<h3 id="第三節--seedminer">第三節 — Seedminer</h3>
+<h3 id="section-ii---seedminer">Section II - Seedminer</h3>
 
 <p>In this section, you will use the Bruteforce Movable website to retrieve your device’s encryption key in the form of <code class="language-plaintext highlighter-rouge">movable.sed</code>.</p>
 
@@ -563,10 +575,7 @@ window.cookieconsent.initialise({
       <li>This is usually fast (1-5 minutes)</li>
       <li>During this process, the bot you added may not show up on your 3DS. As long as the website updates, this is not an issue</li>
       <li>If you are still waiting after half an hour, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask (in English) for someone there to assist you</li>
-    </ul>
-  </li>
-  <li>When the process is completed, download your <code class="language-plaintext highlighter-rouge">movable.sed</code> file from the site
-    <ul>
+      <li>If you get “We were unable to successfully complete your bruteforce request. :`(“, follow the <a href="troubleshooting#seedminer">respective troubleshooting on this page</a></li>
       <li>Keep this file as you will need it in the upcoming page</li>
     </ul>
   </li>

@@ -314,11 +314,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/pt_BR/updating-firmware-(new-3ds)'>Atualizando o Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/pt_BR/updating-firmware-(kor)'>Atualizando o Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/pt_BR/updating-firmware-(twn)'>Atualizando o Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/pt_BR/ntrboot'>ntrboot</a></li>
           
         
           
             <li style="display: none;" data-name="seedminer"><a href='/pt_BR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/pt_BR/seedminer-(mii)'>Seedminer (Mii)</a></li>
           
         
           
@@ -330,11 +346,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/pt_BR/bannerbomb3-(legacy)'>BannerBomb3 (Legado)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/pt_BR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dump do Movable (nimhax)</a></li>
+            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dump da Movable (nimhax)</a></li>
           
         
           
@@ -342,19 +362,19 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Injetando ntrboot (Único 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Flashing ntrboot (Único 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Injetando ntrboot (Múltiplos 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (Múltiplos 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/pt_BR/flashing-ntrboot-(dsi)'>Injetando ntrboot (DSi)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/pt_BR/flashing-ntrboot-(dsi)'>Flashing ntrboot (DSi)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/pt_BR/flashing-ntrboot-(nds)'>Injetando ntrboot (NDS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/pt_BR/flashing-ntrboot-(nds)'>Flashing ntrboot (NDS)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/pt_BR/installing-boot9strap-(fredtool)'>Instalando boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/pt_BR/installing-boot9strap-(fredtool-legacy)'>Instalando boot9strap (Fredtool, Legado)</a></li>
           
         
           
@@ -529,7 +553,7 @@ window.cookieconsent.initialise({
   <li>Navegue para <code class="language-plaintext highlighter-rouge">Gerenciamento de Dados</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">Cartão SD</code> (<a href="/images/screenshots/bb3/dsiware-management.png">imagem</a>)
     <ul>
       <li>Seu dispositivo deve mostrar o multihax menu do BB3</li>
-      <li>Se esta etapa fazer com que seu dispositivo tenha um crash, <a href="troubleshooting#bannerbomb3">siga este guia de troubleshooting</a></li>
+      <li>Se o menu do multihax BB3 não abrir, <a href="troubleshooting#bannerbomb3">siga este guia de troubleshooting</a></li>
       <li>Se o menu multihax BB3 diz “cfw installed already”, você já possui custom firmware e deve continuar a partir <a href="checando for-cfw">daqui</a></li>
     </ul>
   </li>
@@ -538,6 +562,16 @@ window.cookieconsent.initialise({
       <li>Seu dispositivo será desligado automaticamente</li>
     </ul>
   </li>
+  <li>Ligue o seu dispositivo</li>
+  <li>Abra a Configuração do Console em seu dispositivo</li>
+  <li>Navegue para <code class="language-plaintext highlighter-rouge">Configurações da Internet</code> -&gt; <code class="language-plaintext highlighter-rouge">Configurações de Conexão</code></li>
+  <li>Certifique-se de que todas as três conexões tenham o nome “Haaaaaaaxxxxxxxxx…”
+    <ul>
+      <li>NÃO altere estas configurações!</li>
+      <li>Se todas as três conexões NÃO são todas chamadas de “Haaaaaaaxxxxxxxxx…”, PARE! Algo deu errado nesta seção e PRECISA ser corrigido antes que você possa continuar</li>
+    </ul>
+  </li>
+  <li>Desligue seu dispositivo</li>
 </ol>
 
 <h4 id="seção-iii---unsafe_mode">Seção III - unSAFE_MODE</h4>
@@ -563,6 +597,7 @@ window.cookieconsent.initialise({
     <ul>
       <li>Se seu dispositivo congela uma tela branca, segure o botão POWER até que ele desligue e tente novamente esta seção</li>
       <li>Se, em vez disso, o seu dispositivo congelar uma tela vermelha, você não tem <code class="language-plaintext highlighter-rouge">usm.bin</code> na raiz do seu cartão SD</li>
+      <li>Se você receber um erro diferente, <a href="troubleshooting#installing-boot9strap-usm">siga este guia de troubleshooting</a></li>
     </ul>
   </li>
 </ol>
@@ -572,7 +607,11 @@ window.cookieconsent.initialise({
 <p>Nesta seção, você instalará custom firmware no seu dispositivo.</p>
 
 <ol>
-  <li>Quando solicitado, aperte a sequência de botões fornecida na tela superior para instalar o boot9strap</li>
+  <li>Quando solicitado, aperte a sequência de botões fornecida na tela superior para instalar o boot9strap
+    <ul>
+      <li>Se um passo na tela inferior tiver texto de cor vermelha e você não for solicitado a introduzir um combo de botões, <a href="troubleshooting#issues-with-safeb9sinstaller">siga este guia de solução de problemas</a></li>
+    </ul>
+  </li>
   <li>Quando concluído, aperte (A) para reiniciar o seu dispositivo</li>
   <li>Seu dispositivo deve ter inicializado no menu de configuração do Luma3DS
     <ul>

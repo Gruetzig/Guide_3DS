@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/zh_CN/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/zh_CN/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/zh_CN/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/zh_CN/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/zh_CN/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/zh_CN/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/zh_CN/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/zh_CN/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_CN/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/zh_CN/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -478,12 +502,14 @@ window.cookieconsent.initialise({
 
 </details>
 
+<p class="notice--warning">You should only be able to get to this page if you are running version 11.16.0. If you are on any firmware other than 11.17.0 or 11.16.0, STOP as these instructions WILL LEAD TO A BRICK on other firmwares!!</p>
+
 <h3 id="你需要准备点啥">你需要准备点啥？</h3>
 
 <ul>
   <li>你在 <a href="seedminer">Seedminer</a> 步骤中获得的 <code class="language-plaintext highlighter-rouge">movable.sed</code> 文件</li>
   <li>最新版本的 <a href="https://github.com/zoogie/Frogminer/releases/latest">Frogminer_save</a>（下载 <code class="language-plaintext highlighter-rouge">Frogminer_save.zip</code>）</li>
-  <li>The latest release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (direct download)</li>
+  <li><strong>11.16.0 or 11.17.0 users</strong>: The v6.1.1 release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9sTool</a> (direct download)</li>
   <li>最新版本的 <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>（下载 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 文件）</li>
 </ul>
 
@@ -531,9 +557,9 @@ window.cookieconsent.initialise({
   <li>将你的 SD 卡插入到电脑</li>
   <li>在电脑上打开 <a href="https://jenkins.nelthorya.net/job/DSIHaxInjector_new/build?delay=0sec">DSIHaxInjector_new</a> 站点</li>
   <li>于“Username”一行，填入一个你的英文名（不带空格或特殊字符）</li>
-  <li>于 “DSiBin” 一行，点击“Browse…”（选择文件）来上传根目录中的 <code class="language-plaintext highlighter-rouge">42383841.bin</code> 文件</li>
+  <li>Under the “DSiBin” field, upload your DSiWare backup file (e.g. 42383841.bin) from the root of your SD card using the first “Browse…” option</li>
   <li>于“MovableSed”一行，点击“Browse…”（选择文件）上传你的 <code class="language-plaintext highlighter-rouge">movable.sed</code> 文件</li>
-  <li>于“InjectionTarget”一行，设置注入对象为 <code class="language-plaintext highlighter-rouge">DSinternet</code>（<strong>不是带有</strong> memorypit 字串的那个）</li>
+  <li>Under the “InjectionTarget” field, set the injection target to <code class="language-plaintext highlighter-rouge">DSinternet</code> (NOT memorypit)</li>
   <li>点击 “Build”
     <ul>
       <li>等待片刻，直到构建完成</li>
@@ -548,12 +574,12 @@ window.cookieconsent.initialise({
   <li>点击 “output_(<你的名字>).zip" 的链接</你的名字></li>
   <li>打开内存卡的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 文件夹
     <ul>
-      <li><code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> 是你在 <a href="seedminer">Seedminer</a> 部分中复制的 32 位字母长的文件夹名称</li>
-      <li><code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> 是一个在 <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> 文件夹内，另一个 32 位字母长的文件夹</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> is the 32-letter folder name that you copied in <a href="seedminer">Seedminer</a></li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> is a 32-letter folder inside of the <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code></li>
     </ul>
   </li>
-  <li>删除 Nintendo DSiWare 文件夹中的 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 文件</li>
-  <li>从下载的 DSiWare 压缩包 （<code class="language-plaintext highlighter-rouge">output_(&lt;你的名字&gt;).zip</code>） 里的 <code class="language-plaintext highlighter-rouge">hax</code> 文件夹复制 <code class="language-plaintext highlighter-rouge">42383841.bin</code> 到 <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 文件夹
+  <li>Delete <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> from your Nintendo DSiWare folder</li>
+  <li>Copy the <code class="language-plaintext highlighter-rouge">42383841.bin</code>  file from the <code class="language-plaintext highlighter-rouge">hax</code> folder of the downloaded DSiWare archive (output_(name).zip) to the <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> folder
   <img src="https://3ds.hacks.guide/images/screenshots/bb3/dsiware-location-4.png" alt="" class="notice--info" /></li>
   <li>解压 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 里的 <code class="language-plaintext highlighter-rouge">boot.firm</code> 和 <code class="language-plaintext highlighter-rouge">boot.3dsx</code> 到你 SD 卡的根目录
     <ul>
@@ -577,23 +603,32 @@ window.cookieconsent.initialise({
 <ol>
   <li>启动你主机上的 “系统设置(System settings)”</li>
   <li>依次点击 <code class="language-plaintext highlighter-rouge">数据管理（データ管理/Data Management）</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare 数据管理（DSiWareデータ管理/DSiWare）</code> -&gt; <code class="language-plaintext highlighter-rouge">SD卡（micro SDカード/SDカード/SD/microSD）</code>（<a href="/images/screenshots/bb3/dsiware-management.png">例图</a>）</li>
-  <li>选择 “Haxxxxxxxxx!”</li>
+  <li>选择 “Haxxxxxxxxx!”
+    <ul>
+      <li>If you are unable to select the “Haxxxxxxxxx” title, <a href="troubleshooting#installing-boot9strap-fredtool">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
   <li>选择 “Copy” ，然后选择 “OK”</li>
   <li>返回系统设置的主菜单</li>
-  <li>进入至 <code class="language-plaintext highlighter-rouge">网络设置（インターネツト設定/Internet Settings）</code> -&gt; <code class="language-plaintext highlighter-rouge">DS 连接设置（DSソフト用設定/Nintendo DS Connections）</code>，然后点击 “OK”（<a href="/images/screenshots/fredtool/dsconnection.png">例图</a>）</li>
-  <li>如果漏洞执行成功，你的主机将进入到日版的“うごくメモ帳 (Flipnote Studio)”</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DS Connections</code>, then select “OK” (<a href="/images/screenshots/fredtool/dsconnection.png">image</a>)</li>
+  <li>如果漏洞执行成功，你的主机将进入到日版的“うごくメモ帳 (Flipnote Studio)”
+    <ul>
+      <li>If your device does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
 </ol>
 
 <h4 id="第五步--触发-flipnote-漏洞">第五步 – 触发 Flipnote 漏洞</h4>
 
 <p class="notice--info">If you would prefer a visual guide to this section, one is available <a href="https://zoogie.github.io/web/flipnote_directions/">here</a>.</p>
 
-<p>In this section, you will perform a series of very specific steps within Flipnote Studio that, when performed correctly, will launch the boot9strap (custom firmware) installer.</p>
+<p>In this section, you will perform a series of very specific steps within Flipnote Studio that, when performed correctly, will launch b9sTool, the boot9strap (custom firmware) installer.</p>
 
 <ol>
   <li>Complete the initial setup process for the launched game until you reach the main menu
     <ul>
       <li>Select the left option whenever prompted during the setup process</li>
+      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool">check this troubleshooting guide</a> for your issue</li>
     </ul>
   </li>
   <li>Using the touch-screen, select the large left box, then select the box with an SD card icon</li>
@@ -642,11 +677,11 @@ window.cookieconsent.initialise({
 
 <h4 id="第七步--还原-ds-连接设置ds-connection-settings">第七步 – 还原 “DS 连接设置（DS Connection Settings）”</h4>
 
-<p>本节中，你将会把之前第四步中被替换为 Flipnote Studio 的 DS 连接设置程序还原回原来的状态。</p>
+<p>In this section, you will restore DS Connection Settings to the way it was before it was temporarily replaced with Flipnote Studio in an earlier section.</p>
 
 <ol>
   <li>打开内存卡的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 文件夹</li>
-  <li>下载的 DSiWare 压缩包 （<code class="language-plaintext highlighter-rouge">output_(&lt;你的名字&gt;).zip</code>） 里的 <code class="language-plaintext highlighter-rouge">clean</code> 文件夹复制 <code class="language-plaintext highlighter-rouge">42383841.bin</code> 到 <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 文件夹，替换已有文件</li>
+  <li>Copy the <code class="language-plaintext highlighter-rouge">42383841.bin</code>  file from the <code class="language-plaintext highlighter-rouge">clean</code> folder of the downloaded DSiWare archive (output_(name).zip) to the <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> folder, replacing the existing one</li>
   <li>将 SD 卡重新插入你的主机</li>
   <li>启动你的主机</li>
   <li>启动你主机上的 “系统设置(System settings)”</li>

@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/ko_KR/updating-firmware-(new-3ds)'>펌웨어 업데이트 (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/ko_KR/updating-firmware-(kor)'>펌웨어 업데이트 (한글판)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/ko_KR/updating-firmware-(twn)'>펌웨어 업데이트 (타이완)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ko_KR/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/ko_KR/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/ko_KR/seedminer-(twn)'>Seedminer (타이완)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/ko_KR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/ko_KR/bannerbomb3-(legacy)'>BannerBomb3 (레거시)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
           
         
           
@@ -459,7 +483,7 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li><a href="#다음-단계-익스플로잇-선택" id="markdown-toc-다음-단계-익스플로잇-선택">다음 단계: 익스플로잇 선택</a>    <ul>
-      <li><a href="#bannerbomb3-recommended" id="markdown-toc-bannerbomb3-recommended">Bannerbomb3 (recommended)</a></li>
+      <li><a href="#bannerbomb3-권장" id="markdown-toc-bannerbomb3-권장">Bannerbomb3 (권장)</a></li>
       <li><a href="#frogtool" id="markdown-toc-frogtool">Frogtool</a></li>
     </ul>
   </li>
@@ -472,9 +496,9 @@ window.cookieconsent.initialise({
 <details class="notice--info">
 <summary><em>기술적 상세 정보 (선택 사항)</em></summary>
 
-<p>boot9strap을 설치하려면 우선 각 기기의 고유 암호화 키를 알아내야 합니다. To accomplish this, we use the Homebrew Launcher to launch nimhax and dump the data encryption key (movable.sed) from your device.</p>
+<p>boot9strap을 설치하려면 우선 각 기기의 고유 암호화 키를 알아내야 합니다. 이를 위해, Homebrew Launcher를 통해 nimhax를 실행해 기기에서 데이터 암호화 키 (movable.sed)를 덤프하게 됩니다.</p>
 
-<p>For a more technical explanation, see <a href="https://github.com/luigoalma/nimhax/">here</a> for information about the nimhax exploit.</p>
+<p>nimhax의 더 자세한 설명은 <a href="https://github.com/luigoalma/nimhax/">여기 (영문)</a>를 참고해 주세요.</p>
 
 </details>
 
@@ -503,12 +527,12 @@ window.cookieconsent.initialise({
 <ol>
   <li>아무 방법을 사용해 Homebrew Launcher를 실행해 주세요 (아마 인터넷 브라우저일 겁니다)</li>
   <li>홈브류 목록에서 nimhax를 실행해 주세요</li>
-  <li>If the exploit was successful, a <code class="language-plaintext highlighter-rouge">movable.sed</code> file will appear on the root of your SD card</li>
+  <li>이 취약점이 성공했다면, SD 카드의 루트에 <code class="language-plaintext highlighter-rouge">movable.sed</code> 파일이 생성됩니다</li>
 </ol>
 
 <h3 id="다음-단계-익스플로잇-선택">다음 단계: 익스플로잇 선택</h3>
 
-<h4 id="bannerbomb3-recommended">Bannerbomb3 (recommended)</h4>
+<h4 id="bannerbomb3-권장">Bannerbomb3 (권장)</h4>
 
 <p>기기의 암호화 키 (<code class="language-plaintext highlighter-rouge">movable.sed</code>)를 구한 후, 이것을 BannerBomb3와 함깨 사용하여, 시스템 설정 앱에 존재하는 익스플로잇을 사용할 것 입니다.</p>
 
@@ -516,7 +540,7 @@ window.cookieconsent.initialise({
 
 <h4 id="frogtool">Frogtool</h4>
 
-<p>Once you have your device’s encryption key (<code class="language-plaintext highlighter-rouge">movable.sed</code>), you can use it in conjunction with Frogtool, which uses your <code class="language-plaintext highlighter-rouge">movable.sed</code> file to inject and take advantage of JPN Flipnote Studio. <br />
+<p>기기의 암호화 키 (<code class="language-plaintext highlighter-rouge">movable.sed</code>)를 구한 후, 이것을 Frogtool과 함께 사용하여, 일본어 Flipnote Studio을 주입해 사용할 것 입니다. <br />
 While this method is faster, it requires downloading a file with a torrent client. Do not follow this method if you’re unable to use a torrent client.</p>
 
 <h3 class="notice--warning" id="boot9strap-설치-frogtool로-계속합니다"><a href="installing-boot9strap-(frogtool)">boot9strap 설치 (Frogtool)</a>로 계속합니다</h3>

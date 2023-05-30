@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/nl_NL/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/nl_NL/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/nl_NL/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/nl_NL/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/nl_NL/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/nl_NL/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/nl_NL/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/nl_NL/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/nl_NL/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/nl_NL/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -457,15 +481,14 @@ window.cookieconsent.initialise({
   <li><a href="#wat-je-nodig-hebt" id="markdown-toc-wat-je-nodig-hebt">Wat je nodig hebt</a></li>
   <li><a href="#instructies" id="markdown-toc-instructies">Instructies</a>    <ul>
       <li><a href="#deel-i---voorbereiding" id="markdown-toc-deel-i---voorbereiding">Deel I - Voorbereiding</a></li>
-      <li><a href="#deel-ii---het-systeem-bijwerken" id="markdown-toc-deel-ii---het-systeem-bijwerken">Deel II - Het systeem bijwerken</a></li>
-      <li><a href="#deel-iii---homebrew-launcher" id="markdown-toc-deel-iii---homebrew-launcher">Deel III - Homebrew Launcher</a></li>
-      <li><a href="#deel-iv---rtc-en-dsp-setup" id="markdown-toc-deel-iv---rtc-en-dsp-setup">Deel IV - RTC en DSP Setup</a></li>
-      <li><a href="#deel-v---cias-installeren" id="markdown-toc-deel-v---cias-installeren">Deel V - CIAs installeren</a></li>
-    </ul>
-  </li>
-  <li><a href="#deel-vi---ctrnand-luma3ds" id="markdown-toc-deel-vi---ctrnand-luma3ds">Deel VI - CTRNAND Luma3DS</a>    <ul>
-      <li><a href="#deel-viii---sd-kaart-opschonen" id="markdown-toc-deel-viii---sd-kaart-opschonen">Deel VIII - SD-kaart opschonen</a></li>
-      <li><a href="#deel-viii---backups-maken-van-essentiële-bestanden" id="markdown-toc-deel-viii---backups-maken-van-essentiële-bestanden">Deel VIII - Backups maken van essentiële bestanden</a></li>
+      <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
+      <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
+      <li><a href="#section-iv---homebrew-launcher" id="markdown-toc-section-iv---homebrew-launcher">Section IV - Homebrew Launcher</a></li>
+      <li><a href="#section-v---rtc-and-dsp-setup" id="markdown-toc-section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</a></li>
+      <li><a href="#section-vi---installing-cias" id="markdown-toc-section-vi---installing-cias">Section VI - Installing CIAs</a></li>
+      <li><a href="#section-vii---ctrnand-luma3ds" id="markdown-toc-section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</a></li>
+      <li><a href="#section-viii---cleanup-sd-card" id="markdown-toc-section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</a></li>
+      <li><a href="#section-ix---backup-essential-files" id="markdown-toc-section-ix---backup-essential-files">Section IX - Backup Essential Files</a></li>
     </ul>
   </li>
   <li><a href="#information-and-notes" id="markdown-toc-information-and-notes">Information and Notes</a></li>
@@ -538,7 +561,22 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/godmode9-location.png" alt="" /></p>
 
-<h4 id="deel-ii---het-systeem-bijwerken">Deel II - Het systeem bijwerken</h4>
+<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
+
+<p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
+
+<ol>
+  <li>Schakel je 3DS uit</li>
+  <li>Houd de (Select) knop ingedrukt</li>
+  <li>Zet je 3DS aan terwijl je de (Select) knop ingedrukt houdt</li>
+  <li>If the check was successful, your device should have booted into the Luma3DS configuration menu</li>
+  <li>Druk op (Start) om op te slaan en opnieuw op te starten</li>
+  <li>Schakel je 3DS uit</li>
+</ol>
+
+<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your device. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
+
+<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
 
 <p>In this section, you will update your system to the latest version, which is safe to do with custom firmware.</p>
 
@@ -553,7 +591,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="deel-iii---homebrew-launcher">Deel III - Homebrew Launcher</h4>
+<h4 id="section-iv---homebrew-launcher">Section IV - Homebrew Launcher</h4>
 
 <p>In this section, you will temporarily replace Download Play with Homebrew Launcher (which we need to launch FBI). Download Play will automatically go back to normal once you reboot your device.</p>
 
@@ -576,7 +614,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="deel-iv---rtc-en-dsp-setup">Deel IV - RTC en DSP Setup</h4>
+<h4 id="section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</h4>
 
 <p>In this section, you will sync your 3DS internal clock with the actual time and dump the sound firmware (which is necesssary for some homebrew software to use sound properly).</p>
 
@@ -591,7 +629,7 @@ window.cookieconsent.initialise({
   <li>Druk op (B) om het Rosalina menu af te sluiten</li>
 </ol>
 
-<h4 id="deel-v---cias-installeren">Deel V - CIAs installeren</h4>
+<h4 id="section-vi---installing-cias">Section VI - Installing CIAs</h4>
 
 <p>In this section, you will install several useful homebrew applications to HOME Menu.</p>
 
@@ -603,7 +641,7 @@ window.cookieconsent.initialise({
   <li>Druk op (Home), en sluit dan Download Play af</li>
 </ol>
 
-<h3 id="deel-vi---ctrnand-luma3ds">Deel VI - CTRNAND Luma3DS</h3>
+<h4 id="section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</h4>
 
 <p>In this section, you will use a script to copy some of Luma3DS’s files to internal memory so that they can be accessed, even without an SD card inserted.</p>
 
@@ -626,7 +664,7 @@ window.cookieconsent.initialise({
   <li>Druk op (A) om door te gaan</li>
 </ol>
 
-<h4 id="deel-viii---sd-kaart-opschonen">Deel VIII - SD-kaart opschonen</h4>
+<h4 id="section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</h4>
 
 <p>In this section, you will use a script to remove some unnecessary files from your SD card.</p>
 
@@ -637,7 +675,7 @@ window.cookieconsent.initialise({
   <li>Druk op (B) om terug te gaan naar het hoofdmenu</li>
 </ol>
 
-<h4 id="deel-viii---backups-maken-van-essentiële-bestanden">Deel VIII - Backups maken van essentiële bestanden</h4>
+<h4 id="section-ix---backup-essential-files">Section IX - Backup Essential Files</h4>
 
 <p>In this section, you will make backups of files that can be used to recover from software bricks or to recover data.</p>
 
@@ -684,8 +722,6 @@ window.cookieconsent.initialise({
 <hr />
 
 <p class="notice--success">Je bent klaar! Custom firmware is nu volledig geconfigureerd op je apparaat.</p>
-
-<p class="notice--info">Hello! We’re looking for feedback on the overall experience of following our guide. If you’d like to help out, check out the survey <a href="https://forms.gle/vZNoc4QLCz5MEXCK7">here</a> (only available in English). Thanks!</p>
 
 <h3 id="information-and-notes">Information and Notes</h3>
 

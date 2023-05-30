@@ -314,11 +314,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/fr_FR/updating-firmware-(new-3ds)'>Mise à jour du logiciel système (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/fr_FR/updating-firmware-(kor)'>Mise à jour du logiciel système (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/fr_FR/updating-firmware-(twn)'>Mise à jour du logiciel système (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/fr_FR/ntrboot'>ntrboot</a></li>
           
         
           
             <li style="display: none;" data-name="seedminer"><a href='/fr_FR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/fr_FR/seedminer-(mii)'>Seedminer (Mii)</a></li>
           
         
           
@@ -330,6 +346,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/fr_FR/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/fr_FR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
@@ -338,23 +358,23 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(Choix multiple)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(Options multiples)</i></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flashage de ntrboot (une seule 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-single-system)'>Flash de ntrboot (une seule 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flashage de ntrboot (plusieurs 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/fr_FR/flashing-ntrboot-(3ds-multi-system)'>Flash de ntrboot (plusieurs 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flashage de ntrboot (DSi)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/fr_FR/flashing-ntrboot-(dsi)'>Flash de ntrboot (DSi)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flashage de ntrboot (NDS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/fr_FR/flashing-ntrboot-(nds)'>Flash de ntrboot (NDS)</a></li>
           
         
           
@@ -390,6 +410,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/fr_FR/installing-boot9strap-(fredtool-legacy)'>Installation de boot9strap (Fredtool, Legacy)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(usm)"><a href='/fr_FR/installing-boot9strap-(usm)'>Installation de boot9strap (USM)</a></li>
           
         
@@ -402,7 +426,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de la configuration</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/fr_FR/finalizing-setup'>Finalisation de l'installation</a></li>
           
         
       </ol>
@@ -475,7 +499,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--info">Cette page suppose que vous avez déjà installé Luma3DS et boot9strap. Si vous avez suivi ce guide jusqu’à la fin (Finalisation de l’installation), vous avez Luma3DS et boot9strap.</p>
 
-<p class="notice--warning">Dans le cadre de ce processus, la configuration de votre console sera réinitialisée à ses valeurs par défaut. Cela inclut des choses telles que votre nom d’utilisateur, votre pays et votre langue. Les jeux installés et leurs données de sauvegarde ne seront pas affectés.</p>
+<p class="notice--warning">Dans le cadre de ce processus, la configuration de votre console sera réinitialisée à ses valeurs par défaut. Cela inclut des éléments tels que votre nom d’utilisateur, votre pays et votre langue. Les jeux installés et leurs données de sauvegarde ne seront pas affectés.</p>
 
 <h2 id="ce-dont-vous-avez-besoin">Ce dont vous avez besoin</h2>
 
@@ -508,14 +532,14 @@ window.cookieconsent.initialise({
 <h4 id="section-i---préparatifs">Section I - Préparatifs</h4>
 
 <ol>
-  <li>Éteignez votre 3DS</li>
+  <li>Éteignez votre console</li>
   <li>Insérez votre carte SD dans votre ordinateur</li>
   <li>Créez un dossier nommé <code class="language-plaintext highlighter-rouge">3ds</code> à la racine de votre carte SD si celui ci n’existe pas</li>
   <li>Copiez le fichier <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> de l’archive <code class="language-plaintext highlighter-rouge">.zip</code> de GodMode9 dans le dossier <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> sur votre carte SD</li>
-  <li>Copiez le dossier <code class="language-plaintext highlighter-rouge">gm9</code> de GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> à la racine de votre carte SD</li>
+  <li>Copiez le dossier <code class="language-plaintext highlighter-rouge">gm9</code> de l’archive <code class="language-plaintext highlighter-rouge">.zip</code> de GodMode9 vers la racine de votre carte SD</li>
   <li>Copiez l’image 11.15.0 CTRTransfer <code class="language-plaintext highlighter-rouge">.bin</code> depuis le <code class="language-plaintext highlighter-rouge">.zip</code> de CTRTransfer dans le dossier <code class="language-plaintext highlighter-rouge">/gm9/</code> sur votre carte SD</li>
   <li>Copiez <code class="language-plaintext highlighter-rouge">FBI.3dsx</code> dans le dossier <code class="language-plaintext highlighter-rouge">/3ds/</code> de votre carte SD</li>
-  <li>Retirez la carte SD de votre ordinateur et réinsérez-là dans votre 3DS</li>
+  <li>Retirez la carte SD de votre ordinateur et réinsérez-la dans votre console</li>
 </ol>
 
 <h4 id="section-ii---ctrtransfer">Section II - CTRTransfer</h4>
@@ -564,7 +588,7 @@ window.cookieconsent.initialise({
 <h4 id="section-iii---lancez-fbi">Section III - Lancez FBI</h4>
 
 <ol>
-  <li>Lancez l’application Mode Téléchargement (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
+  <li>Lancez l’application Mode téléchargement (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
   <li>Attendez jusqu’à ce que vous voyiez les boutons <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> et <code class="language-plaintext highlighter-rouge">Nintendo DS</code></li>
   <li>Appuyez simultanément sur (L) + (Bas sur la croix directionnelle) + (Select) pour ouvrir le menu Rosalina</li>
   <li>Sélectionnez “Miscellaneous options”</li>
@@ -610,7 +634,7 @@ window.cookieconsent.initialise({
 <p>Cette section réinitialisera la configuration de votre console à ses valeurs par défaut. Les jeux installés et leurs données de sauvegarde ne seront pas affectés. Ceci est nécessaire pour éviter les problèmes connus liés au mode mémoire étendue et aux applets sur certaines consoles.</p>
 
 <ol>
-  <li>Éteignez votre 3DS</li>
+  <li>Éteignez votre console</li>
   <li>Appuyez sur le bouton (START) et maintenez le enfoncé tout en allumant votre console. Ceci lancera GodMode9</li>
   <li>Naviguez vers <code class="language-plaintext highlighter-rouge">[0:] SDCARD</code> -&gt; <code class="language-plaintext highlighter-rouge">gm9</code></li>
   <li>Appuyez sur (X) sur le <code class="language-plaintext highlighter-rouge">.bin</code> de l’image CTRTransfer pour le supprimer</li>

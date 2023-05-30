@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/it_IT/updating-firmware-(new-3ds)'>Aggiornamento del Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/it_IT/updating-firmware-(kor)'>Aggiornamento del Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/it_IT/updating-firmware-(twn)'>Aggiornamento del Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/it_IT/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/it_IT/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/it_IT/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/it_IT/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/it_IT/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/it_IT/installing-boot9strap-(fredtool)'>Installazione di boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/it_IT/installing-boot9strap-(fredtool-legacy)'>Installazione di boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -518,21 +542,19 @@ window.cookieconsent.initialise({
 
 <h4 id="sezione-i---verifica-pulsanti-hardware-3ds-di-destinazione">Sezione I - Verifica Pulsanti Hardware (3DS di destinazione)</h4>
 
+<p>In questa sezione verificherai se i pulsanti dorsali della tua console funzionano. Serve per determinare quale metodo seguirai nella prossima pagina.</p>
+
 <ol>
-  <li>Con la console ancora spenta, tieni premuto i pulsanti (L) + (R) + (Su) + (A), dopodiché, tenendo premuti i pulsanti, accendi la console
+  <li>Accendi la console</li>
+  <li>Nel menu HOME premi contemporaneamente i pulsanti L e R
     <ul>
-      <li>Tieni premuti i pulsanti finché la console non mostrerà una schermata di aggiornamento dei sistema (cioè la Modalità Provvisoria)</li>
+      <li>L’applicazione fotocamera dovrebbe apparire</li>
     </ul>
   </li>
-  <li>Se viene mostrata la schermata di aggiornamento del sistema, premi Annulla
-    <ul>
-      <li>La console si spegnerà</li>
-      <li>Se la console si avvia nel menu HOME, spegni la console</li>
-    </ul>
-  </li>
+  <li>Spegni il tuo 3DS</li>
 </ol>
 
-<p class="notice--warning">Se non si riesce ad avviare la Modalità Provvisoria, il menu di aggiornamento di sistema, dopo più tentativi, non è possibile seguire questo metodo. In tal caso, puoi ricevere assistenza chiedendo, in inglese, nel <a href="https://discord.gg/MWxPgEp">canale Discord di Nintendo Homebrew</a>.</p>
+<p class="notice--warning">Se la fotocamera non si apre, non è possibile seguire questo metodo. In tal caso, puoi ricevere assistenza chiedendo, in inglese, nel <a href="https://discord.gg/MWxPgEp">canale Discord di Nintendo Homebrew</a>.</p>
 
 <h4 id="sezione-ii---preparazione-3ds-di-partenza">Sezione II - Preparazione (3DS di partenza)</h4>
 
@@ -597,7 +619,12 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Seleziona la tipologia del <strong>3DS di destinazione</strong> (Old 3DS o New 3DS)</li>
-  <li>Seleziona il tipo di exploit <code class="language-plaintext highlighter-rouge">3DS ROP xPloit Injector</code></li>
+  <li>Scegli uno degli exploit seguenti a seconda della tua versione del software:
+    <ul>
+      <li>11.16.0: seleziona <code class="language-plaintext highlighter-rouge">xPloitInjector (11.16)</code></li>
+      <li>11.17.0: seleziona <code class="language-plaintext highlighter-rouge">xPloitInjector (11.17)</code></li>
+    </ul>
+  </li>
   <li>Verrà visualizzato un menu di conferma. Se le impostazioni visualizzate nella schermata superiore sono corrette, seleziona <code class="language-plaintext highlighter-rouge">Use settings</code>
     <ul>
       <li>Se le impostazioni non sono corrette, premi <code class="language-plaintext highlighter-rouge">Change settings</code> e modificale di conseguenza</li>
@@ -656,6 +683,7 @@ window.cookieconsent.initialise({
     <ul>
       <li>Se la tua console invece si blocca con una schermata bianca, tieni premuto il pulsante POWER finché non si spegne, quindi riprova questa sezione</li>
       <li>Se invece la console invece si blocca con una schermata rossa, manca il file <code class="language-plaintext highlighter-rouge">usm.bin</code> dalla directory principale della tua scheda SD</li>
+      <li>Se ottieni un errore diverso, <a href="troubleshooting#installing-boot9strap-usm">segui questa guida per risolvere il problema</a></li>
     </ul>
   </li>
 </ol>
@@ -665,7 +693,11 @@ window.cookieconsent.initialise({
 <p>In questa sezione installerai il custom firmware nella tua console.</p>
 
 <ol>
-  <li>Quando richiesto, inserisci la combinazione di tasti richiesta sullo schermo superiore per installare boot9strap</li>
+  <li>Quando richiesto, inserisci la combinazione di tasti richiesta sullo schermo superiore per installare boot9strap
+    <ul>
+      <li>Se una sezione nella schermata inferiore ha un testo di colore rosso, e non ti viene richiesto di inserire una combinazione di tasti, <a href="troubleshooting#issues-with-safeb9sinstaller">segui questa guida per risolvere i problemi</a></li>
+    </ul>
+  </li>
   <li>Una volta completato il processo, premi (A) per riavviare la tua console</li>
   <li>La tua console dovrebbe aver avviato il menu di configurazione di Luma3DS
     <ul>

@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/ko_KR/updating-firmware-(new-3ds)'>펌웨어 업데이트 (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/ko_KR/updating-firmware-(kor)'>펌웨어 업데이트 (한글판)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/ko_KR/updating-firmware-(twn)'>펌웨어 업데이트 (타이완)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ko_KR/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/ko_KR/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/ko_KR/seedminer-(twn)'>Seedminer (타이완)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/ko_KR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/ko_KR/bannerbomb3-(legacy)'>BannerBomb3 (레거시)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
           
         
           
@@ -457,13 +481,14 @@ window.cookieconsent.initialise({
   <li><a href="#준비물" id="markdown-toc-준비물">준비물</a></li>
   <li><a href="#진행-방법" id="markdown-toc-진행-방법">진행 방법</a>    <ul>
       <li><a href="#섹션-i---준비-작업" id="markdown-toc-섹션-i---준비-작업">섹션 I - 준비 작업</a></li>
-      <li><a href="#섹션-ii---본체-업데이트" id="markdown-toc-섹션-ii---본체-업데이트">섹션 II - 본체 업데이트</a></li>
-      <li><a href="#섹션-iii---homebrew-launcher" id="markdown-toc-섹션-iii---homebrew-launcher">섹션 III - Homebrew Launcher</a></li>
-      <li><a href="#섹션-iv---rtc-및-dsp-설정" id="markdown-toc-섹션-iv---rtc-및-dsp-설정">섹션 IV - RTC 및 DSP 설정</a></li>
-      <li><a href="#섹션-v---cia-설치" id="markdown-toc-섹션-v---cia-설치">섹션 V - CIA 설치</a></li>
-      <li><a href="#섹션-vi---ctrnand-luma3ds" id="markdown-toc-섹션-vi---ctrnand-luma3ds">섹션 VI - CTRNAND Luma3DS</a></li>
-      <li><a href="#섹션-vii---sd-카드-정리하기" id="markdown-toc-섹션-vii---sd-카드-정리하기">섹션 VII - SD 카드 정리하기</a></li>
-      <li><a href="#섹션-viii---중요-파일-백업" id="markdown-toc-섹션-viii---중요-파일-백업">섹션 VIII - 중요 파일 백업</a></li>
+      <li><a href="#섹션-ii---cfw-확인" id="markdown-toc-섹션-ii---cfw-확인">섹션 II - CFW 확인</a></li>
+      <li><a href="#섹션-iii---본체-업데이트" id="markdown-toc-섹션-iii---본체-업데이트">섹션 III - 본체 업데이트</a></li>
+      <li><a href="#섹션-iv---homebrew-launcher" id="markdown-toc-섹션-iv---homebrew-launcher">섹션 IV - Homebrew Launcher</a></li>
+      <li><a href="#섹션-v---rtc-및-dsp-설정" id="markdown-toc-섹션-v---rtc-및-dsp-설정">섹션 V - RTC 및 DSP 설정</a></li>
+      <li><a href="#섹션-vi---cia-설치" id="markdown-toc-섹션-vi---cia-설치">섹션 VI - CIA 설치</a></li>
+      <li><a href="#섹션-vii---ctrnand-luma3ds" id="markdown-toc-섹션-vii---ctrnand-luma3ds">섹션 VII - CTRNAND Luma3DS</a></li>
+      <li><a href="#섹션-viii---sd-카드-정리하기" id="markdown-toc-섹션-viii---sd-카드-정리하기">섹션 VIII - SD 카드 정리하기</a></li>
+      <li><a href="#섹션-ix---중요-파일-백업" id="markdown-toc-섹션-ix---중요-파일-백업">섹션 IX - 중요 파일 백업</a></li>
     </ul>
   </li>
   <li><a href="#정보와-메모" id="markdown-toc-정보와-메모">정보와 메모</a></li>
@@ -536,7 +561,22 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/godmode9-location.png" alt="" /></p>
 
-<h4 id="섹션-ii---본체-업데이트">섹션 II - 본체 업데이트</h4>
+<h4 id="섹션-ii---cfw-확인">섹션 II - CFW 확인</h4>
+
+<p>여기서 기기의 안전을 위해 커스텀 펌웨어가 설치되어 있는지 확인합니다. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
+
+<ol>
+  <li>기기를 종료해 주세요</li>
+  <li>(Select) 버튼을 길게 눌러 주세요</li>
+  <li>(Select) 버튼을 계속 눌러 있는 상태에서 기기의 전원을 켜 주세요</li>
+  <li>If the check was successful, your device should have booted into the Luma3DS configuration menu</li>
+  <li>(Start)를 눌러 저장하고 기기를 다시 시작해 주세요</li>
+  <li>기기를 종료해 주세요</li>
+</ol>
+
+<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your device. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
+
+<h4 id="섹션-iii---본체-업데이트">섹션 III - 본체 업데이트</h4>
 
 <p>이 섹션에서는 커스텀 펌웨어가 설치된 기기에서도 안전하게 이용 가능한 최신 버전의 펌웨어로 본체를 업데이트합니다.</p>
 
@@ -551,7 +591,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="섹션-iii---homebrew-launcher">섹션 III - Homebrew Launcher</h4>
+<h4 id="섹션-iv---homebrew-launcher">섹션 IV - Homebrew Launcher</h4>
 
 <p>이 섹션에서는 FBI를 실행하기 위해 다운로드 플레이를 잠시 Homebrew Launcher로 치환합니다. 다운로드 플레이 앱은 기기를 다시 시작하면 원상태로 돌아옵니다.</p>
 
@@ -564,9 +604,9 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 진행해 주세요</li>
   <li>(B)를 눌러 Rosalina 메뉴로 돌아가 주세요</li>
   <li>(B)를 눌러 Rosalina 메뉴를 나와 주세요</li>
-  <li>Press (Home) to suspend Download Play</li>
-  <li>Press the “Close” button on the bottom screen to close Download Play</li>
-  <li>Re-launch the Download Play application</li>
+  <li>(Home) 키를 눌러 다운로드 플레이를 종료해 주세요</li>
+  <li>아래 화면에서 “종료” 버튼을 눌러 다운로드 플레이 앱을 닫아주세요</li>
+  <li>다운로드 플레이 앱을 다시 실행해 주세요</li>
   <li>성공하면 Homebrew Launcher가 실행될 것입니다
     <ul>
       <li>만약 기기가 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 화면에 정지되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">boot.3dsx</code>이 존재하지 않습니다</li>
@@ -574,7 +614,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="섹션-iv---rtc-및-dsp-설정">섹션 IV - RTC 및 DSP 설정</h4>
+<h4 id="섹션-v---rtc-및-dsp-설정">섹션 V - RTC 및 DSP 설정</h4>
 
 <p>이 섹션에서는 3DS 내부 시계를 실제 시각과 맞추고, 홈브류 소프트웨어에서 음성을 적절하게 이용하기 위해 사운드 펌웨어를 백업합니다.</p>
 
@@ -589,7 +629,7 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 Rosalina 메뉴를 나와 주세요</li>
 </ol>
 
-<h4 id="섹션-v---cia-설치">섹션 V - CIA 설치</h4>
+<h4 id="섹션-vi---cia-설치">섹션 VI - CIA 설치</h4>
 
 <p>이 섹션에서는, 홈 메뉴에 몇몇 유용한 홈브류 앱을 설치하게 됩니다.</p>
 
@@ -601,7 +641,7 @@ window.cookieconsent.initialise({
   <li>(Home) 키를 누르고, 다운로드 플레이를 종료해 주세요</li>
 </ol>
 
-<h4 id="섹션-vi---ctrnand-luma3ds">섹션 VI - CTRNAND Luma3DS</h4>
+<h4 id="섹션-vii---ctrnand-luma3ds">섹션 VII - CTRNAND Luma3DS</h4>
 
 <p>이 섹션에서는, Luma3DS의 핵심 파일을 내부 저장소에 복사하는 스크립트를 실행합니다. 이렇게 하면 SD 카드 없이도 커펌을 이용할 수 있습니다.</p>
 
@@ -624,7 +664,7 @@ window.cookieconsent.initialise({
   <li>(A)를 눌러 진행해 주세요</li>
 </ol>
 
-<h4 id="섹션-vii---sd-카드-정리하기">섹션 VII - SD 카드 정리하기</h4>
+<h4 id="섹션-viii---sd-카드-정리하기">섹션 VIII - SD 카드 정리하기</h4>
 
 <p>이 섹션에서는, SD 카드에서 불필요한 파일을 삭제하는 스크립트를 실행합니다.</p>
 
@@ -635,7 +675,7 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 메인 메뉴로 돌아가 주세요</li>
 </ol>
 
-<h4 id="섹션-viii---중요-파일-백업">섹션 VIII - 중요 파일 백업</h4>
+<h4 id="섹션-ix---중요-파일-백업">섹션 IX - 중요 파일 백업</h4>
 
 <p>이 섹션에서는 벽돌 현상이나 복구를 위해 사용할 수 있는 시스템 백업 파일을 생성합니다.</p>
 
@@ -682,8 +722,6 @@ window.cookieconsent.initialise({
 <hr />
 
 <p class="notice--success">모든 작업이 끝났습니다! 이제 커스텀 펌웨어는 완벽하게 설정되었습니다.</p>
-
-<p class="notice--info">안녕하세요! 저희는 이 가이드를 따른 경험에 데한 설문조사를 진행하고 있습니다. 원하신다면, 이 <a href="https://forms.gle/vZNoc4QLCz5MEXCK7">설문조사</a> (영어로만 가능)을 확인해 주세요. 감사합니다!</p>
 
 <h3 id="정보와-메모">정보와 메모</h3>
 

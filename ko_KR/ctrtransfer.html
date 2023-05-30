@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/ko_KR/updating-firmware-(new-3ds)'>펌웨어 업데이트 (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/ko_KR/updating-firmware-(kor)'>펌웨어 업데이트 (한글판)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/ko_KR/updating-firmware-(twn)'>펌웨어 업데이트 (타이완)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ko_KR/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/ko_KR/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/ko_KR/seedminer-(twn)'>Seedminer (타이완)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/ko_KR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/ko_KR/bannerbomb3-(legacy)'>BannerBomb3 (레거시)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
           
         
           
@@ -459,7 +483,7 @@ window.cookieconsent.initialise({
       <li><a href="#섹션-ii---ctrtransfer" id="markdown-toc-섹션-ii---ctrtransfer">섹션 II - CTRTransfer</a></li>
       <li><a href="#섹션-iii---fbi-실행" id="markdown-toc-섹션-iii---fbi-실행">섹션 III - FBI 실행</a></li>
       <li><a href="#섹션-v---티켓-재설치" id="markdown-toc-섹션-v---티켓-재설치">섹션 V - 티켓 재설치</a></li>
-      <li><a href="#section-vi---deleting-system-save-data" id="markdown-toc-section-vi---deleting-system-save-data">Section VI - Deleting system save data</a></li>
+      <li><a href="#섹션-vi---시스템-세이브-데이터-초기화" id="markdown-toc-섹션-vi---시스템-세이브-데이터-초기화">섹션 VI - 시스템 세이브 데이터 초기화</a></li>
     </ul>
   </li>
   <li><a href="#마무리-단계-로-계속합니다" id="markdown-toc-마무리-단계-로-계속합니다">마무리 단계 로 계속합니다</a></li>
@@ -472,9 +496,9 @@ window.cookieconsent.initialise({
 
 <p>이것은 기기에 11.15.0 CTRTransfer 이미지를 설치하는 부가 섹션입니다.</p>
 
-<p class="notice--info">This page assumes that you have already installed Luma3DS and boot9strap. If you followed this website to the end (Finalizing Setup), you have Luma3DS and boot9strap.</p>
+<p class="notice--info">이 페이지에서는 이미 Luma3DS와 boot9strap이 설치되어 있는 것으로 가정합니다. 이 웹사이트를 끝까지 진행했다면 (마무리 단계), Luma3DS와 boot9strap이 설치되어 있는 것입니다.</p>
 
-<p class="notice--warning">As a part of this process, your system configuration will be reset to its defaults. This includes things such as your username, country, and language. Installed games and their save data will not be affected.</p>
+<p class="notice--warning">이 과정의 일부분으로, 시스템 설정을 초기화하게 됩니다. 이것은 사용자 이름, 국가, 언어 등을 포함합니다. 설치된 게임과 세이브 데이터에는 영향을 주지 않습니다.</p>
 
 <h3 id="준비물">준비물</h3>
 
@@ -574,9 +598,9 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 진행해 주세요</li>
   <li>(B)를 눌러 Rosalina 메뉴로 돌아가 주세요</li>
   <li>(B)를 눌러 Rosalina 메뉴를 나와 주세요</li>
-  <li>Press (Home) to suspend Download Play</li>
-  <li>Press the “Close” button on the bottom screen to close Download Play</li>
-  <li>Re-launch the Download Play application</li>
+  <li>(Home) 키를 눌러 다운로드 플레이를 종료해 주세요</li>
+  <li>아래 화면에서 “종료” 버튼을 눌러 다운로드 플레이 앱을 닫아주세요</li>
+  <li>다운로드 플레이 앱을 다시 실행해 주세요</li>
   <li>성공하면 Homebrew Launcher가 실행될 것입니다
     <ul>
       <li>만약 기기가 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 화면에 정지되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">boot.3dsx</code>이 존재하지 않습니다</li>
@@ -607,9 +631,9 @@ window.cookieconsent.initialise({
   <li>(Home)을 눌러 FBI를 종료해 주세요</li>
 </ol>
 
-<h4 id="section-vi---deleting-system-save-data">Section VI - Deleting system save data</h4>
+<h4 id="섹션-vi---시스템-세이브-데이터-초기화">섹션 VI - 시스템 세이브 데이터 초기화</h4>
 
-<p>This section will reset your system configuration to its defaults. Installed games and their save data will not be affected. This is necessary to prevent known issues relating to extended memory mode and applets on some devices.</p>
+<p>이 섹션에서는 시스템 설정을 기본값으로 복구하게 됩니다. 설치된 게임과 세이브 데이터에는 영향을 주지 않습니다. 이 절차는 일부 기기에서 보고된 확장 메모리 모드와 몇몇 앱의 문제점을 예방하기 위해 필요합니다.</p>
 
 <ol>
   <li>기기를 종료해 주세요</li>
@@ -620,25 +644,25 @@ window.cookieconsent.initialise({
   <li>(B) 버튼을 여러 번 눌러 메인 메뉴로 돌아가 주세요</li>
   <li><code class="language-plaintext highlighter-rouge">[1:] SYSNAND CTRNAND</code> -&gt; <code class="language-plaintext highlighter-rouge">data</code> -&gt; <ID0> -&gt; `sysdata` -&gt; `&lt;0&gt;` 폴더로 이동해 주세요
 </ID0>    <ul>
-      <li>The <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> will be a folder with a 32 character length random-looking name. You may recognize this from Seedminer, if you used that method</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code>는 랜덤하게 보이는 32자리 폴더를 가리킵니다. Seedminer 방식을 사용해보셨다면 쉽게 알아보실 수 있습니다</li>
     </ul>
   </li>
-  <li>Use the D-Pad to highlight <code class="language-plaintext highlighter-rouge">00010017</code></li>
-  <li>Press (Right Shoulder) + (A) to bring up the folder options</li>
+  <li>십자 패드를 이용해 <code class="language-plaintext highlighter-rouge">00010017</code>을 선택해주세요</li>
+  <li>(R 버튼) + (A) 버튼을 눌러 폴더 옵션을 불러와주세요</li>
   <li>“Copy to 0:/gm9/out”를 선택해 주세요</li>
   <li>(A)를 눌러 진행해 주세요</li>
-  <li>While still highlighting <code class="language-plaintext highlighter-rouge">00010017</code>, press (X) to delete it</li>
+  <li><code class="language-plaintext highlighter-rouge">00010017</code>을 계속 선택한 상태에서, (X)를 눌러 삭제해주세요</li>
   <li>(A)를 눌러 확인해 주세요</li>
   <li>(A) 를 눌러 SysNAND (lvl2) 쓰기 잠금을 풀고 화면에 표시된 키 조합을 입력해 주세요</li>
   <li>작업이 완료되면 (A)를 눌려 계속해 주세요</li>
   <li>메세지가 표시되면, (A)를 눌러서 쓰기잠금을 확인해 주세요</li>
   <li>(Start)를 눌러 기기를 다시 시작해 주세요</li>
-  <li>Your device will load into the initial setup menu
+  <li>기기가 최초 실행 메뉴로 부팅될 것입니다
     <ul>
-      <li>이것은 의도적 행동입니다. You have not lost any of your game data</li>
+      <li>이것은 의도적 행동입니다. 게임 데이터는 손실되지 않습니다</li>
     </ul>
   </li>
-  <li>Complete the initial setup menu by following the prompts on your device’s screen</li>
+  <li>기기에 표시되는 안내를 따라 최초 설정을 마무리해주세요</li>
 </ol>
 
 <hr />

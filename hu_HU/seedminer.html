@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/hu_HU/updating-firmware-(new-3ds)'>Firmware frissítése (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/hu_HU/updating-firmware-(kor)'>Firmware frissítése (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/hu_HU/updating-firmware-(twn)'>Firmware frissítése (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/hu_HU/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/hu_HU/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/hu_HU/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/hu_HU/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/hu_HU/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -370,11 +390,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>boot9strap telepítése (Soundhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/hu_HU/installing-boot9strap-(soundhax)'>Boot9strap telepítése (Soundhax)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/hu_HU/installing-boot9strap-(fredtool)'>Boot9strap telepítése (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, Legacy)</a></li>
           
         
           
@@ -452,9 +476,8 @@ window.cookieconsent.initialise({
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Tartalomjegyzék</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#i-rész---a-rendszer-frissítése" id="markdown-toc-i-rész---a-rendszer-frissítése">I. rész - A rendszer frissítése</a></li>
-  <li><a href="#ii-rész---előkészületek" id="markdown-toc-ii-rész---előkészületek">II. rész - Előkészületek</a></li>
-  <li><a href="#iii-rész---seedminer" id="markdown-toc-iii-rész---seedminer">III. rész - Seedminer</a></li>
+  <li><a href="#i-rész---előkészületek" id="markdown-toc-i-rész---előkészületek">I. rész - Előkészületek</a></li>
+  <li><a href="#ii-rész---seedminer" id="markdown-toc-ii-rész---seedminer">II. rész - Seedminer</a></li>
   <li><a href="#következő-lépés-bannerbomb3" id="markdown-toc-következő-lépés-bannerbomb3">Következő lépés: BannerBomb3</a></li>
 </ul>
 
@@ -472,28 +495,17 @@ window.cookieconsent.initialise({
 
 </details>
 
-<h3 id="i-rész---a-rendszer-frissítése">I. rész - A rendszer frissítése</h3>
-
-<p>Ebben a fejezetben frissíteni fogod a rendszered a legutolsó verzióra, ami szükséges a Seedminer-hez.</p>
-
-<ol>
-  <li>Frissítsd az eszközödet következőképp. Lépj be a System Settings-be, majd az “Other settings”-be, ahol addig lépkedj jobbra, amíg a végére nem érsz. Itt válaszd a “System Update” opciót.
-    <ul>
-      <li>A frissítő elképzelhető, hogy megjeleníti a “Your system is up to date” üzenetet a frissítés helyett. Ez normális, ha már frissítettél; folytasd a következő szakasszal</li>
-      <li>Ha ez hibát ad, akkor állítsd a DNS és Proxy beállításodat egyaránt “Auto”-ra</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="ii-rész---előkészületek">II. rész - Előkészületek</h3>
+<h3 id="i-rész---előkészületek">I. rész - Előkészületek</h3>
 
 <p>Ebben a fejezetben összeszedjük a szükséges információkat a 3DS-edről, ami ahhoz kell, hogy kitaláljuk az eszközöd titkosító kulcsát.</p>
 
+<div class="notice--info">
 <p>Mielőtt követnéd ezt a fejezetet:</p>
-<ul class="notice--info">
+<ul>
   <li>Biztosítsd, hogy a konzolod bekapcsolásra kerüljön a behelyezett SD kártyával legalább egyszer, hogy létre jöjjön rajta a szükséges adat</li>
   <li>Biztosítsd, hogy a konzolod csatlakoztatva legyen az Internethez (látnod kell egy kék “Internet” jelzőt, a bal felső sarkában a HOME képernyőnek)</li>
 </ul>
+</div>
 
 <ol>
   <li>Kapcsold ki a készüléked</li>
@@ -526,7 +538,7 @@ window.cookieconsent.initialise({
   <li>Keresd meg a Mii profilodat, ott találod a “Friend Code” mezőt a felső képernyőn</li>
 </ol>
 
-<h3 id="iii-rész---seedminer">III. rész - Seedminer</h3>
+<h3 id="ii-rész---seedminer">II. rész - Seedminer</h3>
 
 <p>Ebben a fejezetben a Bruteforce Movable weboldalt fogod használni, hogy megszerezd az eszközöd titkosító kulcsát <code class="language-plaintext highlighter-rouge">movable.sed</code> formában.</p>
 
@@ -563,10 +575,7 @@ window.cookieconsent.initialise({
       <li>Ez általában gyors (1-5 perc)</li>
       <li>Ez alatt a folyamat alatt, a bot, amit hozzáadtál nem biztos, hogy feltűnik a 3DS-eden. Egészen addig, amíg a weboldal frissül, ez nem probléma</li>
       <li>Ha egy fél óra után is még mindig várakozol, csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord-on</a> csatornához, és kérj segítséget (angol nyelven) valakitől</li>
-    </ul>
-  </li>
-  <li>Amikor a folyamat befejeződött, töltsd le a <code class="language-plaintext highlighter-rouge">movable.sed</code> fájlodat az oldalról
-    <ul>
+      <li>Ha a “We were unable to successfully complete your bruteforce request. :`(“ üzenetet kaptad, kövesd <a href="troubleshooting#seedminer">a vonatkozó hibaelhárítási lépéseket ezen az oldalon</a></li>
       <li>Őrizd meg ezt fájlt, mert szükséged lesz rá a következő oldalon</li>
     </ul>
   </li>

@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/it_IT/updating-firmware-(new-3ds)'>Aggiornamento del Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/it_IT/updating-firmware-(kor)'>Aggiornamento del Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/it_IT/updating-firmware-(twn)'>Aggiornamento del Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/it_IT/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/it_IT/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/it_IT/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/it_IT/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/it_IT/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/it_IT/installing-boot9strap-(fredtool)'>Installazione di boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/it_IT/installing-boot9strap-(fredtool-legacy)'>Installazione di boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -454,10 +478,9 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#note-di-compatibilità" id="markdown-toc-note-di-compatibilità">Note di Compatibilità</a></li>
   <li><a href="#cosa-serve" id="markdown-toc-cosa-serve">Cosa serve</a>    <ul>
-      <li><a href="#sezione-i---aggiornare-il-sistema" id="markdown-toc-sezione-i---aggiornare-il-sistema">Sezione I - Aggiornare il Sistema</a></li>
-      <li><a href="#sezione-ii---preparazione" id="markdown-toc-sezione-ii---preparazione">Sezione II - Preparazione</a></li>
-      <li><a href="#sezione-iii---super-skaterhax" id="markdown-toc-sezione-iii---super-skaterhax">Sezione III - super-skaterhax</a></li>
-      <li><a href="#sezione-iv---verifica-pulsanti-hardware" id="markdown-toc-sezione-iv---verifica-pulsanti-hardware">Sezione IV - Verifica Pulsanti Hardware</a></li>
+      <li><a href="#sezione-i---preparazione" id="markdown-toc-sezione-i---preparazione">Sezione I - Preparazione</a></li>
+      <li><a href="#sezione-ii---super-skaterhax" id="markdown-toc-sezione-ii---super-skaterhax">Sezione II - super-skaterhax</a></li>
+      <li><a href="#sezione-iii---verifica-pulsanti-hardware" id="markdown-toc-sezione-iii---verifica-pulsanti-hardware">Sezione III - Verifica Pulsanti Hardware</a></li>
     </ul>
   </li>
   <li><a href="#passaggio-successivo-scelta-di-un-exploit" id="markdown-toc-passaggio-successivo-scelta-di-un-exploit">Passaggio successivo: Scelta di un exploit</a></li>
@@ -474,7 +497,7 @@ window.cookieconsent.initialise({
 
 <h3 id="note-di-compatibilità">Note di Compatibilità</h3>
 
-<p>Super-skaterhax (quando utilizzato per avviare l’Homebrew Launcher) è compatibile con i modelli New alla versione 11.16.0 di tutte le regioni tranne TWN/CHN.</p>
+<p>Super-skaterhax (quando utilizzato per avviare l’Homebrew Launcher) è compatibile con i modelli New alla versione 11.16.0 di tutte le regioni, e 11.17.0 per le regioni EUR e JPN.</p>
 
 <p class="notice--warning">Le istruzioni indicate si applicano solo a New 3DS, New 3DS XL e New 2DS XL. Assicurati che la console che stai modificando sia un New 3DS, New 3DS XL, o un New 2DS XL prima di continuare.</p>
 
@@ -485,18 +508,7 @@ window.cookieconsent.initialise({
   <li>L’ultima versione di <a href="https://github.com/zoogie/super-skaterhax/releases">super-skaterhax</a> (il file <code class="language-plaintext highlighter-rouge">.zip</code> della release)</li>
 </ul>
 
-<h4 id="sezione-i---aggiornare-il-sistema">Sezione I - Aggiornare il Sistema</h4>
-
-<ol>
-  <li>Aggiorna la console andando su Impostazioni della console, poi “Impostazioni generali”, infine scorri a destra e seleziona “Aggiornamento”
-    <ul>
-      <li>Potrebbe apparire il messaggio “Nella console è già presente il software di sistema più recente”. È normale se hai già installato l’ultima versione; prosegui con la sezione successiva</li>
-      <li>Se ottieni un errore, imposta sia i DNS sia il Proxy su “Auto”</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="sezione-ii---preparazione">Sezione II - Preparazione</h4>
+<h4 id="sezione-i---preparazione">Sezione I - Preparazione</h4>
 
 <p>In questa sezione copierai i file necessari per attivare sia super-skaterhax che l’Homebrew Launcher.</p>
 
@@ -515,7 +527,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/skater-root-layout.png" alt="" /></p>
 
-<h4 id="sezione-iii---super-skaterhax">Sezione III - super-skaterhax</h4>
+<h4 id="sezione-ii---super-skaterhax">Sezione II - super-skaterhax</h4>
 
 <p>In questa sezione visiterai la pagina web dell’exploit del browser, che avvierà l’Homebrew Launcher.</p>
 
@@ -553,38 +565,36 @@ window.cookieconsent.initialise({
       <li>Se vengono visualizzate delle richieste, approvale tutte</li>
       <li>Se la tua console si blocca con una schermata gialla, tieni premuto il pulsante POWER finché non si spegne, quindi riprova questa sezione</li>
       <li>Se la tua console si blocca con una schermata rossa, tieni premuto il pulsante POWER finché non si spegne, riprova il passo 3 della Sezione II, quindi riprova questa sezione</li>
-      <li>Se ottieni un altro errore, <a href="troubleshooting#homebrew-launcher-super-skaterhax">segui questa guida per risolvere il problema</a></li>
+      <li>Se ottieni un altro errore riprova altre 5 volte, e se continua a non funzionare <a href="troubleshooting#homebrew-launcher-super-skaterhax">segui questa guida per risolvere il problema</a></li>
     </ul>
   </li>
   <li>Se l’exploit ha avuto successo, la tua console avrà avviato l’Homebrew Launcher</li>
   <li>Spegni il tuo 3DS</li>
 </ol>
 
-<h4 id="sezione-iv---verifica-pulsanti-hardware">Sezione IV - Verifica Pulsanti Hardware</h4>
+<h4 id="sezione-iii---verifica-pulsanti-hardware">Sezione III - Verifica Pulsanti Hardware</h4>
+
+<p>In questa sezione verificherai se i pulsanti dorsali della tua console funzionano. Serve per determinare quale metodo seguirai nella prossima pagina.</p>
 
 <ol>
-  <li>Con la console ancora spenta, tieni premuto i pulsanti (L) + (R) + (Su) + (A), dopodiché, tenendo premuti i pulsanti, accendi la console
+  <li>Accendi la console</li>
+  <li>Nel menu HOME premi contemporaneamente i pulsanti L e R
     <ul>
-      <li>Tieni premuti i pulsanti finché la console non mostrerà una schermata di aggiornamento dei sistema (cioè la Modalità Provvisoria)</li>
+      <li>L’applicazione fotocamera dovrebbe apparire</li>
     </ul>
   </li>
-  <li>Se viene mostrata la schermata di aggiornamento del sistema, premi Annulla
-    <ul>
-      <li>La console si spegnerà</li>
-      <li>Se la console si avvia nel menu HOME, spegni la console</li>
-    </ul>
-  </li>
+  <li>Spegni il tuo 3DS</li>
 </ol>
 
 <hr />
 
 <h3 id="passaggio-successivo-scelta-di-un-exploit">Passaggio successivo: Scelta di un exploit</h3>
 
-<p>Se nella sezione precedente hai visto la schermata di aggiornamento del sistema, la Modalità Provvisoria è funzionante sulla tua console.</p>
+<p>Se è apparsa la fotocamera nella sezione precedente, la tua console ha la Modalità Provvisoria probabilmente funzionante.</p>
 
-<p class="notice--primary">Se la console ha avviato la Modalità Provvisoria, prosegui con <a href="installing-boot9strap-(hbl-usm)">Installazione di boot9strap (HBL-USM)</a></p>
+<p class="notice--primary">Se è apparsa la fotocamera, prosegui con <a href="installing-boot9strap-(hbl-usm)">Installazione di boot9strap (HBL-USM)</a></p>
 
-<p class="notice--info">Se la console NON ha avviato la Modalità Provvisoria, continua con <a href="dumping-movable-(nimhax)">Dump di Movable (nimhax)</a></p>
+<p class="notice--info">Se la fotocamera NON è apparsa, prosegui con <a href="dumping-movable-(nimhax)">Dump di Movable (nimhax)</a></p>
 
         
       </section>

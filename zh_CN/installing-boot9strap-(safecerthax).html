@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/zh_CN/updating-firmware-(new-3ds)'>Updating Firmware (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/zh_CN/updating-firmware-(kor)'>Updating Firmware (KOR)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/zh_CN/updating-firmware-(twn)'>Updating Firmware (TWN)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/zh_CN/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/zh_CN/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/zh_CN/seedminer-(twn)'>Seedminer (TWN)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/zh_CN/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/zh_CN/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_CN/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/zh_CN/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
           
         
           
@@ -494,21 +518,19 @@ window.cookieconsent.initialise({
 
 <h4 id="section-i---hardware-button-check">Section I - Hardware Button Check</h4>
 
+<p>In this section, you will see whether your shoulder buttons are working on your device. This will determine which method you will follow on the next page.</p>
+
 <ol>
-  <li>将你的主机置于关机状态，按住 L + R + ↑ + A 四个按键，然后按下电源键
+  <li>启动你的主机</li>
+  <li>Once you see the HOME Menu, press the (Left Shoulder) and (Right Shoulder) buttons at the same time
     <ul>
-      <li>Keep holding the buttons until the device boots to a system update screen (this is Safe Mode)</li>
+      <li>The camera applet should appear</li>
     </ul>
   </li>
-  <li>If you see the system update screen, press Cancel
-    <ul>
-      <li>主机将关机</li>
-      <li>如果主机启动到了主菜单，则请关机</li>
-    </ul>
-  </li>
+  <li>将主机关机</li>
 </ol>
 
-<p class="notice--warning">If you do not boot into Safe Mode, the system update menu after multiple attempts, you cannot follow this method. If this is the case, use <a href="seedminer">Seedminer</a> instead.</p>
+<p class="notice--warning">If the camera did NOT appear, you cannot follow this method. If this is the case, use <a href="seedminer">Seedminer</a> instead.</p>
 
 <h4 id="第二步--准备工作">第二步 – 准备工作</h4>
 
@@ -539,7 +561,7 @@ window.cookieconsent.initialise({
   <li>进入到 <code class="language-plaintext highlighter-rouge">互联网设置（インターネット設定 / Internet Settings）</code> -&gt; <code class="language-plaintext highlighter-rouge">连接设置（インターネット接続設定 / Connection Settings）</code></li>
   <li>点击你目前在用的连接点槽位，然后进入到 <code class="language-plaintext highlighter-rouge">设置变更（設定変更 / Change Settings）</code> -&gt; <code class="language-plaintext highlighter-rouge">下一页（右箭头）</code> -&gt; <code class="language-plaintext highlighter-rouge">代理设置（Proxy）</code></li>
   <li>设置“代理服务器 （Proxy）”为“是（する / Yes）”，然后点击<code class="language-plaintext highlighter-rouge">详细设置（詳細設定 / Detailed Setup）</code></li>
-  <li>设置代理服务器为 <code class="language-plaintext highlighter-rouge">192.9.234.11</code>，端口为 <code class="language-plaintext highlighter-rouge">8080</code></li>
+  <li>Set the Proxy Server to <code class="language-plaintext highlighter-rouge">ssloth.nintendohomebrew.com</code>, and the Port to <code class="language-plaintext highlighter-rouge">8080</code></li>
   <li>点击 OK，然后点击保存（保存する / Save）</li>
   <li>当提示时，点击“测试（テスト / Test）”进行连接测试
     <ul>
@@ -582,7 +604,11 @@ window.cookieconsent.initialise({
 <p>In this section, you will install custom firmware onto your device.</p>
 
 <ol>
-  <li>When prompted, input the key combo given on the top screen to install boot9strap</li>
+  <li>When prompted, input the key combo given on the top screen to install boot9strap
+    <ul>
+      <li>If a step on the lower screen has red-colored text, and you are not prompted to input a key combo, <a href="troubleshooting#issues-with-safeb9sinstaller">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
   <li>Once it is complete, press (A) to reboot your device</li>
   <li>Your device should have booted into the Luma3DS configuration menu
     <ul>

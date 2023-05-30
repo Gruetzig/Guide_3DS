@@ -314,6 +314,18 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="updating-firmware-(new-3ds)"><a href='/ko_KR/updating-firmware-(new-3ds)'>펌웨어 업데이트 (New 3DS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(kor)"><a href='/ko_KR/updating-firmware-(kor)'>펌웨어 업데이트 (한글판)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="updating-firmware-(twn)"><a href='/ko_KR/updating-firmware-(twn)'>펌웨어 업데이트 (타이완)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="ntrboot"><a href='/ko_KR/ntrboot'>ntrboot</a></li>
           
         
@@ -322,11 +334,19 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="seedminer-(mii)"><a href='/ko_KR/seedminer-(mii)'>Seedminer (Mii)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer-(twn)"><a href='/ko_KR/seedminer-(twn)'>Seedminer (타이완)</a></li>
           
         
           
             <li style="display: none;" data-name="bannerbomb3"><a href='/ko_KR/bannerbomb3'>BannerBomb3</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/ko_KR/bannerbomb3-(legacy)'>BannerBomb3 (레거시)</a></li>
           
         
           
@@ -387,6 +407,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
           
         
           
@@ -486,7 +510,7 @@ window.cookieconsent.initialise({
 <ul>
   <li><a href="seedminer">Seedminer</a>에서 받은 <code class="language-plaintext highlighter-rouge">movable.sed</code> 파일</li>
   <li>최신 버전의 <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (<code class="language-plaintext highlighter-rouge">.zip</code> 파일)</li>
-  <li>The latest release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9stool</a> (direct download)</li>
+  <li>최신 버전의 <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9stool</a> (직접 다운로드)</li>
   <li>최신 버전의 <a href="https://github.com/zoogie/Frogminer/releases/latest`">Frogminer_save</a> (<code class="language-plaintext highlighter-rouge">Frogminer_save.zip</code>)</li>
 </ul>
 
@@ -502,7 +526,7 @@ window.cookieconsent.initialise({
   <li>기기를 종료해 주세요</li>
 </ol>
 
-<p class="notice--danger">만약 설정 메뉴가 보이거나 기기의 전원이 바로 종료된다면, 이 기기는 이미 커스텀 펌웨어가 설치되어 있고, 이 작업을 진행하면 기기가 벽돌 될수가 있습니다! 이미 존재하는 CFW를 업데이트 할 수 있도록 <a href="checking-for-cfw">CFW 확인</a>를 진행해 주세요.</p>
+<p class="notice--danger">만약 설정 메뉴가 보이거나 기기의 전원이 바로 종료된다면, 이 기기는 이미 커스텀 펌웨어가 설치되어 있고, 이 작업을 진행하면 기기가 벽돌 될수가 있습니다! 이미 존재하는 CFW를 업데이트 할 수 있도록 <a href="checking-for-cfw">CFW 확인</a>을 진행해 주세요.</p>
 
 <h4 id="섹션-ii---준비-작업">섹션 II - 준비 작업</h4>
 
@@ -514,7 +538,7 @@ window.cookieconsent.initialise({
       <li>SD 카드의 루트는 SD 카드를 열 때 보이는 디렉토리이고, Nintendo 3DS 폴더가 보이지만 그 안에 않 들어가 있는 상태의 폴더 입니다</li>
     </ul>
   </li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">boot.nds</code> (B9STool) from the release <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+  <li>release <code class="language-plaintext highlighter-rouge">.zip</code>안에 있는 <code class="language-plaintext highlighter-rouge">boot.nds</code> (B9STool)를 SD 카드의 루트에 복사해 주세요</li>
   <li>SD 카드의 루트로 Frogminer_save <code class="language-plaintext highlighter-rouge">.zip</code>안에 압축이 되있는 <code class="language-plaintext highlighter-rouge">private</code> 폴더를 복사해 주세요</li>
   <li>SD 카드는 컴퓨터에서 빼지 마세요. 다음 섹션에서 할 일이 더 있습니다</li>
 </ol>
@@ -624,6 +648,7 @@ window.cookieconsent.initialise({
   <li>메인 메뉴로 갈 때까지의 초기 설정을 완료하세요
     <ul>
       <li>만약 설정 중 선택이 표시될 시는 왼쪽을 선택해 주세요</li>
+      <li>여기까지 진행하는 데에 문제가 발생한다면, <a href="troubleshooting#installing-boot9strap-fredtool">이 문제 해결 가이드</a>을 참고해 주세요</li>
     </ul>
   </li>
   <li>터치 스크린을 사용해서, 오른쪽의 큰 버튼을 선택하고, 그 후 SD 카드 아이콘이 붙은 버튼을 선택해 주세요</li>
@@ -635,7 +660,7 @@ window.cookieconsent.initialise({
   <li>“1/3”이 선택될 때까지 왼쪽으로 스크롤해 주세요</li>
   <li>“A”가 들어가 있는 네 번째 버튼을 눌러 주세요</li>
   <li>익스플로잇이 성공적이었다면 b9sTool을 실행했을 것입니다</li>
-  <li>십자 패드를 사용해서, “Install boot9strap”으로 이동해 주세요.
+  <li>십자 패드를 사용해서, “Install boot9strap”으로 이동해 주세요
     <ul>
       <li>이 단계를 놓쳤다면, 시스템은 boot9strap을 설치하는 대신 HOME 메뉴로 나가집니다. 이렇게 되면 다시 DS 다운로드 플레이를 열어서 이 섹션의 처음부터 시작해야 합니다</li>
     </ul>
