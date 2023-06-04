@@ -5,6 +5,9 @@
     SPDX-License-Identifier: MIT
 */
 
+const DEVICE_N3DS = 1;
+const DEVICE_O3DS = 0;
+
 // Soundhax
 // 1.0-11.3, all regions, all consoles
 function can_soundhax(major, minor, native, region, model) {
@@ -45,11 +48,11 @@ function can_ssloth(major, minor, native, region, model) {
         } else if (region == "K") {
             if
                 (
-                (model && minor == 4 && native == 33) ||
-                (model && minor == 5 && native == 34) ||
-                (model && minor == 6 && native == 35) ||
-                (model && minor == 7 && native == 35) ||
-                (model && minor == 8 && native == 35) ||
+                (model == DEVICE_N3DS && minor == 4 && native == 33) ||
+                (model == DEVICE_N3DS && minor == 5 && native == 34) ||
+                (model == DEVICE_N3DS && minor == 6 && native == 35) ||
+                (model == DEVICE_N3DS && minor == 7 && native == 35) ||
+                (model == DEVICE_N3DS && minor == 8 && native == 35) ||
                 (minor == 9 && native == 36) ||
                 (minor == 10 && native == 37) ||
                 (minor == 12 && native == 38) ||
@@ -73,7 +76,7 @@ function can_ssloth(major, minor, native, region, model) {
 // Soundhax and SSLoth should be validated before this
 function can_safecerthax(major, minor, native, region, model) {
     let do_redirect = false;
-    if (model == 0) {
+    if (model == DEVICE_O3DS) {
         if (major <= 10) do_redirect = true;
         else if (major == 11 && minor <= 14) do_redirect = true;
     }
@@ -87,13 +90,13 @@ function can_safecerthax(major, minor, native, region, model) {
 
 // super-skaterhax
 // EUR/JPN/USA: 11.17 only
-// KOR: 11.16 only, KOR does not have 11.17
+// KOR: 11.16 only, KOR does not have 11.17 (Do seedminer first though)
 // CHN/TWN has no N3DS
 function can_superskaterhax(major, minor, native, region, model) {
     let do_redirect_sysupdate = false;
     let do_redirect = false;
     // N3DS only
-    if(model == 1) {
+    if(model == DEVICE_N3DS) {
         if (major == 11) {
             if (["E", "J", "U"].includes(region)) {
                 if (minor == 17) do_redirect = true;
@@ -121,20 +124,19 @@ function can_superskaterhax(major, minor, native, region, model) {
     return false;
 }
 
+// Mii mining
+// Only do on 11.15 O3DS (except KOR and TWN, those don't have 11.17 and can update and do seedminer)
 function can_miimine(major, minor, native, region, model) {
     let do_redirect = false;
 
-    if (major == 11) {
-        if (model == 0 && minor == 15) {
+    if (model == DEVICE_O3DS) {
+        if (major == 11 && minor == 15) {
             // KOR and TWN can do normal seedminer
             // All other O3DS must Mii mine
             if (region != "K" && region != "T") do_redirect = true;
         }
-        else if (model == 1 && (minor == 14 || minor == 15)) {
-            // All other N3DS should system update
-            if (region == "U") do_redirect = true;
-        }
     }
+
     if (do_redirect) {
         window.location.href = "seedminer-(mii)";
         return true;
@@ -154,8 +156,8 @@ function can_seedminer(major, minor, native, region, model) {
         else if (region == "T") do_redirect_twn = true;
     }
     // KOR O3DS on any version should update to 11.16
-    else if (model == 0 && region == "K") do_redirect_sysupdate_kor = true;
-    // KOR O3DS on any version should update to 11.16
+    else if (model == DEVICE_O3DS && region == "K") do_redirect_sysupdate_kor = true;
+    // TWN on any version should update to 11.16
     else if (region == "T") do_redirect_sysupdate_twn = true;
 
     if (do_redirect_sysupdate_twn) {
@@ -186,29 +188,29 @@ function can_seedminer(major, minor, native, region, model) {
     General exploits are as follows:
     - 1.0 - 11.3
         - Soundhax, compatible in all regions, all models
-    - 11.4 - 11.13 with matching NVer for each version:
+    - 11.4 - 11.13 with matching NVer for each version (and some KOR quirk):
         - SSLoth-Browser, doesn't work on cart-updated FW
     - O3DS & 11.4 - 11.14 & any cart-updated FW between said version:
         - safecerthax, compatible in all regions, O3DS only
         - This way O3DS still gets an easy way to install something if browser isn't functional
-    - N3DS & 11.14 - 11.15 (EUR / JPN) 
+    - N3DS & 11.14 - 11.15 (EUR / JPN / USA) 
         - Update and do 11.17 guide
     - O3DS & 11.15:
-        - Not implemented in this guide
-    - 11.16 (KOR is O3DS only):
+        - Mii mine
+    - 11.16:
         - Seedminer
-    - KOR N3DS 11.16, N3DS & 11.17 (EUR / JPN / USA):
+    - N3DS & 11.17 (EUR / JPN / USA):
         - super-skaterhax
     - O3DS & 11.17:
         - Unhackable
 */
 function redirect() {
-    var major = document.getElementById("major");
-    var minor = document.getElementById("minor");
-    var nver = document.getElementById("nver");
-    var region = document.getElementById("region");
-    var isN3DS = document.getElementById("new3DS").checked;
-    var isO3DS = document.getElementById("old3DS").checked;
+    let major = document.getElementById("major");
+    let minor = document.getElementById("minor");
+    let nver = document.getElementById("nver");
+    let region = document.getElementById("region");
+    let isN3DS = document.getElementById("new3DS").checked;
+    let isO3DS = document.getElementById("old3DS").checked;
     document.getElementById("result_noneSelected").style.display = "none";
     document.getElementById("result_invalidVersion").style.display = "none";
     document.getElementById("result_methodUnavailable").style.display = "none";
@@ -221,18 +223,18 @@ function redirect() {
         return;
     }
 
-    // O3DS = 0
-    // N3DS = 1
-    var model = 0;
-    if(isN3DS) model = 1;
+    // Realistically only one of these should be possible with the given elements
+    let model = -1;
+    if(isO3DS) model = DEVICE_O3DS
+    else if(isN3DS) model = DEVICE_N3DS;
 
     let redirected = [
-      can_soundhax,
-      can_ssloth,
-      can_safecerthax,
-      can_miimine,
-      can_seedminer,
-      can_superskaterhax,
+        can_soundhax,
+        can_ssloth,
+        can_safecerthax,
+        can_miimine,
+        can_seedminer,
+        can_superskaterhax,
     ].some(func => func(major.value, minor.value, nver.value, region.value, model));
     if (redirected) return true;
 
