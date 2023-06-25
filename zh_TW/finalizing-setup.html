@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/zh_TW/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/zh_TW/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/zh_TW/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/zh_TW/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/zh_TW/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/zh_TW/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/zh_TW/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/zh_TW/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_TW/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_TW/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/zh_TW/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -499,7 +531,7 @@ window.cookieconsent.initialise({
 
 <h3 id="必讀事項">必讀事項</h3>
 
-<p>在載入完 NAND 的內容後，boot9strap 會自動加載 <code class="language-plaintext highlighter-rouge">boot.firm</code> 中的內容。 在這裡，我們將使用 <a href="https://github.com/LumaTeam/">LumaTeam</a> 的 Luma3DS 來修改我們的主機韌體，好讓我們執行各項自製程式。</p>
+<p>在載入完 NAND 的內容後，boot9strap 會自動加載 <code class="language-plaintext highlighter-rouge">boot.firm</code> 中的內容。 In this case, we are using Luma3DS by <a href="https://github.com/LumaTeam/">LumaTeam</a> to patch the console, allowing it to run homebrew software.</p>
 
 <p>於本頁面中，我們將替關鍵的系統檔案進行備份並安裝以下自製程式：</p>
 
@@ -538,21 +570,21 @@ window.cookieconsent.initialise({
 <p>In this section, you will copy the files necessary to follow the rest of the instructions on this page.</p>
 
 <ol>
-  <li>關閉您的主機</li>
+  <li>Power off your console</li>
   <li>將 SD 卡插入至電腦中</li>
   <li>在 SD 卡的根目錄底下，建立一個新資料夾 <code class="language-plaintext highlighter-rouge">cias</code></li>
   <li>複製所有的 CIA 檔案 (<code class="language-plaintext highlighter-rouge">Anemone3DS.cia</code>、<code class="language-plaintext highlighter-rouge">Checkpoint.cia</code>、<code class="language-plaintext highlighter-rouge">FBI.cia</code>、<code class="language-plaintext highlighter-rouge">Homebrew_Launcher.cia</code> 及 <code class="language-plaintext highlighter-rouge">Universal-Updater.cia</code>) 至 SD 卡中的 <code class="language-plaintext highlighter-rouge">/cias/</code> 資料夾中</li>
   <li>在 SD 卡的根目錄底下建立一個新資料夾 <code class="language-plaintext highlighter-rouge">3ds</code>
     <ul>
-      <li>本資料夾中含有自製程式及其資料；本資料夾與主機自動產生的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 不一樣</li>
+      <li>This folder stores homebrew applications and data; it is different from the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder that the console automatically generates</li>
     </ul>
   </li>
   <li>將 <code class="language-plaintext highlighter-rouge">FBI.3dsx</code> 複製到 SD 卡中的 <code class="language-plaintext highlighter-rouge">/3ds/</code> 資料夾底下</li>
   <li>在 SD 卡中的 <code class="language-plaintext highlighter-rouge">luma</code> 資料夾中建立一個另一個新資料夾 <code class="language-plaintext highlighter-rouge">payloads</code></li>
   <li>解壓 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 中的 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> 檔案到 SD 卡的 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> 資料夾中</li>
   <li>解壓 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 中的 <code class="language-plaintext highlighter-rouge">gm9</code> 資料夾到 SD 卡的根目錄底下</li>
-  <li>將 SD 卡插回主機中</li>
-  <li>啟動您的主機</li>
+  <li>Reinsert your SD card into your console</li>
+  <li>Power on your console</li>
 </ol>
 
 <p>The screenshots below indicate the minimum SD card layout that is required to follow this page. 您可能在遵循其他頁面指示中會有一些多的資料夾及檔案在您的 SD 卡中。</p>
@@ -566,22 +598,22 @@ window.cookieconsent.initialise({
 <p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
 
 <ol>
-  <li>關閉您的主機</li>
+  <li>Power off your console</li>
   <li>按住「Select」鍵</li>
-  <li>在開機時按住「Select」鍵</li>
-  <li>If the check was successful, your device should have booted into the Luma3DS configuration menu</li>
+  <li>Power on your console while still holding the (Select) button</li>
+  <li>If the check was successful, your console should have booted into the Luma3DS configuration menu</li>
   <li>按『Start』鍵以存檔並重新啟動系統</li>
-  <li>關閉您的主機</li>
+  <li>Power off your console</li>
 </ol>
 
-<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your device. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
+<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 
 <h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
 
 <p>In this section, you will update your system to the latest version, which is safe to do with custom firmware.</p>
 
 <ol>
-  <li>到主機主選單中更新您的主機，到『系統設置 (System Settings)』、『其他設置 (Other Settings)』底下選擇『系統更新 (System Update)』
+  <li>Update your console by going to System Settings, then “Other Settings”, then going all the way to the right and using “System Update”
     <ul>
       <li>在安裝 B9S + Luma 後，進行系統更新是很安全的</li>
       <li>升級程式可能會告訴你『你的主機已經是最新系统了』而不是繼續升級 This is normal if you are already up to date; continue to the next section</li>
@@ -593,7 +625,7 @@ window.cookieconsent.initialise({
 
 <h4 id="section-iv---homebrew-launcher">Section IV - Homebrew Launcher</h4>
 
-<p>In this section, you will temporarily replace Download Play with Homebrew Launcher (which we need to launch FBI). Download Play will automatically go back to normal once you reboot your device.</p>
+<p>In this section, you will temporarily replace Download Play with Homebrew Launcher (which we need to launch FBI). Download Play will automatically go back to normal once you reboot your console.</p>
 
 <ol>
   <li>啟動『下載通信(Download Play)』程式 (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
@@ -607,9 +639,9 @@ window.cookieconsent.initialise({
   <li>Press (Home) to suspend Download Play</li>
   <li>Press the “Close” button on the bottom screen to close Download Play</li>
   <li>Re-launch the Download Play application</li>
-  <li>您的主機應該就會啟動 Homebrew Launcher 了
+  <li>Your console should load the Homebrew Launcher
     <ul>
-      <li>If your device is stuck on the loading splash screen, you are missing <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of your SD card</li>
+      <li>If your console is stuck on the loading splash screen, you are missing <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of your SD card</li>
     </ul>
   </li>
 </ol>
@@ -646,8 +678,8 @@ window.cookieconsent.initialise({
 <p>In this section, you will use a script to copy some of Luma3DS’s files to internal memory so that they can be accessed, even without an SD card inserted.</p>
 
 <ol>
-  <li>關閉您的主機</li>
-  <li>按下並按住「Start」鍵，按住按鈕的同時，將您的主機開機。 這將會啟動 GodMode9
+  <li>Power off your console</li>
+  <li>Press and hold (Start), and while holding (Start), power on your console. 這將會啟動 GodMode9
     <ul>
       <li>如果沒有進入 GodMode9，請確保 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> 檔案已存在於 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> 資料夾中，並確保 <code class="language-plaintext highlighter-rouge">payload</code> 沒有拼錯。</li>
     </ul>
@@ -701,7 +733,7 @@ window.cookieconsent.initialise({
   </li>
   <li>按『A』 繼續</li>
   <li>按『Home』鍵以叫出主選單</li>
-  <li>選擇「Poweroff system」關機</li>
+  <li>Select “Poweroff system” to power off your console</li>
   <li>將 SD 卡插入至電腦中</li>
   <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
     <ul>
@@ -715,13 +747,13 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>If you have it, copy the <code class="language-plaintext highlighter-rouge">/luma/backups/</code> folder on your SD card to a safe location on your computer</li>
-  <li>將 SD 卡插回主機中</li>
-  <li>啟動您的主機</li>
+  <li>Reinsert your SD card into your console</li>
+  <li>Power on your console</li>
 </ol>
 
 <hr />
 
-<p class="notice--success">大功告成！ 您的主機現在已完成安裝自製韌體以及其設定。</p>
+<p class="notice--success">大功告成！ Custom firmware is now fully configured on your console.</p>
 
 <h3 id="information-and-notes">Information and Notes</h3>
 

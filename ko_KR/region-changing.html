@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/ko_KR/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/ko_KR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/ko_KR/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/ko_KR/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/ko_KR/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/ko_KR/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/ko_KR/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/ko_KR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/ko_KR/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -484,7 +516,7 @@ window.cookieconsent.initialise({
       <li><a href="#섹션-iii---ctrtransfer" id="markdown-toc-섹션-iii---ctrtransfer">섹션 III - CTRTransfer</a></li>
       <li><a href="#섹션-iv---fbi-실행" id="markdown-toc-섹션-iv---fbi-실행">섹션 IV - FBI 실행</a></li>
       <li><a href="#섹션-v---티켓-재설치" id="markdown-toc-섹션-v---티켓-재설치">섹션 V - 티켓 재설치</a></li>
-      <li><a href="#section-vi---deleting-system-save-data" id="markdown-toc-section-vi---deleting-system-save-data">Section VI - Deleting system save data</a></li>
+      <li><a href="#섹션-vi---시스템-세이브-데이터-초기화" id="markdown-toc-섹션-vi---시스템-세이브-데이터-초기화">섹션 VI - 시스템 세이브 데이터 초기화</a></li>
     </ul>
   </li>
 </ul>
@@ -494,27 +526,27 @@ window.cookieconsent.initialise({
 
 <h3 id="중요">중요</h3>
 
-<p>이 페이지는 기기의 지역을 변경하는 방법을 안내하는 부가 섹션입니다. 이 작업은 바꾸고자 하는 지역의 11.15.0 CTRTransfer 이미지를 설치합니다. 이미지 설치 후, 장치를 최신 펌웨어 버전(11.17.0)으로 업데이트할 수 있습니다.</p>
+<p>이 페이지는 콘솔의 지역을 변경하는 방법을 안내하는 부가 섹션입니다. 이 작업은 바꾸고자 하는 지역의 11.15.0 CTRTransfer 이미지를 설치합니다. 이미지 설치 후, 콘솔을 최신 펌웨어 버전(11.17.0)으로 업데이트할 수 있습니다.</p>
 
-<p>Luma3DS가 지역 외 게임들과 <a href="https://github.com/LumaTeam/Luma3DS/wiki/Optional-features">타이틀별 지역 에뮬레이션</a>을 지원하기 때문에, 지역 변경은 거의 불필요하다는 점을 참고해 주시기 바랍니다. 또한, 다른 지역의 NDS게임을 실행하는 것 또한 <a href="https://github.com/DS-Homebrew/TWiLightMenu/releases">TWiLight Menu++</a>에 의해 지원됩니다. You should only perform a region change if you wish to have your system UI is in a language that is not available on your console’s current region.</p>
+<p>Luma3DS가 지역 외 게임들과 <a href="https://github.com/LumaTeam/Luma3DS/wiki/Optional-features">타이틀별 지역 에뮬레이션</a>을 지원하기 때문에, 지역 변경은 거의 불필요하다는 점을 참고해 주시기 바랍니다. 또한, 다른 지역의 NDS게임을 실행하는 것 또한 <a href="https://github.com/DS-Homebrew/TWiLightMenu/releases">TWiLight Menu++</a>에 의해 지원됩니다. 이 작업은 원하는 언어가 시스템 UI에 제공되지 않을 시에만 하는 것을 권장합니다.</p>
 
-<p class="notice--info">This page assumes that you have already installed Luma3DS and boot9strap. If you followed this website to the end (Finalizing Setup), you have Luma3DS and boot9strap.</p>
+<p class="notice--info">이 페이지에서는 이미 Luma3DS와 boot9strap이 설치되어 있는 것으로 가정합니다. 이 웹사이트를 끝까지 진행했다면 (마무리 단계), Luma3DS와 boot9strap이 설치되어 있는 것입니다.</p>
 
-<p class="notice--warning">As a part of this process, your system configuration will be reset to its defaults. This includes things such as your username, country, and language. Installed games and their save data will not be affected.</p>
+<p class="notice--warning">이 과정의 일부분으로, 시스템 설정을 초기화하게 됩니다. 이것은 사용자 이름, 국가, 언어 등을 포함합니다. 설치된 게임과 세이브 데이터에는 영향을 주지 않습니다.</p>
 
 <div class="notice--danger">
-<p>기기의 지역을 바꾸게 된다면:</p>
+<p>콘솔의 지역을 바꾸게 된다면:</p>
 
 <ul>
   <li>(만약 있다면) Nintendo 네트워크 ID를 이용할 수 없게 됩니다. NNID들은 작성된 지역에서만 사용할 수 있습니다.</li>
   <li>이전에 <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/74/~/how-to-delete-a-nintendo-eshop-account">eShop 계정을 지우더라도 (영어)</a>, eShop에 접속하지 못할 수 있습니다. 몇몇 타이틀들은, 계정 삭제 후도 3DS 링크를 유지하려는 경향이 있어서입니다 (특히 New 3DS에서).
     <ul>
-      <li>While purchases can no longer be made on eShop, game updates can still be downloaded. 업데이트들은 보통 온라인 플레이를 할 시 필요합니다.</li>
+      <li>e숍에서 구매는 못하지만, 게임 업데이트는 아직도 다운로드 할 수 있습니다. 업데이트들은 보통 온라인 플레이를 할 시 필요합니다.</li>
       <li>This logic extends to system transfers, meaning you would not be able to perform a system transfer from a USA 3DS to a region-changed JPN-to-USA 3DS.</li>
       <li>That being said, system transfer and game updates are region locked anyway (e.g. Japanese eShop only has Japanese game updates).</li>
     </ul>
   </li>
-  <li><strong>기기를 벽돌로 하는 것을 감수하지 않고선 커스텀 펌웨어를 지울 수 없습니다!</strong> 만약 미래에 커스텀 펌웨어를 지우려고 생각한다면, <strong>절대로</strong> 지역 변경을 하기 전의 NAND 백업을 복원하고 나서 해야 합니다.</li>
+  <li><strong>콘솔을 벽돌로 하는 것을 감수하지 않고선 커스텀 펌웨어를 지울 수 없습니다!</strong> 만약 미래에 커스텀 펌웨어를 지우려고 생각한다면, <strong>절대로</strong> 지역 변경을 하기 전의 NAND 백업을 복원하고 나서 해야 합니다.</li>
 </ul>
 </div>
 
@@ -548,20 +580,20 @@ window.cookieconsent.initialise({
 <h4 id="섹션-i---준비-작업">섹션 I - 준비 작업</h4>
 
 <ol>
-  <li>기기를 종료해 주세요</li>
+  <li>콘솔을 종료해 주세요</li>
   <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
   <li>SD 카드의 루트에 <code class="language-plaintext highlighter-rouge">3ds</code> 폴더가 없을 경우 폴더를 만들어 주세요</li>
   <li>SD 카드의 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code>폴더에 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code>안에 압축되있는 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code>을 복사해 주세요</li>
   <li>SD 카드의 루트로 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code>안에 압축이 되있는 <code class="language-plaintext highlighter-rouge">gm9</code> 폴더를 복사해 주세요</li>
   <li>SD 카드의 <code class="language-plaintext highlighter-rouge">/gm9/</code> 폴더에 CTRTransfer <code class="language-plaintext highlighter-rouge">.zip</code>안에 압축되어 있는 11.15.0 CTRTransfer 이미지 <code class="language-plaintext highlighter-rouge">.bin</code>을 복사해 주세요</li>
   <li><code class="language-plaintext highlighter-rouge">FBI.3dsx</code> 파일을 SD 카드의 <code class="language-plaintext highlighter-rouge">/3ds/</code> 폴더에 복사해 주세요</li>
-  <li>SD 카드를 기기에 다시 삽입해 주세요</li>
+  <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
 </ol>
 
 <h4 id="섹션-ii---nand-백업">섹션 II - NAND 백업</h4>
 
 <ol>
-  <li>(Start)를 길게 누르고, 이 상태에서 전원을 켜 주세요. GodMode9이 실행 될 겁니다</li>
+  <li>(Start) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요. GodMode9이 실행될 겁니다</li>
   <li>(Home)을 눌러 작업 메뉴를 열어 주세요</li>
   <li>“Scripts…“를 선택해 주세요</li>
   <li>“GM9Megascript”를 선택해 주세요</li>
@@ -577,22 +609,22 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 메인 메뉴로 돌아가 주세요</li>
   <li>“Exit”를 선택해 주세요</li>
   <li>메세지가 표시되면, (A)를 눌러서 쓰기잠금을 확인해 주세요</li>
-  <li>(R)을 누른 채 (Start)를 눌러 기기를 종료해 주세요</li>
+  <li>(R)을 누른 채 (Start)를 눌러 콘솔을 종료해 주세요</li>
   <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
   <li>SD 카드<code class="language-plaintext highlighter-rouge">/gm9/out/</code> 폴더의 <code class="language-plaintext highlighter-rouge">&lt;날짜&gt;_&lt;일련번호&gt;_nandmin_##.bin</code>과 ‘essential.exefs’ 를 컴퓨터의 안전한 위치에 복사해 주세요
     <ul>
       <li>여러 위치에 백업을 해 주세요 (온라인 파일 저장 공간 등)</li>
-      <li>이 백업들은 기기를 벽돌로부터 지켜줄 것이고 만약 나중에 문제가 생겼을 때 NAND 이미지로부터 파일을 복구하는 것을 도울 것입니다</li>
+      <li>이 백업들은 콘솔을 벽돌로부터 지켜줄 것이고 만약 나중에 문제가 생겼을 때 NAND 이미지로부터 파일을 복구하는 것을 도울 것입니다</li>
     </ul>
   </li>
   <li>SD 카드에 있는 <code class="language-plaintext highlighter-rouge">/gm9/out/</code>의 <code class="language-plaintext highlighter-rouge">&lt;날짜&gt;_&lt;일련번호&gt;_sysnand_##.bin</code> 과`<날짜>_<일련번호>_sysnand_##.bin.sha' 파일을 복사 후에 지워 주세요</일련번호></날짜></li>
-  <li>SD 카드를 기기에 다시 삽입해 주세요</li>
+  <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
 </ol>
 
 <h4 id="섹션-iii---ctrtransfer">섹션 III - CTRTransfer</h4>
 
 <ol>
-  <li>(Start)를 길게 누르고, 이 상태에서 전원을 켜 주세요. GodMode9이 실행 될 겁니다</li>
+  <li>(Start) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요. GodMode9이 실행될 겁니다</li>
   <li>만약 “Essential files backup not found” 메세지가 표시되면, (A) 룰 눌러서 백업을 만들고, 끝나면 (A) 를 눌러서 진행해 주세요</li>
   <li>만약 “RTC date&amp;time seems to be wrong” 메세지가 표시되면 (A) 버튼을 눌러 하고, 날짜와 시간을 고친 다음 (A) 버튼을 눌러 계속해 주세요
     <ul>
@@ -626,8 +658,8 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 메인 메뉴로 돌아가 주세요</li>
   <li>“Exit”를 선택해 주세요</li>
   <li>메세지가 표시되면, (A)를 눌러서 쓰기잠금을 확인해 주세요</li>
-  <li>(Start)를 눌러 기기를 다시 시작해 주세요</li>
-  <li>본체 설정의 “기타 설정”에서 가장 오른쪽에 있는 “본체 업데이트”를 선택해 기기를 업데이트해 주세요
+  <li>(Start)를 눌러 콘솔을 다시 시작해 주세요</li>
+  <li>본체 설정의 “기타 설정”에서 가장 오른쪽에 있는 “본체 업데이트”를 선택해 콘솔을 업데이트해 주세요
     <ul>
       <li>boot9strap과 Luma을 이용한 (지금 가지고 계신 버전) 업데이트는 안전합니다</li>
       <li>오류가 발생하면 DNS 설정을 “자동”으로 설정해 주세요</li>
@@ -651,7 +683,7 @@ window.cookieconsent.initialise({
   <li>다운로드 플레이 앱을 다시 실행해 주세요</li>
   <li>성공하면 Homebrew Launcher가 실행될 것입니다
     <ul>
-      <li>만약 기기가 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 화면에 정지되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">boot.3dsx</code>이 존재하지 않습니다</li>
+      <li>만약 콘솔이 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 화면에 정지되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">boot.3dsx</code>이 존재하지 않습니다</li>
     </ul>
   </li>
 </ol>
@@ -679,13 +711,13 @@ window.cookieconsent.initialise({
   <li>(Home)을 눌러 FBI를 종료해 주세요</li>
 </ol>
 
-<h4 id="section-vi---deleting-system-save-data">Section VI - Deleting system save data</h4>
+<h4 id="섹션-vi---시스템-세이브-데이터-초기화">섹션 VI - 시스템 세이브 데이터 초기화</h4>
 
-<p>이 섹션에서는 시스템 설정을 기본값으로 복구하게 됩니다. 설치된 게임과 세이브 데이터에는 영향을 주지 않습니다. 이 절차는 일부 기기에서 보고된 확장 메모리 모드와 몇몇 앱의 문제점을 예방하기 위해 필요합니다.</p>
+<p>이 섹션에서는 시스템 설정을 기본값으로 복구하게 됩니다. 설치된 게임과 세이브 데이터에는 영향을 주지 않습니다. 이 절차는 일부 콘솔에서 보고된 확장 메모리 모드와 몇몇 앱의 문제점을 예방하기 위해 필요합니다.</p>
 
 <ol>
-  <li>기기를 종료해 주세요</li>
-  <li>(Start)를 길게 누르고, 이 상태에서 전원을 켜 주세요. GodMode9이 실행 될 겁니다</li>
+  <li>콘솔을 종료해 주세요</li>
+  <li>(Start) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요. GodMode9이 실행될 겁니다</li>
   <li><code class="language-plaintext highlighter-rouge">[0:] SDCARD</code> -&gt; <code class="language-plaintext highlighter-rouge">gm9</code>으로 이동해 주세요</li>
   <li>CTRTransfer 이미지 <code class="language-plaintext highlighter-rouge">.bin</code>에 (X)를 눌러 삭제해 주세요</li>
   <li>(A)를 눌러 확인해 주세요</li>
@@ -704,18 +736,18 @@ window.cookieconsent.initialise({
   <li>(A) 를 눌러 SysNAND (lvl2) 쓰기 잠금을 풀고 화면에 표시된 키 조합을 입력해 주세요</li>
   <li>작업이 완료되면 (A)를 눌려 계속해 주세요</li>
   <li>메세지가 표시되면, (A)를 눌러서 쓰기잠금을 확인해 주세요</li>
-  <li>(Start)를 눌러 기기를 다시 시작해 주세요</li>
-  <li>기기가 최초 실행 메뉴로 부팅될 것입니다
+  <li>(Start)를 눌러 콘솔을 다시 시작해 주세요</li>
+  <li>콘솔이 최초 실행 메뉴로 부팅될 것입니다
     <ul>
       <li>이것은 의도적 행동입니다. 게임 데이터는 손실되지 않습니다</li>
     </ul>
   </li>
-  <li>기기에 표시되는 안내를 따라 최초 설정을 마무리해주세요</li>
+  <li>콘솔에 표시되는 안내를 따라 최초 설정을 마무리해주세요</li>
 </ol>
 
 <hr />
 
-<p class="notice--success">Your 3DS has successfully been region changed!</p>
+<p class="notice--success">콘솔의 지역이 변경되었습니다!</p>
 
         
       </section>

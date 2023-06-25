@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/ko_KR/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/ko_KR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/ko_KR/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/ko_KR/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/ko_KR/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/ko_KR/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/ko_KR/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/ko_KR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/ko_KR/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -488,11 +520,10 @@ window.cookieconsent.initialise({
 <p><strong>3DS 펌웨어 11.17.0이 최근 출시되었습니다</strong>. 다음 사항을 참고해 주세요.</p>
 
 <ul>
-  <li>만약 기기가 <em>Luma 10.2.1 이상일 경우</em>, 업데이트해도 <em>100%</em> 안전합니다. 기기를 부팅할 때 (Select) 버튼을 누르고 있으면 Luma의 버전을 확인할 수 있습니다.</li>
-  <li>만약 기기가 오래된 Luma를 사용하고 있다면, 기기를 11.17.0으로 업데이트하기 전에 <a href="restoring-updating-cfw">CFW 복구 / 업데이트</a>를 해야 합니다.</li>
-  <li>만약 기기에 커스텀 펌웨어가 설치되어 있지 않다면, <strong>최신 버전으로 업데이트하지 마세요.</strong> 기존 버전보다 설치 방법이 복잡해질 수 있습니다.</li>
-  <li>커펌되지 않은 기기가 이미 11.17.0으로 업데이트되었다면, <a href="https://troubleshoot.uwuu.ca/seventeen/">이 페이지(영문)</a>를 방문해 기기에 맞는 방법이 있는지 확인해주세요.</li>
-  <li>펌웨어 11.17.0에 대한 정보가 빠르게 갱신되고 있습니다. 최신 정보를 확인하고 싶으시다면, <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord 서버</a>를 방문해주세요.</li>
+  <li>만약 콘솔이 <em>Luma 10.2.1 이상일 경우</em>, 업데이트해도 <em>100%</em> 안전합니다. 콘솔을 부팅할 때 (Select) 버튼을 누르고 있으면 Luma의 버전을 확인할 수 있습니다.</li>
+  <li>만약 콘솔이 오래된 Luma를 사용하고 있다면, 콘솔을 11.17.0으로 업데이트하기 전에 <a href="restoring-updating-cfw">CFW 복구 / 업데이트</a>를 해야 합니다.</li>
+  <li>If your console does not yet have custom firmware, <strong>do NOT update to the latest version</strong> unless this guide instructs you to.</li>
+  <li>If your unmodified console is ALREADY on 11.17.0, this guide has been updated accordingly. Specifically, New3DS-family consoles have a <a href="homebrew-launcher-(super-skaterhax)">free software method</a>, while Old3DS-family consoles will need to use <a href="alternate-exploits">alternate exploits</a> that rely on external hardware or software.</li>
 </ul>
 
 </div>
@@ -502,22 +533,22 @@ window.cookieconsent.initialise({
 <h2 id="설치-전-자주-묻는-질문">설치 전 자주 묻는 질문</h2>
 
 <details>
-<summary><u>제 기기는 최신 버전입니다, Is my device hackable without any external hardware/prerequisites?</u></summary>
+<summary><u>제 콘솔은 최신 버전입니다, 외부 하드웨어나 전제 조건 없이 내 콘솔을 해킹할 수 있습니까?</u></summary>
 
-<p>It depends on your console model. At the moment, New 3DS / New 3DS XL / New 2DS XL is able to be modded on 11.17.0 without any prerequisites (e.g. eShop titles, physical items), while 3DS / 3DS XL / 2DS is not.</p>
+<p>본체 모델에 따라 다릅니다. At the moment, New 3DS / New 3DS XL / New 2DS XL is able to be modded on 11.17.0 without any prerequisites (e.g. eShop titles, physical items), while 3DS / 3DS XL / 2DS is not.</p>
 
 </details>
 
 <details>
-<summary><u>이 가이드를 어느 장치에 사용할 수 있나요?</u></summary>
+<summary><u>이 가이드를 어느 콘솔에 사용할 수 있나요?</u></summary>
 
-<p>이 가이드는 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, New 2DS XL과 호환됩니다. 만약 시스템 버전이 “0.0.0-0”으로 표시된다면, 개발자 기기를 가지고 있는 것일 수 있습니다.</p>
+<p>이 가이드는 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, New 2DS XL과 호환됩니다. 만약 시스템 버전이 “0.0.0-0”으로 표시된다면, 개발자 콘솔를 가지고 있는 것일 수 있습니다.</p>
 </details>
 
 <details>
 <summary><u>제 콘솔을 커펌하는 것이 얼마나 위험한가요?</u></summary>
 
-<p>의도적으로 기기를 벽돌로 하려고 하지 않는 이상, 벽돌은 사실상 불가능합니다.</p>
+<p>의도적으로 콘솔을 벽돌로 하려고 하지 않는 이상, 벽돌은 사실상 불가능합니다.</p>
 </details>
 
 <details>
@@ -535,13 +566,13 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>커펌 후에 없어지는 기능이 있나요?</u></summary>
 
-<p>아니오. 커스텀 펌웨어가 된 기기들도 온라인 플레이나 카트리지 사용 등에 아무 제한이 없습니다.</p>
+<p>아니오. 커스텀 펌웨어가 된 콘솔들도 온라인 플레이나 카트리지 사용 등에 아무 제한이 없습니다.</p>
 </details>
 
 <details>
 <summary><u>제 NNID를 유지할 수 있나요?</u></summary>
 
-<p>NNID는 닌텐도 네트워크 ID의 약칭이며, 본 가이드에서 NNID 걱정은 하지 않아도 됩니다. 한국 (KOR), 중국 (CHN), 타이완 (TWN) 기기들에는 NNID 기능이 존재하지 않습니다. 만약 북미, 호주, 유럽 등 다른 지역의 기기를 한국으로 <a href="region-changing">지역 변경</a> 할 계획이라면 시리얼 번호를 유심히 보고 해당 문서의 주의사항을 각별히 읽은 후 진행하세요.</p>
+<p>NNID는 닌텐도 네트워크 ID의 약칭이며, 본 가이드에서 NNID 걱정은 하지 않아도 됩니다. 한국 (KOR), 중국 (CHN), 타이완 (TWN) 콘솔들에는 NNID 기능이 존재하지 않습니다. 만약 북미, 호주, 유럽 등 다른 지역의 콘솔을 한국으로 <a href="region-changing">지역 변경</a> 할 계획이라면 시리얼 번호를 유심히 보고 해당 문서의 주의사항을 각별히 읽은 후 진행하세요.</p>
 </details>
 
 <details>
@@ -573,7 +604,7 @@ window.cookieconsent.initialise({
 
 <p>사전적으로, 커스텀 펌웨어는 3DS 시스템 소프트웨어의 수정본으로 일반적으로 불가능한 작업을 가능하게 합니다. Homebrew는 일반적으로 정식 경로로 배포되지 않는 소프트웨어 (예: eShop이나 카트리지로 배포되지 않는 소프트웨어)를 가리킵니다.</p>
 
-<p>Historically, the 3DS used to have userland homebrew access through older exploits like ninjhax, which people sometimes called just “homebrew”. 이들은 사용자 레벨에 부여된 제한적인 시스템 권한을 통해 기본 홈브류와 에뮬레이터를 실행시킬 수 있었지만, 게임을 (쉽게) 수정하거나 카트리지를 백업할 수 없었습니다. 불안정하기도 헀어서, 홈브류가 자주 다운되고, 그때마다 재부팅을 해야 했습니다. 커스텀 펌웨어는 홈브류 전용 진입점보다 더 안정적이면서도 높은 수준의 시스템 엑세스를 제공합니다.</p>
+<p>역사적으로, 3DS는 ninjhax와 같은 예전 취약점을 통해 userland homebrew를 이용할 수 있었고, 이를 “homebrew” 그 자체로 부르기도 했습니다. 이들은 사용자 레벨에 부여된 제한적인 시스템 권한을 통해 기본 홈브류와 에뮬레이터를 실행시킬 수 있었지만, 게임을 (쉽게) 수정하거나 카트리지를 백업할 수 없었습니다. 불안정하기도 헀어서, 홈브류가 자주 다운되고, 그때마다 재부팅을 해야 했습니다. 커스텀 펌웨어는 홈브류 전용 진입점보다 더 안정적이면서도 높은 수준의 시스템 엑세스를 제공합니다.</p>
 
 </details>
 
@@ -594,7 +625,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>커펌 상태에서 데이터 이사가 가능한가요?</u></summary>
 
-<p>네. 공식 이사 기능을 사용해서 다른 커펌된 기기로 저장 데이터 이사를 할 수 있습니다. (커펌되지 않은 콘솔로의 이사는 문제를 야기할 수 있습니다.) 커펌 소프트웨어들 (홈브류)의 티켓들은 이사되지 않지만, [faketik] (https://github.com/ihaveamac/faketik/releases/latest)을 사용하면 다시 HOME 메뉴에서 실행할 수 있습니다. 무선 데이터 이사는 절대 하지 말아 주세요. 홈브류들을 모두 삭제하게 됩니다. 커펌은 두 콘솔 모두에 남아있을겁니다.</p>
+<p>네. 공식 이사 기능을 사용해서 다른 커펌된 콘솔로 저장 데이터 이사를 할 수 있습니다. (커펌되지 않은 콘솔로의 이사는 문제를 야기할 수 있습니다.) 커펌 소프트웨어들 (홈브류)의 티켓들은 이사되지 않지만, [faketik] (https://github.com/ihaveamac/faketik/releases/latest)을 사용하면 다시 HOME 메뉴에서 실행할 수 있습니다. 무선 데이터 이사는 절대 하지 말아 주세요. 홈브류들을 모두 삭제하게 됩니다. 커펌은 두 콘솔 모두에 남아있을겁니다.</p>
 </details>
 
 <details>
@@ -621,19 +652,19 @@ window.cookieconsent.initialise({
 
 <p>닌텐도 e숍이 해지 되었어도 계속해서 게임 업데이트를 받을 수 있습니다.</p>
 
-<p>게임의 지역이 콘솔과 맞지 않는다면, 해당 업데이트가 있는 다른 기기에서 <a href="dumping-titles-and-game-cartridges">업데이트를 덤프</a>해야 합니다. 닌텐도 e숍은 해당 기기의 국가코드에 맞는 업데이트만 제공합니다 (일본 3DS는 일본 게임의 업데이트만 있습니다).</p>
+<p>게임의 지역이 콘솔과 맞지 않는다면, 해당 업데이트가 있는 다른 콘솔에서 <a href="dumping-titles-and-game-cartridges">업데이트를 덤프</a>해야 합니다. 닌텐도 e숍은 해당 콘솔의 국가코드에 맞는 업데이트만 제공합니다 (일본 3DS는 일본 게임의 업데이트만 있습니다).</p>
 </details>
 
 <details>
 <summary><u>도와주세요! 뭔가 잘못됐는지 3DS가 HOME 메뉴로 부팅되지 않아요...</u></summary>
 
-<p>이 <a href="troubleshooting#boot-issues-on-devices-with-custom-firmware">문제 해결 가이드</a>를 참고해 주세요. <strong>기기가 부팅할 수 없는 상태일 때 커스텀 펌웨어를 제거하는 것은 벽돌로 이어질 수 있기 때문에 추천되지 않습니다.</strong></p>
+<p>이 <a href="troubleshooting#boot-issues-on-consoles-with-custom-firmware">문제 해결 가이드</a>를 참고해 주세요. <strong>콘솔이 부팅할 수 없는 상태일 때 커스텀 펌웨어를 제거하는 것은 벽돌로 이어질 수 있기 때문에 추천되지 않습니다.</strong></p>
 </details>
 
 <h2 id="menuhax--a9lh--gateway-관련의-자주-묻는-질문들">menuhax / A9LH / Gateway 관련의 자주 묻는 질문들</h2>
 
 <details>
-<summary><u>기기를 수 년 전에 커펌해서, 이미 커펌 비슷한 게 깔려 있습니다. 어떻게 해야 하나요?</u></summary>
+<summary><u>콘솔을 수 년 전에 커펌해서, 이미 커펌 비슷한 게 깔려 있습니다. 어떻게 해야 하나요?</u></summary>
 
 <p>boot9strap을 기반으로 한 최신의 커펌 방식으로 업그레이드하는 것을 권장합니다. 어떻게 업그레이드하는지 보려면 <a href="checking-for-cfw">CFW 확인</a> 페이지를 따라주세요.</p>
 </details>
@@ -641,7 +672,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>제 설치는 잘 동작하는데, 왜 업그레이드해야 하나요?</u></summary>
 
-<p>다수의 현대 홈브류 (Checkpoint나 BootNTR Selector 등)는 boot9strap 기반 셋업인 기기들로만 테스트되어왔기 때문에 menuhax, A9LH, Gateway와 같은 구 셋업 기반 기기에서는 대부분 작동하지 않을 수도 있습니다. 추가로, 자신의 셋업에 따라서, 3DS를 최신 버전으로 안전하게 업데이트하는게 불가능할 수도 있습니다. 현대식인 boot9strap 기반 셋업들은 이전 셋업들보다 훨씬 시스템 권한이 높으며, 콘솔의 bootrom까지도 백업할 수 있습니다.</p>
+<p>다수의 현대 홈브류 (Checkpoint나 BootNTR Selector 등)는 boot9strap 기반 셋업인 콘솔들로만 테스트되어왔기 때문에 menuhax, A9LH, Gateway와 같은 구 셋업 기반 콘솔에서는 대부분 작동하지 않을 수도 있습니다. 추가로, 자신의 셋업에 따라서, 3DS를 최신 버전으로 안전하게 업데이트하는게 불가능할 수도 있습니다. 현대식인 boot9strap 기반 셋업들은 이전 셋업들보다 훨씬 시스템 권한이 높으며, 콘솔의 bootrom까지도 백업할 수 있습니다.</p>
 </details>
 
 <details>

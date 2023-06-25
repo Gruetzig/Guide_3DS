@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/pt_BR/alternate-exploits'>Exploits Alternativos</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/pt_BR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/pt_BR/seedminer-(alternate)'>Seedminer (Alternativo)</a></li>
           
         
           
@@ -350,11 +358,31 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/pt_BR/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/pt_BR/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/pt_BR/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/pt_BR/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/pt_BR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dump da Movable (nimhax)</a></li>
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/pt_BR/dumping-eshop-dsiware'>Dumping da eShop DSiWare</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dumping da Movable (nimhax)</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/pt_BR/installing-boot9strap-(fredtool)'>Instalando boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/pt_BR/installing-boot9strap-(fredtool-inject)'>Instalando boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -488,11 +520,10 @@ window.cookieconsent.initialise({
 <p><strong>Firmware 11.17.0 para o 3DS foi lançado recentemente</strong>. Veja aqui o que você deve saber:</p>
 
 <ul>
-  <li>Se o seu dispositivo estiver executando <em>Luma 10.2.1 ou superior</em>, a atualização é <em>100% segura</em>. Você pode checar sua versão do Luma apertando e segurando (Select) enquanto inicia o console.</li>
-  <li>Se seu dispositivo estiver em uma versão Luma mais antiga, você deve <a href="checking-for-cfw">atualizar o Luma</a> antes de atualizar seu dispositivo para 11.17.0.</li>
-  <li>Se seu dispositivo ainda não tem custom firmware, <strong>NÃO atualize para a versão mais recente</strong>, já que os métodos de instalação podem ser mais difíceis.</li>
-  <li>Se seu dispositivo não modificado JÁ ESTIVER na versão 11.17.0, você pode usar <a href="https://troubleshoot.uwuu.ca/seventeen/">esta página</a> para ver se um método está disponível para o seu dispositivo.</li>
-  <li>Informações sobre a firmware 11.17.0 estão evoluindo rapidamente. Para informações mais recentes, junte-se ao <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew no Discord</a>.</li>
+  <li>If your console is running <em>Luma 10.2.1 or higher</em>, it is <em>100% safe</em> to update. You can check your Luma version by holding (Select) while booting your console.</li>
+  <li>If your console is on an older Luma version, you should <a href="checking-for-cfw">update Luma</a> before you update your console to 11.17.0.</li>
+  <li>If your console does not yet have custom firmware, <strong>do NOT update to the latest version</strong> unless this guide instructs you to.</li>
+  <li>If your unmodified console is ALREADY on 11.17.0, this guide has been updated accordingly. Specifically, New3DS-family consoles have a <a href="homebrew-launcher-(super-skaterhax)">free software method</a>, while Old3DS-family consoles will need to use <a href="alternate-exploits">alternate exploits</a> that rely on external hardware or software.</li>
 </ul>
 
 </div>
@@ -509,7 +540,7 @@ window.cookieconsent.initialise({
 <summary><strong>Compatibilidade com 3DS/2DS</strong></summary>
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/onboarding/compatible.png" alt="" /></p>
 
-<p>Este guia é compatível com todos os dispositivos de varejo da família de consoles do Nintendo 3DS (incluindo o 3DS, 3DS XL/LL, 2DS, New 3DS, New 3DS XL/LL, e New 2DS XL/LL), independentemente da região ou firmware.</p>
+<p>This guide works with every retail console in the Nintendo 3DS family of consoles (including the 3DS, 3DS XL/LL, 2DS, New 3DS, New 3DS XL/LL, and New 2DS XL/LL), regardless of region or firmware.</p>
 </details>
 
 <details>
@@ -535,9 +566,9 @@ window.cookieconsent.initialise({
 <details class="notice--warning">
 <summary><strong>Possíveis riscos</strong></summary>
 
-<p>Modificando o seu dispositivo, você está sujeito à possibilidade remota (mas não zero) de o dispositivo ser banido de jogar on-line ou de ter um brick (renderizado como não-funcional). <em>__O posicionamento de arquivo incorreto NÃO irá causar um brick em seu dispositivo __</em>, mas pular as instruções propositalmente talvez o faça. Similarmente, a última onda de banimento ocorreu há mais de cinco anos, mas não há qualquer garantia de que uma outra não ocorrerá no futuro.</p>
+<p>By modding your console, you subject it to the remote (but non-zero) possibility of the console being banned from online play or bricked (rendered non-functional). <strong><em>Incorrect file placement will NOT brick your console</em></strong>, but purposely skipping instructions might. Similarmente, a última onda de banimento ocorreu há mais de cinco anos, mas não há qualquer garantia de que uma outra não ocorrerá no futuro.</p>
 
-<p>Resumindo: Modificar seu dispositivo é seguro, mas é <strong><em>sua responsabilidade</em></strong> se algo der errado.</p>
+<p>In short: Modding your console is safe, but it’s <strong><em>your responsibility</em></strong> if something goes wrong.</p>
 
 </details>
 

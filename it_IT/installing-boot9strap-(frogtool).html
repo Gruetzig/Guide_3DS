@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/it_IT/alternate-exploits'>Exploit Alternativi</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/it_IT/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/it_IT/seedminer-(alternate)'>Seedminer (Alternativo)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/it_IT/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/it_IT/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/it_IT/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/it_IT/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/it_IT/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/it_IT/dumping-eshop-dsiware'>Dump di DsiWare eShop</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/it_IT/installing-boot9strap-(fredtool)'>Installazione di boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/it_IT/installing-boot9strap-(fredtool-inject)'>Installazione di boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -482,7 +514,7 @@ window.cookieconsent.initialise({
       <li><a href="#sezione-iii---patch-della-modalità-download-ds" id="markdown-toc-sezione-iii---patch-della-modalità-download-ds">Sezione III - Patch della Modalità Download DS</a></li>
       <li><a href="#sezione-iv---exploit-flipnote" id="markdown-toc-sezione-iv---exploit-flipnote">Sezione IV - Exploit Flipnote</a></li>
       <li><a href="#sezione-vi---configurazione-di-luma3ds" id="markdown-toc-sezione-vi---configurazione-di-luma3ds">Sezione VI - Configurazione di Luma3DS</a></li>
-      <li><a href="#sezione-vii---ripristino-delle-impostazioni-di-connessione-ds" id="markdown-toc-sezione-vii---ripristino-delle-impostazioni-di-connessione-ds">Sezione VII - Ripristino delle Impostazioni di Connessione DS</a></li>
+      <li><a href="#sezione-vii---ripristino-della-modalità-download-ds" id="markdown-toc-sezione-vii---ripristino-della-modalità-download-ds">Sezione VII - Ripristino della Modalità Download DS</a></li>
     </ul>
   </li>
   <li><a href="#prosegui-con-il-completamento-dellinstallazione" id="markdown-toc-prosegui-con-il-completamento-dellinstallazione">Prosegui con il Completamento dell’installazione</a></li>
@@ -498,7 +530,7 @@ window.cookieconsent.initialise({
 </details>
 
 <p class="notice--warning">Per usare i link <a href="https://wikipedia.org/wiki/Magnet_URI_scheme">magnet</a> per il file <code class="language-plaintext highlighter-rouge">frogcert.bin</code> di questa guida avrai bisogno di un client torrent come <a href="https://www.qbittorrent.org/download.php">qBittorrent</a> o <a href="http://dev.deluge-torrent.org/wiki/Download">Deluge</a>. <br />
-Se non sei in grado di installarne uno, segui invece <a href="bannerbomb3">Bannerbomb3</a>.</p>
+Se non sei in grado di installarne uno, segui invece <a href="bannerbomb3">BannerBomb3</a>.</p>
 
 <h3 id="cosa-serve">Cosa serve</h3>
 
@@ -514,26 +546,26 @@ Se non sei in grado di installarne uno, segui invece <a href="bannerbomb3">Banne
 <p>Come precauzione aggiuntiva, controlleremo anche la presenza di un custom firmware. È necessario poiché se un custom firmware fosse già installato, questo metodo rischierebbe di brickare la console (rendendola inutilizzabile in assenza di metodi di ripristino come <a href="ntrboot">ntrboot</a>).</p>
 
 <ol>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
   <li>Premi il pulsante (Select)</li>
   <li>Accendi la tua console continuando a tenere premuto il pulsante (Select)</li>
   <li>Se il controllo è andato a buon fine, verrà avviato il menu HOME e potrai procedere con questa guida</li>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
 </ol>
 
-<p class="notice--danger">Se visualizzi un menu di configurazione o la console si spegne immediatamente, hai già un CFW e continuando con queste istruzioni potresti BRICKARE la tua console! Procedi con la <a href="checking-for-cfw">Verifica del CFW</a> per aggiornare il tuo CFW esistente.</p>
+<p class="notice--danger">Se vedi un menu di configurazione o la console si spegne, hai già il CFW, e proseguire seguendo queste istruzioni può BRICKARE la console! Procedi con la <a href="checking-for-cfw">Verifica del CFW</a> per aggiornare il tuo CFW esistente.</p>
 
 <h4 id="sezione-ii---preparazione">Sezione II - Preparazione</h4>
 
 <ol>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
   <li>Inserisci la scheda SD nel tuo computer</li>
   <li>Copia i file <code class="language-plaintext highlighter-rouge">boot.firm</code> e <code class="language-plaintext highlighter-rouge">boot.3dsx</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
   <li>Copia <code class="language-plaintext highlighter-rouge">boot.nds</code> (b9sTool) dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di b9sTool nella directory principale della tua scheda SD</li>
   <li>Copia il file <code class="language-plaintext highlighter-rouge">Frogtool.3dsx</code> nella cartella <code class="language-plaintext highlighter-rouge">/3ds/</code> della tua scheda SD</li>
   <li>Copia il file <code class="language-plaintext highlighter-rouge">frogcert.bin</code> nella directory principale della tua scheda SD</li>
   <li>Reinserisci la scheda SD nella tua console</li>
-  <li>Accendi la console</li>
+  <li>Accendi la tua console</li>
 </ol>
 
 <h4 id="sezione-iii---patch-della-modalità-download-ds">Sezione III - Patch della Modalità Download DS</h4>
@@ -573,18 +605,18 @@ Se non sei in grado di installarne uno, segui invece <a href="bannerbomb3">Banne
   <li>Seleziona il terzo riquadro con la lettera “A” all’interno</li>
   <li>Scorri a sinistra fino a visualizzare la bobina “1/3”</li>
   <li>Seleziona il quarto riquadro con la lettera “A” all’interno</li>
-  <li>Se l’exploit ha avuto successo, la tua console avrà caricato b9sTool</li>
+  <li>Se l’exploit ha funzionato, la tua console avvierà b9sTool</li>
   <li>Usando il D-Pad, vai su “Install boot9strap”
     <ul>
-      <li>Se salti questo passaggio, la console si riavvierà nel menu HOME senza aver installato boot9strap, e sarà necessario riaprire l’applicazione Connessioni Nintendo DS e ricominciare dall’inizio di questa sezione</li>
+      <li>Se salti questo passaggio, la console si riavvierà nel menu HOME senza aver installato boot9strap, e sarà necessario riaprire l’applicazione Modalità download DS e ricominciare dall’inizio di questa sezione</li>
     </ul>
   </li>
   <li>Premi (A), quindi premi START e SELECT contemporaneamente per avviare il processo</li>
-  <li>Al termine lo schermo inferiore presenterà la scritta “done.”. Esci da b9sTool, quindi spegni la console
+  <li>Una volta finito e nello schermo inferiore c’è scritto “done.”, esci da b9sTool e spegni la console
     <ul>
       <li>Potresti dover forzare lo spegnimento tenendo premuto il pulsante di accensione</li>
-      <li>Se la console dovesse spegnersi quando provi ad accenderla, assicurati di aver copiato il file <code class="language-plaintext highlighter-rouge">boot.firm</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
-      <li>Se vedi la schermata di Configurazione Luma, spegni la tua console e procedi alla sezione successiva</li>
+      <li>Se la tua console si spegne quando cerchi di accenderla, assicurati di aver copiato il file <code class="language-plaintext highlighter-rouge">boot.firm</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
+      <li>Se vedi la schermata di Luma, spegni la console e prosegui alla prossima sezione</li>
     </ul>
   </li>
 </ol>
@@ -592,11 +624,12 @@ Se non sei in grado di installarne uno, segui invece <a href="bannerbomb3">Banne
 <h4 id="sezione-vi---configurazione-di-luma3ds">Sezione VI - Configurazione di Luma3DS</h4>
 
 <ol>
+  <li>Premi (Select) e accendi la tua console continuando a tenerlo premuto</li>
   <li>La tua console dovrebbe aver avviato il menu di configurazione di Luma3DS
     <ul>
       <li>Il menu di configurazione di Luma3DS contiene le impostazioni per il custom firmware Luma3DS. Molte di queste impostazioni possono essere utili per la personalizzazione o per debug</li>
       <li>Ai fini di questa guida, <strong>lascia queste opzioni nelle impostazioni predefinite</strong> (non spuntare o deselezionare nulla)</li>
-      <li>Se la console dovesse spegnersi quando provi ad accenderla, assicurati di aver copiato il file <code class="language-plaintext highlighter-rouge">boot.firm</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
+      <li>Se la tua console si spegne quando cerchi di accenderla, assicurati di aver copiato il file <code class="language-plaintext highlighter-rouge">boot.firm</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
     </ul>
   </li>
   <li>Premi (Start) per salvare e riavviare il 3DS</li>
@@ -608,7 +641,7 @@ Se non sei in grado di installarne uno, segui invece <a href="bannerbomb3">Banne
   <li>Nella pagina successiva installerai applicazioni homebrew utili per completare la tua installazione.</li>
 </ul>
 
-<h4 id="sezione-vii---ripristino-delle-impostazioni-di-connessione-ds">Sezione VII - Ripristino delle Impostazioni di Connessione DS</h4>
+<h4 id="sezione-vii---ripristino-della-modalità-download-ds">Sezione VII - Ripristino della Modalità Download DS</h4>
 
 <ol>
   <li>Avvia l’applicazione “Modalità download”</li>
@@ -627,14 +660,14 @@ Se non sei in grado di installarne uno, segui invece <a href="bannerbomb3">Banne
   <li>Riavvia l’applicazione “Modalità download”</li>
   <li>La console dovrebbe ora avviare l’Homebrew Launcher</li>
   <li>Avvia Frogtool dalla lista degli homebrew disponibili</li>
-  <li>Seleziona l’opzione “RESTORE patched DS Download Play”</li>
+  <li>Seleziona l’opzione “RESTORE clean DS Download Play”</li>
   <li>Al termine dell’operazione, leggi lo schermo e controlla l’effettivo successo dell’operazione
     <ul>
       <li>Se dovesse essersi verificato qualche errore, o se mancano dei file, correggi il problema e riprova</li>
     </ul>
   </li>
   <li>Se il processo è andato a buon fine, tocca il touch screen, quindi premi START per uscire</li>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
 </ol>
 
 <hr />

@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/pt_BR/alternate-exploits'>Exploits Alternativos</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/pt_BR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/pt_BR/seedminer-(alternate)'>Seedminer (Alternativo)</a></li>
           
         
           
@@ -350,11 +358,31 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/pt_BR/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/pt_BR/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/pt_BR/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/pt_BR/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/pt_BR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dump da Movable (nimhax)</a></li>
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/pt_BR/dumping-eshop-dsiware'>Dumping da eShop DSiWare</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dumping da Movable (nimhax)</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/pt_BR/installing-boot9strap-(fredtool)'>Instalando boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/pt_BR/installing-boot9strap-(fredtool-inject)'>Instalando boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -500,7 +532,7 @@ window.cookieconsent.initialise({
 <details class="notice--info">
 <summary><em>Detalhes técnicos (opcional)</em></summary>
 
-<p>Para instalar boot9strap em seu dispositivo, nós derivamos a chave de criptografia exclusiva do seu dispositivo. Para fazer isso, usamos uma ferramenta chamada Seedminer para calcular a chave de criptografia de dados (movable.sed) do seu dispositivo.</p>
+<p>To install boot9strap on your console, we derive your console’s unique encryption key. To accomplish this, we use a tool called Seedminer to calculate the data encryption key (movable.sed) for your console.</p>
 
 <p>Como não temos acesso à Lista de Amigos, nós estamos derivando a primeira parte do <code class="language-plaintext highlighter-rouge">movable.sed</code> usando um código QR de um Mii em vez de executar uma troca de amigos de dois sentidos.</p>
 
@@ -534,21 +566,31 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Na pasta Seedminer, segure SHIFT e o botão direito do mouse em qualquer lugar vazio da pasta e, em seguida, clique na opção que abre o Terminal, PowerShell ou Prompt de Comando</li>
-  <li>Na janela da linha de comando, digite <code class="language-plaintext highlighter-rouge">py -3 -mpip install pycryptodomex</code>, pressione ENTER, e permita a instalação
+  <li>In the command line window, type <code class="language-plaintext highlighter-rouge">py -3 -m pip install pycryptodomex</code>, hit ENTER, and allow it to install
     <ul>
       <li>Se este comando falhar com o erro <code class="language-plaintext highlighter-rouge">No module named pip</code>, você precisa instalar manualmente o pip. Os métodos para fazer isso podem ser encontrados <a href="https://pip.pypa.io/en/stable/installation/">nesta página</a>.</li>
     </ul>
   </li>
-  <li>Ligue o seu console enquanto o cartão SD estiver inserido</li>
+  <li>Power on your console while the SD card is inserted</li>
   <li>Abrir o aplicativo do Mii Maker</li>
   <li>Toque no botão “QR Code/Opções de Imagem”</li>
   <li>Toque em “Salvar Mii como QR Code”</li>
   <li>Selecione qualquer personagem Mii (faça um novo se você não tem algum) e pressione “OK”</li>
-  <li>Desligue o console</li>
-  <li>Coloque o cartão SD do console no seu computador, navegue até a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> no SD, e copie o nome da pasta de 32 caracteres diretamente dentro
+  <li>Desligue seu console</li>
+  <li>Insira o cartão SD no seu computador</li>
+  <li>Vá até a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> no seu cartão SD</li>
+  <li>Copie o nome da pasta de 32 letras que você vê diretamente dentro de Nintendo 3DS
     <ul>
-      <li>Esta pasta, conhecida como ID0, é específica do sistema. Só um deve estar presente. Se você ver vários, siga <a href="troubleshooting#seedminer">estas instruções</a></li>
-      <li>Uma vez com o ID0, cole-o em um documento para que você possa referenciá-lo mais tarde</li>
+      <li>Este nome de 32 letras é específico do sistema e será diferente para cada console</li>
+      <li>Se você ver várias pastas de 32 letras, siga <a href="troubleshooting#seedminer">estas instruções</a></li>
+      <li>Você pode ignorar a pasta <code class="language-plaintext highlighter-rouge">private</code> se ela está presente</li>
+    </ul>
+
+    <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/seedminer/id0-example.png" alt="" /></p>
+  </li>
+  <li>Cole o nome da sua pasta de 32 letras em um <a href="/images/screenshots/seedminer/text-document.png">documento</a> que você possa referenciar mais tarde
+    <ul>
+      <li>Esta pasta é conhecida como seu “ID0”. Tome nota disso já que este guia irá referir-se a ele como tal mais tarde</li>
     </ul>
   </li>
   <li>Navegue até a pasta <code class="language-plaintext highlighter-rouge">DCIM</code> no cartão SD</li>
@@ -578,16 +620,18 @@ window.cookieconsent.initialise({
     <ul>
       <li>Substitua <code class="language-plaintext highlighter-rouge">&lt;id0&gt;</code> pelo ID0 que você copiou para um documento</li>
       <li>Não inclua os parênteses angulares</li>
+      <li>Não tente inserir o ID0 manualmente, já que é fácil cometer um erro. Assegure-se de que o seu ID0 esteja inserido corretamente copiando-o e colando-o de onde você o salvou na seção anterior</li>
     </ul>
   </li>
   <li>Quando concluído, digite o comando <code class="language-plaintext highlighter-rouge">py -3 seedminer_launcher3.py mii &lt;modelo&gt; &lt;ano&gt;</code>
     <ul>
-      <li>Substitua <code class="language-plaintext highlighter-rouge">&lt;modelo&gt;</code> pelo modelo do seu console (<code class="language-plaintext highlighter-rouge">new</code> ou <code class="language-plaintext highlighter-rouge">old</code>) - se você não tiver certeza, somente modelos com os botões ZL/ZR e C-Stick são new</li>
-      <li>Substitua <code class="language-plaintext highlighter-rouge">&lt;ano&gt;</code> pelo o ano em que o 3DS foi feito (você geralmente encontra isso na placa traseira) - deixe isto vazio se não tiver certeza, no caso em que o início será a partir do meio</li>
-      <li>Se isso falhar com um erro de <code class="language-plaintext highlighter-rouge">input.bin is invalid size</code>, faça novamente o <code class="language-plaintext highlighter-rouge">input.bin</code> usando seu código QR. If it <em>still</em> fails, open a different browser and remake the <code class="language-plaintext highlighter-rouge">input.bin</code> there</li>
-      <li>If you see the message <code class="language-plaintext highlighter-rouge">"LFCS has been left blank</code>, use the opposite console model (e.g. <code class="language-plaintext highlighter-rouge">mii old</code> instead of <code class="language-plaintext highlighter-rouge">mii new</code>)</li>
+      <li>Substitua <code class="language-plaintext highlighter-rouge">&lt;model&gt;</code> pelo modelo do seu console (<code class="language-plaintext highlighter-rouge">new</code> ou <code class="language-plaintext highlighter-rouge">old</code>) - se você não tiver certeza, apenas modelos com os botões ZL/ZR e C-Stick são “new”</li>
+      <li>Substitua <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code> pelo ano em que o 3DS foi feito (você geralmente encontra isto atrás da backplate) - deixe isto vazio se não tiver certeza, no caso em que o início será a partir do meio</li>
       <li>O processo de mining geralmente levará até 90 minutos, dependendo da sua sorte e da potência da sua GPU</li>
-      <li>If the second stage (<code class="language-plaintext highlighter-rouge">movable_part2.sed generation success</code>) gets past offset 100, Verify that you input the correct ID0. If your ID0 is correct, you cannot use this method and will have to update to the latest version and see if a non-Seedminer method is available for you <a href="https://troubleshoot.uwuu.ca/seventeen">here</a></li>
+      <li>A primeira etapa provavelmente irá maximizar aproximadamente no offset 1500, dependendo do modelo do console</li>
+      <li>Se a segunda fase (depois de ver <code class="language-plaintext highlighter-rouge">movable_part2.sed generation success</code>) chega a passar o offset 100, verifique se você inseriu o ID0 correto. Se o seu ID0 estiver correto, você não pode usar este método e precisa atualizar para a versão mais recente e ver se um método não-Seedminer está disponível para você <a href="alternativa-exploits">aqui</a></li>
+      <li>Se você ver a mensagem <code class="language-plaintext highlighter-rouge">input.bin is invalid size</code>, faça o <code class="language-plaintext highlighter-rouge">input.bin</code> usando seu código QR. Se <em>ainda</em> falhar, abra um navegador diferente e faça o <code class="language-plaintext highlighter-rouge">input.bin</code> lá</li>
+      <li>Se você ver a mensagem <code class="language-plaintext highlighter-rouge">LFCS has been left blank</code>, use o modelo do console oposto (por exemplo, <code class="language-plaintext highlighter-rouge">mii old</code> em vez de <code class="language-plaintext highlighter-rouge">mii new</code>)</li>
     </ul>
   </li>
   <li>Quando terminar, um arquivo chamado <code class="language-plaintext highlighter-rouge">movable.sed</code> aparecerá na pasta Seedminer</li>

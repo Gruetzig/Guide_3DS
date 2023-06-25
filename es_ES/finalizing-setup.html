@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/es_ES/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/es_ES/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/es_ES/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/es_ES/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/es_ES/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/es_ES/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/es_ES/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/es_ES/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/es_ES/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/es_ES/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/es_ES/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -499,7 +531,7 @@ window.cookieconsent.initialise({
 
 <h3 id="lectura-requerida">Lectura requerida</h3>
 
-<p>The file <code class="language-plaintext highlighter-rouge">boot.firm</code> is what is launched by boot9strap itself after it finishes loading off of NAND. In this case, we are using Luma3DS by <a href="https://github.com/LumaTeam/">LumaTeam</a> to patch the device, allowing it to run homebrew software.</p>
+<p>The file <code class="language-plaintext highlighter-rouge">boot.firm</code> is what is launched by boot9strap itself after it finishes loading off of NAND. In this case, we are using Luma3DS by <a href="https://github.com/LumaTeam/">LumaTeam</a> to patch the console, allowing it to run homebrew software.</p>
 
 <p>On this page, we will make critical system file backups and install the following homebrew programs:</p>
 
@@ -538,21 +570,21 @@ window.cookieconsent.initialise({
 <p>In this section, you will copy the files necessary to follow the rest of the instructions on this page.</p>
 
 <ol>
-  <li>Apaga tu consola</li>
+  <li>Power off your console</li>
   <li>Inserta tu tarjeta SD en tu computadora</li>
   <li>Crea una carpeta llamada <code class="language-plaintext highlighter-rouge">cias</code> en la raíz de tu tarjeta SD, si aún no existe</li>
   <li>Copy all of the CIA files (<code class="language-plaintext highlighter-rouge">Anemone3DS.cia</code>, <code class="language-plaintext highlighter-rouge">Checkpoint.cia</code>, <code class="language-plaintext highlighter-rouge">FBI.cia</code>, <code class="language-plaintext highlighter-rouge">Homebrew_Launcher.cia</code>, and <code class="language-plaintext highlighter-rouge">Universal-Updater.cia</code>) to the <code class="language-plaintext highlighter-rouge">/cias/</code> folder on your SD card</li>
   <li>Crea una carpeta llamada <code class="language-plaintext highlighter-rouge">3ds</code> en la raíz de tu tarjeta SD, si aún no existe
     <ul>
-      <li>Esta carpeta almacena aplicaciones homebrew y datos relacionados; es distinta de la carpeta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> que genera la consola automáticamente</li>
+      <li>This folder stores homebrew applications and data; it is different from the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder that the console automatically generates</li>
     </ul>
   </li>
   <li>Copia <code class="language-plaintext highlighter-rouge">FBI.3dsx</code> a la carpeta <code class="language-plaintext highlighter-rouge">/3ds/</code> de tu tarjeta SD</li>
   <li>Crea una carpeta llamada <code class="language-plaintext highlighter-rouge">payloads</code> dentro de la carpeta <code class="language-plaintext highlighter-rouge">luma</code> en tu tarjeta SD si aún no existe</li>
   <li>Copia el archivo <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> desde el <code class="language-plaintext highlighter-rouge">.zip</code> de GodMode9 a la carpeta <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> en tu tarjeta SD</li>
   <li>Copia la carpeta <code class="language-plaintext highlighter-rouge">gm9</code>contenida en el <code class="language-plaintext highlighter-rouge">.zip</code>de GodMode9 al directorio raíz de tu tarjeta SD</li>
-  <li>Reinserta tu tarjeta SD en tu consola</li>
-  <li>Enciende tu consola</li>
+  <li>Reinsert your SD card into your console</li>
+  <li>Power on your console</li>
 </ol>
 
 <p>The screenshots below indicate the minimum SD card layout that is required to follow this page. You may have extra files or folders on your SD card, depending on your previous setup or the method that you followed.</p>
@@ -566,22 +598,22 @@ window.cookieconsent.initialise({
 <p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
 
 <ol>
-  <li>Apaga tu consola</li>
+  <li>Power off your console</li>
   <li>Mantén pulsado el botón (Select)</li>
-  <li>Enciende la consola mientras mantienes presionado (Select)</li>
-  <li>If the check was successful, your device should have booted into the Luma3DS configuration menu</li>
+  <li>Power on your console while still holding the (Select) button</li>
+  <li>If the check was successful, your console should have booted into the Luma3DS configuration menu</li>
   <li>Presiona (Start) para guardar y reiniciar</li>
-  <li>Apaga tu consola</li>
+  <li>Power off your console</li>
 </ol>
 
-<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your device. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
+<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 
 <h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
 
 <p>In this section, you will update your system to the latest version, which is safe to do with custom firmware.</p>
 
 <ol>
-  <li>Actualiza tu 3DS dirigiéndote a la Configuración de la consola, después a “Otras opciones”, luego ve al último menú de la derecha y pulsa en “Actualización”
+  <li>Update your console by going to System Settings, then “Other Settings”, then going all the way to the right and using “System Update”
     <ul>
       <li>Actualizar la consola teniendo B9S y Luma (lo que acabas de instalar) es seguro</li>
       <li>El actualizador podría mostrar un mensaje diciendo “La consola ya está actualizada” en lugar de actualizar. This is normal if you are already up to date; continue to the next section</li>
@@ -593,7 +625,7 @@ window.cookieconsent.initialise({
 
 <h4 id="section-iv---homebrew-launcher">Section IV - Homebrew Launcher</h4>
 
-<p>In this section, you will temporarily replace Download Play with Homebrew Launcher (which we need to launch FBI). Download Play will automatically go back to normal once you reboot your device.</p>
+<p>In this section, you will temporarily replace Download Play with Homebrew Launcher (which we need to launch FBI). Download Play will automatically go back to normal once you reboot your console.</p>
 
 <ol>
   <li>Ejecuta la aplicación Modo Descarga (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
@@ -607,9 +639,9 @@ window.cookieconsent.initialise({
   <li>Press (Home) to suspend Download Play</li>
   <li>Press the “Close” button on the bottom screen to close Download Play</li>
   <li>Re-launch the Download Play application</li>
-  <li>Tu consola debería cargar el Homebrew Launcher
+  <li>Your console should load the Homebrew Launcher
     <ul>
-      <li>If your device is stuck on the loading splash screen, you are missing <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of your SD card</li>
+      <li>If your console is stuck on the loading splash screen, you are missing <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of your SD card</li>
     </ul>
   </li>
 </ol>
@@ -646,8 +678,8 @@ window.cookieconsent.initialise({
 <p>In this section, you will use a script to copy some of Luma3DS’s files to internal memory so that they can be accessed, even without an SD card inserted.</p>
 
 <ol>
-  <li>Apaga tu consola</li>
-  <li>Presiona y mantén el botón (Start), y mientras lo mantienes presionado, enciende tu consola. Esto abrirá GodMode9
+  <li>Power off your console</li>
+  <li>Press and hold (Start), and while holding (Start), power on your console. Esto abrirá GodMode9
     <ul>
       <li>Si GodMode9 no inicia, asegúrate de que <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> esté en <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> y que <code class="language-plaintext highlighter-rouge">payloads</code> esté escrito correctamente</li>
     </ul>
@@ -701,7 +733,7 @@ window.cookieconsent.initialise({
   </li>
   <li>Presiona (A) para continuar</li>
   <li>Presiona el botón (Home) para abrir el menú de acción</li>
-  <li>Selecciona “Poweroff system” para apagar tu consola</li>
+  <li>Select “Poweroff system” to power off your console</li>
   <li>Inserta tu tarjeta SD en tu computadora</li>
   <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
     <ul>
@@ -715,13 +747,13 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>If you have it, copy the <code class="language-plaintext highlighter-rouge">/luma/backups/</code> folder on your SD card to a safe location on your computer</li>
-  <li>Reinserta tu tarjeta SD en tu consola</li>
-  <li>Enciende tu consola</li>
+  <li>Reinsert your SD card into your console</li>
+  <li>Power on your console</li>
 </ol>
 
 <hr />
 
-<p class="notice--success">You’re done! Custom firmware is now fully configured on your device.</p>
+<p class="notice--success">You’re done! Custom firmware is now fully configured on your console.</p>
 
 <h3 id="information-and-notes">Information and Notes</h3>
 

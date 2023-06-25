@@ -132,8 +132,9 @@ function can_miimine(major, minor, native, region, model) {
     if (model == DEVICE_O3DS) {
         if (major == 11 && minor == 15) {
             // KOR and TWN can do normal seedminer
+            // CHN can't do seedminer at all (no valid exploit after doing so)
             // All other O3DS must Mii mine
-            if (region != "K" && region != "T") do_redirect = true;
+            if (!["C", "K", "T"].includes(region)) do_redirect = true;
         }
     }
 
@@ -179,6 +180,21 @@ function can_seedminer(major, minor, native, region, model) {
     return false;
 }
 
+function is_o3ds_1117(major, minor, native, region, model) {
+    let do_redirect = false;
+    if (model == 0) {
+        if (major == 11 && minor == 17) {
+            // sanity check this: K/T/C does not have 11.17 (yet?)
+            if (["U", "E", "J"].includes(region)) do_redirect = true;
+        }
+    }
+    if (do_redirect) {
+        window.location.href = "alternate-exploits"
+        return true;
+    }
+    return false;
+}
+
 /*
     Redirects page based on input from user.
     Input:
@@ -202,7 +218,7 @@ function can_seedminer(major, minor, native, region, model) {
     - N3DS & 11.17 (EUR / JPN / USA):
         - super-skaterhax
     - O3DS & 11.17:
-        - Unhackable
+        - Use alternate exploits; can't hack without any extra stuff
 */
 function redirect() {
     let major = document.getElementById("major");
@@ -228,13 +244,19 @@ function redirect() {
     if(isO3DS) model = DEVICE_O3DS
     else if(isN3DS) model = DEVICE_N3DS;
 
+    if (model == DEVICE_N3DS && ["C", "T"].includes(region.value)) {
+        document.getElementById("result_invalidVersion").style.display = "block";
+        return;
+    }
+
     let redirected = [
-        can_soundhax,
-        can_ssloth,
-        can_safecerthax,
-        can_miimine,
-        can_seedminer,
-        can_superskaterhax,
+      can_soundhax,
+      can_ssloth,
+      can_safecerthax,
+      can_miimine,
+      can_seedminer,
+      can_superskaterhax,
+      is_o3ds_1117
     ].some(func => func(major.value, minor.value, nver.value, region.value, model));
     if (redirected) return true;
 

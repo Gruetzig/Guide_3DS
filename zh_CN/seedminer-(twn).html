@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/zh_CN/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/zh_CN/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/zh_CN/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/zh_CN/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/zh_CN/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/zh_CN/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/zh_CN/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/zh_CN/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_CN/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/zh_CN/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -487,7 +519,7 @@ window.cookieconsent.initialise({
 <details class="notice--info">
 <summary><em>技术细节（选看）</em></summary>
 
-<p>为了在你的主机上安装 boot9strap，我们需要获得你主机上的唯一加密密钥。 为了做到这点，我们使用了一个叫 Seedminer 的工具来计算你主机的数据加密密钥（movable.sed）。</p>
+<p>To install boot9strap on your console, we derive your console’s unique encryption key. To accomplish this, we use a tool called Seedminer to calculate the data encryption key (movable.sed) for your console.</p>
 
 <p>如果想要了解 Seedminer 是怎么工作的，请参见此<a href="https://zoogie.github.io/web/34⅕c3">介绍资料</a>。</p>
 
@@ -497,7 +529,7 @@ window.cookieconsent.initialise({
 
 <h3 id="section-i---prep-work">Section I - Prep Work</h3>
 
-<p>本节中，为了得到加密密钥，你将需要从你的 3DS 中获取必要的信息。</p>
+<p>In this section, you will get the necessary details from your 3DS that are required to figure out your console’s encryption key.</p>
 
 <div class="notice--info">
 <p>Before following this section:</p>
@@ -508,7 +540,7 @@ window.cookieconsent.initialise({
 </div>
 
 <ol>
-  <li>将主机关机</li>
+  <li>Power off your console</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>打开你 SD 卡的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 文件夹</li>
   <li>从 Nintendo 3DS 文件夹里面复制里面的一个 32 位长名字的文件夹的名称
@@ -525,14 +557,14 @@ window.cookieconsent.initialise({
       <li>这个文件夹名也称作 “ID0”。 请注意这个东西，本教程将在稍后提及它</li>
     </ul>
   </li>
-  <li>启动你的主机
+  <li>Power on your console
     <ul>
       <li>此时不需要插入 SD 卡</li>
     </ul>
   </li>
   <li>开启你的好友列表（主菜单中最上方的<a href="https://3ds.hacks.guide/images/friend-list-icon.png">橙色的笑脸</a>）
     <ul>
-      <li>如果出现错误信息并被踢回到主菜单，则你需要创建一个 Mii 形象或你的主机无法连接到任天堂服务器（由于封禁或网络问题）</li>
+      <li>If you receive an error and are kicked out of the menu, you either must create a new Mii or your console cannot connect to Nintendo’s servers (due to a ban or connection issues)</li>
     </ul>
   </li>
   <li>找到你的 Mii 个人形象，然后在上屏寻找你的“朋友代码（Friend Code）”</li>
@@ -540,7 +572,7 @@ window.cookieconsent.initialise({
 
 <h3 id="section-ii---seedminer">Section II - Seedminer</h3>
 
-<p>本节中，你将会使用 Bruteforce Movable 网站来获取你主机的加密密钥（<code class="language-plaintext highlighter-rouge">movable.sed</code>）。</p>
+<p>In this section, you will use the Bruteforce Movable website to retrieve your console’s encryption key in the form of <code class="language-plaintext highlighter-rouge">movable.sed</code>.</p>
 
 <ol>
   <li>在你的电脑上打开 <a href="https://seedminer.hacks.guide/">Bruteforce Movable</a>
@@ -548,8 +580,8 @@ window.cookieconsent.initialise({
       <li>如果网站功能无法使用，请加入 <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord 服务器</a> 并使用英文请求帮助。（请注意，如果你身处中国大陆，访问 Discord 可能需要科学上网）你也可以到译者的 <a href="https://stray-soul.site/index.php/qqgroup">QQ 群</a>寻求帮助，群号为942052497</li>
     </ul>
   </li>
-  <li>在 “Your friend code” 选项填入你主机的 “好友代码（Friend Code）”（只要数字，不要填入空格或破折号）</li>
-  <li>在 “Your ID0” 栏位粘贴之前复制的 32 位长的文件夹名
+  <li>Enter your console’s Friend Code (with no spaces or dashes) into the “Your friend code” field</li>
+  <li>Paste your console’s 32 character long folder name into the “Your ID0” field
     <ul>
       <li>不要尝试手动输入 ID0，因为很容易输错。 确保那是你在上一节中复制并粘贴的 ID0 以防复制错了</li>
     </ul>
@@ -559,7 +591,7 @@ window.cookieconsent.initialise({
       <li>如果网站直接跳到了 step 4，则代表网站先前已经完成过你的破解请求了。 你可以直接下载 <code class="language-plaintext highlighter-rouge">movable.sed</code> 然后继续下一步。 You do not need to (re-)add the bot</li>
     </ul>
   </li>
-  <li>使用主机上的<a href="/images/screenshots/seedminer/register-friend.png">“好友注册”按钮</a>来添加网站给出的机器人的好友代码
+  <li>Use the <a href="/images/screenshots/seedminer/register-friend.png">“Register Friend” button</a> on your console to add the bot’s friend code as given by the website
     <ul>
       <li>如果提示输入一个昵称，请随便输入一个</li>
     </ul>
@@ -579,14 +611,14 @@ window.cookieconsent.initialise({
       <li>Keep this file as you will need it in the upcoming page</li>
     </ul>
   </li>
-  <li>将主机关机</li>
+  <li>Power off your console</li>
 </ol>
 
 <hr />
 
 <h3 id="next-step-bannerbomb3">Next step: BannerBomb3</h3>
 
-<p>Once you have your device’s encryption key (<code class="language-plaintext highlighter-rouge">movable.sed</code>), you can use it in conjunction with BannerBomb3, which uses your <code class="language-plaintext highlighter-rouge">movable.sed</code> file to take advantage of exploits in the System Settings application.</p>
+<p>Once you have your console’s encryption key (<code class="language-plaintext highlighter-rouge">movable.sed</code>), you can use it in conjunction with BannerBomb3, which uses your <code class="language-plaintext highlighter-rouge">movable.sed</code> file to take advantage of exploits in the System Settings application.</p>
 
 <p class="notice--primary">Continue to <a href="bannerbomb3-fredtool-(twn)">BannerBomb3 + Fredtool (TWN)</a></p>
 

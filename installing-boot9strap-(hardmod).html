@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -518,8 +550,8 @@ window.cookieconsent.initialise({
       <li>Windows users can use the compiled <code class="language-plaintext highlighter-rouge">.exe</code>, while Mac and Linux users will need to have <a href="https://www.python.org/downloads/">Python 3</a> installed to run the <code class="language-plaintext highlighter-rouge">.py</code></li>
     </ul>
   </li>
-  <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> file that isn’t source code)</li>
-  <li>The <code class="language-plaintext highlighter-rouge">.firm</code> corresponding to your device and version:</li>
+  <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> file)</li>
+  <li>The <code class="language-plaintext highlighter-rouge">.firm</code> corresponding to your console and version:</li>
 </ul>
 
 <table>
@@ -728,21 +760,21 @@ window.cookieconsent.initialise({
 <p>In this section, you will download the necessary files for the hardmod and dump the NAND image in preparation to install custom firmware.</p>
 
 <ol>
-  <li>Power off your device</li>
+  <li>Power off your console</li>
   <li>Insert your SD card into your computer</li>
   <li>Copy <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
   <li>Copy the hardmod-b9s-installer folder from the hardmod-b9s-installer <code class="language-plaintext highlighter-rouge">.zip</code> to your computer</li>
   <li>Copy your downloaded <code class="language-plaintext highlighter-rouge">.firm</code> to the hardmod-b9s-installer folder on your computer</li>
   <li>Rename your downloaded <code class="language-plaintext highlighter-rouge">.firm</code> in the hardmod-b9s-installer folder on your computer to <code class="language-plaintext highlighter-rouge">current.firm</code></li>
   <li>Copy <code class="language-plaintext highlighter-rouge">boot9strap.firm</code> and <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code> from the boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> to the hardmod-b9s-installer folder on your computer</li>
-  <li>Reinsert your SD card into your device</li>
+  <li>Reinsert your SD card into your console</li>
   <li>Use your hardmod to create a NAND backup</li>
   <li>Move your NAND backup to the hardmod-b9s-installer folder on your computer and rename it to <code class="language-plaintext highlighter-rouge">NAND.bin</code></li>
 </ol>
 
 <h4 id="section-ii---installing-boot9strap">Section II - Installing boot9strap</h4>
 
-<p>In this section, you will install custom firmware to the dumped NAND image, and then install this NAND image back onto the device to install custom firmware on it.</p>
+<p>In this section, you will install custom firmware to the dumped NAND image, and then install this NAND image back onto the console to install custom firmware on it.</p>
 
 <ol>
   <li>Run hardmod-b9s-installer
@@ -751,15 +783,15 @@ window.cookieconsent.initialise({
       <li>Mac and Linux Users: Run <code class="language-plaintext highlighter-rouge">install-b9s.py</code></li>
     </ul>
   </li>
-  <li>Flash your outputted <code class="language-plaintext highlighter-rouge">NAND-patched.bin</code> to your device with your hardmod</li>
-  <li>Power off your device</li>
+  <li>Flash your outputted <code class="language-plaintext highlighter-rouge">NAND-patched.bin</code> to your console with your hardmod</li>
+  <li>Power off your console</li>
   <li>Disconnect your hardmod</li>
-  <li>Press and hold (Select), and while holding (Select), power on your device. This will launch Luma3DS configuration</li>
-  <li>Your device should have booted into the Luma3DS configuration menu
+  <li>Press and hold (Select), and while holding (Select), power on your console</li>
+  <li>Your console should have booted into the Luma3DS configuration menu
     <ul>
       <li>Luma3DS configuration menu are settings for the Luma3DS custom firmware. Many of these settings may be useful for customization or debugging</li>
       <li>For the purpose of this guide, <strong>leave these options on the default settings</strong> (do not check or uncheck anything)</li>
-      <li>If your device shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+      <li>If your console shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
     </ul>
   </li>
   <li>Press (Start) to save and reboot</li>

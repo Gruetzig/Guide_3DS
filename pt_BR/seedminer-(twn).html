@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/pt_BR/alternate-exploits'>Exploits Alternativos</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/pt_BR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/pt_BR/seedminer-(alternate)'>Seedminer (Alternativo)</a></li>
           
         
           
@@ -350,11 +358,31 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/pt_BR/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/pt_BR/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/pt_BR/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/pt_BR/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/pt_BR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dump da Movable (nimhax)</a></li>
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/pt_BR/dumping-eshop-dsiware'>Dumping da eShop DSiWare</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-movable-(nimhax)"><a href='/pt_BR/dumping-movable-(nimhax)'>Dumping da Movable (nimhax)</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/pt_BR/installing-boot9strap-(fredtool)'>Instalando boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/pt_BR/installing-boot9strap-(fredtool-inject)'>Instalando boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -486,7 +518,7 @@ window.cookieconsent.initialise({
 <details class="notice--info">
 <summary><em>Detalhes técnicos (opcional)</em></summary>
 
-<p>Para instalar boot9strap em seu dispositivo, nós derivamos a chave de criptografia exclusiva do seu dispositivo. Para fazer isso, usamos uma ferramenta chamada Seedminer para calcular a chave de criptografia de dados (movable.sed) do seu dispositivo.</p>
+<p>To install boot9strap on your console, we derive your console’s unique encryption key. To accomplish this, we use a tool called Seedminer to calculate the data encryption key (movable.sed) for your console.</p>
 
 <p>Para mais informações sobre como Seedminer funciona, veja <a href="https://zoogie.github.io/web/34⅕c3">esta apresentação</a>.</p>
 
@@ -496,7 +528,7 @@ window.cookieconsent.initialise({
 
 <h3 id="seção-i---preparação">Seção I - Preparação</h3>
 
-<p>Nesta seção, você receberá os detalhes necessários no seu 3DS que são necessários para descobrir a chave de criptografia do seu dispositivo.</p>
+<p>In this section, you will get the necessary details from your 3DS that are required to figure out your console’s encryption key.</p>
 
 <div class="notice--info">
 <p>Antes de seguir esta seção:</p>
@@ -507,7 +539,7 @@ window.cookieconsent.initialise({
 </div>
 
 <ol>
-  <li>Desligue seu dispositivo</li>
+  <li>Desligue seu console</li>
   <li>Insira o cartão SD no seu computador</li>
   <li>Vá até a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> no seu cartão SD</li>
   <li>Copie o nome da pasta de 32 letras que você vê diretamente dentro de Nintendo 3DS
@@ -524,14 +556,14 @@ window.cookieconsent.initialise({
       <li>Esta pasta é conhecida como seu “ID0”. Tome nota disso já que este guia irá referir-se a ele como tal mais tarde</li>
     </ul>
   </li>
-  <li>Ligue o seu dispositivo
+  <li>Power on your console
     <ul>
       <li>Seu cartão SD não precisa ser inserido neste momento</li>
     </ul>
   </li>
   <li>Vá para sua lista de amigos (o <a href="https://3ds.hacks.guide/images/friend-list-icon.png">ícone de rosto laranja</a> na linha superior do seu Menu HOME)
     <ul>
-      <li>Se você receber um erro e for expulso do menu, você deve criar um novo Mii ou seu dispositivo não pode se conectar aos servidores da Nintendo (devido a um banimento ou problemas de conexão)</li>
+      <li>If you receive an error and are kicked out of the menu, you either must create a new Mii or your console cannot connect to Nintendo’s servers (due to a ban or connection issues)</li>
     </ul>
   </li>
   <li>Vá até o perfil do seu Mii e então encontre o seu Código de Amigo na tela superior</li>
@@ -539,7 +571,7 @@ window.cookieconsent.initialise({
 
 <h3 id="seção-ii---seedminer">Seção II - Seedminer</h3>
 
-<p>Nesta seção, você usará o site Bruteforce Movable para obter a chave de criptografia do seu dispositivo na forma de <code class="language-plaintext highlighter-rouge">movable.sed</code>.</p>
+<p>In this section, you will use the Bruteforce Movable website to retrieve your console’s encryption key in the form of <code class="language-plaintext highlighter-rouge">movable.sed</code>.</p>
 
 <ol>
   <li>Abra <a href="https://seedminer.hacks.guide/">Bruteforce Movable</a> no seu computador
@@ -547,8 +579,8 @@ window.cookieconsent.initialise({
       <li>Se o site não estiver funcionando, entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> e pergunte (em Inglês) para alguém lá te ajudar</li>
     </ul>
   </li>
-  <li>Insira o Código de Amigo do seu dispositivo (sem espaços ou traços) dentro do campo “Your friend code”</li>
-  <li>Cole o nome da pasta de 32 caracteres do seu dispositivo no campo “Your ID0”
+  <li>Enter your console’s Friend Code (with no spaces or dashes) into the “Your friend code” field</li>
+  <li>Paste your console’s 32 character long folder name into the “Your ID0” field
     <ul>
       <li>Não tente inserir o ID0 manualmente, já que é fácil cometer um erro. Assegure-se de que o seu ID0 esteja inserido corretamente copiando-o e colando-o de onde você o salvou na seção anterior</li>
     </ul>
@@ -558,7 +590,7 @@ window.cookieconsent.initialise({
       <li>Se o site ir imediatamente para a “Step 4”, o site já processou corretamente sua solicitação de bruteforce. Você pode baixar o seu arquivo <code class="language-plaintext highlighter-rouge">movable.sed</code> e continuar para a próxima seção. Você não precisa (re)adicionar o bot</li>
     </ul>
   </li>
-  <li>Use o <a href="/images/screenshots/seedminer/register-friend.png">botão “Registrar Amigo”</a> no seu dispositivo para adicionar o código de amigo do bot conforme dado pelo site
+  <li>Use the <a href="/images/screenshots/seedminer/register-friend.png">“Register Friend” button</a> on your console to add the bot’s friend code as given by the website
     <ul>
       <li>Se for solicitado, o nome que você dá ao amigo não importa</li>
     </ul>
@@ -578,14 +610,14 @@ window.cookieconsent.initialise({
       <li>Guarde esse arquivo em um lugar seguro pois você precisará dele nas páginas seguintes</li>
     </ul>
   </li>
-  <li>Desligue seu dispositivo</li>
+  <li>Desligue seu console</li>
 </ol>
 
 <hr />
 
 <h3 id="próximo-passo-bannerbomb3">Próximo passo: BannerBomb3</h3>
 
-<p>Assim que você tiver a chave de criptografia do seu dispositivo (<code class="language-plaintext highlighter-rouge">movable.sed</code>), você poderá usá-la em conjunto com o BannerBomb3, que usa o arquivo <code class="language-plaintext highlighter-rouge">movable.sed</code> para se aproveitar dos exploits no aplicativo Configurações do Sistema.</p>
+<p>Once you have your console’s encryption key (<code class="language-plaintext highlighter-rouge">movable.sed</code>), you can use it in conjunction with BannerBomb3, which uses your <code class="language-plaintext highlighter-rouge">movable.sed</code> file to take advantage of exploits in the System Settings application.</p>
 
 <p class="notice--primary">Continue em <a href="bannerbomb3-fredtool-(twn)">BannerBomb3 + Fredtool (TWN)</a></p>
 

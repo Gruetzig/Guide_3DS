@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/zh_CN/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/zh_CN/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/zh_CN/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/zh_CN/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/zh_CN/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/zh_CN/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/zh_CN/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/zh_CN/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_CN/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/zh_CN/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -519,8 +551,8 @@ window.cookieconsent.initialise({
       <li>Windows用户可以使用已编译的 “.exe” 程序，而 Mac 以及 Linux 用户则需要安装 <a href="https://www.python.org/downloads/">Python 3</a> 来打开 “.py” 文件。</li>
     </ul>
   </li>
-  <li>最新版本的 <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>（下载 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code>，不要下载 source code）</li>
-  <li>对应你的主机和系统的 “.firm” 文件：</li>
+  <li>最新版本的 <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>（下载 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 文件）</li>
+  <li>The <code class="language-plaintext highlighter-rouge">.firm</code> corresponding to your console and version:</li>
 </ul>
 
 <table>
@@ -729,21 +761,21 @@ window.cookieconsent.initialise({
 <p>在本节中，你将下载硬改所需的必要的文件，并导出 NAND 镜像以准备安装自制固件。</p>
 
 <ol>
-  <li>将主机关机</li>
+  <li>Power off your console</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>解压 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 里的 <code class="language-plaintext highlighter-rouge">boot.firm</code> 和 <code class="language-plaintext highlighter-rouge">boot.3dsx</code> 到你 SD 卡的根目录</li>
   <li>从 hardmod-b9s-installer <code class="language-plaintext highlighter-rouge">.zip</code> 中复制 hardmod-b9s-installer 文件夹至电脑中</li>
   <li>复制你所下载的<code class="language-plaintext highlighter-rouge">.firm</code> 档案至电脑的 hardmod-b9s-installer 文件夹中</li>
   <li>在 hardmod-b9s-installer 文件夹中，将你所下载的<code class="language-plaintext highlighter-rouge">.firm</code> 文件重命名为 <code class="language-plaintext highlighter-rouge">current.firm</code></li>
   <li>复制 boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> 中的<code class="language-plaintext highlighter-rouge">boot9strap.firm</code>和<code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code> 文件至电脑的 hardmod-b9s-installer 文件夹中</li>
-  <li>将 SD 卡重新插入你的主机</li>
+  <li>Reinsert your SD card into your console</li>
   <li>通过你的硬改创建一个新的 NAND 备份</li>
   <li>将你的 NAND 备份移动至你电脑中的 hardmod-b9s-installer 文件夹中，并将其重新命名为 <code class="language-plaintext highlighter-rouge">NAND.bin</code></li>
 </ol>
 
 <h4 id="第二步--安装-boot9strap">第二步 – 安装 boot9strap</h4>
 
-<p>在本节中，你将把自制固件安装到导出的 NAND 镜像中，然后将其导回主机以完成在主机上安装自制固件。</p>
+<p>In this section, you will install custom firmware to the dumped NAND image, and then install this NAND image back onto the console to install custom firmware on it.</p>
 
 <ol>
   <li>启动 hardmod-b9s-installer
@@ -752,15 +784,15 @@ window.cookieconsent.initialise({
       <li>Mac and Linux用户：请运行 <code class="language-plaintext highlighter-rouge">install-b9s.py</code> 文件</li>
     </ul>
   </li>
-  <li>通过硬改刷入刚生成的 <code class="language-plaintext highlighter-rouge">NAND-patched.bin</code> 文件至你的主机</li>
-  <li>将主机关机</li>
+  <li>Flash your outputted <code class="language-plaintext highlighter-rouge">NAND-patched.bin</code> to your console with your hardmod</li>
+  <li>Power off your console</li>
   <li>移除你的硬改</li>
-  <li>按住 “SELECT” 键，然后按下电源键开机。 这将会启动 Luma3DS 配置菜单</li>
-  <li>Your device should have booted into the Luma3DS configuration menu
+  <li>Press and hold (Select), and while holding (Select), power on your console</li>
+  <li>Your console should have booted into the Luma3DS configuration menu
     <ul>
       <li>Luma3DS 配置菜单用于设置 Luma3DS 自制固件的可选功能 其中有许多功能可用于个性化或调试</li>
       <li>For the purpose of this guide, <strong>leave these options on the default settings</strong> (do not check or uncheck anything)</li>
-      <li>If your device shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+      <li>If your console shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
     </ul>
   </li>
   <li>按下 “Start” 键保存设置并重启</li>

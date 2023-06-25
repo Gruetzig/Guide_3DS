@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/de_DE/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/de_DE/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/de_DE/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/de_DE/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/de_DE/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/de_DE/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/de_DE/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/de_DE/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/de_DE/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/de_DE/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/de_DE/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -491,7 +523,7 @@ window.cookieconsent.initialise({
 
 <h3 id="wichtiger-hinweis">Wichtiger Hinweis</h3>
 
-<p>Diese Seite ist für Benutzer von arm9loaderhax, die ihre Geräte auf boot9strap updaten wollen.</p>
+<p>This page is for existing arm9loaderhax users to update their consoles to boot9strap.</p>
 
 <p>Alle zukünftigen Versionen von Luma3DS werden nur im <code class="language-plaintext highlighter-rouge">.firm</code>- Format sein, welches nur mit boot9strap und sighax kompatibel ist. Das bedeutet, dass du diese Seite zum Updaten deiner Installation nutzen solltest, falls du weiterhin Updates von Luma3DS erhalten möchtest.</p>
 
@@ -510,17 +542,17 @@ window.cookieconsent.initialise({
   <li>Die neueste Version von <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (die Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> Datei)</li>
   <li>Die Version 7.0.5 von <a href="https://github.com/LumaTeam/Luma3DS/releases/download/v7.0.5/Luma3DSv7.0.5.7z">Luma3DS</a> (Direkter Download)</li>
   <li>Die neueste Version vom <a href="https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip">SafeB9SInstaller</a> (Direkter Download)</li>
-  <li>Die neueste Version von <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> (Direkter Download)
-    <h3 id="anleitung">Anleitung</h3>
-  </li>
+  <li>Die neueste Version von <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> (Direkter Download)</li>
 </ul>
+
+<h3 id="anleitung">Anleitung</h3>
 
 <h4 id="abschnitt-i---vorbereitungen">Abschnitt I - Vorbereitungen</h4>
 
 <p class="notice--info">Überschreibe für alle Schritte dieses Abschnitts bereits vorhandene Dateien auf der SD-Karte.</p>
 
 <ol>
-  <li>Schalte deine Konsole aus</li>
+  <li>Power off your console</li>
   <li>Stecke deine SD-Karte in deinen Computer</li>
   <li>Kopiere <code class="language-plaintext highlighter-rouge">boot.firm</code> und <code class="language-plaintext highlighter-rouge">boot.3dsx</code> von der Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> ins Stammverzeichnis deiner SD-Karte
     <ul>
@@ -541,13 +573,13 @@ window.cookieconsent.initialise({
 
     <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/a9lh-to-b9s-root-layout.png" alt="" /></p>
   </li>
-  <li>Stecke deine SD-Karte nun wieder in dein Gerät</li>
+  <li>Reinsert your SD card into your console</li>
 </ol>
 
 <h4 id="schritt-ii---installation-von-boot9strap">Schritt II - Installation von boot9strap</h4>
 
 <ol>
-  <li>Starte dein Gerät während du (Start) gedrückt hältst um SafeB9SInstaller zu starten
+  <li>Boot your console while holding (Start) to launch SafeB9SInstaller
     <ul>
       <li>Wenn du den Luma-Konfigurationsbildschirm anstelle vom SafeB9SInstaller siehst, drücke einfach (Start), dann schalte deinen 3DS aus und probiere es erneut</li>
       <li>Wenn du eine Fehlermeldung erhältst, probiere es entweder mit einer neuen SD-Karte oder formatiere deine momentane (Mache vorher eine Sicherheitskopie von den Dateien)</li>
@@ -563,12 +595,12 @@ window.cookieconsent.initialise({
       <li>If a step on the lower screen has red-colored text, and you are not prompted to input a key combo, <a href="troubleshooting#issues-with-safeb9sinstaller">follow this troubleshooting guide</a></li>
     </ul>
   </li>
-  <li>Sobald es abgeschlossen ist, drücke (A) um die Konsole neuzustarten</li>
-  <li>Dein Gerät sollte neu starten und die Luma3DS Konfiguration anzeigen
+  <li>Once it is complete, press (A) to reboot your console</li>
+  <li>Your console should have rebooted into the Luma3DS configuration menu
     <ul>
       <li>Das Luma3DS Konfigurations-Menü enthält Einstellungen für die Luma3DS Custom Firmware. Viele dieser Einstellungen sind nützlich für Personalisierung und Debugging</li>
       <li>For the purpose of this guide, these settings will be left on default settings</li>
-      <li>If you get a black screen, <a href="troubleshooting#boot-issues-on-devices-with-custom-firmware">follow this troubleshooting guide</a></li>
+      <li>If you get a black screen, <a href="troubleshooting#boot-issues-on-consoles-with-custom-firmware">follow this troubleshooting guide</a></li>
     </ul>
   </li>
   <li>Drücke (Start) zum Speichern und neustarten</li>

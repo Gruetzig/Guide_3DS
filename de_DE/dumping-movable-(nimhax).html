@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/de_DE/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/de_DE/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/de_DE/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/de_DE/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/de_DE/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/de_DE/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/de_DE/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/de_DE/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/de_DE/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/de_DE/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/de_DE/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -482,11 +514,7 @@ window.cookieconsent.initialise({
       <li><a href="#section-ii---nimhax" id="markdown-toc-section-ii---nimhax">Section II - nimhax</a></li>
     </ul>
   </li>
-  <li><a href="#next-step-choose-an-exploit" id="markdown-toc-next-step-choose-an-exploit">Next step: Choose an exploit</a>    <ul>
-      <li><a href="#bannerbomb3-recommended" id="markdown-toc-bannerbomb3-recommended">Bannerbomb3 (recommended)</a></li>
-      <li><a href="#frogtool" id="markdown-toc-frogtool">Frogtool</a></li>
-    </ul>
-  </li>
+  <li><a href="#next-step-frogtool" id="markdown-toc-next-step-frogtool">Next step: Frogtool</a></li>
 </ul>
 
   </nav>
@@ -495,7 +523,7 @@ window.cookieconsent.initialise({
 <details class="notice--info">
 <summary><em>Technische Details (optional)</em></summary>
 
-<p>Um boot9strap auf deiner Konsole zu installieren, erlangen wir den einzigartigen Verschlüsselungsschlüssel deines deiner Konsole. Um dies zu erreichen, verwenden wir den Homebrew Launcher, um nimhax zu starten und den Verschlüsselungsschlüssel (movable.sed) von deiner Konsole zu dumpen.</p>
+<p>To install boot9strap on your console, we derive your console’s unique encryption key. To accomplish this, we use the Homebrew Launcher to launch nimhax and dump the data encryption key (movable.sed) from your console.</p>
 
 <p>Für eine technischere Erklärung, siehe <a href="https://github.com/luigoalma/nimhax/">hier</a> für mehr Informationen über den nimhax Exploit.</p>
 
@@ -512,11 +540,11 @@ window.cookieconsent.initialise({
 <h4 id="abschnitt-i---vorbereitungen">Abschnitt I - Vorbereitungen</h4>
 
 <ol>
-  <li>Schalte deine Konsole aus</li>
+  <li>Power off your console</li>
   <li>Stecke deine SD-Karte in deinen Computer</li>
   <li>Kopiere den <code class="language-plaintext highlighter-rouge">nimhax</code> Ordner aus der nimhax <code class="language-plaintext highlighter-rouge">.zip</code> in den <code class="language-plaintext highlighter-rouge">3ds</code> Ordner auf deiner SD-Karte</li>
-  <li>Stecke deine SD-Karte nun wieder in deinen 3DS</li>
-  <li>Schalte deine Konsole an</li>
+  <li>Reinsert your SD card into your console</li>
+  <li>Power on your console</li>
 </ol>
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/nimhax-location.png" alt="" /></p>
@@ -529,20 +557,12 @@ window.cookieconsent.initialise({
   <li>If the exploit was successful, a <code class="language-plaintext highlighter-rouge">movable.sed</code> file will appear on the root of your SD card</li>
 </ol>
 
-<h3 id="next-step-choose-an-exploit">Next step: Choose an exploit</h3>
+<h3 id="next-step-frogtool">Next step: Frogtool</h3>
 
-<h4 id="bannerbomb3-recommended">Bannerbomb3 (recommended)</h4>
-
-<p>Once you have your device’s encryption key (<code class="language-plaintext highlighter-rouge">movable.sed</code>), you can use it in conjunction with BannerBomb3, which uses your <code class="language-plaintext highlighter-rouge">movable.sed</code> file to take advantage of exploits in the System Settings application.</p>
-
-<p class="notice--info">Continue to <a href="bannerbomb3">BannerBomb3</a></p>
-
-<h4 id="frogtool">Frogtool</h4>
-
-<p>Once you have your device’s encryption key (<code class="language-plaintext highlighter-rouge">movable.sed</code>), you can use it in conjunction with Frogtool, which uses your <code class="language-plaintext highlighter-rouge">movable.sed</code> file to inject and take advantage of JPN Flipnote Studio. <br />
+<p>Once you have your console’s encryption key (<code class="language-plaintext highlighter-rouge">movable.sed</code>), you can use it in conjunction with Frogtool, which uses your <code class="language-plaintext highlighter-rouge">movable.sed</code> file to inject and take advantage of JPN Flipnote Studio. <br />
 While this method is faster, it requires downloading a file with a torrent client. Do not follow this method if you’re unable to use a torrent client.</p>
 
-<p class="notice--warning">Continue to <a href="installing-boot9strap-(frogtool)">Installing boot9strap (Frogtool)</a></p>
+<p class="notice--primary">Continue to <a href="installing-boot9strap-(frogtool)">Installing boot9strap (Frogtool)</a></p>
 
         
       </section>

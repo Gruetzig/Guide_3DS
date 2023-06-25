@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/ko_KR/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/ko_KR/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/ko_KR/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/ko_KR/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/ko_KR/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/ko_KR/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/ko_KR/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/ko_KR/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/ko_KR/installing-boot9strap-(fredtool)'>boot9strap 설치 (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/ko_KR/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -511,16 +543,27 @@ window.cookieconsent.initialise({
 
 <ul>
   <li>최신 버전의 <a href="https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip">SafeB9SInstaller</a> (직접 다운로드)</li>
-  <li>최신 버전의 <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> (직접 다운로드)</li>
-  <li><a href="https://github.com/zoogie/unSAFE_MODE/releases/download/v1.3/usm.bin">usm.bin</a> (직접 다운로드)</li>
+  <li>최신 버전의 <a href="https://github.com/zoogie/unSAFE_MODE/releases/download/v1.3/RELEASE_v1.3.zip">unSAFE_MODE</a> (직접 다운로드)</li>
 </ul>
 
 <h4 id="섹션-i---준비-작업">섹션 I - 준비 작업</h4>
 
-<p>이 섹션에서는, Homebrew Launcher 메뉴에서 slotTool을 실행해, Wi-Fi 연결 슬롯을 수정된 데이터로 덮어씌웁니다. 그 다음, 기기의 SD 카드에 unSAFE_MODE 취약점을 실행하기 위한 파일을 복사하게 됩니다. 이 취약점을 실행함으로서, 기기의 Wi-Fi 연결 설정은 일시적으로 덮어씌워집니다.</p>
+<p>이 섹션에서는 콘솔의 SD 카드에 unSAFE_MODE 취약점을 실행하기 위한 파일을 복사하게 됩니다. 이 섹션에서는, Homebrew Launcher 메뉴에서 slotTool을 실행해, Wi-Fi 연결 슬롯을 수정된 데이터로 덮어씌웁니다. 이 취약점을 실행함으로서, 콘솔의 Wi-Fi 연결 설정은 일시적으로 덮어씌워집니다.</p>
 
 <ol>
-  <li>기기를 시작해 주세요</li>
+  <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
+  <li>SD 카드이 루트에 <code class="language-plaintext highlighter-rouge">boot9strap</code> 라는 이름으로 새 폴더를 생성해 주세요</li>
+  <li>SD 카드에 있는 <code class="language-plaintext highlighter-rouge">/boot9strap/</code> 폴더에 RELEASE <code class="language-plaintext highlighter-rouge">.zip</code> 파일 안에 압축되있는 <code class="language-plaintext highlighter-rouge">boot9strap.firm</code>과 <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code>을 복사해 주세요</li>
+  <li>SD 카드의 루트에 <code class="language-plaintext highlighter-rouge">3ds</code> 폴더가 없을 경우 폴더를 만들어 주세요
+    <ul>
+      <li>이 폴더에는 홈브류 에플리케이션과 데이터가 보관되어 있으며, 콘솔이 자동으로 생성하는 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더와 다른 폴더입니다</li>
+    </ul>
+  </li>
+  <li>RELEASE <code class="language-plaintext highlighter-rouge">.zip</code>안에 <code class="language-plaintext highlighter-rouge">slotTool</code>폴더에 있는 <code class="language-plaintext highlighter-rouge">slotTool.3dsx</code>를 SD 카드의 <code class="language-plaintext highlighter-rouge">/3ds/</code> 폴더에 복사해 주세요</li>
+  <li>RELEASE <code class="language-plaintext highlighter-rouge">.zip</code>안에 있는 <code class="language-plaintext highlighter-rouge">usm.bin</code>을 SD 카드의 루트에 복사해 주세요</li>
+  <li>SafeB9SInstaller <code class="language-plaintext highlighter-rouge">.zip</code>의 <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code>을 SD 카드의 루트로 복사해 주세요</li>
+  <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
+  <li>콘솔을 시작해 주세요</li>
   <li>아무 방법을 사용해 Homebrew Launcher를 실행해 주세요 (아마 인터넷 브라우저일 겁니다)</li>
   <li>홈브류 목록에서 slotTool를 실행해 주세요
     <ul>
@@ -532,12 +575,6 @@ window.cookieconsent.initialise({
       <li>화면에 텍스트가 표시되고, 그 다음 기기가 자동으료 종료될 겁니다</li>
     </ul>
   </li>
-  <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
-  <li>SD 카드이 루트에 <code class="language-plaintext highlighter-rouge">boot9strap</code> 라는 이름으로 새 폴더를 생성해 주세요</li>
-  <li>SD 카드에 있는 <code class="language-plaintext highlighter-rouge">/boot9strap/</code> 폴더에 boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> 파일 안에 압축되있는 <code class="language-plaintext highlighter-rouge">boot9strap.firm</code>과 <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code>을 복사해 주세요</li>
-  <li>SafeB9SInstaller <code class="language-plaintext highlighter-rouge">.zip</code>의 <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code>을 SD 카드의 루트로 복사해 주세요</li>
-  <li>‘usm.bin’ 파일을 SD 카드의 루트에 복사해 주세요</li>
-  <li>SD 카드를 기기에 다시 삽입해 주세요</li>
 </ol>
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/hblusm-root-layout.png" alt="" /></p>
@@ -546,12 +583,12 @@ window.cookieconsent.initialise({
 
 <h4 id="섹션-ii---unsafe_mode">섹션 II - unSAFE_MODE</h4>
 
-<p>이 섹션에서는 안전 모드(모든 3DS 장치에 포함된 기능)에 진입해 unSAFE_MODE가 실행되는 메뉴로 이동, boot9strap (커스텀 펌웨어) 설치 도구를 실행하게 됩니다.</p>
+<p>이 섹션에서는 안전 모드(모든 3DS 콘솔에 포함된 기능)에 진입해 unSAFE_MODE가 실행되는 메뉴로 이동, boot9strap (커스텀 펌웨어) 설치 도구를 실행하게 됩니다.</p>
 
 <ol>
   <li>전원이 꺼져 있는 상태에서 (L 어깨) + (R 어깨) + (십자 Up) + (A) 를 길게 눌르고, 누르는 상태에서 전원을 켜 주세요
     <ul>
-      <li>안전 모드로 부팅 될 때 까지 버튼들을 눌러 주세요 (“시스템 업데이트” 메뉴)</li>
+      <li>안전 모드로 부팅 될 때 까지 버튼들을 눌러 주세요 (“본체 업데이트” 메뉴)</li>
     </ul>
   </li>
   <li>“OK”를 선택해서 업데이트를 확인해 주세요
@@ -563,10 +600,10 @@ window.cookieconsent.initialise({
   <li>이 업데이트는 에러 코드 <code class="language-plaintext highlighter-rouge">003-1099</code> 와 같이 실패를 할 겁니다. 이것은 의도적 행동입니다</li>
   <li>“인터넷 접속 설정을 하시겠습니까?”라는 알림이 표시되면 “예”를 눌러주세요</li>
   <li>이 화면에서, <code class="language-plaintext highlighter-rouge">접속 경로 1</code> -&gt; <code class="language-plaintext highlighter-rouge">설정 변경</code> -&gt; <code class="language-plaintext highlighter-rouge">다음 페이지 (오른쪽 화살표)</code> -&gt; <code class="language-plaintext highlighter-rouge">Proxy 설정</code> -&gt; <code class="language-plaintext highlighter-rouge">세부 설정</code> 으로 이동해 주세요 (<a href="/images/screenshots/usm/safemode_highlighted.png">사진 (영어)</a>)</li>
-  <li>익스플로잇이 성공적이었다면 SafeB9SInstaller로 부팅되었을 것입니다
+  <li>취약점이 성공적이었다면 SafeB9SInstaller로 부팅되었을 것입니다
     <ul>
-      <li>만약 기기에 하얀 화면이 표시되면, 전원 버튼을 길게 눌러 기기를 종료하고, 이 섹션을 다시 시도해 주세요</li>
-      <li>만약 기기에 붉은 화면이 표시되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">usm.bin</code>이 존재하지 않습니다</li>
+      <li>만약 콘솔에 하얀 화면이 표시되면, 전원 버튼을 길게 눌러 콘솔을 종료하고, 이 섹션을 다시 시도해 주세요</li>
+      <li>만약 콘솔에 붉은 화면이 표시되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">usm.bin</code>이 존재하지 않습니다</li>
       <li>다른 오류가 발생하면 이 <a href="troubleshooting#installing-boot9strap-usm">문제 해결 가이드</a> 를 참고해 주세요</li>
     </ul>
   </li>
@@ -582,12 +619,12 @@ window.cookieconsent.initialise({
       <li>아래 화면의 단계가 붉은 텍스트로 표시되고 키 콤보 입력을 요구하지 않는다면, <a href="troubleshooting#issues-with-safeb9sinstaller">이 문제 해결 가이드</a>를 참고해 주세요</li>
     </ul>
   </li>
-  <li>작업이 완료되면, (A) 를 눌려 기기를 재부팅해 주세요</li>
-  <li>기기는 Luma3DS 구성 메뉴로 부팅되었을 겁니다
+  <li>작업이 완료되면, (A) 를 눌려 콘솔을 재부팅해 주세요</li>
+  <li>콘솔은 Luma3DS 구성 메뉴로 부팅되었을 겁니다
     <ul>
       <li>Luma3DS 구성 메뉴는 Luma3DS 커스텀 펌웨어의 설정들 입니다. 이 설정들은 디버깅 또는 맞춤화의 유용합니다</li>
       <li>일단 이 가이드에서는 <strong>모든 설정을 기본으로 남겨 두세요</strong> (켜기 또는 끄기를 누르지 마세요)</li>
-      <li>만약 기기가 부팅시에 꺼진다면 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 파일 안에 압축 되있는 <code class="language-plaintext highlighter-rouge">boot.firm</code>을 SD 카드의 루트로 복사 했는지 확인해 주세요</li>
+      <li>만약 콘솔이 부팅시에 꺼진다면 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 파일 안에 압축 되있는 <code class="language-plaintext highlighter-rouge">boot.firm</code>을 SD 카드의 루트로 복사 했는지 확인해 주세요</li>
     </ul>
   </li>
   <li>(Start)를 눌러 저장하고 기기를 다시 시작해 주세요</li>
@@ -621,7 +658,7 @@ window.cookieconsent.initialise({
   <li>성공하면 Homebrew Launcher가 실행될 것입니다</li>
   <li>홈브류 목록에서 slotTool를 실행해 주세요</li>
   <li>“RESTORE original wifi slots 1,2,3”를 선택해 주세요</li>
-  <li>기기가 재부팅될 겁니다</li>
+  <li>콘솔이 재부팅될 겁니다</li>
 </ol>
 
 <hr />

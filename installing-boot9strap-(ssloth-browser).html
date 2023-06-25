@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -508,7 +540,7 @@ window.cookieconsent.initialise({
 
 <p>SSLoth allows users on version 11.13.0 and below to bypass the browser version check, allowing the use of new-browserhax or old-browserhax (compatible with versions 11.4.0 through 11.13.0 in all regions), which can then be used in conjunction with universal-otherapp.</p>
 
-<p class="notice--warning">If you have updated your device to your current version using a cartridge, you will not be able to bypass the browser version check. If this is the case, stay on your current firmware and ask <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for help.</p>
+<p class="notice--warning">If you have updated your console to your current version using a cartridge, you will not be able to bypass the browser version check. If this is the case, stay on your current firmware and ask <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for help.</p>
 
 <h3 id="what-you-need">What You Need</h3>
 
@@ -524,7 +556,7 @@ window.cookieconsent.initialise({
 <p>In this section, you will copy the files needed to trigger both browserhax and universal-otherapp.</p>
 
 <ol>
-  <li>Power off your device</li>
+  <li>Power off your console</li>
   <li>Insert your SD card into your computer</li>
   <li>Copy <code class="language-plaintext highlighter-rouge">otherapp.bin</code> to the root of your SD card and rename it to <code class="language-plaintext highlighter-rouge">arm11code.bin</code>
     <ul>
@@ -536,8 +568,8 @@ window.cookieconsent.initialise({
   <li>Create a folder named <code class="language-plaintext highlighter-rouge">boot9strap</code> on the root of your SD card</li>
   <li>Copy <code class="language-plaintext highlighter-rouge">boot9strap.firm</code> and <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code> from the boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> to the <code class="language-plaintext highlighter-rouge">/boot9strap/</code> folder on your SD card</li>
   <li>Copy <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> from the SafeB9SInstaller <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
-  <li>Reinsert your SD card into your device</li>
-  <li>Power on your device</li>
+  <li>Reinsert your SD card into your console</li>
+  <li>Power on your console</li>
 </ol>
 
 <h4 id="section-ii---ssloth">Section II - SSLoth</h4>
@@ -590,7 +622,7 @@ window.cookieconsent.initialise({
 
 <h4 id="section-iv---installing-boot9strap">Section IV - Installing boot9strap</h4>
 
-<p>In this section, you will install custom firmware onto your device.</p>
+<p>In this section, you will install custom firmware onto your console.</p>
 
 <ol>
   <li>When prompted, input the key combo given on the top screen to install boot9strap
@@ -598,12 +630,12 @@ window.cookieconsent.initialise({
       <li>If a step on the lower screen has red-colored text, and you are not prompted to input a key combo, <a href="troubleshooting#issues-with-safeb9sinstaller">follow this troubleshooting guide</a></li>
     </ul>
   </li>
-  <li>Once it is complete, press (A) to reboot your device</li>
-  <li>Your device should have booted into the Luma3DS configuration menu
+  <li>Once it is complete, press (A) to reboot your console</li>
+  <li>Your console should have booted into the Luma3DS configuration menu
     <ul>
       <li>Luma3DS configuration menu are settings for the Luma3DS custom firmware. Many of these settings may be useful for customization or debugging</li>
       <li>For the purpose of this guide, <strong>leave these options on the default settings</strong> (do not check or uncheck anything)</li>
-      <li>If your device shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+      <li>If your console shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
     </ul>
   </li>
   <li>Press (Start) to save and reboot</li>
@@ -630,7 +662,7 @@ window.cookieconsent.initialise({
       <li>The test should succeed</li>
     </ul>
   </li>
-  <li>Power off your device</li>
+  <li>Power off your console</li>
 </ol>
 
 <hr />

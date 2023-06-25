@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/hu_HU/alternate-exploits'>Alternatív exploitok</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/hu_HU/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/hu_HU/seedminer-(alternate)'>Seedminer (Alternatív)</a></li>
           
         
           
@@ -346,11 +354,31 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/hu_HU/bannerbomb3-(legacy)'>BannerBomb3 (Legacy)</a></li>
+            <li style="display: none;" data-name="bannerbomb3-(legacy)"><a href='/hu_HU/bannerbomb3-(legacy)'>title: "BannerBomb3 (régi verziók)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/hu_HU/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/hu_HU/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/hu_HU/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/hu_HU/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
           
         
           
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/hu_HU/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
           
@@ -390,7 +418,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap (ntrboot) telepítése</a></li>
           
         
           
@@ -410,7 +438,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, Legacy)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/hu_HU/installing-boot9strap-(fredtool-inject)'>Installing-boot9strap-(fredtool-inject)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-legacy)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, régi verziók)</a></li>
           
         
           
@@ -520,7 +552,7 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>
-    <p>Tedd vissza az SD kártyád a készülékedbe</p>
+    <p>Tedd vissza az SD kártyád a konzoldba</p>
 
     <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/updateb9s-root-layout.png" alt="" /></p>
   </li>
@@ -529,7 +561,7 @@ window.cookieconsent.initialise({
 <h4 id="ii-rész---boot9strap-telepítése">II. rész - boot9strap telepítése</h4>
 
 <ol>
-  <li>Kapcsold be a készülékedet
+  <li>Kapcsold be a konzolod
     <ul>
       <li>Ennek automatikusan indítania a SafeB9SInstaller-t</li>
     </ul>
@@ -539,9 +571,9 @@ window.cookieconsent.initialise({
       <li>Ha egy lépés az alsó képernyőn piros színű szöveget eredményez, és nem kér a rendszer tőled egy gomb-kombinációt, akkor <a href="troubleshooting#issues-with-safeb9sinstaller">kövesd ezt a hibaelhárítási útmutatót</a></li>
     </ul>
   </li>
-  <li>Ha ez elkészült, kényszerítsd a készülékedet leállásra a bekapcsológomb lenyomva tartásával
+  <li>Ha ez elkészült, kényszerítsd a konzolod leállásra a bekapcsológomb lenyomva tartásával
     <ul>
-      <li>A készüléked csak addig fog a SafeB9SInstaller képernyőre bootolni, amíg a következő részt be nem fejezed</li>
+      <li>A konzolod csak addig fog a SafeB9SInstaller képernyőre bootolni, amíg a következő részt be nem fejezed</li>
     </ul>
   </li>
 </ol>
@@ -551,9 +583,9 @@ window.cookieconsent.initialise({
 <ol>
   <li>Helyezd az SD kártyád a számítógépbe</li>
   <li>Másold át a <code class="language-plaintext highlighter-rouge">boot.firm</code> és <code class="language-plaintext highlighter-rouge">boot.3dsx</code> fájlt a Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code>-ből az SD kártyád gyökerébe, és cseréld le a már meglévő fájlt</li>
-  <li>Tedd vissza az SD kártyád a készülékedbe</li>
-  <li>Kapcsold be a készülékedet</li>
-  <li>Ha az eszközöd a Luma3DS konfigurációs menübe bootolt, nyomj (Start) gombot a mentéshez és az újraindításhoz
+  <li>Tedd vissza az SD kártyád a konzoldba</li>
+  <li>Kapcsold be a konzolod</li>
+  <li>Ha a konzolod a Luma3DS konfigurációs menübe bootolt, nyomj (Start) gombot a mentéshez és az újraindításhoz
     <ul>
       <li>A Luma3DS konfigurációs menü a beállítások a Luma3DS egyedi firmverhez. Sok ezek közül a beállítások közül hasznos az egyedivé tételhez vagy a debuggoláshoz</li>
       <li>Az útmutató céljának megfeleléshez ezen beállítások alapértelmezett állapoton lesznek hagyva</li>

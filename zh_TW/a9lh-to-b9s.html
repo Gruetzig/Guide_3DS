@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/zh_TW/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/zh_TW/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/zh_TW/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/zh_TW/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/zh_TW/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/zh_TW/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/zh_TW/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/zh_TW/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_TW/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/zh_TW/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/zh_TW/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -491,7 +523,7 @@ window.cookieconsent.initialise({
 
 <h3 id="必讀事項">必讀事項</h3>
 
-<p>本頁面適用於想更新至 boot9strap 且已安裝 arm9loaderhax 的使用者使用。</p>
+<p>This page is for existing arm9loaderhax users to update their consoles to boot9strap.</p>
 
 <p>未來所有的 Luma3DS 版本都將以 <code class="language-plaintext highlighter-rouge">.firm</code> 形式推出，且此格式僅相容於 boot9strap 以及 sighax。 也就是說，如果您想要繼續使用最新版的 Luma3DS，您應透過本章節來更新您的主機。</p>
 
@@ -510,17 +542,17 @@ window.cookieconsent.initialise({
   <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> file)</li>
   <li>The v7.0.5 release of <a href="https://github.com/LumaTeam/Luma3DS/releases/download/v7.0.5/Luma3DSv7.0.5.7z">Luma3DS</a> (direct download)</li>
   <li>The latest release of <a href="https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip">SafeB9SInstaller</a> (direct download)</li>
-  <li>The latest release of <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> (direct download)
-    <h3 id="操作說明">操作說明</h3>
-  </li>
+  <li>The latest release of <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> (direct download)</li>
 </ul>
+
+<h3 id="操作說明">操作說明</h3>
 
 <h4 id="第一節--準備工作">第一節 — 準備工作</h4>
 
 <p class="notice--info">在本節中，請覆蓋所有 SD 卡中可能相衝的檔案。</p>
 
 <ol>
-  <li>關閉您的主機</li>
+  <li>Power off your console</li>
   <li>將 SD 卡插入至電腦中</li>
   <li>解壓最新版 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 內的 <code class="language-plaintext highlighter-rouge">boot.firm</code> 及 <code class="language-plaintext highlighter-rouge">boot.3dsx</code> 到 SD 卡的根目錄底下
     <ul>
@@ -541,13 +573,13 @@ window.cookieconsent.initialise({
 
     <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/a9lh-to-b9s-root-layout.png" alt="" /></p>
   </li>
-  <li>將 SD 卡插回主機中</li>
+  <li>Reinsert your SD card into your console</li>
 </ol>
 
 <h4 id="第二節--安裝-boot9strap">第二節 — 安裝 boot9strap</h4>
 
 <ol>
-  <li>開機時，按住『Start』鍵啟動 SafeB9SInstaller
+  <li>Boot your console while holding (Start) to launch SafeB9SInstaller
     <ul>
       <li>若您看到的選單為 Luma 設定選單而非 SafeB9SInstaller，請按下『Start』鍵並將您的主機關機並再試一次</li>
       <li>如果您在此步驟遇到了錯誤訊息，請試試看使用新的 SD 卡或將它格式化 (請先自行備份檔案)</li>
@@ -563,12 +595,12 @@ window.cookieconsent.initialise({
       <li>If a step on the lower screen has red-colored text, and you are not prompted to input a key combo, <a href="troubleshooting#issues-with-safeb9sinstaller">follow this troubleshooting guide</a></li>
     </ul>
   </li>
-  <li>Once it is complete, press (A) to reboot your device</li>
-  <li>您的主機將會重啟至 Luma3DS 設定選單中
+  <li>Once it is complete, press (A) to reboot your console</li>
+  <li>Your console should have rebooted into the Luma3DS configuration menu
     <ul>
       <li>Luma3DS configuration menu are settings for the Luma3DS custom firmware. Many of these settings may be useful for customization or debugging</li>
       <li>For the purpose of this guide, these settings will be left on default settings</li>
-      <li>If you get a black screen, <a href="troubleshooting#boot-issues-on-devices-with-custom-firmware">follow this troubleshooting guide</a></li>
+      <li>If you get a black screen, <a href="troubleshooting#boot-issues-on-consoles-with-custom-firmware">follow this troubleshooting guide</a></li>
     </ul>
   </li>
   <li>按『Start』鍵以存檔並重新啟動系統</li>

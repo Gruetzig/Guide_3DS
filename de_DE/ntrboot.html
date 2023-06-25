@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/de_DE/alternate-exploits'>Alternate Exploits</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/de_DE/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/de_DE/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/de_DE/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/de_DE/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/de_DE/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/de_DE/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/de_DE/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/de_DE/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/de_DE/installing-boot9strap-(fredtool)'>Installing boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/de_DE/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -495,7 +527,7 @@ window.cookieconsent.initialise({
 
 <p>Um boot9strap mit ntrboot zu installieren benötigst du eine kompatible DS / DSi Flashkarte, worauf du ntrboot installieren kannst. Beachte dass manche Flashcarts schon mit ntrboot geliefert werden.</p>
 
-<p>While the ntrboot exploit works independently of the system version, the ntrboot flasher (which installs the exploit to the cart) is not. Das heißt, abhängig von der Version und dem Gerät, welches von der Flashkarte unterstützt wird, werden nur bestimmte Methoden für dich verfügbar sein.</p>
+<p>While the ntrboot exploit works independently of the system version, the ntrboot flasher (which installs the exploit to the cart) is not. This means that, depending on the versions and consoles supported by your flashcart, only certain methods may be available to you.</p>
 
 <p>Karten mit ‘Time Bomb’ sind nicht länger in der Lage ‘.nds’ Dateien zu starten, wenn sie erkennen das die System Uhr ein Datum überschritten hat, welches von der Flashkartenfirmware bestimmt wurde. Eine Methode das zu umgehen ist, die System Uhr auf ein früheres Datum zu setzen.</p>
 
@@ -644,13 +676,13 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/ntrboot-flashcarts.png" alt="" /></p>
 
-<p>Stelle sicher dass deine Flashkarte in der Lage ist ‘.nds’ Dateien zu starten bevor du beginnst. Einige Flashcarts erfordern dass eine Firmware oder ‘‘kernel’’ Dateien vorher auf die SD der Flashcart kopiert werden. Siehe deine spezielle Flashkarten-Betriebsanleitung ein, um mehr Informationen diesbezüglich zu erhalten.</p>
+<p>Ensure your flashcart is able to launch <code class="language-plaintext highlighter-rouge">.nds</code> files on your console before beginning. Einige Flashcarts erfordern dass eine Firmware oder ‘‘kernel’’ Dateien vorher auf die SD der Flashcart kopiert werden. Siehe deine spezielle Flashkarten-Betriebsanleitung ein, um mehr Informationen diesbezüglich zu erhalten.</p>
 
 <p>Beachte jedoch, dass einige Methoden zusätzliche Kompatibilitätsinformationen enthalten.</p>
 
-<p>The usage of this exploit, regardless of the flashing method, requires access to a small magnet if the target device is of a folding style (any 3DS family system that is not the old 2DS with a sleep switch). Das ist nötig, weil der Exploit erfordert, dass dein Gerät in den Schlafmodus geht, ohne den Zugang zu den Tasten zu verlieren.</p>
+<p>The usage of this exploit, regardless of the flashing method, requires access to a small magnet if the target console is of a folding style (any 3DS family system that is not the old 2DS with a sleep switch). This is because the exploit requires your console to enter sleep mode while still having access to the buttons.</p>
 
-<p class="notice--info">Um zu testen ob ein Magnet funktionieren wird, halte es auf oder in die Nähe der (A)(B)(X)(Y)-Tasten während die Konsole eingeschaltet ist, um zu sehen ob der Schlafmodus ausgelöst wird. Wenn dies der Fall ist, werden beide Bildschirme solange schwarz bleiben wie der Magnet an der Stelle gehalten wird.</p>
+<p class="notice--info">To test if a magnet will work, hold it on or around the (A)(B)(X)(Y) buttons while the console is powered on to see if it triggers sleep mode. Wenn dies der Fall ist, werden beide Bildschirme solange schwarz bleiben wie der Magnet an der Stelle gehalten wird.</p>
 
 <p>Beachte dass die Flashkarte nicht in der Lage ist, ihre Standardfunktionen auszuführen, solange der ntrboot exploit installiert ist (Ausnahme ist die Acekard 2i, welche weiterhin funktioniert <em>auf NDS und 3DS Custom Firmware Systemen</em>). This means that, for most flashcarts, it will not even display on the HOME Menu. Am Ende der ntrboot flashen Anleitung findest du optional weitere Schritte, welche dir erklären, wie du ntrboot wieder von deiner Flashkarte entfernen und diese wieder wie gewohnt nutzen kannst.</p>
 
@@ -671,7 +703,7 @@ window.cookieconsent.initialise({
 
 <h4 id="ntrboot-flashen-mehrere-3ds-systeme">ntrboot flashen (Mehrere 3DS-Systeme)</h4>
 
-<p>Diese Methode erfordert einen temporären Zugriff auf ein zweites System der 3DS-Familie, das boot9strap schon hat. Dies erfordert nicht, dass deine Flashcart die 3DS-Version unterstützt.</p>
+<p>This method requires temporary access to a second 3DS family console that is already running boot9strap. Dies erfordert nicht, dass deine Flashcart die 3DS-Version unterstützt.</p>
 
 <p class="notice--primary">Fortfahren mit <a href="flashing-ntrboot-(3ds-multi-system)">ntrboot flashen (Mehrere 3DS-Systeme)</a></p>
 

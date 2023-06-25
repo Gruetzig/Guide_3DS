@@ -330,7 +330,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="alternate-exploits"><a href='/it_IT/alternate-exploits'>Exploit Alternativi</a></li>
+          
+        
+          
             <li style="display: none;" data-name="seedminer"><a href='/it_IT/seedminer'>Seedminer</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/it_IT/seedminer-(alternate)'>Seedminer (Alternativo)</a></li>
           
         
           
@@ -350,7 +358,27 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="homebrew-launcher-(ninjhax2-dx)"><a href='/it_IT/homebrew-launcher-(ninjhax2-dx)'>Homebrew Launcher (ninjhax2-dx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(pichaxx)"><a href='/it_IT/homebrew-launcher-(pichaxx)'>Homebrew Launcher (PicHaxx)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(smilehax-iie)"><a href='/it_IT/homebrew-launcher-(smilehax-iie)'>Homebrew Launcher (smilehax-IIe)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="homebrew-launcher-(steelhax)"><a href='/it_IT/homebrew-launcher-(steelhax)'>Homebrew Launcher (Steelhax)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="homebrew-launcher-(super-skaterhax)"><a href='/it_IT/homebrew-launcher-(super-skaterhax)'>Homebrew Launcher (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/it_IT/dumping-eshop-dsiware'>Dump di DsiWare eShop</a></li>
           
         
           
@@ -407,6 +435,10 @@ window.cookieconsent.initialise({
         
           
             <li style="display: none;" data-name="installing-boot9strap-(fredtool)"><a href='/it_IT/installing-boot9strap-(fredtool)'>Installazione di boot9strap (Fredtool)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/it_IT/installing-boot9strap-(fredtool-inject)'>Installazione di boot9strap (Fredtool-Inject)</a></li>
           
         
           
@@ -517,19 +549,19 @@ window.cookieconsent.initialise({
 <p>Come precauzione aggiuntiva, controlleremo anche la presenza di un custom firmware. È necessario poiché se un custom firmware fosse già installato, questo metodo rischierebbe di brickare la console (rendendola inutilizzabile in assenza di metodi di ripristino come <a href="ntrboot">ntrboot</a>).</p>
 
 <ol>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
   <li>Premi il pulsante (Select)</li>
   <li>Accendi la tua console continuando a tenere premuto il pulsante (Select)</li>
   <li>Se il controllo è andato a buon fine, verrà avviato il menu HOME e potrai procedere con questa guida</li>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
 </ol>
 
-<p class="notice--danger">Se visualizzi un menu di configurazione o la console si spegne immediatamente, hai già un CFW e continuando con queste istruzioni potresti BRICKARE la tua console! Procedi con la <a href="checking-for-cfw">Verifica del CFW</a> per aggiornare il tuo CFW esistente.</p>
+<p class="notice--danger">Se vedi un menu di configurazione o la console si spegne, hai già il CFW, e proseguire seguendo queste istruzioni può BRICKARE la console! Procedi con la <a href="checking-for-cfw">Verifica del CFW</a> per aggiornare il tuo CFW esistente.</p>
 
 <h4 id="sezione-ii---preparazione">Sezione II - Preparazione</h4>
 
 <ol>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
   <li>Inserisci la scheda SD nel tuo computer</li>
   <li>Copia i file <code class="language-plaintext highlighter-rouge">boot.firm</code> e <code class="language-plaintext highlighter-rouge">boot.3dsx</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD
     <ul>
@@ -563,8 +595,9 @@ window.cookieconsent.initialise({
   <li>Clicca il link “output_(name).zip”</li>
   <li>Nella tua scheda SD, entra in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code>
     <ul>
-      <li>Questo <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> sarà lo stesso che hai utilizzato in <a href="seedminer">Seedminer</a></li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> è il nome a 32 lettere della cartella che hai copiato in <a href="seedminer">Seedminer</a></li>
       <li><code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> è una cartella dal nome lungo 32 caratteri all’interno di <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code></li>
+      <li>Se hai più cartelle <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code>, segui <a href="troubleshooting#bannerbomb3">queste istruzioni</a></li>
     </ul>
   </li>
   <li>Crea una cartella chiamata <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> all’interno di <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code>
@@ -575,18 +608,18 @@ window.cookieconsent.initialise({
   <li>Apri il file <code class="language-plaintext highlighter-rouge">.zip</code> output_(nome) e naviga su <code class="language-plaintext highlighter-rouge">China_Taiwan</code> -&gt; <code class="language-plaintext highlighter-rouge">output_setup</code></li>
   <li>Copia tutti i sei file <code class="language-plaintext highlighter-rouge">.bin</code> nella cartella <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
   <li>Reinserisci la scheda SD nella tua console</li>
-  <li>Accendi la console</li>
-  <li>Avvia “Impostazioni della console”</li>
+  <li>Accendi la tua console</li>
+  <li>Avvia le Impostazioni di sistema sulla tua console</li>
   <li>Entra in <code class="language-plaintext highlighter-rouge">Gestione dati</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">Scheda SD</code> -&gt; (pagina 2)</li>
   <li>Prendi nota del numero sul titolo DSiWare nella seconda pagina (sarà un numero compreso tra 1 e 6)</li>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
   <li>Inserisci la scheda SD nel tuo computer</li>
   <li>Nella tua scheda SD, entra in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
   <li>Apri il file <code class="language-plaintext highlighter-rouge">.zip</code> output_(nome) e naviga su <code class="language-plaintext highlighter-rouge">China_Taiwan</code> -&gt; <code class="language-plaintext highlighter-rouge">output_hax</code></li>
   <li>Copia il file <code class="language-plaintext highlighter-rouge">.bin</code> con lo stesso numero di quello nella seconda pagina del menu “Gestione Nintendo DSiWare” nella cartella <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code>, e sovrascrivi quando richiesto</li>
-  <li>Accendi la console</li>
-  <li>Avvia “Impostazioni della console”</li>
-  <li>Entra in <code class="language-plaintext highlighter-rouge">Gestione Dati</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">Scheda SD</code></li>
+  <li>Accendi la tua console</li>
+  <li>Avvia le Impostazioni di sistema sulla tua console</li>
+  <li>Entra in <code class="language-plaintext highlighter-rouge">Gestione dati</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">Scheda SD</code> (<a href="/images/screenshots/bb3/dsiware-management.png">image</a>)</li>
   <li>Attendi
     <ul>
       <li>Dovrebbero succedere in ordine le seguenti cose: Una barra di caricamento, un breve blocco, lo schermo inferiore viola, l’arresto della musica, infine la console mostrerà un errore e si riavvierà</li>
@@ -625,13 +658,13 @@ window.cookieconsent.initialise({
   <li>Nella tua scheda SD, entra in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
   <li>Copia il file <code class="language-plaintext highlighter-rouge">484E4441.bin</code> dalla cartella <code class="language-plaintext highlighter-rouge">hax</code> dall’archivio DSiWare appena scaricato (<code class="language-plaintext highlighter-rouge">output_(name).zip</code>) nella cartella <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
   <li>Reinserisci la scheda SD nella tua console</li>
-  <li>Accendi la console</li>
-  <li>Avvia “Impostazioni della console”</li>
+  <li>Accendi la tua console</li>
+  <li>Avvia le Impostazioni di sistema sulla tua console</li>
   <li>Entra in <code class="language-plaintext highlighter-rouge">Gestione dati</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code></li>
   <li>Nella sezione “Scheda SD”, scegli il titolo “Haxxxxxxxxx!”</li>
   <li>Seleziona “Copia”, quindi “OK”</li>
   <li>Esci da Impostazioni della console</li>
-  <li>Avvia Download Play sulla tua console (l’icona arancione con un 3DS)</li>
+  <li>Avvia “Modalità download” sulla tua console (l’icona arancione con un 3DS)</li>
   <li>Seleziona “Nintendo DS”</li>
   <li>Se l’exploit ha avuto successo, la tua console avrà caricato la versione JPN di Flipnote Studio</li>
 </ol>
@@ -657,18 +690,18 @@ window.cookieconsent.initialise({
   <li>Seleziona il terzo riquadro con la lettera “A” all’interno</li>
   <li>Scorri a sinistra fino a visualizzare la bobina “1/3”</li>
   <li>Seleziona il quarto riquadro con la lettera “A” all’interno</li>
-  <li>Se l’exploit ha avuto successo, la tua console avrà caricato b9sTool</li>
+  <li>Se l’exploit ha funzionato, la tua console avvierà b9sTool</li>
   <li>Usando il D-Pad, vai su “Install boot9strap”
     <ul>
       <li>Se salti questo passaggio, la console si riavvierà nel menu HOME senza aver installato boot9strap, e sarà necessario riaprire l’applicazione Modalità download DS e ricominciare dall’inizio di questa sezione</li>
     </ul>
   </li>
   <li>Premi (A), quindi premi START e SELECT contemporaneamente per avviare il processo</li>
-  <li>Al termine lo schermo inferiore presenterà la scritta “done.”. Esci da b9sTool, quindi spegni la console
+  <li>Una volta finito e nello schermo inferiore c’è scritto “done.”, esci da b9sTool e spegni la console
     <ul>
       <li>Potresti dover forzare lo spegnimento tenendo premuto il pulsante di accensione</li>
-      <li>Se la console dovesse spegnersi quando provi ad accenderla, assicurati di aver copiato il file <code class="language-plaintext highlighter-rouge">boot.firm</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
-      <li>Se vedi la schermata di Configurazione Luma, spegni la tua console e procedi alla sezione successiva</li>
+      <li>Se la tua console si spegne quando cerchi di accenderla, assicurati di aver copiato il file <code class="language-plaintext highlighter-rouge">boot.firm</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
+      <li>Se vedi la schermata di Luma, spegni la console e prosegui alla prossima sezione</li>
     </ul>
   </li>
 </ol>
@@ -676,11 +709,12 @@ window.cookieconsent.initialise({
 <h4 id="sezione-vi---configurazione-di-luma3ds">Sezione VI - Configurazione di Luma3DS</h4>
 
 <ol>
-  <li>Premi (Select) e accendi la console continuando a tenerlo premuto. Verrà avviata la configurazione di Luma3DS
+  <li>Premi (Select) e accendi la tua console continuando a tenerlo premuto</li>
+  <li>La tua console dovrebbe aver avviato il menu di configurazione di Luma3DS
     <ul>
       <li>Il menu di configurazione di Luma3DS contiene le impostazioni per il custom firmware Luma3DS. Molte di queste impostazioni possono essere utili per la personalizzazione o per debug</li>
-      <li>Ai fini di questa guida, queste impostazioni rimarranno sui valori predefiniti</li>
-      <li>Se viene avviato il menu HOME <a href="https://github.com/zoogie/b9sTool/blob/master/TROUBLESHOOTING.md">segui questa guida per risolvere il problema</a></li>
+      <li>Ai fini di questa guida, <strong>lascia queste opzioni nelle impostazioni predefinite</strong> (non spuntare o deselezionare nulla)</li>
+      <li>Se la tua console si spegne quando cerchi di accenderla, assicurati di aver copiato il file <code class="language-plaintext highlighter-rouge">boot.firm</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS nella directory principale della tua scheda SD</li>
     </ul>
   </li>
   <li>Premi (Start) per salvare e riavviare il 3DS</li>
@@ -692,13 +726,13 @@ window.cookieconsent.initialise({
   <li>Nella tua scheda SD, entra in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>
   <li>Copia il file <code class="language-plaintext highlighter-rouge">484E4441.bin</code> dalla cartella <code class="language-plaintext highlighter-rouge">clean</code> dall’archivio DSiWare appena scaricato (<code class="language-plaintext highlighter-rouge">output_(name).zip) nella cartella </code>Nintendo DSiWare`</li>
   <li>Reinserisci la scheda SD nella tua console</li>
-  <li>Accendi la console</li>
-  <li>Avvia “Impostazioni della console”</li>
+  <li>Accendi la tua console</li>
+  <li>Avvia le Impostazioni di sistema sulla tua console</li>
   <li>Entra in <code class="language-plaintext highlighter-rouge">Gestione dati</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code></li>
   <li>Nella sezione “Scheda SD”, scegli il titolo “Haxxxxxxxxx!”</li>
   <li>Seleziona “Copia”, quindi “OK”</li>
   <li>Esci da Impostazioni della console</li>
-  <li>Spegni il tuo 3DS</li>
+  <li>Spegni la tua console</li>
 </ol>
 
 <hr />
