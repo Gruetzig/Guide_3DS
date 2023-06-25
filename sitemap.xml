@@ -1273,9 +1273,6 @@
 <loc>https://3ds.hacks.guide/pt_BR/installing-boot9strap-(fredtool-legacy).html</loc>
 </url>
 <url>
-<loc>https://3ds.hacks.guide/installing-boot9strap-(fredtool-legacy).html</loc>
-</url>
-<url>
 <loc>https://3ds.hacks.guide/es_ES/installing-boot9strap-(fredtool-legacy).html</loc>
 </url>
 <url>
@@ -1418,6 +1415,9 @@
 </url>
 <url>
 <loc>https://3ds.hacks.guide/hu_HU/installing-boot9strap-(kartdlphax).html</loc>
+</url>
+<url>
+<loc>https://3ds.hacks.guide/installing-boot9strap-(menuhax-uloader).html</loc>
 </url>
 <url>
 <loc>https://3ds.hacks.guide/fr_FR/installing-boot9strap-(ntrboot).html</loc>
