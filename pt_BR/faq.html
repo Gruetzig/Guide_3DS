@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(fredtool-legacy)'>Instalando boot9strap (Fredtool, Legado)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(menuhax)'>Instalando boot9strap (menuhax)</a></li>
           
         
           
@@ -520,10 +520,10 @@ window.cookieconsent.initialise({
 <p><strong>Firmware 11.17.0 para o 3DS foi lançado recentemente</strong>. Veja aqui o que você deve saber:</p>
 
 <ul>
-  <li>If your console is running <em>Luma 10.2.1 or higher</em>, it is <em>100% safe</em> to update. You can check your Luma version by holding (Select) while booting your console.</li>
-  <li>If your console is on an older Luma version, you should <a href="checking-for-cfw">update Luma</a> before you update your console to 11.17.0.</li>
-  <li>If your console does not yet have custom firmware, <strong>do NOT update to the latest version</strong> unless this guide instructs you to.</li>
-  <li>If your unmodified console is ALREADY on 11.17.0, this guide has been updated accordingly. Specifically, New3DS-family consoles have a <a href="homebrew-launcher-(super-skaterhax)">free software method</a>, while Old3DS-family consoles will need to use <a href="alternate-exploits">alternate exploits</a> that rely on external hardware or software.</li>
+  <li>Se o seu console estiver executando <em>Luma 10.2.1 ou superior</em>, a atualização é <em>100% segura</em>. Você pode verificar a sua versão do Luma segurando (Select) enquanto inicializa o seu console.</li>
+  <li>Se o seu console estiver em uma versão do Luma mais antiga, você deve <a href="checking-for-cfw">atualizar o Luma</a> antes de atualizar o seu console para 11.17.0.</li>
+  <li>Se o seu console ainda não tem custom firmware, <strong>NÃO atualize para a versão mais recente</strong> a menos que este guia o instrua.</li>
+  <li>Se o seu console não modificado JÁ ESTIVER na versão 11.17.0, este guia foi atualizado em conformidade. Especificamente, os consoles New3DS-family têm um <a href="homebrew-launcher-(super-skaterhax)">método de software livre</a>, enquanto os consoles Old3DS-family precisarão usar <a href="alternate-exploits">exploits alternativos</a> que dependem de hardware ou software externo.</li>
 </ul>
 
 </div>
@@ -533,22 +533,22 @@ window.cookieconsent.initialise({
 <h2 id="faq-pré-instalação">FAQ Pré-Instalação</h2>
 
 <details>
-<summary><u>Estou na versão mais recente do sistema. Is my console hackable without any external hardware/prerequisites?</u></summary>
+<summary><u>Estou na versão mais recente do sistema. É possível que meu console seja invadido sem o uso de qualquer hardware externo ou pré-requisito?</u></summary>
 
-<p>Depende do seu modelo de console. Neste momento, New 3DS / New 3DS XL / New 2DS XL podem ser modificados na versão 11.17.0 sem pré-requisitos (por exemplo, aplicativos da eShop, itens físicos), enquanto 3DS / 3DS XL / 2DS não podem.</p>
+<p>Depende do seu modelo de console. No momento, New 3DS / New 3DS XL / New 2DS XL são <a href="homebrew-launcher-(super-skaterhax)">capazes de serem modificados na 11.17.0</a> sem nenhum pré-requisito (ex. aplicativos da eShop, itens físicos), enquanto 3DS / 3DS XL / 2DS requerem <a href="alternate-exploits">software adicional ou hardware</a>.</p>
 
 </details>
 
 <details>
-<summary><u>What consoles is this guide compatible with?</u></summary>
+<summary><u>Com que consoles este guia é compatível?</u></summary>
 
-<p>The instructions are the same for all retail 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, and New 2DS XL consoles. Se a versão do seu sistema for exibida como “0.0.0-0”, então você talvez tenha um dispositivo de desenvolvedor.</p>
+<p>Este guia é compatível com todos os dispositivos de varejo da família 3DS (3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, New 2DS XL). Se a versão de sistema é exibida como “0.0.0-0”, então você pode ter uma unidade de desenvolvedor.</p>
 </details>
 
 <details>
-<summary><u>O quão arriscado é hackear o meu console?</u></summary>
+<summary><u>O quão arriscado é aplicar hacks em meu console?</u></summary>
 
-<p>Bricks are now effectively impossible unless you are purposely trying to brick your console.</p>
+<p>Bricks agora são efetivamente impossíveis a menos que você esteja tentando causar um brick em seu console de propósito.</p>
 </details>
 
 <details>
@@ -560,25 +560,27 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Posso usar isso para jogar jogos de outras regiões?</u></summary>
 
-<p>Sim; Luma3DS irá ignorar automaticamente a verificação de região de cartuchos e aplicativos instalados. Some games may need to make use of Luma’s <a href="https://github.com/LumaTeam/Luma3DS/wiki/Optional-features">locale emulation feature</a> in order to work properly on out-of-region consoles.</p>
+<p>Sim; Luma3DS irá ignorar automaticamente a verificação de região de cartuchos e aplicativos instalados. Alguns jogos podem precisar usar o <a href="https://wiki.hacks.guide/wiki/3DS:Setting_game_locales">recurso de locale emulation do Luma</a> para funcionar corretamente em consoles fora da região.</p>
 </details>
 
 <details>
 <summary><u>Vou perder quaisquer recursos se eu instalar CFW?</u></summary>
 
-<p>Não. Consoles with custom firmware can still play online and run physical cartridges as any other 3DS can.</p>
+<p>Não. Consoles com custom firmware ainda podem jogar online e rodar cartuchos físicos como qualquer outro 3DS pode.</p>
 </details>
 
 <details>
 <summary><u>Posso manter meu NNID?</u></summary>
 
-<p>Seu NNID (se você tiver um) não será afetado por este guia. Consoles with a region of KOR, CHN, or TWN do not have NNID functionality to begin with and are thus unaffected.</p>
+<p>Seu NNID (se você tiver um) não será afetado por este guia. Consoles com uma região de KOR, CHN ou TWN não têm funcionalidade de NNID em primeiro lugar e portanto não são afetados.</p>
 </details>
 
 <details>
 <summary><u>Meu 3DS será banido por ter CFW?</u></summary>
 
-<p>Houve uma onda de banimento em maio de 2017 que baniu usuários de CFW em jogos online (acesso à eShop, NNIDs e Contas da Nintendo não foram afetadas), aparentemente aleatoriamente. Desde então, não houve uma onda de banimento de tal nível. Sendo assim, não sabemos o que a Nintendo pode fazer no futuro. Por enquanto, não achamos que banimentos sejam algo com o qual você precisa se preocupar.</p>
+<p>Houve uma onda de banimento em maio de 2017 que baniu usuários de CFW em jogos online (acesso à eShop, NNIDs e Contas da Nintendo não foram afetadas), aparentemente aleatoriamente. Desde então, não houve uma onda de banimento de tal nível. Sendo assim, não sabemos o que a Nintendo pode fazer no futuro.</p>
+
+<p>Por enquanto, não achamos que banimentos sejam algo com o qual você precisa se preocupar.</p>
 </details>
 
 <details>
@@ -596,7 +598,9 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Ouvi falar sobre essa coisa que tenho que pagar para obter (Gateway, Sky3DS, ntrboot, R4, etc). Isso é algo que eu preciso?</u></summary>
 
-<p>Não. O custom firmware pode ser instalado gratuitamente no firmware mais recente sem qualquer dispositivo de hardware. De fato, os flashcarts de 3DS-mode como Gateway e Sky3DS não são recomendados porque eles estão obsoletos e podem carregar o risco de banimento ou brick.</p>
+<p>No momento, os consoles 3DS / 3DS XL / 2DS na 11.17.0 precisam usar um dos muitos <a href="alternate-exploits">exploits alternativos</a> para instalar custom firmware. Se nenhum dos outros pré-requisitos estiver disponível, ntrboot será a opção mais barata disponível (cerca de 20 dólares).</p>
+
+<p>Os flashcarts com 3DS-mode como Gateway e Sky3DS não são recomendados porque eles estão obsoletos e podem carregar o risco de banimento ou brick.</p>
 </details>
 
 <details>
@@ -613,7 +617,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>É seguro atualizar meu 3DS para a versão mais recente com CFW?</u></summary>
 
-<p>Se você estiver usando o Luma3DS, o seu custom firmware loader (boot9strap) <em>nunca</em> será removido ao executar uma atualização de sistema. There have been updates in the past that have resulted in Luma3DS crashing on boot, so it is a good idea to wait a couple of hours to ensure that the latest update will not temporarily render the console unusable until Luma3DS is updated. As atualizações do sistema podem ser executadas da mesma forma que em um 3DS não modificado: através da Configuração do console, Modo de Segurança, ou o aviso de atualização quando a atualização for automaticamente baixada.</p>
+<p>Se você estiver usando o Luma3DS, o seu custom firmware loader (boot9strap) <em>nunca</em> será removido ao executar uma atualização de sistema. Houve atualizações no passado que resultaram um crash do Luma3DS na inicialização, então é uma boa ideia esperar algumas horas para garantir que a atualização mais recente não tornará o console inutilizável temporariamente até que o Luma3DS seja atualizado. As atualizações do sistema podem ser executadas da mesma forma que em um 3DS não modificado: através da Configuração do console, Modo de Segurança, ou o aviso de atualização quando a atualização for automaticamente baixada.</p>
 </details>
 
 <details>
@@ -631,7 +635,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Como eu altero o idioma do sistema de um 3DS japonês?</u></summary>
 
-<p>A única maneira de alterar a linguagem do sistema de um 3DS japonês para um idioma diferente do japonês é realizar uma <a href="region-changing">mudança de região</a>. Note that this is very likely to break the Nintendo eShop on your console, which means you will be unable to update your games whether they are in-region or out-of-region.</p>
+<p>A única maneira de alterar a linguagem do sistema de um 3DS japonês para um idioma diferente do japonês é realizar uma <a href="region-changing">mudança de região</a>. Observe que é bem provável que isso quebre a Nintendo eShop no seu console, o que significa que você não poderá atualizar seus jogos, quer eles estejam na região ou fora da região.</p>
 
 </details>
 
@@ -652,19 +656,19 @@ window.cookieconsent.initialise({
 
 <p>Você pode continuar baixando atualizações de jogos da Nintendo eShop, mesmo que agora tenha desligado.</p>
 
-<p>Se o jogo não for da mesma região do console, você precisará <a href="dumping-titles-and-game-cartridges">fazer um dump das atualizações</a> de um 3DS que tenha as atualizações instaladas. A Nintendo eShop só contém atualizações para a região do console (um 3DS japonês só terá atualizações para jogos japoneses).</p>
+<p>Se o jogo não for da mesma região do console, você precisará <a href="dumping-titles-and-game-cartridges">fazer um dump das atualizações</a> de um 3DS que tenha as atualizações instaladas. A Nintendo eShop só contém atualizações para a região do console (por exemplo, um 3DS japonês só terá atualizações para jogos japoneses).</p>
 </details>
 
 <details>
 <summary><u>Socorro! Algo ruim aconteceu e meu 3DS não inicializa no Menu HOME...</u></summary>
 
-<p>Please look at the <a href="troubleshooting#boot-issues-on-consoles-with-custom-firmware">troubleshooting guide</a>. <strong>Uninstalling CFW when your console is in an unbootable state is not recommended, as it is very likely to lead to a brick</strong>.</p>
+<p>Por favor, veja o <a href="troubleshooting#boot-issues-on-consoles-with-custom-firmware">guia de troubleshooting</a>. <strong>Desinstalar CFW quando seu console está em um estado não-inicializável não é recomendado, já que é muito provável que isso leve a um brick</strong>.</p>
 </details>
 
 <h2 id="faq-menuhax--a9lh--gateway">FAQ menuhax / A9LH / Gateway</h2>
 
 <details>
-<summary><u>I modded my console (x) years ago, so it already has some sort of homebrew. O que devo fazer?</u></summary>
+<summary><u>Modifiquei meu console (x) anos atrás, então ele já tem algum tipo de homebrew. O que devo fazer?</u></summary>
 
 <p>É recomendável que você atualize sua configuração para um ambiente moderno e baseado em boot9strap. Siga o guia <a href="checking-for-cfw">Checando por CFW</a> para ver como atualizar sua instalação.</p>
 </details>

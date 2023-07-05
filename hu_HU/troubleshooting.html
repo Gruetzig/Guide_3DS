@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, régi verziók)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/hu_HU/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
           
         
           
@@ -543,6 +543,13 @@ window.cookieconsent.initialise({
 <h2 id="problémák-a-safeb9sinstaller-rel">Problémák a SafeB9SInstaller-rel</h2>
 
 <h3 id="sighaxed-firm-was-not-installed-tekintsd-meg-az-alsó-képernyőt-részletekért">SigHaxed FIRM was not installed! Tekintsd meg az alsó képernyőt részletekért.</h3>
+
+<details>
+<summary><u>MicroSD Card - init failed</u></summary>
+
+<p>Az SD kártyád furán viselkedik. Próbáld meg újraformázni az SD kártyád (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>). Ha ez nem működik, próbálj egy másik SD kártyát.</p>
+
+</details>
 
 <details>
 <summary><u>SigHaxed FIRM - File not found</u></summary>
@@ -802,7 +809,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"Could not play"</u></summary>
 
-<p>Rossz Soundhax fájlod van a konzolodhoz és a régiódhoz vagy az eszközöd nem kompatibilis a Soundhax-szal. Ez utóbbi esetben frissítsd a konzolod a legutolsó verzióra és kövesd a <a href="seedminer">Seedminer</a> lépéseit.</p>
+<p>Rossz Soundhax fájlod van a konzolodhoz és a régiódhoz vagy az eszközöd nem kompatibilis a Soundhax-szal. Később, azt, hogy mit kell csinálnod, attól függ, hog milyen verzión van a 3DS-ed jelenleg. Csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz a Discord-on</a> segítségért.</p>
 </details>
 
 <details>
@@ -845,7 +852,7 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Indítsd el a böngészőt, majd lépj be a beállításokba (browser settings)</li>
-  <li>Görgess a legaljára, majd válaszd az “Initialize Savedata” opciót (ami lehet, hogy “Clear All Save Data” néven fut)</li>
+  <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initialize Save Data” or “Clear All Save Data”)</li>
   <li>Próbáld meg újra végrehajtani az exploitot</li>
 </ol>
 </details>
@@ -893,10 +900,6 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Lefagyás a "Doing agbhax..." üzenetnél</u></summary>
 <p>Probléma lehet az arm11code.bin<code class="language-plaintext highlighter-rouge"> fájloddal. Töltsd le újra a legutolsó kiadását az [universal-otherapp](https://github.com/TuxSH/universal-otherapp/releases/latest)-nak és rakd a fájlt az SD kártyád gyökerébe, majd nevezd át </code>arm11code.bin<code class="language-plaintext highlighter-rouge">-re. Ne add hozzá a </code>.bin` kiterjesztést, ha nem látod.</p>
-
-<p>Ha tajvani egységed van (T a verzió stringben, pl. 11.3.0-##T), akkor nem követheted ezeket a lépéseket, frissítened kell a konzolt és a <a href="seedminer">Seedminer</a>-t kell használnod helyette.</p>
-
-<p>Ha kínai egységed van (C a verzió stringben, pl. 11.3.0-##C), csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz a Discord-on</a> segítségért.</p>
 </details>
 
 <details>
@@ -929,11 +932,35 @@ window.cookieconsent.initialise({
   <li>Nyomj OK-t a jóváhagyáshoz.</li>
 </ol>
 
-<p>Ha a probléma tartósan fennáll és a rendszer verzió E-re végződik, és a nyelv English-re állított, akkor módosítsd a nyelvet bármelyik másik nyelvre <strong>átmenetileg</strong>. Ezt utána visszamódosíthatod, ha elérted a Telepítés véglegesítésére.</p>
+<p>If the problem persists:</p>
+
+<ul>
+  <li>Ensure that <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> are on the root of the SD card (not inside of any folder)</li>
+  <li>Ensure that you selected the correct payload for your region AND system version</li>
+  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a></li>
+  <li>Try resetting your browser data:
+    <ol>
+      <li>Indítsd el a böngészőt, majd lépj be a beállításokba (browser settings)</li>
+      <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initilize Save Data” or “Clear All Save Data”)</li>
+      <li>Próbáld meg újra végrehajtani az exploitot</li>
+    </ol>
+  </li>
+  <li>Try changing the system language to something other than the current language</li>
+</ul>
+
 </details>
 
 <details>
-<summary><u>An exception occured or ErrDisp when pressing GO! GO!</u></summary>
+<summary><u>"An error has occurred. Hold down the POWER button to turn off the power..." (fekete képernyő szöveggel)</u></summary>
+
+<p>A <code class="language-plaintext highlighter-rouge">arm11code.bin</code> fájl hiányzik, vagy rossz helyen van. Make sure to copy the files of the <a href="https://github.com/zoogie/super-skaterhax/releases/latest">latest version of super-skaterhax</a> for your region and version to the root of your SD card (not inside of a folder).</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/skater-root-layout.png" alt="" /></p>
+
+</details>
+
+<details>
+<summary><u>An exception occured or "DLL_HEAP_INFORMATION" when pressing GO! GO!</u></summary>
 
 <p>Ez valószínűleg azt jelzi, hogy már van egyedi firmware-ed. Érdemes elvégezned a <a href="checking-for-cfw">CFW ellenőrzését</a>.</p>
 
@@ -960,25 +987,63 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Nem sikerül belépni a Rosalina menübe, hibás Bal váll / D-Pad Le / Select gomb(ok) miatt</u></summary>
+<summary><u>Error #01: No Nintendo 3DS folder</u></summary>
 
-<p>Download this <a href="/assets/config.ini">alternate config.ini</a> and place it in <code class="language-plaintext highlighter-rouge">/luma/</code>. Ez módosítja a Rosalina billentyű kombinációt (X) + (Y)-ra.</p>
+<p>Your SD card does not have the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Power on your device with your SD card inserted, then wait for the device to show a message box that says “Creating HOME Menu management information”. Once the message box disappears, power off your device and try again.</p>
+
 </details>
 
 <details>
-<summary><u>"An exception occurred" vagy végtelen "Nintendo 3DS" képernyő, miután megpróbálom elindítani a Homebrew Launcher-t a Download Play-ből</u></summary>
+<summary><u>Error #02: Missing essential.exefs</u></summary>
 
-<p>Probléma van a <code class="language-plaintext highlighter-rouge">boot.3dsx</code> fájloddal (nem jó, hiányzik, rossz helyen van vagy sérült). Töltsd le a legutolsó kiadását a <a href="https://github.com/devkitPro/3ds-hbmenu/releases/latest">Homebrew Launcher</a>-nek és rakd a <code class="language-plaintext highlighter-rouge">boot.3dsx</code> fájlt az SD kártyád gyökerébe, felülírva bármilyen létező fájlt.</p>
+<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your device, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+
 </details>
 
 <details>
-<summary><u>"Scripts directory not found" a GodMode9-ben</u></summary>
+<summary><u>Unable to open GodMode9 or Error #03: Missing files</u></summary>
 
-<p>Nem másoltad át a <code class="language-plaintext highlighter-rouge">gm9</code> mappát a GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code>-ből az SD kártyád gyökerébe. Töltsd le a legutolsó kiadását az <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a>-nek és rakd a <code class="language-plaintext highlighter-rouge">gm9</code> mappát az SD kártyád gyökerébe, egyesítve (mergelve) a létezővel.</p>
+<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
 </details>
 
 <details>
-<summary><u>"Backup failed" vagy "Error: Could not open directory" a NAND backup készítésének megpróbálásakor</u></summary>
+<summary><u>Error #04: No space</u></summary>
+
+<p>You need at least 1.3GB of free space to perform the NAND backup, which is a part of the script. Ha nincs elég szabad helyed, kövesd ezeket a lépéseket:</p>
+
+<ol>
+  <li>Kapcsold ki a konzolod</li>
+  <li>Távolítsd el az SD kártyád, majd csatlakoztasd a számítógépedhez</li>
+  <li>Másold a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát az SD kártya gyökeréből a számítógépedre</li>
+  <li>Töröld a Nintendo 3DS mappát az SD kártyáról</li>
+  <li>Tedd vissza az SD kártyád a konzoldba</li>
+  <li>Kapcsold ki a konzolod, tartsd nyomva a START és power gombokat, továbbra is nyomva a START gombot a GodMode9-be bootoláshoz</li>
+  <li>Válaszd a “Scripts…” opciót</li>
+  <li>Select “finalize”</li>
+  <li>Follow the prompts in the script, answering each question that you are asked</li>
+  <li>Másold a <code class="language-plaintext highlighter-rouge">gm9/out</code> mappát az SD kártyádról egy biztonságos helyre a számítógépeden</li>
+  <li>Töröld a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> és a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> fájlokat az SD kártyád <code class="language-plaintext highlighter-rouge">/gm9/out/</code> mappájából, megtartva az essential.exefs-t a <code class="language-plaintext highlighter-rouge">/gm9/out/</code> -ban</li>
+  <li>Másold a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát a számítógépedről az SD kártyád gyökerébe</li>
+  <li>Töröld a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát a számítógépedről</li>
+</ol>
+
+<p>Once done, re-run the script.</p>
+
+</details>
+
+<details>
+<summary><u>Error #05: No title database</u></summary>
+
+<p>Press (A) to create a title database, unlock SysNAND writing by entering the buttons on-screen, follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+
+</details>
+
+<details>
+<summary><u>Error #06 or "Error: Could not open directory" when attempting a NAND backup</u></summary>
+
 <p>Győződj meg róla, hogy legalább 1.3 GB szabad hely van az SD kártyádon. Ha nincs elég szabad helyed, kövesd ezeket a lépéseket:</p>
 <ol>
   <li>Kapcsold ki a konzolod</li>
@@ -995,6 +1060,13 @@ window.cookieconsent.initialise({
 </ol>
 
 <p>Ha van elég szabad hely az SD kártyádon, az SD kártya lehet sérült vagy hibás. Ellenőrizd az SD kártyádat hibákra valamelyik programmal az alábbiak közül az operációs rendszerednek megfelelően: <a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, <a href="f3xswift-(mac)">macOS</a>.</p>
+</details>
+
+<details>
+<summary><u>Error #08: Dummy title database</u></summary>
+
+<p>You didn’t delete the dummy title database that was created by Error #05. Follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+
 </details>
 
 <hr />
@@ -1158,6 +1230,12 @@ Ha ez a helyzet, próbáld meg a lépéseket alább, ami a legkönnyebbtől a le
 Ha nem sikerült megtalálni a hibádat, vagy a lépések nem működnek, csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz Discord-on</a> további támogatásért.</p>
 </details>
 
+<details>
+<summary><u>Opening the HOME Menu settings crashes the console or loads the Homebrew Launcher</u></summary>
+
+<p>Your console likely still has menuhax67 installed. To uninstall menuhax67, download the latest release of <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> (the menuhax <code class="language-plaintext highlighter-rouge">.zip</code>), then follow the <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits/menuhax67#Uninstall_menuhax67">“Uninstall menuhax67” section</a> here.</p>
+</details>
+
 <hr />
 
 <h2 id="egyéb-hibaelhárítás">Egyéb hibaelhárítás</h2>
@@ -1199,6 +1277,32 @@ Ha nem sikerült megtalálni a hibádat, vagy a lépések nem működnek, csatla
   </li>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
 </ol>
+</details>
+
+<details>
+<summary><u>Manually entering Homebrew Launcher</u></summary>
+
+<p>If you are missing the Homebrew Launcher application from your HOME Menu, you can follow these instructions to manually enter the Homebrew Launcher. (You will need <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">boot.3dsx and boot.firm</a> on the root of your SD card.)</p>
+
+<ol>
+  <li>Indítsd el a Download Play alkalmazást (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
+  <li>Várj, amíg <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> és <code class="language-plaintext highlighter-rouge">Nintendo DS</code> gombokat nem látsz</li>
+  <li>Nyomd le az (Bal Váll) + (D-Pad le) + (Select) gombokat egyszerre a Rosalina menü megnyitásához</li>
+  <li>Válaszd ki a “Miscellaneous options”-t</li>
+  <li>Válaszd a “Switch the hb. title to the current app.” opciót</li>
+  <li>Nyomd meg a (B) gombot a folytatáshoz</li>
+  <li>Nyomd meg a (B) gombot, hogy visszakerülj a Rosalina főmenüjébe</li>
+  <li>Nyomd meg a (B) gombot, hogy kilépj a Rosalina menüből</li>
+  <li>Nyomd meg a (Home) gombot hogy felfüggeszd a Download Play-t</li>
+  <li>Nyomd meg a “Close” gombot az alsó képernyőn a Download Play bezárásához</li>
+  <li>Indítsd el újra a Download Play alkalmazást</li>
+  <li>Ekkor a konzolodnak be kell töltenie a Homebrew Launcher-t
+    <ul>
+      <li>Ha a konzolod a betöltő splash képernyőn ragad, akkor hiányzik az <code class="language-plaintext highlighter-rouge">boot.3dsx</code> az SD kártyád gyökeréből</li>
+    </ul>
+  </li>
+</ol>
+
 </details>
 
 <details>

@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(fredtool-legacy)'>Instalando boot9strap (Fredtool, Legado)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(menuhax)'>Instalando boot9strap (menuhax)</a></li>
           
         
           
@@ -516,7 +516,7 @@ window.cookieconsent.initialise({
       <li><a href="#seção-iii---ctrtransfer" id="markdown-toc-seção-iii---ctrtransfer">Seção III - CTRTransfer</a></li>
       <li><a href="#seção-iv---iniciando-o-fbi" id="markdown-toc-seção-iv---iniciando-o-fbi">Seção IV - Iniciando o FBI</a></li>
       <li><a href="#seção-v---reinstalando-tickets" id="markdown-toc-seção-v---reinstalando-tickets">Seção V - Reinstalando Tickets</a></li>
-      <li><a href="#seção-vi---excluindo-dados-salvos-no-sistema" id="markdown-toc-seção-vi---excluindo-dados-salvos-no-sistema">Seção VI - Excluindo dados salvos no sistema</a></li>
+      <li><a href="#seção-vi---corrigindo-problemas-relacionados-ao-locale" id="markdown-toc-seção-vi---corrigindo-problemas-relacionados-ao-locale">Seção VI - Corrigindo problemas relacionados ao locale</a></li>
     </ul>
   </li>
 </ul>
@@ -526,28 +526,28 @@ window.cookieconsent.initialise({
 
 <h3 id="leitura-obrigatória">Leitura Obrigatória</h3>
 
-<p>This is an add-on section for region changing your console. Isto é feito através da instalação da imagem CTRTransfer 11.15.0 da região para qual você deseja trocar. After installing the image, you can update your console normally to the latest firmware (11.17.0).</p>
+<p>Esta é uma seção adicional para a alterar a região do seu console. Isto é feito através da instalação da imagem CTRTransfer 11.15.0 da região para qual você deseja trocar. Depois de instalar a imagem, você pode atualizar seu console normalmente para o firmware mais recente (11.17.0).</p>
 
 <p>Note que a mudança de região é quase completamente desnecessária uma vez que o Luma3DS suporta jogos de outras regiões e aplicativos inidividuais através de [Locale Emulation]
 (https://github.com/LumaTeam/Luma3DS/wiki/Optional-features). Além, disso, rodar jogos do Nintendo DS com idiomas de outras regiões é possível através do <a href="https://github.com/DS-Homebrew/TWiLightMenu/releases">TWiLight Menu++</a>. Você só deve executar uma mudança de região se você deseja que sua interface de usuário do sistema esteja em um idioma que não está disponível na região atual do seu console.</p>
 
 <p class="notice--info">Esta página pressupõe que você já instalou o Luma3DS e boot9strap. Se você seguiu este site até o final de (Finalizando a instalação), você terá Luma3DS e boot9strap.</p>
 
-<p class="notice--warning">Como parte deste processo, a configuração do sistema será redefinida para os padrões. Isso inclui coisas como seu nome de usuário, país e idioma. Os jogos instalados e seus dados salvos não serão afetados.</p>
+<p class="notice--warning">Como parte deste processo, a configuração do console será redefinida para os padrões. Isso inclui coisas como seu nome de usuário, país e idioma. <strong>Os jogos instalados e seus dados salvos não serão afetados.</strong></p>
 
 <div class="notice--danger">
-<p>If you change the region of your console:</p>
+<p>Se você mudar a região do seu console:</p>
 
 <ul>
   <li>Você não será capaz de usar seu NNID (se tiver um). Os NNIDs são fixados para a região na qual foram criados.</li>
   <li>Você não poderá acessar a eShop, mesmo que você <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/74/~/how-to-delete-a-nintendo-eshop-account">exclua sua conta da eShop</a> previamente. Isso é porque certos aplicativos tendem a permanecer ligados ao 3DS, mesmo após a exclusão da conta (especialmente no New 3DS).
     <ul>
-      <li>Enquanto compras não podem mais ser feitas no eShop, atualizações de jogos ainda podem ser baixadas. As atualizações são geralmente necessárias para jogar online.</li>
+      <li>Isso ainda é relevante porque, enquanto as compras não podem mais ser feitas na eShop, ainda são fornecidas as atualizações de jogos. As atualizações são geralmente necessárias para jogar online.</li>
       <li>Esta lógica se estende às transferências do sistema, o que significa que você não será capaz de executar uma transferência de sistema de um 3DS dos EUA para um 3DS JPN-para-EUA de região alterada.</li>
       <li>Dito isto, a transferência de sistema e atualizações de jogos são bloqueadas de qualquer forma (por exemplo, a eShop japonesa tem apenas atualizações de jogos japoneses).</li>
     </ul>
   </li>
-  <li><strong>You will not be able to uninstall custom firmware without bricking the console!</strong> If you intend to uninstall custom firmware in the future, you <strong>MUST</strong> restore your NAND backup that was created before the region change.</li>
+  <li><strong>Você não poderá desinstalar o firmware sem causer um brick no console!</strong> Se desejar desinstalar um custom firmware no futuro, você <strong>DEVE</strong> restaurar o seu backup da NAND que foi criado antes da alteração da região.</li>
 </ul>
 </div>
 
@@ -558,7 +558,7 @@ window.cookieconsent.initialise({
 <ul>
   <li>A versão mais recente do <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a> (o arquivo <code class="language-plaintext highlighter-rouge">.zip</code>)</li>
   <li>A versão mais recente do <a href="https://github.com/Steveice10/FBI/releases/latest">FBI</a> <em>(o arquivo <code class="language-plaintext highlighter-rouge">.3dsx</code>)</em></li>
-  <li>The 11.15.0 CTRTransfer image for your console type of the region that you want to change to (e.g. Download “New 3DS or 2DS - USA” if you have a New 3DS and want to change your region to USA)
+  <li>A imagem CTRTransfer 11.15.0 para o seu tipo de console da região para a qual você deseja mudar (ex. Baixe “New 3DS ou 2DS - EUA” se você tiver um New 3DS e quiser alterar sua região para EUA)
     <ul>
       <li><i class="fa fa-magnet" aria-hidden="true" title="Isso é um magnet link. Use um cliente torrent para baixar o arquivo."></i> - <a href="magnet:?xt=urn:btih:2a39586a0a10d1f0a9470b082ef1453e502b2425&amp;xt=urn:btmh:12205090f0a43a956bd7449658ee0580949d15ae112c80007fb2ef42e3265b6c5f6c&amp;dn=11.15.0-47E_ctrtransfer_n3ds.zip&amp;tr=udp%3a%2f%2fopen.tracker.cl%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2f9.rarbg.com%3a2810%2fannounce&amp;tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce&amp;tr=udp%3a%2f%2fwww.torrent.eu.org%3a451%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&amp;tr=udp%3a%2f%2ftracker.tiny-vps.com%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.pomf.se%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.moeking.me%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.dler.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.bitsearch.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker-udp.gbitt.info%3a80%2fannounce&amp;tr=udp%3a%2f%2fretracker.netbynet.ru%3a2710%2fannounce&amp;tr=udp%3a%2f%2fretracker.lanta-net.ru%3a2710%2fannounce&amp;tr=udp%3a%2f%2fopentor.org%3a2710%2fannounce&amp;tr=udp%3a%2f%2fopen.stealth.si%3a80%2fannounce&amp;tr=udp%3a%2f%2fmts.tvbit.co%3a6969%2fannounce&amp;tr=udp%3a%2f%2fexplodie.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2fbt2.archive.org%3a6969%2fannounce">New 3DS ou 2DS - 11.15.0 - EUR - CTRTransfer</a></li>
       <li><i class="fa fa-magnet" aria-hidden="true" title="Isso é um magnet link. Use um cliente torrent para baixar o arquivo."></i> - <a href="magnet:?xt=urn:btih:986b454cab2d9f27daa63d4291f61aed039871d2&amp;xt=urn:btmh:1220c8c96bd76b6fef041aada9ce4e3cf06ef141f3c4558310b9c3a00e39bccc43a1&amp;dn=11.15.0-47J_ctrtransfer_n3ds.zip&amp;tr=udp%3a%2f%2fopen.tracker.cl%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&amp;tr=udp%3a%2f%2f9.rarbg.com%3a2810%2fannounce&amp;tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce&amp;tr=udp%3a%2f%2fwww.torrent.eu.org%3a451%2fannounce&amp;tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451%2fannounce&amp;tr=udp%3a%2f%2ftracker.tiny-vps.com%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.pomf.se%3a80%2fannounce&amp;tr=udp%3a%2f%2ftracker.openbittorrent.com%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.moeking.me%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.dler.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2ftracker.bitsearch.to%3a1337%2fannounce&amp;tr=udp%3a%2f%2ftracker-udp.gbitt.info%3a80%2fannounce&amp;tr=udp%3a%2f%2fretracker.netbynet.ru%3a2710%2fannounce&amp;tr=udp%3a%2f%2fretracker.lanta-net.ru%3a2710%2fannounce&amp;tr=udp%3a%2f%2fopentor.org%3a2710%2fannounce&amp;tr=udp%3a%2f%2fopen.stealth.si%3a80%2fannounce&amp;tr=udp%3a%2f%2fmts.tvbit.co%3a6969%2fannounce&amp;tr=udp%3a%2f%2fexplodie.org%3a6969%2fannounce&amp;tr=udp%3a%2f%2fbt2.archive.org%3a6969%2fannounce">New 3DS ou 2DS - 11.15.0 - JPN - CTRTransfer</a></li>
@@ -593,7 +593,7 @@ window.cookieconsent.initialise({
 <h4 id="seção-ii---backup-da-nand">Seção II - Backup da NAND</h4>
 
 <ol>
-  <li>Press and hold (Start), and while holding (Start), power on your console. Isso vai inicializar o GodMode9</li>
+  <li>Aperte e segure (Start), e enquanto segura (Start), ligue seu console. Isso vai inicializar o GodMode9</li>
   <li>Aperte (Home) para abrir o menu de ações</li>
   <li>Selecione “Scripts…”</li>
   <li>Selecione “GM9Megascript”</li>
@@ -609,7 +609,7 @@ window.cookieconsent.initialise({
   <li>Aperte (B) para retornar para o menu principal</li>
   <li>Selecione “Exit”</li>
   <li>Se solicitado, aperte (A) para bloquear as permissões de escrita</li>
-  <li>Hold (R) and press (Start) at the same time to power off your console</li>
+  <li>Segure (R) e aperte (Start) ao mesmo tempo para desligar seu console</li>
   <li>Insira o cartão SD no seu computador</li>
   <li>Copie <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> e <code class="language-plaintext highlighter-rouge">essential.exefs</code> da pasta <code class="language-plaintext highlighter-rouge">/gm9/out/</code> em seu cartão SD para um local seguro em seu computador
     <ul>
@@ -624,7 +624,7 @@ window.cookieconsent.initialise({
 <h4 id="seção-iii---ctrtransfer">Seção III - CTRTransfer</h4>
 
 <ol>
-  <li>Press and hold (Start), and while holding (Start), power on your console. Isso vai inicializar o GodMode9</li>
+  <li>Aperte e segure (Start), e enquanto segura (Start), ligue seu console. Isso vai inicializar o GodMode9</li>
   <li>Se você for solicitado para criar backups de arquivos essenciais, aperte (A) para fazê-lo, então aperte (A) novamente para continuar quando o backup for concluído</li>
   <li>Se você for solicitado para consertar o RTC date&amp;time, pressione (A) para consertar, então insira a data e a hora, depois pressione (A) para continuar
     <ul>
@@ -658,8 +658,8 @@ window.cookieconsent.initialise({
   <li>Aperte (B) para retornar para o menu principal</li>
   <li>Selecione “Exit”</li>
   <li>Se solicitado, aperte (A) para bloquear as permissões de escrita</li>
-  <li>Press (Start) to reboot your console</li>
-  <li>Update your console by going to System Settings, then “Other Settings”, then going all the way to the right and using “System Update”
+  <li>Aperte (Start) para reiniciar seu console</li>
+  <li>Atualize seu console indo em Configurações do Sistema, depois em “Outras Configurações”, depois indo até a direita e usando “Atualização do Sistema”
     <ul>
       <li>Atualizações feitas enquanto usa B9S + Luma (o que você tem) são seguras</li>
       <li>Se isso der um erro, defina suas configurações de DNS para “Automático”</li>
@@ -681,9 +681,9 @@ window.cookieconsent.initialise({
   <li>Aperte (Home) para suspender o Download Play</li>
   <li>Pressione o botão “Fechar” na tela inferior para fechar o Download Play</li>
   <li>Reinicie o aplicativo Download Play</li>
-  <li>Your console should load the Homebrew Launcher
+  <li>Seu console deve inicializar o Homebrew Launcher
     <ul>
-      <li>If your console is stuck on the loading splash screen, you are missing <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of your SD card</li>
+      <li>Se o seu console estiver travado na tela de carregamento, você está sem <code class="language-plaintext highlighter-rouge">boot.3dsx</code> na raiz do seu cartão SD</li>
     </ul>
   </li>
 </ol>
@@ -711,13 +711,13 @@ window.cookieconsent.initialise({
   <li>Aperte (Home) para sair do FBI</li>
 </ol>
 
-<h4 id="seção-vi---excluindo-dados-salvos-no-sistema">Seção VI - Excluindo dados salvos no sistema</h4>
+<h4 id="seção-vi---corrigindo-problemas-relacionados-ao-locale">Seção VI - Corrigindo problemas relacionados ao locale</h4>
 
-<p>Esta seção redefinirá a configuração do seu sistema para os valores padrão. Os jogos instalados e seus dados salvos não serão afetados. This is necessary to prevent known issues relating to extended memory mode and applets on some consoles.</p>
+<p>Esta seção redefinirá a configuração do console para os valores padrão. <strong>Os jogos instalados e seus dados salvos não serão afetados. * Isto é **necessário</strong> para evitar problemas conhecidos relacionados ao modo de memória estendida e applets em alguns consoles.</p>
 
 <ol>
   <li>Desligue seu console</li>
-  <li>Press and hold (Start), and while holding (Start), power on your console. Isso vai inicializar o GodMode9</li>
+  <li>Aperte e segure (Start), e enquanto segura (Start), ligue seu console. Isso vai inicializar o GodMode9</li>
   <li>Navegue para <code class="language-plaintext highlighter-rouge">[0:] SDCARD</code> -&gt; <code class="language-plaintext highlighter-rouge">gm9</code></li>
   <li>Aperte (X) na imagem <code class="language-plaintext highlighter-rouge">.bin</code> da CTRTransfer para apagá-la</li>
   <li>Aperte (A) para confirmar</li>
@@ -736,13 +736,13 @@ window.cookieconsent.initialise({
   <li>Aperte (A) para destravar “SysNAND (lvl2) writing”, então aperte a sequência de botões solicitada</li>
   <li>Depois que o arquivo for excluído, aperte (A) para continuar</li>
   <li>Se solicitado, aperte (A) para bloquear as permissões de escrita</li>
-  <li>Press (Start) to reboot your console</li>
-  <li>Your console will load into the initial setup menu
+  <li>Aperte (Start) para reiniciar seu console</li>
+  <li>Seu console irá carregar no menu de configuração inicial
     <ul>
       <li>Isso é um comportamento esperado. Você não perdeu nenhum dos seus dados do jogo</li>
     </ul>
   </li>
-  <li>Complete the initial setup menu by following the prompts on your console’s screen</li>
+  <li>Complete o menu inicial de configuração seguindo os avisos na tela do seu console</li>
 </ol>
 
 <hr />

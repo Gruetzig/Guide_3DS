@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/zh_TW/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/zh_TW/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
           
         
           
@@ -515,12 +515,8 @@ window.cookieconsent.initialise({
       <li><a href="#第一節--準備工作" id="markdown-toc-第一節--準備工作">第一節 — 準備工作</a></li>
       <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
       <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
-      <li><a href="#section-iv---homebrew-launcher" id="markdown-toc-section-iv---homebrew-launcher">Section IV - Homebrew Launcher</a></li>
-      <li><a href="#section-v---rtc-and-dsp-setup" id="markdown-toc-section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</a></li>
-      <li><a href="#section-vi---installing-cias" id="markdown-toc-section-vi---installing-cias">Section VI - Installing CIAs</a></li>
-      <li><a href="#section-vii---ctrnand-luma3ds" id="markdown-toc-section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</a></li>
-      <li><a href="#section-viii---cleanup-sd-card" id="markdown-toc-section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</a></li>
-      <li><a href="#section-ix---backup-essential-files" id="markdown-toc-section-ix---backup-essential-files">Section IX - Backup Essential Files</a></li>
+      <li><a href="#section-iv---rtc-and-dsp-setup" id="markdown-toc-section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</a></li>
+      <li><a href="#section-v---setup-script" id="markdown-toc-section-v---setup-script">Section V - Setup Script</a></li>
     </ul>
   </li>
   <li><a href="#information-and-notes" id="markdown-toc-information-and-notes">Information and Notes</a></li>
@@ -533,18 +529,24 @@ window.cookieconsent.initialise({
 
 <p>在載入完 NAND 的內容後，boot9strap 會自動加載 <code class="language-plaintext highlighter-rouge">boot.firm</code> 中的內容。 In this case, we are using Luma3DS by <a href="https://github.com/LumaTeam/">LumaTeam</a> to patch the console, allowing it to run homebrew software.</p>
 
-<p>於本頁面中，我們將替關鍵的系統檔案進行備份並安裝以下自製程式：</p>
+<p>On this page, we will make critical system file backups and install some homebrew programs. Most of these steps will be automated using a script that you will run on your console.</p>
+
+<details class="notice--info">
+<summary>List of homebrew applications that will be installed</summary>
+
+<p>Click the links to view the GitHub repository of each application. (Give them a star if you appreciate them!)</p>
 
 <ul>
-  <li><strong>FBI 管理器</strong> <em>(安裝 CIA 格式的程式)</em></li>
-  <li><strong>Anemone3DS</strong> <em>(安裝自訂主題)</em></li>
-  <li><strong>Checkpoint</strong> <em>(備份及還原 3DS 及 DS 遊戲之存檔)</em></li>
-  <li><strong>Universal-Updater</strong> <em>(自製程式商店，可在 3DS 上透過 Wi-Fi 下載自製程式)</em></li>
-  <li><strong>GodMode9</strong> <em>(多功能工具包，用來處理 NAND 及卡帶的相關功能)</em></li>
-  <li><strong>Homebrew Launcher Loader</strong> <em>(用於啟動 Homebrew Launcher)</em></li>
+  <li><strong><a href="https://github.com/Steveice10/FBI">FBI</a></strong> <em>(installs CIA formatted applications)</em></li>
+  <li><strong><a href="https://github.com/PabloMK7/homebrew_launcher_dummy">Homebrew Launcher Loader</a></strong> <em>(launches the Homebrew Launcher)</em></li>
+  <li><strong><a href="https://github.com/astronautlevel2/Anemone3DS">Anemone3DS</a></strong> <em>(installs custom themes)</em></li>
+  <li><strong><a href="https://github.com/FlagBrew/Checkpoint">Checkpoint</a></strong> <em>(backs up and restores save files for 3DS and DS games)</em></li>
+  <li><strong><a href="https://github.com/mtheall/ftpd">ftpd</a></strong> <em>(access your 3DS SD card wirelessly)</em></li>
+  <li><strong><a href="https://github.com/Universal-Team/Universal-Updater/">Universal-Updater</a></strong> <em>(a homebrew app store for downloading homebrew from the 3DS over Wi-Fi)</em></li>
+  <li><strong><a href="https://github.com/d0k3/GodMode9">GodMode9</a></strong> <em>(multipurpose tool which can do NAND and cartridge functions)</em></li>
 </ul>
 
-<p class="notice--warning">建議不要跳過下載以上這些自製軟體，因為它們將在此頁面稍後使用。 在本頁結束時，我們將清理 SD 卡以刪除不必要的安裝檔案。</p>
+</details>
 
 <h3 id="相容性資訊">相容性資訊</h3>
 
@@ -555,12 +557,7 @@ window.cookieconsent.initialise({
 <h3 id="必備項目">必備項目</h3>
 
 <ul>
-  <li>The latest release of <a href="https://github.com/astronautlevel2/Anemone3DS/releases/latest">Anemone3DS</a> (the <code class="language-plaintext highlighter-rouge">.cia</code> file)</li>
-  <li>The v3.7.4 release of <a href="https://github.com/BernardoGiordano/Checkpoint/releases/tag/v3.7.4">Checkpoint</a> (the <code class="language-plaintext highlighter-rouge">.cia</code> file)</li>
-  <li>The latest release of <a href="https://github.com/mariohackandglitch/homebrew_launcher_dummy/releases/latest">Homebrew Launcher Wrapper</a> (the <code class="language-plaintext highlighter-rouge">.cia</code> file)</li>
-  <li>The latest release of <a href="https://github.com/Universal-Team/Universal-Updater/releases/latest">Universal-Updater</a> (the <code class="language-plaintext highlighter-rouge">.cia</code> file)</li>
-  <li>The latest release of <a href="https://github.com/Steveice10/FBI/releases/latest">FBI</a> (<strong>both</strong> the <code class="language-plaintext highlighter-rouge">.cia</code> and <code class="language-plaintext highlighter-rouge">.3dsx</code> files)</li>
-  <li>最新版的 <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a> (選擇 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 檔案)</li>
+  <li><a href="/assets/finalizing.zip">finalizing.zip</a> (direct download)</li>
 </ul>
 
 <h3 id="操作說明">操作說明</h3>
@@ -572,26 +569,13 @@ window.cookieconsent.initialise({
 <ol>
   <li>Power off your console</li>
   <li>將 SD 卡插入至電腦中</li>
-  <li>在 SD 卡的根目錄底下，建立一個新資料夾 <code class="language-plaintext highlighter-rouge">cias</code></li>
-  <li>複製所有的 CIA 檔案 (<code class="language-plaintext highlighter-rouge">Anemone3DS.cia</code>、<code class="language-plaintext highlighter-rouge">Checkpoint.cia</code>、<code class="language-plaintext highlighter-rouge">FBI.cia</code>、<code class="language-plaintext highlighter-rouge">Homebrew_Launcher.cia</code> 及 <code class="language-plaintext highlighter-rouge">Universal-Updater.cia</code>) 至 SD 卡中的 <code class="language-plaintext highlighter-rouge">/cias/</code> 資料夾中</li>
-  <li>在 SD 卡的根目錄底下建立一個新資料夾 <code class="language-plaintext highlighter-rouge">3ds</code>
-    <ul>
-      <li>This folder stores homebrew applications and data; it is different from the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder that the console automatically generates</li>
-    </ul>
-  </li>
-  <li>將 <code class="language-plaintext highlighter-rouge">FBI.3dsx</code> 複製到 SD 卡中的 <code class="language-plaintext highlighter-rouge">/3ds/</code> 資料夾底下</li>
-  <li>在 SD 卡中的 <code class="language-plaintext highlighter-rouge">luma</code> 資料夾中建立一個另一個新資料夾 <code class="language-plaintext highlighter-rouge">payloads</code></li>
-  <li>解壓 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 中的 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> 檔案到 SD 卡的 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> 資料夾中</li>
-  <li>解壓 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 中的 <code class="language-plaintext highlighter-rouge">gm9</code> 資料夾到 SD 卡的根目錄底下</li>
-  <li>Reinsert your SD card into your console</li>
-  <li>Power on your console</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card, merging/replacing any existing folders if prompted</li>
+  <li>Insert your SD card into your console</li>
 </ol>
 
-<p>The screenshots below indicate the minimum SD card layout that is required to follow this page. 您可能在遵循其他頁面指示中會有一些多的資料夾及檔案在您的 SD 卡中。</p>
+<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. 您可能在遵循其他頁面指示中會有一些多的資料夾及檔案在您的 SD 卡中。</p>
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/godmode9-location.png" alt="" /></p>
 
 <h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
 
@@ -623,35 +607,16 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="section-iv---homebrew-launcher">Section IV - Homebrew Launcher</h4>
-
-<p>In this section, you will temporarily replace Download Play with Homebrew Launcher (which we need to launch FBI). Download Play will automatically go back to normal once you reboot your console.</p>
-
-<ol>
-  <li>啟動『下載通信(Download Play)』程式 (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
-  <li>等到你看到 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 和 <code class="language-plaintext highlighter-rouge">Nintendo DS</code> 按鈕</li>
-  <li>同時按下『L』+『下』+『Select』鍵以啟動 Rosalina 選單</li>
-  <li>選擇『Miscellaneous options』</li>
-  <li>選擇『Switch the hb. title to the current app.』</li>
-  <li>按『B』繼續</li>
-  <li>按『B』回到 Rosalina 主選單</li>
-  <li>按『B』退出 Rosalina 選單</li>
-  <li>Press (Home) to suspend Download Play</li>
-  <li>Press the “Close” button on the bottom screen to close Download Play</li>
-  <li>Re-launch the Download Play application</li>
-  <li>Your console should load the Homebrew Launcher
-    <ul>
-      <li>If your console is stuck on the loading splash screen, you are missing <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of your SD card</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="section-v---rtc-and-dsp-setup">Section V - RTC and DSP Setup</h4>
+<h4 id="section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</h4>
 
 <p>In this section, you will sync your 3DS internal clock with the actual time and dump the sound firmware (which is necesssary for some homebrew software to use sound properly).</p>
 
 <ol>
-  <li>同時按下『L』+『下』+『Select』鍵以啟動 Rosalina 選單</li>
+  <li>同時按下『L』+『下』+『Select』鍵以啟動 Rosalina 選單
+    <ul>
+      <li>If one of these buttons is broken, download <a href="/assets/config.ini">config.ini</a> and put it in your <code class="language-plaintext highlighter-rouge">luma</code> folder, replacing the existing one. This will change the Rosalina menu key combination to (X) + (Y)</li>
+    </ul>
+  </li>
   <li>選擇『Miscellaneous options』</li>
   <li>選擇『Dump DSP firmware』</li>
   <li>按『B』繼續</li>
@@ -661,21 +626,9 @@ window.cookieconsent.initialise({
   <li>按『B』退出 Rosalina 選單</li>
 </ol>
 
-<h4 id="section-vi---installing-cias">Section VI - Installing CIAs</h4>
+<h4 id="section-v---setup-script">Section V - Setup Script</h4>
 
-<p>In this section, you will install several useful homebrew applications to HOME Menu.</p>
-
-<ol>
-  <li>於 Homebrew 清單內啟動 FBI 管理器</li>
-  <li>移動至 <code class="language-plaintext highlighter-rouge">SD</code> -&gt; <code class="language-plaintext highlighter-rouge">cias</code></li>
-  <li>選擇『&lt;current directory&gt;』</li>
-  <li>選擇『Install and delete all CIAs』(安裝並刪除所有的 CIA 檔)，並按下『A』確認</li>
-  <li>按『Home』鍵，並關閉『下載通信 (Download Play)』程式</li>
-</ol>
-
-<h4 id="section-vii---ctrnand-luma3ds">Section VII - CTRNAND Luma3DS</h4>
-
-<p>In this section, you will use a script to copy some of Luma3DS’s files to internal memory so that they can be accessed, even without an SD card inserted.</p>
+<p>In this section, you will use a script to automate homebrew installation, SD card cleanup, and system file backup.</p>
 
 <ol>
   <li>Power off your console</li>
@@ -688,67 +641,26 @@ window.cookieconsent.initialise({
   <li>當提示修正 RTC 日期及時間時，按『A』繼續並設定日期及時間，再按『A』繼續</li>
   <li>按『Home』鍵以叫出主選單</li>
   <li>選擇『Scripts…』</li>
-  <li>選擇『GM9Megascript』</li>
-  <li>選擇『Scripts from Plailect’s Guide』</li>
-  <li>選擇『Setup Luma3DS to CTRNAND』</li>
-  <li>如提示時，按下『A』繼續</li>
-  <li>按『A』解鎖 SysNAND(lvl1)的寫入保護，然後按下提示的按鍵組合</li>
-  <li>按『A』 繼續</li>
-</ol>
-
-<h4 id="section-viii---cleanup-sd-card">Section VIII - Cleanup SD Card</h4>
-
-<p>In this section, you will use a script to remove some unnecessary files from your SD card.</p>
-
-<ol>
-  <li>選擇『Cleanup SD Card』</li>
-  <li>如提示時，按下『A』繼續</li>
-  <li>按『A』 繼續</li>
-  <li>按『B』回到主選單</li>
-</ol>
-
-<h4 id="section-ix---backup-essential-files">Section IX - Backup Essential Files</h4>
-
-<p>In this section, you will make backups of files that can be used to recover from software bricks or to recover data.</p>
-
-<ol>
-  <li>選擇『Backup Options』</li>
-  <li>選擇『SysNAND Backup』</li>
-  <li>按 『A』 確認
+  <li>Select “finalize”</li>
+  <li>Follow the prompts in the script, answering each question that you are asked
     <ul>
-      <li>此過程將花費一些時間</li>
-      <li>If you get an error, look for your issue in the <a href="troubleshooting#finalizing-setup">troubleshooting guide</a></li>
+      <li>If you encounter an error, follow the instructions in the error message or consult the <a href="troubleshooting#finalizing-setup">troubleshooting</a> page</li>
     </ul>
   </li>
-  <li>按『A』 繼續</li>
-  <li>按『B』回到主選單</li>
-  <li>選擇『Exit』</li>
-  <li>如提示時，按下『A』取消檔案寫入鎖定</li>
-  <li>移動至 <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
-  <li>選擇 <code class="language-plaintext highlighter-rouge">essential.exefs</code>，並按『A』選擇</li>
-  <li>選擇『Copy to 0:/gm9/out』
+  <li>Once the script says “Setup complete!”, press (A) to power off the device
     <ul>
-      <li>如果你看到『Destination already exists (目的地有相同檔名的檔案)』，那麼請選擇『Overwrite file(s) (覆寫檔案)』並按下「A」鍵</li>
+      <li>If you do NOT see the message “Setup complete!”, the script was not successful and you will need to redo this section</li>
     </ul>
   </li>
-  <li>按『A』 繼續</li>
-  <li>按『Home』鍵以叫出主選單</li>
-  <li>Select “Poweroff system” to power off your console</li>
   <li>將 SD 卡插入至電腦中</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
+  <li>Copy the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder to a safe location on your computer
     <ul>
-      <li>Copy these backups to multiple locations (such as online file storage, an external hard drive, etc.)</li>
-      <li>這些備份檔案可於未來您磚機時用來修復系統檔案</li>
+      <li>This folder contains critical file backups and should be backed up to multiple locations (i.e. cloud storage) if possible</li>
+      <li>The two SysNAND files are your NAND backup and can be used to revert your console to a working state if it is bricked by a software issue</li>
+      <li>The <code class="language-plaintext highlighter-rouge">essential.exefs</code> file contains your console’s system-unique files and can be used to recover your data in the event of a hardware failure</li>
     </ul>
   </li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card after copying it
-    <ul>
-      <li>The other backup files are negligible in size and may be kept on your SD card for ease of access</li>
-    </ul>
-  </li>
-  <li>If you have it, copy the <code class="language-plaintext highlighter-rouge">/luma/backups/</code> folder on your SD card to a safe location on your computer</li>
-  <li>Reinsert your SD card into your console</li>
-  <li>Power on your console</li>
+  <li>Delete the contents of the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder from your SD card</li>
 </ol>
 
 <hr />

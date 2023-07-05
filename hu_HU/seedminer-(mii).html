@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, régi verziók)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/hu_HU/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
           
         
           
@@ -520,12 +520,12 @@ window.cookieconsent.initialise({
 </aside>
 
 <div class="notice--warning">
-<p>Ez a metódus egy ésszerűen erős GPU-t igényel (bármilyen dedikált grafikus kártya, amit az elmúlt években készítettek) és a parancssor használatának képességét. Ha nem tudod, mik ezek, vagy nem rendelkezel a szükséges hardverrel, kérj meg valakit a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord szerverén</a>, hogy csinálja ezt meg neked. A következő információkkal kell már rendelkezz:</p>
+<p>Ez a metódus egy ésszerűen erős GPU-t igényel (bármilyen dedikált grafikus kártya, amit az elmúlt években készítettek) és a parancssor használatának képességét. Ha nem tudod mik ezek vagy nem rendelkezel a szükséges hardverrel, csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-ra Discord-on</a>, és nyisd meg a “#mii-mining-assistance” csatornát, majd add meg a következőket:</p>
 <ul>
-  <li>Your Mii QR code, uploaded directly to Discord (do not take a screenshot or a photo of the image, just send the HNI_XXXX.JPG image itself)</li>
-  <li>Your console’s ID0 (the name of the 32-character folder directly inside of Nintendo 3DS - see <a href="https://3ds.hacks.guide/troubleshooting#seedminer">this troubleshooting section</a> if you have multiple)</li>
-  <li>Your console model (e.g. 3DS, 3DS XL, 2DS, New3DS, New3DS XL, New2DS XL)</li>
-  <li>Your console’s approximate year of manufacturing (it may be present behind the frontplate or backplate; if you don’t know, just guess - it’s not super important)</li>
+  <li>A Mii QR kódod, közvetlenül feltöltve a Discord-ra (ne készíts képernyő képet vagy fotót a képről, csak küld el a HNI_XXXX.JPG képet magát)</li>
+  <li>A konzolod ID0 azonosítója (a 32 karakter hosszú nevű mappa közvetlenül a Nintendo 3DS mappában - tekintsd meg <a href="https://3ds.hacks.guide/troubleshooting#seedminer">ezt a hibaelhárítási útmutatót</a> ha több is van)</li>
+  <li>A konzolod modellje (pl. 3DS, 3DS XL, 2DS, New3DS, New3DS XL, New2DS XL)</li>
+  <li>A konzolod becsült gyártási éve (talán megtalálható az elő vagy hátlap alatt; ha nem tudod, tippelj - nem szuper fontos)</li>
 </ul>
 </div>
 
@@ -560,7 +560,7 @@ window.cookieconsent.initialise({
 <p>Ebben a fejezetben a telepíteni fogjuk a Seedminer-t és beszerezzük a konzolod azon fájljait, amik a bányászáshoz szükségesek.</p>
 
 <ol>
-  <li>Csomagold ki a Seedminer <code class="language-plaintext highlighter-rouge">.zip</code> tartalmát és mozgassd ebből az operációs rendszereddel egyező nevű mappát bárhova a PC-dre
+  <li>Csomagold ki a Seedminer <code class="language-plaintext highlighter-rouge">.zip</code> tartalmát és mozgasd ebből az operációs rendszereddel egyező nevű mappát bárhova a PC-dre
     <ul>
       <li>Legyen ez a hely kéznél, mert ebbe a Seedminer mappába további fájlok kerülnek</li>
     </ul>
@@ -629,16 +629,16 @@ window.cookieconsent.initialise({
   </li>
   <li>Ha végzett írd be a <code class="language-plaintext highlighter-rouge">py -3 seedminer_launcher3.py mii &lt;model&gt; &lt;year&gt;</code> parancsot
     <ul>
-      <li>Replace <code class="language-plaintext highlighter-rouge">&lt;model&gt;</code> with the model of your console (<code class="language-plaintext highlighter-rouge">new</code> or <code class="language-plaintext highlighter-rouge">old</code>) - if you aren’t sure, only models with the ZL/ZR buttons and C-Stick are “new”</li>
-      <li>Replace <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code> with the year the 3DS was made (you often find this behind the backplate) - leave this empty if you aren’t sure, in which case it will start from the middle</li>
-      <li>The mining process will usually take up to 90 minutes, depending on luck and your GPU’s strength</li>
-      <li>The first stage will likely max out at roughly offset 1500, depending on console model</li>
-      <li>If the second stage (after seeing <code class="language-plaintext highlighter-rouge">movable_part2.sed generation success</code>) gets past offset 100, verify that you input the correct ID0. If your ID0 is correct, you cannot use this method and will have to update to the latest version and see if a non-Seedminer method is available for you <a href="alternate-exploits">here</a></li>
-      <li>If you see the message <code class="language-plaintext highlighter-rouge">input.bin is invalid size</code>, remake the <code class="language-plaintext highlighter-rouge">input.bin</code> using your QR Code. If it <em>still</em> fails, open a different browser and remake the <code class="language-plaintext highlighter-rouge">input.bin</code> there</li>
-      <li>If you see the message <code class="language-plaintext highlighter-rouge">LFCS has been left blank</code>, use the opposite console model (e.g. <code class="language-plaintext highlighter-rouge">mii old</code> instead of <code class="language-plaintext highlighter-rouge">mii new</code>)</li>
+      <li>Helyettesítsd a <code class="language-plaintext highlighter-rouge">&lt;model&gt;</code>-t a konzol modeljével (<code class="language-plaintext highlighter-rouge">new</code> vagy <code class="language-plaintext highlighter-rouge">old</code>) - ha nem vagy biztos benne, azok a modellek amik rendselkeznek ZL/ZR gombokkal és C-Stick-kel azok újak (new)</li>
+      <li>Helyettesítsd a <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code>-t az évvel, amikor a 3DS készült (gyakaran megtalálható a hátlap mögött) - hagyd ezt üresen, ha nem vagy biztos benne, ekkor középről kezdjük</li>
+      <li>A bányászási folyamat általában 90 percet igényel, függően a szerencétől és a GPU erősségétől</li>
+      <li>Az első szakasz a konzolmodelltől függően valószínűleg nagyjából 1500 offset-nél maximális</li>
+      <li>Ha a második fázis (miután látható volt a <code class="language-plaintext highlighter-rouge">movable_part2.sed generation success</code> üzenet) túljutott a 100-as offset-en, ellenőrizd, hogy helyes ID0-t adtál-e meg. Ha az ID0 értéked korrekt, nem tudod használni ezt a metódust és frissítened kell a legutols verzióra és meg kell nézned, hogy egy nem-Seedminer metódus elérhető-e számodra <a href="alternate-exploits">itt</a></li>
+      <li>Ha az <code class="language-plaintext highlighter-rouge">input.bin is invalid size</code> üzenetet látod, csinád újra az <code class="language-plaintext highlighter-rouge">input.bin</code> fájlt a QR kódodat használva. Ha <em>még mindig</em> hibára fut, nyiss meg egy másik böngészőt és készítsd újra az <code class="language-plaintext highlighter-rouge">input.bin</code> fájlt ott</li>
+      <li>Ha a <code class="language-plaintext highlighter-rouge">LFCS has been left blank</code> üzenetet látod, használd az ellentétes konzol modelt (pl. <code class="language-plaintext highlighter-rouge">mii old</code> helyett <code class="language-plaintext highlighter-rouge">mii new</code>)</li>
     </ul>
   </li>
-  <li>When it finishes, a file called <code class="language-plaintext highlighter-rouge">movable.sed</code> will appear in the Seedminer folder</li>
+  <li>Ha végzett, egy fájl <code class="language-plaintext highlighter-rouge">movable.sed</code> névvel megjelenik a Seedminer mappában</li>
 </ol>
 
 <ul class="notice--primary">

@@ -330,7 +330,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="alternate-exploits"><a href='/ko_KR/alternate-exploits'>Alternate Exploits</a></li>
+            <li style="display: none;" data-name="alternate-exploits"><a href='/ko_KR/alternate-exploits'>대체 취약점</a></li>
           
         
           
@@ -338,7 +338,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/ko_KR/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/ko_KR/seedminer-(alternate)'>Seedminer (대체)</a></li>
           
         
           
@@ -378,7 +378,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>eShop DSiWare 덤프</a></li>
           
         
           
@@ -438,11 +438,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/ko_KR/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/ko_KR/installing-boot9strap-(fredtool-inject)'>boot9strap 설치 (Fredtool-Inject)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/ko_KR/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
           
         
           
@@ -516,7 +516,7 @@ window.cookieconsent.initialise({
       <li><a href="#섹션-iii---ctrtransfer" id="markdown-toc-섹션-iii---ctrtransfer">섹션 III - CTRTransfer</a></li>
       <li><a href="#섹션-iv---fbi-실행" id="markdown-toc-섹션-iv---fbi-실행">섹션 IV - FBI 실행</a></li>
       <li><a href="#섹션-v---티켓-재설치" id="markdown-toc-섹션-v---티켓-재설치">섹션 V - 티켓 재설치</a></li>
-      <li><a href="#섹션-vi---시스템-세이브-데이터-초기화" id="markdown-toc-섹션-vi---시스템-세이브-데이터-초기화">섹션 VI - 시스템 세이브 데이터 초기화</a></li>
+      <li><a href="#section-vi---fixing-locale-related-issues" id="markdown-toc-section-vi---fixing-locale-related-issues">Section VI - Fixing locale-related issues</a></li>
     </ul>
   </li>
 </ul>
@@ -532,7 +532,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--info">이 페이지에서는 이미 Luma3DS와 boot9strap이 설치되어 있는 것으로 가정합니다. 이 웹사이트를 끝까지 진행했다면 (마무리 단계), Luma3DS와 boot9strap이 설치되어 있는 것입니다.</p>
 
-<p class="notice--warning">이 과정의 일부분으로, 시스템 설정을 초기화하게 됩니다. 이것은 사용자 이름, 국가, 언어 등을 포함합니다. 설치된 게임과 세이브 데이터에는 영향을 주지 않습니다.</p>
+<p class="notice--warning">As a part of this process, your system settings will be reset to its defaults. 이것은 사용자 이름, 국가, 언어 등을 포함합니다. <strong>Installed games and their save data will not be affected.</strong></p>
 
 <div class="notice--danger">
 <p>콘솔의 지역을 바꾸게 된다면:</p>
@@ -541,12 +541,12 @@ window.cookieconsent.initialise({
   <li>(만약 있다면) Nintendo 네트워크 ID를 이용할 수 없게 됩니다. NNID들은 작성된 지역에서만 사용할 수 있습니다.</li>
   <li>이전에 <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/74/~/how-to-delete-a-nintendo-eshop-account">eShop 계정을 지우더라도 (영어)</a>, eShop에 접속하지 못할 수 있습니다. 몇몇 타이틀들은, 계정 삭제 후도 3DS 링크를 유지하려는 경향이 있어서입니다 (특히 New 3DS에서).
     <ul>
-      <li>e숍에서 구매는 못하지만, 게임 업데이트는 아직도 다운로드 할 수 있습니다. 업데이트들은 보통 온라인 플레이를 할 시 필요합니다.</li>
-      <li>This logic extends to system transfers, meaning you would not be able to perform a system transfer from a USA 3DS to a region-changed JPN-to-USA 3DS.</li>
-      <li>That being said, system transfer and game updates are region locked anyway (e.g. Japanese eShop only has Japanese game updates).</li>
+      <li>e숍에서 더 이상 구매할 수 없지만 게임 업데이트는 계속 제공되기 때문에 여전히 관련이 있습니다. 업데이트들은 보통 온라인 플레이를 할 시 필요합니다.</li>
+      <li>이 로직은 데이터 이사를 할 때에도 적용됩니다. 즉, USA 3DS로부터 JPN에서 USA로 지역 변경한 3DS로의 데이터 이사는 불가합니다.</li>
+      <li>따라서, 데이터 이사와 게임 업데이트는 여전히 지역 제한이 걸려 있습니다 (예: 일본 eShop에서는 일본 게임 업데이트만 가능합니다).</li>
     </ul>
   </li>
-  <li><strong>콘솔을 벽돌로 하는 것을 감수하지 않고선 커스텀 펌웨어를 지울 수 없습니다!</strong> 만약 미래에 커스텀 펌웨어를 지우려고 생각한다면, <strong>절대로</strong> 지역 변경을 하기 전의 NAND 백업을 복원하고 나서 해야 합니다.</li>
+  <li><strong>콘솔을 벽돌로 하는 것을 감수하지 않고선 커스텀 펌웨어를 지울 수 없습니다!</strong> 만약 미래에 커스텀 펌웨어를 지우려고 생각한다면, <strong>반드시</strong> 지역 변경을 하기 전의 NAND 백업을 복원하고 나서 해야 합니다.</li>
 </ul>
 </div>
 
@@ -711,9 +711,9 @@ window.cookieconsent.initialise({
   <li>(Home)을 눌러 FBI를 종료해 주세요</li>
 </ol>
 
-<h4 id="섹션-vi---시스템-세이브-데이터-초기화">섹션 VI - 시스템 세이브 데이터 초기화</h4>
+<h4 id="section-vi---fixing-locale-related-issues">Section VI - Fixing locale-related issues</h4>
 
-<p>이 섹션에서는 시스템 설정을 기본값으로 복구하게 됩니다. 설치된 게임과 세이브 데이터에는 영향을 주지 않습니다. 이 절차는 일부 콘솔에서 보고된 확장 메모리 모드와 몇몇 앱의 문제점을 예방하기 위해 필요합니다.</p>
+<p>This section will reset your system settings to its defaults. <strong>Installed games and their save data will not be affected.</strong> This is <strong>required</strong> to prevent known issues relating to extended memory mode and applets on some consoles.</p>
 
 <ol>
   <li>콘솔을 종료해 주세요</li>

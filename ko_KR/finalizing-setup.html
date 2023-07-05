@@ -330,7 +330,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="alternate-exploits"><a href='/ko_KR/alternate-exploits'>Alternate Exploits</a></li>
+            <li style="display: none;" data-name="alternate-exploits"><a href='/ko_KR/alternate-exploits'>대체 취약점</a></li>
           
         
           
@@ -338,7 +338,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/ko_KR/seedminer-(alternate)'>Seedminer (Alternate)</a></li>
+            <li style="display: none;" data-name="seedminer-(alternate)"><a href='/ko_KR/seedminer-(alternate)'>Seedminer (대체)</a></li>
           
         
           
@@ -378,7 +378,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>eShop DSiWare 덤프</a></li>
           
         
           
@@ -438,11 +438,11 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/ko_KR/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/ko_KR/installing-boot9strap-(fredtool-inject)'>boot9strap 설치 (Fredtool-Inject)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/ko_KR/installing-boot9strap-(fredtool-legacy)'>boot9strap 설치 (Fredtool, 레거시)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/ko_KR/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
           
         
           
@@ -515,12 +515,8 @@ window.cookieconsent.initialise({
       <li><a href="#섹션-i---준비-작업" id="markdown-toc-섹션-i---준비-작업">섹션 I - 준비 작업</a></li>
       <li><a href="#섹션-ii---cfw-확인" id="markdown-toc-섹션-ii---cfw-확인">섹션 II - CFW 확인</a></li>
       <li><a href="#섹션-iii---본체-업데이트" id="markdown-toc-섹션-iii---본체-업데이트">섹션 III - 본체 업데이트</a></li>
-      <li><a href="#섹션-iv---homebrew-launcher" id="markdown-toc-섹션-iv---homebrew-launcher">섹션 IV - Homebrew Launcher</a></li>
-      <li><a href="#섹션-v---rtc-및-dsp-설정" id="markdown-toc-섹션-v---rtc-및-dsp-설정">섹션 V - RTC 및 DSP 설정</a></li>
-      <li><a href="#섹션-vi---cia-설치" id="markdown-toc-섹션-vi---cia-설치">섹션 VI - CIA 설치</a></li>
-      <li><a href="#섹션-vii---ctrnand-luma3ds" id="markdown-toc-섹션-vii---ctrnand-luma3ds">섹션 VII - CTRNAND Luma3DS</a></li>
-      <li><a href="#섹션-viii---sd-카드-정리하기" id="markdown-toc-섹션-viii---sd-카드-정리하기">섹션 VIII - SD 카드 정리하기</a></li>
-      <li><a href="#섹션-ix---중요-파일-백업" id="markdown-toc-섹션-ix---중요-파일-백업">섹션 IX - 중요 파일 백업</a></li>
+      <li><a href="#section-iv---rtc-and-dsp-setup" id="markdown-toc-section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</a></li>
+      <li><a href="#section-v---setup-script" id="markdown-toc-section-v---setup-script">Section V - Setup Script</a></li>
     </ul>
   </li>
   <li><a href="#정보와-메모" id="markdown-toc-정보와-메모">정보와 메모</a></li>
@@ -533,18 +529,24 @@ window.cookieconsent.initialise({
 
 <p><code class="language-plaintext highlighter-rouge">boot.firm</code> 파일은 boot9strap이 NAND에서 로딩을 완료한 후 실행하는 것입니다. 이번 경우에서는, <a href="https://github.com/LumaTeam/">LumaTeam</a>의 Luma3DS를 사용해서 콘솔을 패치하고, 홈브류 소프트웨어를 실행할 수 있도록 합니다.</p>
 
-<p>이 가이드에서는, 중요한 시스템 파일의 백업을 하고, 다음의 홈브류 프로그램을 설치할 겁니다:</p>
+<p>On this page, we will make critical system file backups and install some homebrew programs. Most of these steps will be automated using a script that you will run on your console.</p>
+
+<details class="notice--info">
+<summary>List of homebrew applications that will be installed</summary>
+
+<p>Click the links to view the GitHub repository of each application. (Give them a star if you appreciate them!)</p>
 
 <ul>
-  <li><strong>FBI</strong> <em>(CIA 형식의 애플리케이션 설치)</em></li>
-  <li><strong>Anemone3DS</strong> <em>(사용자 지정 테마 설정)</em></li>
-  <li><strong>Checkpoint</strong> <em>(3DS와 DS게임의 세이브 파일 백업 및 복구)</em></li>
-  <li><strong>Universal-Updater</strong> <em>(Wi-Fi를 통해 3DS에 홈브류를 다운로드 하는 앱 스토어)</em></li>
-  <li><strong>GodMode9</strong> <em>(NAND와 게임 카드의 기능을 수행할 수 있는 다목적 툴)</em></li>
-  <li><strong>Homebrew Launcher Loader</strong> <em>(홈브류 런처 실행)</em></li>
+  <li><strong><a href="https://github.com/Steveice10/FBI">FBI</a></strong> <em>(installs CIA formatted applications)</em></li>
+  <li><strong><a href="https://github.com/PabloMK7/homebrew_launcher_dummy">Homebrew Launcher Loader</a></strong> <em>(launches the Homebrew Launcher)</em></li>
+  <li><strong><a href="https://github.com/astronautlevel2/Anemone3DS">Anemone3DS</a></strong> <em>(installs custom themes)</em></li>
+  <li><strong><a href="https://github.com/FlagBrew/Checkpoint">Checkpoint</a></strong> <em>(backs up and restores save files for 3DS and DS games)</em></li>
+  <li><strong><a href="https://github.com/mtheall/ftpd">ftpd</a></strong> <em>(access your 3DS SD card wirelessly)</em></li>
+  <li><strong><a href="https://github.com/Universal-Team/Universal-Updater/">Universal-Updater</a></strong> <em>(a homebrew app store for downloading homebrew from the 3DS over Wi-Fi)</em></li>
+  <li><strong><a href="https://github.com/d0k3/GodMode9">GodMode9</a></strong> <em>(multipurpose tool which can do NAND and cartridge functions)</em></li>
 </ul>
 
-<p class="notice--warning">이 페이지에서 위 앱들 중의 대부분을 사용하기 때문에, 다운로드를 스킵하는 것은 권장하지 않습니다. 이 페이지의 끝에서, 불필요한 설치 파일들을 지움으로써 당신의 SD 카드를 정리할 것입니다.</p>
+</details>
 
 <h3 id="호환성-안내">호환성 안내</h3>
 
@@ -555,12 +557,7 @@ window.cookieconsent.initialise({
 <h3 id="준비물">준비물</h3>
 
 <ul>
-  <li>최신 버전의 <a href="https://github.com/astronautlevel2/Anemone3DS/releases/latest">Anemone3DS</a> (<code class="language-plaintext highlighter-rouge">.cia</code> 파일)</li>
-  <li>v3.7.4의 <a href="https://github.com/BernardoGiordano/Checkpoint/releases/tag/v3.7.4">Checkpoint</a> (<code class="language-plaintext highlighter-rouge">.cia</code> 파일)</li>
-  <li>최신 버전의 <a href="https://github.com/mariohackandglitch/homebrew_launcher_dummy/releases/latest">Homebrew Launcher Wrapper</a> (<code class="language-plaintext highlighter-rouge">.cia</code> 파일)</li>
-  <li>최신 버전의 <a href="https://github.com/Universal-Team/Universal-Updater/releases/latest">Universal-Updater</a> (<code class="language-plaintext highlighter-rouge">.cia</code> 파일)</li>
-  <li>최신 버전의 <a href="https://github.com/Steveice10/FBI/releases/latest">FBI</a> (<code class="language-plaintext highlighter-rouge">.cia</code> 와 <code class="language-plaintext highlighter-rouge">.3dsx</code>의 <strong>양</strong> 파일들)</li>
-  <li>최신 버전의 <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a> (<code class="language-plaintext highlighter-rouge">.zip</code> 파일)</li>
+  <li><a href="/assets/finalizing.zip">finalizing.zip</a> (direct download)</li>
 </ul>
 
 <h3 id="진행-방법">진행 방법</h3>
@@ -572,26 +569,13 @@ window.cookieconsent.initialise({
 <ol>
   <li>콘솔을 종료해 주세요</li>
   <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
-  <li>SD 카드의 루트에 <code class="language-plaintext highlighter-rouge">cias</code> 폴더가 없을 경우 폴더를 만들어 주세요</li>
-  <li>모든 CIA 파일들 (<code class="language-plaintext highlighter-rouge">Anemone3DS.cia</code>, <code class="language-plaintext highlighter-rouge">Checkpoint.cia</code>, <code class="language-plaintext highlighter-rouge">FBI</code>, <code class="language-plaintext highlighter-rouge">Homebrew_Launcher.cia</code>, <code class="language-plaintext highlighter-rouge">Universal-Updater.cia</code>) 를 SD 카드의 <code class="language-plaintext highlighter-rouge">/cias/</code> 폴더로 복사해 주세요</li>
-  <li>SD 카드의 루트에 <code class="language-plaintext highlighter-rouge">3ds</code> 폴더가 없을 경우 폴더를 만들어 주세요
-    <ul>
-      <li>이 폴더에는 홈브류 에플리케이션과 데이터가 보관되어 있으며, 콘솔이 자동으로 생성하는 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더와 다른 폴더입니다</li>
-    </ul>
-  </li>
-  <li><code class="language-plaintext highlighter-rouge">FBI.3dsx</code> 파일을 SD 카드의 <code class="language-plaintext highlighter-rouge">/3ds/</code> 폴더에 복사해 주세요</li>
-  <li>SD 카드 내 <code class="language-plaintext highlighter-rouge">luma</code> 폴더에 <code class="language-plaintext highlighter-rouge">payloads</code> 폴더가 없을 경우 폴더를 만들어 주세요</li>
-  <li>SD 카드의 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code>폴더에 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code>안에 압축되있는 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code>을 복사해 주세요</li>
-  <li>SD 카드의 루트로 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code>안에 압축이 되있는 <code class="language-plaintext highlighter-rouge">gm9</code> 폴더를 복사해 주세요</li>
-  <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
-  <li>콘솔을 시작해 주세요</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card, merging/replacing any existing folders if prompted</li>
+  <li>Insert your SD card into your console</li>
 </ol>
 
-<p>이 스크린샷들은 이 가이드를 따랐을 때의 최소한의 SD 카드 레이아웃을 표시합니다. 이전에 따른 방법에 따라, SD 카드에 추가 파일과 폴더가 있을 수 있습니다.</p>
+<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. 이전에 따른 방법에 따라, SD 카드에 추가 파일과 폴더가 있을 수 있습니다.</p>
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/godmode9-location.png" alt="" /></p>
 
 <h4 id="섹션-ii---cfw-확인">섹션 II - CFW 확인</h4>
 
@@ -606,7 +590,7 @@ window.cookieconsent.initialise({
   <li>콘솔을 종료해 주세요</li>
 </ol>
 
-<p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. <a href="https://discord.gg.MWxPgEp">Nintendo Homebrew Discord 서버</a>에 오셔서 도움을 요청하세요.</p>
+<p class="notice--danger">Luma3DS 구성 메뉴로 부팅되지 않았다면 콘솔에 커스텀 펌웨어가 설치되지 않았습니다. <a href="https://discord.gg.MWxPgEp">Nintendo Homebrew Discord 서버</a>에 오셔서 도움을 요청하세요.</p>
 
 <h4 id="섹션-iii---본체-업데이트">섹션 III - 본체 업데이트</h4>
 
@@ -623,35 +607,16 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="섹션-iv---homebrew-launcher">섹션 IV - Homebrew Launcher</h4>
-
-<p>이 섹션에서는 FBI를 실행하기 위해 다운로드 플레이를 잠시 Homebrew Launcher로 치환합니다. 다운로드 플레이 앱은 콘솔을 다시 시작하면 원상태로 돌아옵니다.</p>
-
-<ol>
-  <li>다운로드 플레이 앱을 실행해 주세요 (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
-  <li><code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 하고 <code class="language-plaintext highlighter-rouge">Nintendo DS</code> 버튼이 표시 될 때까지 기다려 주세요</li>
-  <li>(L 어깨) + (십자 Down) + (Select) 을 동시에 눌러서 Rosalina 메뉴를 실행해 주세요</li>
-  <li>“Miscellaneous options”을 선택해 주세요</li>
-  <li>“Switch the hb. title to the current app.”를 선택해 주세요</li>
-  <li>(B)를 눌러 진행해 주세요</li>
-  <li>(B)를 눌러 Rosalina 메뉴로 돌아가 주세요</li>
-  <li>(B)를 눌러 Rosalina 메뉴를 나와 주세요</li>
-  <li>(Home) 키를 눌러 다운로드 플레이를 종료해 주세요</li>
-  <li>아래 화면에서 “종료” 버튼을 눌러 다운로드 플레이 앱을 닫아주세요</li>
-  <li>다운로드 플레이 앱을 다시 실행해 주세요</li>
-  <li>성공하면 Homebrew Launcher가 실행될 것입니다
-    <ul>
-      <li>만약 콘솔이 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 화면에 정지되면, SD 카드 루트에 <code class="language-plaintext highlighter-rouge">boot.3dsx</code>이 존재하지 않습니다</li>
-    </ul>
-  </li>
-</ol>
-
-<h4 id="섹션-v---rtc-및-dsp-설정">섹션 V - RTC 및 DSP 설정</h4>
+<h4 id="section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</h4>
 
 <p>이 섹션에서는 3DS 내부 시계를 실제 시각과 맞추고, 홈브류 소프트웨어에서 음성을 적절하게 이용하기 위해 사운드 펌웨어를 백업합니다.</p>
 
 <ol>
-  <li>(L 어깨) + (십자 Down) + (Select) 을 동시에 눌러서 Rosalina 메뉴를 실행해 주세요</li>
+  <li>(L 어깨) + (십자 Down) + (Select) 을 동시에 눌러서 Rosalina 메뉴를 실행해 주세요
+    <ul>
+      <li>If one of these buttons is broken, download <a href="/assets/config.ini">config.ini</a> and put it in your <code class="language-plaintext highlighter-rouge">luma</code> folder, replacing the existing one. This will change the Rosalina menu key combination to (X) + (Y)</li>
+    </ul>
+  </li>
   <li>“Miscellaneous options”을 선택해 주세요</li>
   <li>“Dump DSP firmware”를 선택해 주세요</li>
   <li>(B)를 눌러 진행해 주세요</li>
@@ -661,21 +626,9 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 Rosalina 메뉴를 나와 주세요</li>
 </ol>
 
-<h4 id="섹션-vi---cia-설치">섹션 VI - CIA 설치</h4>
+<h4 id="section-v---setup-script">Section V - Setup Script</h4>
 
-<p>이 섹션에서는, 홈 메뉴에 몇몇 유용한 홈브류 앱을 설치하게 됩니다.</p>
-
-<ol>
-  <li>홈브류 목록에서 FBI를 실행해 주세요</li>
-  <li><code class="language-plaintext highlighter-rouge">SD</code> -&gt; <code class="language-plaintext highlighter-rouge">cias</code>로 이동해 주세요</li>
-  <li>”&lt;current directory&gt;”를 선택해 주세요</li>
-  <li>“Install and delete all CIAs” 를 선택한 뒤 (A)를 눌러 주세요</li>
-  <li>(Home) 키를 누르고, 다운로드 플레이를 종료해 주세요</li>
-</ol>
-
-<h4 id="섹션-vii---ctrnand-luma3ds">섹션 VII - CTRNAND Luma3DS</h4>
-
-<p>이 섹션에서는, Luma3DS의 핵심 파일을 내부 저장소에 복사하는 스크립트를 실행합니다. 이렇게 하면 SD 카드 없이도 커펌을 이용할 수 있습니다.</p>
+<p>In this section, you will use a script to automate homebrew installation, SD card cleanup, and system file backup.</p>
 
 <ol>
   <li>콘솔을 종료해 주세요</li>
@@ -688,67 +641,26 @@ window.cookieconsent.initialise({
   <li>만약 “RTC date&amp;time seems to be wrong” 메세지가 표시되면 (A) 버튼을 눌러 하고, 날짜와 시간을 고친 다음 (A) 버튼을 눌러 계속해 주세요</li>
   <li>(Home)을 눌러 작업 메뉴를 열어 주세요</li>
   <li>“Scripts…“를 선택해 주세요</li>
-  <li>“GM9Megascript”를 선택해 주세요</li>
-  <li>“Scripts from Plailect’s Guide”를 선택해 주세요</li>
-  <li>“Setup Luma3DS to CTRNAND”를 선택해 주세요</li>
-  <li>프롬프트가 뜨면, (A) 를 눌러서 진행해 주세요</li>
-  <li>(A)를 눌려 SysNAND (lvl1) 쓰기 잠금을 풀고 주어진 키 조합을 입력해 주세요</li>
-  <li>(A)를 눌러 진행해 주세요</li>
-</ol>
-
-<h4 id="섹션-viii---sd-카드-정리하기">섹션 VIII - SD 카드 정리하기</h4>
-
-<p>이 섹션에서는, SD 카드에서 불필요한 파일을 삭제하는 스크립트를 실행합니다.</p>
-
-<ol>
-  <li>“Cleanup SD Card”를 선택해 주세요</li>
-  <li>프롬프트가 뜨면, (A) 를 눌러서 진행해 주세요</li>
-  <li>(A)를 눌러 진행해 주세요</li>
-  <li>(B)를 눌러 메인 메뉴로 돌아가 주세요</li>
-</ol>
-
-<h4 id="섹션-ix---중요-파일-백업">섹션 IX - 중요 파일 백업</h4>
-
-<p>이 섹션에서는 벽돌 현상이나 복구를 위해 사용할 수 있는 시스템 백업 파일을 생성합니다.</p>
-
-<ol>
-  <li>“Backup Options”를 선택해 주세요</li>
-  <li>“SysNAND Backup”을 선택해 주세요</li>
-  <li>(A)를 눌러 확인해 주세요
+  <li>Select “finalize”</li>
+  <li>Follow the prompts in the script, answering each question that you are asked
     <ul>
-      <li>이 과정은 시간이 좀 걸릴 것입니다</li>
-      <li>만약 에러가 발생하면, <a href="troubleshooting#finalizing-setup">문제 해결 가이드</a>를 참고해 주세요</li>
+      <li>If you encounter an error, follow the instructions in the error message or consult the <a href="troubleshooting#finalizing-setup">troubleshooting</a> page</li>
     </ul>
   </li>
-  <li>(A)를 눌러 진행해 주세요</li>
-  <li>(B)를 눌러 메인 메뉴로 돌아가 주세요</li>
-  <li>“Exit”를 선택해 주세요</li>
-  <li>메세지가 표시되면, (A)를 눌러서 쓰기잠금을 확인해 주세요</li>
-  <li><code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code> 폴더로 이동해 주세요</li>
-  <li><code class="language-plaintext highlighter-rouge">essential.exefs</code>에서 (A)를 눌러 선택해 주세요</li>
-  <li>“Copy to 0:/gm9/out”를 선택해 주세요
+  <li>Once the script says “Setup complete!”, press (A) to power off the device
     <ul>
-      <li>“Destination already exists”라는 메세지가 표시되면, “Overwrite file(s)”에 (A)를 눌러 주세요</li>
+      <li>If you do NOT see the message “Setup complete!”, the script was not successful and you will need to redo this section</li>
     </ul>
   </li>
-  <li>(A)를 눌러 진행해 주세요</li>
-  <li>(Home)을 눌러 작업 메뉴를 열어 주세요</li>
-  <li>“Poweroff system”을 선택해 콘솔의 전원을 꺼 주세요</li>
   <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
-  <li>SD 카드의 <code class="language-plaintext highlighter-rouge">/gm9/out/</code> 폴더의 <code class="language-plaintext highlighter-rouge">&lt;날짜&gt;_&lt;일련번호&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;날짜&gt;_&lt;일련번호&gt;_sysnand_##.bin.sha</code>, <code class="language-plaintext highlighter-rouge">essential.exefs</code>을 컴퓨터의 안전한 위치에 복사해 주세요
+  <li>Copy the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder to a safe location on your computer
     <ul>
-      <li>이 백업들을 여러 장소에 복사해 주세요 (온라인 파일 저장소, 하드 드라이브 등)</li>
-      <li>이 백업들은 콘솔을 벽돌로부터 지켜줄 것이고 만약 나중에 문제가 생겼을 때 NAND 이미지로부터 파일을 복구하는 것을 도울 것입니다</li>
+      <li>This folder contains critical file backups and should be backed up to multiple locations (i.e. cloud storage) if possible</li>
+      <li>The two SysNAND files are your NAND backup and can be used to revert your console to a working state if it is bricked by a software issue</li>
+      <li>The <code class="language-plaintext highlighter-rouge">essential.exefs</code> file contains your console’s system-unique files and can be used to recover your data in the event of a hardware failure</li>
     </ul>
   </li>
-  <li>SD 카드에 있는 <code class="language-plaintext highlighter-rouge">/gm9/out/</code>의 <code class="language-plaintext highlighter-rouge">&lt;날짜&gt;_&lt;일련번호&gt;_sysnand_##.bin</code> 과`<날짜>_<일련번호>_sysnand_##.bin.sha' 파일을 복사 후에 지워 주세요
-</일련번호></날짜>    <ul>
-      <li>나머지 파일들은 크기가 작으며, 편의성을 위해 SD 카드에 남겨 두셔도 됩니다</li>
-    </ul>
-  </li>
-  <li>만약 존재한다면, SD 카드의 <code class="language-plaintext highlighter-rouge">/luma/backups/</code> 폴더를 컴퓨터의 안전한 위치에 복사해 주세요</li>
-  <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
-  <li>콘솔을 시작해 주세요</li>
+  <li>Delete the contents of the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder from your SD card</li>
 </ol>
 
 <hr />

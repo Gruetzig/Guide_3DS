@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/hu_HU/installing-boot9strap-(fredtool-legacy)'>Boot9strap telepítése (Fredtool, régi verziók)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/hu_HU/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
           
         
           
@@ -522,7 +522,7 @@ window.cookieconsent.initialise({
 <ul>
   <li>Ha a konzolod <em>Luma 10.2.1</em> -et vagy újabbat futtat, <em>100% biztonságos</em> a frissítés. Ellenőrizheted a Luma verziódat a (Select) lenyomva tartásával a konzolod elindítása közben.</li>
   <li>Ha a konzolod régebbi Luma verziót futtat, <a href="checking-for-cfw">frissítened kell a Luma-t</a> mielőtt az eszközöd 11.17.0 verzióra frissíted.</li>
-  <li>If your console does not yet have custom firmware, <strong>do NOT update to the latest version</strong> unless this guide instructs you to.</li>
+  <li>Ha a konzolod nem rendelkezik még egyedi firmware-rel, <strong>NE frissítsd a legutolsó verzióra</strong>, kivéve ha ez az útmutató utasít rá.</li>
   <li>Ha a módosítatlan konzolod MÁR 11.17.0 verzióval fut, ez az oldal annak megfelelően frissül. Egészen pontosan a New3DS-család konzolainak egy <a href="homebrew-launcher-(super-skaterhax)">ingyenes szoftver metódust</a>, míg az Old3DS-család konzolainak <a href="alternate-exploits">alternatív exploitokat</a> kell használniuk, aminek külső hardver vagy szoftver függősége van.</li>
 </ul>
 
@@ -535,14 +535,14 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>A legújabb verziójú rendszeren vagyok. Feltörhetem a konzolomat külső hardver vagy előfeltételek nélkül?</u></summary>
 
-<p>A válasz a konzol típusától függően változik. Jelenleg a New 3DS / New 3DS XL / New 2DS XL moddolható a 11.17.0 verzión előfeltételek nélkül (pl. eShop címek, fizikai tételek), míg a 3DS / 3DS XL / 2DS nem.</p>
+<p>A válasz a konzol típusától függően változik. Jelenleg a New 3DS / New 3DS XL / New 2DS XL <a href="homebrew-launcher-(super-skaterhax)">moddolható a 11.17.0 verzión</a> előfeltételek nélkül (pl. eShop címek, fizikai tételek), míg a 3DS / 3DS XL / 2DS <a href="alternate-exploits">további szoftvert vagy hardvert</a> igényel.</p>
 
 </details>
 
 <details>
 <summary><u>Milyen konzolokkal kompatibilis ez az útmutató?</u></summary>
 
-<p>A lépések azonosak minden kereskedelmi 3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, és New 2DS XL konzolhoz. Ha a rendszered verziója “0.0.0-0”, akkor fejlesztői rendszered van.</p>
+<p>Ez az útmutató kompaitiblis minden kereskedelmi 3DS-család eszközzel (3DS, 3DS XL, 2DS, New 3DS, New 3DS XL, New 2DS XL). Ha a megjelenített rendszer verziód “0.0.0-0”, akkor fejlesztői egységed van.</p>
 </details>
 
 <details>
@@ -560,7 +560,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Használhatom ezt arra, hogy más régióból származó játékokkal tudjak játszani?</u></summary>
 
-<p>Igen; a Luma3DS automatikusan figyelmen kívül hagyja a régió ellenőrzést a cartridge-ek és a telepített címek esetében. Néhány játék igényli a Luma’s <a href="https://github.com/LumaTeam/Luma3DS/wiki/Optional-features">nyelvi emulációs funkcióját</a> a működéshez, ha régión kívüli konzolokon fut.</p>
+<p>Igen; a Luma3DS automatikusan figyelmen kívül hagyja a régió ellenőrzést a cartridge-ek és a telepített címek esetében. Néhány játék igényli a Luma’s <a href="https://wiki.hacks.guide/wiki/3DS:Setting_game_locales">nyelvi emulációs funkcióját</a> a működéshez, ha régión kívüli konzolokon fut.</p>
 </details>
 
 <details>
@@ -578,7 +578,9 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Bannolva lesz a 3DS-em, ha CFW-m van telepítve?</u></summary>
 
-<p>2017 májusában volt egy ban hullám ami jellemzően véletlen alapon kitiltotta a CFW felhasználókat az online játékból (az eShop hozzáférés, az NNID-k és a Nintendo fiókok nem voltak érintettek). Azóta nem volt ilyen mértékű ban hullám. Ez azt jelenti, hogy nem tudjuk mit tervez a Nintendo a jövőben. Jelenleg nem gondoljuk azt, hogy a ban olyan dolog, ami miatt aggódnod kellene.</p>
+<p>2017 májusában volt egy ban hullám ami jellemzően véletlen alapon kitiltotta a CFW felhasználókat az online játékból (az eShop hozzáférés, az NNID-k és a Nintendo fiókok nem voltak érintettek). Azóta nem volt ilyen mértékű ban hullám. Ez azt jelenti, hogy nem tudjuk mit tervez a Nintendo a jövőben.</p>
+
+<p>Jelenleg nem gondoljuk azt, hogy a ban olyan dolog, ami miatt aggódnod kellene.</p>
 </details>
 
 <details>
@@ -596,7 +598,9 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Hallottam erről a dologról (Gateway, Sky3DS, ntrboot, R4, stb), amiért fizetnem kell. Szükségem lesz ilyesmire?</u></summary>
 
-<p>Nem. Egyedi firmware telepíthető ingyen a legutolsó firmware-re bármilyen hardver eszköz nélkül. Gyakorlatban a 3DS-mód flashcart-ok, mint a Gateway és a Sky3DS nem ajánlottak, mert elavultak és a ban vagy brick kockázatát hordják magukban.</p>
+<p>Jelenleg a 3DS / 3DS XL / 2DS konzolok 11.17.0 verzión egyet a sok <a href="alternate-exploits">alternatív exploit-ok</a> közül kell válasszanak, hogy egyedi firmware-t telepíthessenek. Ha egyike sem elérhető az előkövetelményeknek, akkor az ntrboot lehet a legolcsóbb elérhető opció (körülbelül $20 USD).</p>
+
+<p>A 3DS-mód flashcart-ok, mint a Gateway és a Sky3DS nem ajánlottak, mert elavultak és a ban vagy brick kockázatát hordják magukban.</p>
 </details>
 
 <details>
@@ -652,13 +656,13 @@ window.cookieconsent.initialise({
 
 <p>A játék frissítések továbbra is letölthetők a Nintendo eShop-ból, annak leállításától függetlenül.</p>
 
-<p>Ha a játék nem ugyanabból a régióból származik, mint a konzolod, akkor <a href="dumping-titles-and-game-cartridges">dumpolnod kell a frissítéseket</a> egy olyan 3DS-ről, amire azok telepítésre kerültek. A Nintendo eShop csak a konzol régiójának megfelelő frissítéseket tartalmazzák (egy japán 3DS csak japán játékokhoz kap frissítéseket).</p>
+<p>Ha a játék nem ugyanabból a régióból származik, mint a konzolod, akkor <a href="dumping-titles-and-game-cartridges">dumpolnod kell a frissítéseket</a> egy olyan 3DS-ről, amire azok telepítésre kerültek. A Nintendo eShop csak a konzol régiójának megfelelő frissítéseket tartalmazza (például egy japán 3DS csak japán játékokhoz kap frissítéseket).</p>
 </details>
 
 <details>
 <summary><u>Segítség! Valami rossz dolog történt és a 3DS-em nem bootol a HOME menübe...</u></summary>
 
-<p>Please look at the <a href="troubleshooting#boot-issues-on-consoles-with-custom-firmware">troubleshooting guide</a>. <strong>A CFW eltávolítása, amikor a konzolod nem bootolható nem ajánlott, mert nagyon 
+<p>Kérjük, nézd meg a <a href="troubleshooting#boot-issues-on-consoles-with-custom-firmware">hibaelhárítási útmutatót</a>. <strong>A CFW eltávolítása, amikor a konzolod nem bootolható nem ajánlott, mert nagyon 
  valószínű, hogy brickeli az eszközödet</strong>.</p>
 </details>
 

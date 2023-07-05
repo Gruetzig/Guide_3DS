@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(fredtool-legacy)'>Instalando boot9strap (Fredtool, Legado)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(menuhax)'>Instalando boot9strap (menuhax)</a></li>
           
         
           
@@ -534,8 +534,8 @@ window.cookieconsent.initialise({
 
 <p>Erros após a instalação:</p>
 <ul>
-  <li><a href="#boot-issues-on-consoles-with-custom-firmware">Boot issues</a></li>
-  <li><a href="#software-issues-on-consoles-with-custom-firmware">Software issues</a></li>
+  <li><a href="#boot-issues-on-consoles-with-custom-firmware">Problemas na inicialização</a></li>
+  <li><a href="#software-issues-on-consoles-with-custom-firmware">Problemas de software</a></li>
 </ul>
 
 </details>
@@ -543,6 +543,13 @@ window.cookieconsent.initialise({
 <h2 id="problemas-com-o-safeb9sinstaller">Problemas com o SafeB9SInstaller</h2>
 
 <h3 id="sighaxed-firm-was-not-installed-check-lower-screen-for-more-info">SigHaxed FIRM was not installed! Check lower screen for more info.</h3>
+
+<details>
+<summary><u>MicroSD Card - init failed</u></summary>
+
+<p>O cartão SD está provavelmente agindo estranho. Tente reformatar o seu cartão SD (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>). Se isso não funcionar, tente outro cartão SD.</p>
+
+</details>
 
 <details>
 <summary><u>SigHaxed FIRM - File not found</u></summary>
@@ -575,13 +582,13 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/multiple-id0.png" alt="" /></p>
 
-<p>This occurs when you use your SD card in multiple 3DS consoles and is intended to prevent inadvertently merging data that would not be valid on other consoles. Para descobrir qual pasta de nome longo é a correta para seu 3DS, siga estas instruções:</p>
+<p>Isso ocorre quando você usa o seu cartão SD em vários consoles de 3DS e se destina a evitar a fusão inadvertidamente de dados que não seriam válidos em outros consoes. Para descobrir qual pasta de nome longo é a correta para seu 3DS, siga estas instruções:</p>
 
 <ol>
   <li>Renomeie a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> para <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code></li>
   <li>Reinsira o cartão SD no seu console</li>
-  <li>Power on your console</li>
-  <li>Wait for the console to generate the SD card data
+  <li>Ligue o seu console</li>
+  <li>Espere o console gerar os dados do cartão SD
     <ul>
       <li>Seus aplicativos terão desaparecido. Isto é normal e será resolvido em breve</li>
     </ul>
@@ -639,7 +646,7 @@ window.cookieconsent.initialise({
 
 <p>Além disso, certifique-se de que o <code class="language-plaintext highlighter-rouge">bb3.bin</code> está na raiz do cartão SD. Caso esteja faltando, baixe a versão mais recente do <a href="https://github.com/lifehackerhansol/Bannerbomb3/releases/download/v3. -lhs1/bb3.bin">Bannerbomb3</a> (download direto) e copie o arquivo <code class="language-plaintext highlighter-rouge">bb3.bin</code> para a raiz do seu cartão SD.</p>
 
-<p>If neither of these solutions fixes this problem, then custom firmware may have been uninstalled on this console in a way that makes this method impossible to perform. Se for esse o caso, junte-se ao <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> e peça ajuda, em Inglês.</p>
+<p>Se nenhuma destas soluções resolver este problema, então custom firmware pode ter sido desinstalado nesse console de uma forma que torna esse método impossível de executar. Se for esse o caso, junte-se ao <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> e peça ajuda, em Inglês.</p>
 </details>
 
 <details>
@@ -764,7 +771,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An exception occurred" ou Errdisp quando abro o Picross</u></summary>
 
-<p>Your console already has custom firmware. Você deve <a href="checking-for-cfw">checar por CFW</a>.</p>
+<p>Seu console já possui custom firmware. Você deve <a href="checking-for-cfw">checar por CFW</a>.</p>
 </details>
 
 <details>
@@ -784,9 +791,9 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Tela vermelha/roxa/rosa e branca após executar o Soundhax</u></summary>
 
-<p>If your console is on system version 9.4.0, 9.5.0, or 9.6.0, you may be encountering a bug with an old version of universal-otherapp. Download the latest version from <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">here</a>.</p>
+<p>Se o seu console está na versão de sistema 9.4.0, 9.5.0, ou 9.6.0, você pode estar encontrando um bug com uma versão antiga do universal-otherapp. Baixe a versão mais recente <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">aqui</a>.</p>
 
-<p>If your console is not on those firmwares, it likely indicates that you already have custom firmware. Você deve <a href="checking-for-cfw">checar por CFW</a>.</p>
+<p>Se seu console não está nesses firmware, isso provavelmente indica que você já tem custom firmware. Você deve <a href="checking-for-cfw">checar por CFW</a>.</p>
 </details>
 
 <details>
@@ -798,7 +805,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"Não foi possível tocar"</u></summary>
 
-<p>You have the wrong Soundhax file for your console and region, or your console is incompatible with Soundhax. In the latter case, you should update your console to the latest version and follow <a href="seedminer">Seedminer</a>.</p>
+<p>Você tem o arquivo Soundhax errado para o seu console e região, ou seu console é incompatível com o Soundhax. No último caso, seu curso de ação irá determinar em qual versão o seu 3DS está no momento. Entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> para obter ajuda.</p>
 </details>
 
 <details>
@@ -841,7 +848,7 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Inicie o navegador, e então abra as configurações do navegador</li>
-  <li>Desça até o final e selecione <code class="language-plaintext highlighter-rouge">Deletar dados salvos</code></li>
+  <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initialize Save Data” or “Clear All Save Data”)</li>
   <li>Tente o exploit novamente</li>
 </ol>
 </details>
@@ -858,7 +865,7 @@ window.cookieconsent.initialise({
 <p>Siga estes passos em ordem:</p>
 
 <ol>
-  <li>Launch System Settings on your console</li>
+  <li>Abra as Configurações do Sistema no seu console</li>
   <li>Navegue para <code class="language-plaintext highlighter-rouge">Configurações da Internet</code> -&gt; <code class="language-plaintext highlighter-rouge">Configurações de Conexão</code></li>
   <li>Clique no seu slot de conexão da rede e navegue para <code class="language-plaintext highlighter-rouge">Alterar configurações</code> -&gt; <code class="language-plaintext highlighter-rouge">Próxima página (seta direita)</code> -&gt; <code class="language-plaintext highlighter-rouge">Configurações de proxy</code></li>
   <li>Defina “Configurações de proxy” para “Não”</li>
@@ -889,10 +896,6 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Congelado em "Doing agbhax..."</u></summary>
 <p>Pode haver um problema com o seu arquivo <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Baixe novamente a versão mais recente do <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, coloque-o na raiz do seu cartão SD e renomeie-o para <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Não adicione a extensão <code class="language-plaintext highlighter-rouge">.bin</code> se você não a vê.</p>
-
-<p>Se tiver uma unidade de Taiwan (com um T na linha de versão, por exemplo, 11.3.0-##T), você não será capaz de seguir estas instruções, e precisará atualizar o seu console e seguir <a href="seedminer">Seedminer</a>.</p>
-
-<p>Se você tiver uma unidade chinesa continental (com um C na linha de versão, ie. 11.3.0-##C), junte-se <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew no Discord</a> para assistência.</p>
 </details>
 
 <details>
@@ -925,11 +928,35 @@ window.cookieconsent.initialise({
   <li>Selecione OK para confirmar.</li>
 </ol>
 
-<p>Se o problema persistir e você tiver uma versão do sistema terminando em E e o idioma definido para o inglês, altere o idioma para qualquer outro idioma <strong>temporariamente</strong>. Você pode reverter essa mudança quando chegar na finalização da instalação.</p>
+<p>Se o problema persistir:</p>
+
+<ul>
+  <li>Certifique-se de que <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, e o <code class="language-plaintext highlighter-rouge">boot.3dsx</code> estejam na raiz do cartão SD (não dentro de nenhuma pasta)</li>
+  <li>Certifique-se de que você selecionou o payload correto para a sua região E versão do sistema</li>
+  <li>Certifique-se de que suas configurações de região se pareçam <a href="/images/screenshots/skater_lang.png">com isso</a></li>
+  <li>Try resetting your browser data:
+    <ol>
+      <li>Inicie o navegador, e então abra as configurações do navegador</li>
+      <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initilize Save Data” or “Clear All Save Data”)</li>
+      <li>Tente o exploit novamente</li>
+    </ol>
+  </li>
+  <li>Tente alterar o idioma do sistema para algo diferente do idioma atual</li>
+</ul>
+
 </details>
 
 <details>
-<summary><u>An exception occurred ou ErrDisp ao pressionar GO! GO!</u></summary>
+<summary><u>"Ocorreu um erro. Segure o botão POWER para desligar..." (tela preta com texto)</u></summary>
+
+<p>O arquivo <code class="language-plaintext highlighter-rouge">arm11code.bin</code> está faltando ou está deslocado. Make sure to copy the files of the <a href="https://github.com/zoogie/super-skaterhax/releases/latest">latest version of super-skaterhax</a> for your region and version to the root of your SD card (not inside of a folder).</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/skater-root-layout.png" alt="" /></p>
+
+</details>
+
+<details>
+<summary><u>An exception occured ou "DLL_HEAP_INFORMATION" após pressionar GO! GO!</u></summary>
 
 <p>Isso provavelmente indica que você já possui custom firmware. Você deve <a href="checking-for-cfw">checar por CFW</a>.</p>
 
@@ -938,7 +965,7 @@ window.cookieconsent.initialise({
 <h2 id="finalizando-a-instalação">Finalizando a instalação</h2>
 
 <details>
-<summary><u>Unable to update console</u></summary>
+<summary><u>Não é possível atualizar o console</u></summary>
 
 <p>As etapas abaixo podem ser tentadas em qualquer ordem, mas são listadas de maneira mais fácil para maneira mais difícil de realizar.</p>
 
@@ -956,25 +983,63 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Não é possível acessar o Rosalina Menu porque o Gatilho Esquerdo/D-Pad para Baixo/Select está quebrado</u></summary>
+<summary><u>Error #01: No Nintendo 3DS folder</u></summary>
 
-<p>Download this <a href="/assets/config.ini">alternate config.ini</a> and place it in <code class="language-plaintext highlighter-rouge">/luma/</code>. Isso vai mudar a combinação de botões do Rosalina para (X) + (Y).</p>
+<p>Your SD card does not have the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Power on your device with your SD card inserted, then wait for the device to show a message box that says “Creating HOME Menu management information”. Once the message box disappears, power off your device and try again.</p>
+
 </details>
 
 <details>
-<summary><u>"An exception occurred" ou tela "Nintendo 3DS" infinita após de tentar iniciar o Homebrew Launcher pelo Download Play</u></summary>
+<summary><u>Error #02: Missing essential.exefs</u></summary>
 
-<p>Há um problema com o seu arquivo <code class="language-plaintext highlighter-rouge">boot.3dsx</code> (ele está faltando, colocado no lugar errado ou corrompido). Baixe a versão mais recente do <a href="https://github.com/devkitPro/3ds-hbmenu/releases/latest">Homebrew Launcher</a> e coloque <code class="language-plaintext highlighter-rouge">boot.3dsx</code> na raiz do seu cartão SD, substituindo qualquer arquivo existente.</p>
+<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your device, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+
 </details>
 
 <details>
-<summary><u>"Scripts directory not found" no GodMode9</u></summary>
+<summary><u>Unable to open GodMode9 or Error #03: Missing files</u></summary>
 
-<p>Você não copiou a pasta <code class="language-plaintext highlighter-rouge">gm9</code> do GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> para a raiz do seu cartão SD. Baixe a versão mais recente do <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a> e coloque a pasta <code class="language-plaintext highlighter-rouge">gm9</code> na raiz do seu cartão SD, combinando-a com a atual.</p>
+<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
 </details>
 
 <details>
-<summary><u>"Backup failed" ou "Error: Could not open directory" ao tentar um backup da NAND</u></summary>
+<summary><u>Error #04: No space</u></summary>
+
+<p>You need at least 1.3GB of free space to perform the NAND backup, which is a part of the script. Se você não tem espaço suficiente, siga estes passos:</p>
+
+<ol>
+  <li>Desligue seu console</li>
+  <li>Remova o cartão SD e insira-o no seu computador</li>
+  <li>Copie a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> da raiz do seu cartão SD para o seu computador</li>
+  <li>Exclua a pasta Nintendo 3DS do cartão SD</li>
+  <li>Reinsira o cartão SD no seu console</li>
+  <li>Desligue seu console, segure o START e ligue-o enquanto segura o START para iniciar o GodMode9</li>
+  <li>Selecione “Scripts…”</li>
+  <li>Select “finalize”</li>
+  <li>Follow the prompts in the script, answering each question that you are asked</li>
+  <li>Copie os arquivos em <code class="language-plaintext highlighter-rouge">gm9/out</code> do seu SD para um local seguro no seu computador</li>
+  <li>Apague os arquivos <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> e <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> do cartão SD, mantendo essential.exefs em <code class="language-plaintext highlighter-rouge">/gm9/out/</code></li>
+  <li>Copie a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> do seu computador para a raiz do seu cartão SD</li>
+  <li>Exclua a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> do seu computador</li>
+</ol>
+
+<p>Once done, re-run the script.</p>
+
+</details>
+
+<details>
+<summary><u>Error #05: No title database</u></summary>
+
+<p>Press (A) to create a title database, unlock SysNAND writing by entering the buttons on-screen, follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+
+</details>
+
+<details>
+<summary><u>Error #06 or "Error: Could not open directory" when attempting a NAND backup</u></summary>
+
 <p>Certifique-se de que você tem pelo menos 1.3GB disponíveis no seu cartão SD. Se você não tem espaço suficiente, siga estes passos:</p>
 <ol>
   <li>Desligue seu console</li>
@@ -993,18 +1058,25 @@ window.cookieconsent.initialise({
 <p>Se você tiver espaço suficiente no seu cartão SD, seu SD pode estar corrompido ou com defeito. Verifique se há erros no seu cartão SD de acordo com o sistema operacional do seu computador: <a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, <a href="f3xquickt-(mac)">macOS</a>.</p>
 </details>
 
+<details>
+<summary><u>Error #08: Dummy title database</u></summary>
+
+<p>You didn’t delete the dummy title database that was created by Error #05. Follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+
+</details>
+
 <hr />
 
-<h2 id="boot-issues-on-consoles-with-custom-firmware">Boot issues on consoles with custom firmware</h2>
+<h2 id="problemas-de-inicialização-em-consoles-com-custom-firmware">Problemas de inicialização em consoles com custom firmware</h2>
 
-<p class="notice--info">The steps detailed here generally assume that your console has a modern custom firmware setup (boot9strap + Luma3DS 8.0 or greater). Se o seu console está executando uma instalação homebrew mais antiga (por exemplo, algo baseado em arm9loaderhax ou menuhax), você deve atualizar sua configuração antes de tentar essas instruções.</p>
+<p class="notice--info">As etapas detalhadas aqui geralmente assumem que o seu console tem um setup de custom firmware moderno (boot9strap + Luma3DS 8.0 ou superior). Se o seu console está executando uma instalação homebrew mais antiga (por exemplo, algo baseado em arm9loaderhax ou menuhax), você deve atualizar sua configuração antes de tentar essas instruções.</p>
 
 <h3 id="indicadores-de-luz-de-notificação-ou-ligadesliga">Indicadores de luz de notificação ou liga/desliga</h3>
 
 <details>
-<summary><u>My console powers off when I try to turn it on, and/or the notification LED shows a color on boot</u></summary>
+<summary><u>Meu console é desligado quando eu tentar ligá-lo e/ou o LED de notificação mostra uma cor na inicialização</u></summary>
 
-<p>Há um problema com o seu arquivo <code class="language-plaintext highlighter-rouge">boot.firm</code>. Se você estiver executando <a href="https://github.com/SciresM/boot9strap/releases/tag/1.4">boot9strap 1.4</a>, seu LED de notificação do 3DS poderá terá uma certa cor. Esta cor é usada para diagnosticar problemas que envolvem seu arquivo <code class="language-plaintext highlighter-rouge">boot.firm</code> no cartão SD ou na memória interna. On older versions of boot9strap, the blue light will power off almost immediately when trying to turn on the console.</p>
+<p>Há um problema com o seu arquivo <code class="language-plaintext highlighter-rouge">boot.firm</code>. Se você estiver executando <a href="https://github.com/SciresM/boot9strap/releases/tag/1.4">boot9strap 1.4</a>, seu LED de notificação do 3DS poderá terá uma certa cor. Esta cor é usada para diagnosticar problemas que envolvem seu arquivo <code class="language-plaintext highlighter-rouge">boot.firm</code> no cartão SD ou na memória interna. Em versões mais antigas do boot9strap, a luz azul irá desligar quase imediatamente quando tentar ligar o console.</p>
 
 <p>Se o LED de notificação acender:</p>
 
@@ -1016,18 +1088,18 @@ window.cookieconsent.initialise({
 
 <p>Você pode obter um novo arquivo <code class="language-plaintext highlighter-rouge">boot.firm</code> baixando a <a href="https://github. om/LumaTeam/Luma3DS/releases/latest">versão mais recente do Luma3DS</a>, extraindo e colocando <code class="language-plaintext highlighter-rouge">boot.firm</code> na raiz do seu cartão SD. Se o seu arquivo <code class="language-plaintext highlighter-rouge">boot.firm</code> está sendo constantemente detectado como corrompido, você pode querer verificar se há erros no seu cartão SD (<a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, ou <a href="f3xquickt-(mac)">macOS</a>). Além disso, note que o 3DS tende a ter problemas com arquivos extraídos usando WinRAR.</p>
 
-<p>If you hear a “popping sound”, potentially accompanied with the backlight turning on for a split second, there is a hardware issue with your console (such as a disconnected backlight cable). You may be able to get your console to boot by holding it at certain angles.</p>
+<p>Se você ouvir um “som de pop”, potencialmente acompanhado com a luz de fundo ativando por um segundo, há um problema de hardware no seu console (como um cabo de luz de fundo desconectado). Você pode ser capaz de fazer com que o seu console inicialize segurando-o em certos ângulos.</p>
 </details>
 
 <details>
-<summary><u>My console gets stuck on a black screen with blue power light staying on</u></summary>
+<summary><u>Meu console fica preso em uma tela preta com a luz azul ligada</u></summary>
 
 <p>As etapas abaixo podem ser tentadas em qualquer ordem, mas são listadas de menos para mais demorada.</p>
 
 <ol>
-  <li>Power off your console, remove the SD card, re-insert it, then power on your console.</li>
-  <li>Power off your console, eject the game cartridge if inserted, power on your console, then wait up to ten minutes. If your console boots within ten minutes, the issue has been fixed and is unlikely to reoccur</li>
-  <li>Renomeie a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> no seu cartão SD para <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code>, depois tente inicializar. If your console successfully boots, there is some issue within your <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Tente limpar a extdata do Menu HOME:
+  <li>Desligue o console, remova o cartão SD, insira-o e, em seguida, ligue seu console.</li>
+  <li>Desligue o console, ejete o cartucho do jogo se estiver inserido, ligue o seu console, e espere até dez minutos. Se o seu console inicializar dentro de dez minutos, o problema foi corrigido e é improvável que volte a ocorrer</li>
+  <li>Renomeie a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> no seu cartão SD para <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code>, depois tente inicializar. Se o seu console é iniciado com sucesso, há alguns problemas na pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code>. Tente limpar a extdata do Menu HOME:
     <ul>
       <li>Navegue até <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code>
       + Apague a pasta correspondente da região do seu 3DS:
@@ -1044,10 +1116,10 @@ window.cookieconsent.initialise({
   </li>
   <li>Tente iniciar no modo recovery e atualizar o seu sistema:
     <ul>
-      <li>Power off your console</li>
+      <li>Desligue seu console</li>
       <li>Segure (Gatilho Esquerdo) + (Gatilho Direito) + (D-Pad pra cima) + (A)</li>
-      <li>Power on your console</li>
-      <li>If you were successful, the console will boot to an “update your system” screen</li>
+      <li>Ligue o seu console</li>
+      <li>Se você tiver sucesso, o console iniciará em uma tela de “atualizar seu sistema”</li>
     </ul>
   </li>
   <li>Siga o guia de <a href="ctrtransfer">CTRTransfer</a></li>
@@ -1073,9 +1145,9 @@ window.cookieconsent.initialise({
 
 <p>Os ARM11 exception handlers estão desabilitados, ou custom firmware não está instalado. Tente habilitar os ARM11 exception handlers:</p>
 <ul>
-  <li>Power off your console</li>
+  <li>Desligue seu console</li>
   <li>Segure (Select)</li>
-  <li>Power on your console, while still holding (Select)</li>
+  <li>Ligue o seu console, enquanto ainda segura (Select)</li>
   <li>Se a caixa “Disable ARM11 exception handlers” estiver marcada, desmarque a opção</li>
 </ul>
 </details>
@@ -1084,12 +1156,12 @@ window.cookieconsent.initialise({
 <summary><u>O Menu HOME está sem meus aplicativos instalados</u></summary>
 
 <p>Isso pode ser causado por várias razões, mas principalmente porque o seu cartão SD não está sendo lido pelo sistema.
-You can check if your SD is being read by holding SELECT on boot and checking the yellow text on the bottom screen; if it says “Booted from CTRNAND via B9S”, then your console is booting from the internal memory and not from the SD card.
+Você pode verificar se seu SD está sendo lido segurando SELECT durante a inicialização e verificando o texto amarelo na parte inferior; Se disser “Booted from CTRNAND via B9S”, então seu console está iniciando da memória interna e não do cartão SD.
 Se este for o caso, tente os passos abaixo, os quais são listados de mais fácil para mais difícil:</p>
 <ol>
-  <li>Power off your console, remove the SD card, re-insert it, then power on your console</li>
-  <li>Power off your console, remove the SD card, insert it on your PC, download the latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>, extract <code class="language-plaintext highlighter-rouge">boot.firm</code> from the <code class="language-plaintext highlighter-rouge">Luma3DS.zip</code> and place it on the root of your SD card (replacing any existing file)</li>
-  <li>Power off your console, remove the SD card, insert it on your PC and reformat your SD card according to your computer’s operating system: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(this will wipe your SD card data)</em></li>
+  <li>Desligue o console, remova o cartão SD, insira-o e, em seguida, ligue seu console</li>
+  <li>Desligue o console, remova o cartão SD, o insira no seu PC, baixe a versão mais recente do <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>, extraia <code class="language-plaintext highlighter-rouge">boot.firm</code> do <code class="language-plaintext highlighter-rouge">Luma3DS.zip</code> e coloque-o na raiz do seu cartão SD (substituindo qualquer arquivo existente)</li>
+  <li>Desligue o console, remova o cartão SD, insira-o no seu PC e reformate o cartão SD de acordo com o sistema operacional do seu computador: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(isso irá apagar os dados do seu cartão SD)</em></li>
   <li>Teste por erros no seu cartão SD seguindo o guia de acordo com o sistema operacional do seu computador: <a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, <a href="f3xquickt-(mac)">macOS</a>. Se o seu cartão SD estiver marcado como defeituoso, então você terá que substituir o cartão SD</li>
   <li>Sua entrada de cartão SD pode estar com problemas. Entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> para obter mais ajuda</li>
 </ol>
@@ -1098,9 +1170,9 @@ Se este for o caso, tente os passos abaixo, os quais são listados de mais fáci
 <details>
 <summary><u>Tela azul "BOOTROM ERROR"</u></summary>
 
-<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. Isso também pode indicar um problema de hardware que não pode ser corrigido. De qualquer forma, entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> para obter ajuda.</p>
+<p>Seu console provavelmente está hard-bricked. Você precisará comprar um flashcart de ntrboot para reinstalar o boot9strap para tentar consertar seu console. Isso também pode indicar um problema de hardware que não pode ser corrigido. De qualquer forma, entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> para obter ajuda.</p>
 <ul>
-  <li>Também é possível que alguém tenha definido um splash (tela que mostra uma imagem assim que o 3DS inicia) que se pareça com um brick. Try leaving your console powered on, waiting on the blue screen, for five minutes.</li>
+  <li>Também é possível que alguém tenha definido um splash (tela que mostra uma imagem assim que o 3DS inicia) que se pareça com um brick. Tente deixar o seu console ligado, esperando na tela azul, por cinco minutos.</li>
 </ul>
 </details>
 
@@ -1110,7 +1182,7 @@ Se este for o caso, tente os passos abaixo, os quais são listados de mais fáci
 <p>Por favor, tire uma foto do erro e entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> para obter ajuda.</p>
 </details>
 
-<h2 id="software-issues-on-consoles-with-custom-firmware">Software issues on consoles with custom firmware</h2>
+<h2 id="problemas-de-software-em-consoles-com-custom-firmware">Problemas de software em consoles com custom firmware</h2>
 
 <details>
 <summary><u>A funcionalidade DSi / DS está quebrada ou foi substituída pelo Flipnote Studio</u></summary>
@@ -1124,26 +1196,26 @@ Se este for o caso, tente os passos abaixo, os quais são listados de mais fáci
   <li>Abra o Homebrew Launcher</li>
   <li>Inicie o TWLFix-CFW da lista do homebrew</li>
   <li>Aperte (A) para desinstalar os títulos TWL</li>
-  <li>Press (Start) to reboot the console</li>
-  <li>Update your console by going to System Settings, then “Other Settings”, then going all the way to the right and using “System Update”
+  <li>Aperte (Start) para reiniciar o console</li>
+  <li>Atualize seu console indo em Configurações do Sistema, depois em “Outras Configurações”, depois indo até a direita e usando “Atualização do Sistema”
     <ul>
       <li>A atualização mostrará que os aplicativos TWL essenciais foram desinstalados e serão baixados novamente e depois reinstalados</li>
     </ul>
   </li>
-  <li>Once the update is complete, tap “OK” to reboot the console</li>
+  <li>Quando a atualização for concluída, toque em “OK” para reiniciar o console</li>
 </ol>
 </details>
 
 <details>
 <summary><u>A funcionalidade de Console Virtual e/ou Modo de Segurança está quebrada</u></summary>
 
-<p>Your console is running Luma3DS 6.6 or older, likely via arm9loaderhax. You should follow <a href="a9lh-to-b9s">A9LH to B9S</a> to update your console to a modern custom firmware environment.</p>
+<p>O seu console está executando o Luma3DS 6.6 ou mais antigo, provavelmente via arm9loaderhax. Você deve seguir <a href="a9lh-to-b9s">A9LH para B9S</a> para atualizar seu console para um ambiente moderno de custom firmware.</p>
 </details>
 
 <details>
 <summary><u>Jogos no modo de extended memory (Pokemon Sun/Moon, Smash, etc.) não funcionam</u></summary>
 
-<p>Isso pode ocorrer após uma CTRTransfer ou mudança de região no Old 3DS / 2DS. You will need to system format your console to fix this issue.</p>
+<p>Isso pode ocorrer após uma CTRTransfer ou mudança de região no Old 3DS / 2DS. Você precisará formatar seu console para corrigir esse problema.</p>
 </details>
 
 <details>
@@ -1151,6 +1223,12 @@ Se este for o caso, tente os passos abaixo, os quais são listados de mais fáci
 
 <p>Procure pela sua exception screen <a href="https://wiki.hacks.guide/wiki/3DS:Error_screens/Luma3DS_exception_screen">nesta página</a>.
 Se você não conseguiu encontrar seu erro ou as instruções não funcionaram, entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> para obter mais assistência.</p>
+</details>
+
+<details>
+<summary><u>Abrir as configurações do Menu HOME trava o console ou carrega o Homebrew Launcher</u></summary>
+
+<p>Seu console provavelmente ainda tem menuhax67 instalado. Para desinstalar menuhax67, baixe a versão mais recente de <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> (o <code class="language-plaintext highlighter-rouge">.zip</code>), então siga a <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits/menuhax67#Uninstall_menuhax67">seção “Desinstalar menuhax67”</a> aqui.</p>
 </details>
 
 <hr />
@@ -1197,15 +1275,41 @@ Se você não conseguiu encontrar seu erro ou as instruções não funcionaram, 
 </details>
 
 <details>
+<summary><u>Manually entering Homebrew Launcher</u></summary>
+
+<p>If you are missing the Homebrew Launcher application from your HOME Menu, you can follow these instructions to manually enter the Homebrew Launcher. (You will need <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">boot.3dsx and boot.firm</a> on the root of your SD card.)</p>
+
+<ol>
+  <li>Abra o aplicativo Download Play (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
+  <li>Aguarde até ver os botões <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> e <code class="language-plaintext highlighter-rouge">Nintendo DS</code></li>
+  <li>Aperte (Gatilho Esquerdo) + (D-pad pra baixo) + (Select) ao mesmo tempo para abrir o menu Rosalina</li>
+  <li>Selecione “Miscellaneous options”</li>
+  <li>Selecione “Switch the hb. title to the current app.”</li>
+  <li>Aperte (B) para continuar</li>
+  <li>Aperte (B) para retornar para o menu principal do Rosalina</li>
+  <li>Aperte (B) para sair do menu do Rosalina</li>
+  <li>Aperte (Home) para suspender o Download Play</li>
+  <li>Pressione o botão “Fechar” na tela inferior para fechar o Download Play</li>
+  <li>Reinicie o aplicativo Download Play</li>
+  <li>Seu console deve inicializar o Homebrew Launcher
+    <ul>
+      <li>Se o seu console estiver travado na tela de carregamento, você está sem <code class="language-plaintext highlighter-rouge">boot.3dsx</code> na raiz do seu cartão SD</li>
+    </ul>
+  </li>
+</ol>
+
+</details>
+
+<details>
 <summary><u>Desativando o Controle dos Pais</u></summary>
 
 <p>Desative o recurso Controle dos Pais indo em Configurações do Sistema -&gt; Controles dos Pais e inserindo o PIN, então pressionando “Limpar configurações”, depois “Excluir” para removê-lo.
-However, if you do not know the PIN and therefore cannot access the console’s settings, you will need to disable it. In order to do this, you need to obtain your console’s master key (mkey):</p>
+Entretanto, se você não sabe o PIN e, portanto, não pode acessar as configurações do console, você precisará desativá-lo. Para fazer isso, você precisa obter a chave mestra do seu console (mkey):</p>
 <ol>
   <li>Vá para <a href="https://mkey.eiphax.tech/">este site</a></li>
   <li>Preencha as seguintes caixas com as informações:
     <ul>
-      <li>Device Type: Select “3DS” (the same applies if you are using a 2DS, New 3DS (XL/LL) or New 2DS (XL/LL))</li>
+      <li>Device Type: Selecione “3DS” (o mesmo se aplica se você estiver usando um 2DS, New 3DS (XL/LL) ou New 2DS (XL/LL))</li>
       <li>System Date: O dia e mês que o relógio do seu console está configurado</li>
       <li>Inquiry Number: Pode ser obtido pressionando “Esquci o PIN” e então “Eu esqueci” na tela de Controle dos Pais</li>
     </ul>

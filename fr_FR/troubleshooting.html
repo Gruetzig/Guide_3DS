@@ -442,7 +442,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/fr_FR/installing-boot9strap-(fredtool-legacy)'>Installing boot9strap (Fredtool, Legacy)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/fr_FR/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
           
         
           
@@ -543,6 +543,13 @@ window.cookieconsent.initialise({
 <h2 id="problèmes-avec-safeb9sinstaller">Problèmes avec SafeB9SInstaller</h2>
 
 <h3 id="sighaxed-firm-was-not-installed-check-lower-screen-for-more-info">SigHaxed FIRM was not installed! Check lower screen for more info.</h3>
+
+<details>
+<summary><u>MicroSD Card - init failed</u></summary>
+
+<p>Your SD card is most likely acting weird. Try reformatting your SD card (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>). If this doesn’t work, try another SD card.</p>
+
+</details>
 
 <details>
 <summary><u>SigHaxed FIRM - File not found</u></summary>
@@ -798,7 +805,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"Lecture impossible."</u></summary>
 
-<p>You have the wrong Soundhax file for your console and region, or your console is incompatible with Soundhax. In the latter case, you should update your console to the latest version and follow <a href="seedminer">Seedminer</a>.</p>
+<p>You have the wrong Soundhax file for your console and region, or your console is incompatible with Soundhax. In the latter case, your course of action will determine on what version your 3DS is currently on. Rejoignez <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew sur Discord</a> pour obtenir de l’aide.</p>
 </details>
 
 <details>
@@ -841,7 +848,7 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Lancez le Navigateur Internet, puis accédez aux paramètres du navigateur</li>
-  <li>Faites défiler tout en bas et sélectionnez “Effacer données de sauvegarde”</li>
+  <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initialize Save Data” or “Clear All Save Data”)</li>
   <li>Retentez l’exploit</li>
 </ol>
 </details>
@@ -889,10 +896,6 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Plantage sur "Doing agbhax..."</u></summary>
 <p>Il y a peut-être un problème avec votre fichier <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Re-téléchargez la dernière version de <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, placez le fichier à la racine de votre carte SD et renommez-le en <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. N’ajoutez pas l’extension <code class="language-plaintext highlighter-rouge">.bin</code> si vous ne la voyez pas déjà.</p>
-
-<p>Si vous avez une console taïwanaise (avec un T dans la chaîne de version, c’est-à-dire 11.3. -##T), vous ne serez pas en mesure de suivre ces instructions et vous devrez mettre à jour votre console et suivre <a href="seedminer">Seedminer</a> à la place.</p>
-
-<p>Si vous avez une console chinoise (avec un C dans la chaîne de version, c’est-à-dire 11.3.0-##C), rejoignez <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew sur Discord</a> pour obtenir de l’aide.</p>
 </details>
 
 <details>
@@ -925,11 +928,35 @@ window.cookieconsent.initialise({
   <li>Appuyez sur OK pour confirmer.</li>
 </ol>
 
-<p>Si le problème persiste et que vous avez une version du logiciel système se terminant par E, et que la langue est réglée sur l’anglais, changez la langue dans n’importe quelle autre langue <strong>temporairement</strong>. Vous pouvez annuler cette modification lorsque vous atteindrez la Finalisation de l’installation.</p>
+<p>If the problem persists:</p>
+
+<ul>
+  <li>Ensure that <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> are on the root of the SD card (not inside of any folder)</li>
+  <li>Ensure that you selected the correct payload for your region AND system version</li>
+  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a></li>
+  <li>Try resetting your browser data:
+    <ol>
+      <li>Lancez le Navigateur Internet, puis accédez aux paramètres du navigateur</li>
+      <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initilize Save Data” or “Clear All Save Data”)</li>
+      <li>Retentez l’exploit</li>
+    </ol>
+  </li>
+  <li>Try changing the system language to something other than the current language</li>
+</ul>
+
 </details>
 
 <details>
-<summary><u>An exception occured ou ErrDisp en appuyant sur GO! GO!</u></summary>
+<summary><u>"Une erreur est survenue. Maintenez le bouton POWER enfoncé pour éteindre la console..." (écran noir avec texte)</u></summary>
+
+<p>Le fichier <code class="language-plaintext highlighter-rouge">arm11code.bin</code> est absent ou mal placé. Make sure to copy the files of the <a href="https://github.com/zoogie/super-skaterhax/releases/latest">latest version of super-skaterhax</a> for your region and version to the root of your SD card (not inside of a folder).</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/skater-root-layout.png" alt="" /></p>
+
+</details>
+
+<details>
+<summary><u>An exception occured or "DLL_HEAP_INFORMATION" when pressing GO! GO!</u></summary>
 
 <p>Cela indique que vous avez probablement déjà un custom firmware. Vous devriez <a href="checking-for-cfw">vérifier la présence d’un CFW</a>.</p>
 
@@ -956,25 +983,63 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Impossible d'entrer dans le menu Rosalina en raison des boutons (L) / Bas sur la croix directionnelle / Select cassés</u></summary>
+<summary><u>Error #01: No Nintendo 3DS folder</u></summary>
 
-<p>Download this <a href="/assets/config.ini">alternate config.ini</a> and place it in <code class="language-plaintext highlighter-rouge">/luma/</code>. Ceci changera la combinaison de touches du menu Rosalina en (X) + (Y).</p>
+<p>Your SD card does not have the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Power on your device with your SD card inserted, then wait for the device to show a message box that says “Creating HOME Menu management information”. Once the message box disappears, power off your device and try again.</p>
+
 </details>
 
 <details>
-<summary><u>"Une erreur s'est produite" ou l'écran "Nintendo 3DS" tourne en boucle après avoir essayé de lancer l'Homebrew Launcher à partir du Mode téléchargement</u></summary>
+<summary><u>Error #02: Missing essential.exefs</u></summary>
 
-<p>Il y a un problème avec votre fichier <code class="language-plaintext highlighter-rouge">boot.3dsx</code> (il est absent, mal placé ou corrompu). Téléchargez la dernière version du <a href="https://github.com/devkitPro/3ds-hbmenu/releases/latest">Homebrew Launcher</a> et placez le fichier <code class="language-plaintext highlighter-rouge">boot.3dsx</code> à la racine de votre carte SD, en remplaçant tout fichier existant.</p>
+<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your device, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+
 </details>
 
 <details>
-<summary><u>"Scripts directory not found" dans GodMode9</u></summary>
+<summary><u>Unable to open GodMode9 or Error #03: Missing files</u></summary>
 
-<p>Vous n’avez pas copié le dossier <code class="language-plaintext highlighter-rouge">gm9</code> de l’archive <code class="language-plaintext highlighter-rouge">.zip</code> de GodMode9 vers la racine de votre carte SD. Téléchargez la dernière version de <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a> et placez le dossier <code class="language-plaintext highlighter-rouge">gm9</code> à la racine de votre carte SD, en le fusionnant avec celui existant.</p>
+<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
 </details>
 
 <details>
-<summary><u>"Backup failed" ou "Error: Could not open directory" lorsque vous essayez de créer une sauvegarde de la NAND</u></summary>
+<summary><u>Error #04: No space</u></summary>
+
+<p>You need at least 1.3GB of free space to perform the NAND backup, which is a part of the script. Si vous n’avez pas assez d’espace, suivez ces étapes :</p>
+
+<ol>
+  <li>Éteignez votre console</li>
+  <li>Retirez la carte SD et insérez-la dans votre ordinateur</li>
+  <li>Copiez le dossier <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> depuis la racine de votre carte SD vers votre ordinateur</li>
+  <li>Supprimez le dossier Nintendo 3DS de votre carte SD</li>
+  <li>Réinsérez votre carte SD dans votre console</li>
+  <li>Éteignez votre console, maintenez START et allumez la console tout en continuant à maintenir START appuyé pour lancer GodMode9</li>
+  <li>Sélectionnez “Scripts”</li>
+  <li>Select “finalize”</li>
+  <li>Follow the prompts in the script, answering each question that you are asked</li>
+  <li>Copiez les fichiers du dossier <code class="language-plaintext highlighter-rouge">gm9/out</code> de votre carte SD vers un endroit sûr sur votre ordinateur</li>
+  <li>Supprimez les fichiers <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> et <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> de votre carte SD, en gardant essential.exefs dans <code class="language-plaintext highlighter-rouge">/gm9/out/</code></li>
+  <li>Copiez le dossier <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> de votre ordinateur vers la racine de votre carte SD</li>
+  <li>Supprimez le dossier <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> de votre ordinateur</li>
+</ol>
+
+<p>Once done, re-run the script.</p>
+
+</details>
+
+<details>
+<summary><u>Error #05: No title database</u></summary>
+
+<p>Press (A) to create a title database, unlock SysNAND writing by entering the buttons on-screen, follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+
+</details>
+
+<details>
+<summary><u>Error #06 or "Error: Could not open directory" when attempting a NAND backup</u></summary>
+
 <p>Assurez-vous d’avoir au moins 1,3 Go d’espace disponible sur votre carte SD. Si vous n’avez pas assez d’espace, suivez ces étapes :</p>
 <ol>
   <li>Éteignez votre console</li>
@@ -991,6 +1056,13 @@ window.cookieconsent.initialise({
 </ol>
 
 <p>Si vous avez assez d’espace sur votre carte SD, votre carte SD pourrait être corrompue ou défectueuse. Vérifiez si votre carte SD est corrompue ou défectueuse en suivant le guide correspondant au système d’exploitation de votre ordinateur : <a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, <a href="f3xswift-(mac)">macOS</a>.</p>
+</details>
+
+<details>
+<summary><u>Error #08: Dummy title database</u></summary>
+
+<p>You didn’t delete the dummy title database that was created by Error #05. Follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+
 </details>
 
 <hr />
@@ -1151,6 +1223,12 @@ Si c’est le cas, essayez les étapes ci-dessous, qui sont listées du plus sim
 Si vous n’avez pas pu trouver votre message erreur ou si les instructions n’ont pas fonctionné, rejoignez <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew sur Discord</a> pour obtenir de l’aide.</p>
 </details>
 
+<details>
+<summary><u>Opening the HOME Menu settings crashes the console or loads the Homebrew Launcher</u></summary>
+
+<p>Your console likely still has menuhax67 installed. To uninstall menuhax67, download the latest release of <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> (the menuhax <code class="language-plaintext highlighter-rouge">.zip</code>), then follow the <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits/menuhax67#Uninstall_menuhax67">“Uninstall menuhax67” section</a> here.</p>
+</details>
+
 <hr />
 
 <h2 id="autres-dépannages">Autres dépannages</h2>
@@ -1192,6 +1270,32 @@ Si vous n’avez pas pu trouver votre message erreur ou si les instructions n’
   </li>
   <li>Réinsérez votre carte SD dans votre console</li>
 </ol>
+</details>
+
+<details>
+<summary><u>Manually entering Homebrew Launcher</u></summary>
+
+<p>If you are missing the Homebrew Launcher application from your HOME Menu, you can follow these instructions to manually enter the Homebrew Launcher. (You will need <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">boot.3dsx and boot.firm</a> on the root of your SD card.)</p>
+
+<ol>
+  <li>Lancez l’application Mode téléchargement (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
+  <li>Attendez jusqu’à ce que vous voyiez les boutons <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> et <code class="language-plaintext highlighter-rouge">Nintendo DS</code></li>
+  <li>Appuyez simultanément sur (L) + (Bas sur la croix directionnelle) + (Select) pour ouvrir le menu Rosalina</li>
+  <li>Sélectionnez “Miscellaneous options”</li>
+  <li>Sélectionnez “Switch the hb. title to the current app.”</li>
+  <li>Appuyez sur (B) pour continuer</li>
+  <li>Appuyez sur (B) pour revenir au menu principal de Rosalina</li>
+  <li>Appuyez sur (B) pour quitter le menu Rosalina</li>
+  <li>Appuyez sur (HOME), pour mettre Mode téléchargement en suspens</li>
+  <li>Appuyez sur le bouton “Quitter” sur l’écran du bas pour fermer Mode téléchargement</li>
+  <li>Relancez l’application Mode téléchargement</li>
+  <li>Your console should load the Homebrew Launcher
+    <ul>
+      <li>If your console is stuck on the loading splash screen, you are missing <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of your SD card</li>
+    </ul>
+  </li>
+</ol>
+
 </details>
 
 <details>
