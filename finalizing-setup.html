@@ -531,10 +531,8 @@ window.cookieconsent.initialise({
 
 <p>On this page, we will make critical system file backups and install some homebrew programs. Most of these steps will be automated using a script that you will run on your console.</p>
 
-<details class="notice--info">
-<summary>List of homebrew applications that will be installed</summary>
-
-<p>Click the links to view the GitHub repository of each application. (Give them a star if you appreciate them!)</p>
+<div class="notice--info">
+<p>The script will install the following applications:</p>
 
 <ul>
   <li><strong><a href="https://github.com/Steveice10/FBI">FBI</a></strong> <em>(installs CIA formatted applications)</em></li>
@@ -546,7 +544,8 @@ window.cookieconsent.initialise({
   <li><strong><a href="https://github.com/d0k3/GodMode9">GodMode9</a></strong> <em>(multipurpose tool which can do NAND and cartridge functions)</em></li>
 </ul>
 
-</details>
+<p>If you don’t want one of these applications, you can remove them after you have finished this page by navigating to System Settings -&gt; Data Management -&gt; Nintendo 3DS -&gt; Software. (GodMode9 cannot be removed in this way and is generally required for other functions.)</p>
+</div>
 
 <h3 id="compatibility-notes">Compatibility Notes</h3>
 
@@ -642,7 +641,7 @@ window.cookieconsent.initialise({
   <li>Press (Home) to bring up the action menu</li>
   <li>Select “Scripts…”</li>
   <li>Select “finalize”</li>
-  <li>Follow the prompts in the script, answering each question that you are asked
+  <li>Follow the prompts in the script, answering any questions that you are asked
     <ul>
       <li>If you encounter an error, follow the instructions in the error message or consult the <a href="troubleshooting#finalizing-setup">troubleshooting</a> page</li>
     </ul>
@@ -653,14 +652,18 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Insert your SD card into your computer</li>
-  <li>Copy the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder to a safe location on your computer
+  <li>Copy the <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> folder to a safe location on your computer
     <ul>
       <li>This folder contains critical file backups and should be backed up to multiple locations (i.e. cloud storage) if possible</li>
       <li>The two SysNAND files are your NAND backup and can be used to revert your console to a working state if it is bricked by a software issue</li>
       <li>The <code class="language-plaintext highlighter-rouge">essential.exefs</code> file contains your console’s system-unique files and can be used to recover your data in the event of a hardware failure</li>
     </ul>
   </li>
-  <li>Delete the contents of the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder from your SD card</li>
+  <li>If you still have them, delete the two <code class="language-plaintext highlighter-rouge">SysNAND</code> files from the <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> folder from your SD card
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">essential.exefs</code> file is small and may be kept on your SD card for ease of access</li>
+    </ul>
+  </li>
 </ol>
 
 <hr />

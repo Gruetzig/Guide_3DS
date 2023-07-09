@@ -983,7 +983,7 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Error #01: No Nintendo 3DS folder</u></summary>
+<summary><u>Warning #01: No Nintendo 3DS folder</u></summary>
 
 <p>Your SD card does not have the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Power on your device with your SD card inserted, then wait for the device to show a message box that says “Creating HOME Menu management information”. Once the message box disappears, power off your device and try again.</p>
 
@@ -1016,22 +1016,43 @@ window.cookieconsent.initialise({
   <li>Copy the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder from the root of your SD card to your computer</li>
   <li>Delete the Nintendo 3DS folder from the SD card</li>
   <li>Reinsert your SD card into your console</li>
-  <li>Power off your console, hold START and power on still holding START to boot on GodMode9</li>
+  <li>Power off your console</li>
+  <li>Hold START and power on still holding START to open GodMode9</li>
+  <li>Press the (Home) button</li>
   <li>Select “Scripts…”</li>
   <li>Select “finalize”</li>
-  <li>Follow the prompts in the script, answering each question that you are asked</li>
-  <li>Copy the files in <code class="language-plaintext highlighter-rouge">gm9/out</code> on your SD to a safe location on your computer</li>
-  <li>Delete the <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> files from the SD card, keeping essential.exefs in <code class="language-plaintext highlighter-rouge">/gm9/out/</code></li>
+  <li>Press (A) to create a NAND backup
+    <ul>
+      <li>This may take around fifteen minutes</li>
+    </ul>
+  </li>
+  <li>Press (A) again
+    <ul>
+      <li>The console should automatically power off</li>
+    </ul>
+  </li>
+  <li>Insert your SD card into your computer</li>
+  <li>Copy the files in <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> on your SD to a safe location on your computer</li>
+  <li>Delete the <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> files from the SD card</li>
   <li>Copy the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder from your computer to the root of your SD card</li>
   <li>Delete the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder from your computer</li>
 </ol>
 
-<p>Once done, re-run the script.</p>
+<p>Now that you have your NAND backup in a safe place:</p>
+
+<ol>
+  <li>Insert your SD card into your console</li>
+  <li>Hold START and power on still holding START to open GodMode9</li>
+  <li>Press the (Home) button</li>
+  <li>Select “Scripts…”</li>
+  <li>Select “finalize”</li>
+  <li>Continue the script as normal</li>
+</ol>
 
 </details>
 
 <details>
-<summary><u>Error #05: No title database</u></summary>
+<summary><u>Information #05: No title database</u></summary>
 
 <p>Press (A) to create a title database, unlock SysNAND writing by entering the buttons on-screen, follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
 
@@ -1062,6 +1083,20 @@ window.cookieconsent.initialise({
 <summary><u>Error #08: Dummy title database</u></summary>
 
 <p>You didn’t delete the dummy title database that was created by Error #05. Follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+
+</details>
+
+<details>
+<summary><u>Error #09: Unsupported GodMode9 version</u></summary>
+
+<p>You are somehow running a version of GodMode9 not packaged with the script. Make sure you copied the contents of <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card and that you are holding START while powering on your console.</p>
+
+</details>
+
+<details>
+<summary><u>Information #11: NAND backup flag detected</u></summary>
+
+<p>You most likely already made a NAND backup on this console. If you did not make a backup or lost access to your backup, select “1. Make Another NAND Backup”. Otherwise, select “2. Skip NAND Backup”.</p>
 
 </details>
 
