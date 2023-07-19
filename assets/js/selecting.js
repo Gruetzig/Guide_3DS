@@ -8,6 +8,42 @@
 const DEVICE_N3DS = 1;
 const DEVICE_O3DS = 0;
 
+// Possible max minor for each major, major as key
+const major_minor_map = {
+    0: -1, // invalidate all 0.x
+    1: 1,
+    2: 2,
+    3: 1,
+    4: 5,
+    5: 1,
+    6: 4,
+    7: 2,
+    8: 1,
+    9: 9,
+    10: 7,
+    11: 17
+}
+
+// Validate version
+// CHN/TWN doesn't have new model
+// KOR/CHN/TWN doesn't have 11.17 currently
+function validate_version(major, minor, native, region, model) {
+    if (model == DEVICE_N3DS && ["C", "T"].includes(region)) {
+        return false;
+    }
+
+    if (major == 11 && minor == 17 && ["K", "C", "T"].includes(region)) {
+        return false;
+    }
+
+    const minor_max = major_minor_map[major];
+    if (!isNaN(minor_max) && minor > minor_max) {
+        return false;
+    }
+
+    return true;
+}
+
 // Soundhax
 // 1.0-11.3, all regions, all consoles
 function can_soundhax(major, minor, native, region, model) {
@@ -118,7 +154,7 @@ function can_superskaterhax(major, minor, native, region, model) {
         return true;
     }
     else if (do_redirect) {
-        window.location.href = "homebrew-launcher-(super-skaterhax)";
+        window.location.href = "installing-boot9strap-(super-skaterhax)";
         return true;
     }
     return false;
@@ -156,8 +192,8 @@ function can_seedminer(major, minor, native, region, model) {
         if (["U", "E", "J", "K"].includes(region)) do_redirect = true;
         else if (region == "T") do_redirect_twn = true;
     }
-    // KOR O3DS on any version should update to 11.16
-    else if (model == DEVICE_O3DS && region == "K") do_redirect_sysupdate_kor = true;
+    // KOR on any version should update to 11.16
+    else if (region == "K") do_redirect_sysupdate_kor = true;
     // TWN on any version should update to 11.16
     else if (region == "T") do_redirect_sysupdate_twn = true;
 
@@ -221,21 +257,17 @@ function is_o3ds_1117(major, minor, native, region, model) {
         - Use alternate exploits; can't hack without any extra stuff
 */
 function redirect() {
-    let major = document.getElementById("major");
-    let minor = document.getElementById("minor");
-    let nver = document.getElementById("nver");
-    let region = document.getElementById("region");
-    let isN3DS = document.getElementById("new3DS").checked;
-    let isO3DS = document.getElementById("old3DS").checked;
+    const major = document.getElementById("major").value;
+    const minor = document.getElementById("minor").value;
+    const nver = document.getElementById("nver").value;
+    const region = document.getElementById("region").value;
+    const isN3DS = document.getElementById("new3DS").checked;
+    const isO3DS = document.getElementById("old3DS").checked;
     document.getElementById("result_noneSelected").style.display = "none";
     document.getElementById("result_invalidVersion").style.display = "none";
     document.getElementById("result_methodUnavailable").style.display = "none";
     if ((!isN3DS) && (!isO3DS)) {
         document.getElementById("result_noneSelected").style.display = "block";
-        return;
-    }
-    else if (major.value == 0) {
-        document.getElementById("result_invalidVersion").style.display = "block";
         return;
     }
 
@@ -244,12 +276,12 @@ function redirect() {
     if(isO3DS) model = DEVICE_O3DS
     else if(isN3DS) model = DEVICE_N3DS;
 
-    if (model == DEVICE_N3DS && ["C", "T"].includes(region.value)) {
+    if (!validate_version(major, minor, nver, region, model)) {
         document.getElementById("result_invalidVersion").style.display = "block";
         return;
     }
 
-    let redirected = [
+    const redirected = [
       can_soundhax,
       can_ssloth,
       can_safecerthax,
@@ -257,7 +289,7 @@ function redirect() {
       can_seedminer,
       can_superskaterhax,
       is_o3ds_1117
-    ].some(func => func(major.value, minor.value, nver.value, region.value, model));
+    ].some(func => func(major, minor, nver, region, model));
     if (redirected) return true;
 
     // if it actually got to this point, there is no exploit available.
