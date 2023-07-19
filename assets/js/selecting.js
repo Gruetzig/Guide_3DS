@@ -125,8 +125,9 @@ function can_safecerthax(major, minor, native, region, model) {
 }
 
 // super-skaterhax
-// EUR/JPN/USA: 11.17 only
-// KOR: 11.16 only, KOR does not have 11.17 (Do seedminer first though)
+// N3DS only
+// EUR/JPN/USA: 11.16-11.17
+// KOR: 11.16 only, KOR does not have 11.17
 // CHN/TWN has no N3DS
 function can_superskaterhax(major, minor, native, region, model) {
     let do_redirect_sysupdate = false;
@@ -134,18 +135,10 @@ function can_superskaterhax(major, minor, native, region, model) {
     // N3DS only
     if(model == DEVICE_N3DS) {
         if (major == 11) {
-            if (["E", "J", "U"].includes(region)) {
-                if (minor == 17) do_redirect = true;
-                // Since this exploit works on latest,
-                // if no other exploit exists for that version, update
-                else do_redirect_sysupdate = true;
-            }
-            else if(region == "K") {
-                if (minor == 16) do_redirect = true;
-                // Since this exploit works on latest,
-                // if no other exploit exists for that version, update
-                else do_redirect_sysupdate = true;
-            }
+            if (minor >= 16) do_redirect = true;
+            // Since this exploit works on latest,
+            // if no other exploit exists for that version, update
+            else do_redirect_sysupdate = true;
         }
     }
 
@@ -187,6 +180,10 @@ function can_seedminer(major, minor, native, region, model) {
     let do_redirect_sysupdate_kor = false;
     let do_redirect_twn = false;
     let do_redirect = false;
+
+    // N3DS has a different, easier exploit.
+    if (model != DEVICE_O3DS) return false;
+
     // 11.16 should always do seedminer on 3DS
     if (major == 11 && minor == 16) {
         if (["U", "E", "J", "K"].includes(region)) do_redirect = true;
