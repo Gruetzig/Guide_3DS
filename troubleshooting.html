@@ -1065,8 +1065,8 @@ window.cookieconsent.initialise({
   <li>Power off your console, eject the game cartridge if inserted, power on your console, then wait up to ten minutes. If your console boots within ten minutes, the issue has been fixed and is unlikely to reoccur</li>
   <li>Rename the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder on your SD card to <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code>, then attempt to boot. If your console successfully boots, there is some issue within your <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Try clearing HOME Menu extdata:
     <ul>
-      <li>Navigate to <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code>
-      + Delete the corresponding folder for your 3DS region:
+      <li>Navigate to <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code></li>
+      <li>Delete the corresponding folder for your 3DS region:
         <ul>
           <li><strong>EUR Region</strong>: <code class="language-plaintext highlighter-rouge">00000098</code></li>
           <li><strong>JPN Region</strong>: <code class="language-plaintext highlighter-rouge">00000082</code></li>
@@ -1107,13 +1107,11 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred. Hold down the POWER button to turn off the power..."</u></summary>
 
-<p>ARM11 exception handlers are disabled, or custom firmware is not installed. Try enabling ARM11 exception handlers:</p>
-<ul>
-  <li>Power off your console</li>
-  <li>Hold (Select)</li>
-  <li>Power on your console, while still holding (Select)</li>
-  <li>If the “Disable ARM11 exception handlers” box is checked, uncheck it</li>
-</ul>
+<p>ARM11 exception handlers are disabled, or custom firmware is not installed. Try enabling ARM11 exception handlers:
+    + Power off your console
+    + Hold (Select)
+    + Power on your console, while still holding (Select)
+    + If the “Disable ARM11 exception handlers” box is checked, uncheck it</p>
 </details>
 
 <details>
@@ -1134,10 +1132,8 @@ If this is the case, attempt the steps below, which are listed from easiest to h
 <details>
 <summary><u>Blue "BOOTROM ERROR" screen</u></summary>
 
-<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. This may also indicate a hardware issue that cannot be fixed. In any case, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
-<ul>
-  <li>It is also possible that someone has set a boot-time splash screen that just looks like a brick. Try leaving your console powered on, waiting on the blue screen, for five minutes.</li>
-</ul>
+<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. This may also indicate a hardware issue that cannot be fixed. In any case, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.
+    + It is also possible that someone has set a boot-time splash screen that just looks like a brick. Try leaving your console powered on, waiting on the blue screen, for five minutes.</p>
 </details>
 
 <details>
