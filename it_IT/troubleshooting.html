@@ -773,7 +773,16 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"Si è verificato un errore che ha provocato la chiusura del software..." (messaggio su riquadro bianco)</u></summary>
 
-<p>C’è un problema con il tuo file <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Scarica l’ultima versione di <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, posiziona il file <code class="language-plaintext highlighter-rouge">otherapp.bin</code> nella directory principale della tua scheda SD<code class="language-plaintext highlighter-rouge"> e rinominalo in </code>arm11code.bin<code class="language-plaintext highlighter-rouge">. Non aggiungere l'estensione </code>.bin` se non la vedi presente.</p>
+<p>Potrebbe esserci un problema con il tuo file <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Scarica l’ultima versione di <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, posiziona il file <code class="language-plaintext highlighter-rouge">otherapp.bin</code> nella directory principale della tua scheda SD<code class="language-plaintext highlighter-rouge"> e rinominalo in </code>arm11code.bin<code class="language-plaintext highlighter-rouge">. Non aggiungere l'estensione </code>.bin` se non la vedi presente.</p>
+
+<p>Puoi anche provare a resettare i dati del tuo browser:</p>
+
+<ol>
+  <li>Avvia il browser internet, quindi apri le sue impostazioni</li>
+  <li>Scorri verso il basso e seleziona “Reimposta tutti i dati salvati” (può avere nomi simili come “Inizializza i dati di salvataggio” o “Elimina tutti i dati salvati”)</li>
+  <li>Riprova ad eseguire l’exploit</li>
+</ol>
+
 </details>
 
 <details>
@@ -860,17 +869,17 @@ window.cookieconsent.initialise({
 <p>Se il problema persiste:</p>
 
 <ul>
-  <li>Assicurati che i file <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code> e <code class="language-plaintext highlighter-rouge">boot.3dsx</code> siano nella directory principale della scheda SD (non all’interno di una cartella)</li>
-  <li>Assicurati di aver selezionato il payload corretto per la tua regione E la versione di sistema</li>
-  <li>Assicurati che le impostazioni “Area di residenza” siano <a href="/images/screenshots/skater_lang.png">così</a></li>
-  <li>Prova a reimpostare i dati del browser:
+  <li>Ensure that <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> are on the root of the SD card (not inside of any folder)</li>
+  <li>Ensure that you selected the correct payload for your region AND system version</li>
+  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a></li>
+  <li>Try resetting your browser data:
     <ol>
       <li>Avvia il browser internet, quindi apri le sue impostazioni</li>
       <li>Scorri verso il basso e seleziona “Reimposta tutti i dati salvati” (può avere nomi simili come “Inizializza i dati di salvataggio” o “Elimina tutti i dati salvati”)</li>
       <li>Riprova ad eseguire l’exploit</li>
     </ol>
   </li>
-  <li>Prova a cambiare la lingua di sistema in una lingua diversa da quella corrente</li>
+  <li>Try changing the system language to something other than the current language</li>
 </ul>
 
 </details>
@@ -970,7 +979,7 @@ window.cookieconsent.initialise({
 <p>Ora che hai il backup della NAND in un luogo sicuro:</p>
 
 <ol>
-  <li>Inserisci la scheda SD nella tua console</li>
+  <li>Reinserisci la scheda SD nella tua console</li>
   <li>Accendi la console tenendo premuto il tasto START per avviare GodMode9</li>
   <li>Premi il pulsante (Home)</li>
   <li>Seleziona “Scripts…”</li>
@@ -1045,9 +1054,9 @@ window.cookieconsent.initialise({
 <p>Se il LED di notifica lampeggia:</p>
 
 <ul>
-  <li><strong>Bianco</strong>: Il tuo 3DS non è stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella tua scheda SD o nella memoria interna.</li>
-  <li><strong>Magenta</strong>: Il tuo 3DS non è stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella tua scheda SD. È stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella memoria interna, tuttavia il file è corrotto.</li>
-  <li><strong>Rosso</strong>: Il tuo 3DS è stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> sia nella tua scheda SD sia nella memoria interna, tuttavia entrambi i file sono corrotti.</li>
+  <li><strong>White</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card or on internal memory.</li>
+  <li><strong>Magenta</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card. È stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella memoria interna, tuttavia il file è corrotto.</li>
+  <li><strong>Red</strong>: Your 3DS was able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on both your SD card and on internal memory, but both files are corrupted.</li>
 </ul>
 
 <p>Puoi ottenere un nuovo file <code class="language-plaintext highlighter-rouge">boot.firm</code> scaricando l’<a href="https://github.com/LumaTeam/Luma3DS/releases/latest">ultima versione di Luma3DS</a>, estraendola e posizionando il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella directory principale della tua scheda SD. Se il tuo file <code class="language-plaintext highlighter-rouge">boot.firm</code> continua a risultare corrotto, potresti dover verificare la presenza di errori nella tua scheda SD (<a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, o <a href="f3xswift-(mac)">macOS</a>). Inoltre, tieni presente che il 3DS tende ad avere problemi con file estratti usando WinRAR.</p>
@@ -1065,8 +1074,8 @@ window.cookieconsent.initialise({
   <li>Spegni la tua console, estrai la cartuccia di gioco se inserita, accendi la tua console, quindi attendi fino a dieci minuti. Se la tua console si avvia entro dieci minuti, il problema è stato risolto e probabilmente non avverrà più</li>
   <li>Rinomina la cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> sulla tua scheda SD in <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code>, poi tenta l’avvio. Se la tua console si avvia correttamente, c’è qualche problema con la tua cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code>. Prova a cancellare gli extdata del menu HOME:
     <ul>
-      <li>Entra nella cartella <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code>
-      + Elimina la cartella corrispondente alla regione del tuo 3DS:
+      <li>Entra nella cartella <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code></li>
+      <li>Elimina la cartella corrispondente alla regione del tuo 3DS:
         <ul>
           <li><strong>Regione EUR</strong>: Elimina <code class="language-plaintext highlighter-rouge">00000098</code></li>
           <li><strong>Regione JPN</strong>: Elimina <code class="language-plaintext highlighter-rouge">00000082</code></li>
@@ -1107,13 +1116,11 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"Si è verificato un errore. Tieni premuto il pulsante POWER per spegnere la console..."</u></summary>
 
-<p>I gestori di eccezione ARM11 sono disabilitati, o un custom firware non è installato. Prova ad abilitare i gestori di eccezione ARM11:</p>
-<ul>
-  <li>Spegni la tua console</li>
-  <li>Tieni premuto (Select)</li>
-  <li>Accendi la tua console, continuando a tenere premuto il pulsante (Select)</li>
-  <li>Se la casella “Disable ARM11 exception handlers” è selezionata, deselezionala</li>
-</ul>
+<p>I gestori di eccezione ARM11 sono disabilitati, o un custom firware non è installato. Prova ad abilitare i gestori di eccezione ARM11:
+    + Spegni la tua console
+    + Tieni premuto (Select)
+    + Accendi la tua console, continuando a tenere premuto il pulsante (Select)
+    + Se la casella “Disable ARM11 exception handlers” è selezionata, deselezionala</p>
 </details>
 
 <details>
@@ -1134,10 +1141,8 @@ Se è questo il caso, prova a seguire i seguenti passaggi, indicati dal più sem
 <details>
 <summary><u>Schermata "BOOTROM ERROR" blu</u></summary>
 
-<p>La tua console è probabilmente brickata. Dovrai acquistare una flashcart ntrboot per reinstallare boot9strap e tentare riparare la tua console. Potrebbe anche indicare un problema hardware non risolvibile. In ogni caso, entra nel <a href="https://discord.gg/MWxPgEp">canale Discord di Nintendo Homebrew</a> per chiedere assistenza.</p>
-<ul>
-  <li>È anche possibile che qualcuno abbia impostato una schermata di avvio a tempo che assomigli al messaggio di errore. Prova a lasciare la tua console accesa sulla schermata blu per cinque minuti.</li>
-</ul>
+<p>La tua console è probabilmente brickata. Dovrai acquistare una flashcart ntrboot per reinstallare boot9strap e tentare riparare la tua console. Potrebbe anche indicare un problema hardware non risolvibile. In ogni caso, entra nel <a href="https://discord.gg/MWxPgEp">canale Discord di Nintendo Homebrew</a> per chiedere assistenza.
+    + È anche possibile che qualcuno abbia impostato una schermata di avvio a tempo che assomigli al messaggio di errore. Prova a lasciare la tua console accesa sulla schermata blu per cinque minuti.</p>
 </details>
 
 <details>
@@ -1282,7 +1287,6 @@ Tuttavia, se non conosci il PIN e quindi non puoi accedere alle impostazioni del
   <li>Premi “Cancella le impostazioni”, quindi “Cancella” per rimuovere tutti i dati del Filtro famiglia</li>
 </ol>
 </details>
-
 
         
       </section>

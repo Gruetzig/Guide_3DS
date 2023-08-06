@@ -489,9 +489,9 @@ window.cookieconsent.initialise({
   <li><a href="#兼容性注意" id="markdown-toc-兼容性注意">兼容性注意</a></li>
   <li><a href="#你需要准备点啥" id="markdown-toc-你需要准备点啥">你需要准备点啥？</a></li>
   <li><a href="#操作步骤" id="markdown-toc-操作步骤">操作步骤</a>    <ul>
-      <li><a href="#第一步--准备工作" id="markdown-toc-第一步--准备工作">第一步 – 准备工作</a></li>
-      <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
-      <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
+      <li><a href="#第一步--检查自制固件" id="markdown-toc-第一步--检查自制固件">第一步 – 检查自制固件</a></li>
+      <li><a href="#section-ii---updating-the-system" id="markdown-toc-section-ii---updating-the-system">Section II - Updating the System</a></li>
+      <li><a href="#section-iii---prep-work" id="markdown-toc-section-iii---prep-work">Section III - Prep Work</a></li>
       <li><a href="#section-iv---rtc-and-dsp-setup" id="markdown-toc-section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</a></li>
       <li><a href="#section-v---setup-script" id="markdown-toc-section-v---setup-script">Section V - Setup Script</a></li>
     </ul>
@@ -534,26 +534,12 @@ window.cookieconsent.initialise({
 
 <ul>
   <li><a href="/assets/finalizing.zip">finalizing.zip</a> (direct download)</li>
+  <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a></li>
 </ul>
 
 <h3 id="操作步骤">操作步骤</h3>
 
-<h4 id="第一步--准备工作">第一步 – 准备工作</h4>
-
-<p>本节中，你将需要复制所需的文件到段落提示的指定位置。</p>
-
-<ol>
-  <li>Power off your console</li>
-  <li>将你的 SD 卡插入电脑</li>
-  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card, merging/replacing any existing folders if prompted</li>
-  <li>Insert your SD card into your console</li>
-</ol>
-
-<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. 由于你可能在之前做了一些其他的操作，你的 SD 卡中可能会多出一些文件或者文件夹。</p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
-
-<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
+<h4 id="第一步--检查自制固件">第一步 – 检查自制固件</h4>
 
 <p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
 
@@ -568,7 +554,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 
-<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
+<h4 id="section-ii---updating-the-system">Section II - Updating the System</h4>
 
 <p>本节中，你将会把主机更新至最新版本。（自制固件兼容最新版本的系统，直接升级是安全的）</p>
 
@@ -582,6 +568,27 @@ window.cookieconsent.initialise({
     </ul>
   </li>
 </ol>
+
+<h4 id="section-iii---prep-work">Section III - Prep Work</h4>
+
+<p>本节中，你将需要复制所需的文件到段落提示的指定位置。</p>
+
+<ol>
+  <li>Power off your console</li>
+  <li>将你的 SD 卡插入电脑</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, and <code class="language-plaintext highlighter-rouge">luma</code>) to the root of your SD card, merging/replacing any existing folders if prompted
+    <ul>
+      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
+    </ul>
+  </li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of the SD card</li>
+  <li>Copy <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the latest Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> (the one you just downloaded) to the root of the SD card, replacing any existing files if prompted</li>
+  <li>Reinsert your SD card into your console</li>
+</ol>
+
+<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. 由于你可能在之前做了一些其他的操作，你的 SD 卡中可能会多出一些文件或者文件夹。</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
 
 <h4 id="section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</h4>
 
@@ -610,7 +617,7 @@ window.cookieconsent.initialise({
   <li>Power off your console</li>
   <li>Press and hold (Start), and while holding (Start), power on your console. 这会启动 GodMode9
     <ul>
-      <li>如果没有进入 GodMode9，请确保 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> 放在了 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> 中，并确保 <code class="language-plaintext highlighter-rouge">payloads</code> 正确拼写。</li>
+      <li>If you do not boot into GodMode9, ensure that you copied the three folders from <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card and that the folders are not misnamed (e.g. <code class="language-plaintext highlighter-rouge">luma (1)</code>)</li>
     </ul>
   </li>
   <li>如果提示创建重要文件备份，按下 “A” 键确认，在完成后再次按下 “A” 键来继续。</li>
@@ -655,10 +662,10 @@ window.cookieconsent.initialise({
 <p>以下是你可能会用到的一些快捷键：</p>
 
 <ul>
-  <li>关机时按住 “Select” 键，然后按下电源键开机以进入 Luma3DS 的配置菜单。</li>
-  <li>关机时按住 “Start” 键，然后按下电源键开机以启动 Godmode9；如果 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> 文件夹下有多个 payload 文件，则会自动进入 Luma3DS chainloader。</li>
-  <li>默认情况下，在主机开机时按下 L + ↓ + SELECT 键将会打开 Rosalina 菜单，它有用来检查系统信息、截屏、开启金手指等等的功能。 Rosalina 菜单的快捷键可以在其中更改。</li>
-  <li>按住 START + SELECT + X，然后按下电源键，通知灯将会亮起某种颜色，可用于调试问题。 参见<a href="https://github.com/SciresM/boot9strap/releases/tag/1.4">更新日志</a>以获取信息。</li>
+  <li>Holding (Select) on boot will launch the Luma3DS configuration menu.</li>
+  <li>Holding (Start) on boot will launch GodMode9, or if you have multiple payloads in <code class="language-plaintext highlighter-rouge">/luma/payloads/</code>, the Luma3DS chainloader.</li>
+  <li>By default, pressing (Left Shoulder) + (Down D-Pad) + (Select) while in 3DS mode will open the Rosalina menu, where you can check system information, take screenshots, enable cheats, and more. Rosalina 菜单的快捷键可以在其中更改。</li>
+  <li>Holding (Start) + (Select) + (X) on boot will make the notification LED show a color for debug purposes. 参见<a href="https://github.com/SciresM/boot9strap/releases/tag/1.4">更新日志</a>以获取信息。</li>
 </ul>
 </div>
 

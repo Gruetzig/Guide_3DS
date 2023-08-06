@@ -520,19 +520,19 @@ mmcblk0     179:0    0   3,8G  0 disk
   <li>Appuyez sur CTRL + C pour quitter le menu</li>
   <li>Tapez ce qui suit en fonction de votre carte SD :
     <ul>
-      <li>En dessous de 2 Go : <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(nom de l'appareil vu précédemment) -s 64 -F 16</code>
+      <li>2GB or lower: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 16</code>
         <ul>
-          <li>Ceci crée une seule partition FAT16 avec une taille de cluster de 32 Ko sur la carte SD</li>
+          <li>This creates a single FAT16 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
-      <li>De 4 à 128 Go : <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(nom de l'appareil vu précédemment) -s 64 -F 32</code>
+      <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 32</code>
         <ul>
-          <li>Ceci crée une seule partition FAT32 avec une taille de cluster de 32 Ko sur la carte SD</li>
+          <li>This creates a single FAT32 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
-      <li>Au dessus de 128Go: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(nom de l'appareil vu précédemment) -s 128 -F 32</code>
+      <li>128GB or higher: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 128 -F 32</code>
         <ul>
-          <li>Ceci crée une seule partition FAT32 avec une taille de cluster de 64 Ko sur la carte SD</li>
+          <li>This creates a single FAT32 partition with 64 KB cluster size on the SD card</li>
         </ul>
       </li>
     </ul>

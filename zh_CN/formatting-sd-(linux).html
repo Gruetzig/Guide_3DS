@@ -521,19 +521,19 @@ mmcblk0     179:0    0   3,8G  0 disk
   <li>按下 CTRL + C 退出菜单</li>
   <li>根据 SD 卡的容量输入以下信息：
     <ul>
-      <li>2GB 及以下：<code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/&lt;先前获取到的设备名称&gt; -s 64 -F 16</code>
+      <li>2GB or lower: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 16</code>
         <ul>
-          <li>这将创建一个 32 KB 簇大小的 FAT16 分区</li>
+          <li>This creates a single FAT16 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
-      <li>4GB 至 128GB：<code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/&lt;先前获取到的设备名称&gt; -s 64 -F 32</code>
+      <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 32</code>
         <ul>
-          <li>这将创建一个 32 KB 簇大小的 FAT32 分区</li>
+          <li>This creates a single FAT32 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
-      <li>128GB 及更高：<code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/&lt;先前获取到的设备名称&gt; -s 128 -F 32</code>
+      <li>128GB or higher: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 128 -F 32</code>
         <ul>
-          <li>这将创建一个 64 KB 簇大小的 FAT32 分区</li>
+          <li>This creates a single FAT32 partition with 64 KB cluster size on the SD card</li>
         </ul>
       </li>
     </ul>

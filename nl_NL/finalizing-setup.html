@@ -488,9 +488,9 @@ window.cookieconsent.initialise({
   <li><a href="#compatibility-notes" id="markdown-toc-compatibility-notes">Compatibility Notes</a></li>
   <li><a href="#wat-je-nodig-hebt" id="markdown-toc-wat-je-nodig-hebt">Wat je nodig hebt</a></li>
   <li><a href="#instructies" id="markdown-toc-instructies">Instructies</a>    <ul>
-      <li><a href="#deel-i---voorbereiding" id="markdown-toc-deel-i---voorbereiding">Deel I - Voorbereiding</a></li>
-      <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
-      <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
+      <li><a href="#deel-i---cfw-controle" id="markdown-toc-deel-i---cfw-controle">Deel I - CFW Controle</a></li>
+      <li><a href="#section-ii---updating-the-system" id="markdown-toc-section-ii---updating-the-system">Section II - Updating the System</a></li>
+      <li><a href="#section-iii---prep-work" id="markdown-toc-section-iii---prep-work">Section III - Prep Work</a></li>
       <li><a href="#section-iv---rtc-and-dsp-setup" id="markdown-toc-section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</a></li>
       <li><a href="#section-v---setup-script" id="markdown-toc-section-v---setup-script">Section V - Setup Script</a></li>
     </ul>
@@ -533,26 +533,12 @@ window.cookieconsent.initialise({
 
 <ul>
   <li><a href="/assets/finalizing.zip">finalizing.zip</a> (direct download)</li>
+  <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a></li>
 </ul>
 
 <h3 id="instructies">Instructies</h3>
 
-<h4 id="deel-i---voorbereiding">Deel I - Voorbereiding</h4>
-
-<p>In this section, you will copy the files necessary to follow the rest of the instructions on this page.</p>
-
-<ol>
-  <li>Zet je console uit</li>
-  <li>Plaats je SD kaart in je computer</li>
-  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card, merging/replacing any existing folders if prompted</li>
-  <li>Insert your SD card into your console</li>
-</ol>
-
-<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. Je hebt mogelijk extra bestanden of mappen op je SD-kaart, afhankelijk van je vorige setup of de methode die je hebt gevolgd.</p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
-
-<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
+<h4 id="deel-i---cfw-controle">Deel I - CFW Controle</h4>
 
 <p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
 
@@ -567,7 +553,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 
-<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
+<h4 id="section-ii---updating-the-system">Section II - Updating the System</h4>
 
 <p>In this section, you will update your system to the latest version, which is safe to do with custom firmware.</p>
 
@@ -581,6 +567,27 @@ window.cookieconsent.initialise({
     </ul>
   </li>
 </ol>
+
+<h4 id="section-iii---prep-work">Section III - Prep Work</h4>
+
+<p>In this section, you will copy the files necessary to follow the rest of the instructions on this page.</p>
+
+<ol>
+  <li>Zet je console uit</li>
+  <li>Plaats je SD kaart in je computer</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, and <code class="language-plaintext highlighter-rouge">luma</code>) to the root of your SD card, merging/replacing any existing folders if prompted
+    <ul>
+      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
+    </ul>
+  </li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of the SD card</li>
+  <li>Copy <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the latest Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> (the one you just downloaded) to the root of the SD card, replacing any existing files if prompted</li>
+  <li>Stop je SD-kaart terug in je console</li>
+</ol>
+
+<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. Je hebt mogelijk extra bestanden of mappen op je SD-kaart, afhankelijk van je vorige setup of de methode die je hebt gevolgd.</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
 
 <h4 id="section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</h4>
 
@@ -609,7 +616,7 @@ window.cookieconsent.initialise({
   <li>Zet je console uit</li>
   <li>Houd (Start) ingedrukt en terwijl je (Start) ingedrukt houdt, zet je je console aan. Dit zal GodMode9 starten
     <ul>
-      <li>Als je niet in GodMode9 opstart, zorg er dan voor dat <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> in <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> is en dat <code class="language-plaintext highlighter-rouge">payloads</code> correct gespeld is</li>
+      <li>If you do not boot into GodMode9, ensure that you copied the three folders from <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card and that the folders are not misnamed (e.g. <code class="language-plaintext highlighter-rouge">luma (1)</code>)</li>
     </ul>
   </li>
   <li>Als je gevraagd word om essentiële bestanden te back-uppen, druk dan op (A) om dat te doen, druk dan op (A) als dit voltooid is</li>
@@ -654,10 +661,10 @@ window.cookieconsent.initialise({
 <p>Hier zijn enkele belangrijke combos die je zou moeten kennen:</p>
 
 <ul>
-  <li>Terwijl je (Select) ingedrukt houdt bij het opstarten van je console kom je in het Luma3DS configuratie menu.</li>
-  <li>(Start) ingedrukt houden bij het opstarten van je 3DS zal GodMode9 openen, of als je meerdere payloads hebt in <code class="language-plaintext highlighter-rouge">/luma/payloads/</code>, zal Luma3DS chainloader geopend worden.</li>
-  <li>Druk standaard op (Left Shoulder) + (Down D-Pad) + (Select) terwijl je in 3DS modus zit zal het Rosalina menu openen. waar je systeem informatie kunt controleren, screenshots kunt maken, cheats kunt inschakelen en meer. Dit kan worden gewijzigd in het Rosalina menu.</li>
-  <li>Terwijl je (Start) + (Select) + (X) ingedrukt houdt tijdens het opstarten zal een LED-notificatie een kleur tonen voor debugging. Zie de <a href="https://github.com/SciresM/boot9strap/releases/tag/1.4">changelog</a> voor een lijst.</li>
+  <li>Holding (Select) on boot will launch the Luma3DS configuration menu.</li>
+  <li>Holding (Start) on boot will launch GodMode9, or if you have multiple payloads in <code class="language-plaintext highlighter-rouge">/luma/payloads/</code>, the Luma3DS chainloader.</li>
+  <li>By default, pressing (Left Shoulder) + (Down D-Pad) + (Select) while in 3DS mode will open the Rosalina menu, where you can check system information, take screenshots, enable cheats, and more. Dit kan worden gewijzigd in het Rosalina menu.</li>
+  <li>Holding (Start) + (Select) + (X) on boot will make the notification LED show a color for debug purposes. Zie de <a href="https://github.com/SciresM/boot9strap/releases/tag/1.4">changelog</a> voor een lijst.</li>
 </ul>
 </div>
 

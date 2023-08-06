@@ -488,9 +488,9 @@ window.cookieconsent.initialise({
   <li><a href="#compatibility-notes" id="markdown-toc-compatibility-notes">Compatibility Notes</a></li>
   <li><a href="#qué-necesitas" id="markdown-toc-qué-necesitas">Qué necesitas</a></li>
   <li><a href="#instrucciones" id="markdown-toc-instrucciones">Instrucciones</a>    <ul>
-      <li><a href="#sección-i---preparativos" id="markdown-toc-sección-i---preparativos">Sección I - Preparativos</a></li>
-      <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
-      <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
+      <li><a href="#sección-i---verificación-de-cfw" id="markdown-toc-sección-i---verificación-de-cfw">Sección I - Verificación de CFW</a></li>
+      <li><a href="#section-ii---updating-the-system" id="markdown-toc-section-ii---updating-the-system">Section II - Updating the System</a></li>
+      <li><a href="#section-iii---prep-work" id="markdown-toc-section-iii---prep-work">Section III - Prep Work</a></li>
       <li><a href="#section-iv---rtc-and-dsp-setup" id="markdown-toc-section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</a></li>
       <li><a href="#section-v---setup-script" id="markdown-toc-section-v---setup-script">Section V - Setup Script</a></li>
     </ul>
@@ -533,26 +533,12 @@ window.cookieconsent.initialise({
 
 <ul>
   <li><a href="/assets/finalizing.zip">finalizing.zip</a> (direct download)</li>
+  <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a></li>
 </ul>
 
 <h3 id="instrucciones">Instrucciones</h3>
 
-<h4 id="sección-i---preparativos">Sección I - Preparativos</h4>
-
-<p>In this section, you will copy the files necessary to follow the rest of the instructions on this page.</p>
-
-<ol>
-  <li>Power off your console</li>
-  <li>Inserta tu tarjeta SD en tu computadora</li>
-  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card, merging/replacing any existing folders if prompted</li>
-  <li>Insert your SD card into your console</li>
-</ol>
-
-<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. You may have extra files or folders on your SD card, depending on your previous setup or the method that you followed.</p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
-
-<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
+<h4 id="sección-i---verificación-de-cfw">Sección I - Verificación de CFW</h4>
 
 <p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
 
@@ -567,7 +553,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 
-<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
+<h4 id="section-ii---updating-the-system">Section II - Updating the System</h4>
 
 <p>In this section, you will update your system to the latest version, which is safe to do with custom firmware.</p>
 
@@ -581,6 +567,27 @@ window.cookieconsent.initialise({
     </ul>
   </li>
 </ol>
+
+<h4 id="section-iii---prep-work">Section III - Prep Work</h4>
+
+<p>In this section, you will copy the files necessary to follow the rest of the instructions on this page.</p>
+
+<ol>
+  <li>Power off your console</li>
+  <li>Inserta tu tarjeta SD en tu computadora</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, and <code class="language-plaintext highlighter-rouge">luma</code>) to the root of your SD card, merging/replacing any existing folders if prompted
+    <ul>
+      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
+    </ul>
+  </li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of the SD card</li>
+  <li>Copy <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the latest Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> (the one you just downloaded) to the root of the SD card, replacing any existing files if prompted</li>
+  <li>Reinsert your SD card into your console</li>
+</ol>
+
+<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. You may have extra files or folders on your SD card, depending on your previous setup or the method that you followed.</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
 
 <h4 id="section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</h4>
 
@@ -609,7 +616,7 @@ window.cookieconsent.initialise({
   <li>Power off your console</li>
   <li>Press and hold (Start), and while holding (Start), power on your console. Esto abrirá GodMode9
     <ul>
-      <li>Si GodMode9 no inicia, asegúrate de que <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> esté en <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> y que <code class="language-plaintext highlighter-rouge">payloads</code> esté escrito correctamente</li>
+      <li>If you do not boot into GodMode9, ensure that you copied the three folders from <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card and that the folders are not misnamed (e.g. <code class="language-plaintext highlighter-rouge">luma (1)</code>)</li>
     </ul>
   </li>
   <li>Si se te pide crear copias de seguridad de archivos esenciales, presiona (A) para hacerlo y luego presiona (A) para continuar una vez que haya terminado</li>

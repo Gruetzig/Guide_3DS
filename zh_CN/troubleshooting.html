@@ -775,7 +775,16 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred, forcing the software to close..." (white message box)</u></summary>
 
-<p>这说明你放的 <code class="language-plaintext highlighter-rouge">arm11code.bin</code> 文件有问题。 下载最新版本的 <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a> 并将其放在你 SD 卡的根目录中，然后重命名为 <code class="language-plaintext highlighter-rouge">arm11code.bin</code>。 如果你下到的东西看不到 <code class="language-plaintext highlighter-rouge">.bin</code> 后缀，请不要重命名它。</p>
+<p>这可能说明你放的 <code class="language-plaintext highlighter-rouge">arm11code.bin</code> 文件有问题。 下载最新版本的 <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a> 并将其放在你 SD 卡的根目录中，然后重命名为 <code class="language-plaintext highlighter-rouge">arm11code.bin</code>。 如果你下到的东西看不到 <code class="language-plaintext highlighter-rouge">.bin</code> 后缀，请不要重命名它。</p>
+
+<p>You can also try resetting your browser save data:</p>
+
+<ol>
+  <li>打开浏览器，进入浏览器设置页面</li>
+  <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initialize Save Data” or “Clear All Save Data”)</li>
+  <li>再次尝试触发漏洞</li>
+</ol>
+
 </details>
 
 <details>
@@ -972,7 +981,7 @@ window.cookieconsent.initialise({
 <p>Now that you have your NAND backup in a safe place:</p>
 
 <ol>
-  <li>Insert your SD card into your console</li>
+  <li>Reinsert your SD card into your console</li>
   <li>Hold START and power on still holding START to open GodMode9</li>
   <li>Press the (Home) button</li>
   <li>选择 “Scripts…”</li>
@@ -1047,9 +1056,9 @@ window.cookieconsent.initialise({
 <p>如果通知灯亮起：</p>
 
 <ul>
-  <li><strong>白色</strong>：你的 3DS 无法在 SD 卡根目录或内部存储中找到 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件。</li>
-  <li><strong>紫红色</strong>：你的 3DS 无法在 SD 卡根目录中找到 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件。 主机内存中可以找到 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件，但是文件已损坏。</li>
-  <li><strong>红色</strong>：你的 3DS 能够在 SD 卡根目录和内部存储中找到 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件，但是这两个文件都已损坏。</li>
+  <li><strong>White</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card or on internal memory.</li>
+  <li><strong>Magenta</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card. 主机内存中可以找到 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件，但是文件已损坏。</li>
+  <li><strong>Red</strong>: Your 3DS was able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on both your SD card and on internal memory, but both files are corrupted.</li>
 </ul>
 
 <p>你可以通过下载 <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">最新版本的 Luma3DS</a>，然后解压，将 <code class="language-plaintext highlighter-rouge">boot.firm</code> 复制到 SD 卡的根目录。 如果 <code class="language-plaintext highlighter-rouge">boot.firm</code> 始终被主机判定为损坏，则你可能需要使用一个工具来测试一下你的 SD 卡（<a href="h2testw-(windows)">Windows</a>、<a href="f3-(linux)">Linux</a>、<a href="f3xswift-(mac)">macOS</a>） 另外，最好不要使用 WinRAR 解压文件，解压的文件给 3DS 使用可能会出问题。</p>
@@ -1067,8 +1076,8 @@ window.cookieconsent.initialise({
   <li>Power off your console, eject the game cartridge if inserted, power on your console, then wait up to ten minutes. If your console boots within ten minutes, the issue has been fixed and is unlikely to reoccur</li>
   <li>将 SD 卡上的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 文件夹重命名为 <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code>，然后尝试启动主机。 If your console successfully boots, there is some issue within your <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. 尝试清理主菜单的外部存储文件：
     <ul>
-      <li>进入到 <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code>
-      + 删除对应你的 3DS 区域的文件夹：
+      <li>进入到 <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code></li>
+      <li>删除对应你的 3DS 区域的文件夹：
         <ul>
           <li><strong>欧版</strong>: <code class="language-plaintext highlighter-rouge">00000098</code></li>
           <li><strong>日版</strong>: <code class="language-plaintext highlighter-rouge">000000082</code></li>
@@ -1109,13 +1118,11 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred. Hold down the POWER button to turn off the power..."</u></summary>
 
-<p>ARM11 异常处理器已被禁用，或主机未安装自制固件。 尝试启用 ARM11 异常处理器：</p>
-<ul>
-  <li>Power off your console</li>
-  <li>按住 “Select” 键</li>
-  <li>Power on your console, while still holding (Select)</li>
-  <li>如果 “ARM11 exception handlers disabled” 已被勾选，则请取消勾选它</li>
-</ul>
+<p>ARM11 异常处理器已被禁用，或主机未安装自制固件。 尝试启用 ARM11 异常处理器：
+    + Power off your console
+    + 按住 “Select” 键
+    + Power on your console, while still holding (Select)
+    + 如果 “ARM11 exception handlers disabled” 已被勾选，则请取消勾选它</p>
 </details>
 
 <details>
@@ -1136,10 +1143,8 @@ If this is the case, attempt the steps below, which are listed from easiest to h
 <details>
 <summary><u>Blue "BOOTROM ERROR" screen</u></summary>
 
-<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. 这也可能是无法修复的硬件问题。 无论如何，请先加入 <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord 服务器</a> 并说英文求助。（请注意，如果你身处中国大陆，访问 Discord 可能需要科学上网），你也可以到译者的 <a href="https://stray-soul.site/index.php/qqgroup">QQ 群</a>寻求帮助，群号为 942052497。</p>
-<ul>
-  <li>还有可能有人设了一个看上去就像变砖了的开机画面。 Try leaving your console powered on, waiting on the blue screen, for five minutes.</li>
-</ul>
+<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. 这也可能是无法修复的硬件问题。 无论如何，请先加入 <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord 服务器</a> 并说英文求助。（请注意，如果你身处中国大陆，访问 Discord 可能需要科学上网），你也可以到译者的 <a href="https://stray-soul.site/index.php/qqgroup">QQ 群</a>寻求帮助，群号为 942052497。
+    + 还有可能有人设了一个看上去就像变砖了的开机画面。 Try leaving your console powered on, waiting on the blue screen, for five minutes.</p>
 </details>
 
 <details>
@@ -1284,7 +1289,6 @@ However, if you do not know the PIN and therefore cannot access the console’s 
   <li>Press “Clear Settings”, then “Delete” to remove all Parental Controls data</li>
 </ol>
 </details>
-
 
         
       </section>

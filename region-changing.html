@@ -532,7 +532,7 @@ window.cookieconsent.initialise({
 
 <ul>
   <li>The latest release of <a href="https://github.com/d0k3/GodMode9/releases/latest">GodMode9</a> (the GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> file)</li>
-  <li>The latest release of <a href="https://github.com/Steveice10/FBI/releases/latest">FBI</a> <em>(the<code class="language-plaintext highlighter-rouge">.3dsx</code> file)</em></li>
+  <li>The latest release of <a href="https://github.com/Steveice10/FBI/releases/latest">FBI</a> <em>(the <code class="language-plaintext highlighter-rouge">.3dsx</code> file)</em></li>
   <li>The latest release of <a href="https://github.com/ihaveamac/faketik/releases/latest">faketik</a> <em>(the <code class="language-plaintext highlighter-rouge">.3dsx</code> file)</em></li>
   <li>The 11.15.0 CTRTransfer image for your console type of the region that you want to change to (e.g. Download “New 3DS or 2DS - USA” if you have a New 3DS and want to change your region to USA)
     <ul>
@@ -586,15 +586,27 @@ window.cookieconsent.initialise({
   <li>Press (B) to return to the main menu</li>
   <li>Select “Exit”</li>
   <li>Press (A) to relock write permissions if prompted</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
+  <li>Press (A) on <code class="language-plaintext highlighter-rouge">essential.exefs</code> to select it</li>
+  <li>Select “Copy to 0:/gm9/out”
+    <ul>
+      <li>If you see “Destination already exists”, press (A) on “Overwrite file(s)”</li>
+    </ul>
+  </li>
+  <li>Press (A) to continue</li>
   <li>Hold (R) and press (Start) at the same time to power off your console</li>
   <li>Insert your SD card into your computer</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
+  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
     <ul>
-      <li>Make backups in multiple locations (such as online file storage)</li>
+      <li>Copy these backups to multiple locations (such as online file storage, an external hard drive, etc.)</li>
       <li>These backups will save you from a brick and/or help you recover files from the NAND image if anything goes wrong in the future</li>
     </ul>
   </li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card after copying it</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card after copying it
+    <ul>
+      <li>The other backup files are negligible in size and may be kept on your SD card for ease of access</li>
+    </ul>
+  </li>
   <li>Reinsert your SD card into your console</li>
 </ol>
 

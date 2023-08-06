@@ -773,7 +773,16 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred, forcing the software to close..." (white message box)</u></summary>
 
-<p>There is an issue with your <code class="language-plaintext highlighter-rouge">arm11code.bin</code> file. Download the latest release of <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, place <code class="language-plaintext highlighter-rouge">otherapp.bin</code> on the root of your SD card and rename it to <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. No añadas manualmente la extensión <code class="language-plaintext highlighter-rouge">.bin</code> al archivo si ves que no la tiene.</p>
+<p>There may be an issue with your <code class="language-plaintext highlighter-rouge">arm11code.bin</code> file. Download the latest release of <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, place <code class="language-plaintext highlighter-rouge">otherapp.bin</code> on the root of your SD card and rename it to <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. No añadas manualmente la extensión <code class="language-plaintext highlighter-rouge">.bin</code> al archivo si ves que no la tiene.</p>
+
+<p>You can also try resetting your browser save data:</p>
+
+<ol>
+  <li>Launch the browser, then launch the browser settings</li>
+  <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initialize Save Data” or “Clear All Save Data”)</li>
+  <li>Try the exploit again</li>
+</ol>
+
 </details>
 
 <details>
@@ -970,7 +979,7 @@ window.cookieconsent.initialise({
 <p>Now that you have your NAND backup in a safe place:</p>
 
 <ol>
-  <li>Insert your SD card into your console</li>
+  <li>Reinsert your SD card into your console</li>
   <li>Hold START and power on still holding START to open GodMode9</li>
   <li>Press the (Home) button</li>
   <li>Selecciona “Scripts…”</li>
@@ -1065,8 +1074,8 @@ window.cookieconsent.initialise({
   <li>Power off your console, eject the game cartridge if inserted, power on your console, then wait up to ten minutes. If your console boots within ten minutes, the issue has been fixed and is unlikely to reoccur</li>
   <li>Cambia el nombre de la carpeta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> de tu tarjeta SD a <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code>, luego intenta encenderla. If your console successfully boots, there is some issue within your <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Try clearing HOME Menu extdata:
     <ul>
-      <li>Ve a <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code>
-      + Delete the corresponding folder for your 3DS region:
+      <li>Ve a <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code></li>
+      <li>Delete the corresponding folder for your 3DS region:
         <ul>
           <li><strong>Región EUR</strong>: <code class="language-plaintext highlighter-rouge">00000098</code></li>
           <li><strong>Región JPN</strong>: <code class="language-plaintext highlighter-rouge">00000082</code></li>
@@ -1107,13 +1116,11 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred. Hold down the POWER button to turn off the power..."</u></summary>
 
-<p>Tienes activada la opción “Disable ARM11 exception handlers”, o directamente no tienes custom firmware instalado. Intenta activar las excepciones de ARM11:</p>
-<ul>
-  <li>Power off your console</li>
-  <li>Mantén presionado (Select)</li>
-  <li>Power on your console, while still holding (Select)</li>
-  <li>Si la opción “Disable ARM11 exception handlers” está marcada, desmárcala</li>
-</ul>
+<p>Tienes activada la opción “Disable ARM11 exception handlers”, o directamente no tienes custom firmware instalado. Intenta activar las excepciones de ARM11:
+    + Power off your console
+    + Mantén presionado (Select)
+    + Power on your console, while still holding (Select)
+    + Si la opción “Disable ARM11 exception handlers” está marcada, desmárcala</p>
 </details>
 
 <details>
@@ -1134,10 +1141,8 @@ If this is the case, attempt the steps below, which are listed from easiest to h
 <details>
 <summary><u>Blue "BOOTROM ERROR" screen</u></summary>
 
-<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. This may also indicate a hardware issue that cannot be fixed. En este caso, entra al <a href="https://discord.gg/MWxPgEp">Discord de Nintendo Homebrew</a> para obtener ayuda (<em>en inglés</em>).</p>
-<ul>
-  <li>También es posible que alguien haya configurado una pantalla de inicio que luce tal y como un brickeo. Try leaving your console powered on, waiting on the blue screen, for five minutes.</li>
-</ul>
+<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. This may also indicate a hardware issue that cannot be fixed. En este caso, entra al <a href="https://discord.gg/MWxPgEp">Discord de Nintendo Homebrew</a> para obtener ayuda (<em>en inglés</em>).
+    + También es posible que alguien haya configurado una pantalla de inicio que luce tal y como un brickeo. Try leaving your console powered on, waiting on the blue screen, for five minutes.</p>
 </details>
 
 <details>
@@ -1282,7 +1287,6 @@ However, if you do not know the PIN and therefore cannot access the console’s 
   <li>Press “Clear Settings”, then “Delete” to remove all Parental Controls data</li>
 </ol>
 </details>
-
 
         
       </section>

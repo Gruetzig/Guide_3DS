@@ -773,7 +773,16 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"Le logiciel a été arrêté car une erreur est survenue. La console va redémarrer." (boîte de message blanche)</u></summary>
 
-<p>Il y a un problème avec votre fichier <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Téléchargez la dernière version de <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, placez <code class="language-plaintext highlighter-rouge">otherapp.bin</code> à la racine de votre carte SD et renommez-le en <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. N’ajoutez pas l’extension <code class="language-plaintext highlighter-rouge">.bin</code> si vous ne la voyez pas déjà.</p>
+<p>Il y a peut-être un problème avec votre fichier <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Téléchargez la dernière version de <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, placez <code class="language-plaintext highlighter-rouge">otherapp.bin</code> à la racine de votre carte SD et renommez-le en <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. N’ajoutez pas l’extension <code class="language-plaintext highlighter-rouge">.bin</code> si vous ne la voyez pas déjà.</p>
+
+<p>You can also try resetting your browser save data:</p>
+
+<ol>
+  <li>Lancez le Navigateur Internet, puis accédez aux paramètres du navigateur</li>
+  <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initialize Save Data” or “Clear All Save Data”)</li>
+  <li>Retentez l’exploit</li>
+</ol>
+
 </details>
 
 <details>
@@ -970,7 +979,7 @@ window.cookieconsent.initialise({
 <p>Now that you have your NAND backup in a safe place:</p>
 
 <ol>
-  <li>Insert your SD card into your console</li>
+  <li>Réinsérez votre carte SD dans votre console</li>
   <li>Hold START and power on still holding START to open GodMode9</li>
   <li>Press the (Home) button</li>
   <li>Sélectionnez “Scripts”</li>
@@ -1044,9 +1053,11 @@ window.cookieconsent.initialise({
 
 <p>Si la LED de notification clignote :</p>
 
-<p>-<strong>Blanc</strong> : Votre 3DS n’a pas pu trouver le fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> sur votre carte SD ou sur la mémoire interne.
--<strong>Magenta</strong> : Votre 3DS n’a pas pu trouver le fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> sur votre carte SD. Elle a pu trouver le fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> sur la mémoire interne, mais le fichier est corrompu.
--<strong>Rouge</strong> : Votre 3DS a trouvé le fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> sur votre carte SD et sur la mémoire interne, mais les deux fichiers sont corrompus.</p>
+<ul>
+  <li><strong>White</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card or on internal memory.</li>
+  <li><strong>Magenta</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card. Elle a pu trouver le fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> sur la mémoire interne, mais le fichier est corrompu.</li>
+  <li><strong>Red</strong>: Your 3DS was able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on both your SD card and on internal memory, but both files are corrupted.</li>
+</ul>
 
 <p>Vous pouvez obtenir un nouveau fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> en téléchargeant la <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">dernière version de Luma3DS</a>, extrayez l’archive et placez le fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> à la racine de votre carte SD. Si votre fichier <code class="language-plaintext highlighter-rouge">boot.firm</code> est constamment détecté comme corrompu, vous devriez vérifier si votre carte SD est corrompue (<a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, ou <a href="f3xswift-(mac)">macOS</a>). Notez également que la 3DS a tendance à avoir des problèmes avec les fichiers extraits à l’aide de WinRAR.</p>
 
@@ -1063,8 +1074,8 @@ window.cookieconsent.initialise({
   <li>Power off your console, eject the game cartridge if inserted, power on your console, then wait up to ten minutes. If your console boots within ten minutes, the issue has been fixed and is unlikely to reoccur</li>
   <li>Renommez le dossier <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> sur votre carte SD en <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code>, puis essayez de démarrer. If your console successfully boots, there is some issue within your <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Essayez d’effacer les données “extdata” du Menu HOME :
     <ul>
-      <li>Naviguez vers <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code>
-      + Supprimez le dossier correspondant à la région de votre 3DS :
+      <li>Naviguez vers <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code></li>
+      <li>Supprimez le dossier correspondant à la région de votre 3DS :
         <ul>
           <li><strong>Région EUR</strong> : <code class="language-plaintext highlighter-rouge">00000098</code></li>
           <li><strong>Région JPN</strong> : <code class="language-plaintext highlighter-rouge">00000082</code></li>
@@ -1105,13 +1116,11 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"Une erreur est survenue. Maintenez le bouton POWER enfoncé pour éteindre la console..."</u></summary>
 
-<p>Les gestionnaires d’exceptions ARM11 sont désactivés ou le custom firmware n’est pas installé. Essayez d’activer le gestionnaire d’exceptions ARM11 :</p>
-<ul>
-  <li>Power off your console</li>
-  <li>Maintenez (Select) appuyé</li>
-  <li>Power on your console, while still holding (Select)</li>
-  <li>Si la case “Disable ARM11 exception handlers” est cochée, décochez-la</li>
-</ul>
+<p>Les gestionnaires d’exceptions ARM11 sont désactivés ou le custom firmware n’est pas installé. Essayez d’activer le gestionnaire d’exceptions ARM11 :
+    + Power off your console
+    + Maintenez (Select) appuyé
+    + Power on your console, while still holding (Select)
+    + Si la case “Disable ARM11 exception handlers” est cochée, décochez-la</p>
 </details>
 
 <details>
@@ -1132,10 +1141,8 @@ Si c’est le cas, essayez les étapes ci-dessous, qui sont listées du plus sim
 <details>
 <summary><u>Écran bleu "BOOTROM ERROR"</u></summary>
 
-<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. Cela peut également indiquer un problème matériel qui ne peut pas être résolu. Dans tous les cas, rejoignez <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew sur Discord</a> pour obtenir de l’aide.</p>
-<ul>
-  <li>Il est également possible que quelqu’un ait défini un écran de démarrage qui ressemble à un brick. Try leaving your console powered on, waiting on the blue screen, for five minutes.</li>
-</ul>
+<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. Cela peut également indiquer un problème matériel qui ne peut pas être résolu. Dans tous les cas, rejoignez <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew sur Discord</a> pour obtenir de l’aide.
+    + Il est également possible que quelqu’un ait défini un écran de démarrage qui ressemble à un brick. Try leaving your console powered on, waiting on the blue screen, for five minutes.</p>
 </details>
 
 <details>
@@ -1280,7 +1287,6 @@ However, if you do not know the PIN and therefore cannot access the console’s 
   <li>Appuyez sur “Effacer les paramètres”, puis “Effacer” pour supprimer toutes les données du Contrôle parental</li>
 </ol>
 </details>
-
 
         
       </section>

@@ -520,19 +520,19 @@ mmcblk0     179:0    0   3,8G  0 disk
   <li>Premi CTRL + C per uscire</li>
   <li>Digitare quanto segue a seconda della tua scheda SD:
     <ul>
-      <li>2GB o inferiore: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(nome del dispositivo indicato prima) -s 64 -F 16</code>
+      <li>2GB or lower: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 16</code>
         <ul>
-          <li>Verrà creata un’unica partizione FAT16 con dimensione di allocazione di 32 KB sulla scheda SD</li>
+          <li>This creates a single FAT16 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
-      <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(nome del dispositivo indicato prima) -s 64 -F 32</code>
+      <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 32</code>
         <ul>
-          <li>Verrà creata un’unica partizione FAT32 con dimensione di allocazione di 32 KB sulla scheda SD</li>
+          <li>This creates a single FAT32 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
-      <li>128GB o superiore: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(nome del dispositivo indicato prima) -s 128 -F 32</code>
+      <li>128GB or higher: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 128 -F 32</code>
         <ul>
-          <li>Verrà creata un’unica partizione FAT32 con dimensione di allocazione di 64 KB sulla scheda SD</li>
+          <li>This creates a single FAT32 partition with 64 KB cluster size on the SD card</li>
         </ul>
       </li>
     </ul>

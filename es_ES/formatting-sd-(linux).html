@@ -521,17 +521,17 @@ mmcblk0     179:0    0   3,8G  0 disk
     <ul>
       <li>2GB or lower: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 16</code>
         <ul>
-          <li>Esto crea una sola partición FAT16 con un tamaño de clúster de 32 KB en la tarjeta SD</li>
+          <li>This creates a single FAT16 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
       <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 32</code>
         <ul>
-          <li>Esto crea una sola partición FAT32 con un tamaño de clúster de 32 KB en la tarjeta SD</li>
+          <li>This creates a single FAT32 partition with 32 KB cluster size on the SD card</li>
         </ul>
       </li>
       <li>128GB or higher: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 128 -F 32</code>
         <ul>
-          <li>Esto crea una sola partición FAT32 con un tamaño de clúster de 64 KB en la tarjeta SD</li>
+          <li>This creates a single FAT32 partition with 64 KB cluster size on the SD card</li>
         </ul>
       </li>
     </ul>

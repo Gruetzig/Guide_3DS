@@ -773,7 +773,16 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred, forcing the software to close..." (white message box)</u></summary>
 
-<p>There is an issue with your <code class="language-plaintext highlighter-rouge">arm11code.bin</code> file. Download de nieuwste versie van <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, plaats <code class="language-plaintext highlighter-rouge">otherapp.bin</code> op de hoofdmap van je SD-kaart en hernoem het naar <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Voeg de <code class="language-plaintext highlighter-rouge">.bin</code> extensie niet toe als je het nog niet ziet.</p>
+<p>There may be an issue with your <code class="language-plaintext highlighter-rouge">arm11code.bin</code> file. Download de nieuwste versie van <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a>, plaats <code class="language-plaintext highlighter-rouge">otherapp.bin</code> op de hoofdmap van je SD-kaart en hernoem het naar <code class="language-plaintext highlighter-rouge">arm11code.bin</code>. Voeg de <code class="language-plaintext highlighter-rouge">.bin</code> extensie niet toe als je het nog niet ziet.</p>
+
+<p>You can also try resetting your browser save data:</p>
+
+<ol>
+  <li>Launch the browser, then launch the browser settings</li>
+  <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initialize Save Data” or “Clear All Save Data”)</li>
+  <li>Try the exploit again</li>
+</ol>
+
 </details>
 
 <details>
@@ -970,7 +979,7 @@ window.cookieconsent.initialise({
 <p>Now that you have your NAND backup in a safe place:</p>
 
 <ol>
-  <li>Insert your SD card into your console</li>
+  <li>Stop je SD-kaart terug in je console</li>
   <li>Hold START and power on still holding START to open GodMode9</li>
   <li>Press the (Home) button</li>
   <li>Selecteer “Scripts…”</li>
@@ -1044,9 +1053,11 @@ window.cookieconsent.initialise({
 
 <p>Als de notificatie LED knippert:</p>
 
-<p>-<strong>Wit</strong>: Je 3DS was niet in staat om <code class="language-plaintext highlighter-rouge">boot.firm</code> te vinden op je SD-kaart of in je interne geheugen.
--<strong>Magenta</strong>: Je 3DS was niet in staat om <code class="language-plaintext highlighter-rouge">boot.firm</code> te vinden op je SD-kaart. Het kon <code class="language-plaintext highlighter-rouge">boot.firm</code> vinden in het interne geheugen, maar het bestand is beschadigd.
--<strong>Red</strong>: Je 3DS kon <code class="language-plaintext highlighter-rouge">boot.firm</code> vinden op je SD-kaart en in je interne geheugen, maar beide bestanden zijn beschadigd.</p>
+<ul>
+  <li><strong>White</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card or on internal memory.</li>
+  <li><strong>Magenta</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card. Het kon <code class="language-plaintext highlighter-rouge">boot.firm</code> vinden in het interne geheugen, maar het bestand is beschadigd.</li>
+  <li><strong>Red</strong>: Your 3DS was able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on both your SD card and on internal memory, but both files are corrupted.</li>
+</ul>
 
 <p>Je kunt een nieuw <code class="language-plaintext highlighter-rouge">boot.firm</code> bestand krijgen door de <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">nieuwste versie van Luma3DS</a> te downloaden, het uitpakken en <code class="language-plaintext highlighter-rouge">boot.firm</code> plaatsen op de hoofdmap van je SD-kaart. Indien je <code class="language-plaintext highlighter-rouge">boot.firm</code> bestand consequent gedetecteerd wordt als beschadigd, controleer je best je SD-kaart op fouten (<a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, of <a href="f3xswift-(mac)">macOS</a>). Houd er ook rekening mee dat de 3DS problemen heeft met bestanden die zijn uitgepakt met WinRAR.</p>
 
@@ -1063,8 +1074,8 @@ window.cookieconsent.initialise({
   <li>Power off your console, eject the game cartridge if inserted, power on your console, then wait up to ten minutes. If your console boots within ten minutes, the issue has been fixed and is unlikely to reoccur</li>
   <li>Hernoem de <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> map op je SD-kaart naar <code class="language-plaintext highlighter-rouge">Nintendo 3DS_BACKUP</code> en probeer dan je 3DS op te starten. If your console successfully boots, there is some issue within your <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Probeer HOME-menu extdata te wissen:
     <ul>
-      <li>Navigeer naar <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code>
-      + Verwijder de overeenkomende map voor je 3DS regio:
+      <li>Navigeer naar <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code></li>
+      <li>Verwijder de overeenkomende map voor je 3DS regio:
         <ul>
           <li><strong>EUR Regio</strong>: <code class="language-plaintext highlighter-rouge">00000098</code></li>
           <li><strong>JPN Regio</strong>: <code class="language-plaintext highlighter-rouge">00000082</code></li>
@@ -1105,13 +1116,11 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred. Hold down the POWER button to turn off the power..."</u></summary>
 
-<p>ARM11 exception handlers zijn uitgeschakeld of custom firmware is niet geïnstalleerd. Probeer ARM11 exception handlers in te schakelen:</p>
-<ul>
-  <li>Zet je console uit</li>
-  <li>Hou (Select) vast</li>
-  <li>Power on your console, while still holding (Select)</li>
-  <li>Als “Disable ARM11 exception handlers” is aangevinkt, vink het uit</li>
-</ul>
+<p>ARM11 exception handlers zijn uitgeschakeld of custom firmware is niet geïnstalleerd. Probeer ARM11 exception handlers in te schakelen:
+    + Zet je console uit
+    + Hou (Select) vast
+    + Power on your console, while still holding (Select)
+    + Als “Disable ARM11 exception handlers” is aangevinkt, vink het uit</p>
 </details>
 
 <details>
@@ -1132,10 +1141,8 @@ If this is the case, attempt the steps below, which are listed from easiest to h
 <details>
 <summary><u>Blue "BOOTROM ERROR" screen</u></summary>
 
-<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. Dit kan ook duiden op een hardware probleem dat niet kan worden opgelost. In ieder geval, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew op Discord</a> voor hulp.</p>
-<ul>
-  <li>Het is ook mogelijk dat iemand een boot-time splash screen heeft ingesteld dat eruit ziet als een brick. Try leaving your console powered on, waiting on the blue screen, for five minutes.</li>
-</ul>
+<p>Your console is likely hard-bricked. You will need to buy an ntrboot flashcart to reinstall boot9strap in order to attempt to fix your console. Dit kan ook duiden op een hardware probleem dat niet kan worden opgelost. In ieder geval, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew op Discord</a> voor hulp.
+    + Het is ook mogelijk dat iemand een boot-time splash screen heeft ingesteld dat eruit ziet als een brick. Try leaving your console powered on, waiting on the blue screen, for five minutes.</p>
 </details>
 
 <details>
@@ -1280,7 +1287,6 @@ However, if you do not know the PIN and therefore cannot access the console’s 
   <li>Press “Clear Settings”, then “Delete” to remove all Parental Controls data</li>
 </ol>
 </details>
-
 
         
       </section>
