@@ -625,9 +625,9 @@ window.cookieconsent.initialise({
 
 <details>
 <summary><u>DSiWare Management menu crashes without showing BB3 multihax menu</u></summary>
-<p>Ensure that <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> is the only file in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code>. If it is, then re-create it with the <a href="http://3dstools.nhnarwhal.com/#/bb3gen">Bannerbomb3 Injector</a>.</p>
+<p>Ensure that <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> is the only file in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code>. If it is, then re-create it with the <a href="https://zoogie.github.io/web/bb3/">Bannerbomb3 Injector</a>.</p>
 
-<p>Also, ensure that <code class="language-plaintext highlighter-rouge">bb3.bin</code> is on the root of the SD card. If it is missing, then download the latest release of <a href="https://github.com/lifehackerhansol/Bannerbomb3/releases/download/v3.0-lhs1/bb3.bin">Bannerbomb3</a> (direct download), and copy the <code class="language-plaintext highlighter-rouge">bb3.bin</code> file to the root of your SD card.</p>
+<p>Also, ensure that <code class="language-plaintext highlighter-rouge">bb3.bin</code> is on the root of the SD card. If it is missing, then download the latest release of <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a> (direct download), and copy the <code class="language-plaintext highlighter-rouge">bb3.bin</code> file from the Release_3.0 <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card.</p>
 
 <p>If neither of these solutions fixes this problem, then custom firmware may have been uninstalled on this console in a way that makes this method impossible to perform. If this is the case, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 </details>
@@ -641,7 +641,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>DSiWare Management shows a question mark</u></summary>
 
-<p>There may be an issue with your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file (it may be corrupted or intended for the wrong 3DS). Re-create your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file with the <a href="http://3dstools.nhnarwhal.com/#/bb3gen">Bannerbomb3 Injector</a>, ensuring that you use the <code class="language-plaintext highlighter-rouge">movable.sed</code> file for your console.</p>
+<p>There may be an issue with your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file (it may be corrupted or intended for the wrong 3DS). Re-create your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file with the <a href="https://zoogie.github.io/web/bb3/">Bannerbomb3 Injector</a>, ensuring that you use the <code class="language-plaintext highlighter-rouge">movable.sed</code> file for your console.</p>
 </details>
 
 <h2 id="installing-boot9strap-fredtool-inject">Installing boot9strap (Fredtool-Inject)</h2>
@@ -741,12 +741,91 @@ window.cookieconsent.initialise({
 <summary><u>"An error has occurred, forcing the software to close..." (white message box)</u></summary>
 
 <p>There is an issue with your <code class="language-plaintext highlighter-rouge">otherapp.bin</code> file (it is missing, misplaced, or corrupted). Download the latest release of <a href="https://github.com/TuxSH/universal-otherapp/releases/latest">universal-otherapp</a> and place it on the root of your SD card.</p>
+
+<p>If the above doesn’t fix your issue, and you are using an Old 3DS/Old 3DS XL / Old 2DS, you may be encountering a rare bug involving cartridge updates. Take another look at the system version. The last number, e.g. 36 in 11.3.0-<strong>36</strong>U or 4 in 2.1.0-<strong>4</strong>E. If it is below 5, but your System version is at least 5.0.0, replace the soundhax file on the root of your SD card with the following one:</p>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>USA: <a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-usa-o3ds-pre2.1-post5franken.m4a">0 - 3</a></td>
+          <td><a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-usa-o3ds-v2.1and2.2-post5franken.m4a">4</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>EUR: <a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-eur-o3ds-pre2.1-post5franken.m4a">0 - 3</a></td>
+          <td><a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-eur-o3ds-v2.1and2.2-post5franken.m4a">4</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>JPN: <a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-jpn-o3ds-pre2.1-post5franken.m4a">0 - 3</a></td>
+          <td><a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-jpn-o3ds-v2.1and2.2-post5franken.m4a">4</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>If your region isn’t on the list, this troubleshooting option doesn’t apply to you.</p>
+
+<p>If none of these fix your issue, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+
 </details>
 
 <details>
 <summary><u>"Could not play"</u></summary>
 
-<p>You have the wrong Soundhax file for your console and region, or your console is incompatible with Soundhax. In the latter case, your course of action will determine on what version your 3DS is currently on. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+<p>You have the wrong Soundhax file for your console, region and version. Double-check that you entered all info correctly into the <a href="https://soundhax.com/">Soundhax website</a>, redownload your soundhax file, and replace it with the one on the root of your SD card.</p>
+
+<p>If the above doesn’t fix your issue, and you are using an Old 3DS/Old 3DS XL / Old 2DS, you may be encountering a rare bug involving cartridge updates. Take another look at the system version. The last number, e.g. 36 in 11.3.0-<strong>36</strong>U or 4 in 2.1.0-<strong>4</strong>E. If it is below 5, but your System version is at least 5.0.0, replace the soundhax file on the root of your SD card with the following one:</p>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>USA: <a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-usa-o3ds-pre2.1-post5franken.m4a">0 - 3</a></td>
+          <td><a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-usa-o3ds-v2.1and2.2-post5franken.m4a">4</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>EUR: <a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-eur-o3ds-pre2.1-post5franken.m4a">0 - 3</a></td>
+          <td><a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-eur-o3ds-v2.1and2.2-post5franken.m4a">4</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>JPN: <a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-jpn-o3ds-pre2.1-post5franken.m4a">0 - 3</a></td>
+          <td><a href="https://github.com/danny8376/soundhax/raw/frankenfirmware/soundhax-jpn-o3ds-v2.1and2.2-post5franken.m4a">4</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>If your region isn’t on the list, this troubleshooting option doesn’t apply to you.</p>
+
+<p>If none of these fix your issue, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
 </details>
 
 <details>
@@ -855,7 +934,9 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>"An error has occurred. Please save your data in any software currently in use, then restart the system."</u></summary>
 
-<p>The date is set incorrectly. To set it correctly, follow these steps:</p>
+<p>Redo the exploit. If it c</p>
+
+<p>The date may be set incorrectly. To set it correctly, follow these steps:</p>
 
 <ol>
   <li>Select the System Settings icon on the HOME Menu, and tap Open.</li>
@@ -871,7 +952,7 @@ window.cookieconsent.initialise({
 <ul>
   <li>Ensure that <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> are on the root of the SD card (not inside of any folder)</li>
   <li>Ensure that you selected the correct payload for your region AND system version</li>
-  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a></li>
+  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a> and that your language is set to English(EUR/USA region), Japanese(JPN region) or Korean(KOR region)</li>
   <li>Try resetting your browser data:
     <ol>
       <li>Launch the browser, then launch the browser settings</li>
@@ -879,7 +960,6 @@ window.cookieconsent.initialise({
       <li>Try the exploit again</li>
     </ol>
   </li>
-  <li>Try changing the system language to something other than the current language</li>
 </ul>
 
 </details>
