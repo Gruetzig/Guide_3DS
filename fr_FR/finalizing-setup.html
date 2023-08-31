@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/fr_FR/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/fr_FR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -488,9 +492,9 @@ window.cookieconsent.initialise({
   <li><a href="#notes-de-compatibilité" id="markdown-toc-notes-de-compatibilité">Notes de compatibilité</a></li>
   <li><a href="#ce-dont-vous-avez-besoin" id="markdown-toc-ce-dont-vous-avez-besoin">Ce dont vous avez besoin</a>    <ul>
       <li><a href="#instructions" id="markdown-toc-instructions">Instructions</a>        <ul>
-          <li><a href="#section-i---vérification-de-la-présence-dun-cfw" id="markdown-toc-section-i---vérification-de-la-présence-dun-cfw">Section I - Vérification de la présence d’un CFW</a></li>
-          <li><a href="#section-ii---updating-the-system" id="markdown-toc-section-ii---updating-the-system">Section II - Updating the System</a></li>
-          <li><a href="#section-iii---prep-work" id="markdown-toc-section-iii---prep-work">Section III - Prep Work</a></li>
+          <li><a href="#section-i---préparatifs" id="markdown-toc-section-i---préparatifs">Section I - Préparatifs</a></li>
+          <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
+          <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
           <li><a href="#section-iv---rtc-and-dsp-setup" id="markdown-toc-section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</a></li>
           <li><a href="#section-v---setup-script" id="markdown-toc-section-v---setup-script">Section V - Setup Script</a></li>
         </ul>
@@ -535,12 +539,30 @@ window.cookieconsent.initialise({
 
 <ul>
   <li><a href="/assets/finalizing.zip">finalizing.zip</a> (direct download)</li>
-  <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a></li>
 </ul>
 
 <h3 id="instructions">Instructions</h3>
 
-<h4 id="section-i---vérification-de-la-présence-dun-cfw">Section I - Vérification de la présence d’un CFW</h4>
+<h4 id="section-i---préparatifs">Section I - Préparatifs</h4>
+
+<p>Dans cette section, vous copierez les fichiers nécessaires pour suivre le reste des instructions de cette page.</p>
+
+<ol>
+  <li>Éteignez votre console</li>
+  <li>Insérez votre carte SD dans votre ordinateur</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, and <code class="language-plaintext highlighter-rouge">luma</code>) to the root of your SD card, merging/replacing any existing folders if prompted
+    <ul>
+      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
+    </ul>
+  </li>
+  <li>Réinsérez votre carte SD dans votre console</li>
+</ol>
+
+<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. Il est possible que vous ayez des fichiers ou des dossiers supplémentaires sur votre carte SD, selon votre configuration précédente ou la méthode que vous avez suivie.</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
 
 <p>Comme mesure de sécurité supplémentaire, nous effectuerons une vérification supplémentaire de la présence d’un custom firmware. Si aucun custom firmware n’est installé sur votre console pour quelque raison que ce soit, la section suivante peut rendre votre console impossible à hacker sans matériel externe.</p>
 
@@ -555,7 +577,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. Rejoignez <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew sur Discord</a> et demandez de l’aide en anglais.</p>
 
-<h4 id="section-ii---updating-the-system">Section II - Updating the System</h4>
+<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
 
 <p>Dans cette section, vous allez mettre à jour votre console vers la dernière version, ce qui est sans danger avec le custom firmware.</p>
 
@@ -569,27 +591,6 @@ window.cookieconsent.initialise({
     </ul>
   </li>
 </ol>
-
-<h4 id="section-iii---prep-work">Section III - Prep Work</h4>
-
-<p>Dans cette section, vous copierez les fichiers nécessaires pour suivre le reste des instructions de cette page.</p>
-
-<ol>
-  <li>Éteignez votre console</li>
-  <li>Insérez votre carte SD dans votre ordinateur</li>
-  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, and <code class="language-plaintext highlighter-rouge">luma</code>) to the root of your SD card, merging/replacing any existing folders if prompted
-    <ul>
-      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
-    </ul>
-  </li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of the SD card</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the latest Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> (the one you just downloaded) to the root of the SD card, replacing any existing files if prompted</li>
-  <li>Réinsérez votre carte SD dans votre console</li>
-</ol>
-
-<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. Il est possible que vous ayez des fichiers ou des dossiers supplémentaires sur votre carte SD, selon votre configuration précédente ou la méthode que vous avez suivie.</p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
 
 <h4 id="section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</h4>
 

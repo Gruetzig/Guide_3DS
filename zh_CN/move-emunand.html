@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -525,7 +529,7 @@ window.cookieconsent.initialise({
 <h4 id="第一步--准备工作">第一步 – 准备工作</h4>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将SD卡插入电脑</li>
   <li>从GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 中复制 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> 到SD卡的 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> 文件夹中</li>
   <li>将 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 中的整个 <code class="language-plaintext highlighter-rouge">gm9</code> 文件夹复制到 SD 卡的根目录下</li>
@@ -671,15 +675,27 @@ window.cookieconsent.initialise({
   <li>按下 “B” 键返回到主菜单</li>
   <li>选择 “Exit”</li>
   <li>如果提示重新锁定写入权限，按下 “A” 键来确认</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
+  <li>Press (A) on <code class="language-plaintext highlighter-rouge">essential.exefs</code> to select it</li>
+  <li>选择 “Copy to 0:/gm9/out”
+    <ul>
+      <li>If you see “Destination already exists”, press (A) on “Overwrite file(s)”</li>
+    </ul>
+  </li>
+  <li>按 “A” 键继续</li>
   <li>Hold (R) and press (Start) at the same time to power off your console</li>
   <li>将你的 SD 卡插入到电脑</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
+  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
     <ul>
-      <li>请在多处地方备份这些文件（比如网盘等）</li>
+      <li>Copy these backups to multiple locations (such as online file storage, an external hard drive, etc.)</li>
       <li>如果以后机器出现任何问题，这些备份文件将是为你提供修复砖机或从 NAND 镜像恢复文件的帮手</li>
     </ul>
   </li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card after copying it</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card after copying it
+    <ul>
+      <li>The other backup files are negligible in size and may be kept on your SD card for ease of access</li>
+    </ul>
+  </li>
   <li>Reinsert your SD card into your console</li>
   <li><strong>请备份你 SD 卡上的所有文件到电脑上；接下来 SD 卡上的所有文件将被删除</strong></li>
 </ol>

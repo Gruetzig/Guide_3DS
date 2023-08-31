@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -489,8 +493,9 @@ window.cookieconsent.initialise({
       <li><a href="#ii-rész---előkészületek" id="markdown-toc-ii-rész---előkészületek">II. rész - Előkészületek</a></li>
       <li><a href="#iii-rész---a-ds-connection-settings-felülírása" id="markdown-toc-iii-rész---a-ds-connection-settings-felülírása">III. rész - A DS Connection Settings felülírása</a></li>
       <li><a href="#iv-rész---flipnote-exploit" id="markdown-toc-iv-rész---flipnote-exploit">IV. rész - Flipnote Exploit</a></li>
-      <li><a href="#v-rész---luma3ds-beállítás" id="markdown-toc-v-rész---luma3ds-beállítás">V. rész - Luma3DS beállítás</a></li>
-      <li><a href="#vi-rész---a-ds-connection-settings-visszaállítása" id="markdown-toc-vi-rész---a-ds-connection-settings-visszaállítása">VI. rész - A DS Connection Settings visszaállítása</a></li>
+      <li><a href="#v-rész---boot9strap-telepítése" id="markdown-toc-v-rész---boot9strap-telepítése">V. rész - boot9strap telepítése</a></li>
+      <li><a href="#vi-rész---luma3ds-beállítás" id="markdown-toc-vi-rész---luma3ds-beállítás">VI. rész - Luma3DS beállítás</a></li>
+      <li><a href="#vii-rész---a-ds-connection-settings-visszaállítása" id="markdown-toc-vii-rész---a-ds-connection-settings-visszaállítása">VII. rész - A DS Connection Settings visszaállítása</a></li>
     </ul>
   </li>
   <li><a href="#tovább-a-telepítés-véglegesítésére" id="markdown-toc-tovább-a-telepítés-véglegesítésére">Tovább a telepítés véglegesítésére</a></li>
@@ -594,30 +599,30 @@ window.cookieconsent.initialise({
   <li>Navigálj ide: <code class="language-plaintext highlighter-rouge">Data Management</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">SD Card</code> (<a href="/images/screenshots/bb3/dsiware-management.png">kép</a>)</li>
   <li>Válaszd a “Haxxxxxxxxx!” címet
     <ul>
-      <li>Ha nem tudod kiválasztani a “Haxxxxxxxxx” címet, <a href="troubleshooting#installing-boot9strap-fredtool">kövesd ezt a hibaelhárítási útmutatót</a></li>
+      <li>Ha nem tudod kiválasztani a “Haxxxxxxxxx” címet, <a href="troubleshooting#installing-boot9strap-fredtool-inject">kövesd ezt a hibaelhárítási útmutatót</a></li>
     </ul>
   </li>
   <li>Válaszd a “Copy”-t, majd az “OK”-t</li>
-  <li>Térj vissza a System Settings főmenüjébe</li>
-  <li>Navigálj az <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DS Connections</code> opcióhoz, majd válaszd az “OK”-t (<a href="/images/screenshots/fredtool/dsconnection.png">kép</a>)</li>
-  <li>Ha az exploit sikeres volt, a konzolodnak ezt követően be kell töltenie a JPN verzióját a Flipnote Studio-nak
-    <ul>
-      <li>Ha a konzolod nem tölti be a Flipnote Studio JPN verzióját, <a href="troubleshooting#installing-boot9strap-fredtool">kövesd ezt a hibaelhárítási útmutatót</a></li>
-    </ul>
-  </li>
 </ol>
 
 <h4 id="iv-rész---flipnote-exploit">IV. rész - Flipnote Exploit</h4>
 
-<p class="notice--info">Ha inkább egy vizuális útmutatót szeretnél ehhez a fejezethez, <a href="https://zoogie.github.io/web/flipnote_directions/">itt</a> elérhető egy.</p>
-
 <p>Ebben a fejezetben végrehajtasz egy specifikus lépés sorozatot a Flipnote Studio-val, ami ha helyesen került végrehajtásra, elindítja a boot9strap (egyedi firmware) telepítőt.</p>
 
+<p class="notice--info">Ha inkább egy vizuális útmutatót szeretnél ehhez a fejezethez, <a href="https://zoogie.github.io/web/flipnote_directions/">itt</a> elérhető egy.</p>
+
 <ol>
+  <li>Térj vissza a System Settings főmenüjébe</li>
+  <li>Navigálj az <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DS Connections</code> opcióhoz, majd válaszd az “OK”-t (<a href="/images/screenshots/fredtool/dsconnection.png">kép</a>)</li>
+  <li>Ha az exploit sikeres volt, a konzolodnak ezt követően be kell töltenie a JPN verzióját a Flipnote Studio-nak
+    <ul>
+      <li>If your console does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
   <li>Fejezd be a kezdeti telepítését az elindított játéknak, amíg el nem éri a fő menüt
     <ul>
       <li>Válaszd a bal opciót, ha kérdezi a telepítési folyamat során</li>
-      <li>Ha problémába futsz ebben a fejezetben, <a href="troubleshooting#installing-boot9strap-fredtool">kövesd ezt a hibaelhárítási útmutatót</a> a problémáddal</li>
+      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
     </ul>
   </li>
   <li>Az érintőképernyőt használva válaszd ki a bal nagy dobozt, majd válaszd a dobozt az SD kártya ikonnal</li>
@@ -629,9 +634,16 @@ window.cookieconsent.initialise({
   <li>Görgess balra, amíg a 1/3 filmtekercs kiválasztásra kerül</li>
   <li>Nyomd meg a negyedik dobozt benne az “A” betűvel</li>
   <li>Ha az exploit sikeres volt, a konzolodnak ezt követően be kell töltenie a b9sTool-t</li>
+</ol>
+
+<h4 id="v-rész---boot9strap-telepítése">V. rész - boot9strap telepítése</h4>
+
+<p>Ebben a fejezetben egyedi firmware-t fogsz telepíteni a konzolodra.</p>
+
+<ol>
   <li>A D-Pad-dal menj az “Install boot9strap” opcióra
     <ul>
-      <li>Ha kihagytad ezt a lépést a rendszer a HOME Menübe kerülsz a boot9strap telepítése helyett, és meg kell nyitnod a Nintendo DS Connections-t és elölről kell kezdened ennek a résznek az elejétől</li>
+      <li>Ha kihagytad ezt a lépést a rendszer a HOME Menübe kerülsz a boot9strap telepítése helyett, és elölről kell kezdened az előző résztől</li>
     </ul>
   </li>
   <li>Nyomj (A)-t majd ezt követően START-ot és SELECT-et egyszerre a folyamat elkezdéséhez</li>
@@ -644,7 +656,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="v-rész---luma3ds-beállítás">V. rész - Luma3DS beállítás</h4>
+<h4 id="vi-rész---luma3ds-beállítás">VI. rész - Luma3DS beállítás</h4>
 
 <ol>
   <li>Nyomd le és tartsd nyomva a (Select) gombot, és a (Select) nyomva tartása mellett kapcsold be a konzolod</li>
@@ -664,7 +676,7 @@ window.cookieconsent.initialise({
   <li>A következő oldalon hasznos homebrew alkalmazásokat telepítünk, hogy teljessé tegyük a telepítésedet.</li>
 </ul>
 
-<h4 id="vi-rész---a-ds-connection-settings-visszaállítása">VI. rész - A DS Connection Settings visszaállítása</h4>
+<h4 id="vii-rész---a-ds-connection-settings-visszaállítása">VII. rész - A DS Connection Settings visszaállítása</h4>
 
 <p>Ebben a fejezetben vissza fogod állítani a DS Connection Settings-et az az előtti állapotára, mielőtt lecserélésre került a Flipnote Studio-ra egy korábbi szakaszban.</p>
 

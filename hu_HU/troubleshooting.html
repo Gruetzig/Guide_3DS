@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -629,9 +633,9 @@ window.cookieconsent.initialise({
 
 <details>
 <summary><u>A DSiWare Management menü összeomlik a BB3 multihax menü megjelenése nélkül</u></summary>
-<p>Biztosítsd, hogy az <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> az egyetlen fájl a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> mappában. Ha így van, hozd létre újra a <a href="http://3dstools.nhnarwhal.com/#/bb3gen">BannerBomb3 Injector</a> segítségével.</p>
+<p>Biztosítsd, hogy az <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> az egyetlen fájl a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> mappában. Ha így van, hozd létre újra a <a href="https://zoogie.github.io/web/bb3">BannerBomb3 Injector</a> segítségével.</p>
 
-<p>Továbbá légy biztos abban, hogy a <code class="language-plaintext highlighter-rouge">bb3.bin</code> fájl megtalálható az SD kártyád gyökerében. Ha hiányzik, töltsd le a legutolsó kiadását az <a href="https://github.com/lifehackerhansol/Bannerbomb3/releases/download/v3.0-lhs1/bb3.bin">Bannerbomb3</a>-nak (közvetlen letöltés), és másold a <code class="language-plaintext highlighter-rouge">bb3.bin</code> fájlt az SD kártyád gyökerébe.</p>
+<p>Továbbá légy biztos abban, hogy a <code class="language-plaintext highlighter-rouge">bb3.bin</code> fájl megtalálható az SD kártyád gyökerében. Ha hiányzik, töltsd le a legutolsó kiadását az <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a>-nak (közvetlen letöltés), és másold a <code class="language-plaintext highlighter-rouge">bb3.bin</code> fájlt a Release <code class="language-plaintext highlighter-rouge">.zip</code>-ből az SD kártyád gyökerébe.</p>
 
 <p>Ha ezen megoldások egyike sem javítja ezt a problémát, akkor az egyedi firmware eltávolításra kerülhetett erről a konzolról, úgy, hogy az lehetetlenné teszi ennek a metódusnak a végrehajtását. Ebben az esetben csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz Discord-on</a> és kérj, támogatást angolul.</p>
 </details>
@@ -645,7 +649,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>A DSiWare Management egy kérdőjelet mutat</u></summary>
 
-<p>Probléma van az <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> fájloddal (hibás vagy másik 3DS-hez tartozik). Hozd létre újra az <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> fájlod a <a href="http://3dstools.nhnarwhal.com/#/bb3gen">BannerBomb3 Injector</a> segítségével, biztosítva azt, hogy a konzolod <code class="language-plaintext highlighter-rouge">movable.sed</code> fájlját használod hozzá.</p>
+<p>Probléma van az <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> fájloddal (hibás vagy másik 3DS-hez tartozik). Hozd létre újra az <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> fájlod a <a href="https://zoogie.github.io/web/bb3">BannerBomb3 Injector</a> segítségével, biztosítva azt, hogy a konzolod <code class="language-plaintext highlighter-rouge">movable.sed</code> fájlját használod hozzá.</p>
 </details>
 
 <h2 id="boot9strap-telepítése-fredtool-inject">Boot9strap telepítése (Fredtool-Inject)</h2>
@@ -873,17 +877,17 @@ window.cookieconsent.initialise({
 <p>Ha a probléma továbbra is fennáll:</p>
 
 <ul>
-  <li>Ensure that <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> are on the root of the SD card (not inside of any folder)</li>
-  <li>Ensure that you selected the correct payload for your region AND system version</li>
-  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a></li>
-  <li>Try resetting your browser data:
+  <li>Legyél biztos abban, hogy az <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, és a <code class="language-plaintext highlighter-rouge">boot.3dsx</code> fájlok megtalálhatók az SD kártya gyökerében (nem pedig egy mappában)</li>
+  <li>Legyél biztos abban, hogy a régiódnak ÉS a rendszerednek megfelelő payload-ot választottad</li>
+  <li>Legyél biztos abban, hogy a régiós beállításaid <a href="/images/screenshots/skater_lang.png">így néznek ki</a></li>
+  <li>Próbáld meg törölni a böngésző adatot:
     <ol>
       <li>Indítsd el a böngészőt, majd lépj be a beállításokba (browser settings)</li>
       <li>Görgess a legaljára, majd válaszd a “Reset Save Data” opciót (ami lehet, hogy “Initialize Savedata” vagy “Clear All Save Data” néven fut”)</li>
       <li>Próbáld meg újra végrehajtani az exploitot</li>
     </ol>
   </li>
-  <li>Try changing the system language to something other than the current language</li>
+  <li>Próbáld meg módosítani a rendszer nyelvét valami másra mint az aktuális nyelv</li>
 </ul>
 
 </details>
@@ -925,16 +929,9 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Warning #01: No Nintendo 3DS folder</u></summary>
-
-<p>Az SD kártyádon nincs <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappa. Power on your device with your SD card inserted, then wait for the device to show a message box that says “Creating HOME Menu management information”. Once the message box disappears, power off your device and try again.</p>
-
-</details>
-
-<details>
 <summary><u>Error #02: Missing essential.exefs</u></summary>
 
-<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your device, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your console, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
 
 </details>
 
@@ -954,12 +951,11 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Kapcsold ki a konzolod</li>
-  <li>Távolítsd el az SD kártyád, majd csatlakoztasd a számítógépedhez</li>
+  <li>Helyezd az SD kártyád a számítógépbe</li>
   <li>Másold a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát az SD kártya gyökeréből a számítógépedre</li>
   <li>Töröld a Nintendo 3DS mappát az SD kártyáról</li>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
-  <li>Kapcsold ki a konzolod</li>
-  <li>Hold START and power on still holding START to open GodMode9</li>
+  <li>Nyomd le és tartsd nyomva a (Start) gombot, és a (Start) nyomva tartása mellett kapcsold be a konzolod. Ez elindítja a GodMode9-et</li>
   <li>Press the (Home) button</li>
   <li>Válaszd a “Scripts…” opciót</li>
   <li>Válaszd az “finalize” opciót</li>
@@ -984,11 +980,15 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
-  <li>Hold START and power on still holding START to open GodMode9</li>
+  <li>Nyomd le és tartsd nyomva a (Start) gombot, és a (Start) nyomva tartása mellett kapcsold be a konzolod. Ez elindítja a GodMode9-et</li>
   <li>Press the (Home) button</li>
   <li>Válaszd a “Scripts…” opciót</li>
   <li>Válaszd az “finalize” opciót</li>
-  <li>Continue the script as normal</li>
+  <li>Continue the script as normal
+    <ul>
+      <li>The NAND backup will be automatically skipped</li>
+    </ul>
+  </li>
 </ol>
 
 </details>
@@ -996,7 +996,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Information #05: No title database</u></summary>
 
-<p>Press (A) to create a title database, unlock SysNAND writing by entering the buttons on-screen, follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+<p>Press (A) to import a title database, unlock SysNAND writing by entering the buttons on-screen, then continue the script as normal.</p>
 
 </details>
 
@@ -1006,11 +1006,11 @@ window.cookieconsent.initialise({
 <p>Győződj meg róla, hogy legalább 1.3 GB szabad hely van az SD kártyádon. Ha nincs elég szabad helyed, kövesd ezeket a lépéseket:</p>
 <ol>
   <li>Kapcsold ki a konzolod</li>
-  <li>Távolítsd el az SD kártyád, majd csatlakoztasd a számítógépedhez</li>
+  <li>Helyezd az SD kártyád a számítógépbe</li>
   <li>Másold a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát az SD kártya gyökeréből a számítógépedre</li>
   <li>Töröld a Nintendo 3DS mappát az SD kártyáról</li>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
-  <li>Kapcsold ki a konzolod, tartsd nyomva a START és power gombokat, továbbra is nyomva a START gombot a GodMode9-be bootoláshoz</li>
+  <li>Nyomd le és tartsd nyomva a (Start) gombot, és a (Start) nyomva tartása mellett kapcsold be a konzolod. Ez elindítja a GodMode9-et</li>
   <li>Hajts végre egy <a href="godmode9-usage#creating-a-nand-backup">NAND Backup</a>-ot</li>
   <li>Másold a <code class="language-plaintext highlighter-rouge">gm9/out</code> mappát az SD kártyádról egy biztonságos helyre a számítógépeden</li>
   <li>Töröld a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> és a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> fájlokat az SD kártyád <code class="language-plaintext highlighter-rouge">/gm9/out/</code> mappájából, megtartva az essential.exefs-t a <code class="language-plaintext highlighter-rouge">/gm9/out/</code> -ban</li>
@@ -1022,13 +1022,6 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Error #08: Dummy title database</u></summary>
-
-<p>You didn’t delete the dummy title database that was created by Error #05. Follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
-
-</details>
-
-<details>
 <summary><u>Error #09: Unsupported GodMode9 version</u></summary>
 
 <p>You are somehow running a version of GodMode9 not packaged with the script. Make sure you copied the contents of <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card and that you are holding START while powering on your console.</p>
@@ -1036,9 +1029,42 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Information #11: NAND backup flag detected</u></summary>
+<summary><u>Error #11: Missing donor database</u></summary>
 
-<p>You most likely already made a NAND backup on this console. If you did not make a backup or lost access to your backup, select “1. Make Another NAND Backup”. Otherwise, select “2. Skip NAND Backup”.</p>
+<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+</details>
+
+<details>
+<summary><u>Error #12: Copy (file).db fail</u></summary>
+
+<p>Ensure that your SD card is not <a href="/images/sdlock.png">locked</a>. If the SD card is not locked and you continue to get this error, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+
+</details>
+
+<details>
+<summary><u>Information #17: Duplicate NAND backup</u></summary>
+
+<p>The script has detected that the Nintendo 3DS folder is missing AND that you have already made a NAND backup before. If you intend to install homebrew applications, you should do the following:</p>
+
+<ol>
+  <li>Press (B) to cancel making another NAND backup</li>
+  <li>Az (R) lenyomva tartása közben nyomd meg a (Start) gombot a konzolod kikapcsolásához</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> to a safe location on your computer</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> from your SD card</li>
+  <li>If you moved your Nintendo 3DS folder off of your SD card to get to this point, copy it back to your SD card
+    <ul>
+      <li>If you do not have a Nintendo 3DS folder, boot into the HOME Menu at least once with the SD card inserted to automatically generate it</li>
+    </ul>
+  </li>
+  <li>Nyomd le és tartsd nyomva a (Start) gombot, és a (Start) nyomva tartása mellett kapcsold be a konzolod. Ez elindítja a GodMode9-et</li>
+  <li>Nyomd meg a (Home) gombot, hogy megjelenjen a műveleti menü</li>
+  <li>Válaszd a “Scripts…” opciót</li>
+  <li>Válaszd az “finalize” opciót</li>
+  <li>Follow the prompts in the script, answering any questions that you are asked</li>
+</ol>
 
 </details>
 
@@ -1058,9 +1084,9 @@ window.cookieconsent.initialise({
 <p>Ha az értesítő LED villog:</p>
 
 <ul>
-  <li><strong>White</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card or on internal memory.</li>
-  <li><strong>Magenta</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card. Megtalálta a <code class="language-plaintext highlighter-rouge">boot.firm</code>-et a belső memóriában, de az a fájl sérült.</li>
-  <li><strong>Red</strong>: Your 3DS was able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on both your SD card and on internal memory, but both files are corrupted.</li>
+  <li><strong>Fehér</strong>: A 3DS-ed nem találta a <code class="language-plaintext highlighter-rouge">boot.firm</code>-et sem az SD kártyádon, sem a belső memóriában.</li>
+  <li><strong>Magenta</strong>: A 3DS-ed nem találta a <code class="language-plaintext highlighter-rouge">boot.firm</code>-et az SD kártyádon. Megtalálta a <code class="language-plaintext highlighter-rouge">boot.firm</code>-et a belső memóriában, de az a fájl sérült.</li>
+  <li><strong>Piros</strong>: A 3DS-ed megtalálta a <code class="language-plaintext highlighter-rouge">boot.firm</code>-et az SD kártyádon és a belső memóriában, de mindkét fájl sérült.</li>
 </ul>
 
 <p>Beszerezhetsz <code class="language-plaintext highlighter-rouge">boot.firm</code> fájlt a <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS legfrissebb kiadásának letöltésével</a> és annak kicsomagolásával, majd a <code class="language-plaintext highlighter-rouge">boot.firm</code> fájlnak az SD kártyád gyökerébe helyezésével. Ha a <code class="language-plaintext highlighter-rouge">boot.firm</code> fájlod folyamatosan sérültnek érzékelt, szükség lehet az SD kártyád hibákra ellenőrzésére (<a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, vagy <a href="f3xswift-(mac)">macOS</a>). Azt is vedd figyelembe, hogy a 3DS-nek problémái lehetnek olyan fájlokkal, amit WinRAR-ral csomagoltak ki.</p>

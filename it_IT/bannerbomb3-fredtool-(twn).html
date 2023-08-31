@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/it_IT/dumping-eshop-dsiware'>Dump di DsiWare eShop</a></li>
           
         
@@ -491,8 +495,9 @@ window.cookieconsent.initialise({
       <li><a href="#sezione-iii---bannerbomb3" id="markdown-toc-sezione-iii---bannerbomb3">Sezione III - BannerBomb3</a></li>
       <li><a href="#sezione-iv---fredtool" id="markdown-toc-sezione-iv---fredtool">Sezione IV - Fredtool</a></li>
       <li><a href="#sezione-v---exploit-flipnote" id="markdown-toc-sezione-v---exploit-flipnote">Sezione V - Exploit Flipnote</a></li>
-      <li><a href="#sezione-vi---configurazione-di-luma3ds" id="markdown-toc-sezione-vi---configurazione-di-luma3ds">Sezione VI - Configurazione di Luma3DS</a></li>
-      <li><a href="#sezione-vii---ripristino-della-modalità-download-ds" id="markdown-toc-sezione-vii---ripristino-della-modalità-download-ds">Sezione VII - Ripristino della Modalità Download DS</a></li>
+      <li><a href="#sezione-vi---installazione-di-boot9strap" id="markdown-toc-sezione-vi---installazione-di-boot9strap">Sezione VI - Installazione di boot9strap</a></li>
+      <li><a href="#sezione-vii---configurazione-di-luma3ds" id="markdown-toc-sezione-vii---configurazione-di-luma3ds">Sezione VII - Configurazione di Luma3DS</a></li>
+      <li><a href="#sezione-viii---ripristino-della-modalità-download-ds" id="markdown-toc-sezione-viii---ripristino-della-modalità-download-ds">Sezione VIII - Ripristino della Modalità Download DS</a></li>
     </ul>
   </li>
   <li><a href="#prosegui-con-il-completamento-dellinstallazione" id="markdown-toc-prosegui-con-il-completamento-dellinstallazione">Prosegui con il Completamento dell’installazione</a></li>
@@ -514,9 +519,9 @@ window.cookieconsent.initialise({
 <h3 id="cosa-serve">Cosa serve</h3>
 
 <ul>
-  <li>Your <code class="language-plaintext highlighter-rouge">movable.sed</code> file completing <a href="seedminer-(twn)">Seedminer</a></li>
+  <li>Il tuo file <code class="language-plaintext highlighter-rouge">movable.sed</code> dalla sezione <a href="seedminer-(twn)">Seedminer</a></li>
   <li>L’ultima versione di <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (il file <code class="language-plaintext highlighter-rouge">.zip</code> di Luma3DS)</li>
-  <li>The latest release of <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9stool</a> (direct download)</li>
+  <li>L’ultima versione di <a href="https://github.com/zoogie/b9sTool/releases/download/v6.1.1/release_6.1.1.zip">b9stool</a> (download diretto)</li>
   <li>L’ultima versione di <a href="https://github.com/zoogie/Frogminer/releases/latest">Frogminer_save</a> (<code class="language-plaintext highlighter-rouge">Frogminer_save.zip</code>)</li>
 </ul>
 
@@ -639,23 +644,23 @@ window.cookieconsent.initialise({
   <li>Entra in <code class="language-plaintext highlighter-rouge">Gestione dati</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code></li>
   <li>Nella sezione “Scheda SD”, scegli il titolo “Haxxxxxxxxx!”</li>
   <li>Seleziona “Copia”, quindi “OK”</li>
-  <li>Esci da Impostazioni della console</li>
-  <li>Avvia “Modalità download” sulla tua console (l’icona arancione con un 3DS)</li>
-  <li>Seleziona “Nintendo DS”</li>
-  <li>Se l’exploit ha avuto successo, la tua console avrà caricato la versione JPN di Flipnote Studio</li>
 </ol>
 
 <h4 id="sezione-v---exploit-flipnote">Sezione V - Exploit Flipnote</h4>
 
-<p class="notice--info">Se desideri una guida visiva per questa parte, è disponibile <a href="https://zoogie.github.io/web/flipnote_directions/">qui</a>.</p>
-
 <p>In questa sezione, eseguirai una serie passaggi molto specifici da fare in Flipnote Studio che, se fatti correttamente, farà partire b9sTool, l’installer di boot9strap (custom firmware).</p>
 
+<p class="notice--info">Se desideri una guida visiva per questa parte, è disponibile <a href="https://zoogie.github.io/web/flipnote_directions/">qui</a>.</p>
+
 <ol>
+  <li>Esci da Impostazioni della console</li>
+  <li>Avvia “Modalità download” sulla tua console (l’icona arancione con un 3DS)</li>
+  <li>Seleziona “Nintendo DS”</li>
+  <li>Se l’exploit ha avuto successo, la tua console avrà caricato la versione JPN di Flipnote Studio</li>
   <li>Completa la configurazione iniziale del gioco finché non avrai raggiunto il menu principale
     <ul>
       <li>Seleziona l’opzione di sinistra quando richiesto durante la configurazione</li>
-      <li>Se riscontri un problema durante questa sezione, <a href="troubleshooting#installing-boot9strap-fredtool">cerca in questa guida</a> il tuo problema</li>
+      <li>Se riscontri un problema durante questa sezione, <a href="troubleshooting#installing-boot9strap-fredtool-inject">cerca in questa guida</a> il tuo problema</li>
     </ul>
   </li>
   <li>Con il touch screen, seleziona il riquadro grande a sinistra, poi il riquadro con l’icona di una scheda SD</li>
@@ -667,9 +672,16 @@ window.cookieconsent.initialise({
   <li>Scorri a sinistra fino a visualizzare la bobina “1/3”</li>
   <li>Seleziona il quarto riquadro con la lettera “A” all’interno</li>
   <li>Se l’exploit ha funzionato, la tua console avvierà b9sTool</li>
+</ol>
+
+<h4 id="sezione-vi---installazione-di-boot9strap">Sezione VI - Installazione di boot9strap</h4>
+
+<p>In questa sezione installerai il custom firmware sulla tua console.</p>
+
+<ol>
   <li>Usando il D-Pad, vai su “Install boot9strap”
     <ul>
-      <li>Se salti questo passaggio, la console si riavvierà nel menu HOME senza aver installato boot9strap, e sarà necessario riaprire l’applicazione Modalità download DS e ricominciare dall’inizio di questa sezione</li>
+      <li>Se salti questo passaggio, la console si riavvierà nel menu HOME senza aver installato boot9strap, e sarà necessario ricominciare dalla sezione precedente</li>
     </ul>
   </li>
   <li>Premi (A), quindi premi START e SELECT contemporaneamente per avviare il processo</li>
@@ -682,7 +694,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="sezione-vi---configurazione-di-luma3ds">Sezione VI - Configurazione di Luma3DS</h4>
+<h4 id="sezione-vii---configurazione-di-luma3ds">Sezione VII - Configurazione di Luma3DS</h4>
 
 <ol>
   <li>Premi (Select) e accendi la tua console continuando a tenerlo premuto</li>
@@ -696,7 +708,7 @@ window.cookieconsent.initialise({
   <li>Premi (Start) per salvare e riavviare il 3DS</li>
 </ol>
 
-<h4 id="sezione-vii---ripristino-della-modalità-download-ds">Sezione VII - Ripristino della Modalità Download DS</h4>
+<h4 id="sezione-viii---ripristino-della-modalità-download-ds">Sezione VIII - Ripristino della Modalità Download DS</h4>
 
 <ol>
   <li>Nella tua scheda SD, entra in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code></li>

@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/it_IT/dumping-eshop-dsiware'>Dump di DsiWare eShop</a></li>
           
         
@@ -488,7 +492,7 @@ window.cookieconsent.initialise({
   <li><a href="#cosa-serve" id="markdown-toc-cosa-serve">Cosa serve</a></li>
   <li><a href="#istruzioni-32gb-o-inferiore" id="markdown-toc-istruzioni-32gb-o-inferiore">Istruzioni (32GB o inferiore)</a></li>
   <li><a href="#istruzioni-64gb-o-superiore" id="markdown-toc-istruzioni-64gb-o-superiore">Istruzioni (64GB o superiore)</a></li>
-  <li><a href="#errori-comuni-nelluso-di-guiformat" id="markdown-toc-errori-comuni-nelluso-di-guiformat">Errori comuni nell’uso di guiformat</a></li>
+  <li><a href="#risoluzione-dei-problemi" id="markdown-toc-risoluzione-dei-problemi">Risoluzione dei problemi</a></li>
 </ul>
 
   </nav>
@@ -545,7 +549,7 @@ window.cookieconsent.initialise({
   <li>Seleziona la dimensione corretta su “Allocation unit size”
     <ul>
       <li>Se la scheda SD è da 64GB, scegli 32768</li>
-      <li>If the SD card is larger than 64GB, choose 65536</li>
+      <li>Se la scheda SD è più grande di 64GB, scegli 65536</li>
     </ul>
   </li>
   <li>Inserisci qualunque cosa su “Volume label”</li>
@@ -557,17 +561,22 @@ window.cookieconsent.initialise({
   <li>Se la scheda SD aveva precedentemente file o cartelle al suo interno, ricopia il contenuto dal tuo computer</li>
 </ol>
 
-<h3 id="errori-comuni-nelluso-di-guiformat">Errori comuni nell’uso di guiformat</h3>
+<h3 id="risoluzione-dei-problemi">Risoluzione dei problemi</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>guiformat mostra l’errore “Failed to open device: GetLastError()=32”
     <ul>
       <li>Chiudi tutto ciò che potrebbe stare utilizzando la scheda SD, come ad esempio qualunque schermata Esplora Risorse.</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>guiformat mostra l’errore “GetLastError()=1117”
     <ul>
       <li>La protezione da scrittura della scheda SD potrebbe essere <a href="/images/sdlock.png">abilitata</a>. Lo slider deve essere spostato verso l’alto per consentire la scrittura sulla scheda SD (anche per la sola formattazione).</li>
+    </ul>
+  </li>
+  <li>La scheda SD continua a non venire rilevata dalla console o continua a mostrare una capacità errata dopo la formattazione
+    <ul>
+      <li>La tua scheda SD potrebbe essere partizionata o avere spazio non allocato. Segui le istruzioni <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">qui</a> per riformattare la tua scheda SD.</li>
     </ul>
   </li>
 </ul>

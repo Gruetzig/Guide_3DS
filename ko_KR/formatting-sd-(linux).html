@@ -374,11 +374,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>eShop DSiWare 덤프</a></li>
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
           
         
           
@@ -486,6 +490,7 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#중요" id="markdown-toc-중요">중요</a></li>
   <li><a href="#진행-방법" id="markdown-toc-진행-방법">진행 방법</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 
   </nav>
@@ -520,24 +525,34 @@ mmcblk0     179:0    0   3,8G  0 disk
   <li>CTRL + C 를 입력해 메뉴를 닫으세요</li>
   <li>SD 카드 포멧을 위해 다음을 실행하세요:
     <ul>
-      <li>2GB or lower: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 16</code>
+      <li>2GB 이하: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 16</code>
         <ul>
-          <li>This creates a single FAT16 partition with 32 KB cluster size on the SD card</li>
+          <li>이것은 32KB 클러스터 크기를 가진 FAT16 파티션을 SD카드에 생성합니다</li>
         </ul>
       </li>
       <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 32</code>
         <ul>
-          <li>This creates a single FAT32 partition with 32 KB cluster size on the SD card</li>
+          <li>이것은 32KB 클러스터 크기를 가진 FAT32 파티션을 SD카드에 생성합니다</li>
         </ul>
       </li>
-      <li>128GB or higher: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 128 -F 32</code>
+      <li>128GB 이상: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 128 -F 32</code>
         <ul>
-          <li>This creates a single FAT32 partition with 64 KB cluster size on the SD card</li>
+          <li>이것은 64KB 클러스터 크기를 가진 FAT32 파티션을 SD카드에 생성합니다</li>
         </ul>
       </li>
     </ul>
   </li>
 </ol>
+
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<ul>
+  <li>SD card remains undetected by console or continues to display the wrong capacity after formatting
+    <ul>
+      <li>Your SD card may be partitioned or have unallocated space. Follow the instructions <a href="https://wiki.hacks.guide/wiki/SD_Clean/Linux">here</a> to reformat your SD card.</li>
+    </ul>
+  </li>
+</ul>
 
         
       </section>

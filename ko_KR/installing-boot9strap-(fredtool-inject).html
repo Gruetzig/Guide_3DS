@@ -374,11 +374,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>eShop DSiWare 덤프</a></li>
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
           
         
           
@@ -489,8 +493,9 @@ window.cookieconsent.initialise({
       <li><a href="#섹션-ii---준비-작업" id="markdown-toc-섹션-ii---준비-작업">섹션 II - 준비 작업</a></li>
       <li><a href="#섹션-iii---ds-소프트웨어용-설정-덮어쓰기" id="markdown-toc-섹션-iii---ds-소프트웨어용-설정-덮어쓰기">섹션 III - DS 소프트웨어용 설정 덮어쓰기</a></li>
       <li><a href="#섹션-iv---flipnote-익스플로잇" id="markdown-toc-섹션-iv---flipnote-익스플로잇">섹션 IV - Flipnote 익스플로잇</a></li>
-      <li><a href="#섹션-v---luma3ds-구성" id="markdown-toc-섹션-v---luma3ds-구성">섹션 V - Luma3DS 구성</a></li>
-      <li><a href="#섹션-vi---ds-소프트웨어용-설정-복구" id="markdown-toc-섹션-vi---ds-소프트웨어용-설정-복구">섹션 VI - DS 소프트웨어용 설정 복구</a></li>
+      <li><a href="#섹션-v---boot9strap-설치" id="markdown-toc-섹션-v---boot9strap-설치">섹션 V - boot9strap 설치</a></li>
+      <li><a href="#섹션-vi---luma3ds-구성" id="markdown-toc-섹션-vi---luma3ds-구성">섹션 VI - Luma3DS 구성</a></li>
+      <li><a href="#섹션-vii---ds-소프트웨어용-설정-복구" id="markdown-toc-섹션-vii---ds-소프트웨어용-설정-복구">섹션 VII - DS 소프트웨어용 설정 복구</a></li>
     </ul>
   </li>
   <li><a href="#마무리-단계-로-계속합니다" id="markdown-toc-마무리-단계-로-계속합니다">마무리 단계 로 계속합니다</a></li>
@@ -594,30 +599,30 @@ window.cookieconsent.initialise({
   <li><code class="language-plaintext highlighter-rouge">데이터 관리</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">SD 카드</code>로 들어가주세요 (<a href="/images/screenshots/bb3/dsiware-management.png">사진</a>)</li>
   <li>“Haxxxxxxxxx!” 타이틀을 선택해 주세요
     <ul>
-      <li>“Haxxxxxxxxx” 타이틀을 선택할 수 없다면, <a href="troubleshooting#installing-boot9strap-fredtool">이 문제 해결 가이드</a>를 참고해 주세요</li>
+      <li>If you are unable to select the “Haxxxxxxxxx” title, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
     </ul>
   </li>
   <li>“복사”를 선택한 후, “OK”를 선택해 주세요</li>
-  <li>본체 설정의 메인 메뉴로 돌아가 주세요</li>
-  <li><code class="language-plaintext highlighter-rouge">인터넷 설정</code> -&gt; <code class="language-plaintext highlighter-rouge">DS 소프트웨어용 설정</code>으로 들어가 “OK”를 선택해 주세요 (<a href="/images/screenshots/fredtool/dsconnection.png">사진 (영어)</a>)</li>
-  <li>만약 익스플로잇이 성공적이었다면, 콘솔은 JPN 버전의 Flipnote Studio를 실행할 겁니다
-    <ul>
-      <li>콘솔이 일본어 Flipnote Studio로 로드되지 않는다면, <a href="troubleshooting#installing-boot9strap-fredtool">이 문제 해결 가이드</a>를 참고해 주세요</li>
-    </ul>
-  </li>
 </ol>
 
 <h4 id="섹션-iv---flipnote-익스플로잇">섹션 IV - Flipnote 익스플로잇</h4>
 
-<p class="notice--info">만약 이 섹션의 비주얼 가이드를 선호한다면, [여기서] (https://zoogie.github.io/web/flipnote_directions/) 그 중 하나를 보실 수가 있습니다.</p>
-
 <p>이 섹션에서는, boot9strap (커스텀 펌웨어) 설치 도구를 실행 할 수 있도록 Flipnote Studio에서 여러 가지 단계를 진행 합니다.</p>
 
+<p class="notice--info">만약 이 섹션의 비주얼 가이드를 선호한다면, [여기서] (https://zoogie.github.io/web/flipnote_directions/) 그 중 하나를 보실 수가 있습니다.</p>
+
 <ol>
+  <li>본체 설정의 메인 메뉴로 돌아가 주세요</li>
+  <li><code class="language-plaintext highlighter-rouge">인터넷 설정</code> -&gt; <code class="language-plaintext highlighter-rouge">DS 소프트웨어용 설정</code>으로 들어가 “OK”를 선택해 주세요 (<a href="/images/screenshots/fredtool/dsconnection.png">사진 (영어)</a>)</li>
+  <li>만약 익스플로잇이 성공적이었다면, 콘솔은 JPN 버전의 Flipnote Studio를 실행할 겁니다
+    <ul>
+      <li>If your console does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
   <li>메인 메뉴로 갈 때까지의 초기 설정을 완료하세요
     <ul>
       <li>만약 설정 중 선택이 표시될 시는 왼쪽을 선택해 주세요</li>
-      <li>여기까지 진행하는 데에 문제가 발생한다면, <a href="troubleshooting#installing-boot9strap-fredtool">이 문제 해결 가이드</a>을 참고해 주세요</li>
+      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
     </ul>
   </li>
   <li>터치 스크린을 사용해서, 오른쪽의 큰 버튼을 선택하고, 그 후 SD 카드 아이콘이 붙은 버튼을 선택해 주세요</li>
@@ -629,9 +634,16 @@ window.cookieconsent.initialise({
   <li>“1/3”이 선택될 때까지 왼쪽으로 스크롤해 주세요</li>
   <li>“A”가 들어가 있는 네 번째 버튼을 눌러 주세요</li>
   <li>취약점이 성공적이었다면 b9sTool을 실행했을 것입니다</li>
+</ol>
+
+<h4 id="섹션-v---boot9strap-설치">섹션 V - boot9strap 설치</h4>
+
+<p>이 섹션에서는, 커스텀 펌웨어를 설치할 것입니다.</p>
+
+<ol>
   <li>십자 패드를 사용해서, “Install boot9strap”으로 이동해 주세요
     <ul>
-      <li>이 단계를 놓쳤다면, 시스템은 boot9strap을 설치하는 대신 HOME 메뉴로 나가집니다. 이렇게 되면 다시 DS 소프트웨어용 설정을 열어서 이 섹션의 처음부터 시작해야 합니다</li>
+      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to start over from the previous section</li>
     </ul>
   </li>
   <li>(A) 버튼을 누른 후, START와 SELECT를 동시에 눌러 작업을 실행해 주세요</li>
@@ -644,7 +656,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="섹션-v---luma3ds-구성">섹션 V - Luma3DS 구성</h4>
+<h4 id="섹션-vi---luma3ds-구성">섹션 VI - Luma3DS 구성</h4>
 
 <ol>
   <li>(Select) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요</li>
@@ -664,7 +676,7 @@ window.cookieconsent.initialise({
   <li>다음 페이지에서는 커펌에 유용한 홈브류를 설치해 콘솔 준비를 완료할 것 입니다.</li>
 </ul>
 
-<h4 id="섹션-vi---ds-소프트웨어용-설정-복구">섹션 VI - DS 소프트웨어용 설정 복구</h4>
+<h4 id="섹션-vii---ds-소프트웨어용-설정-복구">섹션 VII - DS 소프트웨어용 설정 복구</h4>
 
 <p>이 섹션에서는 DS 소프트웨어 설정을 이전 섹션에서 Flipnote Studio로 변경하기 전으로 원상복귀 합니다.</p>
 

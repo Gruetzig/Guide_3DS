@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -486,6 +490,7 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#fontos-tudnivalók" id="markdown-toc-fontos-tudnivalók">Fontos tudnivalók</a></li>
   <li><a href="#lépések" id="markdown-toc-lépések">Lépések</a></li>
+  <li><a href="#hibaelhárítás" id="markdown-toc-hibaelhárítás">Hibaelhárítás</a></li>
 </ul>
 
   </nav>
@@ -520,24 +525,34 @@ mmcblk0     179:0    0   3,8G  0 disk
   <li>Nyomj CTRL + C-t a menüből kilépéshez</li>
   <li>Írd be a következőt az SD kártyádhoz:
     <ul>
-      <li>2GB or lower: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 16</code>
+      <li>2GB vagy kisebb: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(az eszköz neve fentről) -s 64 -F 16</code>
         <ul>
-          <li>This creates a single FAT16 partition with 32 KB cluster size on the SD card</li>
+          <li>Ez létrehoz egy FAT16 partíciót 32 KB cluster mérettel az SD kártyán</li>
         </ul>
       </li>
-      <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 64 -F 32</code>
+      <li>4GB - 128GB: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(az eszköz neve fentről) -s 64 -F 32</code>
         <ul>
-          <li>This creates a single FAT32 partition with 32 KB cluster size on the SD card</li>
+          <li>Ez létrehoz egy FAT32 partíciót 32 KB cluster mérettel az SD kártyán</li>
         </ul>
       </li>
-      <li>128GB or higher: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(device name from above) -s 128 -F 32</code>
+      <li>128GB vagy nagyobb: <code class="language-plaintext highlighter-rouge">sudo mkfs.fat /dev/(az eszköz neve fentről) -s 128 -F 32</code>
         <ul>
-          <li>This creates a single FAT32 partition with 64 KB cluster size on the SD card</li>
+          <li>Ez létrehoz egy FAT32 partíciót 64 KB cluster mérettel az SD kártyán</li>
         </ul>
       </li>
     </ul>
   </li>
 </ol>
+
+<h3 id="hibaelhárítás">Hibaelhárítás</h3>
+
+<ul>
+  <li>SD kártya továbbra sem detektálható a konzol által, vagy a formázás után továbbra is a rossz kapacitást mutatja
+    <ul>
+      <li>Az SD kártyád lehet, hogy partícionált vagy van nem lefoglalt területe. Kövesd a lépéseket <a href="https://wiki.hacks.guide/wiki/SD_Clean/Linux">itt</a> az SD kártyád újraformázásához.</li>
+    </ul>
+  </li>
+</ul>
 
         
       </section>

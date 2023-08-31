@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -577,7 +581,7 @@ window.cookieconsent.initialise({
       <li>你先前安装的程序会暂时消失。 这是正常的，且接下来就会还原回来。</li>
     </ul>
   </li>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>打开你 SD 卡的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 文件夹</li>
   <li>复制你看到的 32 位字符文件夹的名称
@@ -626,9 +630,9 @@ window.cookieconsent.initialise({
 
 <details>
 <summary><u>DSiWare Management menu crashes without showing BB3 multihax menu</u></summary>
-<p>确保 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 是 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 里面的唯一文件。 如果确定没问题的话，尝试重新使用 <a href="http://3dstools.nhnarwhal.com/#/bb3gen">Bannerbomb3 注入器</a>重新创建文件。</p>
+<p>确保 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 是 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 里面的唯一文件。 If it is, then re-create it with the <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>.</p>
 
-<p>另外，请确保 <code class="language-plaintext highlighter-rouge">bb3.bin</code> 已正确放置在 SD 卡的根目录下。 如果缺失了这个文件，请下载最新版本的 <a href="https://github.com/lifehackerhansol/Bannerbomb3/releases/download/v3.0-lhs1/bb3.bin">Bannerbomb3</a>（直链），然后将 <code class="language-plaintext highlighter-rouge">bb3.bin</code> 复制到内存卡的根目录中。</p>
+<p>另外，请确保 <code class="language-plaintext highlighter-rouge">bb3.bin</code> 已正确放置在 SD 卡的根目录下。 If it is missing, then download the latest release of <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a> (direct download), and copy the <code class="language-plaintext highlighter-rouge">bb3.bin</code> file from the Release <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card.</p>
 
 <p>If neither of these solutions fixes this problem, then custom firmware may have been uninstalled on this console in a way that makes this method impossible to perform. If this is the case, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 </details>
@@ -642,7 +646,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>DSiWare Management shows a question mark</u></summary>
 
-<p>你放的 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 文件可能有问题（损坏或被用于错误的 3DS）。 使用 <a href="http://3dstools.nhnarwhal.com/#/bb3gen">Bannerbomb3 Injector</a> 重新创建 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 文件，且确保你使用的 <code class="language-plaintext highlighter-rouge">movable.sed</code> 文件是你这台主机的。</p>
+<p>你放的 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 文件可能有问题（损坏或被用于错误的 3DS）。 Re-create your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file with the <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>, ensuring that you use the <code class="language-plaintext highlighter-rouge">movable.sed</code> file for your console.</p>
 </details>
 
 <h2 id="installing-boot9strap-fredtool-inject">Installing boot9strap (Fredtool-Inject)</h2>
@@ -923,16 +927,9 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Warning #01: No Nintendo 3DS folder</u></summary>
-
-<p>Your SD card does not have the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Power on your device with your SD card inserted, then wait for the device to show a message box that says “Creating HOME Menu management information”. Once the message box disappears, power off your device and try again.</p>
-
-</details>
-
-<details>
 <summary><u>Error #02: Missing essential.exefs</u></summary>
 
-<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your device, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your console, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
 
 </details>
 
@@ -951,13 +948,12 @@ window.cookieconsent.initialise({
 <p>You need at least 1.3GB of free space to perform the NAND backup, which is a part of the script. If you don’t have enough space, follow these steps:</p>
 
 <ol>
-  <li>Power off your console</li>
-  <li>Remove the SD card and insert it into your computer</li>
+  <li>将主机关机</li>
+  <li>将你的 SD 卡插入到电脑</li>
   <li>Copy the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder from the root of your SD card to your computer</li>
   <li>Delete the Nintendo 3DS folder from the SD card</li>
   <li>Reinsert your SD card into your console</li>
-  <li>Power off your console</li>
-  <li>Hold START and power on still holding START to open GodMode9</li>
+  <li>Press and hold (Start), and while holding (Start), power on your console. 这会启动 GodMode9</li>
   <li>Press the (Home) button</li>
   <li>选择 “Scripts…”</li>
   <li>Select “finalize”</li>
@@ -982,11 +978,15 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Reinsert your SD card into your console</li>
-  <li>Hold START and power on still holding START to open GodMode9</li>
+  <li>Press and hold (Start), and while holding (Start), power on your console. 这会启动 GodMode9</li>
   <li>Press the (Home) button</li>
   <li>选择 “Scripts…”</li>
   <li>Select “finalize”</li>
-  <li>Continue the script as normal</li>
+  <li>Continue the script as normal
+    <ul>
+      <li>The NAND backup will be automatically skipped</li>
+    </ul>
+  </li>
 </ol>
 
 </details>
@@ -994,7 +994,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Information #05: No title database</u></summary>
 
-<p>Press (A) to create a title database, unlock SysNAND writing by entering the buttons on-screen, follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+<p>Press (A) to import a title database, unlock SysNAND writing by entering the buttons on-screen, then continue the script as normal.</p>
 
 </details>
 
@@ -1003,12 +1003,12 @@ window.cookieconsent.initialise({
 
 <p>Make sure you have at least 1.3GB available in your SD card. If you don’t have enough space, follow these steps:</p>
 <ol>
-  <li>Power off your console</li>
-  <li>Remove the SD card and insert it into your computer</li>
+  <li>将主机关机</li>
+  <li>将你的 SD 卡插入到电脑</li>
   <li>Copy the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder from the root of your SD card to your computer</li>
   <li>Delete the Nintendo 3DS folder from the SD card</li>
   <li>Reinsert your SD card into your console</li>
-  <li>Power off your console, hold START and power on still holding START to boot on GodMode9</li>
+  <li>Press and hold (Start), and while holding (Start), power on your console. 这会启动 GodMode9</li>
   <li>Perform a <a href="godmode9-usage#creating-a-nand-backup">NAND Backup</a></li>
   <li>Copy the files in <code class="language-plaintext highlighter-rouge">gm9/out</code> on your SD to a safe location on your computer</li>
   <li>Delete the <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> files from the SD card, keeping essential.exefs in <code class="language-plaintext highlighter-rouge">/gm9/out/</code></li>
@@ -1020,13 +1020,6 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Error #08: Dummy title database</u></summary>
-
-<p>You didn’t delete the dummy title database that was created by Error #05. Follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
-
-</details>
-
-<details>
 <summary><u>Error #09: Unsupported GodMode9 version</u></summary>
 
 <p>You are somehow running a version of GodMode9 not packaged with the script. Make sure you copied the contents of <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card and that you are holding START while powering on your console.</p>
@@ -1034,9 +1027,42 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Information #11: NAND backup flag detected</u></summary>
+<summary><u>Error #11: Missing donor database</u></summary>
 
-<p>You most likely already made a NAND backup on this console. If you did not make a backup or lost access to your backup, select “1. Make Another NAND Backup”. Otherwise, select “2. Skip NAND Backup”.</p>
+<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+</details>
+
+<details>
+<summary><u>Error #12: Copy (file).db fail</u></summary>
+
+<p>Ensure that your SD card is not <a href="/images/sdlock.png">locked</a>. If the SD card is not locked and you continue to get this error, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+
+</details>
+
+<details>
+<summary><u>Information #17: Duplicate NAND backup</u></summary>
+
+<p>The script has detected that the Nintendo 3DS folder is missing AND that you have already made a NAND backup before. If you intend to install homebrew applications, you should do the following:</p>
+
+<ol>
+  <li>Press (B) to cancel making another NAND backup</li>
+  <li>Hold (R) and press (Start) at the same time to power off your console</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> to a safe location on your computer</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> from your SD card</li>
+  <li>If you moved your Nintendo 3DS folder off of your SD card to get to this point, copy it back to your SD card
+    <ul>
+      <li>If you do not have a Nintendo 3DS folder, boot into the HOME Menu at least once with the SD card inserted to automatically generate it</li>
+    </ul>
+  </li>
+  <li>Press and hold (Start), and while holding (Start), power on your console. 这会启动 GodMode9</li>
+  <li>按下 “Home” 键来打开功能菜单</li>
+  <li>选择 “Scripts…”</li>
+  <li>Select “finalize”</li>
+  <li>Follow the prompts in the script, answering any questions that you are asked</li>
+</ol>
 
 </details>
 
@@ -1080,7 +1106,7 @@ window.cookieconsent.initialise({
       <li>删除对应你的 3DS 区域的文件夹：
         <ul>
           <li><strong>欧版</strong>: <code class="language-plaintext highlighter-rouge">00000098</code></li>
-          <li><strong>日版</strong>: <code class="language-plaintext highlighter-rouge">000000082</code></li>
+          <li><strong>日版</strong>: <code class="language-plaintext highlighter-rouge">00000082</code></li>
           <li><strong>美版</strong>: <code class="language-plaintext highlighter-rouge">000008f</code></li>
           <li><strong>中国版（神游版）</strong>: <code class="language-plaintext highlighter-rouge">000000A1</code></li>
           <li><strong>韩版</strong>: <code class="language-plaintext highlighter-rouge">000000A9</code></li>
@@ -1160,7 +1186,7 @@ If this is the case, attempt the steps below, which are listed from easiest to h
 
 <ol>
   <li>下载最新版本的 <a href="https://github.com/MechanicalDragon0687/TWLFix-CFW/releases/latest">TWLFix-CFW</a> （下载 <code class="language-plaintext highlighter-rouge">.3dsx</code> 文件）</li>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>检查 SD 卡的根目录是否存在一个名为 <code class="language-plaintext highlighter-rouge">3ds</code> 的文件夹，如果没有则手动新建一个</li>
   <li>复制 <code class="language-plaintext highlighter-rouge">TWLFix-CFW.3dsx</code> 到你内存卡的 <code class="language-plaintext highlighter-rouge">/3ds/</code> 文件夹</li>
   <li>Reinsert your SD card into your console</li>
@@ -1210,13 +1236,13 @@ If you weren’t able to find your error or the instructions didn’t work, join
 <summary><u>Clear HOME Menu extdata</u></summary>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>打开你 SD 卡的 <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code> 文件夹</li>
   <li>删除对应你的 3DS 区域的文件夹：
     <ul>
       <li><strong>欧版</strong>: <code class="language-plaintext highlighter-rouge">00000098</code></li>
-      <li><strong>日版</strong>: <code class="language-plaintext highlighter-rouge">000000082</code></li>
+      <li><strong>日版</strong>: <code class="language-plaintext highlighter-rouge">00000082</code></li>
       <li><strong>美版</strong>: <code class="language-plaintext highlighter-rouge">000008f</code></li>
       <li><strong>中国版（神游版）</strong>: <code class="language-plaintext highlighter-rouge">000000A1</code></li>
       <li><strong>韩版</strong>: <code class="language-plaintext highlighter-rouge">000000A9</code></li>
@@ -1231,7 +1257,7 @@ If you weren’t able to find your error or the instructions didn’t work, join
 <summary><u>Clear HOME Menu theme data</u></summary>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>打开你 SD 卡的 <code class="language-plaintext highlighter-rouge">/Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/extdata/00000000/</code> 文件夹</li>
   <li>删除对应你的 3DS 区域的文件夹：

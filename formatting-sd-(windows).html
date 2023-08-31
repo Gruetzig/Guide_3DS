@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -488,7 +492,7 @@ window.cookieconsent.initialise({
   <li><a href="#what-you-need" id="markdown-toc-what-you-need">What You Need</a></li>
   <li><a href="#instructions-32gb-or-smaller" id="markdown-toc-instructions-32gb-or-smaller">Instructions (32GB or smaller)</a></li>
   <li><a href="#instructions-64gb-or-larger" id="markdown-toc-instructions-64gb-or-larger">Instructions (64GB or larger)</a></li>
-  <li><a href="#common-errors-using-guiformat" id="markdown-toc-common-errors-using-guiformat">Common Errors using guiformat</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 
   </nav>
@@ -557,17 +561,22 @@ window.cookieconsent.initialise({
   <li>If the SD card had any files and folders on it before the format, copy everything back from your computer</li>
 </ol>
 
-<h3 id="common-errors-using-guiformat">Common Errors using guiformat</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>guiformat shows the error “Failed to open device: GetLastError()=32”
     <ul>
       <li>Close everything that may be using the SD card, such as any File Explorer windows.</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>guiformat shows the error “GetLastError()=1117”
     <ul>
       <li>Your SD card write-protection switch may be <a href="/images/sdlock.png">enabled</a>. The lock must be flipped upwards to allow writing to the SD card (including formatting).</li>
+    </ul>
+  </li>
+  <li>SD card remains undetected by console or continues to display the wrong capacity after formatting
+    <ul>
+      <li>Your SD card may be partitioned or have unallocated space. Follow the instructions <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">here</a> to reformat your SD card.</li>
     </ul>
   </li>
 </ul>

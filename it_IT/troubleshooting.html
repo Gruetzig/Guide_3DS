@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/it_IT/dumping-eshop-dsiware'>Dump di DsiWare eShop</a></li>
           
         
@@ -625,9 +629,9 @@ window.cookieconsent.initialise({
 
 <details>
 <summary><u>Il menu Gestione Nintendo DSiWare crasha senza visualizzare il menu BB3 multihax</u></summary>
-<p>Assicurati che il file <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> sia l’unico file presente in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code>. In tal caso, ricrealo con <a href="http://3dstools.nhnarwhal.com/#/bb3gen">Bannerbomb3 Injector</a>.</p>
+<p>Assicurati che il file <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> sia l’unico file presente in <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code>. In tal caso, ricrealo con <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>.</p>
 
-<p>Inoltre, assicurati che il file <code class="language-plaintext highlighter-rouge">bb3.bin</code> sia nella directory principale dela tua scheda SD. Se manca, scarica l’ultima versione di <a href="https://github.com/lifehackerhansol/Bannerbomb3/releases/download/v3.0-lhs1/bb3.bin">Bannerbomb3</a> (download diretto), e copia il file <code class="language-plaintext highlighter-rouge">bb3.bin</code> nella directory principale della tua scheda SD.</p>
+<p>Inoltre, assicurati che il file <code class="language-plaintext highlighter-rouge">bb3.bin</code> sia nella directory principale dela tua scheda SD. Se manca, scarica l’ultima versione di <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a> (download diretto), e copia il file <code class="language-plaintext highlighter-rouge">bb3.bin</code> dall’arcivhio <code class="language-plaintext highlighter-rouge">.zip</code> di Release nella directory principale della tua scheda SD.</p>
 
 <p>Se nessuna di queste soluzioni dovesse risolvere il problema, allora un custom firmware potrebbe essere già stato disinstallato da questa console in modo tale da rendere questo metodo impossibile. In tal caso, puoi ricevere assistenza chiedendo, in inglese, nel <a href="https://discord.gg/MWxPgEp">canale Discord di Nintendo Homebrew</a>.</p>
 </details>
@@ -641,7 +645,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Il menu Gestione Nintendo DSiWare mostra un punto di domanda</u></summary>
 
-<p>Potrebbe esserci un problema con il tuo file <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> (potrebbe essere corrotto o per un diverso 3DS). Ri-crea il tuo file <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> con <a href="http://3dstools.nhnarwhal.com/#/bb3gen">Bannerbomb3 Injector</a>, assicurandoti di utilizzare il file <code class="language-plaintext highlighter-rouge">movable.sed</code> della tua console.</p>
+<p>Potrebbe esserci un problema con il tuo file <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> (potrebbe essere corrotto o per un diverso 3DS). Ri-crea il tuo file <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> con <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>, assicurandoti di utilizzare il file <code class="language-plaintext highlighter-rouge">movable.sed</code> della tua console.</p>
 </details>
 
 <h2 id="installazione-di-boot9strap-fredtool-inject">Installazione di boot9strap (Fredtool-Inject)</h2>
@@ -869,17 +873,17 @@ window.cookieconsent.initialise({
 <p>Se il problema persiste:</p>
 
 <ul>
-  <li>Ensure that <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> are on the root of the SD card (not inside of any folder)</li>
-  <li>Ensure that you selected the correct payload for your region AND system version</li>
-  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a></li>
-  <li>Try resetting your browser data:
+  <li>Assicurati che i file <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code> e <code class="language-plaintext highlighter-rouge">boot.3dsx</code> siano nella directory principale della scheda SD (non all’interno di una cartella)</li>
+  <li>Assicurati di aver selezionato il payload corretto per la tua regione E la versione di sistema</li>
+  <li>Assicurati che le impostazioni “Area di residenza” siano <a href="/images/screenshots/skater_lang.png">così</a></li>
+  <li>Prova a reimpostare i dati del browser:
     <ol>
       <li>Avvia il browser internet, quindi apri le sue impostazioni</li>
       <li>Scorri verso il basso e seleziona “Reimposta tutti i dati salvati” (può avere nomi simili come “Inizializza i dati di salvataggio” o “Elimina tutti i dati salvati”)</li>
       <li>Riprova ad eseguire l’exploit</li>
     </ol>
   </li>
-  <li>Try changing the system language to something other than the current language</li>
+  <li>Prova a cambiare la lingua di sistema in una lingua diversa da quella corrente</li>
 </ul>
 
 </details>
@@ -921,13 +925,6 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Warning #01: No Nintendo 3DS folder</u></summary>
-
-<p>La tua scheda SD non ha una cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code>. Accendi la tua console con la scheda SD inserita, quindi attendi che la console mostri il messaggio “Creazione delle informazioni di sistema del menu HOME”. Quando scompare il messaggio, spegni la console e riprova.</p>
-
-</details>
-
-<details>
 <summary><u>Error #02: Missing essential.exefs</u></summary>
 
 <p>Hai risposto ‘No’ alla richiesta “Make essential files backup?” in GodMode9. Spegni la console, riaccendila tenendo premuto (Start) per avviare GodMode9, rispondi ‘Yes’ alla domanda, quindi riprova.</p>
@@ -950,12 +947,11 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Spegni la tua console</li>
-  <li>Rimuovi la scheda SD e inseriscila nel tuo computer</li>
+  <li>Inserisci la scheda SD nel tuo computer</li>
   <li>Copia la cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> dalla directory principale della tua scheda SD al tuo computer</li>
   <li>Elimina la cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> dalla scheda SD</li>
   <li>Reinserisci la scheda SD nella tua console</li>
-  <li>Spegni la tua console</li>
-  <li>Accendi la console tenendo premuto il tasto START per avviare GodMode9</li>
+  <li>Premi (Start) e accendi la console continuando a tenerlo premuto. Verrà avviato GodMode9</li>
   <li>Premi il pulsante (Home)</li>
   <li>Seleziona “Scripts…”</li>
   <li>Seleziona “finalize”</li>
@@ -980,11 +976,15 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Reinserisci la scheda SD nella tua console</li>
-  <li>Accendi la console tenendo premuto il tasto START per avviare GodMode9</li>
+  <li>Premi (Start) e accendi la console continuando a tenerlo premuto. Verrà avviato GodMode9</li>
   <li>Premi il pulsante (Home)</li>
   <li>Seleziona “Scripts…”</li>
   <li>Seleziona “finalize”</li>
-  <li>Continua lo script normalmente</li>
+  <li>Continua lo script normalmente
+    <ul>
+      <li>Il backup della NAND verrà automaticamente saltato</li>
+    </ul>
+  </li>
 </ol>
 
 </details>
@@ -992,7 +992,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Information #05: No title database</u></summary>
 
-<p>Premi (A) per creare un database dei titoli, sblocca la scrittura della SysNAND inserendo i pulsanti a schermo, segui le istruzioni <a href="/images/screenshots/database-reset.jpg">qui</a>, quindi riesegui lo script.</p>
+<p>Premi (A) per importare un database dei titoli, inserisci i pulsanti mostrati a schermo per sbloccare la scrittura su SysNAND, quindi prosegui normalmente con lo script.</p>
 
 </details>
 
@@ -1002,11 +1002,11 @@ window.cookieconsent.initialise({
 <p>Assicurati di avere almeno 1.3GB disponibili nella tua scheda SD. Se non hai abbastanza spazio, segui questi passaggi:</p>
 <ol>
   <li>Spegni la tua console</li>
-  <li>Rimuovi la scheda SD e inseriscila nel tuo computer</li>
+  <li>Inserisci la scheda SD nel tuo computer</li>
   <li>Copia la cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> dalla directory principale della tua scheda SD al tuo computer</li>
   <li>Elimina la cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> dalla scheda SD</li>
   <li>Reinserisci la scheda SD nella tua console</li>
-  <li>Spegni la tua console, dopodiché riaccendila tenendo premuto il tasto START per avviare GodMode9</li>
+  <li>Premi (Start) e accendi la console continuando a tenerlo premuto. Verrà avviato GodMode9</li>
   <li>Esegui un <a href="godmode9-usage#creating-a-nand-backup">Backup NAND</a></li>
   <li>Copia i file in <code class="language-plaintext highlighter-rouge">gm9/out</code> sulla tua SD in una posizione sicura sul tuo computer</li>
   <li>Elimina i file <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;seriale&gt;_sysnand_##.bin</code> e <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;seriale&gt;_sysnand_##.bin.sha</code> dalla scheda SD, mantenendo il file <code class="language-plaintext highlighter-rouge">essential.exefs</code> in <code class="language-plaintext highlighter-rouge">/gm9/out/</code></li>
@@ -1018,13 +1018,6 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Error #08: Dummy title database</u></summary>
-
-<p>Non hai eliminato il database dei titoli fittizio creato da Error #05. Segui le istruzioni <a href="/images/screenshots/database-reset.jpg">qui</a>, quindi esegui nuovamente lo script.</p>
-
-</details>
-
-<details>
 <summary><u>Error #09: Unsupported GodMode9 version</u></summary>
 
 <p>Per qualche motivo stai eseguendo una versione di GodMode9 non inclusa con lo script. Assicurati di aver copiato il contenuto dell’archivio <code class="language-plaintext highlighter-rouge">finalize.zip</code> nella directory principale della tua scheda SD e che stai tenendo premuto il tasto START all’accensione della tua console.</p>
@@ -1032,9 +1025,42 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Information #11: NAND backup flag detected</u></summary>
+<summary><u>Error #11: Missing donor database</u></summary>
 
-<p>Molto probabilmente hai già fatto un backup della NAND su questa console. Se non hai fatto un backup o ne hai perso l’accesso, seleziona “1. Make Another NAND Backup”. Altrimenti, seleziona “2. Skip NAND Backup”.</p>
+<p>Non hai copiato tutto dall’archivio <code class="language-plaintext highlighter-rouge">finalize.zip</code> nella directory principale della tua scheda SD. Ricorda, la tua scheda SD deve avere almeno questi file:</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+</details>
+
+<details>
+<summary><u>Error #12: Copy (file).db fail</u></summary>
+
+<p>Assicurati che la tua scheda SD non sia <a href="/images/sdlock.png">protetta dalla scrittura</a>. Se la scheda SD non è protetta e continui ad ottenere questo errore, entra nel <a href="https://discord.gg/MWxPgEp">canale Nintendo Homebrew su Discord</a> per ricevere assistenza.</p>
+
+</details>
+
+<details>
+<summary><u>Information #17: Duplicate NAND backup</u></summary>
+
+<p>Lo script ha rilevato che manca la cartella Nintendo 3DS E che hai precedentemente fatto un backup della NAND. Se intendi installare applicazioni homebrew, dovresti fare quanto segue:</p>
+
+<ol>
+  <li>Premi (B) per annullare la creazione di un altro backup della NAND</li>
+  <li>Tenendo premuto (R), premi (Start) per spegnere la console</li>
+  <li>Copia il contenuto della cartella <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> in una posizione sicura sul tuo computer</li>
+  <li>Elimina la cartella <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> dalla tua scheda SD</li>
+  <li>Se hai spostato la cartella Nintendo 3DS al di fuori dalla scheda SD, copiala nuovamente sulla scheda SD
+    <ul>
+      <li>Se non hai la cartella Nintendo 3DS, avvia il menu HOME con la scheda SD inserita per generarla automaticamente</li>
+    </ul>
+  </li>
+  <li>Premi (Start) e accendi la console continuando a tenerlo premuto. Verrà avviato GodMode9</li>
+  <li>Premi il pulsante HOME per far apparire il menu delle azioni</li>
+  <li>Seleziona “Scripts…”</li>
+  <li>Seleziona “finalize”</li>
+  <li>Segui le istruzioni dello script, rispondendo alle domande che ti vengono poste</li>
+</ol>
 
 </details>
 
@@ -1054,9 +1080,9 @@ window.cookieconsent.initialise({
 <p>Se il LED di notifica lampeggia:</p>
 
 <ul>
-  <li><strong>White</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card or on internal memory.</li>
-  <li><strong>Magenta</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card. È stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella memoria interna, tuttavia il file è corrotto.</li>
-  <li><strong>Red</strong>: Your 3DS was able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on both your SD card and on internal memory, but both files are corrupted.</li>
+  <li><strong>Bianco</strong>: Il tuo 3DS non è stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella tua scheda SD o nella memoria interna.</li>
+  <li><strong>Magenta</strong>: Il tuo 3DS non è stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella tua scheda SD. È stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella memoria interna, tuttavia il file è corrotto.</li>
+  <li><strong>Rosso</strong>: Il tuo 3DS è stato in grado di trovare il file <code class="language-plaintext highlighter-rouge">boot.firm</code> sia nella tua scheda SD sia nella memoria interna, tuttavia entrambi i file sono corrotti.</li>
 </ul>
 
 <p>Puoi ottenere un nuovo file <code class="language-plaintext highlighter-rouge">boot.firm</code> scaricando l’<a href="https://github.com/LumaTeam/Luma3DS/releases/latest">ultima versione di Luma3DS</a>, estraendola e posizionando il file <code class="language-plaintext highlighter-rouge">boot.firm</code> nella directory principale della tua scheda SD. Se il tuo file <code class="language-plaintext highlighter-rouge">boot.firm</code> continua a risultare corrotto, potresti dover verificare la presenza di errori nella tua scheda SD (<a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, o <a href="f3xswift-(mac)">macOS</a>). Inoltre, tieni presente che il 3DS tende ad avere problemi con file estratti usando WinRAR.</p>

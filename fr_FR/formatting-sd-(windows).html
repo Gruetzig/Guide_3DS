@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/fr_FR/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/fr_FR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -488,7 +492,7 @@ window.cookieconsent.initialise({
   <li><a href="#ce-dont-vous-avez-besoin" id="markdown-toc-ce-dont-vous-avez-besoin">Ce dont vous avez besoin</a>    <ul>
       <li><a href="#instructions-32-go-ou-moins" id="markdown-toc-instructions-32-go-ou-moins">Instructions (32 Go ou moins)</a></li>
       <li><a href="#instructions-64-go-ou-plus" id="markdown-toc-instructions-64-go-ou-plus">Instructions (64 Go ou plus)</a></li>
-      <li><a href="#erreurs-courantes-lors-de-lutilisation-de-guiformat" id="markdown-toc-erreurs-courantes-lors-de-lutilisation-de-guiformat">Erreurs courantes lors de l’utilisation de guiformat</a></li>
+      <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
     </ul>
   </li>
 </ul>
@@ -559,17 +563,22 @@ window.cookieconsent.initialise({
   <li>Si la carte SD contenait des fichiers et des dossiers avant le formatage, recopiez les dessus depuis votre ordinateur</li>
 </ol>
 
-<h3 id="erreurs-courantes-lors-de-lutilisation-de-guiformat">Erreurs courantes lors de l’utilisation de guiformat</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>guiformat shows the error “Failed to open device: GetLastError()=32”
     <ul>
       <li>Fermez tout ce qui peut être utilisé par la carte SD, comme par exemple, n’importe quelle fenêtre ouverte de l’Explorateur de fichiers.</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>guiformat shows the error “GetLastError()=1117”
     <ul>
       <li>L’interrupteur de protection contre l’écriture de votre carte SD est peut être <a href="/images/sdlock.png">activé</a>. L’interrupteur doit être positionné vers le haut pour permettre l’écriture sur la carte SD (y compris le formatage).</li>
+    </ul>
+  </li>
+  <li>SD card remains undetected by console or continues to display the wrong capacity after formatting
+    <ul>
+      <li>Your SD card may be partitioned or have unallocated space. Follow the instructions <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">here</a> to reformat your SD card.</li>
     </ul>
   </li>
 </ul>

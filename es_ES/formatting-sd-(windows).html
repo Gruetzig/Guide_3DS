@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/es_ES/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/es_ES/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -488,7 +492,7 @@ window.cookieconsent.initialise({
   <li><a href="#qué-necesitas" id="markdown-toc-qué-necesitas">Qué necesitas</a></li>
   <li><a href="#instructions-32gb-or-smaller" id="markdown-toc-instructions-32gb-or-smaller">Instructions (32GB or smaller)</a></li>
   <li><a href="#instructions-64gb-or-larger" id="markdown-toc-instructions-64gb-or-larger">Instructions (64GB or larger)</a></li>
-  <li><a href="#common-errors-using-guiformat" id="markdown-toc-common-errors-using-guiformat">Common Errors using guiformat</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 
   </nav>
@@ -557,17 +561,22 @@ window.cookieconsent.initialise({
   <li>Si la tarjeta SD tenía archivos o carpetas en ella antes del formateo, copia todo de regreso</li>
 </ol>
 
-<h3 id="common-errors-using-guiformat">Common Errors using guiformat</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>guiformat shows the error “Failed to open device: GetLastError()=32”
     <ul>
       <li>Cierra todos los programas que puedan estar usando la tarjeta SD, tales como ventanas del Explorador de Windows.</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>guiformat shows the error “GetLastError()=1117”
     <ul>
       <li>Your SD card write-protection switch may be <a href="/images/sdlock.png">enabled</a>. The lock must be flipped upwards to allow writing to the SD card (including formatting).</li>
+    </ul>
+  </li>
+  <li>SD card remains undetected by console or continues to display the wrong capacity after formatting
+    <ul>
+      <li>Your SD card may be partitioned or have unallocated space. Follow the instructions <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">here</a> to reformat your SD card.</li>
     </ul>
   </li>
 </ul>

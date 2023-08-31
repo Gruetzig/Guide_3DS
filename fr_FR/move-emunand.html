@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/fr_FR/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/fr_FR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -670,15 +674,27 @@ window.cookieconsent.initialise({
   <li>Appuyez sur (B) pour revenir au menu principal</li>
   <li>Sélectionnez “Exit”</li>
   <li>Appuyez (A) pour reverrouiller autorisations en écriture si vous êtes invité</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
+  <li>Press (A) on <code class="language-plaintext highlighter-rouge">essential.exefs</code> to select it</li>
+  <li>Sélectionnez “Copy to 0:/gm9/out”
+    <ul>
+      <li>If you see “Destination already exists”, press (A) on “Overwrite file(s)”</li>
+    </ul>
+  </li>
+  <li>Appuyez sur (A) pour continuer</li>
   <li>Hold (R) and press (Start) at the same time to power off your console</li>
   <li>Insérez votre carte SD dans votre ordinateur</li>
-  <li>Copiez <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> et <code class="language-plaintext highlighter-rouge">essential.exefs</code> du dossier <code class="language-plaintext highlighter-rouge">/gm9/out/</code> de votre carte SD vers un emplacement sûr de votre ordinateur
+  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
     <ul>
-      <li>Faites des sauvegardes dans plusieurs endroits (tels que des stockages de fichiers en ligne par exemple)
+      <li>Copy these backups to multiple locations (such as online file storage, an external hard drive, etc.)
  Ces sauvegardes vous sauveront d’un brick et/ou vous aideront à récupérer des fichiers de l’image de la NAND si quelque chose se passe mal plus tard</li>
     </ul>
   </li>
-  <li>Supprimez <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> et <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> du dossier <code class="language-plaintext highlighter-rouge">/gm9/out/</code> de votre carte SD après l’avoir copié</li>
+  <li>Supprimez <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> et <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> du dossier <code class="language-plaintext highlighter-rouge">/gm9/out/</code> de votre carte SD après l’avoir copié
+    <ul>
+      <li>The other backup files are negligible in size and may be kept on your SD card for ease of access</li>
+    </ul>
+  </li>
   <li>Réinsérez votre carte SD dans votre console</li>
   <li><strong>Faites une copie de tous les fichiers présents sur votre carte SD dans un dossier sur votre ordinateur ; les étapes suivantes effaceront tous les fichiers de votre carte SD</strong></li>
 </ol>

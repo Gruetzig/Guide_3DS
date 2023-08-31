@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -488,7 +492,7 @@ window.cookieconsent.initialise({
   <li><a href="#amire-szükséged-lesz" id="markdown-toc-amire-szükséged-lesz">Amire szükséged lesz</a></li>
   <li><a href="#lépések-32gb-vagy-kisebb" id="markdown-toc-lépések-32gb-vagy-kisebb">Lépések (32GB vagy kisebb)</a></li>
   <li><a href="#lépések-64gb-vagy-nagyobb" id="markdown-toc-lépések-64gb-vagy-nagyobb">Lépések (64GB vagy nagyobb)</a></li>
-  <li><a href="#gyakori-hibák-a-guiformat-használata-során" id="markdown-toc-gyakori-hibák-a-guiformat-használata-során">Gyakori hibák a guiformat használata során</a></li>
+  <li><a href="#hibaelhárítás" id="markdown-toc-hibaelhárítás">Hibaelhárítás</a></li>
 </ul>
 
   </nav>
@@ -557,17 +561,22 @@ window.cookieconsent.initialise({
   <li>Ha az SD kártya tartalmazott adatot a formázás előtt, akkor azokat most másold vissza a számítógépről</li>
 </ol>
 
-<h3 id="gyakori-hibák-a-guiformat-használata-során">Gyakori hibák a guiformat használata során</h3>
+<h3 id="hibaelhárítás">Hibaelhárítás</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>a guiformat a “Failed to open device: GetLastError()=32” hibaüzenetet mutatja
     <ul>
       <li>Csukj le mindent, ami esetleg használhatja az SD kártyát, mint például bármelyik Fájlkezelő ablak.</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>a guiformat a “GetLastError()=1117” hibaüzenetet mutatja
     <ul>
       <li>Az SD kártyád írás védelmi kapcsolója lehet, hogy <a href="/images/sdlock.png">be van állítva</a>. A zárat felfelé kell tolni, hogy engedélyezd az írást az SD kártyára (beleértve a formázást is).</li>
+    </ul>
+  </li>
+  <li>SD kártya továbbra sem detektálható a konzol által, vagy a formázás után továbbra is a rossz kapacitást mutatja
+    <ul>
+      <li>Az SD kártyád lehet, hogy partícionált vagy van nem lefoglalt területe. Kövesd a lépéseket <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">itt</a> az SD kártyád újraformázásához.</li>
     </ul>
   </li>
 </ul>

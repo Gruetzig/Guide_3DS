@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -489,9 +493,9 @@ window.cookieconsent.initialise({
   <li><a href="#兼容性注意" id="markdown-toc-兼容性注意">兼容性注意</a></li>
   <li><a href="#你需要准备点啥" id="markdown-toc-你需要准备点啥">你需要准备点啥？</a></li>
   <li><a href="#操作步骤" id="markdown-toc-操作步骤">操作步骤</a>    <ul>
-      <li><a href="#第一步--检查自制固件" id="markdown-toc-第一步--检查自制固件">第一步 – 检查自制固件</a></li>
-      <li><a href="#section-ii---updating-the-system" id="markdown-toc-section-ii---updating-the-system">Section II - Updating the System</a></li>
-      <li><a href="#section-iii---prep-work" id="markdown-toc-section-iii---prep-work">Section III - Prep Work</a></li>
+      <li><a href="#第一步--准备工作" id="markdown-toc-第一步--准备工作">第一步 – 准备工作</a></li>
+      <li><a href="#section-ii---cfw-check" id="markdown-toc-section-ii---cfw-check">Section II - CFW Check</a></li>
+      <li><a href="#section-iii---updating-the-system" id="markdown-toc-section-iii---updating-the-system">Section III - Updating the System</a></li>
       <li><a href="#section-iv---rtc-and-dsp-setup" id="markdown-toc-section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</a></li>
       <li><a href="#section-v---setup-script" id="markdown-toc-section-v---setup-script">Section V - Setup Script</a></li>
     </ul>
@@ -534,27 +538,45 @@ window.cookieconsent.initialise({
 
 <ul>
   <li><a href="/assets/finalizing.zip">finalizing.zip</a> (direct download)</li>
-  <li>The latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a></li>
 </ul>
 
 <h3 id="操作步骤">操作步骤</h3>
 
-<h4 id="第一步--检查自制固件">第一步 – 检查自制固件</h4>
+<h4 id="第一步--准备工作">第一步 – 准备工作</h4>
 
-<p>As an additional safety measure, we will perform an additional check for custom firmware. If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
+<p>本节中，你将需要复制所需的文件到段落提示的指定位置。</p>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
+  <li>将你的 SD 卡插入电脑</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, and <code class="language-plaintext highlighter-rouge">luma</code>) to the root of your SD card, merging/replacing any existing folders if prompted
+    <ul>
+      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
+    </ul>
+  </li>
+  <li>Reinsert your SD card into your console</li>
+</ol>
+
+<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. 由于你可能在之前做了一些其他的操作，你的 SD 卡中可能会多出一些文件或者文件夹。</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+<h4 id="section-ii---cfw-check">Section II - CFW Check</h4>
+
+<p>为了确保安装能够安全进行，我们这里将先检查主机是否已经安装了自制固件。 If custom firmware is not installed by this point for any reason, the next section may render your console unable to be hacked without external hardware.</p>
+
+<ol>
+  <li>将主机关机</li>
   <li>按住 “Select” 键</li>
   <li>Power on your console while still holding the (Select) button</li>
   <li>If the check was successful, your console should have booted into the Luma3DS configuration menu</li>
   <li>按下 “Start” 键保存设置并重启</li>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
 </ol>
 
 <p class="notice--danger">If you do NOT boot into the Luma3DS configuration menu, custom firmware was not installed on your console. Join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> and ask, in English, for help.</p>
 
-<h4 id="section-ii---updating-the-system">Section II - Updating the System</h4>
+<h4 id="section-iii---updating-the-system">Section III - Updating the System</h4>
 
 <p>本节中，你将会把主机更新至最新版本。（自制固件兼容最新版本的系统，直接升级是安全的）</p>
 
@@ -568,27 +590,6 @@ window.cookieconsent.initialise({
     </ul>
   </li>
 </ol>
-
-<h4 id="section-iii---prep-work">Section III - Prep Work</h4>
-
-<p>本节中，你将需要复制所需的文件到段落提示的指定位置。</p>
-
-<ol>
-  <li>Power off your console</li>
-  <li>将你的 SD 卡插入电脑</li>
-  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">finalizing.zip</code> (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, and <code class="language-plaintext highlighter-rouge">luma</code>) to the root of your SD card, merging/replacing any existing folders if prompted
-    <ul>
-      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
-    </ul>
-  </li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the root of the SD card</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">boot.firm</code> and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> from the latest Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> (the one you just downloaded) to the root of the SD card, replacing any existing files if prompted</li>
-  <li>Reinsert your SD card into your console</li>
-</ol>
-
-<p>The screenshot below indicates the minimum SD card layout that is required to follow this page. 由于你可能在之前做了一些其他的操作，你的 SD 卡中可能会多出一些文件或者文件夹。</p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
 
 <h4 id="section-iv---rtc-and-dsp-setup">Section IV - RTC and DSP setup</h4>
 
@@ -614,7 +615,7 @@ window.cookieconsent.initialise({
 <p>In this section, you will use a script to automate homebrew installation, SD card cleanup, and system file backup.</p>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>Press and hold (Start), and while holding (Start), power on your console. 这会启动 GodMode9
     <ul>
       <li>If you do not boot into GodMode9, ensure that you copied the three folders from <code class="language-plaintext highlighter-rouge">finalizing.zip</code> to the root of your SD card and that the folders are not misnamed (e.g. <code class="language-plaintext highlighter-rouge">luma (1)</code>)</li>
@@ -635,7 +636,7 @@ window.cookieconsent.initialise({
       <li>If you do NOT see the message “Setup complete!”, the script was not successful and you will need to redo this section</li>
     </ul>
   </li>
-  <li>将你的 SD 卡插入到电脑</li>
+  <li>将你的 SD 卡插入电脑</li>
   <li>Copy the <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> folder to a safe location on your computer
     <ul>
       <li>This folder contains critical file backups and should be backed up to multiple locations (i.e. cloud storage) if possible</li>

@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -488,9 +492,9 @@ window.cookieconsent.initialise({
   <li><a href="#kompatibilitási-megjegyzések" id="markdown-toc-kompatibilitási-megjegyzések">Kompatibilitási megjegyzések</a></li>
   <li><a href="#amire-szükséged-lesz" id="markdown-toc-amire-szükséged-lesz">Amire szükséged lesz</a></li>
   <li><a href="#utasítások" id="markdown-toc-utasítások">Utasítások</a>    <ul>
-      <li><a href="#i-rész---chf-ellenőrzés" id="markdown-toc-i-rész---chf-ellenőrzés">I. rész - CHF ellenőrzés</a></li>
-      <li><a href="#ii-rész---a-rendszer-frissítése" id="markdown-toc-ii-rész---a-rendszer-frissítése">II. rész - A rendszer frissítése</a></li>
-      <li><a href="#iii-rész---előkészületek" id="markdown-toc-iii-rész---előkészületek">III. rész - Előkészületek</a></li>
+      <li><a href="#i-rész---előkészületek" id="markdown-toc-i-rész---előkészületek">I. rész - Előkészületek</a></li>
+      <li><a href="#ii-rész---cfw-ellenőrzés" id="markdown-toc-ii-rész---cfw-ellenőrzés">II. rész - CFW ellenőrzés</a></li>
+      <li><a href="#iii-rész---a-rendszer-frissítése" id="markdown-toc-iii-rész---a-rendszer-frissítése">III. rész - A rendszer frissítése</a></li>
       <li><a href="#iv-rész---rtc-és-dsp-telepítése" id="markdown-toc-iv-rész---rtc-és-dsp-telepítése">IV. rész - RTC és DSP telepítése</a></li>
       <li><a href="#v-rész---telepítő-szkript" id="markdown-toc-v-rész---telepítő-szkript">V. rész - Telepítő szkript</a></li>
     </ul>
@@ -533,12 +537,30 @@ window.cookieconsent.initialise({
 
 <ul>
   <li><a href="/assets/finalizing.zip">finalizing.zip</a> (közvetlen letöltés)</li>
-  <li>Az <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> legújabb verziója</li>
 </ul>
 
 <h3 id="utasítások">Utasítások</h3>
 
-<h4 id="i-rész---chf-ellenőrzés">I. rész - CHF ellenőrzés</h4>
+<h4 id="i-rész---előkészületek">I. rész - Előkészületek</h4>
+
+<p>Ebben a fejezetben fel fogod másolni az ahhoz szükséges fájlokat, hogy kövesd a lépéseket ezen az oldalon.</p>
+
+<ol>
+  <li>Kapcsold ki a konzolod</li>
+  <li>Helyezd az SD kártyád a számítógépbe</li>
+  <li>Másold a <code class="language-plaintext highlighter-rouge">finalizing.zip</code> tartalmát (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, és <code class="language-plaintext highlighter-rouge">luma</code>) az SD kártya gyökerébe, egyesítve/lecserélve az ott lévő mappákat, ha kérdezi
+    <ul>
+      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
+    </ul>
+  </li>
+  <li>Tedd vissza az SD kártyád a konzoldba</li>
+</ol>
+
+<p>Az alábbi képernyőképek mutatják az SD kártya minimális elrendezését ahhoz, hogy ezt az útmutatót követni tudd. Lehetnek extra fájljaid és mappáid az SD kártyádon, függően a korábbi telepítésedtől vagy metódustól, amit követtél.</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+<h4 id="ii-rész---cfw-ellenőrzés">II. rész - CFW ellenőrzés</h4>
 
 <p>További biztonsági lépésként további ellenőrzést végzünk egyedi firmware-re. Ha egyedi firmware nem kerül telepítésre ezen a ponton bármilyen okból, a következő szakasz a konzolodat külső hardver nélkül hackelhetetlenné teszi.</p>
 
@@ -553,7 +575,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--danger">Ha az eszközöd NEM a Luma3DS konfigurációs menübe bootolt, az egyedi firmware nem került telepítésre a konzolodra. Csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz Discord-on</a> és kérj támogatást angolul.</p>
 
-<h4 id="ii-rész---a-rendszer-frissítése">II. rész - A rendszer frissítése</h4>
+<h4 id="iii-rész---a-rendszer-frissítése">III. rész - A rendszer frissítése</h4>
 
 <p>Ebben a fejezetben frissíteni fogod a rendszered a legutolsó verzióra, ami biztonságos az egyedi firmware-rel.</p>
 
@@ -567,27 +589,6 @@ window.cookieconsent.initialise({
     </ul>
   </li>
 </ol>
-
-<h4 id="iii-rész---előkészületek">III. rész - Előkészületek</h4>
-
-<p>Ebben a fejezetben fel fogod másolni az ahhoz szükséges fájlokat, hogy kövesd a lépéseket ezen az oldalon.</p>
-
-<ol>
-  <li>Kapcsold ki a konzolod</li>
-  <li>Helyezd az SD kártyád a számítógépbe</li>
-  <li>Másold a <code class="language-plaintext highlighter-rouge">finalizing.zip</code> tartalmát (<code class="language-plaintext highlighter-rouge">finalize</code>, <code class="language-plaintext highlighter-rouge">gm9</code>, és <code class="language-plaintext highlighter-rouge">luma</code>) az SD kártya gyökerébe, egyesítve/lecserélve az ott lévő mappákat, ha kérdezi
-    <ul>
-      <li>If you are using a Mac, hold the Option key while dragging the folders to the root of your SD card, then click “Merge”</li>
-    </ul>
-  </li>
-  <li>Töröld a <code class="language-plaintext highlighter-rouge">boot.firm</code> és a <code class="language-plaintext highlighter-rouge">boot.3dsx</code> fájlt az SD kártyád gyökeréből</li>
-  <li>Másold át a <code class="language-plaintext highlighter-rouge">boot.firm</code> és <code class="language-plaintext highlighter-rouge">boot.3dsx</code> fájlt a Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code>-ből (amit éppen letöltöttél) az SD kártyád gyökerébe, lecserélve a már meglévő fájlokat, ha kérdezi</li>
-  <li>Tedd vissza az SD kártyád a konzoldba</li>
-</ol>
-
-<p>Az alábbi képernyőképek mutatják az SD kártya minimális elrendezését ahhoz, hogy ezt az útmutatót követni tudd. Lehetnek extra fájljaid és mappáid az SD kártyádon, függően a korábbi telepítésedtől vagy metódustól, amit követtél.</p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
 
 <h4 id="iv-rész---rtc-és-dsp-telepítése">IV. rész - RTC és DSP telepítése</h4>
 

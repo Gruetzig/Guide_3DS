@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -531,7 +535,7 @@ window.cookieconsent.initialise({
 <p>本节中，你将会复制一些触发 browserhax 和 universal-otherapp 所需要的文件。</p>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>复制 <code class="language-plaintext highlighter-rouge">otherapp.bin</code> 到你 SD 卡的根目录下，然后重命名为 <code class="language-plaintext highlighter-rouge">arm11code.bin</code>
     <ul>
@@ -551,16 +555,16 @@ window.cookieconsent.initialise({
 
 <p>本节中，你将更改主机的网络连接设置，设置一个代理服务器来绕过浏览器的版本检查，允许浏览器在系统没有更新至最新的情况下运行。 这将让你能够在下一步中访问浏览器漏洞页面。</p>
 
-<p class="notice--info">If you haven’t already, make sure you have a working Internet connection set up on your console.</p>
+<p class="notice--info">在开始之前，请确保你的主机已经设置了一个可以连接互联网的无线网络。</p>
 
-<p class="notice--success">A visual guide is available for this section <a href="/images/screenshots/set-proxy.png">here</a>.</p>
+<p class="notice--success">你也可以点击<a href="/images/screenshots/set-proxy.png">这里</a>查看本节图片版的操作示意。</p>
 
 <ol>
   <li>打开系统设置（本体設定 / System Settings）</li>
   <li>进入到 <code class="language-plaintext highlighter-rouge">互联网设置（インターネット設定 / Internet Settings）</code> -&gt; <code class="language-plaintext highlighter-rouge">连接设置（インターネット接続設定 / Connection Settings）</code></li>
   <li>点击你目前在用的连接点槽位，然后进入到 <code class="language-plaintext highlighter-rouge">设置变更（設定変更 / Change Settings）</code> -&gt; <code class="language-plaintext highlighter-rouge">下一页（右箭头）</code> -&gt; <code class="language-plaintext highlighter-rouge">代理设置（Proxy）</code></li>
   <li>设置“代理服务器 （Proxy）”为“是（する / Yes）”，然后点击<code class="language-plaintext highlighter-rouge">详细设置（詳細設定 / Detailed Setup）</code></li>
-  <li>Set the Proxy Server to <code class="language-plaintext highlighter-rouge">ssloth.nintendohomebrew.com</code>, and the Port to <code class="language-plaintext highlighter-rouge">8080</code></li>
+  <li>将代理服务器设置为 <code class="language-plaintext highlighter-rouge">ssloth.nintendohomebrew.com</code>，端口设置为 <code class="language-plaintext highlighter-rouge">8080</code></li>
   <li>点击 OK，然后点击保存（保存する / Save）</li>
   <li>当提示时，点击“测试（テスト / Test）”进行连接测试
     <ul>
@@ -608,11 +612,11 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Once it is complete, press (A) to reboot your console</li>
-  <li>Your console should have booted into the Luma3DS configuration menu
+  <li>你的主机应该会在开机后进入 Luma3DS 配置菜单
     <ul>
       <li>Luma3DS 配置菜单用于设置 Luma3DS 自制固件的可选功能 其中有许多功能可用于个性化或调试</li>
-      <li>For the purpose of this guide, <strong>leave these options on the default settings</strong> (do not check or uncheck anything)</li>
-      <li>If your console shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+      <li>对于本手册的目的而言，<strong>请不要修改默认设置</strong>（不要选中或者取消选中任何东西）</li>
+      <li>如果你的主机在你尝试开机后直接自动关机了，请确认你已经从 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 中复制了 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件到你的 SD 卡根目录中</li>
     </ul>
   </li>
   <li>按下 “Start” 键保存设置并重启</li>
@@ -639,7 +643,7 @@ window.cookieconsent.initialise({
       <li>测试应该会成功</li>
     </ul>
   </li>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
 </ol>
 
 <hr />

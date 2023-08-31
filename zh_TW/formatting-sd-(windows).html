@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_TW/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_TW/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -488,7 +492,7 @@ window.cookieconsent.initialise({
   <li><a href="#必備項目" id="markdown-toc-必備項目">必備項目</a></li>
   <li><a href="#操作步骤32gb-及以下容量" id="markdown-toc-操作步骤32gb-及以下容量">操作步骤(32GB 及以下容量)</a></li>
   <li><a href="#操作步骤64gb-及以上容量" id="markdown-toc-操作步骤64gb-及以上容量">操作步骤(64GB 及以上容量)</a></li>
-  <li><a href="#使用-guiformat-的常見錯誤" id="markdown-toc-使用-guiformat-的常見錯誤">使用 guiformat 的常見錯誤</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 
   </nav>
@@ -557,17 +561,22 @@ window.cookieconsent.initialise({
   <li>如果此 SD 卡中先前含有任何檔案及資料夾，請將這些檔案從電腦中複製回 SD 卡中</li>
 </ol>
 
-<h3 id="使用-guiformat-的常見錯誤">使用 guiformat 的常見錯誤</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>guiformat shows the error “Failed to open device: GetLastError()=32”
     <ul>
       <li>關閉任何可能正在使用此 SD 卡的程式，如檔案總管。</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>guiformat shows the error “GetLastError()=1117”
     <ul>
       <li>Your SD card write-protection switch may be <a href="/images/sdlock.png">enabled</a>. The lock must be flipped upwards to allow writing to the SD card (including formatting).</li>
+    </ul>
+  </li>
+  <li>SD card remains undetected by console or continues to display the wrong capacity after formatting
+    <ul>
+      <li>Your SD card may be partitioned or have unallocated space. Follow the instructions <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">here</a> to reformat your SD card.</li>
     </ul>
   </li>
 </ul>

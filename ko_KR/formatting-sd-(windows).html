@@ -374,11 +374,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>eShop DSiWare 덤프</a></li>
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
           
         
           
@@ -488,7 +492,7 @@ window.cookieconsent.initialise({
   <li><a href="#준비물" id="markdown-toc-준비물">준비물</a></li>
   <li><a href="#절차-32gb-이하" id="markdown-toc-절차-32gb-이하">절차 (32GB 이하)</a></li>
   <li><a href="#절차-64gb-이상" id="markdown-toc-절차-64gb-이상">절차 (64GB 이상)</a></li>
-  <li><a href="#guiformat-이용중-자주-일어나는-에러" id="markdown-toc-guiformat-이용중-자주-일어나는-에러">guiformat 이용중 자주 일어나는 에러</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 
   </nav>
@@ -557,17 +561,22 @@ window.cookieconsent.initialise({
   <li>만약 SD 카드에 파일이나 폴더가 있었다면, 백업한 폴더에서 파일들을 다시 넣으세요</li>
 </ol>
 
-<h3 id="guiformat-이용중-자주-일어나는-에러">guiformat 이용중 자주 일어나는 에러</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>guiformat shows the error “Failed to open device: GetLastError()=32”
     <ul>
       <li>파일 탐색기 등, SD 카드를 이용하고 있을 수 있는 모든 걸 닫으세요.</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>guiformat shows the error “GetLastError()=1117”
     <ul>
       <li>SD카드 쓰기 보호가 <a href="/images/sdlock.png">활성화</a>되어 있을 가능성이 높습니다. SD 카드에 쓰기(포맷 포함)를 하려면 잠금 막대가 위로 올라가 있어야 합니다.</li>
+    </ul>
+  </li>
+  <li>SD card remains undetected by console or continues to display the wrong capacity after formatting
+    <ul>
+      <li>Your SD card may be partitioned or have unallocated space. Follow the instructions <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">here</a> to reformat your SD card.</li>
     </ul>
   </li>
 </ul>

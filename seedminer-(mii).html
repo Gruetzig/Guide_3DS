@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -501,7 +505,7 @@ window.cookieconsent.initialise({
   <li>Your Mii QR code, uploaded directly to Discord (do not take a screenshot or a photo of the image, just send the HNI_XXXX.JPG image itself)</li>
   <li>Your console’s ID0 (the name of the 32-character folder directly inside of Nintendo 3DS - see <a href="https://3ds.hacks.guide/troubleshooting#seedminer">this troubleshooting section</a> if you have multiple)</li>
   <li>Your console model (e.g. 3DS, 3DS XL, 2DS, New3DS, New3DS XL, New2DS XL)</li>
-  <li>Your console’s approximate year of manufacturing (it may be present behind the frontplate or backplate; if you don’t know, just guess - it’s not super important)</li>
+  <li>Your console’s year of manufacturing; if you don’t know, don’t say it - it’s not super important</li>
 </ul>
 </div>
 
@@ -602,7 +606,9 @@ window.cookieconsent.initialise({
   <li>Once it completes, enter the command <code class="language-plaintext highlighter-rouge">py -3 seedminer_launcher3.py mii &lt;model&gt; &lt;year&gt;</code>
     <ul>
       <li>Replace <code class="language-plaintext highlighter-rouge">&lt;model&gt;</code> with the model of your console (<code class="language-plaintext highlighter-rouge">new</code> or <code class="language-plaintext highlighter-rouge">old</code>) - if you aren’t sure, only models with the ZL/ZR buttons and C-Stick are “new”</li>
-      <li>Replace <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code> with the year the 3DS was made (you often find this behind the backplate) - leave this empty if you aren’t sure, in which case it will start from the middle</li>
+      <li>Replace <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code> with the year the 3DS was made (On Old 3DS consoles, the years on the backplate, (M)2010/(C)2011, are always the same and NOT an indicator) - if you aren’t sure, see below</li>
+      <li>Estimate manufacturing years are: Old 3DS 2011, Old 3DS XL 2013, Old 2DS 2015, New 3DS 2016, New 3DS XL 2016, New 2DS XL 2017</li>
+      <li>You can also leave the year empty, which will make it start in the middle</li>
       <li>The mining process will usually take up to 90 minutes, depending on luck and your GPU’s strength</li>
       <li>The first stage will likely max out at roughly offset 1500, depending on console model</li>
       <li>If the second stage (after seeing <code class="language-plaintext highlighter-rouge">movable_part2.sed generation success</code>) gets past offset 100, verify that you input the correct ID0. If your ID0 is correct, you cannot use this method and will have to update to the latest version and see if a non-Seedminer method is available for you <a href="alternate-exploits">here</a></li>

@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -586,15 +590,27 @@ window.cookieconsent.initialise({
   <li>Nyomd meg a (B) gombot, hogy visszamenj a főmenübe</li>
   <li>Válaszd az “Exit” opciót</li>
   <li>Nyomd meg az (A) gombot az írási engedélyek visszavonásához</li>
+  <li>Menj ide: <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
+  <li>Nyomd meg az (A) gombot a <code class="language-plaintext highlighter-rouge">essential.exefs</code> fájlon, hogy kijelöld</li>
+  <li>Válaszd ki ezt: “Copy to 0:/gm9/out”
+    <ul>
+      <li>Ha azt látod, hogy “Destination already exists”, nyomj (A) gombot az “Overwrite file(s)” opción</li>
+    </ul>
+  </li>
+  <li>Nyomd meg az (A) gombot a folytatáshoz</li>
   <li>Az (R) lenyomva tartása közben nyomd meg a (Start) gombot a konzolod kikapcsolásához</li>
   <li>Helyezd az SD kártyád a számítógépbe</li>
-  <li>Másold a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> és az <code class="language-plaintext highlighter-rouge">essential.exefs</code> fájlokat az SD kártyád <code class="language-plaintext highlighter-rouge">/gm9/out/</code> mappájából valami biztonságos helyre a számítógépeden
+  <li>Másold a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, <code class="language-plaintext highlighter-rouge">essential.exefs</code> fájlokat a <code class="language-plaintext highlighter-rouge">/gm9/out/</code> mappából az SD kártyáról egy biztonságos helyre a számítógépeden
     <ul>
-      <li>Tarts belőle biztonsági másolatokat több különböző helyen is (például online tárhelyen)</li>
+      <li>Tarts belőle biztonsági másolatokat több különböző helyen is (például online tárhelyen, külső merevlemezen.)</li>
       <li>Ezek a biztonsági mentések fognak megmenteni, ha a későbbiekben brickelődne a konzolod, vagy bármi félresikerülne a jövőben</li>
     </ul>
   </li>
-  <li>Töröld a <code class="language-plaintext highlighter-rouge">&lt;dátum&gt;_&lt;sorozatszám&gt;_sysnand_##.bin</code> és a <code class="language-plaintext highlighter-rouge">&lt;dátum&gt;_&lt;sorozatszám&gt;_sysnand_##.bin.sha</code> fájlokat az SD kártyád <code class="language-plaintext highlighter-rouge">/gm9/out/</code> mappájából, miután lemásoltad azokat</li>
+  <li>Töröld a <code class="language-plaintext highlighter-rouge">&lt;dátum&gt;_&lt;sorozatszám&gt;_sysnand_##.bin</code> és a <code class="language-plaintext highlighter-rouge">&lt;dátum&gt;_&lt;sorozatszám&gt;_sysnand_##.bin.sha</code> fájlokat az SD kártyád <code class="language-plaintext highlighter-rouge">/gm9/out/</code> mappájából, miután lemásoltad azokat
+    <ul>
+      <li>A többi biztonségi mentés fájl mérete elhanyagolható és a könnyű hozzáférés érdekében az SD kártyádon tárolt</li>
+    </ul>
+  </li>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
 </ol>
 

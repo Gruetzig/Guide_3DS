@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -501,7 +505,7 @@ window.cookieconsent.initialise({
   <li>A Mii QR kódod, közvetlenül feltöltve a Discord-ra (ne készíts képernyő képet vagy fotót a képről, csak küld el a HNI_XXXX.JPG képet magát)</li>
   <li>A konzolod ID0 azonosítója (a 32 karakter hosszú nevű mappa közvetlenül a Nintendo 3DS mappában - tekintsd meg <a href="https://3ds.hacks.guide/troubleshooting#seedminer">ezt a hibaelhárítási útmutatót</a> ha több is van)</li>
   <li>A konzolod modellje (pl. 3DS, 3DS XL, 2DS, New3DS, New3DS XL, New2DS XL)</li>
-  <li>A konzolod becsült gyártási éve (talán megtalálható az elő vagy hátlap alatt; ha nem tudod, tippelj - nem szuper fontos)</li>
+  <li>A konzolod becsült gyártási éve; ha nem tudod, ne add meg - nem szuper fontos</li>
 </ul>
 </div>
 
@@ -606,7 +610,9 @@ window.cookieconsent.initialise({
   <li>Ha végzett írd be a <code class="language-plaintext highlighter-rouge">py -3 seedminer_launcher3.py mii &lt;model&gt; &lt;year&gt;</code> parancsot
     <ul>
       <li>Helyettesítsd a <code class="language-plaintext highlighter-rouge">&lt;model&gt;</code>-t a konzol modeljével (<code class="language-plaintext highlighter-rouge">new</code> vagy <code class="language-plaintext highlighter-rouge">old</code>) - ha nem vagy biztos benne, azok a modellek amik rendselkeznek ZL/ZR gombokkal és C-Stick-kel azok újak (new)</li>
-      <li>Helyettesítsd a <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code>-t az évvel, amikor a 3DS készült (gyakaran megtalálható a hátlap mögött) - hagyd ezt üresen, ha nem vagy biztos benne, ekkor középről kezdjük</li>
+      <li>Helyettesítsd a <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code>-t az évvel, amikor a 3DS készült (Old 3DS konzolon gyakran megtalálható a hátlapon, az (M)2010/(C)2011 az mindig ugyanaz, NEM indikátor - hagyd ezt üresen, ha nem vagy biztos benne</li>
+      <li>Estimate manufacturing years are: Old 3DS 2011, Old 3DS XL 2013, Old 2DS 2015, New 3DS 2016, New 3DS XL 2016, New 2DS XL 2017</li>
+      <li>You can also leave the year empty, which will make it start in the middle</li>
       <li>A bányászási folyamat általában 90 percet igényel, függően a szerencétől és a GPU erősségétől</li>
       <li>Az első szakasz a konzolmodelltől függően valószínűleg nagyjából 1500 offset-nél maximális</li>
       <li>Ha a második fázis (miután látható volt a <code class="language-plaintext highlighter-rouge">movable_part2.sed generation success</code> üzenet) túljutott a 100-as offset-en, ellenőrizd, hogy helyes ID0-t adtál-e meg. Ha az ID0 értéked korrekt, nem tudod használni ezt a metódust és frissítened kell a legutols verzióra és meg kell nézned, hogy egy nem-Seedminer metódus elérhető-e számodra <a href="alternate-exploits">itt</a></li>

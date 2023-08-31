@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/it_IT/dumping-eshop-dsiware'>Dump di DsiWare eShop</a></li>
           
         
@@ -501,7 +505,7 @@ window.cookieconsent.initialise({
   <li>Il tuo codice QR Mii, caricato direttamente su Discord (non scattare uno screenshot o una foto dell’immagine, basta inviare l’immagine HNI_XXXX.JPG stessa)</li>
   <li>ID0 della tua console (il nome della cartella a 32 caratteri dentro la cartella Nintendo 3DS - consulta <a href="https://3ds.hacks.guide/troubleshooting#seedminer">questa sezione</a> se ne hai più di uno)</li>
   <li>Il modello della tua console (ad es. 3DS, 3DS XL, 2DS, New3DS, New3DS XL, New2DS XL)</li>
-  <li>L’anno approssimativo di produzione della tua console (può essere presente dietro la copertura anteriore o posteriore; se non la sai puoi indovinarla - non è super importante)</li>
+  <li>L’anno di produzione della tua console; se non lo sai, non indicarlo - non è molto importante</li>
 </ul>
 </div>
 
@@ -523,10 +527,10 @@ window.cookieconsent.initialise({
 <h3 id="cosa-serve">Cosa serve</h3>
 
 <ul>
-  <li>The latest release of <a href="https://github.com/zoogie/seedminer/releases/latest">Seedminer</a> (the Seedminer .zip)</li>
-  <li>Any 3.x version of <a href="https://www.python.org/downloads/">Python</a> installed
+  <li>L’ultima versione di <a href="https://github.com/zoogie/seedminer/releases/latest">Seedminer</a> (il file <code class="language-plaintext highlighter-rouge">.zip</code> di Seedminer)</li>
+  <li>Qualsiasi versione 3.x di <a href="https://www.python.org/downloads/">Python</a> installata
     <ul>
-      <li>If you are on Linux, you likely already have Python 3. Controlla aprendo un terminale e inserendo <code class="language-plaintext highlighter-rouge">python3 -V</code>. Se il comando restituisce un numero di versione, funzionerà per questa guida.</li>
+      <li>Se sei su Linux, probabilmente hai già Python 3. Controlla aprendo un terminale e inserendo <code class="language-plaintext highlighter-rouge">python3 -V</code>. Se il comando restituisce un numero di versione, funzionerà per questa guida.</li>
     </ul>
   </li>
 </ul>
@@ -602,7 +606,9 @@ window.cookieconsent.initialise({
   <li>Al termine, inserisci il comando <code class="language-plaintext highlighter-rouge">py -3 seedminer_launcher3.py mii &lt;modello&gt; &lt;anno&gt;</code>
     <ul>
       <li>Sostituisci <code class="language-plaintext highlighter-rouge">&lt;modello&gt;</code> con il modello della tua console (<code class="language-plaintext highlighter-rouge">new</code> o <code class="language-plaintext highlighter-rouge">old</code>) - se non ne sei sicuro, solo i modelli con i pulsanti ZL/ZR e C-Stick sono “new”</li>
-      <li>Sostituisci <code class="language-plaintext highlighter-rouge">&lt;anno&gt;</code> con l’anno di produzione del 3DS (spesso lo trovi dietro la cover posteriore) - lascia vuoto se non ne sei sicuro, nel qual caso partirà da un valore predefinito</li>
+      <li>Sostituisci <code class="language-plaintext highlighter-rouge">&lt;year&gt;</code> con l’anno in cui è stato realizzato il 3DS (sulle console Old 3DS, gli anni sulla parte posteriore, (M)2010/(C)2011, sono sempre gli stessi e NON sono un indicatore usabile) - se non sei sicuro, vedi qui sotto</li>
+      <li>Gli anni di produzione approssimativi sono: Old 3DS 2011, Old 3DS XL 2013, Old 2DS 2015, New 3DS 2016, New 3DS XL 2016, New 2DS XL 2017</li>
+      <li>Puoi anche lasciare vuoto l’anno, per cui partirà dal mezzo</li>
       <li>Il processo di mining richiede solitamente fino a 90 minuti, a seconda della fortuna e della potenza della tua GPU</li>
       <li>La prima fase terminerà probabilmente attorno l’offset 1500, a seconda del modello di console</li>
       <li>Se la seconda fase (dopo il messaggio <code class="language-plaintext highlighter-rouge">movable_part2.sed generation success</code>) oltrepassa l’offset 100, verifica di aver inserito l’ID0 corretto. Se il tuo ID0 è corretto, non puoi usare questo metodo e dovrai aggiornare all’ultima versione e controllare se è disponibile per te un metodo non-Seedminer <a href="alternate-exploits">qui</a></li>

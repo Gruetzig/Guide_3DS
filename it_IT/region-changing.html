@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/it_IT/dumping-eshop-dsiware'>Dump di DsiWare eShop</a></li>
           
         
@@ -586,15 +590,27 @@ window.cookieconsent.initialise({
   <li>Premi (B) per ritornare al menu principale</li>
   <li>Seleziona “Exit”</li>
   <li>Se richiesto, premi (A) per ritirare le autorizzazioni di scrittura</li>
+  <li>Entra nella cartella <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
+  <li>Premi (A) su <code class="language-plaintext highlighter-rouge">essential.exefs</code> per selezionarlo</li>
+  <li>Seleziona “Copy to 0:/gm9/out”
+    <ul>
+      <li>Se appare “Destination already exists”, premi (A) su “Overwrite file(s)”</li>
+    </ul>
+  </li>
+  <li>Premi il pulsante (A) per continuare</li>
   <li>Tenendo premuto (R), premi (Start) per spegnere la console</li>
   <li>Inserisci la scheda SD nel tuo computer</li>
-  <li>Copia i file <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;codiceseriale&gt;_sysnand_##.bin</code> ed <code class="language-plaintext highlighter-rouge">essential.exefs</code> dalla cartella <code class="language-plaintext highlighter-rouge">/gm9/out/</code> della tua scheda SD in una posizione sicura sul tuo computer
+  <li>Copia i file <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;codiceseriale&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;codiceseriale&gt;_sysnand_##.bin.sha</code> ed <code class="language-plaintext highlighter-rouge">essential.exefs</code> dalla cartella <code class="language-plaintext highlighter-rouge">/gm9/out/</code> della tua scheda SD in una posizione sicura sul tuo computer
     <ul>
-      <li>Crea dei backup in più posti (come ad esempio un servizio di storage dei file online)</li>
+      <li>Copia questi backup in più posti (ad esempio un archivio online, un disco rigido esterno, ecc.)</li>
       <li>Questi backup ti salveranno da un brick e/o ti aiuteranno a recuperare i file dalla NAND nel caso dovesse accadere qualcosa in futuro</li>
     </ul>
   </li>
-  <li>Dopo la copia, elimina i file <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;codiceseriale&gt;_sysnand_##.bin</code> e <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;codiceseriale&gt;_sysnand_##.bin.sha</code> dalla cartella <code class="language-plaintext highlighter-rouge">/gm9/out/</code> della tua scheda SD</li>
+  <li>Dopo la copia, elimina i file <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;codiceseriale&gt;_sysnand_##.bin</code> e <code class="language-plaintext highlighter-rouge">&lt;data&gt;_&lt;codiceseriale&gt;_sysnand_##.bin.sha</code> dalla cartella <code class="language-plaintext highlighter-rouge">/gm9/out/</code> della tua scheda SD
+    <ul>
+      <li>Gli altri file di backup sono di dimensioni trascurabili e possono essere conservati sulla tua scheda SD per comodità di accesso</li>
+    </ul>
+  </li>
   <li>Reinserisci la scheda SD nella tua console</li>
 </ol>
 

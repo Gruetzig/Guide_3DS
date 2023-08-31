@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -557,7 +561,7 @@ window.cookieconsent.initialise({
 <h4 id="第一步--准备工作">第一步 – 准备工作</h4>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>检查 SD 卡的根目录是否存在一个名为 <code class="language-plaintext highlighter-rouge">3ds</code> 的文件夹，如果没有则手动新建一个</li>
   <li>将 GodMode9 <code class="language-plaintext highlighter-rouge">.zip</code> 中的 <code class="language-plaintext highlighter-rouge">GodMode9.firm</code> 复制到你 SD 卡的 <code class="language-plaintext highlighter-rouge">/luma/payloads/</code> 文件夹中</li>
@@ -587,15 +591,27 @@ window.cookieconsent.initialise({
   <li>按下 “B” 键返回到主菜单</li>
   <li>选择 “Exit”</li>
   <li>如果提示重新锁定写入权限，按下 “A” 键来确认</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">[S:] SYSNAND VIRTUAL</code></li>
+  <li>Press (A) on <code class="language-plaintext highlighter-rouge">essential.exefs</code> to select it</li>
+  <li>选择 “Copy to 0:/gm9/out”
+    <ul>
+      <li>If you see “Destination already exists”, press (A) on “Overwrite file(s)”</li>
+    </ul>
+  </li>
+  <li>按 “A” 键继续</li>
   <li>Hold (R) and press (Start) at the same time to power off your console</li>
   <li>将你的 SD 卡插入到电脑</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
+  <li>Copy <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code>, <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code>, and <code class="language-plaintext highlighter-rouge">essential.exefs</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card to a safe location on your computer
     <ul>
-      <li>请在多处地方备份这些文件（比如网盘等）</li>
+      <li>Copy these backups to multiple locations (such as online file storage, an external hard drive, etc.)</li>
       <li>如果以后机器出现任何问题，这些备份文件将是为你提供修复砖机或从 NAND 镜像恢复文件的帮手</li>
     </ul>
   </li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card after copying it</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> from the <code class="language-plaintext highlighter-rouge">/gm9/out/</code> folder on your SD card after copying it
+    <ul>
+      <li>The other backup files are negligible in size and may be kept on your SD card for ease of access</li>
+    </ul>
+  </li>
   <li>Reinsert your SD card into your console</li>
 </ol>
 
@@ -698,36 +714,40 @@ window.cookieconsent.initialise({
 
 <h4 id="section-vi---fixing-locale-related-issues">Section VI - Fixing locale-related issues</h4>
 
-<p>This section will reset your system settings to its defaults. <strong>Installed games and their save data will not be affected.</strong> This is <strong>required</strong> to prevent known issues relating to extended memory mode and applets on some consoles.</p>
+<p>此章节的操作将会将你的系统设置重置为默认值。 <strong>已安装的游戏和存档不会受到任何影响。</strong>这个是为了防止某些主机出现有关扩展内存模式和小程序的一些问题而进行的<strong>必要</strong>操作。</p>
 
 <ol>
-  <li>Power off your console</li>
-  <li>Press and hold (Start), and while holding (Start), power on your console. 这会启动 GodMode9</li>
+  <li>将主机关机</li>
+  <li>按住 “START” 键，然后将主机开机。 这会启动 GodMode9</li>
   <li>进入到 <code class="language-plaintext highlighter-rouge">[0:] SDCARD</code> -&gt; <code class="language-plaintext highlighter-rouge">gm9</code></li>
   <li>在 CTRTransfer <code class="language-plaintext highlighter-rouge">.bin</code> 上按 “X” 来删除它</li>
   <li>按下 “A” 键确认</li>
-  <li>Press (B) a few times to go back to the main menu</li>
-  <li>Navigate to <code class="language-plaintext highlighter-rouge">[1:] SYSNAND CTRNAND</code> -&gt; <code class="language-plaintext highlighter-rouge">data</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">sysdata</code>
+  <li>按若干次 “B” 键回到主菜单</li>
+  <li>进入到 <code class="language-plaintext highlighter-rouge">[1:] SYSNAND CTRNAND</code> -&gt; <code class="language-plaintext highlighter-rouge">data</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">sysdata</code>
     <ul>
-      <li>The <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> will be a folder with a 32 character length random-looking name. You may recognize this from Seedminer, if you used that method</li>
+      <li><code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> 是一个看上去像一串乱码的 32 位字符长的文件夹。 如果你之前用过 Seedminer，那么你可能会知道它。</li>
     </ul>
   </li>
-  <li>Use the D-Pad to highlight <code class="language-plaintext highlighter-rouge">00010017</code></li>
-  <li>Press (Right Shoulder) + (A) to bring up the folder options</li>
+  <li>使用十字键将光标移动至 <code class="language-plaintext highlighter-rouge">00010017</code></li>
+  <li>按下 “R” + “A” 键打开文件夹选项菜单</li>
   <li>选择 “Copy to 0:/gm9/out”</li>
   <li>按 “A” 键继续</li>
-  <li>While still highlighting <code class="language-plaintext highlighter-rouge">00010017</code>, press (X) to delete it</li>
+  <li>将光标继续对准 <code class="language-plaintext highlighter-rouge">00010017</code>，然后按下 “X” 键删除</li>
   <li>按下 “A” 键确认</li>
-  <li>Press (A) to unlock SysNAND (lvl2) writing, then input the key combo given</li>
-  <li>Once the file has been deleted, press (A) to continue</li>
-  <li>如果提示重新锁定写入权限，按下 “A” 键来确认</li>
-  <li>Press (Start) to reboot your console</li>
-  <li>Your console will load into the initial setup menu
+  <li>按 “A” 键解锁SysNAND (lvl2) 写入权限，并根据屏幕上的提示依次按下按键</li>
+  <li>
     <ul>
-      <li>This is expected behaviour. You have not lost any of your game data</li>
+      <li>待文件删除后，按 “A” 键以继续</li>
     </ul>
   </li>
-  <li>Complete the initial setup menu by following the prompts on your console’s screen</li>
+  <li>如果提示重新锁定写入权限，按下 “A” 键来确认</li>
+  <li>按下 “Start” 键重启主机</li>
+  <li>你的主机将自动进入至初始设置的菜单
+    <ul>
+      <li>这是正常的。 你的主机没有丢失任何的游戏数据。</li>
+    </ul>
+  </li>
+  <li>根据初始设置菜单的提示完成设置操作。</li>
 </ol>
 
 <hr />

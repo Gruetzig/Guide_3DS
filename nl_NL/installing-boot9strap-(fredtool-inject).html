@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/nl_NL/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/nl_NL/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -489,8 +493,9 @@ window.cookieconsent.initialise({
       <li><a href="#deel-ii---voorbereiding" id="markdown-toc-deel-ii---voorbereiding">Deel II - Voorbereiding</a></li>
       <li><a href="#section-iii---overwriting-ds-connection-settings" id="markdown-toc-section-iii---overwriting-ds-connection-settings">Section III - Overwriting DS Connection Settings</a></li>
       <li><a href="#section-iv---flipnote-exploit" id="markdown-toc-section-iv---flipnote-exploit">Section IV - Flipnote Exploit</a></li>
-      <li><a href="#section-v---luma3ds-configuration" id="markdown-toc-section-v---luma3ds-configuration">Section V - Luma3DS Configuration</a></li>
-      <li><a href="#section-vi---restoring-ds-connection-settings" id="markdown-toc-section-vi---restoring-ds-connection-settings">Section VI - Restoring DS Connection Settings</a></li>
+      <li><a href="#section-v---installing-boot9strap" id="markdown-toc-section-v---installing-boot9strap">Section V - Installing boot9strap</a></li>
+      <li><a href="#section-vi---luma3ds-configuration" id="markdown-toc-section-vi---luma3ds-configuration">Section VI - Luma3DS Configuration</a></li>
+      <li><a href="#section-vii---restoring-ds-connection-settings" id="markdown-toc-section-vii---restoring-ds-connection-settings">Section VII - Restoring DS Connection Settings</a></li>
     </ul>
   </li>
   <li><a href="#doorgaan-naar-installatie-voltooien" id="markdown-toc-doorgaan-naar-installatie-voltooien">Doorgaan naar Installatie voltooien</a></li>
@@ -594,30 +599,30 @@ window.cookieconsent.initialise({
   <li>Navigate to <code class="language-plaintext highlighter-rouge">Data Management</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">SD Card</code> (<a href="/images/screenshots/bb3/dsiware-management.png">image</a>)</li>
   <li>Select the “Haxxxxxxxxx!” title
     <ul>
-      <li>If you are unable to select the “Haxxxxxxxxx” title, <a href="troubleshooting#installing-boot9strap-fredtool">follow this troubleshooting guide</a></li>
+      <li>If you are unable to select the “Haxxxxxxxxx” title, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
     </ul>
   </li>
   <li>Selecteer “Copy” en selecteer dan “OK”</li>
-  <li>Ga terug naar het hoofdmenu van System Settings</li>
-  <li>Navigate to <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DS Connections</code>, then select “OK” (<a href="/images/screenshots/fredtool/dsconnection.png">image</a>)</li>
-  <li>If the exploit was successful, your console will have loaded the JPN version of Flipnote Studio
-    <ul>
-      <li>If your console does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool">follow this troubleshooting guide</a></li>
-    </ul>
-  </li>
 </ol>
 
 <h4 id="section-iv---flipnote-exploit">Section IV - Flipnote Exploit</h4>
 
-<p class="notice--info">If you would prefer a visual guide to this section, one is available <a href="https://zoogie.github.io/web/flipnote_directions/">here</a>.</p>
-
 <p>In this section, you will perform a series of very specific steps within Flipnote Studio that, when performed correctly, will launch b9sTool, the boot9strap (custom firmware) installer.</p>
 
+<p class="notice--info">If you would prefer a visual guide to this section, one is available <a href="https://zoogie.github.io/web/flipnote_directions/">here</a>.</p>
+
 <ol>
+  <li>Ga terug naar het hoofdmenu van System Settings</li>
+  <li>Navigate to <code class="language-plaintext highlighter-rouge">Internet Settings</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DS Connections</code>, then select “OK” (<a href="/images/screenshots/fredtool/dsconnection.png">image</a>)</li>
+  <li>If the exploit was successful, your console will have loaded the JPN version of Flipnote Studio
+    <ul>
+      <li>If your console does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
+    </ul>
+  </li>
   <li>Complete the initial setup process for the launched game until you reach the main menu
     <ul>
       <li>Select the left option whenever prompted during the setup process</li>
-      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool">check this troubleshooting guide</a> for your issue</li>
+      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
     </ul>
   </li>
   <li>Using the touch-screen, select the large left box, then select the box with an SD card icon</li>
@@ -629,9 +634,16 @@ window.cookieconsent.initialise({
   <li>Scroll left until reel “1/3” is selected</li>
   <li>Tap the fourth box with the letter “A” in it</li>
   <li>If the exploit was successful, your console will have loaded b9sTool</li>
+</ol>
+
+<h4 id="section-v---installing-boot9strap">Section V - Installing boot9strap</h4>
+
+<p>In this section, you will install custom firmware onto your console.</p>
+
+<ol>
   <li>Using the D-Pad, move to “Install boot9strap”
     <ul>
-      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to open Nintendo DS Connections and start over from the beginning of this section</li>
+      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to start over from the previous section</li>
     </ul>
   </li>
   <li>Press (A), then press START and SELECT at the same time to begin the process</li>
@@ -644,7 +656,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="section-v---luma3ds-configuration">Section V - Luma3DS Configuration</h4>
+<h4 id="section-vi---luma3ds-configuration">Section VI - Luma3DS Configuration</h4>
 
 <ol>
   <li>Press and hold (Select), and while holding (Select), power on your console</li>
@@ -664,7 +676,7 @@ window.cookieconsent.initialise({
   <li>On the next page, you will install useful homebrew applications to complete your setup.</li>
 </ul>
 
-<h4 id="section-vi---restoring-ds-connection-settings">Section VI - Restoring DS Connection Settings</h4>
+<h4 id="section-vii---restoring-ds-connection-settings">Section VII - Restoring DS Connection Settings</h4>
 
 <p>In this section, you will restore DS Connection Settings to the way it was before it was temporarily replaced with Flipnote Studio in an earlier section.</p>
 

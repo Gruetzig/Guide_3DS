@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -489,7 +493,7 @@ window.cookieconsent.initialise({
   <li><a href="#你需要准备点啥" id="markdown-toc-你需要准备点啥">你需要准备点啥？</a></li>
   <li><a href="#操作步骤32gb-及以下容量" id="markdown-toc-操作步骤32gb-及以下容量">操作步骤（32GB 及以下容量）</a></li>
   <li><a href="#操作步骤64gb-及以上容量" id="markdown-toc-操作步骤64gb-及以上容量">操作步骤（64GB 及以上容量）</a></li>
-  <li><a href="#使用-guiformat-的常见错误" id="markdown-toc-使用-guiformat-的常见错误">使用 guiformat 的常见错误</a></li>
+  <li><a href="#troubleshooting" id="markdown-toc-troubleshooting">Troubleshooting</a></li>
 </ul>
 
   </nav>
@@ -558,17 +562,22 @@ window.cookieconsent.initialise({
   <li>如果先前你从 SD 卡上复制了一些文件或文件夹到电脑上，请将它们全部复制回 SD 卡</li>
 </ol>
 
-<h3 id="使用-guiformat-的常见错误">使用 guiformat 的常见错误</h3>
+<h3 id="troubleshooting">Troubleshooting</h3>
 
 <ul>
-  <li>Failed to open device: GetLastError()=32
+  <li>guiformat shows the error “Failed to open device: GetLastError()=32”
     <ul>
       <li>关闭任何可能会使用到 SD 卡的东西，例如资源管理器窗口。</li>
     </ul>
   </li>
-  <li>GetLastError()=1117
+  <li>guiformat shows the error “GetLastError()=1117”
     <ul>
       <li>你的 SD 卡可能打开了<a href="/images/sdlock.png">写保护开关</a>。 你必须把滑片向上拨才能允许向 SD 卡写入数据（包括格式化）。</li>
+    </ul>
+  </li>
+  <li>SD card remains undetected by console or continues to display the wrong capacity after formatting
+    <ul>
+      <li>Your SD card may be partitioned or have unallocated space. Follow the instructions <a href="https://wiki.hacks.guide/wiki/SD_Clean/Windows">here</a> to reformat your SD card.</li>
     </ul>
   </li>
 </ul>

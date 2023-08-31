@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/zh_CN/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
           
         
@@ -492,8 +496,9 @@ window.cookieconsent.initialise({
       <li><a href="#第三步--bannerbomb3" id="markdown-toc-第三步--bannerbomb3">第三步 – BannerBomb3</a></li>
       <li><a href="#第四步--fredtool" id="markdown-toc-第四步--fredtool">第四步 – Fredtool</a></li>
       <li><a href="#第五步--触发-flipnote-漏洞" id="markdown-toc-第五步--触发-flipnote-漏洞">第五步 – 触发 Flipnote 漏洞</a></li>
-      <li><a href="#第四部分--配置-luma3ds" id="markdown-toc-第四部分--配置-luma3ds">第四部分 — 配置 Luma3DS</a></li>
-      <li><a href="#第七步--还原ds下载遊戲程序" id="markdown-toc-第七步--还原ds下载遊戲程序">第七步 – 还原“DS下载遊戲”程序</a></li>
+      <li><a href="#section-vi---installing-boot9strap" id="markdown-toc-section-vi---installing-boot9strap">Section VI - Installing boot9strap</a></li>
+      <li><a href="#section-vii---luma3ds-configuration" id="markdown-toc-section-vii---luma3ds-configuration">Section VII - Luma3DS Configuration</a></li>
+      <li><a href="#section-viii---restoring-ds-download-play" id="markdown-toc-section-viii---restoring-ds-download-play">Section VIII - Restoring DS Download Play</a></li>
     </ul>
   </li>
   <li><a href="#继续至完成安装" id="markdown-toc-继续至完成安装">继续至完成安装</a></li>
@@ -523,22 +528,22 @@ window.cookieconsent.initialise({
 
 <h4 id="第一步--检查自制固件">第一步 – 检查自制固件</h4>
 
-<p>As an additional safety measure, we will perform an additional check for custom firmware. This is because using this method when custom firmware is already installed has a risk of bricking the console (rendering it unusable without recovery methods like <a href="ntrboot">ntrboot</a>).</p>
+<p>为了确保安装能够安全进行，我们这里将先检查主机是否已经安装了自制固件。 因为如果主机已经安装了自制固件，使用此方法再次安装可能会导致主机变砖（导致其无法开机，只能使用 <a href="ntrboot">ntrboot</a> 之类的方法恢复。）</p>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>按住 “Select” 键</li>
-  <li>Power on your console while still holding the (Select) button</li>
-  <li>If the check was successful, you will boot to the HOME Menu and you may proceed with this guide</li>
-  <li>Power off your console</li>
+  <li>在按住 “Select” 键的同时按下电源键开机</li>
+  <li>如果主机自动启动到了主菜单，则测试成功，你可以继续做此教程中的余下内容</li>
+  <li>将主机关机</li>
 </ol>
 
-<p class="notice--danger">If you see a configuration menu or the console immediately powers off, you already have CFW, and continuing with these instructions may BRICK your console! Follow <a href="checking-for-cfw">Checking for CFW</a> to upgrade your existing CFW.</p>
+<p class="notice--danger">如果主机进入到了一个配置菜单或者直接关机了，那就表示你的主机之前已经安装过自制固件了。<strong>如果继续操作的话可能会导致主机变砖！</strong> 继续至<a href="checking-for-cfw">检查自制固件</a>来更新你现有的自制固件。</p>
 
 <h4 id="第二步--准备工作">第二步 – 准备工作</h4>
 
 <ol>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>解压 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 里的 <code class="language-plaintext highlighter-rouge">boot.firm</code> 和 <code class="language-plaintext highlighter-rouge">boot.3dsx</code> 到你 SD 卡的根目录
     <ul>
@@ -589,7 +594,7 @@ window.cookieconsent.initialise({
   <li>Launch System Settings on your console</li>
   <li>进入至 <code class="language-plaintext highlighter-rouge">資料管理</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">SD 卡</code> -&gt; （第二页）</li>
   <li>注意第二页列出的 DSiWare 应用上的标号（在 1 和 6 之间）</li>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
   <li>将你的 SD 卡插入到电脑</li>
   <li>打开内存卡的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 文件夹</li>
   <li>打开 output_(<你的名字>) `.zip`，然后进入到 `China_Taiwan` -&gt; `output_hax`</你的名字></li>
@@ -640,23 +645,23 @@ window.cookieconsent.initialise({
   <li>进入到 <code class="language-plaintext highlighter-rouge">資料管理</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code></li>
   <li>在 “SD 卡” 一栏，选择 “Haxxxxxxxxx!”</li>
   <li>选择 “Copy” ，然后选择 “OK”</li>
-  <li>退出系统设置</li>
-  <li>Launch Download Play on your console (the orange icon with a 3DS on it)</li>
-  <li>选择 “Nintendo DS”</li>
-  <li>如果漏洞执行成功，你的主机将进入到日版的“うごくメモ帳（Flipnote Studio）”</li>
 </ol>
 
 <h4 id="第五步--触发-flipnote-漏洞">第五步 – 触发 Flipnote 漏洞</h4>
 
-<p class="notice--info">If you would prefer a visual guide to this section, one is available <a href="https://zoogie.github.io/web/flipnote_directions/">here</a>.</p>
-
 <p>In this section, you will perform a series of very specific steps within Flipnote Studio that, when performed correctly, will launch b9sTool, the boot9strap (custom firmware) installer.</p>
 
+<p class="notice--info">If you would prefer a visual guide to this section, one is available <a href="https://zoogie.github.io/web/flipnote_directions/">here</a>.</p>
+
 <ol>
+  <li>退出系统设置</li>
+  <li>Launch Download Play on your console (the orange icon with a 3DS on it)</li>
+  <li>选择 “Nintendo DS”</li>
+  <li>如果漏洞执行成功，你的主机将进入到日版的“うごくメモ帳（Flipnote Studio）”</li>
   <li>Complete the initial setup process for the launched game until you reach the main menu
     <ul>
       <li>Select the left option whenever prompted during the setup process</li>
-      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool">check this troubleshooting guide</a> for your issue</li>
+      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
     </ul>
   </li>
   <li>Using the touch-screen, select the large left box, then select the box with an SD card icon</li>
@@ -668,36 +673,43 @@ window.cookieconsent.initialise({
   <li>Scroll left until reel “1/3” is selected</li>
   <li>Tap the fourth box with the letter “A” in it</li>
   <li>If the exploit was successful, your console will have loaded b9sTool</li>
+</ol>
+
+<h4 id="section-vi---installing-boot9strap">Section VI - Installing boot9strap</h4>
+
+<p>In this section, you will install custom firmware onto your console.</p>
+
+<ol>
   <li>Using the D-Pad, move to “Install boot9strap”
     <ul>
-      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to open DS Download Play and start over from the beginning of this section</li>
+      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to start over from the previous section</li>
     </ul>
   </li>
   <li>Press (A), then press START and SELECT at the same time to begin the process</li>
   <li>Once completed and the bottom screen says “done.”, exit b9sTool, then power off your console
     <ul>
       <li>You may have to force power off by holding the power button</li>
-      <li>If your console shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+      <li>如果你的主机在你尝试开机后直接自动关机了，请确认你已经从 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 中复制了 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件到你的 SD 卡根目录中</li>
       <li>If you see the Luma Configuration screen, power off your console and continue to the next section</li>
     </ul>
   </li>
 </ol>
 
-<h4 id="第四部分--配置-luma3ds">第四部分 — 配置 Luma3DS</h4>
+<h4 id="section-vii---luma3ds-configuration">Section VII - Luma3DS Configuration</h4>
 
 <ol>
   <li>Press and hold (Select), and while holding (Select), power on your console</li>
-  <li>Your console should have booted into the Luma3DS configuration menu
+  <li>你的主机应该会在开机后进入 Luma3DS 配置菜单
     <ul>
       <li>Luma3DS 配置菜单用于设置 Luma3DS 自制固件的可选功能 其中有许多功能可用于个性化或调试</li>
-      <li>For the purpose of this guide, <strong>leave these options on the default settings</strong> (do not check or uncheck anything)</li>
-      <li>If your console shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+      <li>对于本手册的目的而言，<strong>请不要修改默认设置</strong>（不要选中或者取消选中任何东西）</li>
+      <li>如果你的主机在你尝试开机后直接自动关机了，请确认你已经从 Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> 中复制了 <code class="language-plaintext highlighter-rouge">boot.firm</code> 文件到你的 SD 卡根目录中</li>
     </ul>
   </li>
   <li>按下 “Start” 键保存设置并重启</li>
 </ol>
 
-<h4 id="第七步--还原ds下载遊戲程序">第七步 – 还原“DS下载遊戲”程序</h4>
+<h4 id="section-viii---restoring-ds-download-play">Section VIII - Restoring DS Download Play</h4>
 
 <ol>
   <li>打开内存卡的 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 文件夹</li>
@@ -709,7 +721,7 @@ window.cookieconsent.initialise({
   <li>在 “SD 卡” 一栏，选择 “Haxxxxxxxxx!”</li>
   <li>选择 “Copy” ，然后选择 “OK”</li>
   <li>退出系统设置</li>
-  <li>Power off your console</li>
+  <li>将主机关机</li>
 </ol>
 
 <hr />

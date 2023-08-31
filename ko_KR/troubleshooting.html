@@ -374,11 +374,15 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/ko_KR/dumping-eshop-dsiware'>eShop DSiWare 덤프</a></li>
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
           
         
           
@@ -625,9 +629,9 @@ window.cookieconsent.initialise({
 
 <details>
 <summary><u>DSiWare 관리 메뉴가 BB3 multihax 메뉴를 표시하지 않고 깨짐</u></summary>
-<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code>이 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더 내에 있는 유일한 파일이어야 합니다. 만약 그렇다면, <a href="https://3ds.nhnarwhal.com/#/bb3gen">BannerBomb3 툴</a>에서 다시 생성해 주세요.</p>
+<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code>이 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더 내에 있는 유일한 파일이어야 합니다. If it is, then re-create it with the <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>.</p>
 
-<p>또한, <code class="language-plaintext highlighter-rouge">bb3.bin</code>이 SD 카드의 최상위 디렉토리에 있어야 합니다. 만약 없다면, <a href="https://github.com/lifehackerhansol/Bannerbomb3/releases/download/v3.0-lhs1/bb3.bin">Bannerbomb3</a>의 최신 버전 (직접 다운로드)을 다운받아 <code class="language-plaintext highlighter-rouge">bb3.bin</code> 파일을 SD 카드의 최상위 디렉토리로 복사해 주세요.</p>
+<p>또한, <code class="language-plaintext highlighter-rouge">bb3.bin</code>이 SD 카드의 최상위 디렉토리에 있어야 합니다. If it is missing, then download the latest release of <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a> (direct download), and copy the <code class="language-plaintext highlighter-rouge">bb3.bin</code> file from the Release <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card.</p>
 
 <p>만약 이 방법이 모두 안 된다면, 이 방식 자체를 차단하는 방법으로 커펌이 지워졌을 수 있습니다. 이 경우, <a href="https://discord.gg.MWxPgEp">Nintendo Homebrew Discord 서버</a>에 오셔서 도움을 요청하세요.</p>
 </details>
@@ -641,7 +645,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>DSiWare 관리 메뉴에서 물음표가 표시됩니다</u></summary>
 
-<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일에 문제가 있습니다. (잘못된 파일이거나 다른 3DS용 파일) 해당 콘솔의 <code class="language-plaintext highlighter-rouge">movable.sed</code> 파일을 이용해, <a href="https://3ds.nhnarwhal.com/#/bb3gen">BannerBomb3 툴</a>에서 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일을 다시 생성해 주세요.</p>
+<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일에 문제가 있습니다. (잘못된 파일이거나 다른 3DS용 파일) Re-create your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file with the <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>, ensuring that you use the <code class="language-plaintext highlighter-rouge">movable.sed</code> file for your console.</p>
 </details>
 
 <h2 id="boot9strap-설치-fredtool-inject">boot9strap 설치 (Fredtool-Inject)</h2>
@@ -921,16 +925,9 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Warning #01: No Nintendo 3DS folder</u></summary>
-
-<p>Your SD card does not have the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder. Power on your device with your SD card inserted, then wait for the device to show a message box that says “Creating HOME Menu management information”. Once the message box disappears, power off your device and try again.</p>
-
-</details>
-
-<details>
 <summary><u>Error #02: Missing essential.exefs</u></summary>
 
-<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your device, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your console, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
 
 </details>
 
@@ -950,15 +947,14 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>콘솔의 전원을 꺼 주세요</li>
-  <li>SD 카드를 분리해 컴퓨터에 장착해주세요</li>
+  <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
   <li>SD 카드의 루트에 있는 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더를 컴퓨터에 복사해주세요</li>
   <li>SD 카드에서 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더를 지워주세요</li>
   <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
-  <li>콘솔의 전원을 꺼 주세요</li>
-  <li>Hold START and power on still holding START to open GodMode9</li>
-  <li>Press the (Home) button</li>
+  <li>(Start) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요. GodMode9이 실행될 겁니다</li>
+  <li>HOME 버튼을 눌러 주세요.</li>
   <li>“Scripts…“를 선택해 주세요</li>
-  <li>Select “finalize”</li>
+  <li>“finalize”를 선택해 주세요</li>
   <li>Press (A) to create a NAND backup
     <ul>
       <li>This may take around fifteen minutes</li>
@@ -980,11 +976,15 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
-  <li>Hold START and power on still holding START to open GodMode9</li>
-  <li>Press the (Home) button</li>
+  <li>(Start) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요. GodMode9이 실행될 겁니다</li>
+  <li>HOME 버튼을 눌러 주세요.</li>
   <li>“Scripts…“를 선택해 주세요</li>
-  <li>Select “finalize”</li>
-  <li>Continue the script as normal</li>
+  <li>“finalize”를 선택해 주세요</li>
+  <li>Continue the script as normal
+    <ul>
+      <li>The NAND backup will be automatically skipped</li>
+    </ul>
+  </li>
 </ol>
 
 </details>
@@ -992,7 +992,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Information #05: No title database</u></summary>
 
-<p>Press (A) to create a title database, unlock SysNAND writing by entering the buttons on-screen, follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
+<p>Press (A) to import a title database, unlock SysNAND writing by entering the buttons on-screen, then continue the script as normal.</p>
 
 </details>
 
@@ -1002,11 +1002,11 @@ window.cookieconsent.initialise({
 <p>SD 카드에 1.3GB 이상의 빈 공간이 있는지 확인해주세요. 빈 공간이 부족하다면 다음 단계를 따르세요.</p>
 <ol>
   <li>콘솔의 전원을 꺼 주세요</li>
-  <li>SD 카드를 분리해 컴퓨터에 장착해주세요</li>
+  <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
   <li>SD 카드의 루트에 있는 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더를 컴퓨터에 복사해주세요</li>
   <li>SD 카드에서 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더를 지워주세요</li>
   <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
-  <li>콘솔의 전원을 끄고, START 버튼을 누른 채 전원을 켜 GodMode9로 진입하세요</li>
+  <li>(Start) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요. GodMode9이 실행될 겁니다</li>
   <li><a href="godmode9-usage#creating-a-nand-backup">NAND 백업</a>을 실행하세요</li>
   <li>SD 카드의 <code class="language-plaintext highlighter-rouge">gm9/out</code> 폴더 내 파일을 컴퓨터의 안전한 위치에 복사해 주세요</li>
   <li>SD 카드의 <code class="language-plaintext highlighter-rouge">/gm9/out</code> 폴더에서 essential.exefs는 남기고 <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> 및 <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> 파일을 삭제해주세요</li>
@@ -1018,13 +1018,6 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Error #08: Dummy title database</u></summary>
-
-<p>You didn’t delete the dummy title database that was created by Error #05. Follow the prompts <a href="/images/screenshots/database-reset.jpg">here</a>, then re-run the script.</p>
-
-</details>
-
-<details>
 <summary><u>Error #09: Unsupported GodMode9 version</u></summary>
 
 <p>You are somehow running a version of GodMode9 not packaged with the script. Make sure you copied the contents of <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card and that you are holding START while powering on your console.</p>
@@ -1032,9 +1025,42 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Information #11: NAND backup flag detected</u></summary>
+<summary><u>Error #11: Missing donor database</u></summary>
 
-<p>You most likely already made a NAND backup on this console. If you did not make a backup or lost access to your backup, select “1. Make Another NAND Backup”. Otherwise, select “2. Skip NAND Backup”.</p>
+<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
+
+<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+
+</details>
+
+<details>
+<summary><u>Error #12: Copy (file).db fail</u></summary>
+
+<p>Ensure that your SD card is not <a href="/images/sdlock.png">locked</a>. If the SD card is not locked and you continue to get this error, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+
+</details>
+
+<details>
+<summary><u>Information #17: Duplicate NAND backup</u></summary>
+
+<p>The script has detected that the Nintendo 3DS folder is missing AND that you have already made a NAND backup before. If you intend to install homebrew applications, you should do the following:</p>
+
+<ol>
+  <li>Press (B) to cancel making another NAND backup</li>
+  <li>(R)을 누른 채 (Start)를 눌러 콘솔의 전원을 꺼 주세요</li>
+  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> to a safe location on your computer</li>
+  <li>Delete <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> from your SD card</li>
+  <li>If you moved your Nintendo 3DS folder off of your SD card to get to this point, copy it back to your SD card
+    <ul>
+      <li>If you do not have a Nintendo 3DS folder, boot into the HOME Menu at least once with the SD card inserted to automatically generate it</li>
+    </ul>
+  </li>
+  <li>(Start) 를 길게 누르고, 이 상태에서 콘솔의 전원을 켜 주세요. GodMode9이 실행될 겁니다</li>
+  <li>(Home)을 눌러 작업 메뉴를 열어 주세요</li>
+  <li>“Scripts…“를 선택해 주세요</li>
+  <li>“finalize”를 선택해 주세요</li>
+  <li>Follow the prompts in the script, answering any questions that you are asked</li>
+</ol>
 
 </details>
 

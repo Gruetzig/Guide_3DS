@@ -374,6 +374,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/hu_HU/dumping-eshop-dsiware'>eShop DSiWare dumpolása</a></li>
           
         
@@ -491,8 +495,9 @@ window.cookieconsent.initialise({
       <li><a href="#iii-rész---bannerbomb3" id="markdown-toc-iii-rész---bannerbomb3">III. rész - BannerBomb3</a></li>
       <li><a href="#iv-rész---fredtool" id="markdown-toc-iv-rész---fredtool">IV. rész - Fredtool</a></li>
       <li><a href="#v-rész---flipnote-exploit" id="markdown-toc-v-rész---flipnote-exploit">V. rész - Flipnote Exploit</a></li>
-      <li><a href="#vi-rész---luma3ds-beállítás" id="markdown-toc-vi-rész---luma3ds-beállítás">VI. rész - Luma3DS beállítás</a></li>
-      <li><a href="#vii-rész---a-ds-download-play-visszaállítása" id="markdown-toc-vii-rész---a-ds-download-play-visszaállítása">VII. rész - A DS Download Play visszaállítása</a></li>
+      <li><a href="#vi-rész---boot9strap-telepítése" id="markdown-toc-vi-rész---boot9strap-telepítése">VI. rész - boot9strap telepítése</a></li>
+      <li><a href="#vii-rész---luma3ds-beállítás" id="markdown-toc-vii-rész---luma3ds-beállítás">VII. rész - Luma3DS beállítás</a></li>
+      <li><a href="#viii-rész---a-ds-download-play-visszaállítása" id="markdown-toc-viii-rész---a-ds-download-play-visszaállítása">VIII. rész - A DS Download Play visszaállítása</a></li>
     </ul>
   </li>
   <li><a href="#tovább-a-telepítés-véglegesítésére" id="markdown-toc-tovább-a-telepítés-véglegesítésére">Tovább a telepítés véglegesítésére</a></li>
@@ -639,23 +644,23 @@ window.cookieconsent.initialise({
   <li>Navigálj ide: <code class="language-plaintext highlighter-rouge">Data Management</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code></li>
   <li>Az “SD Card” szekcióban válaszd a “Haxxxxxxxxx!” címet</li>
   <li>Válaszd a “Copy”-t, majd az “OK”-t</li>
-  <li>Lépj ki a System Settings-ből</li>
-  <li>Idítsd el a Download Play-t a konzolodon (a narancssárga ikon egy 3DS-el)</li>
-  <li>Válaszd “Nintendo DS”-t</li>
-  <li>Ha az exploit sikeres volt, a 3DS-ednek ezt követően be kell töltenie a JPN verzióját a Flipnote Studio-nak</li>
 </ol>
 
 <h4 id="v-rész---flipnote-exploit">V. rész - Flipnote Exploit</h4>
 
-<p class="notice--info">Ha inkább egy vizuális útmutatót szeretnél ehhez a fejezethez, <a href="https://zoogie.github.io/web/flipnote_directions/">itt</a> elérhető egy.</p>
-
 <p>Ebben a fejezetben végrehajtasz egy specifikus lépés sorozatot a Flipnote Studio-val, ami ha helyesen került végrehajtásra, elindítja a boot9strap (egyedi firmware) telepítőt.</p>
 
+<p class="notice--info">Ha inkább egy vizuális útmutatót szeretnél ehhez a fejezethez, <a href="https://zoogie.github.io/web/flipnote_directions/">itt</a> elérhető egy.</p>
+
 <ol>
+  <li>Lépj ki a System Settings-ből</li>
+  <li>Idítsd el a Download Play-t a konzolodon (a narancssárga ikon egy 3DS-el)</li>
+  <li>Válaszd “Nintendo DS”-t</li>
+  <li>Ha az exploit sikeres volt, a 3DS-ednek ezt követően be kell töltenie a JPN verzióját a Flipnote Studio-nak</li>
   <li>Fejezd be a kezdeti telepítését az elindított játéknak, amíg el nem éri a fő menüt
     <ul>
       <li>Válaszd a bal opciót, ha kérdezi a telepítési folyamat során</li>
-      <li>Ha problémába futsz ebben a fejezetben, <a href="troubleshooting#installing-boot9strap-fredtool">kövesd ezt a hibaelhárítási útmutatót</a> a problémáddal</li>
+      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
     </ul>
   </li>
   <li>Az érintőképernyőt használva válaszd ki a bal nagy dobozt, majd válaszd a dobozt az SD kártya ikonnal</li>
@@ -667,9 +672,16 @@ window.cookieconsent.initialise({
   <li>Görgess balra, amíg a 1/3 filmtekercs kiválasztásra kerül</li>
   <li>Nyomd meg a negyedik dobozt benne az “A” betűvel</li>
   <li>Ha az exploit sikeres volt, a konzolodnak ezt követően be kell töltenie a b9sTool-t</li>
+</ol>
+
+<h4 id="vi-rész---boot9strap-telepítése">VI. rész - boot9strap telepítése</h4>
+
+<p>Ebben a fejezetben egyedi firmware-t fogsz telepíteni a konzolodra.</p>
+
+<ol>
   <li>A D-Pad-dal menj az “Install boot9strap” opcióra
     <ul>
-      <li>Ha kihagytad ez a lépést a rendszer a HOME Menübe kerülsz a boot9strap telepítése helyett, és meg kell nyitnod a DS Download Play-t és elölről kell kezdened a ennek a résznek az elejétől</li>
+      <li>Ha kihagytad ezt a lépést a rendszer a HOME Menübe kerülsz a boot9strap telepítése helyett, és elölről kell kezdened az előző résztől</li>
     </ul>
   </li>
   <li>Nyomj (A)-t majd ezt követően START-ot és SELECT-et egyszerre a folyamat elkezdéséhez</li>
@@ -682,7 +694,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="vi-rész---luma3ds-beállítás">VI. rész - Luma3DS beállítás</h4>
+<h4 id="vii-rész---luma3ds-beállítás">VII. rész - Luma3DS beállítás</h4>
 
 <ol>
   <li>Nyomd le és tartsd nyomva a (Select) gombot, és a (Select) nyomva tartása mellett kapcsold be a konzolod</li>
@@ -696,7 +708,7 @@ window.cookieconsent.initialise({
   <li>Mentéshez és újraindításhoz nyomd meg a (Start) gombot</li>
 </ol>
 
-<h4 id="vii-rész---a-ds-download-play-visszaállítása">VII. rész - A DS Download Play visszaállítása</h4>
+<h4 id="viii-rész---a-ds-download-play-visszaállítása">VIII. rész - A DS Download Play visszaállítása</h4>
 
 <ol>
   <li>Navigálj a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> mappába az SD kártyán</li>
