@@ -6,7 +6,6 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
-<!-- for guide purposes all caching is removed and is separately built. -->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -91,7 +90,10 @@
 
 
     <!-- start custom head snippets -->
+
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- hacks-guide change start: cookie consent, favicon, locales -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
@@ -135,10 +137,13 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+<!-- hacks-guide change end -->
 
 <!-- end custom head snippets -->
+
   </head>
 
+<!-- hacks-guide change start: Disable caching -->
   <body class="layout--single">
     <nav class="skip-links">
   <ul>
@@ -159,13 +164,16 @@ window.cookieconsent.initialise({
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <!-- <a class="site-title" href="/">
+<!-- hacks-guide change start: disable default masthead title -->
+      <!--
+        <a class="site-title" href="/">
           3DS Hacks Guide
           
         </a>
       -->
+<!-- hacks-guide change end -->
         <ul class="visible-links">
-          <!-- modified to use multilang, guide-specific -->
+<!-- hacks-guide change start: multi-language configuration -->
           
           
           
@@ -212,10 +220,10 @@ window.cookieconsent.initialise({
               <li class="masthead__menu-item"><a href="/pt_BR/site-navigation">Navegação do Site</a></li>
             
           
-          <!-- end guide specific -->
+<!-- hacks-guide change end -->
         </ul>
         
-        <!-- completely redo hidden links for multilang, guide-specific -->
+<!-- hacks-guide change start: Add language selector -->
         <ul class="hidden-links links-menu hidden"></ul>
         <ul class="hidden-links lang-menu hidden">
           
@@ -259,6 +267,7 @@ window.cookieconsent.initialise({
           <div class="navicon"></div>
         </button>
         <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
+<!-- hacks-guide change end -->
       </nav>
     </div>
   </div>
@@ -271,7 +280,9 @@ window.cookieconsent.initialise({
 
 
 <div id="main" role="main">
-  <!-- 
+  <!-- hacks-guide change start: Implement progress table, replace existing sidebar -->
+<!--
+
   <div class="sidebar sticky">
   
   
@@ -285,7 +296,8 @@ window.cookieconsent.initialise({
 
 
 <div class="sidebar sticky" style="display: none;">
-  
+  <!-- hacks-guide change start: Refactor entire subsection to allow using translations -->
+
 
 
 
@@ -374,23 +386,23 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/pt_BR/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/pt_BR/installing-boot9strap-(petit-compwner)'>Instalando boot9strap (petit-compwner)</a></li>
           
         
           
-            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/pt_BR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/pt_BR/dumping-eshop-dsiware'>Fazendo dump de DSiWare da eShop</a></li>
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(Multiple Options)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(Múltiplas Opções)</i></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Flashing ntrboot (3DS Single System)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Flashing ntrboot (Único 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (3DS Multi System)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (Vários 3DS)</a></li>
           
         
           
@@ -406,47 +418,51 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(hardmod)"><a href='/pt_BR/installing-boot9strap-(hardmod)'>Installing boot9strap (Hardmod)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(hardmod)"><a href='/pt_BR/installing-boot9strap-(hardmod)'>Instalando boot9strap (Hardmod)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/pt_BR/installing-boot9strap-(ntrboot)'>Installing boot9strap (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/pt_BR/installing-boot9strap-(ntrboot)'>Instalando boot9strap (ntrboot)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/pt_BR/installing-boot9strap-(soundhax)'>Installing boot9strap (Soundhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/pt_BR/installing-boot9strap-(soundhax)'>Instalando boot9strap (Soundhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/pt_BR/installing-boot9strap-(safecerthax)'>Installing boot9strap (safecerthax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/pt_BR/installing-boot9strap-(safecerthax)'>Instalando boot9strap (safecerthax)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/pt_BR/installing-boot9strap-(ssloth-browser)'>Installing boot9strap (SSLoth-Browser)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/pt_BR/installing-boot9strap-(ssloth-browser)'>Instalando boot9strap (SSLoth-Browser)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/pt_BR/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/pt_BR/installing-boot9strap-(fredtool-inject)'>Instalando boot9strap (Fredtool-Inject)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(menuhax)'>Instalando boot9strap (menuhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/pt_BR/installing-boot9strap-(kartdlphax)'>Installing boot9strap (kartdlphax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/pt_BR/installing-boot9strap-(kartdlphax)'>Instalando boot9strap (kartdlphax)</a></li>
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/pt_BR/finalizing-setup'>Finalizing Setup</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/pt_BR/finalizing-setup'>Finalizando a Instalação</a></li>
           
         
       </ol>
     </li>
   </ul>
 </nav>
+<!-- hacks-guide change end -->
+
 </div>
 
+
+<!-- hacks-guide change end-->
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
@@ -469,6 +485,7 @@ window.cookieconsent.initialise({
       <section class="page__content" itemprop="text">
         
 
+<!-- hacks-guide change start -->
         <hr>
 
         
@@ -483,6 +500,7 @@ window.cookieconsent.initialise({
         
 
         <hr>
+<!-- hacks-guide change end -->
 
         <aside class="sidebar__right">
 <nav class="toc">
@@ -496,8 +514,8 @@ window.cookieconsent.initialise({
       <li><a href="#seção-iii---substituindo-as-configurações-de-conexão-ds" id="markdown-toc-seção-iii---substituindo-as-configurações-de-conexão-ds">Seção III - Substituindo as Configurações de Conexão DS</a></li>
       <li><a href="#seção-iv---exploit-do-flipnote" id="markdown-toc-seção-iv---exploit-do-flipnote">Seção IV - Exploit do Flipnote</a></li>
       <li><a href="#seção-v---instalando-boot9strap" id="markdown-toc-seção-v---instalando-boot9strap">Seção V - Instalando boot9strap</a></li>
-      <li><a href="#section-vi---luma3ds-configuration" id="markdown-toc-section-vi---luma3ds-configuration">Section VI - Luma3DS Configuration</a></li>
-      <li><a href="#section-vii---restoring-ds-connection-settings" id="markdown-toc-section-vii---restoring-ds-connection-settings">Section VII - Restoring DS Connection Settings</a></li>
+      <li><a href="#seção-vi---configuração-do-luma3ds" id="markdown-toc-seção-vi---configuração-do-luma3ds">Seção VI - Configuração do Luma3DS</a></li>
+      <li><a href="#seção-vii---restaurando-as-configurações-de-conexão-ds" id="markdown-toc-seção-vii---restaurando-as-configurações-de-conexão-ds">Seção VII - Restaurando as Configurações de Conexão DS</a></li>
     </ul>
   </li>
   <li><a href="#continue-para-finalizando-a-instalação" id="markdown-toc-continue-para-finalizando-a-instalação">Continue para Finalizando a instalação</a></li>
@@ -601,7 +619,7 @@ window.cookieconsent.initialise({
   <li>Navegue para <code class="language-plaintext highlighter-rouge">Gerenciamento de dados</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">Cartão SD</code> (<a href="/images/screenshots/bb3/dsiware-management.png">imagem</a>)</li>
   <li>Selecione o aplicativo “Haxxxxxxx!”
     <ul>
-      <li>If you are unable to select the “Haxxxxxxxxx” title, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
+      <li>Se você não conseguir selecionar o aplicativo “Haxxxxxxxxx”, <a href="troubleshooting#installing-boot9strap-fredtool-inject">siga este guia de troubleshooting</a></li>
     </ul>
   </li>
   <li>Selecione “Copy”, então selecione “OK”</li>
@@ -618,13 +636,13 @@ window.cookieconsent.initialise({
   <li>Navegue até <code class="language-plaintext highlighter-rouge">Configurações da Internet</code> -&gt; <code class="language-plaintext highlighter-rouge">Conexões Nintendo DS</code>, depois selecione “OK” (<a href="/images/screenshots/fredtool/dsconnection.png">image</a>)</li>
   <li>Se o exploit foi bem sucedido, seu console irá abrir a versão JPN do Flipnote Studio
     <ul>
-      <li>If your console does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
+      <li>Se o seu console não carregar a versão JPN do Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool-inject">siga este guia de troubleshooting</a></li>
     </ul>
   </li>
   <li>Complete o processo inicial do jogo até você chegar no menu principal
     <ul>
       <li>Selecione a opção da esquerda sempre que solicitado durante o processo de instalação</li>
-      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
+      <li>Se você encontrar um problema ao fazer essa seção, <a href="troubleshooting#installing-boot9strap-fredtool">confira este guia de troubleshooting</a> para seu erro</li>
     </ul>
   </li>
   <li>Usando a touch-screen, selecione a caixa grande da esquerda, então selecione a caixa com um ícone do cartão SD</li>
@@ -645,7 +663,7 @@ window.cookieconsent.initialise({
 <ol>
   <li>Usando os botões direcionais, mova para “Install boot9strap”
     <ul>
-      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to start over from the previous section</li>
+      <li>Se você perder este passo, o sistema irá voltar para o Menu HOME ao invés de instalar o boot9strap e você precisará abrir o DS Download Play e reiniciar essa seção desde o início</li>
     </ul>
   </li>
   <li>Pressione (A), depois pressione START e SELECT ao mesmo tempo para iniciar o processo</li>
@@ -658,7 +676,7 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="section-vi---luma3ds-configuration">Section VI - Luma3DS Configuration</h4>
+<h4 id="seção-vi---configuração-do-luma3ds">Seção VI - Configuração do Luma3DS</h4>
 
 <ol>
   <li>Aperte e segure (Select) e enquanto segura (Select), ligue seu console</li>
@@ -678,7 +696,7 @@ window.cookieconsent.initialise({
   <li>Na próxima página, você irá instalar aplicativos homebrew úteis para concluir sua instalação.</li>
 </ul>
 
-<h4 id="section-vii---restoring-ds-connection-settings">Section VII - Restoring DS Connection Settings</h4>
+<h4 id="seção-vii---restaurando-as-configurações-de-conexão-ds">Seção VII - Restaurando as Configurações de Conexão DS</h4>
 
 <p>Nesta seção, você irá restaurar as Configurações de Conexão Nintendo DS da forma que ela estava antes de ela ser temporariamente substituída pelo Flipnote Studio em uma seção anterior.</p>
 
@@ -744,29 +762,36 @@ window.cookieconsent.initialise({
         
       
     
+
+<!-- hacks-guide change start: force disable atom feed-->
 <!--
     
       <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
     
     </ul>
   -->
+<!-- hacks-guide change end -->
+
 </div>
 
-<!-- custom footer, guide specific -->
+<!-- hacks-guide change start: custom footer -->
 
 
 
 <div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Navegação do Site</a> - <a href="privacy-policy">Política de Privacidade</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<!-- hacks-guide change end -->
 
       </footer>
     </div>
+<!-- hacks-guide change end -->
 
     
   <script src="/assets/js/main.min.js"></script>
 
 
-<!-- for guide purposes all caching is removed and is separately built. -->
+<!-- hacks-guide change start: Disable caching -->
 
+<!-- hacks-guide change end -->
 
 
 

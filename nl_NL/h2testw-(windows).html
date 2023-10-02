@@ -6,7 +6,6 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
-<!-- for guide purposes all caching is removed and is separately built. -->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -91,7 +90,10 @@
 
 
     <!-- start custom head snippets -->
+
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- hacks-guide change start: cookie consent, favicon, locales -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
@@ -135,10 +137,13 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+<!-- hacks-guide change end -->
 
 <!-- end custom head snippets -->
+
   </head>
 
+<!-- hacks-guide change start: Disable caching -->
   <body class="layout--single">
     <nav class="skip-links">
   <ul>
@@ -159,13 +164,16 @@ window.cookieconsent.initialise({
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <!-- <a class="site-title" href="/">
+<!-- hacks-guide change start: disable default masthead title -->
+      <!--
+        <a class="site-title" href="/">
           3DS Hacks Guide
           
         </a>
       -->
+<!-- hacks-guide change end -->
         <ul class="visible-links">
-          <!-- modified to use multilang, guide-specific -->
+<!-- hacks-guide change start: multi-language configuration -->
           
           
           
@@ -212,10 +220,10 @@ window.cookieconsent.initialise({
               <li class="masthead__menu-item"><a href="/nl_NL/site-navigation">Navigatie</a></li>
             
           
-          <!-- end guide specific -->
+<!-- hacks-guide change end -->
         </ul>
         
-        <!-- completely redo hidden links for multilang, guide-specific -->
+<!-- hacks-guide change start: Add language selector -->
         <ul class="hidden-links links-menu hidden"></ul>
         <ul class="hidden-links lang-menu hidden">
           
@@ -259,6 +267,7 @@ window.cookieconsent.initialise({
           <div class="navicon"></div>
         </button>
         <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
+<!-- hacks-guide change end -->
       </nav>
     </div>
   </div>
@@ -271,7 +280,9 @@ window.cookieconsent.initialise({
 
 
 <div id="main" role="main">
-  <!-- 
+  <!-- hacks-guide change start: Implement progress table, replace existing sidebar -->
+<!--
+
   <div class="sidebar sticky">
   
   
@@ -285,7 +296,8 @@ window.cookieconsent.initialise({
 
 
 <div class="sidebar sticky" style="display: none;">
-  
+  <!-- hacks-guide change start: Refactor entire subsection to allow using translations -->
+
 
 
 
@@ -445,8 +457,12 @@ window.cookieconsent.initialise({
     </li>
   </ul>
 </nav>
+<!-- hacks-guide change end -->
+
 </div>
 
+
+<!-- hacks-guide change end-->
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
@@ -469,6 +485,7 @@ window.cookieconsent.initialise({
       <section class="page__content" itemprop="text">
         
 
+<!-- hacks-guide change start -->
         <hr>
 
         
@@ -483,6 +500,7 @@ window.cookieconsent.initialise({
         
 
         <hr>
+<!-- hacks-guide change end -->
 
         <aside class="sidebar__right">
 <nav class="toc">
@@ -580,29 +598,36 @@ window.cookieconsent.initialise({
         
       
     
+
+<!-- hacks-guide change start: force disable atom feed-->
 <!--
     
       <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
     
     </ul>
   -->
+<!-- hacks-guide change end -->
+
 </div>
 
-<!-- custom footer, guide specific -->
+<!-- hacks-guide change start: custom footer -->
 
 
 
 <div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Site Navigatie</a> - <a href="privacy-policy">Privacybeleid</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<!-- hacks-guide change end -->
 
       </footer>
     </div>
+<!-- hacks-guide change end -->
 
     
   <script src="/assets/js/main.min.js"></script>
 
 
-<!-- for guide purposes all caching is removed and is separately built. -->
+<!-- hacks-guide change start: Disable caching -->
 
+<!-- hacks-guide change end -->
 
 
 

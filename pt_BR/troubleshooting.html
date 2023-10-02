@@ -6,7 +6,6 @@
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
-<!-- for guide purposes all caching is removed and is separately built. -->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -91,7 +90,10 @@
 
 
     <!-- start custom head snippets -->
+
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- hacks-guide change start: cookie consent, favicon, locales -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
 <link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
@@ -135,10 +137,13 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+<!-- hacks-guide change end -->
 
 <!-- end custom head snippets -->
+
   </head>
 
+<!-- hacks-guide change start: Disable caching -->
   <body class="layout--single">
     <nav class="skip-links">
   <ul>
@@ -159,13 +164,16 @@ window.cookieconsent.initialise({
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <!-- <a class="site-title" href="/">
+<!-- hacks-guide change start: disable default masthead title -->
+      <!--
+        <a class="site-title" href="/">
           3DS Hacks Guide
           
         </a>
       -->
+<!-- hacks-guide change end -->
         <ul class="visible-links">
-          <!-- modified to use multilang, guide-specific -->
+<!-- hacks-guide change start: multi-language configuration -->
           
           
           
@@ -212,10 +220,10 @@ window.cookieconsent.initialise({
               <li class="masthead__menu-item"><a href="/pt_BR/site-navigation">Navegação do Site</a></li>
             
           
-          <!-- end guide specific -->
+<!-- hacks-guide change end -->
         </ul>
         
-        <!-- completely redo hidden links for multilang, guide-specific -->
+<!-- hacks-guide change start: Add language selector -->
         <ul class="hidden-links links-menu hidden"></ul>
         <ul class="hidden-links lang-menu hidden">
           
@@ -259,6 +267,7 @@ window.cookieconsent.initialise({
           <div class="navicon"></div>
         </button>
         <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
+<!-- hacks-guide change end -->
       </nav>
     </div>
   </div>
@@ -271,7 +280,9 @@ window.cookieconsent.initialise({
 
 
 <div id="main" role="main">
-  <!-- 
+  <!-- hacks-guide change start: Implement progress table, replace existing sidebar -->
+<!--
+
   <div class="sidebar sticky">
   
   
@@ -285,7 +296,8 @@ window.cookieconsent.initialise({
 
 
 <div class="sidebar sticky" style="display: none;">
-  
+  <!-- hacks-guide change start: Refactor entire subsection to allow using translations -->
+
 
 
 
@@ -374,23 +386,23 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/pt_BR/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/pt_BR/installing-boot9strap-(petit-compwner)'>Instalando boot9strap (petit-compwner)</a></li>
           
         
           
-            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/pt_BR/dumping-eshop-dsiware'>Dumping eShop DSiWare</a></li>
+            <li style="display: none;" data-name="dumping-eshop-dsiware"><a href='/pt_BR/dumping-eshop-dsiware'>Fazendo dump de DSiWare da eShop</a></li>
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(Multiple Options)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(Múltiplas Opções)</i></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Flashing ntrboot (3DS Single System)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Flashing ntrboot (Único 3DS)</a></li>
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (3DS Multi System)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (Vários 3DS)</a></li>
           
         
           
@@ -406,47 +418,51 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(hardmod)"><a href='/pt_BR/installing-boot9strap-(hardmod)'>Installing boot9strap (Hardmod)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(hardmod)"><a href='/pt_BR/installing-boot9strap-(hardmod)'>Instalando boot9strap (Hardmod)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/pt_BR/installing-boot9strap-(ntrboot)'>Installing boot9strap (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/pt_BR/installing-boot9strap-(ntrboot)'>Instalando boot9strap (ntrboot)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/pt_BR/installing-boot9strap-(soundhax)'>Installing boot9strap (Soundhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/pt_BR/installing-boot9strap-(soundhax)'>Instalando boot9strap (Soundhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/pt_BR/installing-boot9strap-(safecerthax)'>Installing boot9strap (safecerthax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/pt_BR/installing-boot9strap-(safecerthax)'>Instalando boot9strap (safecerthax)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/pt_BR/installing-boot9strap-(ssloth-browser)'>Installing boot9strap (SSLoth-Browser)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/pt_BR/installing-boot9strap-(ssloth-browser)'>Instalando boot9strap (SSLoth-Browser)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/pt_BR/installing-boot9strap-(fredtool-inject)'>Installing boot9strap (Fredtool-Inject)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(fredtool-inject)"><a href='/pt_BR/installing-boot9strap-(fredtool-inject)'>Instalando boot9strap (Fredtool-Inject)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(menuhax)'>Installing boot9strap (menuhax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(menuhax)"><a href='/pt_BR/installing-boot9strap-(menuhax)'>Instalando boot9strap (menuhax)</a></li>
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/pt_BR/installing-boot9strap-(kartdlphax)'>Installing boot9strap (kartdlphax)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/pt_BR/installing-boot9strap-(kartdlphax)'>Instalando boot9strap (kartdlphax)</a></li>
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/pt_BR/finalizing-setup'>Finalizing Setup</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/pt_BR/finalizing-setup'>Finalizando a Instalação</a></li>
           
         
       </ol>
     </li>
   </ul>
 </nav>
+<!-- hacks-guide change end -->
+
 </div>
 
+
+<!-- hacks-guide change end-->
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
@@ -469,6 +485,7 @@ window.cookieconsent.initialise({
       <section class="page__content" itemprop="text">
         
 
+<!-- hacks-guide change start -->
         <hr>
 
         
@@ -483,6 +500,7 @@ window.cookieconsent.initialise({
         
 
         <hr>
+<!-- hacks-guide change end -->
 
         <p>Esta página oferece troubleshooting para problemas comuns. Se você não consegue resolver seu problema com o conselho nesta página, por favor entre no <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew no Discord</a> e descreva o seu problema, incluindo o que você já tentou.</p>
 
@@ -629,9 +647,9 @@ window.cookieconsent.initialise({
 
 <details>
 <summary><u>Menu de Gerenciamento de DSiWare mostra um crash sem mostrar o menu multihax do BB3</u></summary>
-<p>Certifique-se de que <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> seja o único arquivo em <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt;<ID1>` -&gt; `Nintendo DSiWare`. If it is, then re-create it with the [Bannerbomb3 Injector](https://zoogie.github.io/web/bb3).</ID1></p>
+<p>Certifique-se de que <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> seja o único arquivo em <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt;<ID1>` -&gt; `Nintendo DSiWare`. Se for o caso, re-crie-o com o [Bannerbomb3 Injector](https://zoogie.github.io/web/bb3).</ID1></p>
 
-<p>Além disso, certifique-se de que o <code class="language-plaintext highlighter-rouge">bb3.bin</code> está na raiz do cartão SD. If it is missing, then download the latest release of <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a> (direct download), and copy the <code class="language-plaintext highlighter-rouge">bb3.bin</code> file from the Release <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card.</p>
+<p>Além disso, certifique-se de que o <code class="language-plaintext highlighter-rouge">bb3.bin</code> está na raiz do cartão SD. Caso esteja faltando, baixe a última versão do <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a> (download direto) e copie o arquivo <code class="language-plaintext highlighter-rouge">bb3.bin</code> do <code class="language-plaintext highlighter-rouge">.zip</code> para a raiz do seu cartão SD.</p>
 
 <p>Se nenhuma destas soluções resolver este problema, então custom firmware pode ter sido desinstalado nesse console de uma forma que torna esse método impossível de executar. Se for esse o caso, junte-se ao <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> e peça ajuda, em Inglês.</p>
 </details>
@@ -645,7 +663,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>O Gerenciamento de DSiWare mostra um ponto de interrogação</u></summary>
 
-<p>Pode haver um problema com o seu arquivo <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> (pode estar corrompido ou destinado ao 3DS errado). Re-create your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file with the <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>, ensuring that you use the <code class="language-plaintext highlighter-rouge">movable.sed</code> file for your console.</p>
+<p>Pode haver um problema com o seu arquivo <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> (pode estar corrompido ou destinado ao 3DS errado). Recrie seu arquivo <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> com o <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>, garantindo que você use o arquivo <code class="language-plaintext highlighter-rouge">movable.sed</code> para o seu console.</p>
 </details>
 
 <h2 id="instalando-boot9strap-fredtool-inject">Instalando boot9strap (Fredtool-Inject)</h2>
@@ -927,7 +945,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Error #02: Missing essential.exefs</u></summary>
 
-<p>Você disse ‘No’ para a mensagem “Make essential files backup?” no GodMode9. Power off your console, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+<p>Você disse ‘No’ para a mensagem “Make essential files backup?” no GodMode9. Desligue seu dispositivo, ligue-o enquanto segura (Start) para entrar novamente no GodMode9, diga ‘Yes’ para a mensagem, e então tente novamente.</p>
 
 </details>
 
@@ -982,7 +1000,7 @@ window.cookieconsent.initialise({
   <li>Selecione “finalize”</li>
   <li>Continue o script normalmente
     <ul>
-      <li>The NAND backup will be automatically skipped</li>
+      <li>O backup da NAND será automaticamente pulado</li>
     </ul>
   </li>
 </ol>
@@ -992,7 +1010,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Information #05: No title database</u></summary>
 
-<p>Press (A) to import a title database, unlock SysNAND writing by entering the buttons on-screen, then continue the script as normal.</p>
+<p>Aperte (A) para importar um title database, desbloqueie SysNAND apertando os botões na tela, e depois continue o script normalmente.</p>
 
 </details>
 
@@ -1036,23 +1054,23 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Error #12: Copy (file).db fail</u></summary>
 
-<p>Ensure that your SD card is not <a href="/images/sdlock.png">locked</a>. If the SD card is not locked and you continue to get this error, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+<p>Certifique-se de que seu cartão SD não esteja <a href="/images/sdlock.png">bloqueado</a>. Se o cartão SD não estiver bloqueado e você continuar a receber este erro, junte-se ao <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew no Discord</a> para assistência.</p>
 
 </details>
 
 <details>
 <summary><u>Information #17: Duplicate NAND backup</u></summary>
 
-<p>The script has detected that the Nintendo 3DS folder is missing AND that you have already made a NAND backup before. If you intend to install homebrew applications, you should do the following:</p>
+<p>O script detectou que a pasta Nintendo 3DS está faltando e que você já fez um backup da NAND antes. Se você pretende instalar o homebrew, você deve fazer o seguinte:</p>
 
 <ol>
-  <li>Press (B) to cancel making another NAND backup</li>
+  <li>Aperte (B) para cancelar outro backup da NAND</li>
   <li>Segure (R) e aperte (Start) ao mesmo tempo para desligar seu console</li>
-  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> to a safe location on your computer</li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> from your SD card</li>
-  <li>If you moved your Nintendo 3DS folder off of your SD card to get to this point, copy it back to your SD card
+  <li>Copie os arquivos em <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> do seu SD para um local seguro no seu computador</li>
+  <li>Apague <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> do seu cartão SD</li>
+  <li>Se você moveu sua pasta Nintendo 3DS para fora do seu cartão SD para chegar a este ponto, copie-a de volta para o seu cartão SD
     <ul>
-      <li>If you do not have a Nintendo 3DS folder, boot into the HOME Menu at least once with the SD card inserted to automatically generate it</li>
+      <li>Se você não possui uma pasta Nintendo 3DS, Inicie no Menu HOME pelo menos uma vez com o cartão SD inserido para gerá-la automaticamente</li>
     </ul>
   </li>
   <li>Aperte e segure (Start), e enquanto segura (Start), ligue seu console. Isso vai inicializar o GodMode9</li>
@@ -1361,29 +1379,36 @@ Entretanto, se você não sabe o PIN e, portanto, não pode acessar as configura
         
       
     
+
+<!-- hacks-guide change start: force disable atom feed-->
 <!--
     
       <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
     
     </ul>
   -->
+<!-- hacks-guide change end -->
+
 </div>
 
-<!-- custom footer, guide specific -->
+<!-- hacks-guide change start: custom footer -->
 
 
 
 <div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Navegação do Site</a> - <a href="privacy-policy">Política de Privacidade</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<!-- hacks-guide change end -->
 
       </footer>
     </div>
+<!-- hacks-guide change end -->
 
     
   <script src="/assets/js/main.min.js"></script>
 
 
-<!-- for guide purposes all caching is removed and is separately built. -->
+<!-- hacks-guide change start: Disable caching -->
 
+<!-- hacks-guide change end -->
 
 
 
