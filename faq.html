@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/installing-boot9strap-(mset9)'>Installing boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
           
         
@@ -515,13 +519,13 @@ window.cookieconsent.initialise({
 </aside>
 
 <div class="notice--danger">
-<p><strong>3DS firmware 11.17.0 was recently released</strong>. Here’s what you should know:</p>
+<p><strong>The latest 3DS firmware is 11.17.0</strong>. Here’s what you should know:</p>
 
 <ul>
   <li>If your console is running <em>Luma 10.2.1 or higher</em>, it is <em>100% safe</em> to update. You can check your Luma version by holding (Select) while booting your console.</li>
   <li>If your console is on an older Luma version, you should <a href="checking-for-cfw">update Luma</a> before you update your console to 11.17.0.</li>
-  <li>If your console does not yet have custom firmware, <strong>do NOT update to the latest version</strong> unless this guide instructs you to.</li>
-  <li>If your unmodified console is ALREADY on 11.17.0, this guide has been updated accordingly. Specifically, New3DS-family consoles have a <a href="installing-boot9strap-(super-skaterhax)">free software method</a>, while Old3DS-family consoles will need to use <a href="alternate-exploits">alternate exploits</a> that rely on external hardware or software.</li>
+  <li>If your console does not yet have custom firmware, <strong>do NOT update to the latest version</strong> unless this guide instructs you to. The methods on earlier firmwares are easier and more stable.</li>
+  <li>If your unmodified console is ALREADY on 11.17.0, this guide has been updated accordingly. Both <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> and <a href="installing-boot9strap-(mset9)">Old3DS</a> now have free software methods that (for the most part) do not require external hardware or software.</li>
 </ul>
 
 </div>
@@ -533,7 +537,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>I am on the latest system version. Is my console hackable without any external hardware/prerequisites?</u></summary>
 
-<p>It depends on your console model. At the moment, New 3DS / New 3DS XL / New 2DS XL is <a href="installing-boot9strap-(super-skaterhax)">able to be modded on 11.17.0</a> without any prerequisites (e.g. eShop titles, physical items), while 3DS / 3DS XL / 2DS requires <a href="alternate-exploits">additional software or hardware</a>.</p>
+<p><strong>Yes!</strong> New 3DS / New 3DS XL / New 2DS XL can use <a href="installing-boot9strap-(super-skaterhax)">super-skaterhax</a>, while 3DS / 3DS XL / 2DS can use <a href="installing-boot9strap-(mset9)">MSET9</a>.</p>
 
 </details>
 
@@ -598,7 +602,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>I heard about this thing I have to pay for (Gateway, Sky3DS, ntrboot, R4, etc). Is that something I need?</u></summary>
 
-<p>At the moment, 3DS / 3DS XL / 2DS consoles on 11.17.0 need to use one of many <a href="alternate-exploits">alternate exploits</a> to install custom firmware. If none of the other prerequisites are available, then ntrboot will be the cheapest available option (roughly $20 USD).</p>
+<p>No. While a DS flashcart can be used to mod a 3DS using <a href="ntrboot">ntrboot</a>, there is now a free software method available for most consoles.</p>
 
 <p>3DS-mode flashcarts like Gateway and Sky3DS are not recommended because they are obsolete and may carry ban or brick risk.</p>
 </details>
@@ -772,13 +776,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

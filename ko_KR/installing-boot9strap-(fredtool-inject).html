@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -527,7 +531,7 @@ window.cookieconsent.initialise({
 
 <p>이 방식은 Seedminer에서 얻은 <code class="language-plaintext highlighter-rouge">movable.sed</code> 파일을 사용해 어느 DSiWare 타이틀을 해독해 익스플로잇 가능한 DSiWare 타이틀을 DS 소프트웨어용 인터넷 설정에 주입합니다.</p>
 
-<p>이 작업은 <a href="https://www.3dbrew.org/wiki/3DS_System_Flaws">이곳</a>에 자세히 설명되어 있는 “FIRM partitions known-plaintext” 익스플로잇을 구현한 작업입니다.</p>
+<p>이 작업은 <a href="https://www.3dbrew.org/wiki/3DS_System_Flaws">이곳</a>에 자세히 설명되어 있는 “FIRM partitions known-plaintext” 취약점을 구현한 작업입니다.</p>
 
 </details>
 
@@ -590,7 +594,6 @@ window.cookieconsent.initialise({
       <li><code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code>은 <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> 안에 있는 32글자 폴더명입니다</li>
     </ul>
   </li>
-  <li><code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더 내 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일을 삭제해 주세요</li>
   <li>다운로드한 DSiWare 압축 파일(output_(이름).zip)에서, <code class="language-plaintext highlighter-rouge">hax</code> 폴더 안에 있는 <code class="language-plaintext highlighter-rouge">42383841.bin</code> 파일을 <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더로 복사해 주세요
  <img src="https://3ds.hacks.guide/images/screenshots/bb3/dsiware-location-4.png" alt="" class="notice--info" /></li>
   <li>Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code>안에 있는 <code class="language-plaintext highlighter-rouge">boot.firm</code>과 <code class="language-plaintext highlighter-rouge">boot.3dsx</code>를 SD 카드의 루트에 복사해 주세요
@@ -617,7 +620,7 @@ window.cookieconsent.initialise({
   <li><code class="language-plaintext highlighter-rouge">데이터 관리</code> -&gt; <code class="language-plaintext highlighter-rouge">DSiWare</code> -&gt; <code class="language-plaintext highlighter-rouge">SD 카드</code>로 들어가주세요 (<a href="/images/screenshots/bb3/dsiware-management.png">사진</a>)</li>
   <li>“Haxxxxxxxxx!” 타이틀을 선택해 주세요
     <ul>
-      <li>If you are unable to select the “Haxxxxxxxxx” title, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
+      <li>“Haxxxxxxxxx” 타이틀을 선택할 수 없다면, <a href="troubleshooting#installing-boot9strap-fredtool-inject">이 문제 해결 가이드</a>를 참고해 주세요</li>
     </ul>
   </li>
   <li>“복사”를 선택한 후, “OK”를 선택해 주세요</li>
@@ -634,13 +637,13 @@ window.cookieconsent.initialise({
   <li><code class="language-plaintext highlighter-rouge">인터넷 설정</code> -&gt; <code class="language-plaintext highlighter-rouge">DS 소프트웨어용 설정</code>으로 들어가 “OK”를 선택해 주세요 (<a href="/images/screenshots/fredtool/dsconnection.png">사진 (영어)</a>)</li>
   <li>만약 익스플로잇이 성공적이었다면, 콘솔은 JPN 버전의 Flipnote Studio를 실행할 겁니다
     <ul>
-      <li>If your console does not load the JPN version of Flipnote Studio, <a href="troubleshooting#installing-boot9strap-fredtool-inject">follow this troubleshooting guide</a></li>
+      <li>콘솔이 일본어 Flipnote Studio로 로드되지 않는다면, <a href="troubleshooting#installing-boot9strap-fredtool-inject">이 문제 해결 가이드</a>를 참고해 주세요</li>
     </ul>
   </li>
   <li>메인 메뉴로 갈 때까지의 초기 설정을 완료하세요
     <ul>
       <li>만약 설정 중 선택이 표시될 시는 왼쪽을 선택해 주세요</li>
-      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
+      <li>여기까지 진행하는 데에 문제가 발생한다면, <a href="troubleshooting#installing-boot9strap-fredtool-inject">이 문제 해결 가이드</a>을 참고해 주세요</li>
     </ul>
   </li>
   <li>터치 스크린을 사용해서, 오른쪽의 큰 버튼을 선택하고, 그 후 SD 카드 아이콘이 붙은 버튼을 선택해 주세요</li>
@@ -661,7 +664,7 @@ window.cookieconsent.initialise({
 <ol>
   <li>십자 패드를 사용해서, “Install boot9strap”으로 이동해 주세요
     <ul>
-      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to start over from the previous section</li>
+      <li>이 단계를 놓쳤다면, 시스템은 boot9strap을 설치하는 대신 HOME 메뉴로 나가집니다. 이렇게 되면 이전 섹션의 처음부터 다시 시작해야 합니다</li>
     </ul>
   </li>
   <li>(A) 버튼을 누른 후, START와 SELECT를 동시에 눌러 작업을 실행해 주세요</li>
@@ -794,13 +797,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

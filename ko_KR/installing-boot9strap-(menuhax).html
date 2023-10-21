@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Installing boot9strap (menuhax) - 3DS Hacks Guide</title>
+<!-- begin _includes/seo.html --><title>boot9strap 설치 (menuhax) - 3DS Hacks Guide</title>
 <meta name="description" content="A complete guide to 3DS custom firmware">
 
 
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="3DS Hacks Guide">
-<meta property="og:title" content="Installing boot9strap (menuhax)">
+<meta property="og:title" content="boot9strap 설치 (menuhax)">
 <meta property="og:url" content="https://3ds.hacks.guide/ko_KR/installing-boot9strap-(menuhax).html">
 
 
@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -466,7 +470,7 @@ window.cookieconsent.initialise({
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Installing boot9strap (menuhax)">
+    <meta itemprop="headline" content="boot9strap 설치 (menuhax)">
     
     
     
@@ -474,7 +478,7 @@ window.cookieconsent.initialise({
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Installing boot9strap (menuhax)
+          <h1 id="page-title" class="page__title" itemprop="headline">boot9strap 설치 (menuhax)
 </h1>
           
 
@@ -508,9 +512,9 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#준비물" id="markdown-toc-준비물">준비물</a>    <ul>
       <li><a href="#섹션-i---준비-작업" id="markdown-toc-섹션-i---준비-작업">섹션 I - 준비 작업</a></li>
-      <li><a href="#section-ii---menuhax67" id="markdown-toc-section-ii---menuhax67">Section II - menuhax67</a></li>
+      <li><a href="#섹션-ii---menuhax67" id="markdown-toc-섹션-ii---menuhax67">섹션 II - menuhax67</a></li>
       <li><a href="#섹션-iii---boot9strap-설치하기" id="markdown-toc-섹션-iii---boot9strap-설치하기">섹션 III - boot9strap 설치하기</a></li>
-      <li><a href="#section-iv---removing-menuhax67" id="markdown-toc-section-iv---removing-menuhax67">Section IV - Removing menuhax67</a></li>
+      <li><a href="#섹션-iv---menuhax67-제거" id="markdown-toc-섹션-iv---menuhax67-제거">섹션 IV - menuhax67 제거</a></li>
     </ul>
   </li>
   <li><a href="#마무리-단계-로-계속합니다" id="markdown-toc-마무리-단계-로-계속합니다">마무리 단계 로 계속합니다</a></li>
@@ -561,7 +565,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/nimdsphax-location.png" alt="" /></p>
 
-<h4 id="section-ii---menuhax67">Section II - menuhax67</h4>
+<h4 id="섹션-ii---menuhax67">섹션 II - menuhax67</h4>
 
 <p>In this section you will use the menuhax67 exploit installed earlier to launch nimdsphax, which will load SafeB9SInstaller.</p>
 
@@ -602,13 +606,7 @@ window.cookieconsent.initialise({
   <li>(Start)를 눌러 저장하고 콘솔을 다시 시작해 주세요</li>
 </ol>
 
-<p>이제 콘솔은 Luma3DS를 기본으로 부팅 됩니다.</p>
-<ul>
-  <li>Luma3DS는 보통 HOME 메뉴와 똑같이 보입니다. 만약 콘솔이 HOME 메뉴로 부팅되었다면, 커스텀 펌웨어가 설치되어 있습니다.</li>
-  <li>다음 페이지에서는 커펌에 유용한 홈브류를 설치해 콘솔 준비를 완료할 것 입니다.</li>
-</ul>
-
-<h4 id="section-iv---removing-menuhax67">Section IV - Removing menuhax67</h4>
+<h4 id="섹션-iv---menuhax67-제거">섹션 IV - menuhax67 제거</h4>
 
 <p>In this section, you will trigger the BannerBomb3 exploit a second time so that you can uninstall the menuhax67 exploit you installed in Section II. This will allow you to use the HOME Menu settings normally again.</p>
 
@@ -623,8 +621,14 @@ window.cookieconsent.initialise({
   <li>콘솔의 전원을 꺼 주세요</li>
   <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
   <li>SD 카드의 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더로 이동해 주세요</li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> from your Nintendo DSiWare folder and from your computer. This file will not be needed anymore</li>
+  <li><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일을 Nintendo DSiWare 폴더와 PC에서 지워 주세요. 더 이상 이 파일은 필요가 없습니다</li>
 </ol>
+
+<p>이제 콘솔은 Luma3DS를 기본으로 부팅 됩니다.</p>
+<ul>
+  <li>Luma3DS는 보통 HOME 메뉴와 똑같이 보입니다. 만약 콘솔이 HOME 메뉴로 부팅되었다면, 커스텀 펌웨어가 설치되어 있습니다.</li>
+  <li>다음 페이지에서는 커펌에 유용한 홈브류를 설치해 콘솔 준비를 완료할 것 입니다.</li>
+</ul>
 
 <hr />
 
@@ -711,13 +715,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

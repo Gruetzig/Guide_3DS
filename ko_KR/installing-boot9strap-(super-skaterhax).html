@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -553,7 +557,7 @@ window.cookieconsent.initialise({
       <li>SD 카드의 루트는 SD 카드를 열 때 보이는 디렉토리이고, Nintendo 3DS 폴더가 보이지만 그 안에 들어가 있지 않은 상태의 폴더입니다</li>
     </ul>
   </li>
-  <li>Copy everything inside the folder for your console’s region and version (<code class="language-plaintext highlighter-rouge">arm11code.bin</code> and <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>) in the super-skaterhax <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+  <li>super-skaterhax <code class="language-plaintext highlighter-rouge">.zip</code> 파일 속, 콘솔 지역과 버전에 맞는 폴더 안의 모든 파일들(‘arm11code.bin’ 과 ‘browserhax_hblauncher_ropbin_payload.bin’)을 SD 카드의 루트에 복사해 주세요</li>
   <li>SD 카드이 루트에 <code class="language-plaintext highlighter-rouge">boot9strap</code> 라는 이름으로 새 폴더를 생성해 주세요</li>
   <li>SD 카드에 있는 <code class="language-plaintext highlighter-rouge">/boot9strap/</code> 폴더에 boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> 파일 안에 압축되있는 <code class="language-plaintext highlighter-rouge">boot9strap.firm</code>과 <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code>을 복사해 주세요</li>
   <li>SafeB9SInstaller <code class="language-plaintext highlighter-rouge">.zip</code>의 <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code>을 SD 카드의 루트로 복사해 주세요</li>
@@ -595,7 +599,7 @@ window.cookieconsent.initialise({
   <li>(B)를 눌러 브라우저로 돌아가 주세요</li>
   <li>(Start) 를 눌러 브라우저 메뉴를 열어 주세요
     <ul>
-      <li>If your (Start) button does not respond, tap the 3-line menu on the bottom-right corner of the screen</li>
+      <li>(Start) 버튼이 동작하지 않을 경우, 하단 화면 오른쪽의 3줄 메뉴 버튼을 눌러 주세요</li>
     </ul>
   </li>
   <li>“설정”을 선택해 주세요</li>
@@ -607,14 +611,15 @@ window.cookieconsent.initialise({
       <li>If any prompts appear, approve all of them</li>
       <li>만약 콘솔에 노란 화면이 표시되면, 전원 버튼을 길게 눌러 콘솔의 전원을 끄고, 이 섹션을 다시 시도해 주세요</li>
       <li>만약 콘솔이 적색 화면에서 멈추는 경우, 전원 버튼을 길게 눌러 콘솔의 전원을 끄고, 섹션 II의 3단계를 다시 실행한 다음, 이 섹션을 다시 시도해 주세요</li>
-      <li>If you get another error, try again up to 5 times, and if it still doesn’t work, <a href="troubleshooting#installing-boot9strap-super-skaterhax">follow this troubleshooting guide</a></li>
+      <li>또 다른 오류가 발생하면 최대 5회까지 다시 시도하고, 여전히 작동하지 않으면 <a href="troubleshooting#installing-boot9strap-super-skaterhax">이 문제 해결 가이드를 따라 주세요</a></li>
     </ul>
   </li>
   <li>콘솔은 Homebrew Launcher로 부팅되었을 겁니다</li>
   <li>홈브류 목록에서 nimdsphax를 실행해 주세요</li>
   <li>익스플로잇이 성공적이었다면 SafeB9SInstaller로 부팅되었을 것입니다
     <ul>
-      <li>만약 콘솔이 적색 화면에서 멈추는 경우, 전원 버튼을 길게 눌러 콘솔의 전원을 끄고, 섹션 II의 3단계를 다시 실행한 다음, 이 섹션을 다시 시도해 주세요</li>
+      <li>If your console freezes on a red or green screen, hold the POWER button until it turns off, then retry this section</li>
+      <li>This may take up to five attempts</li>
     </ul>
   </li>
 </ol>
@@ -731,13 +736,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

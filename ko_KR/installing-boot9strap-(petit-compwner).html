@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -509,7 +513,7 @@ window.cookieconsent.initialise({
   <li><a href="#준비물" id="markdown-toc-준비물">준비물</a>    <ul>
       <li><a href="#섹션-i---cfw-확인" id="markdown-toc-섹션-i---cfw-확인">섹션 I - CFW 확인</a></li>
       <li><a href="#섹션-ii---준비-작업" id="markdown-toc-섹션-ii---준비-작업">섹션 II - 준비 작업</a></li>
-      <li><a href="#section-iii---petit-compwner" id="markdown-toc-section-iii---petit-compwner">Section III - petit-compwner</a></li>
+      <li><a href="#섹션-iii---petit-compwner" id="markdown-toc-섹션-iii---petit-compwner">섹션 III - petit-compwner</a></li>
       <li><a href="#섹션-iv---boot9strap-설치" id="markdown-toc-섹션-iv---boot9strap-설치">섹션 IV - boot9strap 설치</a></li>
       <li><a href="#섹션-v---luma3ds-구성" id="markdown-toc-섹션-v---luma3ds-구성">섹션 V - Luma3DS 구성</a></li>
     </ul>
@@ -572,11 +576,11 @@ window.cookieconsent.initialise({
   <li>
     <p>콘솔의 전원을 켜 주세요</p>
 
-    <p><img src="https://3ds.hacks.guide/images/screenshots/petit-compwner-root-layout.png" alt="" /></p>
+    <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/petit-compwner-root-layout.png" alt="" /></p>
   </li>
 </ol>
 
-<h4 id="section-iii---petit-compwner">Section III - petit-compwner</h4>
+<h4 id="섹션-iii---petit-compwner">섹션 III - petit-compwner</h4>
 
 <p>In this section, you will scan the QR codes needed to trigger the petit-compwner exploit.</p>
 
@@ -599,7 +603,7 @@ window.cookieconsent.initialise({
 <ol>
   <li>십자 패드를 사용해서, “Install boot9strap”으로 이동해 주세요
     <ul>
-      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to start over from the previous section</li>
+      <li>이 단계를 놓쳤다면, 시스템은 boot9strap을 설치하는 대신 HOME 메뉴로 나가집니다. 이렇게 되면 이전 섹션의 처음부터 다시 시작해야 합니다</li>
     </ul>
   </li>
   <li>(A) 버튼을 누른 후, START와 SELECT를 동시에 눌러 작업을 실행해 주세요</li>
@@ -717,13 +721,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

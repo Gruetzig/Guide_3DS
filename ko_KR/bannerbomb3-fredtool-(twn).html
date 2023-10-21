@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -680,7 +684,7 @@ window.cookieconsent.initialise({
   <li>메인 메뉴로 갈 때까지의 초기 설정을 완료하세요
     <ul>
       <li>만약 설정 중 선택이 표시될 시는 왼쪽을 선택해 주세요</li>
-      <li>If you encounter an issue while doing this section, <a href="troubleshooting#installing-boot9strap-fredtool-inject">check this troubleshooting guide</a> for your issue</li>
+      <li>여기까지 진행하는 데에 문제가 발생한다면, <a href="troubleshooting#installing-boot9strap-fredtool-inject">이 문제 해결 가이드</a>을 참고해 주세요</li>
     </ul>
   </li>
   <li>터치 스크린을 사용해서, 오른쪽의 큰 버튼을 선택하고, 그 후 SD 카드 아이콘이 붙은 버튼을 선택해 주세요</li>
@@ -701,7 +705,7 @@ window.cookieconsent.initialise({
 <ol>
   <li>십자 패드를 사용해서, “Install boot9strap”으로 이동해 주세요
     <ul>
-      <li>If you miss this step, the system will exit to HOME Menu instead of installing boot9strap and you will need to start over from the previous section</li>
+      <li>이 단계를 놓쳤다면, 시스템은 boot9strap을 설치하는 대신 HOME 메뉴로 나가집니다. 이렇게 되면 이전 섹션의 처음부터 다시 시작해야 합니다</li>
     </ul>
   </li>
   <li>(A) 버튼을 누른 후, START와 SELECT를 동시에 눌러 작업을 실행해 주세요</li>
@@ -742,6 +746,12 @@ window.cookieconsent.initialise({
   <li>본체 설정을 종료해 주세요</li>
   <li>콘솔의 전원을 꺼 주세요</li>
 </ol>
+
+<p>이제 콘솔은 Luma3DS를 기본으로 부팅 됩니다.</p>
+<ul>
+  <li>Luma3DS는 보통 HOME 메뉴와 똑같이 보입니다. 만약 콘솔이 HOME 메뉴로 부팅되었다면, 커스텀 펌웨어가 설치되어 있습니다.</li>
+  <li>다음 페이지에서는 커펌에 유용한 홈브류를 설치해 콘솔 준비를 완료할 것 입니다.</li>
+</ul>
 
 <hr />
 
@@ -828,13 +838,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

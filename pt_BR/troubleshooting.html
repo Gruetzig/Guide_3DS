@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/pt_BR/installing-boot9strap-(mset9)'>Instalando boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/pt_BR/installing-boot9strap-(petit-compwner)'>Instalando boot9strap (petit-compwner)</a></li>
           
         
@@ -402,7 +406,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (Vários 3DS)</a></li>
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (Múltiplos 3DS)</a></li>
           
         
           
@@ -523,8 +527,9 @@ window.cookieconsent.initialise({
   </li>
   <li><a href="#installing-boot9strap-soundhax">Instalando boot9strap (Soundhax)</a></li>
   <li><a href="#installing-boot9strap-ssloth-browser">Instalando boot9strap (SSLoth-Browser)</a></li>
+  <li><a href="#installing-boot9strap-super-skaterhax">Instalando boot9strap (super-skaterhax)</a></li>
   <li>
-    <p><a href="#installing-boot9strap-super-skaterhax">Instalando boot9strap (super-skaterhax)</a></p>
+    <p><a href="#installing-boot9strap-mset9">Instalando boot9strap (MSET9)</a></p>
   </li>
   <li><a href="#finalizando-a-instalação">Finalizando a instalação</a></li>
 </ul>
@@ -628,7 +633,7 @@ window.cookieconsent.initialise({
 
 <p>O site determinou que seu <code class="language-plaintext highlighter-rouge">movable.sed</code> não pode ser brute-forced. Certifique-se de que você deu o ID0 correto para o site. Se o seu ID0 estiver correto, então você não poderá usar o Seedminer e precisará usar um método alternativo.</p>
 
-<p>Se você tem um New 3DS / New 3DS XL / New 2DS XL (como indicado pelos quatro gatilhos na parte traseira e o C-Stick na direita), você pode seguir <a href="installing-boot9strap-(super-skaterhax)">Instalando boot9strap (super-skaterhax)</a>. Caso contrário, você precisará seguir um método que requer jogos ou hardware adicionais.</p>
+<p>New 3DS users can follow <a href="installing-boot9strap-(super-skaterhax)">Installing boot9strap (super-skaterhax)</a>, while Old 3DS users can follow <a href="installing-boot9strap-(mset9)">Installing boot9strap (MSET9)</a>. If you cannot do MSET9 for any reason, you will need to follow a method that requires additional games or hardware.</p>
 
 </details>
 
@@ -922,6 +927,184 @@ window.cookieconsent.initialise({
 
 </details>
 
+<h2 id="instalando-boot9strap-mset9">Instalando boot9strap (MSET9)</h2>
+
+<details>
+<summary><u>assert(id0_count == 1) AssertionError</u></summary>
+
+<p>Você tem múltiplas pastas ID0. Para determinar a pasta correta, siga estas instruções:</p>
+
+<ol>
+  <li>Renomeie a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> para <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code></li>
+  <li>Reinsira o cartão SD no seu console</li>
+  <li>Ligue o seu console</li>
+  <li>Espere o console gerar os dados do cartão SD
+    <ul>
+      <li>Seus aplicativos terão desaparecido. Isto é normal e será resolvido em breve</li>
+    </ul>
+  </li>
+  <li>Desligue seu console</li>
+  <li>Insira o cartão SD no seu computador</li>
+  <li>Vá até a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> no seu cartão SD</li>
+  <li>Anote os primeiros caractéres da pasta que você ver
+    <ul>
+      <li>Este é seu ID0 real, no qual nós iremos manter na pasta Nintendo 3DS real</li>
+    </ul>
+  </li>
+  <li>Remova o ID0 da pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> atual</li>
+  <li>Mova a pasta do verdadeiro ID0 da pasta <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> para a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code></li>
+  <li>Se existir, mova a pasta <code class="language-plaintext highlighter-rouge">Private</code> da pasta <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> para a pasta <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code></li>
+</ol>
+
+<p>Assim que isto for feito, continue na <a href="installing-boot9strap-(mset9)#section-i---prep-work">Seção I Passo 7</a>.</p>
+
+</details>
+
+<details>
+<summary><u>(title/import).db does not exist, create them now?" / invalid database</u></summary>
+
+<p>Mensagens de erro completas:</p>
+<ul>
+  <li>“Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/dbs/&lt;import.db and/or title.db&gt; does not exist on SD card! Create them now? (type yes/no)”</li>
+  <li>“Invalid database”</li>
+</ul>
+
+<p>Isto acontece por que nenhuma title database está presente, normalmente porque você nunca instalou nenhum aplicativo da eShop com este cartão SD.</p>
+
+<ol>
+  <li>Digite “yes”, então pressione Enter</li>
+  <li>Insira seu cartão SD no seu console</li>
+  <li>Ligue o seu console</li>
+  <li>Navegue para Configurações do Sistema -&gt; Gerenciamento de Dados -&gt; Nintendo 3DS -&gt; Software -&gt; Reiniciar (<a href="/images/screenshots/database-reset.jpg">instruções visuais</a>)</li>
+  <li>Desligue seu console</li>
+  <li>Insira seu cartão SD no seu computador</li>
+  <li>Retorne para <a href="installing-boot9strap-(mset9)#section-i---prep-work">Seção I Passo 7</a></li>
+</ol>
+
+</details>
+
+<details>
+<summary><u>[WinError 5] Access is denied</u></summary>
+
+<p>Seu cartão SD pode estar bloqueado. Se você está usando um cartão SD completo, certifique-se de que a alavanca está <a href="/images/sdlock.png">para cima</a>. Caso contrário, tente ejetar e reinserir seu cartão SD.</p>
+
+</details>
+
+<details>
+<summary><u>UnboundLocalError: cannot access local variable 'haxid1_path'</u></summary>
+
+<p>Isto pode acontecer quando Option 1 parou por conta de um erro e tem uma instalação incompleta.</p>
+
+<ol>
+  <li>Feche a janela do script</li>
+  <li>Execute o script <code class="language-plaintext highlighter-rouge">mset9.py</code> na raiz do seu cartão SD
+    <ul>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+  +Se isso não funcionar: segure SHIFT e dê um clique direito em qualquer lugar da janela do cartão SD, então clique na opção que abra o Terminal, Powershell, ou Prompt de Comando, então digite <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> e pressione Enter</li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
+      <li>Você deve ver uma janela que diz “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">4</code>, então pressione Enter para remover o MSET9</li>
+  <li>Retorne para o <a href="installing-boot9strap-(mset9)#section-i---prep-work">Começo da Seção I</a></li>
+</ol>
+
+</details>
+
+<details>
+<summary><u>Tela vermelha após reinserir cartão SD (Seção II Passo 11)</u></summary>
+
+<p>Talvez você esteja sem o <code class="language-plaintext highlighter-rouge">SafeB9S.bin</code> na raiz do seu cartão SD, ou o arquivo pode estar corrompido. Copie-o da pasta <code class="language-plaintext highlighter-rouge">SDMC</code> no <code class="language-plaintext highlighter-rouge">.zip</code> do MSET9, substituindo quaisquer arquivos existentes.</p>
+
+<p>Alternativamente, seu cartão SD pode estar sem a formatação apropriada ou mal particionado. Tente reformatar seu cartão SD: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(isto irá apagar seus dados do cartão SD)</em></p>
+
+</details>
+
+<details>
+<summary><u>assert(mii_ok==1) AssertionError</u></summary>
+
+<p>Seu cartão SD não tem dados do Mii Maker, o qual é necessário para que esse exploit funcione.</p>
+
+<ol>
+  <li>Feche a janela do script</li>
+  <li>Execute o script <code class="language-plaintext highlighter-rouge">mset9.py</code> na raiz do seu cartão SD
+    <ul>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+        <ul>
+          <li>Se isso não funcionar: segure SHIFT e dê um clique direito em qualquer lugar da janela do cartão SD, então clique na opção que abra o Terminal, Powershell, ou Prompt de Comando, então digite <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> e pressione Enter</li>
+        </ul>
+      </li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
+      <li>Você deve ver uma janela que diz “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">4</code>, então pressione Enter para remover o MSET9</li>
+  <li>Insira seu cartão SD no seu console</li>
+  <li>Ligue o seu console</li>
+  <li>Inicie o Mii Maker</li>
+  <li>Espere seu console chegar a tela “Bem-vindo ao Mii Maker”, então saia do Mii Maker</li>
+  <li>Desligue seu console</li>
+  <li>Insira seu cartão SD no seu computador</li>
+  <li>Retorne para <a href="installing-boot9strap-(mset9)#section-i---prep-work">Seção I Passo 7</a></li>
+</ol>
+
+</details>
+
+<details>
+<summary><u>Configurações do Sistema carregando infinitamente após reinserir o cartão SD</u></summary>
+
+<p>É bem provável que você tenha feito algo de diferente das instruções do MSET9, ou selecionou o modelo ou versão errada.</p>
+
+<ol>
+  <li>Feche a janela do script</li>
+  <li>Execute o script <code class="language-plaintext highlighter-rouge">mset9.py</code> na raiz do seu cartão SD
+    <ul>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+        <ul>
+          <li>Se isso não funcionar: segure SHIFT e dê um clique direito em qualquer lugar da janela do cartão SD, então clique na opção que abra o Terminal, Powershell, ou Prompt de Comando, então digite <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> e pressione Enter</li>
+        </ul>
+      </li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
+      <li>Você deve ver uma janela que diz “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">3</code>, então presione Enter</li>
+  <li>Assim que a janela dizer “Deleting… done.”, insira o cartão SD no seu console</li>
+  <li>Ligue o seu console</li>
+  <li>Retorne para <a href="installing-boot9strap-(mset9)#section-ii---mset9">Seção II Passo 1</a></li>
+</ol>
+
+<p>Se o erro persistir e você ter certeza que fez tudo corretamente, é possível que tenha algo de errado com os dados extdata do Mii Maker. Siga estas instruções para redefini-los:</p>
+
+<ol>
+  <li>Feche a janela do script</li>
+  <li>Execute o script <code class="language-plaintext highlighter-rouge">mset9.py</code> na raiz do seu cartão SD
+    <ul>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+        <ul>
+          <li>Se isso não funcionar: segure SHIFT e dê um clique direito em qualquer lugar da janela do cartão SD, então clique na opção que abra o Terminal, Powershell, ou Prompt de Comando, então digite <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> e pressione Enter</li>
+        </ul>
+      </li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
+      <li>Você deve ver uma janela que diz “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">4</code>, então pressione Enter para remover o MSET9</li>
+  <li>Insira seu cartão SD no seu console</li>
+  <li>Ligue o seu console</li>
+  <li>Inicie o Mii Maker</li>
+  <li>Espere seu console chegar a tela “Bem-vindo ao Mii Maker”, então saia do Mii Maker</li>
+  <li>Desligue seu console</li>
+  <li>Insira seu cartão SD no seu computador</li>
+  <li>Retorne para <a href="installing-boot9strap-(mset9)#section-i---prep-work">Seção I Passo 7</a></li>
+</ol>
+
+</details>
+
 <h2 id="finalizando-a-instalação">Finalizando a instalação</h2>
 
 <details>
@@ -1082,6 +1265,13 @@ window.cookieconsent.initialise({
 
 </details>
 
+<details>
+<summary><u>Error #18: MSET9 detected</u></summary>
+
+<p>You didn’t remove MSET9 when prompted to. Follow <a href="installing-boot9strap-(mset9)#section-iv---removing-mset9">Section IV - Removing MSET9</a>, then re-run the script.</p>
+
+</details>
+
 <hr />
 
 <h2 id="problemas-de-inicialização-em-consoles-com-custom-firmware">Problemas de inicialização em consoles com custom firmware</h2>
@@ -1175,8 +1365,8 @@ Você pode verificar se seu SD está sendo lido segurando SELECT durante a inici
 Se este for o caso, tente os passos abaixo, os quais são listados de mais fácil para mais difícil:</p>
 <ol>
   <li>Desligue o console, remova o cartão SD, insira-o e, em seguida, ligue seu console</li>
-  <li>Desligue o console, remova o cartão SD, o insira no seu PC, baixe a versão mais recente do <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>, extraia <code class="language-plaintext highlighter-rouge">boot.firm</code> do <code class="language-plaintext highlighter-rouge">Luma3DS.zip</code> e coloque-o na raiz do seu cartão SD (substituindo qualquer arquivo existente)</li>
-  <li>Desligue o console, remova o cartão SD, insira-o no seu PC e reformate o cartão SD de acordo com o sistema operacional do seu computador: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(isso irá apagar os dados do seu cartão SD)</em></li>
+  <li>Desligue o console, remova o cartão SD, insira-o no seu computador, baixe a versão mais recente do <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>, extraia <code class="language-plaintext highlighter-rouge">boot.firm</code> do <code class="language-plaintext highlighter-rouge">Luma3DS.zip</code> e coloque-o na raiz do seu cartão SD (substituindo qualquer arquivo existente)</li>
+  <li>Desligue o console, remova o cartão SD, insira-o no seu computador e reformate o cartão SD de acordo com o sistema operacional do seu computador: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(isso irá apagar os dados do seu cartão SD)</em></li>
   <li>Teste por erros no seu cartão SD seguindo o guia de acordo com o sistema operacional do seu computador: <a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, <a href="f3xquickt-(mac)">macOS</a>. Se o seu cartão SD estiver marcado como defeituoso, então você terá que substituir o cartão SD</li>
   <li>Sua entrada de cartão SD pode estar com problemas. Entre no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a> para obter mais ajuda</li>
 </ol>
@@ -1413,13 +1603,15 @@ Entretanto, se você não sabe o PIN e, portanto, não pode acessar as configura
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/zh_CN/installing-boot9strap-(mset9)'>Installing boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
           
         
@@ -516,13 +520,13 @@ window.cookieconsent.initialise({
 </aside>
 
 <div class="notice--danger">
-<p><strong>3DS 的系统固件已于最近更新至 11.17.0</strong>。 以下是一些你应该知道的事情：</p>
+<p><strong>The latest 3DS firmware is 11.17.0</strong>. 以下是一些你应该知道的事情：</p>
 
 <ul>
   <li>如果你的主机正在使用的 Luma 版本为 <strong>10.2.1 及以上</strong>的，那么升级系统是 <strong>100%</strong> 安全的。 你可以在关机状态下按住 SELECT 键，然后按下电源键开机以检查主机的 Luma 版本。</li>
   <li>如果你的主机运行的 Luma 低于此版本，则你应该在更新系统到 11.17.0 前先<a href="checking-for-cfw">更新 Luma</a>。</li>
-  <li>如果你的主机还没有破解且你打算进行破解，<strong>请不要</strong>在操作之前更新系统至最新版本。</li>
-  <li>如果你的未破解主机已经升级到 11.17.0 了，本教程也已更新对应的方法。 具体来说，New 3DS 系列的主机有<a href="installing-boot9strap-(super-skaterhax)">免费的软破方法</a>，而老型号的 3DS 系列主机则需要使用需要<a href="alternate-exploits">外设或其它软件</a> 的方法进行破解。</li>
+  <li>如果你的主机还没有破解且你打算进行破解，<strong>请不要</strong>在操作之前更新系统至最新版本。 The methods on earlier firmwares are easier and more stable.</li>
+  <li>如果你的未破解主机已经升级到 11.17.0 了，本教程也已更新对应的方法。 Both <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> and <a href="installing-boot9strap-(mset9)">Old3DS</a> now have free software methods that (for the most part) do not require external hardware or software.</li>
 </ul>
 
 </div>
@@ -534,7 +538,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>I am on the latest system version. 我的主机是否可以在不使用任何外设的情况下破解？</u></summary>
 
-<p>这取决于你的主机型号。 At the moment, New 3DS / New 3DS XL / New 2DS XL is <a href="installing-boot9strap-(super-skaterhax)">able to be modded on 11.17.0</a> without any prerequisites (e.g. eShop titles, physical items), while 3DS / 3DS XL / 2DS requires <a href="alternate-exploits">additional software or hardware</a>.</p>
+<p><strong>Yes!</strong> New 3DS / New 3DS XL / New 2DS XL can use <a href="installing-boot9strap-(super-skaterhax)">super-skaterhax</a>, while 3DS / 3DS XL / 2DS can use <a href="installing-boot9strap-(mset9)">MSET9</a>.</p>
 
 </details>
 
@@ -599,7 +603,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>I heard about this thing I have to pay for (Gateway, Sky3DS, ntrboot, R4, etc). Is that something I need?</u></summary>
 
-<p>At the moment, 3DS / 3DS XL / 2DS consoles on 11.17.0 need to use one of many <a href="alternate-exploits">alternate exploits</a> to install custom firmware. If none of the other prerequisites are available, then ntrboot will be the cheapest available option (roughly $20 USD).</p>
+<p>No. While a DS flashcart can be used to mod a 3DS using <a href="ntrboot">ntrboot</a>, there is now a free software method available for most consoles.</p>
 
 <p>3DS-mode flashcarts like Gateway and Sky3DS are not recommended because they are obsolete and may carry ban or brick risk.</p>
 </details>
@@ -773,13 +777,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

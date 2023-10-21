@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -515,13 +519,13 @@ window.cookieconsent.initialise({
 </aside>
 
 <div class="notice--danger">
-<p><strong>3DS 펌웨어 11.17.0이 최근 출시되었습니다</strong>. 다음 사항을 참고해 주세요.</p>
+<p><strong>The latest 3DS firmware is 11.17.0</strong>. 다음 사항을 참고해 주세요.</p>
 
 <ul>
   <li>만약 콘솔이 <em>Luma 10.2.1 이상일 경우</em>, 업데이트해도 <em>100%</em> 안전합니다. 콘솔을 부팅할 때 (Select) 버튼을 누르고 있으면 Luma의 버전을 확인할 수 있습니다.</li>
   <li>만약 콘솔이 오래된 Luma를 사용하고 있다면, 콘솔을 11.17.0으로 업데이트하기 전에 <a href="restoring-updating-cfw">CFW 복구 / 업데이트</a>를 해야 합니다.</li>
-  <li>만약 콘솔에 아직 커스텀 펌웨어가 설치되어 있지 않다면, 이 가이드에서 지시 하지 않는 한 <strong>최신 버전으로 업데이트 하지 마세요.</strong></li>
-  <li>만약 커스텀 펌웨어가 되지 않은 콘솔이 이미 11.17.0 이라면, 이 가이드는 그것에 맞춰 업데이트 되어있습니다. Specifically, New3DS-family consoles have a <a href="installing-boot9strap-(super-skaterhax)">free software method</a>, while Old3DS-family consoles will need to use <a href="alternate-exploits">alternate exploits</a> that rely on external hardware or software.</li>
+  <li>만약 콘솔에 아직 커스텀 펌웨어가 설치되어 있지 않다면, 이 가이드에서 지시 하지 않는 한 <strong>최신 버전으로 업데이트 하지 마세요.</strong> The methods on earlier firmwares are easier and more stable.</li>
+  <li>만약 커스텀 펌웨어가 되지 않은 콘솔이 이미 11.17.0 이라면, 이 가이드는 그것에 맞춰 업데이트 되어있습니다. Both <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> and <a href="installing-boot9strap-(mset9)">Old3DS</a> now have free software methods that (for the most part) do not require external hardware or software.</li>
 </ul>
 
 </div>
@@ -533,7 +537,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>제 콘솔은 최신 버전입니다, 외부 하드웨어나 전제 조건 없이 내 콘솔을 해킹할 수 있습니까?</u></summary>
 
-<p>본체 모델에 따라 다릅니다. 현재 New 3DS, New 3DS XL, New 2DS XL은 11.17.0 버전에서 별도의 준비물(e숍 타이틀, 물리적인 장비) 없이 <a href="installing-boot9strap-(super-skaterhax)">수정이 가능합니다</a>. 하지만 3DS, 3DS XL, 2DS의 경우 <a href="alternate-exploits">추가적인 소프트웨어 혹은 장비</a>가 필요합니다.</p>
+<p><strong>Yes!</strong> New 3DS / New 3DS XL / New 2DS XL can use <a href="installing-boot9strap-(super-skaterhax)">super-skaterhax</a>, while 3DS / 3DS XL / 2DS can use <a href="installing-boot9strap-(mset9)">MSET9</a>.</p>
 
 </details>
 
@@ -568,7 +572,7 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Can I keep my NNID, saves, digital games (etc.)?</u></summary>
+<summary><u>저의 NNID, 게임 세이브, 디지털 게임을 유지할 수 있나요?</u></summary>
 
 <p>NNID는 닌텐도 네트워크 ID의 약칭이며, 본 가이드에서 NNID 걱정은 하지 않아도 됩니다. 한국 (KOR), 중국 (CHN), 타이완 (TWN) 콘솔들에는 NNID 기능이 존재하지 않습니다. 만약 북미, 호주, 유럽 등 다른 지역의 콘솔을 한국으로 <a href="region-changing">지역 변경</a> 할 계획이라면 시리얼 번호를 유심히 보고 해당 문서의 주의사항을 각별히 읽은 후 진행하세요.</p>
 
@@ -598,7 +602,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Gateway나 Sky3DS, ntrboot, R4와 같은 뭔가를 돈주고 사야한다고 들었는데, 그 중에서 필요한 게 있나요?</u></summary>
 
-<p>현재 버전 11.17.0에 있는 3DS, 3DS XL, 2DS 콘솔은 여러 <a href="alternate-exploits">다른 취약점</a>을 사용해야 커스텀 펌웨어를 설치할 수 있습니다. 필요한 추가 사항이 없다면, ntrboot 방식이 가장 저렴할 것입니다 (약 20 미국 달러).</p>
+<p>아니오. While a DS flashcart can be used to mod a 3DS using <a href="ntrboot">ntrboot</a>, there is now a free software method available for most consoles.</p>
 
 <p>Gateway와 Sky3DS같은 3DS용 플래시카트들은 불필요하고 벽돌을 유발할 수 있어 권장되지 않습니다.</p>
 </details>
@@ -772,13 +776,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

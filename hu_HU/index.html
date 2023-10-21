@@ -125,7 +125,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -344,13 +344,13 @@ window.cookieconsent.initialise({
       <p class="notice--info">Alaposan olvasd végig az összes bevezető oldalt (beleértve ezt is) mielőtt bármibe belekezdenél.</p>
 
 <div class="notice--danger">
-<p><strong>3DS firmware 11.17.0 nemrég került kiadásra</strong>. Amit érdemes tudnod:</p>
+<p><strong>A legutolsó 3DS firmware a 11.17.0</strong>. Amit érdemes tudnod:</p>
 
 <ul>
   <li>Ha a konzolod <em>Luma 10.2.1</em> -et vagy újabbat futtat, <em>100% biztonságos</em> a frissítés. Ellenőrizheted a Luma verziódat a (Select) lenyomva tartásával a konzolod elindítása közben.</li>
   <li>Ha a konzolod régebbi Luma verziót futtat, <a href="checking-for-cfw">frissítened kell a Luma-t</a> mielőtt az eszközöd 11.17.0 verzióra frissíted.</li>
-  <li>Ha a konzolod nem rendelkezik még egyedi firmware-rel, <strong>NE frissítsd a legutolsó verzióra</strong>, kivéve ha ez az útmutató utasít rá.</li>
-  <li>Ha a módosítatlan konzolod MÁR 11.17.0 verzióval fut, ez az oldal annak megfelelően frissül. Egészen pontosan a New3DS-család konzolainak egy <a href="installing-boot9strap-(super-skaterhax)">ingyenes szoftver metódust</a>, míg az Old3DS-család konzolainak <a href="alternate-exploits">alternatív exploitokat</a> kell használniuk, aminek külső hardver vagy szoftver függősége van.</li>
+  <li>Ha a konzolod nem rendelkezik még egyedi firmware-rel, <strong>NE frissítsd a legutolsó verzióra</strong>, kivéve ha ez az útmutató utasít rá. A metódusok a korábbi firmware-eken könnyebbek és stabilabbak.</li>
+  <li>Ha a módosítatlan konzolod MÁR 11.17.0 verzióval fut, ez az oldal annak megfelelően frissül. Mind a <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> mind az <a href="installing-boot9strap-(mset9)">Old3DS</a> most már rendelkezik ingyenes szoftveres metódussal, ami (a legtöbb részére) nem igényel külső hardvert vagy szoftvert.</li>
 </ul>
 
 </div>
@@ -448,13 +448,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

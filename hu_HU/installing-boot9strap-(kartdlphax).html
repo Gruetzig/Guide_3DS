@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/hu_HU/installing-boot9strap-(mset9)'>Boot9strap telepítése (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
           
         
@@ -422,7 +426,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap (ntrboot) telepítése</a></li>
           
         
           
@@ -508,12 +512,12 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#kompatibilitási-megjegyzések" id="markdown-toc-kompatibilitási-megjegyzések">Kompatibilitási megjegyzések</a></li>
   <li><a href="#amire-szükséged-lesz" id="markdown-toc-amire-szükséged-lesz">Amire szükséged lesz</a>    <ul>
-      <li><a href="#section-i---prep-work-source-3ds" id="markdown-toc-section-i---prep-work-source-3ds">Section I - Prep Work (source 3DS)</a></li>
+      <li><a href="#i-rész---előkészületi-munka-forrás-3ds" id="markdown-toc-i-rész---előkészületi-munka-forrás-3ds">I. rész - Előkészületi munka (forrás 3DS)</a></li>
       <li><a href="#ii-rész---előkészületi-munka-cél-3ds" id="markdown-toc-ii-rész---előkészületi-munka-cél-3ds">II. rész - Előkészületi munka (cél 3DS)</a></li>
-      <li><a href="#section-iii---kartdlphax" id="markdown-toc-section-iii---kartdlphax">Section III - kartdlphax</a></li>
-      <li><a href="#section-iv---installing-menuhax67" id="markdown-toc-section-iv---installing-menuhax67">Section IV - Installing menuhax67</a></li>
+      <li><a href="#iii-rész---kartdlphax" id="markdown-toc-iii-rész---kartdlphax">III. rész - kartdlphax</a></li>
+      <li><a href="#iv-rész--a-menuhax67-telepítése" id="markdown-toc-iv-rész--a-menuhax67-telepítése">IV. rész- A menuhax67 telepítése</a></li>
       <li><a href="#v-rész---boot9strap-telepítése" id="markdown-toc-v-rész---boot9strap-telepítése">V. rész - boot9strap telepítése</a></li>
-      <li><a href="#section-vi---removing-menuhax67" id="markdown-toc-section-vi---removing-menuhax67">Section VI - Removing menuhax67</a></li>
+      <li><a href="#vi-rész--a-menuhax67-eltávolítása" id="markdown-toc-vi-rész--a-menuhax67-eltávolítása">VI. rész- A menuhax67 eltávolítása</a></li>
     </ul>
   </li>
   <li><a href="#tovább-a-telepítés-véglegesítésére" id="markdown-toc-tovább-a-telepítés-véglegesítésére">Tovább a telepítés véglegesítésére</a></li>
@@ -525,15 +529,15 @@ window.cookieconsent.initialise({
 <details class="notice--info">
 <summary><em>Technikai részletek (opcionális)</em></summary>
 
-<p>In order to install custom firmware on our console, we need to get Homebrew Launcher access.</p>
+<p>Az egyedi firmware telepítéshez a konzolodra, szükséged van Homebrew Launcher hozzáférésre.</p>
 
 <p>Ennek eléréséhez a Download Play funkcionalitását használjuk a Mario Kart 7-nek, egy egyedi firmware-rel, valamint egy egyedi játék pluginnel már telepített 3DS használatával.</p>
 
-<p>This custom plugin will send a hacked payload to an unhacked console, which then exploits the system in order to inject menuhax67, which will allow us to get Homebrew Launcher access.</p>
+<p>Ez az egyedi plugin egy hackelt payload-ot küld a nem hackelt konzolra, ami exploitolja a rendszert, azért, hogy injektálja a menuhax67-et, ami Homebrew hozzáférést biztosít.</p>
 
-<p>Once we have Homebrew Launcher access, we can run nimdsphax to install boot9strap.</p>
+<p>Ha már van Homebrew Launcher hozzáférésünk, tudjuk futtatni a nimdsphax-t a boot9strap telepítéséhez.</p>
 
-<p>See <a href="https://github.com/PabloMK7/kartdlphax">here</a> for information about kartdlphax, <a href="https://github.com/zoogie/menuhax67">here</a> for information about menuhax67, and <a href="https://github.com/luigoalma/nimdsphax">here</a> for information about nimdsphax.</p>
+<p>További információt kartdlphax-ról <a href="https://github.com/PabloMK7/kartdlphax">itt</a>, a menuhax67-ről <a href="https://github.com/zoogie/menuhax67">itt</a>, a nimdsphax-ról <a href="https://github.com/luigoalma/nimdsphax">itt</a> találsz.</p>
 
 </details>
 
@@ -542,14 +546,14 @@ window.cookieconsent.initialise({
 <p>Ahhoz, hogy követhesd ezeket a lépéseket, a következőkre van szükséged:</p>
 
 <ul>
-  <li>A second 3DS with custom firmware (the <strong>source 3DS</strong>) that is the same region as the 3DS you are trying to modify (the <strong>target 3DS</strong>)
+  <li>Egy második 3DS egyedi firmware-rel (a <strong>forrás 3DS</strong>), aminek ugyanaz a régiója, mint annak a 3DS-nek, amit módosítani szeretnél (a <strong>cél 3DS</strong>)
     <ul>
-      <li>The consoles must be USA, JPN, or EUR region consoles</li>
-      <li>The source 3DS can be <a href="region-changing">region changed</a> to match the target 3DS if necessary</li>
+      <li>A konzoloknak USA, JPN, vagy EUR régiós konzoloknak kell lenniük</li>
+      <li>A forrás 3DS lehet <a href="region-changing">regió cserélt</a>, hogy egyezzen a cél 3DS-sel, ha szükséges</li>
     </ul>
   </li>
-  <li>A physical or digital copy of Mario Kart 7 that is the same region as both consoles</li>
-  <li>An SD card for both consoles</li>
+  <li>Egy fizikai vagy digitális példánya a Mario Kart 7-nek, aminek a régiója egyezik mindkét konzol régiójával</li>
+  <li>Egy SD kártyára mindkét konzolhoz</li>
 </ul>
 
 <h3 id="amire-szükséged-lesz">Amire szükséged lesz</h3>
@@ -559,17 +563,17 @@ window.cookieconsent.initialise({
   <li>A <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> legfrisseb verziója (közvetlen letöltés)</li>
   <li>A <a href="https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip">SafeB9SInstaller</a> legfrisseb verziója (közvetlen letöltés)</li>
   <li>A <a href="https://github.com/luigoalma/nimdsphax/releases/download/v1.0/nimdsphax_v1.0.zip">nimdsphax</a> legfrissebb verziója (közvetlen letöltés)</li>
-  <li>The latest release of <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a></li>
+  <li>A <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> legújabb kiadása</li>
   <li>A <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> legújabb kiadása (a Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> fájl)</li>
 </ul>
 
-<h4 id="section-i---prep-work-source-3ds">Section I - Prep Work (source 3DS)</h4>
+<h4 id="i-rész---előkészületi-munka-forrás-3ds">I. rész - Előkészületi munka (forrás 3DS)</h4>
 
 <p>Ebben a fejezetben befogod állítani a forrás 3DS-ed (a 3DS egyedi firmware-rel), hogy küldje az exploit adatot a cél 3DS-nek.</p>
 
 <ol>
   <li>Csatlakoztasd a <strong>forrás 3DS</strong> SD kártyáját a számítógépedhez</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of the <strong>source 3DS</strong>’s SD card, replacing any existing file
+  <li>Másold át a <code class="language-plaintext highlighter-rouge">boot.firm</code> fájlt a Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code>-ből a <strong>cél 3DS</strong> SD kártyája gyökerébe, lecserélve bármilyen már meglévő fájlt
     <ul>
       <li>Az SD kártya gyökere a kezdőkönyvtárt jelenti az SD kártyán, ahol látható a Nintendo 3DS könyvtár, de nem vagyunk benne</li>
     </ul>
@@ -587,7 +591,7 @@ window.cookieconsent.initialise({
 
 <h4 id="ii-rész---előkészületi-munka-cél-3ds">II. rész - Előkészületi munka (cél 3DS)</h4>
 
-<p>In this section, you will set up the files that the target 3DS will need to install custom firmware.</p>
+<p>Ebben a fejezetben le fogod tölteni a szükséges fájlokat amire a cél 3DS-nek szüksége van az egyedi firmware telepítéséhez.</p>
 
 <ol>
   <li>Csatlakoztasd a <strong>cél 3DS</strong> SD kártyáját a számítógépedhez</li>
@@ -601,8 +605,8 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Másold át a <code class="language-plaintext highlighter-rouge">nimdsphax</code> mappát a nimdsphax <code class="language-plaintext highlighter-rouge">.zip</code>-ből az SD kártya gyökerében található <code class="language-plaintext highlighter-rouge">3ds</code> mappába</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">menuhax67_installer.3dsx</code> from the menuhax <code class="language-plaintext highlighter-rouge">.zip</code> to the <code class="language-plaintext highlighter-rouge">/3ds/</code> folder on your SD card</li>
-  <li>Copy Launcher.dat from the folder for your model and region inside the menuhax <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+  <li>Másold át a <code class="language-plaintext highlighter-rouge">menuhax67_installer.3dsx</code>+t a menuhax <code class="language-plaintext highlighter-rouge">.zip</code>-ből az SD kártya gyökerében található <code class="language-plaintext highlighter-rouge">3ds</code> mappába</li>
+  <li>Másold át a ´Launcher.dat´ fájlt a konzolod modellnek és régiónak megfelelő mappából a menuhax <code class="language-plaintext highlighter-rouge">.zip</code> fájlból az SD kártyád gyökerébe</li>
   <li>Távolítsd el az SD kártyát és rakd be a <strong>cél 3DS</strong>-be</li>
 </ol>
 
@@ -610,9 +614,9 @@ window.cookieconsent.initialise({
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/kart-3ds-layout.png" alt="" /></p>
 
-<h4 id="section-iii---kartdlphax">Section III - kartdlphax</h4>
+<h4 id="iii-rész---kartdlphax">III. rész - kartdlphax</h4>
 
-<p>In this section, you will use Download Play to transfer the exploit data from the source 3DS to the target 3DS, which can be used to install menuhax67, a Homebrew Launcher entrypoint. Your HOME Menu settings will be temporarily inaccessible on the target 3DS while this exploit is active.</p>
+<p>Ebben a fejelzetben a Download Play-t fogod használni, hogy átvidd az exploit adatot a forrás 3DS-ről a cél 3DS-re, ami arra használható, hogy telepítsd a menuhax67-et, egy Homebrew Launcher belépési pontot. A HOME Menu beállításaid átmenetileg felülírásra kerülnek a cél 3DS-en, amíg az exploit aktív.</p>
 
 <ol>
   <li>Kapcsold be a <strong>forrás 3DS</strong>-t
@@ -668,25 +672,25 @@ window.cookieconsent.initialise({
   </li>
 </ol>
 
-<h4 id="section-iv---installing-menuhax67">Section IV - Installing menuhax67</h4>
+<h4 id="iv-rész--a-menuhax67-telepítése">IV. rész- A menuhax67 telepítése</h4>
 
 <ol>
-  <li>Press (Y) + (D-Pad Down) to install menuhax67
+  <li>Nyomj (Y) + (D-Pad Le) gombot a menuhax67 telepítéséhez
     <ul>
       <li>A konzol automatikusan ki fog kapcsolni</li>
     </ul>
   </li>
   <li>Kapcsold be a konzolod</li>
-  <li>Tap on the small HOME Menu settings icon in the top left of the bottom screen (<img src="https://3ds.hacks.guide/images/homemenuicon.png" alt="" height="32px" width="52px" />)
+  <li>Kattints a kis HOME Menu beállítások ikonra a bal alsó sarkában a képernyőnek (<img src="https://3ds.hacks.guide/images/homemenuicon.png" alt="" height="32px" width="52px" />)
     <ul>
-      <li>If the console freezes for a while and then crashes, make sure you have Launcher.dat on the root of your SD card</li>
+      <li>Ha a konzolod lefagy egy időre majd összeomlik, ellenőrizd, hogy a Launcher.dat megtalálható-e az SD kártya gyökerében</li>
     </ul>
   </li>
   <li>Ha az exploit sikeres volt, a konzolodnak ezt követően be kell bootolnia a Homebrew Launcherbe</li>
   <li>Indítsd el a nimdsphax-et a homebrew listájáról</li>
   <li>Ha az exploit sikerrel járt, készüléked bebootolja a SafeB9SInstallert
     <ul>
-      <li>If your console freezes on a red screen, hold the POWER button until it turns off, then try running menuhax again by powering on your console and tapping on the HOME Menu settings icon</li>
+      <li>Ha a konzolod lefagy egy piros képernyőn, tartsd nyomva a POWER gombot, amíg ki nem kapcsol, majd próbáld újra futtatni a menuhax-et, bekapcsolva a konzolod és a HOME Menü beállítások ikonjára kattintva</li>
     </ul>
   </li>
 </ol>
@@ -712,15 +716,9 @@ window.cookieconsent.initialise({
   <li>Mentéshez és újraindításhoz nyomd meg a (Start) gombot</li>
 </ol>
 
-<p>Ezen a ponton a konzolod alapértelmezetten bebootol a Luma3DS-be.</p>
-<ul>
-  <li>A Luma3DS nem néz ki másként, mint a normál HOME Menü. Ha a konzolod bebootolt a HOME Menübe, akkor egyedi firmware-t futtat.</li>
-  <li>A következő oldalon hasznos homebrew alkalmazásokat telepítünk, hogy teljessé tegyük a telepítésedet.</li>
-</ul>
+<h4 id="vi-rész--a-menuhax67-eltávolítása">VI. rész- A menuhax67 eltávolítása</h4>
 
-<h4 id="section-vi---removing-menuhax67">Section VI - Removing menuhax67</h4>
-
-<p>In this section, you will use the Homebrew Launcher to remove menuhax67, which will let you access the HOME Menu Settings option normally.</p>
+<p>Ebben a fejezetben a Homebrew Launcher-t fogod használni a menuhax67 eltávolítására, ami lehetővé teszi a HOME Menu beállítások opcióinak normális elérését.</p>
 
 <ol>
   <li>Indítsd el a Download Play alkalmazást (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
@@ -740,9 +738,15 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Indítsd el a menuhax67_installer-t a homebrew listából</li>
-  <li>Select REMOVE menuhax67</li>
-  <li>When you see “done.”, press (A), then press (A) on “EXIT to menu”</li>
+  <li>Válaszd a REMOVE menuhax67 opciót</li>
+  <li>Ha azt látod, hogy “done.”, nyomj (A) gombot, majd ismét (A)-t az “EXIT to menu” opción</li>
 </ol>
+
+<p>Ezen a ponton a konzolod alapértelmezetten bebootol a Luma3DS-be.</p>
+<ul>
+  <li>A Luma3DS nem néz ki másként, mint a normál HOME Menü. Ha a konzolod bebootolt a HOME Menübe, akkor egyedi firmware-t futtat.</li>
+  <li>A következő oldalon hasznos homebrew alkalmazásokat telepítünk, hogy teljessé tegyük a telepítésedet.</li>
+</ul>
 
 <hr />
 
@@ -829,13 +833,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/hu_HU/installing-boot9strap-(mset9)'>Boot9strap telepítése (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/hu_HU/installing-boot9strap-(petit-compwner)'>Boot9strap telepítése (petit-compwner)</a></li>
           
         
@@ -422,7 +426,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap telepítése (ntrboot)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/hu_HU/installing-boot9strap-(ntrboot)'>Boot9strap (ntrboot) telepítése</a></li>
           
         
           
@@ -513,9 +517,10 @@ window.cookieconsent.initialise({
       <li><a href="#iv-rész---kartminer7" id="markdown-toc-iv-rész---kartminer7">IV. rész - Kartminer7</a></li>
       <li><a href="#v-rész--a-menuhax67-telepítése" id="markdown-toc-v-rész--a-menuhax67-telepítése">V. rész- A menuhax67 telepítése</a></li>
       <li><a href="#vi-rész---boot9strap-telepítése" id="markdown-toc-vi-rész---boot9strap-telepítése">VI. rész - boot9strap telepítése</a></li>
-      <li><a href="#section-vii---removing-menuhax67" id="markdown-toc-section-vii---removing-menuhax67">Section VII - Removing menuhax67</a></li>
+      <li><a href="#vii-rész---a-menuhax67-eltávolítása" id="markdown-toc-vii-rész---a-menuhax67-eltávolítása">VII. rész - A menuhax67 eltávolítása</a></li>
     </ul>
   </li>
+  <li><a href="#tovább-a-telepítés-véglegesítésére" id="markdown-toc-tovább-a-telepítés-véglegesítésére">Tovább a telepítés véglegesítésére</a></li>
 </ul>
 
   </nav>
@@ -537,14 +542,14 @@ window.cookieconsent.initialise({
 <h3 id="amire-szükséged-lesz">Amire szükséged lesz</h3>
 
 <ul>
-  <li>A physical or digital copy of Mario Kart 7 updated to the latest version (v1.2)
+  <li>Egy fizikai vagy digitális példánya a Mario Kart 7-nek, ami a legutolsó verzióra (v1.2) frissített
     <ul>
-      <li>You can update Mario Kart 7 from eShop or by following the update prompt when you launch the game</li>
+      <li>Frissítheted a Mario Kart 7-et az eShop-ból vagy követve a frissítési kérdést, ha elindítod a játékot</li>
     </ul>
   </li>
-  <li>A Windows computer</li>
+  <li>egy Windows számítógép</li>
   <li>A <code class="language-plaintext highlighter-rouge">movable.sed</code> fájlodra a Seedminer befejezéséből</li>
-  <li>The latest release of <a href="https://github.com/zoogie/Kartminer7/releases/latest">Kartminer7</a></li>
+  <li>A <a href="https://github.com/zoogie/Kartminer7/releases/latest">Kartminer7</a> legújabb kiadása</li>
   <li>A <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> legfrisseb verziója (közvetlen letöltés)</li>
   <li>A <a href="https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip">SafeB9SInstaller</a> legfrisseb verziója (közvetlen letöltés)</li>
   <li>A <a href="https://github.com/luigoalma/nimdsphax/releases/download/v1.0/nimdsphax_v1.0.zip">nimdsphax</a> legfrissebb verziója (közvetlen letöltés)</li>
@@ -558,10 +563,10 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
-  <li>Open Mario Kart 7</li>
-  <li>Tap the “Mario Kart Channel” button on the bottom</li>
+  <li>Indítsd el a Mario Kart 7-et</li>
+  <li>Érintsd meg a “Mario Kart Channel” gombot alul</li>
   <li>If you are prompted to, hit “Next” and “OK” to all of the prompts that you see</li>
-  <li>Tap the “StreetPass List” button on the bottom of the screen, in the middle</li>
+  <li>Érintsd meg a ““StreetPass List” gombot a képernyő alján középen</li>
   <li>Press the (Home) button to suspend Mario Kart 7</li>
   <li>Disable wireless connections by flicking the wireless switch on the side of the console or by navigating to HOME Menu Settings (top left) -&gt; Wireless Communication -&gt; OFF</li>
   <li>Kapcsold ki a konzolod</li>
@@ -578,7 +583,7 @@ window.cookieconsent.initialise({
   </li>
   <li>Hozz létre egy mappát <code class="language-plaintext highlighter-rouge">boot9strap</code> néven az SD kártya gyökerében</li>
   <li>Másold át a <code class="language-plaintext highlighter-rouge">boot9strap.firm</code> fájlt és a <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code> fájlt a boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> fájlból az SD kártyád <code class="language-plaintext highlighter-rouge">/boot9strap/</code> mappájába</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> to the root of your SD card</li>
+  <li>Másold át a <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> fájlt a SafeB9SInstaller <code class="language-plaintext highlighter-rouge">.zip</code>-ből az SD kártyád gyökerébe</li>
   <li>Hozz létre egy mappát <code class="language-plaintext highlighter-rouge">3ds</code> néven az SD kártyád gyökerében, ha még nem létezik ilyen
     <ul>
       <li>Ez a mappa tárolja a homebrew applikációkat és adataikat; ez mást mint a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappa, amit a konzol automatikusan generál</li>
@@ -620,38 +625,38 @@ window.cookieconsent.initialise({
 
 <ol>
   <li>Kapcsold be a konzolod</li>
-  <li>Open Mario Kart 7</li>
-  <li>Tap the “Mario Kart Channel” button on the bottom</li>
-  <li>Tap the “StreetPass List” button on the bottom of the screen, in the middle</li>
-  <li>Press (A) over and over again
+  <li>Indítsd el a Mario Kart 7-et</li>
+  <li>Érintsd meg a “Mario Kart Channel” gombot alul</li>
+  <li>Érintsd meg a ““StreetPass List” gombot a képernyő alján középen</li>
+  <li>Nyomd meg az (A) gombot újra és újra
     <ul>
-      <li>You should eventually see the “Start Race?” prompt, then the colours on the bottom screen should change from red, to blue, to white</li>
-      <li>If you see the red/blue/white screens but the 3DS crashes, just reboot and try again</li>
-      <li>If you don’t see ANY colours, change your system language (if possible), then try the exploit again</li>
+      <li>Látnod kell a “Start Race?” kérdést, majd az alsó képernyp színeinek pirosra, kékre és feférre kell változnia</li>
+      <li>Ha látod a vörös/kék/fehér képernyőt, de a 3DS összeomlik, csak bootolj újra és próbáld újra</li>
+      <li>Ha nem látsz semmi színt, módosítsd a rendszer nyelved (ha lehetséges) aztán próbáld újra az exploit-ot</li>
     </ul>
   </li>
-  <li>If the exploit was successful, the 3DS will have booted into the 3DS ROP xPloit Injector</li>
+  <li>Ha az exploit sikeres volt, akkor a 3DS be kellett bootoljon a 3DS ROP xPloit Injector-ba</li>
 </ol>
 
 <h4 id="v-rész--a-menuhax67-telepítése">V. rész- A menuhax67 telepítése</h4>
 
 <ol>
-  <li>Press (Y) + (D-Pad Down) to install menuhax67
+  <li>Nyomj (Y) + (D-Pad Le) gombot a menuhax67 telepítéséhez
     <ul>
       <li>A konzol automatikusan ki fog kapcsolni</li>
     </ul>
   </li>
   <li>Kapcsold be a konzolod</li>
-  <li>Tap on the small HOME Menu settings icon in the top left of the bottom screen (<img src="https://3ds.hacks.guide/images/homemenuicon.png" alt="" height="32px" width="52px" />)
+  <li>Kattints a kis HOME Menu beállítások ikonra a bal alsó sarkában a képernyőnek (<img src="https://3ds.hacks.guide/images/homemenuicon.png" alt="" height="32px" width="52px" />)
     <ul>
-      <li>If the console freezes for a while and then crashes, make sure you have Launcher.dat on the root of your SD card</li>
+      <li>Ha a konzolod lefagy egy időre majd összeomlik, ellenőrizd, hogy a Launcher.dat megtalálható-e az SD kártya gyökerében</li>
     </ul>
   </li>
   <li>Ha az exploit sikeres volt, a konzolodnak ezt követően be kell bootolnia a Homebrew Launcherbe</li>
   <li>Indítsd el a nimdsphax-et a homebrew listájáról</li>
   <li>Ha az exploit sikerrel járt, készüléked bebootolja a SafeB9SInstallert
     <ul>
-      <li>If your console freezes on a red screen, hold the POWER button until it turns off, then try running menuhax again by powering on your console and tapping on the HOME Menu settings icon</li>
+      <li>Ha a konzolod lefagy egy piros képernyőn, tartsd nyomva a POWER gombot, amíg ki nem kapcsol, majd próbáld újra futtatni a menuhax-et, bekapcsolva a konzolod és a HOME Menü beállítások ikonjára kattintva</li>
     </ul>
   </li>
 </ol>
@@ -677,15 +682,9 @@ window.cookieconsent.initialise({
   <li>Mentéshez és újraindításhoz nyomd meg a (Start) gombot</li>
 </ol>
 
-<p>Ezen a ponton a konzolod alapértelmezetten bebootol a Luma3DS-be.</p>
-<ul>
-  <li>A Luma3DS nem néz ki másként, mint a normál HOME Menü. Ha a konzolod bebootolt a HOME Menübe, akkor egyedi firmware-t futtat.</li>
-  <li>A következő oldalon hasznos homebrew alkalmazásokat telepítünk, hogy teljessé tegyük a telepítésedet.</li>
-</ul>
+<h4 id="vii-rész---a-menuhax67-eltávolítása">VII. rész - A menuhax67 eltávolítása</h4>
 
-<h4 id="section-vii---removing-menuhax67">Section VII - Removing menuhax67</h4>
-
-<p>In this section, you will use the Homebrew Launcher to remove menuhax67, which will let you access the HOME Menu Settings option normally.</p>
+<p>Ebben a fejezetben a Homebrew Launcher-t fogod használni a menuhax67 eltávolítására, ami lehetővé teszi a HOME Menu beállítások opcióinak normális elérését.</p>
 
 <ol>
   <li>Indítsd el a Download Play alkalmazást (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
@@ -705,15 +704,21 @@ window.cookieconsent.initialise({
     </ul>
   </li>
   <li>Indítsd el a menuhax67_installer-t a homebrew listából</li>
-  <li>Select REMOVE menuhax67</li>
-  <li>When you see “done.”, press (A), then press (A) on “EXIT to menu”</li>
+  <li>Válaszd a REMOVE menuhax67 opciót</li>
+  <li>Ha azt látod, hogy “done.”, nyomj (A) gombot, majd ismét (A)-t az “EXIT to menu” opción</li>
 </ol>
 
-<p class="notice-info">At this point, you can re-enable wireless communications.</p>
+<p class="notice-info">Ezen a ponton újra engedélyezheted a vezeték nélküli kommunikációt.</p>
+
+<p>Ezen a ponton a konzolod alapértelmezetten bebootol a Luma3DS-be.</p>
+<ul>
+  <li>A Luma3DS nem néz ki másként, mint a normál HOME Menü. Ha a konzolod bebootolt a HOME Menübe, akkor egyedi firmware-t futtat.</li>
+  <li>A következő oldalon hasznos homebrew alkalmazásokat telepítünk, hogy teljessé tegyük a telepítésedet.</li>
+</ul>
 
 <hr />
 
-<p class="notice-primary">Continue to <a href="finalizing-setup">Finalizing Setup</a></p>
+<h3 class="notice-primary" id="tovább-a-telepítés-véglegesítésére">Tovább a <a href="finalizing-setup">telepítés véglegesítésére</a></h3>
 
         
       </section>
@@ -796,13 +801,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

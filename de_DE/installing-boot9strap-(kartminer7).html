@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/de_DE/installing-boot9strap-(mset9)'>Installing boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/de_DE/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
           
         
@@ -516,6 +520,7 @@ window.cookieconsent.initialise({
       <li><a href="#section-vii---removing-menuhax67" id="markdown-toc-section-vii---removing-menuhax67">Section VII - Removing menuhax67</a></li>
     </ul>
   </li>
+  <li><a href="#fortfahren-mit-setup-fertigstellen" id="markdown-toc-fortfahren-mit-setup-fertigstellen">Fortfahren mit Setup fertigstellen</a></li>
 </ul>
 
   </nav>
@@ -578,7 +583,7 @@ window.cookieconsent.initialise({
   </li>
   <li>Erstelle einen Ordner namens <code class="language-plaintext highlighter-rouge">boot9strap</code> im Stammverzeichnis deiner SD-Karte</li>
   <li>Kopiere <code class="language-plaintext highlighter-rouge">boot9strap.firm</code> und <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code> aus der boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> in den <code class="language-plaintext highlighter-rouge">/boot9strap/</code>-Ordner auf deiner SD-Karte</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> to the root of your SD card</li>
+  <li>Copy <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> from the SafeB9SInstaller <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
   <li>Erstelle einen Ordner namens <code class="language-plaintext highlighter-rouge">3ds</code> im Stammverzeichnis deiner SD-Karte falls er noch nicht existiert
     <ul>
       <li>This folder stores homebrew applications and data; it is different from the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder that the console automatically generates</li>
@@ -677,12 +682,6 @@ window.cookieconsent.initialise({
   <li>Drücke (Start) zum Speichern und neustarten</li>
 </ol>
 
-<p>Ab diesem Punkt wird deine Konsole standardmäßig Luma3DS starten.</p>
-<ul>
-  <li>Luma3DS sieht nicht anders aus als das normale HOME-Menü. Wenn deine Konsole in das HOME-Menü gestartet ist, läuft Custom Firmware auf ihr.</li>
-  <li>Auf der nächsten Seite wirst du nützliche Homebrew Apps installieren, um die Installation abzuschließen.</li>
-</ul>
-
 <h4 id="section-vii---removing-menuhax67">Section VII - Removing menuhax67</h4>
 
 <p>In this section, you will use the Homebrew Launcher to remove menuhax67, which will let you access the HOME Menu Settings option normally.</p>
@@ -711,9 +710,15 @@ window.cookieconsent.initialise({
 
 <p class="notice-info">At this point, you can re-enable wireless communications.</p>
 
+<p>Ab diesem Punkt wird deine Konsole standardmäßig Luma3DS starten.</p>
+<ul>
+  <li>Luma3DS sieht nicht anders aus als das normale HOME-Menü. Wenn deine Konsole in das HOME-Menü gestartet ist, läuft Custom Firmware auf ihr.</li>
+  <li>Auf der nächsten Seite wirst du nützliche Homebrew Apps installieren, um die Installation abzuschließen.</li>
+</ul>
+
 <hr />
 
-<p class="notice-primary">Continue to <a href="finalizing-setup">Finalizing Setup</a></p>
+<h3 class="notice-primary" id="fortfahren-mit-setup-fertigstellen">Fortfahren mit <a href="finalizing-setup">Setup fertigstellen</a></h3>
 
         
       </section>
@@ -796,13 +801,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

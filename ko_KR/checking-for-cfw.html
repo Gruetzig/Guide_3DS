@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -543,7 +547,7 @@ window.cookieconsent.initialise({
 
 <p class="notice--primary">Luma3DS 버전이 8.0 또는 그 이상이면, <a href="restoring-updating-cfw">CFW 복구 / 업데이트</a>해 주세요</p>
 
-<p class="notice--warning">If you see GodMode9, Decrypt9WIP, or Hourglass9, you held (Start) by accident and should try these instructions again with (Select)</p>
+<p class="notice--warning">만약 GodMode9/Decrypt9WIP/Hourglass9/Luma3DS chainloader를 보았다면 Select가 아닌 Start 버튼을 누른 것입니다. Select 버튼을 눌러 주세요</p>
 
 <p class="notice--danger">위 옵션 외의 증상이 벌어진다면, <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord 서버</a>에서 (영어로) 도움을 요청해 주세요.</p>
 
@@ -628,13 +632,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

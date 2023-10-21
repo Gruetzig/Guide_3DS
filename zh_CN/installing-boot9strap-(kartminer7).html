@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/zh_CN/installing-boot9strap-(mset9)'>Installing boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/zh_CN/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
           
         
@@ -517,6 +521,7 @@ window.cookieconsent.initialise({
       <li><a href="#section-vii---removing-menuhax67" id="markdown-toc-section-vii---removing-menuhax67">Section VII - Removing menuhax67</a></li>
     </ul>
   </li>
+  <li><a href="#继续至完成安装" id="markdown-toc-继续至完成安装">继续至完成安装</a></li>
 </ul>
 
   </nav>
@@ -579,7 +584,7 @@ window.cookieconsent.initialise({
   </li>
   <li>在 SD 卡根目录创建一个名为 <code class="language-plaintext highlighter-rouge">boot9strap</code> 的文件夹</li>
   <li>从boot9strap <code class="language-plaintext highlighter-rouge">.zip</code> 文件中复制 <code class="language-plaintext highlighter-rouge">boot9strap.firm</code> 和 <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code> 到你SD卡的 <code class="language-plaintext highlighter-rouge">/boot9strap/</code> 文件夹中</li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> to the root of your SD card</li>
+  <li>从 SafeB9SInstaller <code class="language-plaintext highlighter-rouge">.zip</code> 压缩包中复制 <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> 到 SD 卡根目录下</li>
   <li>检查 SD 卡的根目录是否存在一个名为 <code class="language-plaintext highlighter-rouge">3ds</code> 的文件夹，如果没有则手动新建一个
     <ul>
       <li>This folder stores homebrew applications and data; it is different from the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder that the console automatically generates</li>
@@ -678,12 +683,6 @@ window.cookieconsent.initialise({
   <li>按下 “Start” 键保存设置并重启</li>
 </ol>
 
-<p>At this point, your console will boot to Luma3DS by default.</p>
-<ul>
-  <li>Luma3DS does not look any different from the normal HOME Menu. If your console has booted into the HOME Menu, it is running custom firmware.</li>
-  <li>On the next page, you will install useful homebrew applications to complete your setup.</li>
-</ul>
-
 <h4 id="section-vii---removing-menuhax67">Section VII - Removing menuhax67</h4>
 
 <p>In this section, you will use the Homebrew Launcher to remove menuhax67, which will let you access the HOME Menu Settings option normally.</p>
@@ -712,9 +711,15 @@ window.cookieconsent.initialise({
 
 <p class="notice-info">At this point, you can re-enable wireless communications.</p>
 
+<p>At this point, your console will boot to Luma3DS by default.</p>
+<ul>
+  <li>Luma3DS does not look any different from the normal HOME Menu. If your console has booted into the HOME Menu, it is running custom firmware.</li>
+  <li>On the next page, you will install useful homebrew applications to complete your setup.</li>
+</ul>
+
 <hr />
 
-<p class="notice-primary">Continue to <a href="finalizing-setup">Finalizing Setup</a></p>
+<h3 class="notice-primary" id="继续至完成安装">继续至<a href="finalizing-setup">完成安装</a></h3>
 
         
       </section>
@@ -797,13 +802,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/it_IT/installing-boot9strap-(mset9)'>Installazione di boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
           
         
@@ -515,13 +519,13 @@ window.cookieconsent.initialise({
 </aside>
 
 <div class="notice--danger">
-<p><strong>Recentemente è stata rilasciata la versione del software 3DS 11.17.0</strong>. Ecco cosa dovresti sapere:</p>
+<p><strong>L’ultima versione del software 3DS è 11.17.0</strong>. Ecco cosa dovresti sapere:</p>
 
 <ul>
   <li>Se la tua console sta eseguendo <em>Luma 10.2.1 o più recente</em>, è <em>al 100% sicuro</em> aggiornare. Puoi controllare la versione di Luma tenendo premuto (Select) durante l’avvio della console.</li>
   <li>Se la tua console ha una versione precedente di Luma, dovresti <a href="checking-for-cfw">aggiornarla</a> prima di aggiornare la tua console alla versione 11.17.0.</li>
-  <li>Se la tua console non possiede ancora un custom firmware, <strong>NON aggiornare all’ultima versione di sistema</strong>, a meno che questa guida non te lo richieda.</li>
-  <li>Se la tua console non modificata è GIÀ alla versione 11.17.0, questa guida è già stata aggiornata per questo caso. Nello specifico, tutte le console della famiglia New3DS hanno un <a href="installing-boot9strap-(super-skaterhax)">metodo con software gratuito</a>, mentre i modelli della famiglia Old3DS dovranno usare <a href="alternate-exploits">exploit alternativi</a> che si basano su hardware o software esterni.</li>
+  <li>Se la tua console non possiede ancora un custom firmware, <strong>NON aggiornare all’ultima versione di sistema</strong>, a meno che questa guida non te lo richieda. I metodi sui firmware precedenti sono più facili e più stabili.</li>
+  <li>Se la tua console non modificata è GIÀ alla versione 11.17.0, questa guida è già stata aggiornata per questo caso. Sia <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> sia <a href="installing-boot9strap-(mset9)">Old3DS</a> ora hanno metodi totalmente gratuiti che (per la maggior parte) non richiedono hardware o software esterni.</li>
 </ul>
 
 </div>
@@ -707,13 +711,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

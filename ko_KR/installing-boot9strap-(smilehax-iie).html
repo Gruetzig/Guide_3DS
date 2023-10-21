@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Installing boot9strap (smilehax-IIe) - 3DS Hacks Guide</title>
+<!-- begin _includes/seo.html --><title>boot9strap 설치 (smilehax-IIe) - 3DS Hacks Guide</title>
 <meta name="description" content="A complete guide to 3DS custom firmware">
 
 
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="3DS Hacks Guide">
-<meta property="og:title" content="Installing boot9strap (smilehax-IIe)">
+<meta property="og:title" content="boot9strap 설치 (smilehax-IIe)">
 <meta property="og:url" content="https://3ds.hacks.guide/ko_KR/installing-boot9strap-(smilehax-iie).html">
 
 
@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -466,7 +470,7 @@ window.cookieconsent.initialise({
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Installing boot9strap (smilehax-IIe)">
+    <meta itemprop="headline" content="boot9strap 설치 (smilehax-IIe)">
     
     
     
@@ -474,7 +478,7 @@ window.cookieconsent.initialise({
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Installing boot9strap (smilehax-IIe)
+          <h1 id="page-title" class="page__title" itemprop="headline">boot9strap 설치 (smilehax-IIe)
 </h1>
           
 
@@ -519,7 +523,7 @@ window.cookieconsent.initialise({
   </nav>
 </aside>
 
-<p class="notice--warning">이 방법은 일본판 SmileBASIC과 호환되지 않습니다.</p>
+<p class="notice--warning">이 방법은 일본판 SmileBASIC과 호환되지 않습니다. The guide for that version can be found <a href="installing-boot9strap-(smilehax-iie-jpn)">here</a>.</p>
 
 <details class="notice--info">
 <summary><em>기술적 상세 정보 (선택 사항)</em></summary>
@@ -528,13 +532,13 @@ window.cookieconsent.initialise({
 
 <h3 id="준비물">준비물</h3>
 <ul>
-  <li>The game “SmileBASIC” installed on your console
+  <li>콘솔에 설치된 게임 “SmileBASIC”
     <ul>
       <li>이 게임을 다운로드 한 적이 있다면, <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/607/~/how-to-download-or-redownload-content-in-nintendo-3ds-eshop">다시 다운로드</a> 할 수 있습니다</li>
-      <li>Your SD card must be inserted in your console to install SmileBASIC</li>
+      <li>SmileBASIC을 설치하려면 SD 카드가 들어가 있어야 합니다</li>
     </ul>
   </li>
-  <li>The latest release of <a href="https://github.com/zoogie/smilehax-IIe/releases/download/v1.1/Release_sh2e_v1.1.zip">smilehax-IIe</a> (direct download)</li>
+  <li>최신 버전의 <a href="https://github.com/zoogie/smilehax-IIe/releases/download/v1.1/Release_sh2e_v1.1.zip">smilehax-IIe</a> (직접 다운로드)</li>
   <li>최신 버전의 <a href="https://github.com/d0k3/SafeB9SInstaller/releases/download/v0.0.7/SafeB9SInstaller-20170605-122940.zip">SafeB9SInstaller</a> (직접 다운로드)</li>
   <li>최신 버전의 <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> (직접 다운로드)</li>
   <li>최신 버전의 <a href="https://github.com/luigoalma/nimdsphax/releases/download/v1.0/nimdsphax_v1.0.zip">nimdsphax</a> (직접 다운로드)</li>
@@ -728,13 +732,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -524,7 +528,7 @@ window.cookieconsent.initialise({
 
 <p>좋은 하드모드 가이드는 <a href="https://gbatemp.net/threads/414498/">여기 (영문)</a>에서 볼 수 있습니다.</p>
 
-<p>이 작업은 <a href="https://www.3dbrew.org/wiki/3DS_System_Flaws">이곳</a>에 자세히 설명되어 있는 “FIRM partitions known-plaintext” 익스플로잇을 구현한 작업입니다.</p>
+<p>이 작업은 <a href="https://www.3dbrew.org/wiki/3DS_System_Flaws">이곳</a>에 자세히 설명되어 있는 “FIRM partitions known-plaintext” 취약점을 구현한 작업입니다.</p>
 
 <p>하드모드를 사용하여 콘솔의 NAND 이미지를 덤프하고, 이 NAND 이미지에다가 커스텀 펌웨어를 설치하고, 결과물을 다시 콘솔에 설치할 수 있습니다.</p>
 
@@ -546,7 +550,7 @@ window.cookieconsent.initialise({
   <li>최신 버전의 <a href="https://github.com/SciresM/boot9strap/releases/download/1.4/boot9strap-1.4.zip">boot9strap</a> (직접 다운로드)</li>
   <li>최신 버전의 <a href="https://github.com/ihaveamac/hardmod-b9s-installer/releases/latest">hardmod-b9s-installer</a>
     <ul>
-      <li>Windows users can use the compiled <code class="language-plaintext highlighter-rouge">.exe</code>, while Mac and Linux users will need to have <a href="https://www.python.org/downloads/">Python 3</a> installed to run the <code class="language-plaintext highlighter-rouge">.py</code></li>
+      <li>Mac과 Linux 사용자는 ‘.py’를 구동하기 위해 <a href="https://www.python.org/downloads/">Python 3</a>이 설치되어 있어야 하는 반면에 Windows 사용자들은 컴파일된 ‘.exe’파일을 사용할 수 있습니다</li>
     </ul>
   </li>
   <li>최신 버전의 <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a> (<code class="language-plaintext highlighter-rouge">.zip</code> 파일)</li>
@@ -887,13 +891,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

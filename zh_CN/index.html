@@ -125,7 +125,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -345,13 +345,13 @@ window.cookieconsent.initialise({
       <p class="notice--info">请在开始操作前仔细阅读所有步骤页面（包括这个页面）。</p>
 
 <div class="notice--danger">
-<p><strong>3DS 的系统固件已于最近更新至 11.17.0</strong>。 以下是一些你应该知道的事情：</p>
+<p><strong>The latest 3DS firmware is 11.17.0</strong>. 以下是一些你应该知道的事情：</p>
 
 <ul>
   <li>如果你的主机正在使用的 Luma 版本为 <strong>10.2.1 及以上</strong>的，那么升级系统是 <strong>100%</strong> 安全的。 你可以在关机状态下按住 SELECT 键，然后按下电源键开机以检查主机的 Luma 版本。</li>
   <li>如果你的主机运行的 Luma 低于此版本，则你应该在更新系统到 11.17.0 前先<a href="checking-for-cfw">更新 Luma</a>。</li>
-  <li>如果你的主机还没有破解且你打算进行破解，<strong>请不要</strong>在操作之前更新系统至最新版本。</li>
-  <li>如果你的未破解主机已经升级到 11.17.0 了，本教程也已更新对应的方法。 具体来说，New 3DS 系列的主机有<a href="installing-boot9strap-(super-skaterhax)">免费的软破方法</a>，而老型号的 3DS 系列主机则需要使用需要<a href="alternate-exploits">外设或其它软件</a> 的方法进行破解。</li>
+  <li>如果你的主机还没有破解且你打算进行破解，<strong>请不要</strong>在操作之前更新系统至最新版本。 The methods on earlier firmwares are easier and more stable.</li>
+  <li>如果你的未破解主机已经升级到 11.17.0 了，本教程也已更新对应的方法。 Both <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> and <a href="installing-boot9strap-(mset9)">Old3DS</a> now have free software methods that (for the most part) do not require external hardware or software.</li>
 </ul>
 
 </div>
@@ -449,13 +449,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

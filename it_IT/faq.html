@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/it_IT/installing-boot9strap-(mset9)'>Installazione di boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
           
         
@@ -515,13 +519,13 @@ window.cookieconsent.initialise({
 </aside>
 
 <div class="notice--danger">
-<p><strong>Recentemente è stata rilasciata la versione del software 3DS 11.17.0</strong>. Ecco cosa dovresti sapere:</p>
+<p><strong>L’ultima versione del software 3DS è 11.17.0</strong>. Ecco cosa dovresti sapere:</p>
 
 <ul>
   <li>Se la tua console sta eseguendo <em>Luma 10.2.1 o più recente</em>, è <em>al 100% sicuro</em> aggiornare. Puoi controllare la versione di Luma tenendo premuto (Select) durante l’avvio della console.</li>
   <li>Se la tua console ha una versione precedente di Luma, dovresti <a href="checking-for-cfw">aggiornarla</a> prima di aggiornare la tua console alla versione 11.17.0.</li>
-  <li>Se la tua console non possiede ancora un custom firmware, <strong>NON aggiornare all’ultima versione di sistema</strong>, a meno che questa guida non te lo richieda.</li>
-  <li>Se la tua console non modificata è GIÀ alla versione 11.17.0, questa guida è già stata aggiornata per questo caso. Nello specifico, tutte le console della famiglia New3DS hanno un <a href="installing-boot9strap-(super-skaterhax)">metodo con software gratuito</a>, mentre i modelli della famiglia Old3DS dovranno usare <a href="alternate-exploits">exploit alternativi</a> che si basano su hardware o software esterni.</li>
+  <li>Se la tua console non possiede ancora un custom firmware, <strong>NON aggiornare all’ultima versione di sistema</strong>, a meno che questa guida non te lo richieda. I metodi sui firmware precedenti sono più facili e più stabili.</li>
+  <li>Se la tua console non modificata è GIÀ alla versione 11.17.0, questa guida è già stata aggiornata per questo caso. Sia <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> sia <a href="installing-boot9strap-(mset9)">Old3DS</a> ora hanno metodi totalmente gratuiti che (per la maggior parte) non richiedono hardware o software esterni.</li>
 </ul>
 
 </div>
@@ -533,7 +537,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Ho installato l'ultima versione di sistema. Posso modificare la mia console senza hardware esterno o altro?</u></summary>
 
-<p>Dipende dal modello della tua console. Al momento, i New 3DS / New 3DS XL / New 2DS XL <a href="installing-boot9strap-(super-skaterhax)">possono essere modificati su 11.17.0</a> senza alcun prerequisito (es. titoli eShop, oggetti fisici), mentre i 3DS / 3DS XL / 2DS richiedono <a href="alternate-exploits">software o hardware aggiuntivo</a>.</p>
+<p><strong>Sì!</strong> New 3DS / New 3DS XL / New 2DS XL possono utilizzare <a href="installing-boot9strap-(super-skaterhax)">super-skaterhax</a>, mentre 3DS / 3DS XL / 2DS possono usare <a href="installing-boot9strap-(mset9)">MSET9</a>.</p>
 
 </details>
 
@@ -598,7 +602,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Ho sentito di questa cosa per cui dovrei pagare (Gateway, Sky3DS, ntrboot, R4, ecc). È qualcosa di cui ho bisogno?</u></summary>
 
-<p>Al momento, le console 3DS / 3DS XL / 2DS su 11.17.0 devono utilizzare uno dei tanti <a href="alternate-exploits">exploit alternativi</a> per installare un custom firmware. Se non è disponibile nessuno degli altri prerequisiti, allora ntrboot sarà l’opzione più economica (circa 20 Euro).</p>
+<p>No. Anche se una flashcart DS può essere usata per modificare un 3DS tramite <a href="ntrboot">ntrboot</a>, ora c’è un metodo gratuito disponibile per la maggior parte delle console.</p>
 
 <p>Le flashcart in modalità 3DS come Gateway e Sky3DS non sono consigliate perché obsolete e possono comportare il ban o il rischio di brickare la console.</p>
 </details>
@@ -772,13 +776,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

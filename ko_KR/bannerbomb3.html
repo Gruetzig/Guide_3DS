@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -538,7 +542,7 @@ window.cookieconsent.initialise({
 
 <ul>
   <li>Seedminer에서 받은 <code class="language-plaintext highlighter-rouge">movable.sed</code> 파일</li>
-  <li>The latest release of <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">BannerBomb3</a> (<code class="language-plaintext highlighter-rouge">Release_v3.0.zip</code>, direct download)</li>
+  <li>최신 버전의 <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">BannerBomb3</a> (<code class="language-plaintext highlighter-rouge">Release_v3.0.zip</code>, 직접 다운로드)</li>
 </ul>
 
 <h4 id="섹션-i---준비-작업">섹션 I - 준비 작업</h4>
@@ -548,21 +552,21 @@ window.cookieconsent.initialise({
 <ol>
   <li>콘솔의 전원을 꺼 주세요</li>
   <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
-  <li>Open <a href="https://zoogie.github.io/web/bb3/">Bannerbomb3 Injector</a> on your computer</li>
+  <li>컴퓨터에서 <a href="https://3ds.https://zoogie.github.io/web/bb3">BannerBomb3 Injector</a>를 열어 주세요</li>
   <li>“Choose File”를 선택하여 <code class="language-plaintext highlighter-rouge">movable.sed</code>를 업로드 해 주세요</li>
   <li>“Build and Download”를 선택해 주세요
     <ul>
-      <li>This will download an exploit DSiWare called <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code>, which will be contained in a zip archive (<code class="language-plaintext highlighter-rouge">BannerBomb3.zip</code>)</li>
+      <li>이것은 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code>이라는 취약점 DSiWare이 들어 있는 zip 파일 (<code class="language-plaintext highlighter-rouge">BannerBomb3.zip</code>)을 다운로드 합니다</li>
     </ul>
   </li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">bb3.bin</code> from <code class="language-plaintext highlighter-rouge">Release_v3.0.zip</code> to the root of your SD card
+  <li>‘Release_v3.0.zip’ 파일 안에 있는 ‘bb3.bin’ 파일을 SD 카드의 루트에 복사하세요.
     <ul>
       <li>SD 카드의 루트는 SD 카드를 열 때 보이는 디렉토리이고, Nintendo 3DS 폴더가 보이지만 그 안에 들어가 있지 않은 상태의 폴더입니다</li>
       <li>이 파일은 열거나 압축 풀기를 할 필요가 없습니다
  <img src="https://3ds.hacks.guide/images/screenshots/bb3/bb3-root-layout.png" alt="" class="notice--info" /></li>
     </ul>
   </li>
-  <li>Copy <code class="language-plaintext highlighter-rouge">Launcher.dat</code> from the folder for your model and region inside the Release <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
+  <li>Release <code class="language-plaintext highlighter-rouge">.zip</code> 파일 내, 콘솔 모델과 지역에 맞는 폴더 안의 Launcher.dat 파일을 SD 카드의 루트에 복사해 주세요</li>
   <li>SD 카드의 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> 폴더로 이동해 주세요
     <ul>
       <li><code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code>은 <a href="seedminer">Seedminer</a>에서 복사한 32글자 폴더명 입니다</li>
@@ -576,14 +580,14 @@ window.cookieconsent.initialise({
       <li>만약 그 폴더가 <em>있고</em> 내부에 DSiWare 백업 파일(<code class="language-plaintext highlighter-rouge">&lt;8-character-id&gt;.bin</code>)이 있다면, PC로 모두 복사해 두고 SD 카드에서 삭제해 주세요</li>
     </ul>
   </li>
-  <li>Copy the <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file from <code class="language-plaintext highlighter-rouge">BannerBomb3.zip</code> to the <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> folder</li>
+  <li><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일을 <code class="language-plaintext highlighter-rouge">BannerBomb3.zip</code> 에서 <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더로 복사해 주세요</li>
 </ol>
 
 <p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/bb3/dsiware-location-2.png" alt="" /></p>
 
 <h4 id="섹션-ii---bannerbomb3">섹션 II - BannerBomb3</h4>
 
-<p>In this section, you will trigger the BannerBomb3 exploit using the DSiWare Management menu and use it to install the menuhax67 exploit.</p>
+<p>이 섹션에서는 DSiWare 관리 메뉴를 사용하여 BannerBomb3 공격을 트리거하고 menuhax67 취약점을 설치합니다.</p>
 
 <ol>
   <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
@@ -687,13 +691,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

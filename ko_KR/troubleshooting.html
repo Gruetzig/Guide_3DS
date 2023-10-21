@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/ko_KR/installing-boot9strap-(mset9)'>boot9strap 설치 (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/ko_KR/installing-boot9strap-(petit-compwner)'>boot9strap 설치 (petit-compwner)</a></li>
           
         
@@ -394,7 +398,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="multiple-options"><i>(여러가지 옵션)</i></li>
+            <li style="display: none;" data-name="multiple-options"><i>(다중 옵션)</i></li>
           
         
           
@@ -523,8 +527,9 @@ window.cookieconsent.initialise({
   </li>
   <li><a href="#installing-boot9strap-soundhax">boot9strap 설치 (Soundhax)</a></li>
   <li><a href="#installing-boot9strap-ssloth-browser">boot9strap 설치 (SSLoth-Browser)</a></li>
+  <li><a href="#installing-boot9strap-super-skaterhax">boot9strap 설치 (super-skaterhax)</a></li>
   <li>
-    <p><a href="#installing-boot9strap-super-skaterhax">boot9strap 설치 (super-skaterhax)</a></p>
+    <p><a href="#installing-boot9strap-mset9">Installing boot9strap (MSET9)</a></p>
   </li>
   <li><a href="#finalizing-setup">마무리 단계</a></li>
 </ul>
@@ -539,7 +544,7 @@ window.cookieconsent.initialise({
 
 <h2 id="safeb9sinstaller와의-문제">SafeB9SInstaller와의 문제</h2>
 
-<h3 id="before-opening-safeb9sinstaller">Before opening SafeB9SInstaller</h3>
+<h3 id="safeb9sinstaller-실행-전">SafeB9SInstaller 실행 전</h3>
 
 <details>
 <summary><u>Failed to open SafeB9SInstaller.bin</u></summary>
@@ -552,7 +557,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>MicroSD Card - init failed</u></summary>
 
-<p>Your SD card is most likely acting weird. Try reformatting your SD card (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>). If this doesn’t work, try another SD card.</p>
+<p>SD 카드에 이상이 있을 가능성이 높습니다. 다시 포맷해 보세요 (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>). 이렇게까지 했는데도 효과가 없으면, 다른 SD 카드로 시도해보세요.</p>
 
 </details>
 
@@ -628,7 +633,7 @@ window.cookieconsent.initialise({
 
 <p>웹사이트에서 <code class="language-plaintext highlighter-rouge">movable.sed</code> 파일을 해킹할 수 없다고 확정했습니다. 정확한 ID0를 제공했는지 확인해주세요. 만약 ID0가 정확하다면, Seedminer를 통한 방법은 불가능하며 다른 방법을 이용해야 합니다.</p>
 
-<p>If you have a New 3DS / New 3DS XL / New 2DS XL (as indicated by the four shoulder buttons on the back and the C-Stick on the right), you can follow <a href="installing-boot9strap-(super-skaterhax)">Installing boot9strap (super-skaterhax)</a>. 그 외에는 추가 하드웨어가 필요한 방법을 시도해야 할 수 있습니다.</p>
+<p>New 3DS users can follow <a href="installing-boot9strap-(super-skaterhax)">Installing boot9strap (super-skaterhax)</a>, while Old 3DS users can follow <a href="installing-boot9strap-(mset9)">Installing boot9strap (MSET9)</a>. If you cannot do MSET9 for any reason, you will need to follow a method that requires additional games or hardware.</p>
 
 </details>
 
@@ -647,7 +652,7 @@ window.cookieconsent.initialise({
 
 <details>
 <summary><u>DSiWare 관리 메뉴가 BB3 multihax 메뉴를 표시하지 않고 깨짐</u></summary>
-<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code>이 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더 내에 있는 유일한 파일이어야 합니다. If it is, then re-create it with the <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>.</p>
+<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code>이 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> 폴더 내에 있는 유일한 파일이어야 합니다. 만약 그렇다면, <a href="https://zoogie.github.io/web/bb3">BannerBomb3 툴</a>에서 다시 생성해 주세요.</p>
 
 <p>또한, <code class="language-plaintext highlighter-rouge">bb3.bin</code>이 SD 카드의 최상위 디렉토리에 있어야 합니다. If it is missing, then download the latest release of <a href="https://github.com/zoogie/Bannerbomb3/releases/download/v3.0/Release_v3.0.zip">Bannerbomb3</a> (direct download), and copy the <code class="language-plaintext highlighter-rouge">bb3.bin</code> file from the Release <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card.</p>
 
@@ -663,7 +668,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>DSiWare 관리 메뉴에서 물음표가 표시됩니다</u></summary>
 
-<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일에 문제가 있습니다. (잘못된 파일이거나 다른 3DS용 파일) Re-create your <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> file with the <a href="https://zoogie.github.io/web/bb3">Bannerbomb3 Injector</a>, ensuring that you use the <code class="language-plaintext highlighter-rouge">movable.sed</code> file for your console.</p>
+<p><code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일에 문제가 있습니다. (잘못된 파일이거나 다른 3DS용 파일) 해당 콘솔의 <code class="language-plaintext highlighter-rouge">movable.sed</code> 파일을 이용해, <a href="https://zoogie.github.io/web/bb3">BannerBomb3 툴</a>에서 <code class="language-plaintext highlighter-rouge">F00D43D5.bin</code> 파일을 다시 생성해 주세요.</p>
 </details>
 
 <h2 id="boot9strap-설치-fredtool-inject">boot9strap 설치 (Fredtool-Inject)</h2>
@@ -810,7 +815,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Browserhax QR 코드나 URL을 열면 브라우저가 꺼집니다</u></summary>
 
-<p>이러한 브라우저 기반의 익스플로잇은 불안정하고 자주 종료됩니다. 그러나 종종 다음 단계를 수행하면 고쳐질 수 있습니다.</p>
+<p>이러한 브라우저 기반의 취약점은 불안정하고 자주 종료됩니다. 그러나 종종 다음 단계를 수행하면 고쳐질 수 있습니다.</p>
 
 <ol>
   <li>브라우저를 실행하고 브라우저 설정을 실행해 주세요</li>
@@ -888,20 +893,20 @@ window.cookieconsent.initialise({
   <li>Select OK to confirm.</li>
 </ol>
 
-<p>If the problem persists:</p>
+<p>문제가 지속될 경우:</p>
 
 <ul>
   <li>Ensure that <code class="language-plaintext highlighter-rouge">arm11code.bin</code>, <code class="language-plaintext highlighter-rouge">browserhax_hblauncher_ropbin_payload.bin</code>, and <code class="language-plaintext highlighter-rouge">boot.3dsx</code> are on the root of the SD card (not inside of any folder)</li>
-  <li>Ensure that you selected the correct payload for your region AND system version</li>
-  <li>Ensure that your region settings look <a href="/images/screenshots/skater_lang.png">like this</a></li>
-  <li>Try resetting your browser data:
+  <li>올바른 지역과 시스템 버전을 선택했는지 다시 확인해 보세요</li>
+  <li>지역 설정이 제대로 되어 있는지 확인해 주세요 <a href="/images/screenshots/skater_lang.png">참고 이미지</a></li>
+  <li>브라우저 데이터 삭제를 시도해 보세요:
     <ol>
       <li>브라우저를 실행하고 브라우저 설정을 실행해 주세요</li>
       <li>Scroll to the bottom and select “Reset Save Data” (it may also be called “Initilize Save Data” or “Clear All Save Data”)</li>
       <li>익스플로잇을 다시 시도해 주세요</li>
     </ol>
   </li>
-  <li>Try changing the system language to something other than the current language</li>
+  <li>시스템 언어를 현재 언어가 아닌 다른 언어로 변경해 보세요</li>
 </ul>
 
 </details>
@@ -916,9 +921,187 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>An exception occured or "DLL_HEAP_INFORMATION" when pressing GO! </u></summary>
+<summary><u>"GO! GO!" 선택 시 "An exception occurred" 또는 오류 화면이 표시됩니다 </u></summary>
 
 <p>이미 커스텀 펌웨어가 설치되어 있을 수 있습니다. <a href="checking-for-cfw">CFW 확인</a> 을 하는 것을 권장합니다.</p>
+
+</details>
+
+<h2 id="installing-boot9strap-mset9">Installing boot9strap (MSET9)</h2>
+
+<details>
+<summary><u>assert(id0_count == 1) AssertionError</u></summary>
+
+<p>You have multiple ID0 folders. To determine the correct folder, follow these instructions:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더를 <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> 폴더로 이름을 변경해 주세요</li>
+  <li>SD 카드를 콘솔에 다시 삽입해 주세요</li>
+  <li>콘솔의 전원을 켜 주세요</li>
+  <li>콘솔이 SD 카드 데이터를 생성할 때까지 기다려 주세요
+    <ul>
+      <li>당신의 앱들이 사라졌을 것입니다. 이는 정상이며, 잠시 후에 고쳐질 것입니다.</li>
+    </ul>
+  </li>
+  <li>콘솔의 전원을 꺼 주세요</li>
+  <li>SD 카드를 컴퓨터에 삽입해 주세요</li>
+  <li>SD 카드의 <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> 폴더를 열어 주세요</li>
+  <li>Write down the first few characters of the folder you see
+    <ul>
+      <li>This is your true ID0, which we will keep in the real Nintendo 3DS folder</li>
+    </ul>
+  </li>
+  <li>Delete the ID0 from the current <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder</li>
+  <li>Move the true ID0 folder from the <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> folder to the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder</li>
+  <li>If it exists, move the <code class="language-plaintext highlighter-rouge">Private</code> folder from the <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> folder to the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder</li>
+</ol>
+
+<p>Once you’ve done this, continue from <a href="installing-boot9strap-(mset9)#section-i---prep-work">Section I Step 7</a>.</p>
+
+</details>
+
+<details>
+<summary><u>(title/import).db does not exist, create them now?" / invalid database</u></summary>
+
+<p>Full error messages:</p>
+<ul>
+  <li>“Nintendo 3DS/&lt;ID0&gt;/&lt;ID1&gt;/dbs/&lt;import.db and/or title.db&gt; does not exist on SD card! Create them now? (type yes/no)”</li>
+  <li>“Invalid database”</li>
+</ul>
+
+<p>This happens when no valid title database is present, usually because you never installed any titles from eShop on this SD card.</p>
+
+<ol>
+  <li>Type “yes”, then press Enter</li>
+  <li>Insert the SD card into your console</li>
+  <li>콘솔의 전원을 켜 주세요</li>
+  <li>Navigate to System Settings -&gt; Data Management -&gt; Nintendo 3DS -&gt; Software -&gt; Reset (<a href="/images/screenshots/database-reset.jpg">visual instructions</a>)</li>
+  <li>콘솔의 전원을 꺼 주세요</li>
+  <li>Insert the SD card into your computer</li>
+  <li>Return to <a href="installing-boot9strap-(mset9)#section-i---prep-work">Section I Step 7</a></li>
+</ol>
+
+</details>
+
+<details>
+<summary><u>[WinError 5] Access is denied</u></summary>
+
+<p>The SD card may be write-locked. If you are using a full-size SD card, ensure that the lock is flipped in the <a href="/images/sdlock.png">upright position</a>. Otherwise, try ejecting and reinserting your SD card.</p>
+
+</details>
+
+<details>
+<summary><u>UnboundLocalError: cannot access local variable 'haxid1_path'</u></summary>
+
+<p>This can happen when Option 1 stopped because of an error and there is an incomplete installation.</p>
+
+<ol>
+  <li>Close the script window</li>
+  <li>Execute the <code class="language-plaintext highlighter-rouge">mset9.py</code> script on the root of the SD card
+    <ul>
+      <li><strong>Windows</strong>: Double-click <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+  +If this doesn’t work: hold SHIFT and right-click anywhere in the SD card window, then click the option that opens Terminal, PowerShell, or Command Prompt, then type <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> and press Enter</li>
+      <li><strong>Linux</strong>: open a Terminal window, <code class="language-plaintext highlighter-rouge">cd</code> to the root of your SD card, then type <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> and press Enter</li>
+      <li>You should see a window that says “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Type the number corresponding to your console model and version, then press Enter</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">4</code>, then press Enter to remove MSET9</li>
+  <li>Return to the <a href="installing-boot9strap-(mset9)#section-i---prep-work">beginning of Section I</a></li>
+</ol>
+
+</details>
+
+<details>
+<summary><u>Red screen after reinserting SD card (Section II Step 11)</u></summary>
+
+<p>You may be missing <code class="language-plaintext highlighter-rouge">SafeB9S.bin</code> from the root of your SD card, or the file may be corrupted. Copy it from the <code class="language-plaintext highlighter-rouge">SDMC</code> folder in the MSET9 <code class="language-plaintext highlighter-rouge">.zip</code>, replacing any existing files.</p>
+
+<p>Alternatively, your SD card may be improperly formatted or partitioned. Try reformatting your SD card: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(this will wipe your SD card data)</em></p>
+
+</details>
+
+<details>
+<summary><u>assert(mii_ok==1) AssertionError</u></summary>
+
+<p>Your SD card does not have Mii Maker Data, which is necessary for this exploit to run.</p>
+
+<ol>
+  <li>Close the script window</li>
+  <li>Execute the <code class="language-plaintext highlighter-rouge">mset9.py</code> script on the root of the SD card
+    <ul>
+      <li><strong>Windows</strong>: Double-click <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+        <ul>
+          <li>If this doesn’t work: hold SHIFT and right-click anywhere in the SD card window, then click the option that opens Terminal, PowerShell, or Command Prompt, then type <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> and press Enter</li>
+        </ul>
+      </li>
+      <li><strong>Linux</strong>: open a Terminal window, <code class="language-plaintext highlighter-rouge">cd</code> to the root of your SD card, then type <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> and press Enter</li>
+      <li>You should see a window that says “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Type the number corresponding to your console model and version, then press Enter</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">4</code>, then press Enter to remove MSET9</li>
+  <li>Insert the SD card into your console</li>
+  <li>콘솔의 전원을 켜 주세요</li>
+  <li>Launch Mii Maker</li>
+  <li>Wait for your console to reach the “Welcome to Mii Maker” screen, then exit Mii Maker</li>
+  <li>콘솔의 전원을 꺼 주세요</li>
+  <li>Insert the SD card into your computer</li>
+  <li>Return to <a href="installing-boot9strap-(mset9)#section-i---prep-work">Section I Step 7</a></li>
+</ol>
+
+</details>
+
+<details>
+<summary><u>System Settings loading infinitely after reinserting the SD card</u></summary>
+
+<p>You most likely did something different from the MSET9 instructions, or selected the wrong model or version.</p>
+
+<ol>
+  <li>Close the script window</li>
+  <li>Execute the <code class="language-plaintext highlighter-rouge">mset9.py</code> script on the root of the SD card
+    <ul>
+      <li><strong>Windows</strong>: Double-click <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+        <ul>
+          <li>If this doesn’t work: hold SHIFT and right-click anywhere in the SD card window, then click the option that opens Terminal, PowerShell, or Command Prompt, then type <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> and press Enter</li>
+        </ul>
+      </li>
+      <li><strong>Linux</strong>: open a Terminal window, <code class="language-plaintext highlighter-rouge">cd</code> to the root of your SD card, then type <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> and press Enter</li>
+      <li>You should see a window that says “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Type the number corresponding to your console model and version, then press Enter</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">3</code>, then press Enter</li>
+  <li>Once the window says “Deleting… done.”, insert the SD card into your console</li>
+  <li>콘솔의 전원을 켜 주세요</li>
+  <li>Return to <a href="installing-boot9strap-(mset9)#section-ii---mset9">Section II Step 1</a></li>
+</ol>
+
+<p>If you continue to have this issue and are sure that you did everything correctly, it’s possible that there’s something wrong with your Mii Maker extdata. Follow these instructions to reset it:</p>
+
+<ol>
+  <li>Close the script window</li>
+  <li>Execute the <code class="language-plaintext highlighter-rouge">mset9.py</code> script on the root of the SD card
+    <ul>
+      <li><strong>Windows</strong>: Double-click <code class="language-plaintext highlighter-rouge">mset9.bat</code>
+        <ul>
+          <li>If this doesn’t work: hold SHIFT and right-click anywhere in the SD card window, then click the option that opens Terminal, PowerShell, or Command Prompt, then type <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> and press Enter</li>
+        </ul>
+      </li>
+      <li><strong>Linux</strong>: open a Terminal window, <code class="language-plaintext highlighter-rouge">cd</code> to the root of your SD card, then type <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> and press Enter</li>
+      <li>You should see a window that says “MSET9 … SETUP by zoogie”</li>
+    </ul>
+  </li>
+  <li>Type the number corresponding to your console model and version, then press Enter</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">4</code>, then press Enter to remove MSET9</li>
+  <li>Insert the SD card into your console</li>
+  <li>콘솔의 전원을 켜 주세요</li>
+  <li>Launch Mii Maker</li>
+  <li>Wait for your console to reach the “Welcome to Mii Maker” screen, then exit Mii Maker</li>
+  <li>콘솔의 전원을 꺼 주세요</li>
+  <li>Insert the SD card into your computer</li>
+  <li>Return to <a href="installing-boot9strap-(mset9)#section-i---prep-work">Section I Step 7</a></li>
+</ol>
 
 </details>
 
@@ -1054,7 +1237,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Error #12: Copy (file).db fail</u></summary>
 
-<p>Ensure that your SD card is not <a href="/images/sdlock.png">locked</a>. If the SD card is not locked and you continue to get this error, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+<p>Ensure that your SD card is not <a href="/images/sdlock.png">locked</a>. 이 상태가 아님에도 문제가 지속될 경우, <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord 서버</a> 에 연락해 도움을 청하세요.</p>
 
 </details>
 
@@ -1077,8 +1260,15 @@ window.cookieconsent.initialise({
   <li>(Home)을 눌러 작업 메뉴를 열어 주세요</li>
   <li>“Scripts…“를 선택해 주세요</li>
   <li>“finalize”를 선택해 주세요</li>
-  <li>Follow the prompts in the script, answering any questions that you are asked</li>
+  <li>스크립트 표시에 따라 필요한 행동을 취해주세요</li>
 </ol>
+
+</details>
+
+<details>
+<summary><u>Error #18: MSET9 detected</u></summary>
+
+<p>You didn’t remove MSET9 when prompted to. Follow <a href="installing-boot9strap-(mset9)#section-iv---removing-mset9">Section IV - Removing MSET9</a>, then re-run the script.</p>
 
 </details>
 
@@ -1098,9 +1288,9 @@ window.cookieconsent.initialise({
 <p>알림 LED가 깜빡인다면:</p>
 
 <ul>
-  <li><strong>White</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card or on internal memory.</li>
-  <li><strong>Magenta</strong>: Your 3DS was not able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on your SD card. 내부 메모리에 있는 <code class="language-plaintext highlighter-rouge">boot.firm</code>을 확인했으나, 파일이 손상되었습니다.</li>
-  <li><strong>Red</strong>: Your 3DS was able to find <code class="language-plaintext highlighter-rouge">boot.firm</code> on both your SD card and on internal memory, but both files are corrupted.</li>
+  <li><strong>하얀색</strong>: SD 카드 혹은 내부 메모리에서 <code class="language-plaintext highlighter-rouge">boot.firm</code>을 찾지 못했습니다.</li>
+  <li><strong>다홍색</strong>: SD 카드에서 <code class="language-plaintext highlighter-rouge">boot.firm</code>을 찾지 못했습니다. 내부 메모리에 있는 <code class="language-plaintext highlighter-rouge">boot.firm</code>을 확인했으나, 파일이 손상되었습니다.</li>
+  <li><strong>빨간색</strong>: <code class="language-plaintext highlighter-rouge">boot.firm</code> 파일을 찾았지만, SD 카드와 내부 메모리에 있는 파일 모두가 손상되었습니다.</li>
 </ul>
 
 <p><a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS의 최신 버전</a>을 다운받아 압축을 해제해, 새 <code class="language-plaintext highlighter-rouge">boot.firm</code> 파일을 SD 카드의 루트 디렉토리에 넣어주세요. (파일이 이미 있다면 덮어씌워주세요.) <code class="language-plaintext highlighter-rouge">boot.firm</code> 파일이 계속 문제가 있는 것으로 인식된다면, SD 카드에 문제가 있는지 확인해야 할 수 있습니다: (<a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, or <a href="f3xswift-(mac)">macOS</a>) 또, WinRAR로 압축 해제한 파일은 3DS에서 문제를 자주 일으키는 것으로 알려져 있습니다.</p>
@@ -1239,9 +1429,9 @@ SD 카드가 읽혔는지 확인하려면 SELECT를 누른 채 부팅해 아래 
 </details>
 
 <details>
-<summary><u>Opening the HOME Menu settings crashes the console or loads the Homebrew Launcher</u></summary>
+<summary><u>HOME 메뉴 실행시 크래시가 발생하거나 Homebrew Launcher가 실행될 경우</u></summary>
 
-<p>Your console likely still has menuhax67 installed. To uninstall menuhax67, download the latest release of <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> (the menuhax <code class="language-plaintext highlighter-rouge">.zip</code>), then follow the <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits/menuhax67#Uninstall_menuhax67">“Uninstall menuhax67” section</a> here.</p>
+<p>menuhax67가 여전히 설치되어 있는 듯합니다. To uninstall menuhax67, download the latest release of <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> (the menuhax <code class="language-plaintext highlighter-rouge">.zip</code>), then follow the <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits/menuhax67#Uninstall_menuhax67">“Uninstall menuhax67” section</a> here.</p>
 </details>
 
 <hr />
@@ -1288,9 +1478,9 @@ SD 카드가 읽혔는지 확인하려면 SELECT를 누른 채 부팅해 아래 
 </details>
 
 <details>
-<summary><u>Manually entering Homebrew Launcher</u></summary>
+<summary><u>Homebrew Launcher 수동 접근</u></summary>
 
-<p>If you are missing the Homebrew Launcher application from your HOME Menu, you can follow these instructions to manually enter the Homebrew Launcher. (You will need <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">boot.3dsx and boot.firm</a> on the root of your SD card.)</p>
+<p>HOME 메뉴를 통해 Homebrew Launcher 애플리케이션에 접근이 불가능할 경우, 다음 방법을 통해 수동으로 Homebrew Launcher에 접근할 수 있습니다. (You will need <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">boot.3dsx and boot.firm</a> on the root of your SD card.)</p>
 
 <ol>
   <li>다운로드 플레이 앱을 실행해 주세요 (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
@@ -1314,7 +1504,7 @@ SD 카드가 읽혔는지 확인하려면 SELECT를 누른 채 부팅해 아래 
 </details>
 
 <details>
-<summary><u>Turning off Parental Controls</u></summary>
+<summary><u>청소년 보호 기능 끄기</u></summary>
 
 <p>You can disable the Parental Controls feature by going to System Settings -&gt; Parental Controls and inserting the PIN, then pressing “Clear Settings”, then “Delete” to remove it.
 However, if you do not know the PIN and therefore cannot access the console’s settings, you will need to disable it. In order to do this, you need to obtain your console’s master key (mkey):</p>
@@ -1413,13 +1603,15 @@ However, if you do not know the PIN and therefore cannot access the console’s 
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

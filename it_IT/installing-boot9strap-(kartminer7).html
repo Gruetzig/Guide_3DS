@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/it_IT/installing-boot9strap-(mset9)'>Installazione di boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/it_IT/installing-boot9strap-(petit-compwner)'>Installazione di boot9strap (petit-compwner)</a></li>
           
         
@@ -516,6 +520,7 @@ window.cookieconsent.initialise({
       <li><a href="#sezione-vii---rimozione-di-menuhax67" id="markdown-toc-sezione-vii---rimozione-di-menuhax67">Sezione VII - Rimozione di menuhax67</a></li>
     </ul>
   </li>
+  <li><a href="#prosegui-con-il-completamento-dellinstallazione" id="markdown-toc-prosegui-con-il-completamento-dellinstallazione">Prosegui con il Completamento dell’installazione</a></li>
 </ul>
 
   </nav>
@@ -578,7 +583,7 @@ window.cookieconsent.initialise({
   </li>
   <li>Crea una cartella chiamata <code class="language-plaintext highlighter-rouge">boot9strap</code> nella directory principale della tua scheda SD</li>
   <li>Copia i file <code class="language-plaintext highlighter-rouge">boot9strap.firm</code> e <code class="language-plaintext highlighter-rouge">boot9strap.firm.sha</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di boot9strap nella cartella <code class="language-plaintext highlighter-rouge">/boot9strap/</code> della tua scheda SD</li>
-  <li>Copia il file <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> nella directory principale della tua scheda SD</li>
+  <li>Copia il file <code class="language-plaintext highlighter-rouge">SafeB9SInstaller.bin</code> dall’archivio <code class="language-plaintext highlighter-rouge">.zip</code> di SafeB9SInstaller nella directory principale della tua scheda SD</li>
   <li>Se assente, crea una cartella chiamata <code class="language-plaintext highlighter-rouge">3ds</code> nella directory principale della tua scheda SD
     <ul>
       <li>Questa cartella mantiene le applicazioni homebrew e i loro dati; è diversa dalla cartella <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> generata automaticamente dalla console</li>
@@ -677,12 +682,6 @@ window.cookieconsent.initialise({
   <li>Premi (Start) per salvare e riavviare il 3DS</li>
 </ol>
 
-<p>A questo punto, la console avvierà sempre Luma3DS.</p>
-<ul>
-  <li>Luma3DS non è diverso dal normale menu HOME. Se la console avvia il menu HOME, vuol dire che sta eseguendo il custom firmware.</li>
-  <li>Nella pagina successiva installerai applicazioni homebrew utili per completare la tua installazione.</li>
-</ul>
-
 <h4 id="sezione-vii---rimozione-di-menuhax67">Sezione VII - Rimozione di menuhax67</h4>
 
 <p>In questa sezione userai l’Homebrew Launcher per rimuovere menuhax67, ed ottenere nuovamente l’accesso alle impostazioni del menu HOME.</p>
@@ -711,9 +710,15 @@ window.cookieconsent.initialise({
 
 <p class="notice-info">A questo punto, è possibile riattivare la comunicazione wireless.</p>
 
+<p>A questo punto, la console avvierà sempre Luma3DS.</p>
+<ul>
+  <li>Luma3DS non è diverso dal normale menu HOME. Se la console avvia il menu HOME, vuol dire che sta eseguendo il custom firmware.</li>
+  <li>Nella pagina successiva installerai applicazioni homebrew utili per completare la tua installazione.</li>
+</ul>
+
 <hr />
 
-<p class="notice-primary">Prosegui con il <a href="finalizing-setup">Completamento dell’installazione</a></p>
+<h3 class="notice-primary" id="prosegui-con-il-completamento-dellinstallazione">Prosegui con il <a href="finalizing-setup">Completamento dell’installazione</a></h3>
 
         
       </section>
@@ -796,13 +801,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

@@ -123,7 +123,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -386,6 +386,10 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/es_ES/installing-boot9strap-(mset9)'>Installing boot9strap (MSET9)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(petit-compwner)"><a href='/es_ES/installing-boot9strap-(petit-compwner)'>Installing boot9strap (petit-compwner)</a></li>
           
         
@@ -601,7 +605,7 @@ window.cookieconsent.initialise({
   </li>
   <li>Create a folder named <code class="language-plaintext highlighter-rouge">Nintendo DSiWare</code> inside of the <code class="language-plaintext highlighter-rouge">&lt;ID1&gt;</code>
     <ul>
-      <li>If you already had the folder <em>and</em> there are any existing DSiWare backup files (<code class="language-plaintext highlighter-rouge">&lt;8-character-id&gt;.bin</code>) inside, copy them to your PC and remove them from your SD card</li>
+      <li>If you already had the folder <em>and</em> there are any existing DSiWare backup files (<code class="language-plaintext highlighter-rouge">&lt;8-character-id&gt;.bin</code>) inside, copy them to your computer and remove them from your SD card</li>
     </ul>
   </li>
   <li>Open the output_(name) <code class="language-plaintext highlighter-rouge">.zip</code> file and navigate to <code class="language-plaintext highlighter-rouge">China_Taiwan</code> -&gt; <code class="language-plaintext highlighter-rouge">output_setup</code></li>
@@ -741,6 +745,12 @@ window.cookieconsent.initialise({
   <li>Power off your console</li>
 </ol>
 
+<p>At this point, your console will boot to Luma3DS by default.</p>
+<ul>
+  <li>Luma3DS does not look any different from the normal HOME Menu. If your console has booted into the HOME Menu, it is running custom firmware.</li>
+  <li>On the next page, you will install useful homebrew applications to complete your setup.</li>
+</ul>
+
 <hr />
 
 <h3 class="notice--primary" id="continúa-en-finalizar-instalación">Continúa en <a href="finalizing-setup">Finalizar instalación</a></h3>
@@ -826,13 +836,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 

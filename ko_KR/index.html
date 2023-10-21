@@ -125,7 +125,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#2e3440"
+      "background": "#28282b"
     },
     "button": {
       "background": "#60818f"
@@ -344,13 +344,13 @@ window.cookieconsent.initialise({
       <p class="notice--info">진행하기 전에 모든 소개 페이지(이 페이지 포함) 를 철저히 읽어 주세요.</p>
 
 <div class="notice--danger">
-<p><strong>3DS 펌웨어 11.17.0이 최근 출시되었습니다</strong>. 다음 사항을 참고해 주세요.</p>
+<p><strong>The latest 3DS firmware is 11.17.0</strong>. 다음 사항을 참고해 주세요.</p>
 
 <ul>
   <li>만약 콘솔이 <em>Luma 10.2.1 이상일 경우</em>, 업데이트해도 <em>100%</em> 안전합니다. 콘솔을 부팅할 때 (Select) 버튼을 누르고 있으면 Luma의 버전을 확인할 수 있습니다.</li>
   <li>만약 콘솔이 오래된 Luma를 사용하고 있다면, 콘솔을 11.17.0으로 업데이트하기 전에 <a href="restoring-updating-cfw">CFW 복구 / 업데이트</a>를 해야 합니다.</li>
-  <li>만약 콘솔에 아직 커스텀 펌웨어가 설치되어 있지 않다면, 이 가이드에서 지시 하지 않는 한 <strong>최신 버전으로 업데이트 하지 마세요.</strong></li>
-  <li>만약 커스텀 펌웨어가 되지 않은 콘솔이 이미 11.17.0 이라면, 이 가이드는 그것에 맞춰 업데이트 되어있습니다. Specifically, New3DS-family consoles have a <a href="installing-boot9strap-(super-skaterhax)">free software method</a>, while Old3DS-family consoles will need to use <a href="alternate-exploits">alternate exploits</a> that rely on external hardware or software.</li>
+  <li>만약 콘솔에 아직 커스텀 펌웨어가 설치되어 있지 않다면, 이 가이드에서 지시 하지 않는 한 <strong>최신 버전으로 업데이트 하지 마세요.</strong> The methods on earlier firmwares are easier and more stable.</li>
+  <li>만약 커스텀 펌웨어가 되지 않은 콘솔이 이미 11.17.0 이라면, 이 가이드는 그것에 맞춰 업데이트 되어있습니다. Both <a href="installing-boot9strap-(super-skaterhax)">New3DS</a> and <a href="installing-boot9strap-(mset9)">Old3DS</a> now have free software methods that (for the most part) do not require external hardware or software.</li>
 </ul>
 
 </div>
@@ -448,13 +448,15 @@ window.cookieconsent.initialise({
 
 
 
-  <script>
-  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-  ga('create','UA-86465881-1','auto');
-  ga('set', 'anonymizeIp', false);
-  ga('send','pageview')
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
 </script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
 
 
 
