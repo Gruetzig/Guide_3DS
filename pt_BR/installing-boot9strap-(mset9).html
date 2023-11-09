@@ -548,6 +548,8 @@ window.cookieconsent.initialise({
 
 <h3 id="instruções">Instruções</h3>
 
+<p class="notice--info">On this page, you will use the MSET9 script, which is used to trigger MSET9. If you get a numbered error (e.g. Error 01) when running the script, the solution to that error can most likely be found on the <a href="troubleshooting#installing-boot9strap-mset9">troubleshooting</a> page.</p>
+
 <h4 id="seção-i---preparação">Seção I - Preparação</h4>
 
 <p>Nesta seção, você irá preparar os dados no seu cartão SD necessários para que o exploit MSET9 possa ser ativado.</p>
@@ -568,16 +570,10 @@ window.cookieconsent.initialise({
 
     <p class="notice--info"><img src="/images/screenshots/mset9/mset9-root-layout.png" alt="MSET9 root layout" /></p>
   </li>
-  <li>Execute o script <code class="language-plaintext highlighter-rouge">mset9.py</code> na raiz do seu cartão SD
+  <li>Run the MSET9 script:
     <ul>
-      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code>
-        <ul>
-          <li>Se isso não funcionar: segure SHIFT e dê um clique direito em qualquer lugar da janela do cartão SD, então clique na opção que abra o Terminal, Powershell, ou Prompt de Comando, então digite <code class="language-plaintext highlighter-rouge">py -3 mset9.py</code> e pressione Enter</li>
-        </ul>
-      </li>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code></li>
       <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
-      <li>Você deve ver uma janela que diz “MSET9 … SETUP by zoogie”</li>
-      <li>Você deve manter esta janela aberta até o fim desta página, mas se fechá-la por acidente, poderá abri-la de novo refazendo este passo</li>
     </ul>
 
     <p class="notice--info"><img src="/images/screenshots/mset9/mset9-select.png" alt="Image: MSET9 setup" /></p>
@@ -593,28 +589,12 @@ window.cookieconsent.initialise({
       <li>Certifique-se de que o modelo e a versão do console estão sendo mostrados</li>
     </ul>
   </li>
-  <li>Digite <code class="language-plaintext highlighter-rouge">1</code>, então pressione Enter para preparar o MSET9
+  <li>Type <code class="language-plaintext highlighter-rouge">1</code>, then press Enter to ensure your console is prepared for MSET9
     <ul>
-      <li>Se você ver “(title.db/import.db) does not exist on SD card!”:
-        <ul>
-          <li>Digite “yes”, então pressione Enter</li>
-          <li>Feche a janela do MSET9</li>
-          <li>Ejete seu SD do seu computador</li>
-          <li>Insira seu cartão SD no seu console</li>
-          <li>Ligue o seu console</li>
-          <li>Navegue para Configurações do Sistema -&gt; Gerenciamento de Dados -&gt; Nintendo 3DS -&gt; Software -&gt; Reiniciar (<a href="/images/screenshots/database-reset.jpg">instruções visuais</a>)</li>
-          <li>Desligue seu console</li>
-          <li>Insira seu cartão SD no seu computador</li>
-          <li>Volte para o Passo 7 (“Execute o script <code class="language-plaintext highlighter-rouge">mset9.py</code>”)</li>
-        </ul>
-      </li>
+      <li>If you get an error, check the <a href="troubleshooting#installing-boot9strap-mset9">troubleshooting</a>, then try again</li>
     </ul>
   </li>
-  <li>Assim que a janela dizer “Setting up… done”, ejete seu cartão SD do seu computador
-    <ul>
-      <li>Mantenha a janela do MSET9 aberta</li>
-    </ul>
-  </li>
+  <li>If you see the message “Everything appears to be functional!”, MSET9 is ready to be injected. Press Enter to close the MSET9 script</li>
   <li>Reinsira o cartão SD no seu console</li>
   <li>Ligue o seu console</li>
 </ol>
@@ -636,17 +616,20 @@ window.cookieconsent.initialise({
       <li>O menu vai recarregar e dizer que não há cartão SD inserido, o que é esperado</li>
     </ul>
   </li>
-  <li>Insert your SD card into your computer, then wait a few seconds</li>
-  <li>Na janela do MSET9, digite <code class="language-plaintext highlighter-rouge">2</code>, então pressione Enter para ativar o MSET9
+  <li>Insira o cartão SD no seu computador</li>
+  <li>Run the MSET9 script:
     <ul>
-      <li>Você deve ver “Injecting… done.”</li>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code></li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
     </ul>
   </li>
-  <li>Ejete seu cartão SD do seu computador
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>In the MSET9 window, type <code class="language-plaintext highlighter-rouge">2</code>, then press Enter to inject MSET9
     <ul>
-      <li>Mantenha a janela do MSET9 aberta</li>
+      <li>You should see “MSET9 successfully injected!”</li>
     </ul>
   </li>
+  <li>Press Enter to close the MSET9 script</li>
   <li>Reinsira o cartão SD no seu console <strong>sem pressionar nenhum botão ou tocar a tela de toque</strong></li>
   <li>Se o exploit for bem-sucedido, você terá entrado no SafeB9SInstaller
     <ul>
@@ -680,17 +663,24 @@ window.cookieconsent.initialise({
 
 <p>Nesta seção, você irá remover o MSET9 para evitar erros futuros. (Isto não irá remover o custom firmware que você acabou de instalar.)</p>
 
-<p class="notice--danger">NÃO pule esta seção! Se você o fizer, aplicativos podem ter um crash inesperado e você talvez encontre erros na próxima página!</p>
+<p class="notice--danger">NÃO pule esta seção! If you skip it, applications may crash unexpectedly and you will encounter errors on the next page!</p>
 
 <ol>
   <li>Desligue seu console</li>
-  <li>Insert your SD card into your computer, then wait a few seconds</li>
-  <li>Na janela do MSET9, digite <code class="language-plaintext highlighter-rouge">4</code>, então aperte Enter para remover o MSET9
+  <li>Insira o cartão SD no seu computador</li>
+  <li>Run the MSET9 script:
     <ul>
-      <li>Você deve ver “Removing… done”</li>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code></li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
     </ul>
   </li>
-  <li>Feche a janela do MSET9; você não precisará mais dela para os próximos passos</li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>In the MSET9 window, type <code class="language-plaintext highlighter-rouge">3</code>, then press Enter to remove MSET9
+    <ul>
+      <li>You should see “Successfully removed MSET9!”</li>
+    </ul>
+  </li>
+  <li>Press Enter to close the MSET9 script</li>
 </ol>
 
 <p>A partir deste momento, o seu console iniciará no Luma3DS por padrão.</p>
