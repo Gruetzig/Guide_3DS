@@ -366,19 +366,19 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/pt_BR/installing-boot9strap-(ninjhax2-dx)'>Instalando boot9strap (ninjhax2-dx)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/pt_BR/installing-boot9strap-(ninjhax2-dx)'>Instalando boot9strap (ninjhax2-dx)</a></li>
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/pt_BR/installing-boot9strap-(pichaxx)'>Installing boot9strap (PicHaxx)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/pt_BR/installing-boot9strap-(pichaxx)'>Installing boot9strap (PicHaxx)</a></li>
           
         
           
-            <li style="display: none;" data-name=""><a href='/pt_BR/installing-boot9strap-(smilehax-iie)'>Instalando boot9strap (smilehax-IIe)</a></li>
+            <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/pt_BR/installing-boot9strap-(smilehax-iie)'>Instalando boot9strap (smilehax-IIe)</a></li>
           
         
           
-            <li style="display: none;" data-name=""><a href='/pt_BR/installing-boot9strap-(steelhax)'>Instalando boot9strap (Steelhax)</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/pt_BR/installing-boot9strap-(steelhax)'>Instalando boot9strap (Steelhax)</a></li>
           
         
           
@@ -543,6 +543,16 @@ window.cookieconsent.initialise({
 
 <p>Para encontrar o método correto para o seu console, selecione o modelo do seu console e a versão do sistema que encontrou na Seção II.</p>
 
+<table id="modeltable" class="modeltable" style="display:none">
+  <thead>
+    <th><div align="center">Old 3DS/2DS</div></th>
+    <th><div align="center">New 3DS/2DS</div></th>
+  </thead>
+  <tbody>
+    <td> <img class="tableimage" src="/images/old3ds.png" alt="old 3DS" /> <img class="tableimage" src="/images/old3dsxl.png" alt="old 3DS" /> <img class="tableimage" src="/images/2ds.png" alt="old 3DS" /><br /><br /><input type="radio" name="checkbox" id="old3DS" /></td>
+    <td> <img class="tableimage" src="/images/new3ds.png" alt="old 3DS" /> <img class="tableimage" src="/images/new3dsxl.png" alt="old 3DS" /> <img class="tableimage" src="/images/new2dsxl.png" alt="old 3DS" /><br /><br /><input type="radio" name="checkbox" id="new3DS" /></td>
+  </tbody>
+</table>
 <div id="selectversion" class="selectversion" style="display:none">
     <br />
     <select id="major">
@@ -644,14 +654,20 @@ window.cookieconsent.initialise({
 </div>
 
 <script>
+document.getElementById("modeltable").style.display = "block";
 document.getElementById("selectversion").style.display = "block";
 </script>
 
+<p id="result_noneSelected" style="display:none">
+Modelo do sistema é necessário.
+</p>
 <p id="result_invalidVersion" style="display:none">
 Esta não parece ser uma versão válida de sistema.
 </p>
 
 <script src="/assets/js/selecting.js"></script>
+
+<noscript>Please enable JavaScript to continue with the guide.</noscript>
 
 <hr />
 

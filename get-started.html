@@ -366,6 +366,14 @@ window.cookieconsent.initialise({
           
         
           
+            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/installing-boot9strap-(safecerthax)'>Installing boot9strap (safecerthax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/installing-boot9strap-(ssloth-browser)'>Installing boot9strap (SSLoth-Browser)</a></li>
+          
+        
+          
             <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/installing-boot9strap-(kartdlphax)'>Installing boot9strap (kartdlphax)</a></li>
           
         
@@ -457,8 +465,18 @@ window.cookieconsent.initialise({
 
 <h4 id="section-iii---select-a-method">Section III - Select a Method</h4>
 
-<p>To find the correct method for your console, please select the system version you found in Section II.</p>
+<p>To find the correct method for your console, please select the model of your console and the system version you found in Section II.</p>
 
+<table id="modeltable" class="modeltable" style="display:none">
+  <thead>
+    <th><div align="center">Old 3DS/2DS</div></th>
+    <th><div align="center">New 3DS/2DS</div></th>
+  </thead>
+  <tbody>
+    <td> <img class="tableimage" src="/images/old3ds.png" alt="old 3DS" /> <img class="tableimage" src="/images/old3dsxl.png" alt="old 3DS" /> <img class="tableimage" src="/images/2ds.png" alt="old 3DS" /><br /><br /><input type="radio" name="checkbox" id="old3DS" /></td>
+    <td> <img class="tableimage" src="/images/new3ds.png" alt="old 3DS" /> <img class="tableimage" src="/images/new3dsxl.png" alt="old 3DS" /> <img class="tableimage" src="/images/new2dsxl.png" alt="old 3DS" /><br /><br /><input type="radio" name="checkbox" id="new3DS" /></td>
+  </tbody>
+</table>
 <div id="selectversion" class="selectversion" style="display:none">
     <br />
     <select id="major">
@@ -560,39 +578,21 @@ window.cookieconsent.initialise({
 </div>
 
 <script>
+document.getElementById("modeltable").style.display = "block";
 document.getElementById("selectversion").style.display = "block";
 </script>
 
+<p id="result_noneSelected" style="display:none">
+System model is required.
+</p>
 <p id="result_invalidVersion" style="display:none">
 This doesn't seem to be a valid system version.
 </p>
 
 <script src="/assets/js/selecting.js"></script>
 
-<noscript>To use the version selector, please enable JavaScript. If you do not want to enable JavaScript, use the legacy version table below:
-  <table>
-    <colgroup>
-      <col span="1" style="width: 20%;" />
-      <col span="1" style="width: 40%;" />
-    </colgroup>
-    <thead>
-      <tr>
-        <th style="text-align: center">System Version</th>
-        <th style="text-align: center">What to do</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: center; font-weight: bold;">11.4.0 to 11.17.0 (latest version)</td>
-        <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(mset9)">Installing boot9strap (MSET9)</a></td>
-      </tr>
-      <tr>
-        <td style="text-align: center; font-weight: bold;">1.0.0 to 11.3.0</td>
-        <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(soundhax)">Installing boot9strap (Soundhax)</a></td>
-      </tr>
-    </tbody>
-  </table>
-</noscript>
+<noscript>Please enable JavaScript to continue with the guide.</noscript>
+
 <hr />
 
 <h4 id="alternate-methods">Alternate Methods</h4>
