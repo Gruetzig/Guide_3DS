@@ -123,7 +123,32 @@ function can_mset9(major, minor, native, region, model) {
 }
 
 /*
-    If <= 11.3 we do Soundhax, if >11.3 we do MSET9. Region and minor version is ignored.
+    Reality:
+
+    Redirects page based on input from user.
+    Input:
+        - System version
+        - O3DS/N3DS
+
+    Exploits are compatibility-checked in the following order:
+
+    - Soundhax
+        - 1.0 - 11.3
+        - All regions
+        - All models
+    - SSLoth-Browser
+        - 11.4 - 11.13 with matching NVer for each version
+        - USA, JPN, EUR, KOR
+        - All models
+    - safecerthax
+        - 11.4 - 11.14
+        - All regions
+        - O3DS only
+    - MSET9
+        - 11.4 - 11.17
+            - All consoles will update to this version
+        - All regions
+        - All models
 */
 function redirect() {
     const major = document.getElementById("major").value;
