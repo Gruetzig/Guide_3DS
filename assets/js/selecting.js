@@ -5,6 +5,9 @@
     SPDX-License-Identifier: MIT
 */
 
+const DEVICE_N3DS = 1;
+const DEVICE_O3DS = 0;
+
 // Possible max minor for each major, major as key
 const major_minor_map = {
     0: -1, // invalidate all 0.x
@@ -131,7 +134,6 @@ function redirect() {
     const isO3DS = document.getElementById("old3DS").checked;
     document.getElementById("result_noneSelected").style.display = "none";
     document.getElementById("result_invalidVersion").style.display = "none";
-    document.getElementById("result_methodUnavailable").style.display = "none";
     if ((!isN3DS) && (!isO3DS)) {
         document.getElementById("result_noneSelected").style.display = "block";
         return;
