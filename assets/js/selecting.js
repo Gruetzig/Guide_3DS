@@ -25,7 +25,7 @@ const major_minor_map = {
 }
 
 // Validate version
-function validate_version(major, minor, region, model) {
+function validate_version(major, minor, native, region, model) {
 
     const minor_max = major_minor_map[major];
     if (!isNaN(minor_max) && minor > minor_max) {
@@ -110,6 +110,27 @@ function can_safecerthax(major, minor, native, region, model) {
     return false;
 }
 
+// super-skaterhax
+// N3DS only
+// EUR/JPN/USA: 11.16-11.17
+// KOR: 11.16 only, KOR does not have 11.17
+// CHN/TWN has no N3DS
+function can_superskaterhax(major, minor, native, region, model) {
+    let do_redirect = false;
+    // N3DS only
+    if(model == DEVICE_N3DS) {
+        if (major == 11) {
+            if (minor >= 16) do_redirect = true;
+        }
+    }
+
+    if (do_redirect) {
+        window.location.href = "installing-boot9strap-(super-skaterhax)";
+        return true;
+    }
+    return false;
+}
+
 // MSET9
 // 11.4-11.17
 function can_mset9(major, minor, native, region, model) {
@@ -144,9 +165,12 @@ function can_mset9(major, minor, native, region, model) {
         - 11.4 - 11.14
         - All regions
         - O3DS only
+    - super-skaterhax
+        - 11.16 - 11.17
+        - USA / EUR / JPN / KOR
+        - N3DS only
     - MSET9
         - 11.4 - 11.17
-            - All consoles will update to this version
         - All regions
         - All models
 */
@@ -178,6 +202,7 @@ function redirect() {
       can_soundhax,
       can_ssloth,
       can_safecerthax,
+      can_superskaterhax,
       can_mset9
     ].some(func => func(major, minor, nver, region, model));
     if (redirected) return true;
