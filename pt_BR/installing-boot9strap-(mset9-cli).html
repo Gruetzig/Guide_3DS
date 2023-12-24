@@ -1,0 +1,737 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Installing boot9strap (MSET9 CLI) - 3DS Hacks Guide</title>
+<meta name="description" content="A complete guide to 3DS custom firmware">
+
+
+  <meta name="author" content="Nintendo Homebrew">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="3DS Hacks Guide">
+<meta property="og:title" content="Installing boot9strap (MSET9 CLI)">
+<meta property="og:url" content="https://3ds.hacks.guide/pt_BR/installing-boot9strap-(mset9-cli).html">
+
+
+  <meta property="og:description" content="A complete guide to 3DS custom firmware">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://3ds.hacks.guide/pt_BR/installing-boot9strap-(mset9-cli).html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Nintendo Homebrew",
+      "url": "https://3ds.hacks.guide/"
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="jVXoPK_-qzKJp4SScnZYpOIX3yDXfGnAoTBJYixUOwg" />
+
+
+  <meta name="msvalidate.01" content="F3532011519E308583A0A2CAF2DD69E8">
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="3DS Hacks Guide Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- hacks-guide change start: cookie consent, favicon, locales -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
+<link rel="icon" type="image/png" href="/images/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
+<link rel="manifest" href="/images/manifest.json?v=PYEmwKvQAx">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
+<link rel="shortcut icon" href="/images/favicon.ico?v=PYEmwKvQAx">
+<meta name="apple-mobile-web-app-title" content="Guide">
+<meta name="application-name" content="Guide">
+<meta name="msapplication-TileColor" content="#2E3440">
+<meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=PYEmwKvQAx">
+<meta name="msapplication-config" content="/images/browserconfig.xml?v=PYEmwKvQAx">
+<meta name="theme-color" content="#2E3440">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#28282b"
+    },
+    "button": {
+      "background": "#60818f"
+    }
+  },
+  "theme": "edgeless",
+  "position": "top",
+  "static": true,
+  "content": {
+    "message": "Esta página usa cookies para mostrar o atual progresso da guia na barra lateral e, desta forma melhorar o site."
+  }
+})});
+</script>
+<!-- hacks-guide change end -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+<!-- hacks-guide change start: Disable caching -->
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+<!-- hacks-guide change start: disable default masthead title -->
+      <!--
+        <a class="site-title" href="/">
+          3DS Hacks Guide
+          
+        </a>
+      -->
+<!-- hacks-guide change end -->
+        <ul class="visible-links">
+<!-- hacks-guide change start: multi-language configuration -->
+          
+          
+          
+          
+          
+          
+            
+              <li class="masthead__menu-item masthead__menu-item--lg"><a href="/pt_BR/">Página Inicial</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/faq">FAQ</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/troubleshooting">Troubleshooting</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/checking-for-cfw">Checando por CFW</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/godmode9-usage">Utilização do GodMode9</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/contribute">Contribuir</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/region-changing">Mudança de Região</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/uninstall-cfw">Desinstalar CFW</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/credits">Créditos</a></li>
+            
+          
+            
+              <li class="masthead__menu-item"><a href="/pt_BR/site-navigation">Navegação do Site</a></li>
+            
+          
+<!-- hacks-guide change end -->
+        </ul>
+        
+<!-- hacks-guide change start: Add language selector -->
+        <ul class="hidden-links links-menu hidden"></ul>
+        <ul class="hidden-links lang-menu hidden">
+          
+          
+          
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/installing-boot9strap-(mset9-cli).html">English</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/es_ES/installing-boot9strap-(mset9-cli).html">Español</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/de_DE/installing-boot9strap-(mset9-cli).html">Deutsch</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/fr_FR/installing-boot9strap-(mset9-cli).html">Français</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/it_IT/installing-boot9strap-(mset9-cli).html">Italiano</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/nl_NL/installing-boot9strap-(mset9-cli).html">Nederlands</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/pt_BR/installing-boot9strap-(mset9-cli).html">Português do Brasil</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/pt_PT/installing-boot9strap-(mset9-cli).html">Português (Portugal)</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ru_RU/installing-boot9strap-(mset9-cli).html">Русский</a></li> -->
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/zh_CN/installing-boot9strap-(mset9-cli).html">简体中文</a></li>
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/zh_TW/installing-boot9strap-(mset9-cli).html">繁體中文</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/pl_PL/installing-boot9strap-(mset9-cli).html">Polski</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/tr_TR/installing-boot9strap-(mset9-cli).html">Türkçe</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/vi_VN/installing-boot9strap-(mset9-cli).html">Tiếng Việt</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ca_ES/installing-boot9strap-(mset9-cli).html">Català</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/el_GR/installing-boot9strap-(mset9-cli).html">Ελληνικά</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/he_IL/installing-boot9strap-(mset9-cli).html">עברית‎</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/sv_SE/installing-boot9strap-(mset9-cli).html">Svenska</a></li> -->
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ko_KR/installing-boot9strap-(mset9-cli).html">한국어</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/no_NO/installing-boot9strap-(mset9-cli).html">Norsk</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ja_JP/installing-boot9strap-(mset9-cli).html">日本語</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ar_SA/installing-boot9strap-(mset9-cli).html">اللغة العربية</a></li> -->
+          <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/hu_HU/installing-boot9strap-(mset9-cli).html">Magyar</a></li>
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ro_RO/installing-boot9strap-(mset9-cli).html">Română</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/sr_SP/installing-boot9strap-(mset9-cli).html">Српски</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/af_ZA/installing-boot9strap-(mset9-cli).html">Afrikaans</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/ms_MY/installing-boot9strap-(mset9-cli).html">Bahasa Melayu</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/fi_FI/installing-boot9strap-(mset9-cli).html">Suomi</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/da_DK/installing-boot9strap-(mset9-cli).html">Dansk</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/uk_UA/installing-boot9strap-(mset9-cli).html">Українська</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/cs_CZ/installing-boot9strap-(mset9-cli).html">Čeština</a></li> -->
+          <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/en_PT/installing-boot9strap-(mset9-cli).html">Pirate English</a></li> -->
+        </ul>
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
+<!-- hacks-guide change end -->
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  <!-- hacks-guide change start: Implement progress table, replace existing sidebar -->
+<!--
+
+  <div class="sidebar sticky">
+  
+  
+    
+    
+  
+  </div>
+
+-->
+
+
+
+<div class="sidebar sticky" style="display: none;">
+  <!-- hacks-guide change start: Refactor entire subsection to allow using translations -->
+
+
+
+
+
+
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    <li>
+      <span class="nav__sub-title">Progresso Geral</span>
+      <ol>
+        
+          
+            <li style="display: none;" data-name="home"><a href='/pt_BR/'>Página Inicial</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="key-information"><a href='/pt_BR/key-information'>Informação Importante</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="get-started"><a href='/pt_BR/get-started'>Começando</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="ntrboot"><a href='/pt_BR/ntrboot'>ntrboot</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(mset9)"><a href='/pt_BR/installing-boot9strap-(mset9)'>Instalando boot9strap (MSET9)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(mset9-cli)"><a href='/pt_BR/installing-boot9strap-(mset9-cli)'>Installing boot9strap (MSET9 CLI)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(mset9-play-store)"><a href='/pt_BR/installing-boot9strap-(mset9-play-store)'>Installing boot9strap (MSET9 Play Store)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="multiple-options"><i>(Multiple Options)</i></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-single-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-single-system)'>Flashing ntrboot (3DS Single System)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(3ds-multi-system)"><a href='/pt_BR/flashing-ntrboot-(3ds-multi-system)'>Flashing ntrboot (3DS Multi System)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(dsi)"><a href='/pt_BR/flashing-ntrboot-(dsi)'>Flashing ntrboot (DSi)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="flashing-ntrboot-(nds)"><a href='/pt_BR/flashing-ntrboot-(nds)'>Flashing ntrboot (NDS)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(hardmod)"><a href='/pt_BR/installing-boot9strap-(hardmod)'>Installing boot9strap (Hardmod)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(ntrboot)"><a href='/pt_BR/installing-boot9strap-(ntrboot)'>Installing boot9strap (ntrboot)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(soundhax)"><a href='/pt_BR/installing-boot9strap-(soundhax)'>Installing boot9strap (Soundhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(safecerthax)"><a href='/pt_BR/installing-boot9strap-(safecerthax)'>Installing boot9strap (safecerthax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(ssloth-browser)"><a href='/pt_BR/installing-boot9strap-(ssloth-browser)'>Installing boot9strap (SSLoth-Browser)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(super-skaterhax)"><a href='/pt_BR/installing-boot9strap-(super-skaterhax)'>Installing boot9strap (super-skaterhax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="installing-boot9strap-(kartdlphax)"><a href='/pt_BR/installing-boot9strap-(kartdlphax)'>Installing boot9strap (kartdlphax)</a></li>
+          
+        
+          
+            <li style="display: none;" data-name="finalizing-setup"><a href='/pt_BR/finalizing-setup'>Finalizing Setup</a></li>
+          
+        
+      </ol>
+    </li>
+  </ul>
+</nav>
+<!-- hacks-guide change end -->
+
+</div>
+
+
+<!-- hacks-guide change end-->
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Installing boot9strap (MSET9 CLI)">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Installing boot9strap (MSET9 CLI)
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+
+<!-- hacks-guide change start -->
+        <hr>
+
+        
+        
+
+        
+          
+          <div class ="notice"><b>Para suporte em Inglês, peça ajuda no <a href="https://discord.gg/MWxPgEp">Discord do Nintendo Homebrew</a>.</b></div>
+        
+          
+          <div class ="notice"><b>Se você gostou deste guia, nós aceitamos <a href="contribute#donations">Doações</a>.</b></div>
+        
+
+        <hr>
+<!-- hacks-guide change end -->
+
+        <aside class="sidebar__right">
+<nav class="toc">
+    <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Tabela de Conteúdo</h4></header>
+<ul class="toc__menu" id="markdown-toc">
+  <li><a href="#notas-de-compatibilidade" id="markdown-toc-notas-de-compatibilidade">Notas de Compatibilidade</a></li>
+  <li><a href="#o-que-é-necessário" id="markdown-toc-o-que-é-necessário">O que é necessário</a></li>
+  <li><a href="#instruções" id="markdown-toc-instruções">Instruções</a>    <ul>
+      <li><a href="#seção-i---preparação" id="markdown-toc-seção-i---preparação">Seção I - Preparação</a></li>
+      <li><a href="#seção-ii---mset9" id="markdown-toc-seção-ii---mset9">Seção II - MSET9</a></li>
+      <li><a href="#seção-iii---instalando-o-boot9strap" id="markdown-toc-seção-iii---instalando-o-boot9strap">Seção III - Instalando o boot9strap</a></li>
+      <li><a href="#seção-iv---removendo-o-mset9" id="markdown-toc-seção-iv---removendo-o-mset9">Seção IV - Removendo o MSET9</a></li>
+    </ul>
+  </li>
+  <li><a href="#continue-para-finalizando-a-instalação" id="markdown-toc-continue-para-finalizando-a-instalação">Continue para Finalizando a instalação</a></li>
+</ul>
+
+  </nav>
+</aside>
+
+<details class="notice--info">
+<summary><em>Detalhes técnicos (opcional)</em></summary>
+<p><a href="https://github.com/zoogie/MSET9">MSET9</a> é um exploit para o aplicativo de Configurações do Sistema desenvolvido por <a href="https://github.com/zoogie">zoogie</a>. Ele faz uso de um erro onde a ID1 (a pasta de 32 caractéres dentro da pasta Nintendo 3DS, dentro de ID0) pode ter <em>qualquer</em> nome desde que seja composto por 32 caractéres. Fazer uma sequência de ações específicas resultará no console executando instruções que estão codificadas no nome da pasta da ID1, que pode ser utilizada para garantir controle total sobre o 3DS.</p>
+
+</details>
+
+<h3 id="notas-de-compatibilidade">Notas de Compatibilidade</h3>
+
+<p class="notice--warning">This page requires a computer running Windows, Linux, or macOS. If you have an Android phone/tablet or a Chromebook, follow <a href="installing-boot9strap-(mset9-play-store)">Installing boot9strap (MSET9 Play Store)</a> instead. If you do not have access to any of these devices, you will need to use an <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits">alternate exploit</a>.</p>
+
+<h3 id="o-que-é-necessário">O que é necessário</h3>
+
+<ul>
+  <li>A versão mais recente do <a href="https://github.com/zoogie/MSET9/releases/latest">MSET9</a> (o arquivo <code class="language-plaintext highlighter-rouge">.zip</code>)</li>
+  <li>Qualquer versão 3.x de <a href="https://www.python.org/downloads/">Python</a> <strong>instalada no seu computador</strong>
+    <ul>
+      <li>Se você estiver no Linux ou macOS, você já pode ter Python 3. Verifique abrindo uma janela terminal e digitando <code class="language-plaintext highlighter-rouge">python3 -V</code>. Se este retornar um número de versão, ele funcionará para este guia.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="instruções">Instruções</h3>
+
+<p class="notice--info">Nesta página, você usará o script MSET9, que é usado para acionar o MSET9. Se você receber um erro numerado (por exemplo, Error 01) ao executar o script, a solução para esse erro provavelmente pode ser encontrada na página <a href="troubleshooting#installing-boot9strap-mset9">troubleshooting</a>.</p>
+
+<h4 id="seção-i---preparação">Seção I - Preparação</h4>
+
+<p>Nesta seção, você irá preparar os dados no seu cartão SD necessários para que o exploit MSET9 possa ser ativado.</p>
+
+<ol>
+  <li>Ligue o seu console <strong>com o cartão SD inserido</strong></li>
+  <li>Abra o Mii Maker</li>
+  <li>Espere seu console chegar a tela “Bem-vindo ao Mii Maker”, então saia do Mii Maker
+    <ul>
+      <li>Talvez você veja <a href="/images/screenshots/mset9/mii-extdata.png">esta tela</a>,o que indica que os dados necessários já foram criados</li>
+      <li>Se você só chegou na tela normal do Mii Maker, saia do Mii Maker e continue para o próximo passo</li>
+    </ul>
+  </li>
+  <li>Desligue seu console</li>
+  <li>Insira o cartão SD no seu computador</li>
+  <li>
+    <p>Copie tudo do Release <code class="language-plaintext highlighter-rouge">.zip</code> para a raiz do seu cartão SD, substituindo quaisquer arquivos existentes</p>
+
+    <p class="notice--info"><img src="/images/screenshots/mset9/mset9-root-layout.png" alt="MSET9 root layout" /></p>
+  </li>
+  <li>Execute o script MSET9:
+    <ul>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code></li>
+      <li><strong>macOS</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.command</code> e digite sua senha se solicitado</li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
+    </ul>
+
+    <p class="notice--info"><img src="/images/screenshots/mset9/mset9-select.png" alt="Image: MSET9 setup" /></p>
+  </li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter
+    <ul>
+      <li>A janela deve mudar para isto:</li>
+    </ul>
+
+    <p class="notice--info"><img src="/images/screenshots/mset9/mset9-setup.png" alt="Image: MSET9 setup" /></p>
+
+    <ul>
+      <li>Certifique-se de que o modelo e a versão do console estão sendo mostrados</li>
+    </ul>
+  </li>
+  <li>Digite <code class="language-plaintext highlighter-rouge">1</code> e pressione Enter para garantir que seu console esteja preparado para MSET9
+    <ul>
+      <li>Se você receber um erro, verifique o <a href="troubleshooting#installing-boot9strap-mset9">troubleshooting</a>, e tente novamente</li>
+    </ul>
+  </li>
+  <li>Se você ver a mensagem “Everything appears to be functional!”, o MSET9 está pronto para ser injetado. Pressione Enter para fechar o script MSET9</li>
+  <li>Reinsira o cartão SD no seu console</li>
+  <li>Ligue o seu console</li>
+</ol>
+
+<h4 id="seção-ii---mset9">Seção II - MSET9</h4>
+
+<p>Nestã seção, você vai attivar o MSET9 para iniciar o SafeB9SInstaller (o instalador de custom firmware).</p>
+
+<p class="notice--danger">Estas instruções devem ser seguidas <strong>EXATAMENTE</strong> como estão, então confira TUDO que você está fazendo para evitar erros!</p>
+
+<ol>
+  <li><strong><a href="/images/screenshots/mset9/hover-settings.png">Paire sobre</a></strong> o ícone das Configurações do Sistema usando o D-Pad (não o selecione ainda)</li>
+  <li>Desligue, então ligue seu console</li>
+  <li>Pressione (A) para iniciar as Configurações do Sistema</li>
+  <li>Navegue para <code class="language-plaintext highlighter-rouge">Gerenciamento de Dados</code> -&gt; <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> -&gt; <code class="language-plaintext highlighter-rouge">Extra Data</code> (<a href="/images/screenshots/mset9/settings-extdata.png">imagem</a>)</li>
+  <li><strong>Não pressione nenhum botão ou a tela de toque</strong> - certifique-se que você vê o ícone do Mii Maker</li>
+  <li><strong>Com o console AINDA LIGADO, e sem pressionar nenhum dos botões ou a tela de toque</strong>, remova seu cartão SD do seu console
+    <ul>
+      <li>O menu vai recarregar e dizer que não há cartão SD inserido, o que é esperado</li>
+    </ul>
+  </li>
+  <li>Insira o cartão SD no seu computador</li>
+  <li>Execute o script MSET9:
+    <ul>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code></li>
+      <li><strong>macOS</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.command</code> e digite sua senha se solicitado</li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
+    </ul>
+  </li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>Na janela MSET9, digite <code class="language-plaintext highlighter-rouge">2</code> e pressione Enter para injetar o MSET9
+    <ul>
+      <li>Você deve ver “MSET9 successfully injected!”</li>
+    </ul>
+  </li>
+  <li>Pressione Enter para fechar o script MSET9</li>
+  <li>Reinsira o cartão SD no seu console <strong>sem pressionar nenhum botão ou tocar a tela de toque</strong></li>
+  <li>Se o exploit for bem-sucedido, você terá entrado no SafeB9SInstaller
+    <ul>
+      <li>Se aparecer uma tela vermelha ou o console ficar preso em uma tela de carregamento, siga o <a href="troubleshooting#installing-boot9strap-mset9">guia de troubleshooting</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="seção-iii---instalando-o-boot9strap">Seção III - Instalando o boot9strap</h4>
+
+<p>Nesta seção, você instalará custom firmware no seu console.</p>
+
+<ol>
+  <li>Quando solicitado, aperte a sequência de botões fornecida na tela superior para instalar o boot9strap
+    <ul>
+      <li>Se um passo na tela inferior tiver texto de cor vermelha e você não for solicitado a introduzir um combo de botões, <a href="troubleshooting#issues-with-safeb9sinstaller">siga este guia de solução de problemas</a></li>
+    </ul>
+  </li>
+  <li>Quando concluído, aperte (A) para reiniciar o seu console</li>
+  <li>Seu console deve ter inicializado o menu de configuração do Luma3DS
+    <ul>
+      <li>O menu de configuração do Luma3DS são configurações para o custom firmware do Luma3DS. Muitas dessas configurações podem ser úteis para personalização ou depuração</li>
+      <li>Para o propósito deste guia, <strong>deixe essas opções nas configurações padrão</strong> (não marque ou desmarque nada)</li>
+      <li>Se o seu console desligar quando você tentar ligá-lo, certifique-se de que você copiou <code class="language-plaintext highlighter-rouge">boot.firm</code> do <code class="language-plaintext highlighter-rouge">.zip</code> do Luma3DS para a raiz do seu cartão SD</li>
+    </ul>
+  </li>
+  <li>Aperte (Start) para salvar e reiniciar</li>
+</ol>
+
+<h4 id="seção-iv---removendo-o-mset9">Seção IV - Removendo o MSET9</h4>
+
+<p>Nesta seção, você irá remover o MSET9 para evitar erros futuros. (Isto não irá remover o custom firmware que você acabou de instalar.)</p>
+
+<p class="notice--danger">NÃO pule esta seção! Se você pular isso, os aplicativos podem ter um crash inesperado e você encontrará erros na próxima página!</p>
+
+<ol>
+  <li>Desligue seu console</li>
+  <li>Insira o cartão SD no seu computador</li>
+  <li>Execute o script MSET9:
+    <ul>
+      <li><strong>Windows</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.bat</code></li>
+      <li><strong>macOS</strong>: Clique duas vezes em <code class="language-plaintext highlighter-rouge">mset9.command</code> e digite sua senha se solicitado</li>
+      <li><strong>Linux</strong>: Abra uma janela do Terminal, use <code class="language-plaintext highlighter-rouge">cd</code> até o root do seu cartão SD, então digite <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> e pressione Enter</li>
+    </ul>
+  </li>
+  <li>Digite o número correspondente ao modelo do seu console e a versão, então pressione Enter</li>
+  <li>Na janela MSET9, digite <code class="language-plaintext highlighter-rouge">3</code> e pressione Enter para remover o MSET9
+    <ul>
+      <li>Você deve ver “Successfully removed MSET9!”</li>
+    </ul>
+  </li>
+  <li>Pressione Enter para fechar o script MSET9</li>
+</ol>
+
+<p>A partir deste momento, o seu console iniciará no Luma3DS por padrão.</p>
+<ul>
+  <li>O Luma3DS não é diferente do HOME Menu normal. Se seu console foi inicializado no Menu HOME, ele está executando custom firmware.</li>
+  <li>Na próxima página, você irá instalar aplicativos homebrew úteis para concluir sua instalação.</li>
+</ul>
+
+<hr />
+
+<p class="notice--danger">Você seguiu a Seção IV (Removendo o MSET9)? Essa seção é MANDATÓRIA!</p>
+
+<h3 class="notice--primary" id="continue-para-finalizando-a-instalação">Continue para <a href="finalizing-setup">Finalizando a instalação</a></h3>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/hacks-guide/Guide_3DS" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+<!-- hacks-guide change start: force disable atom feed-->
+<!--
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+    </ul>
+  -->
+<!-- hacks-guide change end -->
+
+</div>
+
+<!-- hacks-guide change start: custom footer -->
+
+
+
+<div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Navegação do Site</a> - <a href="privacy-policy">Política de Privacidade</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<!-- hacks-guide change end -->
+
+      </footer>
+    </div>
+<!-- hacks-guide change end -->
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+<!-- hacks-guide change start: Disable caching -->
+
+<!-- hacks-guide change end -->
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-760Y60FQ3T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-760Y60FQ3T', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
