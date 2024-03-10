@@ -5,7 +5,6 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -72,8 +71,6 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="3DS Hacks Guide Feed">
-
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,25 +88,24 @@
 
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- hacks-guide change start: cookie consent, favicon, locales -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
-<link rel="icon" type="image/png" href="/images/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
-<link rel="manifest" href="/images/manifest.json?v=PYEmwKvQAx">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
-<link rel="shortcut icon" href="/images/favicon.ico?v=PYEmwKvQAx">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/site-config/apple-touch-icon.png?v=PYEmwKvQAx">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
+<link rel="icon" type="image/png" href="/images/site-config/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
+<link rel="manifest" href="/images/site-config/manifest.json?v=PYEmwKvQAx">
+<link rel="mask-icon" href="/images/site-config/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
+<link rel="shortcut icon" href="/images/site-config/favicon.ico?v=PYEmwKvQAx">
 <meta name="apple-mobile-web-app-title" content="Guide">
 <meta name="application-name" content="Guide">
 <meta name="msapplication-TileColor" content="#2E3440">
-<meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=PYEmwKvQAx">
-<meta name="msapplication-config" content="/images/browserconfig.xml?v=PYEmwKvQAx">
+<meta name="msapplication-TileImage" content="/images/site-config/mstile-144x144.png?v=PYEmwKvQAx">
+<meta name="msapplication-config" content="/assets/xml/browserconfig.xml?v=PYEmwKvQAx">
 <meta name="theme-color" content="#2E3440">
-
 
 
 
@@ -123,7 +119,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#28282b"
+      "background": "#2e3440"
     },
     "button": {
       "background": "#60818f"
@@ -263,7 +259,7 @@ window.cookieconsent.initialise({
           <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/en_PT/uninstall-cfw.html">Pirate English</a></li> -->
         </ul>
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle Menu</span>
+          <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
         </button>
         <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
@@ -307,7 +303,7 @@ window.cookieconsent.initialise({
 <nav class="nav__list">
   
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Toggle Menu</label>
+  <label for="ac-toc">Toggle menu</label>
   <ul class="nav__items">
     <li>
       <span class="nav__sub-title">Progreso total</span>
@@ -386,11 +382,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/es_ES/installing-boot9strap-(kartdlphax)'>Installing boot9strap (kartdlphax)</a></li>
-          
-        
-          
-            <li style="display: none;" data-name=""><a href='/es_ES/finalizing-setup'>Finalizing Setup</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/es_ES/finalizing-setup'>Finalizing Setup</a></li>
           
         
       </ol>
@@ -424,7 +416,6 @@ window.cookieconsent.initialise({
 
       <section class="page__content" itemprop="text">
         
-
 <!-- hacks-guide change start -->
         <hr>
 
@@ -478,6 +469,8 @@ window.cookieconsent.initialise({
 
 <ul>
   <li>You want to re-install it</li>
+  <li>You want to change SD cards</li>
+  <li>Your SD card was lost or corrupted</li>
   <li>One of your games is broken</li>
   <li>One of your system applications is broken</li>
   <li>Your console is unable to boot to HOME Menu</li>
@@ -596,7 +589,7 @@ window.cookieconsent.initialise({
 <h4 id="sección-iv---copia-de-seguirdad-de-la-nand">Sección IV - Copia de seguirdad de la NAND</h4>
 
 <ol>
-  <li>Press and hold (Start), and while holding (Start), power on your console. Esto iniciará GodMode9</li>
+  <li>Press and hold (Start), and while holding (Start), power on your console. Esto abrirá GodMode9</li>
   <li>Presiona el botón (Home) para abrir el menú de acción</li>
   <li>Selecciona “Scripts…”</li>
   <li>Selecciona “GM9Megascript”</li>
@@ -662,6 +655,21 @@ window.cookieconsent.initialise({
 
 <h4 id="sección-vii---ejecutar-script-de-desinstalación">Sección VII - Ejecutar script de desinstalación</h4>
 <p class="notice--warning">¡Esta es la última oportunidad para confirmar que todas las verificaciones de seguridad han sido realizadas! Por favor, asegúrate de que has seguido todas y cada una de las secciones de esta página, <strong>especialmente</strong> la <code class="language-plaintext highlighter-rouge">Sección III - Prueba de Seguridad</code>, antes de proseguir.</p>
+
+<div class="notice--danger">
+<p>If you’re removing CFW because:</p>
+
+<ul>
+  <li>You want to re-install it</li>
+  <li>You want to change SD cards</li>
+  <li>Your SD card was lost or corrupted</li>
+  <li>One of your games is broken</li>
+  <li>One of your system applications is broken</li>
+  <li>Your console is unable to boot to HOME Menu</li>
+</ul>
+
+<p><u><strong>STOP!!!</strong></u> Uninstalling custom firmware is an unnecessary risk that will at best waste your time and at worst <u><strong>BRICK</strong></u> your console. A better idea would be to ask for help at <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a>.</p>
+</div>
 
 <ol>
   <li>Press and hold (Start), and while holding (Start), power on your console. Esto abrirá GodMode9
@@ -737,22 +745,15 @@ window.cookieconsent.initialise({
       
     
 
-<!-- hacks-guide change start: force disable atom feed-->
-<!--
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-    </ul>
-  -->
-<!-- hacks-guide change end -->
-
+  </ul>
 </div>
 
 <!-- hacks-guide change start: custom footer -->
 
 
 
-<div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Navegación del sitio</a> - <a href="privacy-policy">Política de Privacidad</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<div class="page__footer-copyright">&copy; 2024 Nintendo Homebrew. - <a href="site-navigation">Navegación del sitio</a> - <a href="privacy-policy">Política de Privacidad</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
 <!-- hacks-guide change end -->
 
       </footer>

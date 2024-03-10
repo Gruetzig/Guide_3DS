@@ -5,7 +5,6 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -72,8 +71,6 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="3DS Hacks Guide Feed">
-
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,25 +88,24 @@
 
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- hacks-guide change start: cookie consent, favicon, locales -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
-<link rel="icon" type="image/png" href="/images/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
-<link rel="manifest" href="/images/manifest.json?v=PYEmwKvQAx">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
-<link rel="shortcut icon" href="/images/favicon.ico?v=PYEmwKvQAx">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/site-config/apple-touch-icon.png?v=PYEmwKvQAx">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
+<link rel="icon" type="image/png" href="/images/site-config/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
+<link rel="manifest" href="/images/site-config/manifest.json?v=PYEmwKvQAx">
+<link rel="mask-icon" href="/images/site-config/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
+<link rel="shortcut icon" href="/images/site-config/favicon.ico?v=PYEmwKvQAx">
 <meta name="apple-mobile-web-app-title" content="Guide">
 <meta name="application-name" content="Guide">
 <meta name="msapplication-TileColor" content="#2E3440">
-<meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=PYEmwKvQAx">
-<meta name="msapplication-config" content="/images/browserconfig.xml?v=PYEmwKvQAx">
+<meta name="msapplication-TileImage" content="/images/site-config/mstile-144x144.png?v=PYEmwKvQAx">
+<meta name="msapplication-config" content="/assets/xml/browserconfig.xml?v=PYEmwKvQAx">
 <meta name="theme-color" content="#2E3440">
-
 
 
 
@@ -123,7 +119,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#28282b"
+      "background": "#2e3440"
     },
     "button": {
       "background": "#60818f"
@@ -263,7 +259,7 @@ window.cookieconsent.initialise({
           <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/en_PT/troubleshooting.html">Pirate English</a></li> -->
         </ul>
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle Menu</span>
+          <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
         </button>
         <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
@@ -307,7 +303,7 @@ window.cookieconsent.initialise({
 <nav class="nav__list">
   
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Toggle Menu</label>
+  <label for="ac-toc">Toggle menu</label>
   <ul class="nav__items">
     <li>
       <span class="nav__sub-title">Előrehaladás</span>
@@ -386,11 +382,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/hu_HU/installing-boot9strap-(kartdlphax)'>Boot9strap telepítése (kartdlphax)</a></li>
-          
-        
-          
-            <li style="display: none;" data-name=""><a href='/hu_HU/finalizing-setup'>Telepítés véglegesítése</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/hu_HU/finalizing-setup'>Telepítés véglegesítése</a></li>
           
         
       </ol>
@@ -424,7 +416,6 @@ window.cookieconsent.initialise({
 
       <section class="page__content" itemprop="text">
         
-
 <!-- hacks-guide change start -->
         <hr>
 
@@ -541,73 +532,73 @@ window.cookieconsent.initialise({
 <p>Ha ez sikertelen, próbálkozz egy másik SD kártyával.</p>
 </details>
 
-<h2 id="installing-boot9strap-mset9">Installing boot9strap (MSET9)</h2>
+<h2 id="boot9strap-telepítése-mset9">Boot9strap telepítése (MSET9)</h2>
 
 <details>
 <summary><u>Python 3 is not installed</u></summary>
 
-<p>Python is not installed on the computer you are using. Download it from the <a href="https://www.python.org/downloads/">Python website</a>, double-click the installer, and follow the prompts to install Python. Once Python is installed, try again.</p>
+<p>A Python nincs telepítve arra a számítógépre, amit használsz. Töltsd le a <a href="https://www.python.org/downloads/">Python weboldaláról</a>, majd duplán kattintva a telepítőn kövesd a lépéseket a Python telepítéséhez. Ha a Python települt próbáld újra.</p>
 
 </details>
 
 <details>
 <summary><u>Error 01: Couldn't find Nintendo 3DS folder</u></summary>
 
-<p>You are not running MSET9 from the root of the SD card, or the SD card is missing the Nintendo 3DS folder.</p>
+<p>Az MSET9-et nem az SD kártya gyökeréből futtatod, vagy az SD kártyáról hiányzik a Nintendo 3DS mappa.</p>
 
-<p>Remember, your SD card should look like this:</p>
+<p>Emlékezz, az SD kártyádnak hasonlóan kell kinéznie:</p>
 
 <p class="notice--info"><img src="/images/screenshots/mset9/mset9-root-layout.png" alt="MSET9 root layout" /></p>
 
-<p>If your SD card layout is correct, then your SD card most likely isn’t being read by your console. Re-format it (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a>), then start again from the beginning of <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">Section I</a>.</p>
+<p>Ha az SD kártyád kiosztása megfelelő, akkor az SD kártyád valószínűleg nem olvasható a konzolod által. Formázd újra (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a>), majd kezd újra az <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">I. rész elejétől</a>.</p>
 
 </details>
 
 <details>
 <summary><u>Error 02: Your SD is write protected</u></summary>
 
-<p>Write-protection is enabled on this SD card. If you are using a full-size SD card, ensure that the lock is flipped in the <a href="/images/sdlock.png">upright position</a>. Otherwise, try ejecting and reinserting your SD card.</p>
+<p>Az írásvédelem bekapcsolt ezen az SD kártyán. Ha teljes méretű SD kártyát használsz, legyél biztos abban, hogy a zár a <a href="/images/sdlock.png">jobb felső pozícióban</a> legyen. Egyéb esetben próbáld meg kivenni és visszatenni az SD kártyád.</p>
 
 </details>
 
 <details>
 <summary><u>Error 03: Don't change console version</u></summary>
 
-<p>You inputted a different number between different runs of MSET9 (for example, you initially selected option 1 for “Old 3DS, 11.8 - 11.17” and then later selected option 2 for “New 3DS, 11.8 - 11.17”).</p>
+<p>Különböző számokat adtál meg az MSET9 különböző futásainál (például, kezdetben kiválaszotttad az 1-es opciót az “Old 3DS, 11.8 - 11.17” verzióhoz, később azonban a 2-es opciót a “New 3DS, 11.8 - 11.17” verzióhoz).</p>
 
-<p>If this happened when trying to uninstall MSET9, the script has automatically removed MSET9 for you and you can continue to the next page. Otherwise, start again from the beginning of <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">Section I</a>.</p>
+<p>Ha ez történt akkor, amikor az MSET9-et eltávolítani próbáltad, a szkript automatikusan eltávolította neked az MSET9-et és folytathatod a következő oldallal. Egyébként kezd újra az <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">I. rész elejétől</a>.</p>
 
 </details>
 
 <details>
 <summary><u>Error 04: No HOME Menu Extdata.</u></summary>
 
-<p>Your SD card is not formatted properly.</p>
+<p>Az SD kártyád nem megfelelően formázott.</p>
 
-<p>Copy everything off the SD Card to your PC, re-format it (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a>), copy everything back, then start again from the beginning of <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">Section I</a>.</p>
+<p>Másolj mindent az SD kártyádról a PC-dre, formázd újra (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a>), másolj mindent vissza, majd kezd el újra az <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">I. rész elejétől</a>.</p>
 
 </details>
 
 <details>
 <summary><u>Error 05: No Mii Maker Data!</u></summary>
 
-<p>Mii Maker data was not found on the SD card. Start again from the beginning of <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">Section I</a>.</p>
+<p>A Mii Maker adat nem található az SD kártyán. Kezd újra az <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">I. rész elejétől</a>.</p>
 
 </details>
 
 <details>
 <summary><u>Error 06: You need at least 16MB free</u></summary>
 
-<p>Your SD card does not have enough space to trigger MSET9. Free up some space and try again.</p>
+<p>Az SD kártyádon nincs elég hely az MSET9 kiváltásához. Szabadíts fel egy kevés helyet és próbáld újra.</p>
 
-<p>At the end of this guide, you will need at least 1.3GB to make a NAND backup, so it’s best to free up at least that much.</p>
+<p>Az útmutató végére, 1,3 GB szükséges a NAND mentés elkészítéséhez, így az a legjobb, ha rögtön ennyi helyet szabadítsz fel.</p>
 
 </details>
 
 <details>
 <summary><u>Error 07: You don't have 1 ID0, you have (#)!</u></summary>
 
-<p>You have multiple ID0 folders. To determine the correct folder, follow these instructions:</p>
+<p>Több ID0 mappád van. Ahhoz, hogy meghatározd melyik a helyes mappa, a következő lépéseket kell követned:</p>
 
 <ol>
   <li>Nevezd át a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> névre</li>
@@ -621,40 +612,40 @@ window.cookieconsent.initialise({
   <li>Kapcsold ki a konzolod</li>
   <li>Helyezd az SD kártyád a számítógépbe</li>
   <li>Lépj be az SD kártyád <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> könyvtárába</li>
-  <li>Write down the first few characters of the folder you see
+  <li>Írd le az első pár karakterét a mappának amit látsz
     <ul>
-      <li>This is your true ID0, which we will keep in the real Nintendo 3DS folder</li>
+      <li>Ez a te valódi ID0-d, amit a valódi Nintendo 3DS mappában fogunk tartani</li>
     </ul>
   </li>
-  <li>Delete the ID0 from the current <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder</li>
-  <li>Move the true ID0 folder from the <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> folder to the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder</li>
-  <li>If it exists, move the <code class="language-plaintext highlighter-rouge">Private</code> folder from the <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> folder to the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder</li>
+  <li>Töröld az ID0-t az aktuális <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappából</li>
+  <li>Mozgasd a valódi ID0 mappát a <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> mappából a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappába</li>
+  <li>Ha létezik, mozgasd a <code class="language-plaintext highlighter-rouge">Private</code> mappát a <code class="language-plaintext highlighter-rouge">BACKUP_Nintendo 3DS</code> mappából a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappába</li>
 </ol>
 
-<p>Once you’ve done this, continue from <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">Section I Step 7</a>.</p>
+<p>Ha ez kész, folytasd az <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">I. rész 7. lépésével</a>.</p>
 
 </details>
 
 <details>
 <summary><u>Error 08: One or more files are missing or malformed!</u></summary>
 
-<p>One or more files that MSET9 needs to run is missing or corrupted. Re-download the <a href="https://github.com/zoogie/MSET9/releases/latest">MSET9 Release <code class="language-plaintext highlighter-rouge">.zip</code></a> and extract it to the root of your SD card, replacing all existing files, then try again.</p>
+<p>Egy vagy több fájl, amire az MSET9-nek szüksége van a futáshoz, hiányzik vagy sérült. Töltsd le újra az <a href="https://github.com/zoogie/MSET9/releases/latest">MSET9 Release <code class="language-plaintext highlighter-rouge">.zip</code></a> fájlt, csomagold ki az SD kártyád gyökerébe, felülírva a létező fájlokat, majd próbáld újra.</p>
 
 </details>
 
 <details>
 <summary><u>Error 10: Database(s) malformed or missing!</u></summary>
 
-<p>This happens when no valid title database is present, usually because you never installed any titles from eShop on this SD card.</p>
+<p>Ez akkor történik, ha nincs cím adatbázis, általában azért, mert nem telepítettél semmilyen címet az eShop-ból erre az SD kártyára.</p>
 
 <ol>
-  <li>If you haven’t already, press Enter to close the MSET9 script</li>
-  <li>Insert the SD card into your console</li>
+  <li>Ha még nem tetted meg, nyomj Enter-t az MSET9 szkript bezárásához</li>
+  <li>Helyezd az SD kártyád a konzolodba</li>
   <li>Kapcsold be a konzolod</li>
-  <li>Navigate to System Settings -&gt; Data Management -&gt; Nintendo 3DS -&gt; Software -&gt; Reset (<a href="/images/screenshots/database-reset.jpg">visual instructions</a>)</li>
+  <li>Navigálj ide: `System Settings -&gt; Data Management -&gt; Nintendo 3DS -&gt; Software -&gt; Reset (<a href="/images/screenshots/database-reset.jpg">vizuális útmutató</a>)</li>
   <li>Kapcsold ki a konzolod</li>
-  <li>Insert the SD card into your computer</li>
-  <li>Return to <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">Section I Step 7</a></li>
+  <li>Helyezd az SD kártyád a számítógépedbe</li>
+  <li>Térj vissza az <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">I. rész 7. lépéséhez</a></li>
 </ol>
 
 </details>
@@ -662,80 +653,80 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Error 12: You don't have 1 ID1, you have (#)!</u></summary>
 
-<p>This occurs when you use multiple SD cards with the same 3DS and then merge the SD card contents together. Both are “valid”, but the 3DS can only read one at a time.</p>
+<p>Ez akkor fordul elő, ha több SD kártyát használtál a 3DS-en és összemásoltad a tartalmát az SD kártyáknak. Mind a kettő “érvényes”, de a 3DS csak egyet tud olvasni egyszerre.</p>
 
-<p>You will need to determine which one contains your data. First of all, back up all of the folders, in case something goes wrong:</p>
+<p>Meg kell határozd, hogy melyik mappa tartalmazza az adataid. Először mentsd el mind a két mappát, ha valami hibára futna:</p>
 
 <p class="notice--info"><img src="/images/screenshots/troubleshooting/backup-id1.png" alt="Backup ID1" /></p>
 
-<p>Now, delete all but one of the folders from your SD card. Generally, you will want to delete the <strong>smallest</strong> one(s), as the one with all your data will probably have more space occupied. You can compare which folder is occupying more space by right-clicking it and clicking “Properties”:</p>
+<p>Most töröld egy kivételével az összes mappát az SD kártyáról. Általában a <strong>legkisebbet</strong> érdemes törölni, mert az összes adatod valószínűleg több helyet foglal. Össze tudod hasonlítani melyik mappa foglal több helyet jobb gombbal kattintva rajta és “Properties” (Tulajdonságok) opciót választva:</p>
 
 <p class="notice--info"><img src="/images/screenshots/troubleshooting/rightclick-properties.png" alt="Properties prompt" /></p>
 
 <p class="notice--info"><img src="/images/screenshots/troubleshooting/compare-id1.png" alt="Which to delete" /></p>
 
-<p>Your SD card should now look something like this:</p>
+<p>Az SD kártyádnak hasonlóan kell kinéznie:</p>
 
 <p class="notice--info"><img src="/images/screenshots/troubleshooting/correct-id1.png" alt="Just enough ID1s" /></p>
 
-<p>Now, put your SD card into your 3DS and turn it on. If your data is still there, you deleted the right folder and have now determined your correct ID1. If everything has disappeared, go back into the backup folder that you made earlier and try the other folder.</p>
+<p>Most rakd be az SD kártyádat a 3DS-edbe és kapcsold be. Ha az adatod még mindig ott van, akkor a jó mappát törölted és megvan a helyes ID1-ed. Ha minden eltűnt, menj vissza a mentés mappádba, amit korábban csináltál és próbáld meg a másik mappával.</p>
 
 </details>
 
 <details>
-<summary><u>Red screen after reinserting SD card (Section II Step 11)</u></summary>
+<summary><u>Piros képernyő az SD kártya visszaillesztése után (II. rész 11. lépés)</u></summary>
 
-<p>You may be missing <code class="language-plaintext highlighter-rouge">SafeB9S.bin</code> from the root of your SD card, or the file may be corrupted. Copy it from the MSET9 <code class="language-plaintext highlighter-rouge">.zip</code>, replacing any existing files.</p>
+<p>Valószínüleg hiányzik a <code class="language-plaintext highlighter-rouge">SafeB9S.bin</code> az SD kártyád gyökeréből vagy sérült. Másold ki az MSET9 <code class="language-plaintext highlighter-rouge">.zip</code> fájlból felülírva a létező fájlokat.</p>
 
-<p>Alternatively, your SD card may be improperly formatted or partitioned. Try reformatting your SD card: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a> <em>(this will wipe your SD card data)</em></p>
+<p>Alternatíva, az SD kártyád nem megfelelően formázott vagy partícionált. Próbáld meg újraformázni az SD kártyád (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a> <em>(ez töröl minden adatot az SD kártyádról)</em></p>
 
 </details>
 
 <details>
-<summary><u>System Settings loading infinitely after reinserting the SD card</u></summary>
+<summary><u>A System Settings a végtelenségig tölt az SD kártya visszahelyezését követően</u></summary>
 
-<p>You most likely did something different from the MSET9 instructions, or selected the wrong model or version.</p>
+<p>Vagy eltértél az MSET9 lépésektől, vagy rossz modelt vagy verziót választottál.</p>
 
 <ol>
-  <li>Close the script window</li>
-  <li>Execute the <code class="language-plaintext highlighter-rouge">mset9.py</code> script on the root of the SD card
+  <li>Zárd be a szkript ablakát</li>
+  <li>Futtasd az <code class="language-plaintext highlighter-rouge">mset9.py</code> szkriptet az SD kártya gyökerén
     <ul>
       <li><strong>Windows</strong>: Dupla kattintás az <code class="language-plaintext highlighter-rouge">mset9.bat</code>-on</li>
       <li><strong>Linux</strong>: nyiss meg egy Terminal ablakot, majd <code class="language-plaintext highlighter-rouge">cd</code>-z az SD kártyád gyökerébe, és írd be, a <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> parancsot és nyomj Enter-t</li>
-      <li>You should see a window that says “MSET9 … SETUP by zoogie”</li>
+      <li>Látnod kell egy ablakot, ami ezt mondja “MSET9 … SETUP by zoogie”</li>
     </ul>
   </li>
   <li>Írd be a konzolod modelljéhez és verziójához tartozó számot, és nyomj Enter-t</li>
-  <li>Type <code class="language-plaintext highlighter-rouge">3</code>, then press Enter</li>
-  <li>Once the window says “Successfully removed MSET9!”, reinsert the SD card into your console</li>
+  <li>Írj <code class="language-plaintext highlighter-rouge">3</code>-at és nyomj Enter-t</li>
+  <li>Amikor az ablak azt mondja, hogy “Successfully removed MSET9!”, helyezd vissza az SD kártyádat a konzolodba</li>
   <li>Kapcsold be a konzolod</li>
-  <li>Return to <a href="installing-boot9strap-(mset9-cli)#section-ii---mset9">Section II Step 1</a></li>
+  <li>Térj vissza az <a href="installing-boot9strap-(mset9-cli)#section-ii---mset9">II. rész 1. lépéséhez</a></li>
 </ol>
 
-<p>If you continue to have this issue and are sure that you did everything correctly, it’s possible that there’s something wrong with your Mii Maker extdata. Follow these instructions to reset it:</p>
+<p>Ha továbbra is megmarad ez a hiba és biztos vagy benne, hogy mindent jól csináltál, előfordulhat, hogy probléma van a konzolod Mii Maker extdata-jával. Kövesd az alábbi lépéseket a helyreállításához:</p>
 
 <ol>
-  <li>Close the script window</li>
-  <li>Run the MSET9 script
+  <li>Zárd be a szkript ablakát</li>
+  <li>Futtasd az MSET9 szkriptet
     <ul>
       <li><strong>Windows</strong>: Dupla kattintás az <code class="language-plaintext highlighter-rouge">mset9.bat</code>-on</li>
       <li><strong>Linux</strong>: nyiss meg egy Terminal ablakot, majd <code class="language-plaintext highlighter-rouge">cd</code>-z az SD kártyád gyökerébe, és írd be, a <code class="language-plaintext highlighter-rouge">python3 mset9.py</code> parancsot és nyomj Enter-t</li>
-      <li>You should see a window that says “MSET9 … SETUP by zoogie”</li>
+      <li>Látnod kell egy ablakot, ami ezt mondja “MSET9 … SETUP by zoogie”</li>
     </ul>
   </li>
   <li>Írd be a konzolod modelljéhez és verziójához tartozó számot, és nyomj Enter-t</li>
-  <li>Type <code class="language-plaintext highlighter-rouge">3</code>, then press Enter to remove MSET9</li>
-  <li>If possible, use a new SD card; otherwise, backup and reformat your existing SD card as FAT32 (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a>)</li>
-  <li>Insert the formatted, blank SD card into your console</li>
-  <li>Return to <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">Section I Step 1</a></li>
+  <li>Írj <code class="language-plaintext highlighter-rouge">3</code>-at és nyomj Enter-t az MSET9 eltávolításához</li>
+  <li>Ha lehetséges használj új SD kártyát; egyébként, mentsd és for, ázd újra a meglévő SD kártyád FAT 32-re (<a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(linux)">Linux</a>, <a href="formatting-sd-(mac)">macOS</a>)</li>
+  <li>Helyezd a formázott, üres SD kártyád a konzolodba</li>
+  <li>Térj vissza az <a href="installing-boot9strap-(mset9-cli)#section-i---prep-work">I. rész 1. lépéséhez</a></li>
 </ol>
 
-<p class="notice--warning">After finishing the MSET9 page, you should switch back to your old SD card before continuing to Finalizing Setup.</p>
+<p class="notice--warning">Az MSET9 oldal befejezése után érdemes visszaváltanod a régi SD kártyádra, mielőtt folytatnád a Telepítés véglegesítését.</p>
 
 </details>
 
 <details>
-<summary><u>An exception occured after triggering MSET9</u></summary>
+<summary><u>Kivétel történt (exception occured) az MSET9 kiváltását követően</u></summary>
 
 <p>Ez valószínűleg azt jelzi, hogy már van egyedi firmware-ed. Érdemes elvégezned a <a href="checking-for-cfw">CFW ellenőrzését</a>.</p>
 
@@ -906,25 +897,37 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Error #02: Missing essential.exefs</u></summary>
+<summary><u>Error #22: finalize.romfs is invalid</u></summary>
 
-<p>You said ‘No’ to the “Make essential files backup?” prompt in GodMode9. Power off your console, power it on while holding (Start) to re-enter GodMode9, say ‘Yes’ to the prompt, then try again.</p>
+<p>A <code class="language-plaintext highlighter-rouge">finalize.romfs</code> fájl sérült vagy nem olvasható. <a href="/assets/finalize.romfs">Töltsd le újra</a> és másold az SD kártyád gyökerébe, felülírva a létező fájlokat, majd próbáld újra.</p>
 
 </details>
 
 <details>
-<summary><u>Unable to open GodMode9 or Error #03: Missing files</u></summary>
+<summary><u>Information #23: finalize.romfs in wrong location</u></summary>
 
-<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
+<p>A <code class="language-plaintext highlighter-rouge">finalize.romfs</code> rossz helyre került az SD kártya gyökere helyett. A szkript megpróbálja megoldani ezt, de szüksége van a jóváhagyásodra, hogy meg tudja tenni. Nyomj (A) gombot a következő néhány kérdésre a folytatáshoz.</p>
 
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
+</details>
+
+<details>
+<summary><u>Error #24: SD is write-protected</u></summary>
+
+<p>Ellenőrizd, hogy SD kártyád nem <a href="/images/sdlock.png">zárolt-e</a>. Ha az SD kártyád nem zárolt, és továbbra is ezt a hibát kapod, csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz a Discord-on</a> segítségért.</p>
+
+</details>
+
+<details>
+<summary><u>Error #02: Missing essential.exefs</u></summary>
+
+<p>‘No’-t válaszoltál a “Make essential files backup?” kérdésre a GodMode9-ben. Kapcsold kia konzolod, majd be a (Start) gomb nyomva tartása mellet, hogy újra belép a GodMode9-be és válaszold a ‘Yes’-t a kérdésnél, majd próbáld újra.</p>
 
 </details>
 
 <details>
 <summary><u>Error #04: No space</u></summary>
 
-<p>You need at least 1.3GB of free space to perform the NAND backup, which is a part of the script. Ha nincs elég szabad helyed, kövesd ezeket a lépéseket:</p>
+<p>Legalább 1,33 GB szabad hely kell a NAND mentés végrehajtásához, ami a szkript része. Ha nincs elég szabad helyed, kövesd ezeket a lépéseket:</p>
 
 <ol>
   <li>Kapcsold ki a konzolod</li>
@@ -933,37 +936,37 @@ window.cookieconsent.initialise({
   <li>Töröld a Nintendo 3DS mappát az SD kártyáról</li>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
   <li>Nyomd le és tartsd nyomva a (Start) gombot, és a (Start) nyomva tartása mellett kapcsold be a konzolod. Ez elindítja a GodMode9-et</li>
-  <li>Press the (Home) button</li>
+  <li>Nyomd meg a (Home) gombot</li>
   <li>Válaszd a “Scripts…” opciót</li>
   <li>Válaszd az “finalize” opciót</li>
-  <li>Press (A) to create a NAND backup
+  <li>Nyomj (A)-t egy NAND mentés létrehozásához
     <ul>
-      <li>This may take around fifteen minutes</li>
+      <li>Ez kb. 15 percet fog igénybe venni</li>
     </ul>
   </li>
-  <li>Press (A) again
+  <li>Nyomd meg az (A) gombot újra
     <ul>
-      <li>The console should automatically power off</li>
+      <li>A konzolod automatikusan ki fog kapcsolni</li>
     </ul>
   </li>
   <li>Helyezd az SD kártyád a számítógépbe</li>
-  <li>Copy the files in <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> on your SD to a safe location on your computer</li>
-  <li>Delete the <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> and <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> files from the SD card</li>
+  <li>Másold a <code class="language-plaintext highlighter-rouge">/gm9/backups</code> mappából a fájlokat az SD kártyádról egy biztonságos helyre a számítógépeden</li>
+  <li>Töröld a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin</code> és a <code class="language-plaintext highlighter-rouge">&lt;date&gt;_&lt;serialnumber&gt;_sysnand_##.bin.sha</code> fájlokat az SD kártyádról</li>
   <li>Másold a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát a számítógépedről az SD kártyád gyökerébe</li>
   <li>Töröld a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappát a számítógépedről</li>
 </ol>
 
-<p>Now that you have your NAND backup in a safe place:</p>
+<p>Most, hogy már a NAND mentésed biztos helyen van:</p>
 
 <ol>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
   <li>Nyomd le és tartsd nyomva a (Start) gombot, és a (Start) nyomva tartása mellett kapcsold be a konzolod. Ez elindítja a GodMode9-et</li>
-  <li>Press the (Home) button</li>
+  <li>Nyomd meg a (Home) gombot</li>
   <li>Válaszd a “Scripts…” opciót</li>
   <li>Válaszd az “finalize” opciót</li>
-  <li>Continue the script as normal
+  <li>Folytasd a szkriptet normálisan
     <ul>
-      <li>The NAND backup will be automatically skipped</li>
+      <li>A NAND mentés automatikusan átugrásra kerül</li>
     </ul>
   </li>
 </ol>
@@ -973,7 +976,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Information #05: No title database</u></summary>
 
-<p>Press (A) to import a title database, unlock SysNAND writing by entering the buttons on-screen, then continue the script as normal.</p>
+<p>Nyomj (A)-t a cím adatbázis importálásához, old fel a SysNAND írást a képernyőn látható gombok megadásával, majd folytasd a szkriptet normálisan.</p>
 
 </details>
 
@@ -999,41 +1002,25 @@ window.cookieconsent.initialise({
 </details>
 
 <details>
-<summary><u>Error #09: Unsupported GodMode9 version</u></summary>
-
-<p>You are somehow running a version of GodMode9 not packaged with the script. Make sure you copied the contents of <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card and that you are holding START while powering on your console.</p>
-
-</details>
-
-<details>
-<summary><u>Error #11: Missing donor database</u></summary>
-
-<p>You did not copy everything from <code class="language-plaintext highlighter-rouge">finalize.zip</code> to the root of your SD card. Remember, your SD card should have at least these files:</p>
-
-<p class="notice--info"><img src="https://3ds.hacks.guide/images/screenshots/finalizing-root-layout.png" alt="" /></p>
-
-</details>
-
-<details>
 <summary><u>Error #12: Copy (file).db fail</u></summary>
 
-<p>Ensure that your SD card is not <a href="/images/sdlock.png">locked</a>. If the SD card is not locked and you continue to get this error, join <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew on Discord</a> for assistance.</p>
+<p>Ellenőrizd, hogy SD kártyád nem <a href="/images/sdlock.png">zárolt-e</a>. Ha az SD kártyád nem zárolt, és továbbra is ezt a hibát kapod, csatlakozz a <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz a Discord-on</a> segítségért.</p>
 
 </details>
 
 <details>
 <summary><u>Information #17: Duplicate NAND backup</u></summary>
 
-<p>The script has detected that the Nintendo 3DS folder is missing AND that you have already made a NAND backup before. If you intend to install homebrew applications, you should do the following:</p>
+<p>A szkript úgy érzékelte, hogy a Nintendo 3DS mappa hiányzik ÉS már csináltál NAND mentést korábban. Ha szeretnél telepíteni homebrew alkalmazásokat, a következőt kell tenned:</p>
 
 <ol>
-  <li>Press (B) to cancel making another NAND backup</li>
+  <li>Nyomj (B)-t, hogy elutasítsd az újabb NAND mentés létrehozását</li>
   <li>Az (R) lenyomva tartása közben nyomd meg a (Start) gombot a konzolod kikapcsolásához</li>
-  <li>Copy the contents of <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> to a safe location on your computer</li>
-  <li>Delete <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> from your SD card</li>
-  <li>If you moved your Nintendo 3DS folder off of your SD card to get to this point, copy it back to your SD card
+  <li>Másold a <code class="language-plaintext highlighter-rouge">/gm9/backups</code> mappa tartalmát egy biztonságos helyre a számítógépeden</li>
+  <li>Töröld a <code class="language-plaintext highlighter-rouge">/gm9/backups/</code> mappát az SD kártyádról</li>
+  <li>Ha lemozgattad a Nintendo 3DS mappád az SD kártyádról, hogy eljuss ide, akkor másold vissza az SD kártyádra
     <ul>
-      <li>If you do not have a Nintendo 3DS folder, boot into the HOME Menu at least once with the SD card inserted to automatically generate it</li>
+      <li>Ha nincs Nintendo 3DS mappád, akkor bootolj be a HOME menübe legalább egyszer behelyezett SD kártyával, hogy automatikusan létre jöjjön</li>
     </ul>
   </li>
   <li>Nyomd le és tartsd nyomva a (Start) gombot, és a (Start) nyomva tartása mellett kapcsold be a konzolod. Ez elindítja a GodMode9-et</li>
@@ -1048,7 +1035,7 @@ window.cookieconsent.initialise({
 <details>
 <summary><u>Error #18: MSET9 detected</u></summary>
 
-<p>You didn’t remove MSET9 when prompted to. Follow Section IV - Removing MSET9 from the <a href="installing-boot9strap-(mset9-cli)#section-iv---removing-mset9">Windows/macOS/Linux guide</a> or the <a href="installing-boot9strap-(mset9-play-store)#section-iv---removing-mset9">Android/ChromeOS guide</a>, then re-run the script.</p>
+<p>Nem távolítottad el az MSET9-et, amikor arra lettél kérve. Kövesd a IV. rész - Az MSET9 eltávolítása részt <a href="installing-boot9strap-(mset9-cli)#section-iv---removing-mset9">Windows/macOS/Linux guide</a> vagy az <a href="installing-boot9strap-(mset9-play-store)#section-iv---removing-mset9">Android/ChromeOS útmutatót</a>, majd futtasd újra a szkriptet.</p>
 
 </details>
 
@@ -1146,8 +1133,8 @@ Ellenőrizheted, hogy az SD kártyád olvasásra kerül-e a SELECT gomb nyomva t
 Ha ez a helyzet, próbáld meg a lépéseket alább, ami a legkönnyebbtől a legnehezebbig került felsorolásra:</p>
 <ol>
   <li>Kapcsold ki a konzolod, vedd ki majd tedd vissz az SD kártyát, majd kapcsold be újra a konzolod</li>
-  <li>Power off your console, remove the SD card, insert it on your computer, download the latest release of <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>, extract <code class="language-plaintext highlighter-rouge">boot.firm</code> from the <code class="language-plaintext highlighter-rouge">Luma3DS.zip</code> and place it on the root of your SD card (replacing any existing file)</li>
-  <li>Power off your console, remove the SD card, insert it on your computer and reformat your SD card according to your computer’s operating system: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(this will wipe your SD card data)</em></li>
+  <li>Kapcsold ki a konzolod, távolítsd el az SD kártyád, majd csatlakoztasd a számítógépedhez. Töltsd le a legutolsó kiadását az <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">Luma3DS</a>-nek és csomagold ki a <code class="language-plaintext highlighter-rouge">Luma3DS.zip</code> fájlból a <code class="language-plaintext highlighter-rouge">boot.firm</code> fájlt, majd rakd az SD kártyád gyökerébe (felülírva bármilyen létező fájlt)</li>
+  <li>Kapcsold ki a konzolod, távolítsd el az SD kártyát, csatlakoztasd a számítógépedhez és formázd újra az SD kártyád az operációs rendszerednek megfelelően: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a> <em>(ez törölni fogja az SD kártya adatait)</em></li>
   <li>Teszteld az SD kártyádat hibákra az operációs rendszerednek megfelelő útmutató szerint haladva: <a href="h2testw-(windows)">Windows</a>, <a href="f3-(linux)">Linux</a>, <a href="f3xswift-(mac)">macOS</a>. Ha az SD kártyád hibásnak jelölt, cserélned kell az SD kártyádat</li>
   <li>Az SD kártya foglalatod is lehet hibás. Csatlakozz a<a href="https://discord.gg/MWxPgEp">Nintendo Homebrew-hoz Discord-on</a> további segítségért</li>
 </ol>
@@ -1210,9 +1197,10 @@ Ha nem sikerült megtalálni a hibádat, vagy a lépések nem működnek, csatla
 </details>
 
 <details>
-<summary><u>Opening the HOME Menu settings crashes the console or loads the Homebrew Launcher</u></summary>
+<summary><u>A HOME Menu beállítások megnyitása összeomlasztja a konzolt 
+ vagy betölti a Homebrew Launcher-t</u></summary>
 
-<p>Your console likely still has menuhax67 installed. To uninstall menuhax67, download the latest release of <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> (the menuhax <code class="language-plaintext highlighter-rouge">.zip</code>), then follow the <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits/menuhax67#Uninstall_menuhax67">“Uninstall menuhax67” section</a> here.</p>
+<p>A konzolodon még mindig van menuhax67 telepítve. A menuhax67 eltávolításához, tölsd le a <a href="https://github.com/zoogie/menuhax67/releases/latest">menuhax67</a> legfrissebb kiadását (a menuhax <code class="language-plaintext highlighter-rouge">.zip</code>), majd kövesd a <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits/menuhax67#Uninstall_menuhax67">“Menuhax67 eltávolítása” részt</a> here.</p>
 </details>
 
 <hr />
@@ -1259,9 +1247,9 @@ Ha nem sikerült megtalálni a hibádat, vagy a lépések nem működnek, csatla
 </details>
 
 <details>
-<summary><u>Manually entering Homebrew Launcher</u></summary>
+<summary><u>Homebrew Launcher kézi hozzáadása</u></summary>
 
-<p>If you are missing the Homebrew Launcher application from your HOME Menu, you can follow these instructions to manually enter the Homebrew Launcher. (You will need <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">boot.3dsx and boot.firm</a> on the root of your SD card.)</p>
+<p>Ha hiányzik a Homebrew Launcher alkalmazás a HOME Menüből, akkor a következő lépésekkel megadhatod a Homebrew Launcher-t kézzel. (A <a href="https://github.com/LumaTeam/Luma3DS/releases/latest">boot.3dsx és a boot.firm</a> kell legyen az SD kártyád gyökerében.)</p>
 
 <ol>
   <li>Indítsd el a Download Play alkalmazást (<img src="https://3ds.hacks.guide/images/download-play-icon.png" alt="" height="24px" width="24px" />)</li>
@@ -1351,22 +1339,15 @@ Azonban, ha nem tudod a PIN-t így nem tudsz hozzáférni az konzol beállítás
       
     
 
-<!-- hacks-guide change start: force disable atom feed-->
-<!--
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-    </ul>
-  -->
-<!-- hacks-guide change end -->
-
+  </ul>
 </div>
 
 <!-- hacks-guide change start: custom footer -->
 
 
 
-<div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Oldaltérkép</a> - <a href="privacy-policy">Adatvédelmi Irányelv</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<div class="page__footer-copyright">&copy; 2024 Nintendo Homebrew. - <a href="site-navigation">Oldaltérkép</a> - <a href="privacy-policy">Adatvédelmi Irányelv</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
 <!-- hacks-guide change end -->
 
       </footer>

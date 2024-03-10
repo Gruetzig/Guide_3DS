@@ -5,7 +5,6 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
-
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -72,8 +71,6 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="3DS Hacks Guide Feed">
-
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,25 +88,24 @@
 
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use http://realfavicongenerator.net/ -->
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- hacks-guide change start: cookie consent, favicon, locales -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=PYEmwKvQAx">
-<link rel="icon" type="image/png" href="/images/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
-<link rel="icon" type="image/png" href="/images/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
-<link rel="manifest" href="/images/manifest.json?v=PYEmwKvQAx">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
-<link rel="shortcut icon" href="/images/favicon.ico?v=PYEmwKvQAx">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/site-config/apple-touch-icon.png?v=PYEmwKvQAx">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-16x16.png?v=PYEmwKvQAx" sizes="16x16">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-32x32.png?v=PYEmwKvQAx" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/site-config/favicon-194x194.png?v=PYEmwKvQAx" sizes="194x194">
+<link rel="icon" type="image/png" href="/images/site-config/android-chrome-192x192.png?v=PYEmwKvQAx" sizes="192x192">
+<link rel="manifest" href="/images/site-config/manifest.json?v=PYEmwKvQAx">
+<link rel="mask-icon" href="/images/site-config/safari-pinned-tab.svg?v=PYEmwKvQAx" color="#2E3440">
+<link rel="shortcut icon" href="/images/site-config/favicon.ico?v=PYEmwKvQAx">
 <meta name="apple-mobile-web-app-title" content="Guide">
 <meta name="application-name" content="Guide">
 <meta name="msapplication-TileColor" content="#2E3440">
-<meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=PYEmwKvQAx">
-<meta name="msapplication-config" content="/images/browserconfig.xml?v=PYEmwKvQAx">
+<meta name="msapplication-TileImage" content="/images/site-config/mstile-144x144.png?v=PYEmwKvQAx">
+<meta name="msapplication-config" content="/assets/xml/browserconfig.xml?v=PYEmwKvQAx">
 <meta name="theme-color" content="#2E3440">
-
 
 
 
@@ -123,7 +119,7 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#28282b"
+      "background": "#2e3440"
     },
     "button": {
       "background": "#60818f"
@@ -263,7 +259,7 @@ window.cookieconsent.initialise({
           <!-- <li class="masthead__menu-item"><a href="https://3ds.hacks.guide/en_PT/installing-boot9strap-(mset9-play-store).html">Pirate English</a></li> -->
         </ul>
         <button class="greedy-nav__toggle hidden" type="button">
-          <span class="visually-hidden">Toggle Menu</span>
+          <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
         </button>
         <button class="greedy-nav__toggle_lang"><div class="langicon"><i class="fa fa-language fa-lg" aria-hidden="true"></i></div></button>
@@ -307,7 +303,7 @@ window.cookieconsent.initialise({
 <nav class="nav__list">
   
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Toggle Menu</label>
+  <label for="ac-toc">Toggle menu</label>
   <ul class="nav__items">
     <li>
       <span class="nav__sub-title">Előrehaladás</span>
@@ -386,11 +382,7 @@ window.cookieconsent.initialise({
           
         
           
-            <li style="display: none;" data-name="finalizing-setup"><a href='/hu_HU/installing-boot9strap-(kartdlphax)'>Boot9strap telepítése (kartdlphax)</a></li>
-          
-        
-          
-            <li style="display: none;" data-name=""><a href='/hu_HU/finalizing-setup'>Telepítés véglegesítése</a></li>
+            <li style="display: none;" data-name="finalizing-setup"><a href='/hu_HU/finalizing-setup'>Telepítés véglegesítése</a></li>
           
         
       </ol>
@@ -424,7 +416,6 @@ window.cookieconsent.initialise({
 
       <section class="page__content" itemprop="text">
         
-
 <!-- hacks-guide change start -->
         <hr>
 
@@ -469,7 +460,7 @@ window.cookieconsent.initialise({
 
 <h3 id="kompatibilitási-megjegyzések">Kompatibilitási megjegyzések</h3>
 
-<p class="notice--warning">Ez az oldal Android telefont/tabletet vagy Chromebook-ot igényel. Ha Windows, macOS, or Linux számítógéped van, kövesd a <a href="installing-boot9strap-(mset9-cli)">Boot9strap telepítése (MSET9 CLI)</a> oldalt helyette. Ha nem férsz hozzá ezen eszközök egyikéhez sem, akkor <a href="alternate-exploits">alternatív exploit</a>-ot kell használnod.</p>
+<p class="notice--warning">Ez az oldal Android telefont/tabletet vagy Chromebook-ot igényel. Ha Windows, macOS, or Linux számítógéped van, kövesd a <a href="installing-boot9strap-(mset9-cli)">Boot9strap telepítése (MSET9 CLI)</a> oldalt helyette. Ha nem férsz hozzá ezen eszközök egyikéhez sem, akkor <a href="https://wiki.hacks.guide/wiki/3DS:Alternate_Exploits">alternatív exploit</a> kell használnod.</p>
 
 <p class="notice--warning">Android telefonokon/tableteken a szükséges minimum Android verzió: 6.0 (Marshmallow).</p>
 
@@ -506,20 +497,20 @@ window.cookieconsent.initialise({
   <li>Másolj át a mindent a Release <code class="language-plaintext highlighter-rouge">.zip</code>-ből az SD kártyád gyökerébe, felülírva minden már ott lévő fájlt:
     <ul>
       <li>Nyisd meg a ZArchiver-t</li>
-      <li>If prompted, <a href="/images/screenshots/mset9/zarchiver-allow.png">allow ZArchiver to access files on your SD card</a></li>
-      <li>Navigate to where the downloaded MSET9 Release <code class="language-plaintext highlighter-rouge">.zip</code> is located (<a href="/images/screenshots/mset9/zarchiver-zip-location.png">likely in the Downloads folder</a>)</li>
-      <li>Select the Release <code class="language-plaintext highlighter-rouge">.zip</code>, then select “Extract…” (<a href="/images/screenshots/mset9/zarchiver-extract-1.png">image</a>)</li>
-      <li>Navigate to your SD card, then tap the blue ‘down arrow’ icon to extract the files to the root of your SD card (<a href="/images/screenshots/mset9/zarchiver-extract-2.png">image</a>)</li>
+      <li>Ha kérdezi, <a href="/images/screenshots/mset9/zarchiver-allow.png">engedd a ZArchiver-t, hogy hozzá férjen z SD kártya fájljaihoz</a></li>
+      <li>Navigálj oda, aholva letöltötted az MSET9 Release <code class="language-plaintext highlighter-rouge">.zip</code>-et (<a href="/images/screenshots/mset9/zarchiver-zip-location.png">valószínűleg a Letöltések (Downloads) mappa</a>)</li>
+      <li>Válaszd a Release <code class="language-plaintext highlighter-rouge">.zip</code>-et majd az “Extract…” (<a href="/images/screenshots/mset9/zarchiver-extract-1.png">image</a>) (Kicsomagol) opciót</li>
+      <li>Navigálj az SD kártyádra, majd nyomd meg a kék “lefelé nyilat”, hogy kicsomagold a fájlokat az SD kártyád gyökerébe (<a href="/images/screenshots/mset9/zarchiver-extract-2.png">kép</a>)</li>
     </ul>
 
     <p class="notice--info"><img src="/images/screenshots/mset9/mset9-root-layout-android.png" alt="MSET9 root layout" /></p>
   </li>
-  <li>Run the <a href="/images/screenshots/mset9/mset9-setup-android.png">MSET9 Installer application</a></li>
-  <li>Tap on <code class="language-plaintext highlighter-rouge">Select "Nintendo 3DS" Folder</code>, then navigate to your <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder on your SD card (<a href="/images/screenshots/mset9/select-mset9-folder-1.png">image</a>)</li>
-  <li>Once inside the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder, tap on “Use this folder”, then “Allow” if asked (<a href="/images/screenshots/mset9/select-mset9-folder-2.png">image</a>)</li>
-  <li>If “Setup MSET9” is <a href="/images/screenshots/mset9/setup-mset9-highlighted.png">highlighted</a>, MSET9 is ready to be injected. Close the MSET9 Installer for now
+  <li>Futtasd az <a href="/images/screenshots/mset9/mset9-setup-android.png">MSET9 Installer alkalmazást</a></li>
+  <li>Válaszd a <code class="language-plaintext highlighter-rouge">Select "Nintendo 3DS" Folder</code> opciót, majd navigálj a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappához az SD kártyádon(<a href="/images/screenshots/mset9/select-mset9-folder-1.png">kép</a>)</li>
+  <li>Ha a <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> mappában vagy, érintsd meg a “Use this folder” opciót, majd az “Allow”-ot, ha kérdezi (<a href="/images/screenshots/mset9/select-mset9-folder-2.png">kép</a>)</li>
+  <li>Ha a “Setup MSET9” opció <a href="/images/screenshots/mset9/setup-mset9-highlighted.png">kiemelt</a>, akkor haladj tovább a következő lépésre. ** Még ne telepítsd az MSET9-et.** Zárd be az MSET9 telepítőt most
     <ul>
-      <li>If “Check Again” is highlighted, there is a problem that you need to resolve before you can use MSET9. Refer to the <a href="troubleshooting#installing-boot9strap-mset9">troubleshooting</a></li>
+      <li>Ha a “Check Again” a kiemelt, akkor problémába ütközték, amit fel kellene oldani, mielőtt használatod az MSET9-et. Használd a <a href="troubleshooting#installing-boot9strap-mset9">hibaelhárítást</a></li>
     </ul>
   </li>
   <li>Tedd vissza az SD kártyád a konzoldba</li>
@@ -655,22 +646,15 @@ window.cookieconsent.initialise({
       
     
 
-<!-- hacks-guide change start: force disable atom feed-->
-<!--
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
-    
-    </ul>
-  -->
-<!-- hacks-guide change end -->
-
+  </ul>
 </div>
 
 <!-- hacks-guide change start: custom footer -->
 
 
 
-<div class="page__footer-copyright">&copy; 2023 Nintendo Homebrew. - <a href="site-navigation">Oldaltérkép</a> - <a href="privacy-policy">Adatvédelmi Irányelv</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
+<div class="page__footer-copyright">&copy; 2024 Nintendo Homebrew. - <a href="site-navigation">Oldaltérkép</a> - <a href="privacy-policy">Adatvédelmi Irányelv</a> <!-- Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.--></div>
 <!-- hacks-guide change end -->
 
       </footer>
