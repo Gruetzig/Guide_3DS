@@ -235,6 +235,24 @@ This happens when no valid title database is present, usually because you never 
 <details>{{ compat | markdownify }}</details>
 
 {% capture compat %}
+<summary><u>Error 13: WinError 234!</u></summary>
+
+This happens when a beta feature regarding system locale is enabled. To disable this feature, follow these instructions on your computer:
+
+1. Open the Settings application on your computer
+1. Select `Time & Language`
+1. Select `Language` (Windows 10) or `Language & Region` (Windows 11)
+1. Select `Administrative Language Settings` under `Related Settings`
+1. Select `Change System Locale...`
+1. Uncheck `Beta: Use Unicode UTF-8 for worldwide language support`
+1. Press `OK`
+1. Restart your machine
+1. Return to [Section II Step 8](https://3ds.hacks.guide/installing-boot9strap-(mset9-cli)#section-ii---mset9)
+
+{% endcapture %}
+<details>{{ compat | markdownify }}</details>
+
+{% capture compat %}
 <summary><u>Red screen after reinserting SD card (Section II Step 11)</u></summary>
 
 You may be missing `SafeB9S.bin` from the root of your SD card, or the file may be corrupted. Copy it from the MSET9 `.zip`, replacing any existing files.
